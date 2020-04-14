@@ -24,4 +24,4 @@ steps:
   inputs:
     command: publish
     publishRegistry: useFeed
-    publishFeed: openiotplatform/Denim
+    publishFeed: 2d9b7d6e-92c0-428a-b15f-f4d45db42f9e/Denim
