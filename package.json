@@ -1,7 +1,6 @@
 {
   "name": "@denim/react-components",
   "version": "0.1.0",
-  "private": true,
   "author": "Antti Rintala <antti.rintala@houston-inc.com>",
   "dependencies": {
     "react": "^16.13.1",
