@@ -4,21 +4,23 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const CardDash = styled.div`
-  margin: 2em;
+  margin: '2em';
   border-radius: 0.5em;
   border: 2px dashed #ffffff;
 `;
 const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: ${(props) => props['justify-content'] || 'center'};
   margin: 1em;
   border-radius: 0.25em;
   border: 1px solid #000000;
   background-color: #ffffff;
-  height: 20em;
+  height: ${(props) => props.height || '20em'};
+  width: ${(props) => props.width || 'auto'};
+  max-width: ${(props) => props['max-width'] || 'auto'};
   font-family: 'Open Sans', sans-serif;
-  text-align: center;
+  text-align: ${(props) => props['text-align'] || 'center'};
   padding: 1em;
   box-sizing: border-box;
 `;
@@ -32,7 +34,7 @@ const CardHeader = styled.h3`
   text-align: center;
   text-transform: uppercase;
 `;
-const CardBody = styled.p`
+const CardBody = styled.div`
   text-align: center;
 `;
 
@@ -42,27 +44,28 @@ export class Card extends React.Component {
     const classes = ['lnr', item.iconClass];
     return (
       <CardDash>
-        <CardContainer>
+        <CardContainer {...this.props}>
           <CardIcon className={classes} />
           <CardHeader>{item.title}</CardHeader>
-          <CardBody>{item.body}</CardBody>
+          <CardBody>{this.props.children}</CardBody>
         </CardContainer>
       </CardDash>
     );
   }
 }
+
 Card.propTypes = {
   item: PropTypes.shape({
     iconClass: PropTypes.string,
     title: PropTypes.string,
-    body: PropTypes.body,
   }),
+  children: PropTypes.node,
 };
 
 Card.defaultProps = {
   item: {
     iconClass: '',
     title: '',
-    body: '',
   },
+  children: '',
 };
