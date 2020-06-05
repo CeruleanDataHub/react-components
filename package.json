@@ -1,10 +1,12 @@
 {
   "name": "@denim/react-components",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "author": "Antti Rintala <antti.rintala@houston-inc.com>",
   "main": "dist/index.js",
   "dependencies": {
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "highcharts": "^8.1.0",
+    "highcharts-react-official": "^3.0.0"
   },
   "scripts": {
     "prepare": "install-peers",
@@ -46,15 +48,12 @@
     "file-loader": "^6.0.0",
     "install-peers-cli": "^2.2.0",
     "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "styled-components": "^5.1.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   },
   "peerDependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
     "styled-components": "^5.1.0"
   }
 }

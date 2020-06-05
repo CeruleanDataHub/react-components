@@ -4,3 +4,4 @@ export { Navigation } from './containers/Navigation/Navigation.jsx';
 export { Menu } from './containers/Menu/Menu.jsx';
 export { Dashboard } from './containers/Dashboard/Dashboard.jsx';
 export { Card } from './containers/Card/Card.jsx';
+export { Chart } from './containers/Chart/Chart.jsx';
