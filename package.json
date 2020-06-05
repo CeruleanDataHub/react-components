@@ -1,6 +1,6 @@
 {
   "name": "@denim/react-components",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "author": "Antti Rintala <antti.rintala@houston-inc.com>",
   "main": "dist/index.js",
   "dependencies": {

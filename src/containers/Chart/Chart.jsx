@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import HighchartsReact from 'highcharts-react-official';
 import Highcharts from 'highcharts';
+import { isEqual } from 'lodash';
 
 export class Chart extends Component {
   constructor(props) {
@@ -8,6 +9,10 @@ export class Chart extends Component {
     this.state = {
       hoverData: null,
     };
+  }
+
+  shouldComponentUpdate(nextProps) {
+    return !isEqual(nextProps.series[0].data, this.props.series[0].data);
   }
 
   setHoverData(e) {
@@ -41,12 +46,8 @@ export class Chart extends Component {
       credits: { enabled: false },
     });
   }
+
   render() {
-    console.log('CHARTTRTTRTRT');
-    console.log(this.props.xAxis);
-    console.log(this.props.xAxis && this.props.xAxis.length !== 0);
-    console.log(this.props.series);
-    console.log(this.props.series && this.props.series.length !== 0);
     if (!this.props.xAxis || this.props.xAxis.length === 0 || !this.props.series || this.props.series.length === 0) {
       return <div> loading ... </div>;
     }
