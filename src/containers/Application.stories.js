@@ -38,8 +38,8 @@ export const AdminFrontpage = () => (
     </Navigation>
     <Dashboard>
       <Card item={{ iconClass: 'lnr-users', title: 'Users', body: 'You have 30 users' }} />
-      <Card item={{ iconClass: 'lnr-rocket', title: 'Devices', body: 'You have 285 devices' }} />
-      <Card item={{ iconClass: 'lnr-briefcase', title: 'Costs', body: 'April Forecast 5 489€' }} />
+      <Card item={{ iconClass: 'lnr-rocket', title: 'Devices', body: 'You have 300 devices' }} />
+      <Card item={{ iconClass: 'lnr-briefcase', title: 'Costs', body: 'April Forecast 5 500€' }} />
     </Dashboard>
   </Application>
 );
