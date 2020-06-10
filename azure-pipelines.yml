@@ -28,6 +28,7 @@ stages:
               npm run build
       - job: copyAndPublish
         displayName: copy file to the artifactory
+        dependsOn: build
         steps:
           - task: CopyFiles@2
             inputs:
@@ -70,7 +71,7 @@ stages:
           - bash: |
               set -e
               npm install
-              npm run storybook
+              npm run build-storybook
             name: buildImage
           - task: Docker@2
             displayName: Build and push an image to container registry
