@@ -9,7 +9,6 @@
     "highcharts-react-official": "^3.0.0"
   },
   "scripts": {
-    "prepare": "install-peers",
     "build": "webpack --mode=production",
     "dev": "webpack --mode=development",
     "watch": "webpack --watch",
@@ -46,7 +45,9 @@
     "@testing-library/user-event": "^7.2.1",
     "babel-loader": "^8.1.0",
     "file-loader": "^6.0.0",
-    "install-peers-cli": "^2.2.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "styled-components": "^5.1.0",
     "prop-types": "^15.7.2",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
