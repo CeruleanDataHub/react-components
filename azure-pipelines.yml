@@ -9,6 +9,9 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+variables:
+  - group: IoT-Platform-Storybook
+
 stages:
   - stage: Artifact
     displayName: Pushing to the artifactory
