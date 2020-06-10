@@ -37,9 +37,9 @@ export const AdminFrontpage = () => (
       <Menu items={menuItems} />
     </Navigation>
     <Dashboard>
-      <Card item={{ iconClass: 'lnr-users', title: 'Users', body: 'You have 30 users' }} />
-      <Card item={{ iconClass: 'lnr-rocket', title: 'Devices', body: 'You have 300 devices' }} />
-      <Card item={{ iconClass: 'lnr-briefcase', title: 'Costs', body: 'April Forecast 5 500€' }} />
+      <Card item={{ iconClass: 'lnr-users', title: 'Users' }}> 100 users </Card>
+      <Card item={{ iconClass: 'lnr-rocket', title: 'Devices' }}> 98 devices </Card>
+      <Card item={{ iconClass: 'lnr-briefcase', title: 'Costs' }}> 300k € incured </Card>
     </Dashboard>
   </Application>
 );

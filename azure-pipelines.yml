@@ -26,10 +26,7 @@ stages:
           - script: |
               npm install
               npm run build
-      - job: copyAndPublish
-        displayName: copy file to the artifactory
-        dependsOn: build
-        steps:
+            displayName: 'npm install, npm build'
           - task: CopyFiles@2
             inputs:
               Contents: 'dist/**' # Pull the build directory (React)
