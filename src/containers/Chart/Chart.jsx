@@ -1,57 +1,42 @@
-import React, { Component } from 'react';
-import HighchartsReact from 'highcharts-react-official';
-import Highcharts from 'highcharts';
-import { isEqual } from 'lodash';
+import Highcharts from "highcharts";
+import HighchartsReact from "highcharts-react-official";
+import React, { useState } from "react";
 
-export class Chart extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      hoverData: null,
-    };
-  }
+export const Chart = ({ xAxis, series }) => {
+  // hoverData is not used
+  const [hoverData, setHoverData] = useState(null);
 
-  shouldComponentUpdate(nextProps) {
-    return !isEqual(nextProps.series[0].data, this.props.series[0].data);
-  }
-
-  setHoverData(e) {
-    // The chart is not updated because `chartOptions` has not changed.
-    this.setState({ hoverData: e.target.category });
-  }
-
-  getChartOptions() {
-    return new Object({
-      chart: {
-        width: 625,
-        height: 299,
-        backgroundColor: '#eeeeee',
-      },
-      title: null,
-      xAxis: this.props.xAxis,
-      yAxis: {
-        title: { enabled: false },
-      },
-      series: this.props.series,
-      plotOptions: {
-        series: {
-          point: {
-            events: {
-              mouseOver: this.setHoverData.bind(this),
-            },
+  const chartOptions = {
+    xAxis,
+    series,
+    chart: {
+      width: 625,
+      height: 299,
+      backgroundColor: "#eeeeee",
+    },
+    title: null,
+    yAxis: {
+      title: { enabled: false },
+    },
+    plotOptions: {
+      series: {
+        point: {
+          events: {
+            mouseOver: ({ target }) =>
+              setHoverData({ hoverData: target.category }),
           },
         },
       },
-      legend: { enabled: false },
-      credits: { enabled: false },
-    });
+    },
+    legend: { enabled: false },
+    credits: { enabled: false },
+  };
+
+  // is this something this component should handle?
+  // I think loading message should be displayed by the component which loads the data and calls this component - juhq
+  if (!xAxis || xAxis.length === 0 || !series || series.length === 0) {
+    return <div> loading ... </div>;
   }
 
-  render() {
-    if (!this.props.xAxis || this.props.xAxis.length === 0 || !this.props.series || this.props.series.length === 0) {
-      return <div> loading ... </div>;
-    }
-    const chartOptions = this.getChartOptions();
-    return <HighchartsReact highcharts={Highcharts} options={chartOptions} />;
-  }
-}
+  return <HighchartsReact highcharts={Highcharts} options={chartOptions} />;
+};
