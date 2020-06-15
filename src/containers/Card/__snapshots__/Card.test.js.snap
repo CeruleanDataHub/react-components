@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should render card 1`] = `
+<div
+  className="sc-AxjAm gScDlw"
+>
+  <div
+    className="sc-AxirZ kQdpxI"
+  >
+    <span
+      className="sc-AxiKw dOZMEv lnr"
+    />
+    <h3
+      className="sc-AxhCb ICwhD"
+    >
+      
+    </h3>
+    <div
+      className="sc-AxhUy fNfuCs"
+    >
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Card should render card with children 1`] = `
+<div
+  className="sc-AxjAm gScDlw"
+>
+  <div
+    className="sc-AxirZ kQdpxI"
+  >
+    <span
+      className="sc-AxiKw dOZMEv lnr"
+    />
+    <h3
+      className="sc-AxhCb ICwhD"
+    >
+      
+    </h3>
+    <div
+      className="sc-AxhUy fNfuCs"
+    >
+      Children textual content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Card should render card with item 1`] = `
+<div
+  className="sc-AxjAm gScDlw"
+>
+  <div
+    className="sc-AxirZ kQdpxI"
+  >
+    <span
+      className="sc-AxiKw dOZMEv lnr lnr-users"
+    />
+    <h3
+      className="sc-AxhCb ICwhD"
+    >
+      Users
+    </h3>
+    <div
+      className="sc-AxhUy fNfuCs"
+    >
+      
+    </div>
+  </div>
+</div>
+`;
