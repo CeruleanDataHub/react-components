@@ -11,6 +11,8 @@
   "scripts": {
     "build": "webpack --mode=production",
     "dev": "webpack --mode=development",
+    "test": "jest",
+    "test-watch": "jest --watch",
     "watch": "webpack --watch",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
@@ -45,10 +47,12 @@
     "@testing-library/user-event": "^7.2.1",
     "babel-loader": "^8.1.0",
     "file-loader": "^6.0.0",
+    "jest": "^26.0.1",
+    "prop-types": "^15.7.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-test-renderer": "^16.13.1",
     "styled-components": "^5.1.0",
-    "prop-types": "^15.7.2",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   },
