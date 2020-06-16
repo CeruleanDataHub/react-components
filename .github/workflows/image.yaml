@@ -3,8 +3,6 @@ name: storybook
 on:
   push:
     branches: [gh-action]
-    tags:
-      - v*
 
 jobs:
   build:
@@ -59,3 +57,15 @@ jobs:
             --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') \
             --build-arg VCS_REF=${GITHUB_SHA::8} \
             ${TAGS} --file Dockerfile .
+      -
+        name: Docker Login
+        if: success()
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        run: |
+          echo "${DOCKER_PASSWORD}" | docker login --username "${DOCKER_USERNAME}" --password-stdin
+      -
+        name: Docker Build
+        run: |
+          docker  build --output "type=image,push=true" ${{ steps.prepare.outputs.build_args }}
