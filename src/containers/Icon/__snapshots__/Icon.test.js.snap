@@ -35,3 +35,9 @@ exports[`Icon should render icon users 1`] = `
   className="sc-AxjAm jnaJRY lnr lnr-users"
 />
 `;
+
+exports[`Icon should render icon with custom styles 1`] = `
+<span
+  className="sc-AxirZ dPuKDt sc-AxjAm jnaJRY lnr lnr-home"
+/>
+`;

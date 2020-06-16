@@ -7,8 +7,8 @@ const IconStyled = styled.span`
   text-align: center;
 `;
 
-export const Icon = ({ name }) => (
-  <IconStyled className={["lnr", `lnr-${name}`]} />
+export const Icon = ({ name, as }) => (
+  <IconStyled className={["lnr", `lnr-${name}`]} as={as} />
 );
 
 export const names = ["home", "users", "rocket", "briefcase", "cog", "eye"];
@@ -16,8 +16,14 @@ export const iconNameProps = PropTypes.oneOf(names);
 
 Icon.propTypes = {
   name: iconNameProps,
+  as: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.string,
+    PropTypes.shape({ render: PropTypes.func.isRequired }),
+  ]),
 };
 
 Icon.defaultProps = {
   name: "",
+  as: null,
 };

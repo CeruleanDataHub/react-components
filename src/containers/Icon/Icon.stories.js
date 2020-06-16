@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 
 import { Icon, names } from "./Icon";
 
@@ -13,3 +14,11 @@ export const IconStory = () =>
       <Icon name={name} />
     </span>
   ));
+
+const CustomIcon = styled.span`
+  font-size: 1.5em;
+  margin-right: 1.75rem;
+  background-color: red;
+`;
+
+export const IconStyled = () => <Icon name="home" as={CustomIcon} />;
