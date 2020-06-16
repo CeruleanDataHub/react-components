@@ -2,7 +2,9 @@ import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
-const Icon = styled.span`
+import { Icon, iconNameProps } from "../Icon/Icon";
+
+const MenuIcon = styled.span`
   font-size: 1.5em;
   margin-right: 1.75rem;
   float: left;
@@ -32,7 +34,7 @@ const renderItems = ({ items, menuOpen }) =>
   items &&
   items.map((item) => (
     <MenuItem key={item.name}>
-      <Icon className={["lnr", item.iconClass]} />
+      <Icon name={item.icon} as={MenuIcon} />
       <MenuItemText menuOpen={menuOpen}>{item.name}</MenuItemText>
     </MenuItem>
   ));
@@ -43,7 +45,7 @@ export const Menu = ({ items, menuOpen = true }) => (
 
 Menu.propTypes = {
   items: PropTypes.arrayOf(
-    PropTypes.shape({ name: PropTypes.string, iconClass: PropTypes.string })
+    PropTypes.shape({ name: PropTypes.string, icon: iconNameProps })
   ),
   menuOpen: PropTypes.bool,
 };

@@ -8,8 +8,8 @@ export default {
 };
 
 const items = [
-  { name: "First", iconClass: "lnr-cog" },
-  { name: "Second", iconClass: "lnr-eye" },
+  { name: "First", icon: "cog" },
+  { name: "Second", icon: "eye" },
 ];
 
 export const ChartStory = () => <Menu items={items} />;
