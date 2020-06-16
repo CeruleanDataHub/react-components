@@ -37,9 +37,9 @@ const CardBody = styled.div`
   text-align: center;
 `;
 
-export const Card = ({ item, children, ...restProps }) => (
+export const Card = ({ item, children }) => (
   <CardDash>
-    <CardContainer {...restProps}>
+    <CardContainer>
       <CardIcon className={["lnr", item.iconClass]} />
       <CardHeader>{item.title}</CardHeader>
       <CardBody>{children}</CardBody>
