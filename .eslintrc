@@ -3,5 +3,13 @@
   "plugins": ["jest"],
   "env": {
     "jest/globals": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["**/setupTest.js", "**/*.test.js"] }
+    ]
   }
 }
