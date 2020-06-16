@@ -38,11 +38,13 @@ export const AdminFrontpage = () => (
       <Menu items={menuItems} />
     </Navigation>
     <Dashboard>
-      <Card item={{ iconClass: "lnr-users", title: "Users" }}>100 users</Card>
-      <Card item={{ iconClass: "lnr-rocket", title: "Devices" }}>
+      <Card icon="users" title="Users">
+        100 users
+      </Card>
+      <Card icon="rocket" title="Devices">
         98 devices
       </Card>
-      <Card item={{ iconClass: "lnr-briefcase", title: "Costs" }}>
+      <Card icon="briefcase" title="Costs">
         300k € incured
       </Card>
     </Dashboard>
