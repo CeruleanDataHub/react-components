@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
-import { Icon } from "../Icon/Icon";
+import { Icon, iconNameProps } from "../Icon/Icon";
 
 const CardDash = styled.div`
   margin: "2em";
@@ -35,28 +35,24 @@ const CardBody = styled.div`
   text-align: center;
 `;
 
-export const Card = ({ item, children }) => (
+export const Card = ({ title, icon, children }) => (
   <CardDash>
     <CardContainer>
-      <Icon name={item.iconClass} />
-      <CardHeader>{item.title}</CardHeader>
+      {icon && <Icon name={icon} />}
+      {title && <CardHeader>{title}</CardHeader>}
       <CardBody>{children}</CardBody>
     </CardContainer>
   </CardDash>
 );
 
 Card.propTypes = {
-  item: PropTypes.shape({
-    iconClass: PropTypes.string,
-    title: PropTypes.string,
-  }),
+  title: PropTypes.string,
+  icon: iconNameProps,
   children: PropTypes.node,
 };
 
 Card.defaultProps = {
-  item: {
-    iconClass: "",
-    title: "",
-  },
+  title: null,
+  icon: null,
   children: "",
 };

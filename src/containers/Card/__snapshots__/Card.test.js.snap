@@ -7,14 +7,6 @@ exports[`Card should render card 1`] = `
   <div
     className="sc-AxiKw wDwik"
   >
-    <span
-      className="sc-AxjAm jnaJRY lnr lnr-"
-    />
-    <h3
-      className="sc-AxhCb ICwhD"
-    >
-      
-    </h3>
     <div
       className="sc-AxhUy fNfuCs"
     >
@@ -31,14 +23,6 @@ exports[`Card should render card with children 1`] = `
   <div
     className="sc-AxiKw wDwik"
   >
-    <span
-      className="sc-AxjAm jnaJRY lnr lnr-"
-    />
-    <h3
-      className="sc-AxhCb ICwhD"
-    >
-      
-    </h3>
     <div
       className="sc-AxhUy fNfuCs"
     >
@@ -48,7 +32,7 @@ exports[`Card should render card with children 1`] = `
 </div>
 `;
 
-exports[`Card should render card with item 1`] = `
+exports[`Card should render card with icon 1`] = `
 <div
   className="sc-AxirZ bnGNSL"
 >
@@ -56,7 +40,7 @@ exports[`Card should render card with item 1`] = `
     className="sc-AxiKw wDwik"
   >
     <span
-      className="sc-AxjAm jnaJRY lnr lnr-lnr-users"
+      className="sc-AxjAm jnaJRY lnr lnr-users"
     />
     <h3
       className="sc-AxhCb ICwhD"
@@ -67,6 +51,30 @@ exports[`Card should render card with item 1`] = `
       className="sc-AxhUy fNfuCs"
     >
       
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Card should render card with icon and children 1`] = `
+<div
+  className="sc-AxirZ bnGNSL"
+>
+  <div
+    className="sc-AxiKw wDwik"
+  >
+    <span
+      className="sc-AxjAm jnaJRY lnr lnr-users"
+    />
+    <h3
+      className="sc-AxhCb ICwhD"
+    >
+      Users
+    </h3>
+    <div
+      className="sc-AxhUy fNfuCs"
+    >
+      Children textual content
     </div>
   </div>
 </div>
