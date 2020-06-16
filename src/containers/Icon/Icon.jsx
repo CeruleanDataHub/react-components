@@ -7,14 +7,15 @@ const IconStyled = styled.span`
   text-align: center;
 `;
 
-export const names = ["home", "users", "rocket", "briefcase", "cog", "eye"];
-
 export const Icon = ({ name }) => (
   <IconStyled className={["lnr", `lnr-${name}`]} />
 );
 
+export const names = ["home", "users", "rocket", "briefcase", "cog", "eye"];
+export const iconNameProps = PropTypes.oneOf(names);
+
 Icon.propTypes = {
-  name: PropTypes.oneOf(names),
+  name: iconNameProps,
 };
 
 Icon.defaultProps = {

@@ -6,12 +6,6 @@ exports[`Icon should render icon briefcase 1`] = `
 />
 `;
 
-exports[`Icon should render icon briefczse 1`] = `
-<span
-  className="sc-AxjAm jnaJRY lnr lnr-briefczse"
-/>
-`;
-
 exports[`Icon should render icon cog 1`] = `
 <span
   className="sc-AxjAm jnaJRY lnr lnr-cog"
