@@ -1,6 +1,6 @@
 name: storybook
 
-on: 
+on:
   push:
     branches: [gh-action]
     tags:
@@ -14,20 +14,34 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - 
+      -
         name: Version
         id: Version
         run: |
           set -e
-          export VERSION=$(jq '.version' < package.json | sed 's/"//g') 
+          export VERSION=$(jq '.version' < package.json | sed 's/"//g')
           echo "::set-env name=VERSION::$VERSION"
       -
+        name: Install
+        id: Install
+        run: |
+          npm install
+      -
+        name: Eslint
+        id: Eslint
+        run: |
+          npm run lint
+      -
+        name: Test
+        id: Test
+        run: |
+          npm test
+      -
         name: Build
-        id: Build 
+        id: Build
         run: |
           set -e
           echo $VERSION
-          npm install
           npm run build-storybook
       -
         name: Prepare
@@ -35,9 +49,9 @@ jobs:
         run: |
           DOCKER_IMAGE=ceruleandatahub/component-storybook
           DOCKER_PLATFORMS=linux/amd64
-          
+
           TAGS="--tag ${DOCKER_IMAGE}:${VERSION}"
-          
+
           echo ::set-output name=docker_image::${DOCKER_IMAGE}
           echo ::set-output name=version::${VERSION}
           echo ::set-output name=build_args::--platform ${DOCKER_PLATFORMS} \
@@ -45,4 +59,3 @@ jobs:
             --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') \
             --build-arg VCS_REF=${GITHUB_SHA::8} \
             ${TAGS} --file Dockerfile .
-      
