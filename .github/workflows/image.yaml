@@ -46,13 +46,12 @@ jobs:
         id: Prepare
         run: |
           DOCKER_IMAGE=ceruleandatahub/component-storybook
-          DOCKER_PLATFORMS=linux/amd64
-
+          
           TAGS="--tag ${DOCKER_IMAGE}:${VERSION}"
 
           echo ::set-output name=docker_image::${DOCKER_IMAGE}
           echo ::set-output name=version::${VERSION}
-          echo ::set-output name=build_args::--platform ${DOCKER_PLATFORMS} \
+          echo ::set-output name=build_args \
             --build-arg VERSION=${VERSION} \
             --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') \
             --build-arg VCS_REF=${GITHUB_SHA::8} \
