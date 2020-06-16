@@ -21,6 +21,11 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -62,6 +67,7 @@
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^2.5.0",
     "file-loader": "^6.0.0",
+    "husky": "^4.2.5",
     "jest": "^26.0.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
