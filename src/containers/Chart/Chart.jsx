@@ -1,9 +1,11 @@
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
+import PropTypes from "prop-types";
 import React, { useState } from "react";
 
 export const Chart = ({ xAxis, series }) => {
   // hoverData is not used
+  // eslint-disable-next-line no-unused-vars
   const [hoverData, setHoverData] = useState(null);
 
   const chartOptions = {
@@ -39,4 +41,21 @@ export const Chart = ({ xAxis, series }) => {
   }
 
   return <HighchartsReact highcharts={Highcharts} options={chartOptions} />;
+};
+
+Chart.propTypes = {
+  xAxis: PropTypes.arrayOf(
+    PropTypes.shape({ categories: PropTypes.arrayOf(PropTypes.string) })
+  ),
+  series: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      data: PropTypes.arrayOf(PropTypes.number),
+    })
+  ),
+};
+
+Chart.defaultProps = {
+  xAxis: [],
+  series: [],
 };
