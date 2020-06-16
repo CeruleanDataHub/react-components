@@ -1,6 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import logo from '../../assets/images/Denim_Logo_Color.png';
+import React from "react";
+import styled from "styled-components";
+
+import logo from "../../assets/images/Denim_Logo_Color.png";
 
 const TopHeader = styled.header`
   position: fixed;
@@ -14,12 +15,8 @@ const Logo = styled.img`
   margin-left: 4em;
 `;
 
-export class Header extends React.Component {
-  render() {
-    return (
-      <TopHeader id="header" image={logo}>
-        <Logo src={logo} />
-      </TopHeader>
-    );
-  }
-}
+export const Header = () => (
+  <TopHeader id="header" image={logo}>
+    <Logo src={logo} />
+  </TopHeader>
+);
