@@ -9,8 +9,6 @@ export default {
 
 export const CardStory = () => (
   <div style={{ width: "500px" }}>
-    <Card item={{ iconClass: "lnr-users", title: "Users" }}>
-      You have 30 users
-    </Card>
+    <Card item={{ iconClass: "users", title: "Users" }}>You have 30 users</Card>
   </div>
 );

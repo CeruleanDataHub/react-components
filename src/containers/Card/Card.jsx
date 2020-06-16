@@ -2,6 +2,8 @@ import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
+import { Icon } from "../Icon/Icon";
+
 const CardDash = styled.div`
   margin: "2em";
   border-radius: 0.5em;
@@ -23,10 +25,6 @@ const CardContainer = styled.div`
   padding: 1em;
   box-sizing: border-box;
 `;
-const CardIcon = styled.span`
-  font-size: 4rem;
-  text-align: center;
-`;
 const CardHeader = styled.h3`
   font-family: "Exo 2", sans-serif;
   font-weight: 400;
@@ -40,7 +38,7 @@ const CardBody = styled.div`
 export const Card = ({ item, children }) => (
   <CardDash>
     <CardContainer>
-      <CardIcon className={["lnr", item.iconClass]} />
+      <Icon name={item.iconClass} />
       <CardHeader>{item.title}</CardHeader>
       <CardBody>{children}</CardBody>
     </CardContainer>

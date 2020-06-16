@@ -2,13 +2,13 @@
 
 exports[`Card should render card 1`] = `
 <div
-  className="sc-AxjAm gScDlw"
+  className="sc-AxirZ bnGNSL"
 >
   <div
-    className="sc-AxirZ kQdpxI"
+    className="sc-AxiKw wDwik"
   >
     <span
-      className="sc-AxiKw dOZMEv lnr"
+      className="sc-AxjAm jnaJRY lnr lnr-"
     />
     <h3
       className="sc-AxhCb ICwhD"
@@ -26,13 +26,13 @@ exports[`Card should render card 1`] = `
 
 exports[`Card should render card with children 1`] = `
 <div
-  className="sc-AxjAm gScDlw"
+  className="sc-AxirZ bnGNSL"
 >
   <div
-    className="sc-AxirZ kQdpxI"
+    className="sc-AxiKw wDwik"
   >
     <span
-      className="sc-AxiKw dOZMEv lnr"
+      className="sc-AxjAm jnaJRY lnr lnr-"
     />
     <h3
       className="sc-AxhCb ICwhD"
@@ -50,13 +50,13 @@ exports[`Card should render card with children 1`] = `
 
 exports[`Card should render card with item 1`] = `
 <div
-  className="sc-AxjAm gScDlw"
+  className="sc-AxirZ bnGNSL"
 >
   <div
-    className="sc-AxirZ kQdpxI"
+    className="sc-AxiKw wDwik"
   >
     <span
-      className="sc-AxiKw dOZMEv lnr lnr-users"
+      className="sc-AxjAm jnaJRY lnr lnr-lnr-users"
     />
     <h3
       className="sc-AxhCb ICwhD"
