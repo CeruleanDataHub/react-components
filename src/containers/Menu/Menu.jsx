@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Icon = styled.span`
   font-size: 1.5em;
@@ -19,33 +19,23 @@ const MenuItem = styled.li`
   line-height: 1.5em;
   height: 1.5em;
   font-weight: 300;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   text-transform: uppercase;
 `;
 
 const MenuItemText = styled.span`
-  display: ${(props) => (props.menuOpen ? 'block' : 'none')};
+  display: ${(props) => (props.menuOpen ? "block" : "none")};
 `;
 
-export class Menu extends React.Component {
-  render() {
-    // TODO: menu state from redux in the future
-    const menuOpen = true;
-    return <MenuItems>{this.renderItems(this.props.items, menuOpen)}</MenuItems>;
-  }
+const renderItems = ({ items, menuOpen }) =>
+  items &&
+  items.map((item) => (
+    <MenuItem key={item.name}>
+      <Icon className={["lnr", item.iconClass]} />
+      <MenuItemText menuOpen={menuOpen}>{item.name}</MenuItemText>
+    </MenuItem>
+  ));
 
-  renderItems(items, menuOpen) {
-    return (
-      items &&
-      items.map((item) => {
-        const classes = ['lnr', item.iconClass];
-        return (
-          <MenuItem>
-            <Icon className={classes} />
-            <MenuItemText menuOpen={menuOpen}>{item.name}</MenuItemText>
-          </MenuItem>
-        );
-      })
-    );
-  }
-}
+export const Menu = ({ items, menuOpen = true }) => (
+  <MenuItems>{renderItems({ items, menuOpen })}</MenuItems>
+);
