@@ -15,19 +15,19 @@ export default {
 const menuItems = [
   {
     name: "Home",
-    iconClass: "lnr-home",
+    icon: "home",
   },
   {
     name: "Users",
-    iconClass: "lnr-users",
+    icon: "users",
   },
   {
     name: "Devices",
-    iconClass: "lnr-rocket",
+    icon: "rocket",
   },
   {
     name: "Costs",
-    iconClass: "lnr-briefcase",
+    icon: "briefcase",
   },
 ];
 
