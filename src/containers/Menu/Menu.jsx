@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
@@ -39,3 +40,15 @@ const renderItems = ({ items, menuOpen }) =>
 export const Menu = ({ items, menuOpen = true }) => (
   <MenuItems>{renderItems({ items, menuOpen })}</MenuItems>
 );
+
+Menu.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({ name: PropTypes.string, iconClass: PropTypes.string })
+  ),
+  menuOpen: PropTypes.bool,
+};
+
+Menu.defaultProps = {
+  items: [],
+  menuOpen: true,
+};
