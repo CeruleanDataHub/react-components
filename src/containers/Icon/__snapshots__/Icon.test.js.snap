@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon should render icon briefcase 1`] = `
+<span
+  className="sc-AxjAm jnaJRY lnr lnr-briefcase"
+/>
+`;
+
+exports[`Icon should render icon briefczse 1`] = `
+<span
+  className="sc-AxjAm jnaJRY lnr lnr-briefczse"
+/>
+`;
+
+exports[`Icon should render icon cog 1`] = `
+<span
+  className="sc-AxjAm jnaJRY lnr lnr-cog"
+/>
+`;
+
+exports[`Icon should render icon eye 1`] = `
+<span
+  className="sc-AxjAm jnaJRY lnr lnr-eye"
+/>
+`;
+
+exports[`Icon should render icon home 1`] = `
+<span
+  className="sc-AxjAm jnaJRY lnr lnr-home"
+/>
+`;
+
+exports[`Icon should render icon rocket 1`] = `
+<span
+  className="sc-AxjAm jnaJRY lnr lnr-rocket"
+/>
+`;
+
+exports[`Icon should render icon users 1`] = `
+<span
+  className="sc-AxjAm jnaJRY lnr lnr-users"
+/>
+`;
