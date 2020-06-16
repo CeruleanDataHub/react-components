@@ -1,5 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
+import PropTypes from "prop-types";
+import React from "react";
+import styled from "styled-components";
 
 const DashboardContainer = styled.section`
   margin-left: 18em;
@@ -7,18 +8,22 @@ const DashboardContainer = styled.section`
   grid-template-columns: ${(props) => props.columns};
 `;
 
-export class Dashboard extends React.Component {
-  render() {
-    let columns;
-    if (Array.isArray(this.props.children)) {
-      columns = this.props.children.map((_) => 'auto').join(' ');
-    } else {
-      columns = 'auto';
-    }
-    return (
-      <DashboardContainer id="dashboard" columns={columns}>
-        {this.props.children}
-      </DashboardContainer>
-    );
-  }
-}
+export const Dashboard = ({ children }) => {
+  const columns = Array.isArray(children)
+    ? children.map(() => "auto").join(" ")
+    : "auto";
+
+  return (
+    <DashboardContainer id="dashboard" columns={columns}>
+      {children}
+    </DashboardContainer>
+  );
+};
+
+Dashboard.propTypes = {
+  children: PropTypes.node,
+};
+
+Dashboard.defaultProps = {
+  children: "",
+};

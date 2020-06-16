@@ -1,8 +1,9 @@
-import React from 'react';
-import { Dashboard } from './Dashboard.jsx';
+import React from "react";
+
+import { Dashboard } from "./Dashboard";
 
 export default {
-  title: 'Dashboard',
+  title: "Dashboard",
   component: Dashboard,
 };
 
