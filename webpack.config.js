@@ -39,4 +39,5 @@ module.exports = {
       commonjs2: "styled-components",
     },
   },
+  resolve: { extensions: [".js", ".jsx"] },
 };
