@@ -1,5 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
+import PropTypes from "prop-types";
+import React, { useState } from "react";
+import styled from "styled-components";
 
 const NavBar = styled.nav`
   position: fixed;
@@ -26,37 +27,23 @@ const MenuIcon = styled.span`
   margin: 0.5em;
 `;
 
-export class Navigation extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      menuOpen: true,
-    };
+export const Navigation = ({ children }) => {
+  const [menuOpen, setMenuOpen] = useState(true);
 
-    this.toggleMenu = this.toggleMenu.bind(this);
-  }
+  return (
+    <NavBar id="left-navigation" menuOpen={menuOpen}>
+      <MenuOpen onClick={() => setMenuOpen(!menuOpen)}>
+        <MenuIcon className={["lnr", menuOpen ? "lnr-cross" : "lnr-menu"]} />
+      </MenuOpen>
+      {children}
+    </NavBar>
+  );
+};
 
-  toggleMenu() {
-    console.log('toggling state');
-    this.setState({ menuOpen: !this.state.menuOpen });
-  }
+Navigation.propTypes = {
+  children: PropTypes.node,
+};
 
-  render() {
-    const { menuOpen } = this.state;
-    let menuIconClasses = ['lnr'];
-    if (menuOpen) {
-      menuIconClasses.push('lnr-cross');
-    } else {
-      menuIconClasses.push('lnr-menu');
-    }
-
-    return (
-      <NavBar id="left-navigation" menuOpen={menuOpen}>
-        <MenuOpen onClick={this.toggleMenu}>
-          <MenuIcon className={menuIconClasses}></MenuIcon>
-        </MenuOpen>
-        {this.props.children}
-      </NavBar>
-    );
-  }
-}
+Navigation.defaultProps = {
+  children: "",
+};
