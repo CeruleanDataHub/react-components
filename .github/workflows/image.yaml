@@ -43,10 +43,9 @@ jobs:
           echo $VERSION
           npm run build-storybook
           npm run build
-          npm config set '//registry.npmjs.org/:_authToken' "${NPM_AUTH_TOKEN}"
           npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       -
         name: Prepare
         id: Prepare
