@@ -1,8 +1,11 @@
 {
-  "name": "@denim/react-components",
+  "name": "@ceruleandatahub/react-components",
   "version": "0.2.0",
   "author": "Antti Rintala <antti.rintala@houston-inc.com>",
   "main": "dist/index.js",
+  "files": [
+    "dist/*"
+  ],
   "dependencies": {
     "react-scripts": "3.4.1",
     "highcharts": "^8.1.0",
