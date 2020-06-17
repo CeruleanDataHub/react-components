@@ -2,6 +2,8 @@ import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
+import { Icon } from "../Icon/Icon";
+
 const CheckboxContainer = styled.div`
   display: inline-flex;
   cursor: pointer;
@@ -28,6 +30,15 @@ const StyledCheckbox = styled.div`
   background: ${(props) => (props.checked ? "black" : "white")};
 `;
 
+const CheckmarkIcon = styled.span`
+  color: white;
+  font-size: 0.75em;
+  font-weight: bold;
+  position: relative;
+  top: -1px;
+  left: 2px;
+`;
+
 const CheckboxLabel = styled.span`
   color: #333;
   margin-left: 0.5em;
@@ -37,7 +48,9 @@ export const Checkbox = ({ className, checked, label, onChange }) => {
   return (
     <CheckboxContainer className={className}>
       <HiddenCheckbox checked={checked} onChange={onChange} />
-      <StyledCheckbox checked={checked} />
+      <StyledCheckbox checked={checked}>
+        {checked && <Icon name="checkmark" as={CheckmarkIcon} />}
+      </StyledCheckbox>
       <CheckboxLabel>{label}</CheckboxLabel>
     </CheckboxContainer>
   );
