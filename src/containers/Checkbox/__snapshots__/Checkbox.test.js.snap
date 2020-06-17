@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox should render Checkbox 1`] = `
+<div
+  className="sc-AxjAm bZgKdj"
+>
+  <input
+    checked={false}
+    className="sc-AxirZ cUxUGs"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <div
+    checked={false}
+    className="sc-AxiKw eyxfax"
+  />
+  <span
+    className="sc-AxhCb lfLCdy"
+  >
+    
+  </span>
+</div>
+`;
+
+exports[`Checkbox should render Checkbox with checked prop 1`] = `
+<div
+  className="sc-AxjAm bZgKdj"
+>
+  <input
+    checked={true}
+    className="sc-AxirZ cUxUGs"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <div
+    checked={true}
+    className="sc-AxiKw EdcCz"
+  />
+  <span
+    className="sc-AxhCb lfLCdy"
+  >
+    
+  </span>
+</div>
+`;
