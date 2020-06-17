@@ -8,13 +8,9 @@ export default {
 };
 
 export const CheckboxDefault = () => (
-  <Checkbox
-    checked={false}
-    label="Checkbox not checked"
-    handleChange={() => {}}
-  />
+  <Checkbox checked={false} label="Checkbox not checked" onChange={() => {}} />
 );
 
 export const CheckboxChecked = () => (
-  <Checkbox checked label="Checkbox checked" handleChange={() => {}} />
+  <Checkbox checked label="Checkbox checked" onChange={() => {}} />
 );

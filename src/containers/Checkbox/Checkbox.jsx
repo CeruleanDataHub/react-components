@@ -33,10 +33,10 @@ const CheckboxLabel = styled.span`
   margin-left: 0.5em;
 `;
 
-export const Checkbox = ({ className, checked, label, handleChange }) => {
+export const Checkbox = ({ className, checked, label, onChange }) => {
   return (
     <CheckboxContainer className={className}>
-      <HiddenCheckbox checked={checked} onChange={handleChange} />
+      <HiddenCheckbox checked={checked} onChange={onChange} />
       <StyledCheckbox checked={checked} />
       <CheckboxLabel>{label}</CheckboxLabel>
     </CheckboxContainer>
@@ -47,12 +47,12 @@ Checkbox.propTypes = {
   className: PropTypes.string,
   checked: PropTypes.bool,
   label: PropTypes.string,
-  handleChange: PropTypes.func,
+  onChange: PropTypes.func,
 };
 
 Checkbox.defaultProps = {
   className: "",
   checked: false,
   label: "",
-  handleChange: () => {},
+  onChange: () => {},
 };
