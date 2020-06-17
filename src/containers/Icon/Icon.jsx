@@ -12,7 +12,6 @@ export const Icon = ({ name, as }) => (
 );
 
 export const names = ["home", "users", "rocket", "briefcase", "cog", "eye"];
-export const iconNameProps = PropTypes.oneOf(names);
 
 Icon.propTypes = {
   name: PropTypes.oneOf(names),
