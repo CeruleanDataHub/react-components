@@ -15,7 +15,7 @@ export const names = ["home", "users", "rocket", "briefcase", "cog", "eye"];
 export const iconNameProps = PropTypes.oneOf(names);
 
 Icon.propTypes = {
-  name: iconNameProps,
+  name: PropTypes.oneOf(names),
   as: PropTypes.oneOfType([
     PropTypes.func,
     PropTypes.string,
