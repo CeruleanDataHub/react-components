@@ -8,10 +8,19 @@ const IconStyled = styled.span`
 `;
 
 export const Icon = ({ name, as }) => (
-  <IconStyled className={["lnr", `lnr-${name}`]} as={as} />
+  <IconStyled className={["lni", `lni-${name}`]} as={as} />
 );
 
-export const names = ["home", "users", "rocket", "briefcase", "cog", "eye"];
+export const names = [
+  "home",
+  "users",
+  "rocket",
+  "briefcase",
+  "cog",
+  "eye",
+  "checkmark",
+];
+export const iconNameProps = PropTypes.oneOf(names);
 
 Icon.propTypes = {
   name: PropTypes.oneOf(names),
