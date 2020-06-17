@@ -47,7 +47,7 @@ export const Card = ({ title, icon, children }) => (
 
 Card.propTypes = {
   title: PropTypes.string,
-  icon: iconNameProps,
+  icon: Icon.propTypes.name,
   children: PropTypes.node,
 };
 

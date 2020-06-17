@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
-import { Icon, iconNameProps } from "../Icon/Icon";
+import { Icon } from "../Icon/Icon";
 
 const MenuIcon = styled.span`
   font-size: 1.5em;
@@ -45,7 +45,7 @@ export const Menu = ({ items, menuOpen = true }) => (
 
 Menu.propTypes = {
   items: PropTypes.arrayOf(
-    PropTypes.shape({ name: PropTypes.string, icon: iconNameProps })
+    PropTypes.shape({ name: PropTypes.string, icon: Icon.propTypes.name })
   ),
   menuOpen: PropTypes.bool,
 };
