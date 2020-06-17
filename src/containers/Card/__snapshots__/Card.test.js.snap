@@ -40,7 +40,7 @@ exports[`Card should render card with icon 1`] = `
     className="sc-AxiKw wDwik"
   >
     <span
-      className="sc-AxjAm jnaJRY lnr lnr-users"
+      className="sc-AxjAm jnaJRY lni lni-users"
     />
     <h3
       className="sc-AxhCb ICwhD"
@@ -64,7 +64,7 @@ exports[`Card should render card with icon and children 1`] = `
     className="sc-AxiKw wDwik"
   >
     <span
-      className="sc-AxjAm jnaJRY lnr lnr-users"
+      className="sc-AxjAm jnaJRY lni lni-users"
     />
     <h3
       className="sc-AxhCb ICwhD"

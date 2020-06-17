@@ -2,20 +2,20 @@
 
 exports[`Checkbox should render Checkbox 1`] = `
 <div
-  className="sc-AxjAm bZgKdj"
+  className="sc-AxirZ jYsigk"
 >
   <input
     checked={false}
-    className="sc-AxirZ cUxUGs"
+    className="sc-AxiKw iRBKSw"
     onChange={[Function]}
     type="checkbox"
   />
   <div
     checked={false}
-    className="sc-AxiKw eyxfax"
+    className="sc-AxhCb cKTODx"
   />
   <span
-    className="sc-AxhCb lfLCdy"
+    className="sc-AxgMl ksYAfx"
   >
     
   </span>
@@ -24,20 +24,24 @@ exports[`Checkbox should render Checkbox 1`] = `
 
 exports[`Checkbox should render Checkbox with checked prop 1`] = `
 <div
-  className="sc-AxjAm bZgKdj"
+  className="sc-AxirZ jYsigk"
 >
   <input
     checked={true}
-    className="sc-AxirZ cUxUGs"
+    className="sc-AxiKw iRBKSw"
     onChange={[Function]}
     type="checkbox"
   />
   <div
     checked={true}
-    className="sc-AxiKw EdcCz"
-  />
+    className="sc-AxhCb eZOafX"
+  >
+    <span
+      className="sc-AxhUy fUSTcQ sc-AxjAm jnaJRY lni lni-checkmark"
+    />
+  </div>
   <span
-    className="sc-AxhCb lfLCdy"
+    className="sc-AxgMl ksYAfx"
   >
     
   </span>

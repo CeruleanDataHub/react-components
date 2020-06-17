@@ -2,42 +2,48 @@
 
 exports[`Icon should render icon briefcase 1`] = `
 <span
-  className="sc-AxjAm jnaJRY lnr lnr-briefcase"
+  className="sc-AxjAm jnaJRY lni lni-briefcase"
+/>
+`;
+
+exports[`Icon should render icon checkmark 1`] = `
+<span
+  className="sc-AxjAm jnaJRY lni lni-checkmark"
 />
 `;
 
 exports[`Icon should render icon cog 1`] = `
 <span
-  className="sc-AxjAm jnaJRY lnr lnr-cog"
+  className="sc-AxjAm jnaJRY lni lni-cog"
 />
 `;
 
 exports[`Icon should render icon eye 1`] = `
 <span
-  className="sc-AxjAm jnaJRY lnr lnr-eye"
+  className="sc-AxjAm jnaJRY lni lni-eye"
 />
 `;
 
 exports[`Icon should render icon home 1`] = `
 <span
-  className="sc-AxjAm jnaJRY lnr lnr-home"
+  className="sc-AxjAm jnaJRY lni lni-home"
 />
 `;
 
 exports[`Icon should render icon rocket 1`] = `
 <span
-  className="sc-AxjAm jnaJRY lnr lnr-rocket"
+  className="sc-AxjAm jnaJRY lni lni-rocket"
 />
 `;
 
 exports[`Icon should render icon users 1`] = `
 <span
-  className="sc-AxjAm jnaJRY lnr lnr-users"
+  className="sc-AxjAm jnaJRY lni lni-users"
 />
 `;
 
 exports[`Icon should render icon with custom styles 1`] = `
 <span
-  className="sc-AxirZ dPuKDt sc-AxjAm jnaJRY lnr lnr-home"
+  className="sc-AxirZ dPuKDt sc-AxjAm jnaJRY lni lni-home"
 />
 `;
