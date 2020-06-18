@@ -9,37 +9,42 @@ const chartDefaults = {
     height: 299,
     backgroundColor: "#eeeeee",
   },
-  title: null,
-  yAxis: {
-    title: { enabled: false },
-  },
-  legend: { enabled: false },
   credits: { enabled: false },
 };
 
-export const Chart = ({ xAxis, series }) => {
+export const Chart = ({ title, xAxis, series, type = "line" }) => {
   const chartOptions = {
     xAxis,
     series,
+    title: { text: title },
     ...chartDefaults,
+    chart: { ...chartDefaults.chart, type },
   };
 
   return <HighchartsReact highcharts={Highcharts} options={chartOptions} />;
 };
 
 Chart.propTypes = {
+  /** Title of the chart */
+  title: PropTypes.string,
+  /** Values for X axis */
   xAxis: PropTypes.arrayOf(
     PropTypes.shape({ categories: PropTypes.arrayOf(PropTypes.string) })
   ),
+  /** Data to be graphed */
   series: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string,
       data: PropTypes.arrayOf(PropTypes.number),
     })
   ),
+  /** Type of the chart */
+  type: PropTypes.oneOf(["line", "bar", "area", "areaspline"]),
 };
 
 Chart.defaultProps = {
+  title: "",
   xAxis: [],
   series: [],
+  type: "line",
 };
