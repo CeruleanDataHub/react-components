@@ -4,11 +4,6 @@ import styled from "styled-components";
 
 import { Icon } from "../Icon/Icon";
 
-const CheckboxContainer = styled.div`
-  display: inline-flex;
-  cursor: pointer;
-`;
-
 const HiddenCheckbox = styled.input.attrs({ type: "checkbox" })`
   border: 0;
   clip: rect(0 0 0 0);
@@ -42,6 +37,21 @@ const CheckmarkIcon = styled.span`
 const CheckboxLabel = styled.span`
   color: #333;
   margin-left: 0.5em;
+`;
+
+const CheckboxContainer = styled.label`
+  display: inline-flex;
+  cursor: pointer;
+
+  &:hover {
+    ${StyledCheckbox} {
+      border-color: #333;
+    }
+
+    ${CheckboxLabel} {
+      color: #666;
+    }
+  }
 `;
 
 export const Checkbox = ({ className, checked, label, onChange }) => {
