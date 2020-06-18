@@ -32,6 +32,7 @@ export const MultipleCheckBoxes = () => (
       <CheckboxWrapper
         onToggle={action(`checkbox-${index}-change`)}
         label={`Checkbox ${index}`}
+        key={index}
       />
     ))}
   </div>
