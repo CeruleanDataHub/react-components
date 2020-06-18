@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
-import { Icon, iconNameProps } from "../Icon/Icon";
+import { Icon } from "../Icon/Icon";
 
 const CardDash = styled.div`
   margin: "2em";
