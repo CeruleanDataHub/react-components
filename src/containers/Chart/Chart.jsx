@@ -28,14 +28,12 @@ Chart.propTypes = {
   /** Title of the chart */
   title: PropTypes.string,
   /** Values for X axis */
-  xAxis: PropTypes.arrayOf(
-    PropTypes.shape({ categories: PropTypes.arrayOf(PropTypes.string) })
-  ),
+  xAxis: PropTypes.arrayOf(PropTypes.shape({ categories: PropTypes.array })),
   /** Data to be graphed */
   series: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string,
-      data: PropTypes.arrayOf(PropTypes.number),
+      data: PropTypes.array,
     })
   ),
   /** Type of the chart */
