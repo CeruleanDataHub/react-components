@@ -21,6 +21,47 @@ const xAxis = [
   },
 ];
 
-const series = [{ name: "temperature", data: [10, 15, 20, 25, 15, 20, 15] }];
+const series = [
+  { name: "Temperature", data: [99, 80, 82, 59, 90, 6, 99] },
+  { name: "Humidity", data: [29, 39, 26, 53, 9, 46, 31] },
+];
 
-export const ChartStory = () => <Chart xAxis={xAxis} series={series} />;
+export const ChartStory = () => (
+  <Chart title="Chart" xAxis={xAxis} series={series} />
+);
+
+export const ChartLineStory = () => (
+  <Chart
+    title="Sauna histogram as line"
+    xAxis={xAxis}
+    series={series}
+    type="line"
+  />
+);
+
+export const ChartBarStory = () => (
+  <Chart
+    title="Sauna histogram as bar"
+    xAxis={xAxis}
+    series={series}
+    type="bar"
+  />
+);
+
+export const ChartAreaStory = () => (
+  <Chart
+    title="Sauna histogram as area chart"
+    xAxis={xAxis}
+    series={series}
+    type="area"
+  />
+);
+
+export const ChartAreaSplineStory = () => (
+  <Chart
+    title="Sauna histogram as area spline"
+    xAxis={xAxis}
+    series={series}
+    type="areaspline"
+  />
+);
