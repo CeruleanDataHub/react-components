@@ -1,49 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox should render Checkbox 1`] = `
-<div
-  className="sc-AxirZ jYsigk"
+<label
+  className="sc-AxgMl bIndAK"
 >
   <input
     checked={false}
-    className="sc-AxiKw iRBKSw"
+    className="sc-AxirZ cUxUGs"
     onChange={[Function]}
     type="checkbox"
   />
   <div
     checked={false}
-    className="sc-AxhCb cKTODx"
+    className="sc-AxiKw eyxfax"
   />
   <span
-    className="sc-AxgMl ksYAfx"
+    className="sc-AxhUy hvAUob"
   >
     
   </span>
-</div>
+</label>
 `;
 
 exports[`Checkbox should render Checkbox with checked prop 1`] = `
-<div
-  className="sc-AxirZ jYsigk"
+<label
+  className="sc-AxgMl bIndAK"
 >
   <input
     checked={true}
-    className="sc-AxiKw iRBKSw"
+    className="sc-AxirZ cUxUGs"
     onChange={[Function]}
     type="checkbox"
   />
   <div
     checked={true}
-    className="sc-AxhCb eZOafX"
+    className="sc-AxiKw EdcCz"
   >
     <span
-      className="sc-AxhUy fUSTcQ sc-AxjAm jnaJRY lni lni-checkmark"
+      className="sc-AxhCb ljccpJ sc-AxjAm jnaJRY lni lni-checkmark"
     />
   </div>
   <span
-    className="sc-AxgMl ksYAfx"
+    className="sc-AxhUy hvAUob"
   >
     
   </span>
-</div>
+</label>
 `;
