@@ -1865,22 +1865,17 @@ exports[`Chart should render chart 1`] = `
       "chart": Object {
         "backgroundColor": "#eeeeee",
         "height": 299,
+        "type": "line",
         "width": 625,
       },
       "credits": Object {
         "enabled": false,
       },
-      "legend": Object {
-        "enabled": false,
-      },
       "series": Array [],
-      "title": null,
-      "xAxis": Array [],
-      "yAxis": Object {
-        "title": Object {
-          "enabled": false,
-        },
+      "title": Object {
+        "text": "",
       },
+      "xAxis": Array [],
     }
   }
 />
@@ -3751,12 +3746,10 @@ exports[`Chart should render chart with simple data 1`] = `
       "chart": Object {
         "backgroundColor": "#eeeeee",
         "height": 299,
+        "type": "line",
         "width": 625,
       },
       "credits": Object {
-        "enabled": false,
-      },
-      "legend": Object {
         "enabled": false,
       },
       "series": Array [
@@ -3773,7 +3766,9 @@ exports[`Chart should render chart with simple data 1`] = `
           "name": "temperature",
         },
       ],
-      "title": null,
+      "title": Object {
+        "text": "",
+      },
       "xAxis": Array [
         Object {
           "categories": Array [
@@ -3787,11 +3782,6 @@ exports[`Chart should render chart with simple data 1`] = `
           ],
         },
       ],
-      "yAxis": Object {
-        "title": Object {
-          "enabled": false,
-        },
-      },
     }
   }
 />
