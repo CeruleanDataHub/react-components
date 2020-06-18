@@ -9,6 +9,8 @@ export default {
   component: Checkbox,
 };
 
+const checkboxes = [...Array(10).keys()].map((index) => index + 1);
+
 export const CheckboxDefault = () => (
   <Checkbox checked={false} label="Checkbox not checked" onChange={() => {}} />
 );
@@ -22,4 +24,15 @@ export const CheckboxToggle = () => (
     onToggle={action("checkbox-change")}
     label="Checkbox toggle"
   />
+);
+
+export const MultipleCheckBoxes = () => (
+  <div style={{ display: "flex", flexDirection: "column" }}>
+    {checkboxes.map((index) => (
+      <CheckboxWrapper
+        onToggle={action(`checkbox-${index}-change`)}
+        label={`Checkbox ${index}`}
+      />
+    ))}
+  </div>
 );

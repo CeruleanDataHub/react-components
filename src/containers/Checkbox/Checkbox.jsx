@@ -42,6 +42,7 @@ const CheckboxLabel = styled.span`
 const CheckboxContainer = styled.label`
   display: inline-flex;
   cursor: pointer;
+  margin: 0.25em 0;
 
   &:hover {
     ${StyledCheckbox} {

@@ -8,7 +8,7 @@ export const CheckboxWrapper = ({ onToggle, label }) => {
 
   const onCheckboxChange = event => {
     setChecked(event.target.checked);
-    onToggle();
+    onToggle(event.target.checked);
   };
 
   return (
