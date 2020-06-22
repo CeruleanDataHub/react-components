@@ -1,49 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox should render Checkbox 1`] = `
-<label
-  className="sc-AxgMl bIndAK"
+<styled.label
+  className=""
 >
-  <input
+  <styled.input
     checked={false}
-    className="sc-AxirZ cUxUGs"
     onChange={[Function]}
-    type="checkbox"
   />
-  <div
+  <styled.div
     checked={false}
-    className="sc-AxiKw eyxfax"
   />
-  <span
-    className="sc-AxhUy hvAUob"
-  >
-    
-  </span>
-</label>
+  <styled.span />
+</styled.label>
 `;
 
 exports[`Checkbox should render Checkbox with checked prop 1`] = `
-<label
-  className="sc-AxgMl bIndAK"
+<styled.label
+  className=""
 >
-  <input
+  <styled.input
     checked={true}
-    className="sc-AxirZ cUxUGs"
     onChange={[Function]}
-    type="checkbox"
   />
-  <div
+  <styled.div
     checked={true}
-    className="sc-AxiKw EdcCz"
   >
-    <span
-      className="sc-AxhCb ljccpJ sc-AxjAm jnaJRY lni lni-checkmark"
+    <Icon
+      as={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "baseHash": 1845756808,
+            "componentId": "sc-AxhCb",
+            "isStatic": false,
+            "rules": Array [
+              "
+  color: white;
+  font-size: 0.75em;
+  font-weight: bold;
+  position: relative;
+  top: -1px;
+  left: 2px;
+",
+            ],
+            "staticRulesId": "",
+          },
+          "displayName": "styled.span",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "shouldForwardProp": undefined,
+          "styledComponentId": "sc-AxhCb",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      name="checkmark"
     />
-  </div>
-  <span
-    className="sc-AxhUy hvAUob"
-  >
-    
-  </span>
-</label>
+  </styled.div>
+  <styled.span />
+</styled.label>
 `;
