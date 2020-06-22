@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Semi Donut should render chart 1`] = `
+<Chart
+  options={
+    Object {
+      "accessibility": Object {
+        "point": Object {
+          "valueSuffix": "%",
+        },
+      },
+      "chart": Object {
+        "plotBackgroundColor": null,
+        "plotBorderWidth": 0,
+        "plotShadow": false,
+      },
+      "plotOptions": Object {
+        "pie": Object {
+          "center": Array [
+            "50%",
+            "75%",
+          ],
+          "dataLabels": Object {
+            "distance": -50,
+            "enabled": true,
+            "style": Object {
+              "color": "white",
+              "fontWeight": "bold",
+            },
+          },
+          "endAngle": 90,
+          "size": "110%",
+          "startAngle": -90,
+        },
+      },
+      "series": Array [],
+      "title": Object {
+        "align": "center",
+        "text": "",
+        "verticalAlign": "middle",
+        "y": 60,
+      },
+      "tooltip": Object {
+        "pointFormat": "{series.name}: <b>{point.percentage:.1f}%</b>",
+      },
+    }
+  }
+  series={Array []}
+  title=""
+  type="line"
+  xAxis={Array []}
+/>
+`;
