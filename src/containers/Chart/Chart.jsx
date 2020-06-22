@@ -1,31 +1,38 @@
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
+import HighchartsWheel from "highcharts/modules/dependency-wheel";
+import HighchartSankey from "highcharts/modules/sankey";
 import PropTypes from "prop-types";
 import React from "react";
+
+HighchartSankey(Highcharts);
+HighchartsWheel(Highcharts);
 
 const chartDefaults = {
   chart: {
     width: 625,
     height: 299,
-    backgroundColor: "#eeeeee",
+    backgroundColor: "#eeeeee"
   },
-  credits: { enabled: false },
+  credits: { enabled: false }
 };
 
 export const Chart = ({
   title,
   xAxis,
+  yAxis,
   series,
   type = "line",
-  options = {},
+  options = {}
 }) => {
   const chartOptions = {
     xAxis,
+    yAxis,
     series,
     title: { text: title },
     ...chartDefaults,
     chart: { ...chartDefaults.chart, type },
-    ...options,
+    ...options
   };
 
   return <HighchartsReact highcharts={Highcharts} options={chartOptions} />;
@@ -36,24 +43,27 @@ Chart.propTypes = {
   title: PropTypes.string,
   /** Values for X axis */
   xAxis: PropTypes.arrayOf(PropTypes.shape({ categories: PropTypes.array })),
+  /** Values for Y axis */
+  yAxis: PropTypes.arrayOf(PropTypes.shape({ categories: PropTypes.array })),
   /** Data to be graphed */
   series: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string,
-      data: PropTypes.array,
+      data: PropTypes.array
     })
   ),
   /** Type of the chart */
   type: PropTypes.oneOf(["line", "bar", "area", "areaspline"]),
   /** You can use highcharts options to extend the chart behavior */
   // eslint-disable-next-line react/forbid-prop-types
-  options: PropTypes.object,
+  options: PropTypes.object
 };
 
 Chart.defaultProps = {
   title: "",
   xAxis: [],
+  yAxis: [],
   series: [],
   type: "line",
-  options: {},
+  options: {}
 };
