@@ -20,14 +20,12 @@ const chartDefaults = {
 export const Chart = ({
   title,
   xAxis,
-  yAxis,
   series,
   type = "line",
   options = {}
 }) => {
   const chartOptions = {
     xAxis,
-    yAxis,
     series,
     title: { text: title },
     ...chartDefaults,
@@ -43,8 +41,6 @@ Chart.propTypes = {
   title: PropTypes.string,
   /** Values for X axis */
   xAxis: PropTypes.arrayOf(PropTypes.shape({ categories: PropTypes.array })),
-  /** Values for Y axis */
-  yAxis: PropTypes.arrayOf(PropTypes.shape({ categories: PropTypes.array })),
   /** Data to be graphed */
   series: PropTypes.arrayOf(
     PropTypes.shape({
@@ -61,8 +57,7 @@ Chart.propTypes = {
 
 Chart.defaultProps = {
   title: "",
-  xAxis: [],
-  yAxis: [],
+  xAxis: null,
   series: [],
   type: "line",
   options: {}
