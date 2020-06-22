@@ -48,6 +48,6 @@ exports[`Semi Donut should render chart 1`] = `
   series={Array []}
   title=""
   type="line"
-  xAxis={Array []}
+  xAxis={null}
 />
 `;

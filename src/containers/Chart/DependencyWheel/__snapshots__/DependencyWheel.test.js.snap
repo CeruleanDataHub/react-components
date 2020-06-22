@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dependency Wheel should render chart 1`] = `
+<Chart
+  options={
+    Object {
+      "accessibility": Object {
+        "point": Object {
+          "valueDescriptionFormat": "{index}. From {point.from} to {point.to}: {point.weight}.",
+        },
+      },
+      "series": Array [],
+      "title": Object {
+        "text": "",
+      },
+    }
+  }
+  series={Array []}
+  title=""
+  type="line"
+  xAxis={null}
+/>
+`;
