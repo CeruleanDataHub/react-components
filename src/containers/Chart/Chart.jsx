@@ -12,13 +12,20 @@ const chartDefaults = {
   credits: { enabled: false },
 };
 
-export const Chart = ({ title, xAxis, series, type = "line" }) => {
+export const Chart = ({
+  title,
+  xAxis,
+  series,
+  type = "line",
+  options = {},
+}) => {
   const chartOptions = {
     xAxis,
     series,
     title: { text: title },
     ...chartDefaults,
     chart: { ...chartDefaults.chart, type },
+    ...options,
   };
 
   return <HighchartsReact highcharts={Highcharts} options={chartOptions} />;
@@ -38,6 +45,9 @@ Chart.propTypes = {
   ),
   /** Type of the chart */
   type: PropTypes.oneOf(["line", "bar", "area", "areaspline"]),
+  /** You can use highcharts options to extend the chart behavior */
+  // eslint-disable-next-line react/forbid-prop-types
+  options: PropTypes.object,
 };
 
 Chart.defaultProps = {
@@ -45,4 +55,5 @@ Chart.defaultProps = {
   xAxis: [],
   series: [],
   type: "line",
+  options: {},
 };
