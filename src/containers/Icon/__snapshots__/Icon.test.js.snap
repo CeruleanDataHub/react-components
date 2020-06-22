@@ -30,6 +30,12 @@ exports[`Icon should render icon home 1`] = `
 />
 `;
 
+exports[`Icon should render icon pyramids 1`] = `
+<span
+  className="sc-AxjAm jnaJRY lni lni-pyramids"
+/>
+`;
+
 exports[`Icon should render icon rocket 1`] = `
 <span
   className="sc-AxjAm jnaJRY lni lni-rocket"
