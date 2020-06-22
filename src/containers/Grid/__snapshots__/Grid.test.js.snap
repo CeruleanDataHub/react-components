@@ -2,8 +2,10 @@
 
 exports[`Grid should render grid 1`] = `
 <div
-  className="Grid__Grid-gDLjRO carhOg"
-/>
+  className="Grid__Grid-gDLjRO eNXUjX"
+>
+  
+</div>
 `;
 
 exports[`Grid should render grid with cell 1`] = `
