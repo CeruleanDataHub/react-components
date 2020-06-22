@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Grid should render grid 1`] = `
+<div
+  className="Grid__Grid-gDLjRO carhOg"
+/>
+`;
+
+exports[`Grid should render grid with cell 1`] = `
+<div
+  className="Grid__Grid-gDLjRO carhOg"
+>
+  <div
+    className="Cell__Cell-tAjrW dskkMt"
+  >
+    Content
+  </div>
+</div>
+`;
