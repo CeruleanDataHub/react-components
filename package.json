@@ -73,6 +73,7 @@
     "file-loader": "^6.0.0",
     "husky": "^4.2.5",
     "jest": "^26.0.1",
+    "jest-styled-components": "^7.0.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-test-renderer": "^16.13.1",
