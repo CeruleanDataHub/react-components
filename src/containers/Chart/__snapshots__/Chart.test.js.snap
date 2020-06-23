@@ -44,7 +44,9 @@ exports[`Chart should render chart 1`] = `
         "masters/highcharts.src.js": [Circular],
         "masters/modules/dependency-wheel.src.js": undefined,
         "masters/modules/sankey.src.js": undefined,
+        "masters/modules/treemap.src.js": undefined,
         "mixins/centered-series.js": undefined,
+        "mixins/draw-point.js": [Function],
         "mixins/legend-symbol.js": Object {
           "drawLineMarker": [Function],
           "drawRectangle": [Function],
@@ -59,6 +61,7 @@ exports[`Chart should render chart 1`] = `
         "modules/dependency-wheel.src.js": undefined,
         "modules/overlapping-datalabels.src.js": undefined,
         "modules/sankey.src.js": undefined,
+        "modules/treemap.src.js": undefined,
         "parts/AreaSeries.js": undefined,
         "parts/AreaSplineSeries.js": undefined,
         "parts/Axis.js": [Function],
@@ -1212,6 +1215,106 @@ exports[`Chart should render chart 1`] = `
             "stickyTracking": true,
             "turboThreshold": 1000,
           },
+          "treemap": Object {
+            "allowPointSelect": false,
+            "allowTraversingTree": false,
+            "alternateStartingDirection": false,
+            "animation": Object {
+              "duration": 1000,
+            },
+            "animationLimit": 250,
+            "borderColor": "#e6e6e6",
+            "borderWidth": 1,
+            "colorByPoint": false,
+            "colorKey": "colorValue",
+            "crisp": true,
+            "cropThreshold": 300,
+            "dataLabels": Object {
+              "align": "center",
+              "defer": false,
+              "enabled": true,
+              "formatter": [Function],
+              "inside": true,
+              "padding": 5,
+              "style": Object {
+                "color": "contrast",
+                "fontSize": "11px",
+                "fontWeight": "bold",
+                "textOutline": "1px contrast",
+              },
+              "verticalAlign": "middle",
+              "x": 0,
+              "y": 0,
+            },
+            "drillUpButton": Object {
+              "position": Object {
+                "align": "right",
+                "x": -10,
+                "y": 10,
+              },
+            },
+            "events": Object {},
+            "findNearestPointBy": "xy",
+            "ignoreHiddenPoint": true,
+            "jitter": Object {
+              "x": 0,
+              "y": 0,
+            },
+            "layoutAlgorithm": "sliceAndDice",
+            "layoutStartingDirection": "vertical",
+            "levelIsConstant": true,
+            "lineWidth": 0,
+            "marker": false,
+            "opacity": 0.15,
+            "point": Object {
+              "events": Object {},
+            },
+            "pointRange": 0,
+            "showCheckbox": false,
+            "showInLegend": false,
+            "softThreshold": true,
+            "states": Object {
+              "hover": Object {
+                "animation": Object {
+                  "duration": 50,
+                },
+                "borderColor": "#999999",
+                "brightness": 0.1,
+                "halo": false,
+                "lineWidthPlus": 1,
+                "marker": Object {},
+                "opacity": 0.75,
+                "shadow": false,
+              },
+              "inactive": Object {
+                "animation": Object {
+                  "duration": 50,
+                },
+                "opacity": 0.2,
+              },
+              "normal": Object {
+                "animation": true,
+              },
+              "select": Object {
+                "animation": Object {
+                  "duration": 0,
+                },
+              },
+            },
+            "stickyTracking": true,
+            "tooltip": Object {
+              "headerFormat": "",
+              "pointFormat": "<b>{point.name}</b>: {point.value}<br/>",
+            },
+            "traverseUpButton": Object {
+              "position": Object {
+                "align": "right",
+                "x": -10,
+                "y": 10,
+              },
+            },
+            "turboThreshold": 1000,
+          },
         },
         "subtitle": Object {
           "align": "center",
@@ -2130,6 +2233,106 @@ exports[`Chart should render chart 1`] = `
           "stickyTracking": true,
           "turboThreshold": 1000,
         },
+        "treemap": Object {
+          "allowPointSelect": false,
+          "allowTraversingTree": false,
+          "alternateStartingDirection": false,
+          "animation": Object {
+            "duration": 1000,
+          },
+          "animationLimit": 250,
+          "borderColor": "#e6e6e6",
+          "borderWidth": 1,
+          "colorByPoint": false,
+          "colorKey": "colorValue",
+          "crisp": true,
+          "cropThreshold": 300,
+          "dataLabels": Object {
+            "align": "center",
+            "defer": false,
+            "enabled": true,
+            "formatter": [Function],
+            "inside": true,
+            "padding": 5,
+            "style": Object {
+              "color": "contrast",
+              "fontSize": "11px",
+              "fontWeight": "bold",
+              "textOutline": "1px contrast",
+            },
+            "verticalAlign": "middle",
+            "x": 0,
+            "y": 0,
+          },
+          "drillUpButton": Object {
+            "position": Object {
+              "align": "right",
+              "x": -10,
+              "y": 10,
+            },
+          },
+          "events": Object {},
+          "findNearestPointBy": "xy",
+          "ignoreHiddenPoint": true,
+          "jitter": Object {
+            "x": 0,
+            "y": 0,
+          },
+          "layoutAlgorithm": "sliceAndDice",
+          "layoutStartingDirection": "vertical",
+          "levelIsConstant": true,
+          "lineWidth": 0,
+          "marker": false,
+          "opacity": 0.15,
+          "point": Object {
+            "events": Object {},
+          },
+          "pointRange": 0,
+          "showCheckbox": false,
+          "showInLegend": false,
+          "softThreshold": true,
+          "states": Object {
+            "hover": Object {
+              "animation": Object {
+                "duration": 50,
+              },
+              "borderColor": "#999999",
+              "brightness": 0.1,
+              "halo": false,
+              "lineWidthPlus": 1,
+              "marker": Object {},
+              "opacity": 0.75,
+              "shadow": false,
+            },
+            "inactive": Object {
+              "animation": Object {
+                "duration": 50,
+              },
+              "opacity": 0.2,
+            },
+            "normal": Object {
+              "animation": true,
+            },
+            "select": Object {
+              "animation": Object {
+                "duration": 0,
+              },
+            },
+          },
+          "stickyTracking": true,
+          "tooltip": Object {
+            "headerFormat": "",
+            "pointFormat": "<b>{point.name}</b>: {point.value}<br/>",
+          },
+          "traverseUpButton": Object {
+            "position": Object {
+              "align": "right",
+              "x": -10,
+              "y": 10,
+            },
+          },
+          "turboThreshold": 1000,
+        },
       },
       "defined": [Function],
       "deg2rad": 0.017453292519943295,
@@ -2225,6 +2428,7 @@ exports[`Chart should render chart 1`] = `
         "sankey": [Function],
         "scatter": [Function],
         "spline": [Function],
+        "treemap": [Function],
       },
       "setAnimation": [Function],
       "setOptions": [Function],
@@ -2276,6 +2480,11 @@ exports[`Chart should render chart 1`] = `
       },
       "credits": Object {
         "enabled": false,
+      },
+      "plotOptions": Object {
+        "series": Object {
+          "animation": false,
+        },
       },
       "series": Array [],
       "title": Object {
@@ -2331,7 +2540,9 @@ exports[`Chart should render chart with custom options 1`] = `
         "masters/highcharts.src.js": [Circular],
         "masters/modules/dependency-wheel.src.js": undefined,
         "masters/modules/sankey.src.js": undefined,
+        "masters/modules/treemap.src.js": undefined,
         "mixins/centered-series.js": undefined,
+        "mixins/draw-point.js": [Function],
         "mixins/legend-symbol.js": Object {
           "drawLineMarker": [Function],
           "drawRectangle": [Function],
@@ -2346,6 +2557,7 @@ exports[`Chart should render chart with custom options 1`] = `
         "modules/dependency-wheel.src.js": undefined,
         "modules/overlapping-datalabels.src.js": undefined,
         "modules/sankey.src.js": undefined,
+        "modules/treemap.src.js": undefined,
         "parts/AreaSeries.js": undefined,
         "parts/AreaSplineSeries.js": undefined,
         "parts/Axis.js": [Function],
@@ -3499,6 +3711,106 @@ exports[`Chart should render chart with custom options 1`] = `
             "stickyTracking": true,
             "turboThreshold": 1000,
           },
+          "treemap": Object {
+            "allowPointSelect": false,
+            "allowTraversingTree": false,
+            "alternateStartingDirection": false,
+            "animation": Object {
+              "duration": 1000,
+            },
+            "animationLimit": 250,
+            "borderColor": "#e6e6e6",
+            "borderWidth": 1,
+            "colorByPoint": false,
+            "colorKey": "colorValue",
+            "crisp": true,
+            "cropThreshold": 300,
+            "dataLabels": Object {
+              "align": "center",
+              "defer": false,
+              "enabled": true,
+              "formatter": [Function],
+              "inside": true,
+              "padding": 5,
+              "style": Object {
+                "color": "contrast",
+                "fontSize": "11px",
+                "fontWeight": "bold",
+                "textOutline": "1px contrast",
+              },
+              "verticalAlign": "middle",
+              "x": 0,
+              "y": 0,
+            },
+            "drillUpButton": Object {
+              "position": Object {
+                "align": "right",
+                "x": -10,
+                "y": 10,
+              },
+            },
+            "events": Object {},
+            "findNearestPointBy": "xy",
+            "ignoreHiddenPoint": true,
+            "jitter": Object {
+              "x": 0,
+              "y": 0,
+            },
+            "layoutAlgorithm": "sliceAndDice",
+            "layoutStartingDirection": "vertical",
+            "levelIsConstant": true,
+            "lineWidth": 0,
+            "marker": false,
+            "opacity": 0.15,
+            "point": Object {
+              "events": Object {},
+            },
+            "pointRange": 0,
+            "showCheckbox": false,
+            "showInLegend": false,
+            "softThreshold": true,
+            "states": Object {
+              "hover": Object {
+                "animation": Object {
+                  "duration": 50,
+                },
+                "borderColor": "#999999",
+                "brightness": 0.1,
+                "halo": false,
+                "lineWidthPlus": 1,
+                "marker": Object {},
+                "opacity": 0.75,
+                "shadow": false,
+              },
+              "inactive": Object {
+                "animation": Object {
+                  "duration": 50,
+                },
+                "opacity": 0.2,
+              },
+              "normal": Object {
+                "animation": true,
+              },
+              "select": Object {
+                "animation": Object {
+                  "duration": 0,
+                },
+              },
+            },
+            "stickyTracking": true,
+            "tooltip": Object {
+              "headerFormat": "",
+              "pointFormat": "<b>{point.name}</b>: {point.value}<br/>",
+            },
+            "traverseUpButton": Object {
+              "position": Object {
+                "align": "right",
+                "x": -10,
+                "y": 10,
+              },
+            },
+            "turboThreshold": 1000,
+          },
         },
         "subtitle": Object {
           "align": "center",
@@ -4417,6 +4729,106 @@ exports[`Chart should render chart with custom options 1`] = `
           "stickyTracking": true,
           "turboThreshold": 1000,
         },
+        "treemap": Object {
+          "allowPointSelect": false,
+          "allowTraversingTree": false,
+          "alternateStartingDirection": false,
+          "animation": Object {
+            "duration": 1000,
+          },
+          "animationLimit": 250,
+          "borderColor": "#e6e6e6",
+          "borderWidth": 1,
+          "colorByPoint": false,
+          "colorKey": "colorValue",
+          "crisp": true,
+          "cropThreshold": 300,
+          "dataLabels": Object {
+            "align": "center",
+            "defer": false,
+            "enabled": true,
+            "formatter": [Function],
+            "inside": true,
+            "padding": 5,
+            "style": Object {
+              "color": "contrast",
+              "fontSize": "11px",
+              "fontWeight": "bold",
+              "textOutline": "1px contrast",
+            },
+            "verticalAlign": "middle",
+            "x": 0,
+            "y": 0,
+          },
+          "drillUpButton": Object {
+            "position": Object {
+              "align": "right",
+              "x": -10,
+              "y": 10,
+            },
+          },
+          "events": Object {},
+          "findNearestPointBy": "xy",
+          "ignoreHiddenPoint": true,
+          "jitter": Object {
+            "x": 0,
+            "y": 0,
+          },
+          "layoutAlgorithm": "sliceAndDice",
+          "layoutStartingDirection": "vertical",
+          "levelIsConstant": true,
+          "lineWidth": 0,
+          "marker": false,
+          "opacity": 0.15,
+          "point": Object {
+            "events": Object {},
+          },
+          "pointRange": 0,
+          "showCheckbox": false,
+          "showInLegend": false,
+          "softThreshold": true,
+          "states": Object {
+            "hover": Object {
+              "animation": Object {
+                "duration": 50,
+              },
+              "borderColor": "#999999",
+              "brightness": 0.1,
+              "halo": false,
+              "lineWidthPlus": 1,
+              "marker": Object {},
+              "opacity": 0.75,
+              "shadow": false,
+            },
+            "inactive": Object {
+              "animation": Object {
+                "duration": 50,
+              },
+              "opacity": 0.2,
+            },
+            "normal": Object {
+              "animation": true,
+            },
+            "select": Object {
+              "animation": Object {
+                "duration": 0,
+              },
+            },
+          },
+          "stickyTracking": true,
+          "tooltip": Object {
+            "headerFormat": "",
+            "pointFormat": "<b>{point.name}</b>: {point.value}<br/>",
+          },
+          "traverseUpButton": Object {
+            "position": Object {
+              "align": "right",
+              "x": -10,
+              "y": 10,
+            },
+          },
+          "turboThreshold": 1000,
+        },
       },
       "defined": [Function],
       "deg2rad": 0.017453292519943295,
@@ -4512,6 +4924,7 @@ exports[`Chart should render chart with custom options 1`] = `
         "sankey": [Function],
         "scatter": [Function],
         "spline": [Function],
+        "treemap": [Function],
       },
       "setAnimation": [Function],
       "setOptions": [Function],
@@ -4564,6 +4977,9 @@ exports[`Chart should render chart with custom options 1`] = `
       "plotOptions": Object {
         "column": Object {
           "stacking": "normal",
+        },
+        "series": Object {
+          "animation": false,
         },
       },
       "series": Array [
@@ -4682,7 +5098,9 @@ exports[`Chart should render chart with simple data 1`] = `
         "masters/highcharts.src.js": [Circular],
         "masters/modules/dependency-wheel.src.js": undefined,
         "masters/modules/sankey.src.js": undefined,
+        "masters/modules/treemap.src.js": undefined,
         "mixins/centered-series.js": undefined,
+        "mixins/draw-point.js": [Function],
         "mixins/legend-symbol.js": Object {
           "drawLineMarker": [Function],
           "drawRectangle": [Function],
@@ -4697,6 +5115,7 @@ exports[`Chart should render chart with simple data 1`] = `
         "modules/dependency-wheel.src.js": undefined,
         "modules/overlapping-datalabels.src.js": undefined,
         "modules/sankey.src.js": undefined,
+        "modules/treemap.src.js": undefined,
         "parts/AreaSeries.js": undefined,
         "parts/AreaSplineSeries.js": undefined,
         "parts/Axis.js": [Function],
@@ -5850,6 +6269,106 @@ exports[`Chart should render chart with simple data 1`] = `
             "stickyTracking": true,
             "turboThreshold": 1000,
           },
+          "treemap": Object {
+            "allowPointSelect": false,
+            "allowTraversingTree": false,
+            "alternateStartingDirection": false,
+            "animation": Object {
+              "duration": 1000,
+            },
+            "animationLimit": 250,
+            "borderColor": "#e6e6e6",
+            "borderWidth": 1,
+            "colorByPoint": false,
+            "colorKey": "colorValue",
+            "crisp": true,
+            "cropThreshold": 300,
+            "dataLabels": Object {
+              "align": "center",
+              "defer": false,
+              "enabled": true,
+              "formatter": [Function],
+              "inside": true,
+              "padding": 5,
+              "style": Object {
+                "color": "contrast",
+                "fontSize": "11px",
+                "fontWeight": "bold",
+                "textOutline": "1px contrast",
+              },
+              "verticalAlign": "middle",
+              "x": 0,
+              "y": 0,
+            },
+            "drillUpButton": Object {
+              "position": Object {
+                "align": "right",
+                "x": -10,
+                "y": 10,
+              },
+            },
+            "events": Object {},
+            "findNearestPointBy": "xy",
+            "ignoreHiddenPoint": true,
+            "jitter": Object {
+              "x": 0,
+              "y": 0,
+            },
+            "layoutAlgorithm": "sliceAndDice",
+            "layoutStartingDirection": "vertical",
+            "levelIsConstant": true,
+            "lineWidth": 0,
+            "marker": false,
+            "opacity": 0.15,
+            "point": Object {
+              "events": Object {},
+            },
+            "pointRange": 0,
+            "showCheckbox": false,
+            "showInLegend": false,
+            "softThreshold": true,
+            "states": Object {
+              "hover": Object {
+                "animation": Object {
+                  "duration": 50,
+                },
+                "borderColor": "#999999",
+                "brightness": 0.1,
+                "halo": false,
+                "lineWidthPlus": 1,
+                "marker": Object {},
+                "opacity": 0.75,
+                "shadow": false,
+              },
+              "inactive": Object {
+                "animation": Object {
+                  "duration": 50,
+                },
+                "opacity": 0.2,
+              },
+              "normal": Object {
+                "animation": true,
+              },
+              "select": Object {
+                "animation": Object {
+                  "duration": 0,
+                },
+              },
+            },
+            "stickyTracking": true,
+            "tooltip": Object {
+              "headerFormat": "",
+              "pointFormat": "<b>{point.name}</b>: {point.value}<br/>",
+            },
+            "traverseUpButton": Object {
+              "position": Object {
+                "align": "right",
+                "x": -10,
+                "y": 10,
+              },
+            },
+            "turboThreshold": 1000,
+          },
         },
         "subtitle": Object {
           "align": "center",
@@ -6768,6 +7287,106 @@ exports[`Chart should render chart with simple data 1`] = `
           "stickyTracking": true,
           "turboThreshold": 1000,
         },
+        "treemap": Object {
+          "allowPointSelect": false,
+          "allowTraversingTree": false,
+          "alternateStartingDirection": false,
+          "animation": Object {
+            "duration": 1000,
+          },
+          "animationLimit": 250,
+          "borderColor": "#e6e6e6",
+          "borderWidth": 1,
+          "colorByPoint": false,
+          "colorKey": "colorValue",
+          "crisp": true,
+          "cropThreshold": 300,
+          "dataLabels": Object {
+            "align": "center",
+            "defer": false,
+            "enabled": true,
+            "formatter": [Function],
+            "inside": true,
+            "padding": 5,
+            "style": Object {
+              "color": "contrast",
+              "fontSize": "11px",
+              "fontWeight": "bold",
+              "textOutline": "1px contrast",
+            },
+            "verticalAlign": "middle",
+            "x": 0,
+            "y": 0,
+          },
+          "drillUpButton": Object {
+            "position": Object {
+              "align": "right",
+              "x": -10,
+              "y": 10,
+            },
+          },
+          "events": Object {},
+          "findNearestPointBy": "xy",
+          "ignoreHiddenPoint": true,
+          "jitter": Object {
+            "x": 0,
+            "y": 0,
+          },
+          "layoutAlgorithm": "sliceAndDice",
+          "layoutStartingDirection": "vertical",
+          "levelIsConstant": true,
+          "lineWidth": 0,
+          "marker": false,
+          "opacity": 0.15,
+          "point": Object {
+            "events": Object {},
+          },
+          "pointRange": 0,
+          "showCheckbox": false,
+          "showInLegend": false,
+          "softThreshold": true,
+          "states": Object {
+            "hover": Object {
+              "animation": Object {
+                "duration": 50,
+              },
+              "borderColor": "#999999",
+              "brightness": 0.1,
+              "halo": false,
+              "lineWidthPlus": 1,
+              "marker": Object {},
+              "opacity": 0.75,
+              "shadow": false,
+            },
+            "inactive": Object {
+              "animation": Object {
+                "duration": 50,
+              },
+              "opacity": 0.2,
+            },
+            "normal": Object {
+              "animation": true,
+            },
+            "select": Object {
+              "animation": Object {
+                "duration": 0,
+              },
+            },
+          },
+          "stickyTracking": true,
+          "tooltip": Object {
+            "headerFormat": "",
+            "pointFormat": "<b>{point.name}</b>: {point.value}<br/>",
+          },
+          "traverseUpButton": Object {
+            "position": Object {
+              "align": "right",
+              "x": -10,
+              "y": 10,
+            },
+          },
+          "turboThreshold": 1000,
+        },
       },
       "defined": [Function],
       "deg2rad": 0.017453292519943295,
@@ -6863,6 +7482,7 @@ exports[`Chart should render chart with simple data 1`] = `
         "sankey": [Function],
         "scatter": [Function],
         "spline": [Function],
+        "treemap": [Function],
       },
       "setAnimation": [Function],
       "setOptions": [Function],
@@ -6914,6 +7534,11 @@ exports[`Chart should render chart with simple data 1`] = `
       },
       "credits": Object {
         "enabled": false,
+      },
+      "plotOptions": Object {
+        "series": Object {
+          "animation": false,
+        },
       },
       "series": Array [
         Object {

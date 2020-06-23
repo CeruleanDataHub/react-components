@@ -2,11 +2,13 @@ import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import HighchartsWheel from "highcharts/modules/dependency-wheel";
 import HighchartSankey from "highcharts/modules/sankey";
+import TreeMap from "highcharts/modules/treemap";
 import PropTypes from "prop-types";
 import React from "react";
 
 HighchartSankey(Highcharts);
 HighchartsWheel(Highcharts);
+TreeMap(Highcharts);
 
 const chartDefaults = {
   chart: {
@@ -34,9 +36,9 @@ export const Chart = ({
     plotOptions: {
       ...options.plotOptions,
       series: {
-        animation: false,
-      },
-    },
+        animation: false
+      }
+    }
   };
 
   return <HighchartsReact highcharts={Highcharts} options={chartOptions} />;

@@ -1,0 +1,376 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tree Map should render tree map 1`] = `
+<Chart
+  options={
+    Object {
+      "series": Array [],
+      "title": Object {
+        "text": "",
+      },
+    }
+  }
+  series={Array []}
+  title=""
+  type="line"
+  xAxis={null}
+/>
+`;
+
+exports[`Tree Map should render tree map with data 1`] = `
+<Chart
+  options={
+    Object {
+      "series": Array [
+        Object {
+          "alternateStartingDirection": true,
+          "data": Array [
+            Object {
+              "color": "#EC2500",
+              "id": "A",
+              "name": "Apples",
+            },
+            Object {
+              "color": "#ECE100",
+              "id": "B",
+              "name": "Bananas",
+            },
+            Object {
+              "color": "#EC9800",
+              "id": "O",
+              "name": "Oranges",
+            },
+            Object {
+              "name": "Anne",
+              "parent": "A",
+              "value": 5,
+            },
+            Object {
+              "name": "Rick",
+              "parent": "A",
+              "value": 3,
+            },
+            Object {
+              "name": "Peter",
+              "parent": "A",
+              "value": 4,
+            },
+            Object {
+              "name": "Anne",
+              "parent": "B",
+              "value": 4,
+            },
+            Object {
+              "name": "Rick",
+              "parent": "B",
+              "value": 10,
+            },
+            Object {
+              "name": "Peter",
+              "parent": "B",
+              "value": 1,
+            },
+            Object {
+              "name": "Anne",
+              "parent": "O",
+              "value": 1,
+            },
+            Object {
+              "name": "Rick",
+              "parent": "O",
+              "value": 3,
+            },
+            Object {
+              "name": "Peter",
+              "parent": "O",
+              "value": 3,
+            },
+            Object {
+              "color": "#9EDE00",
+              "name": "Susanne",
+              "parent": "Kiwi",
+              "value": 2,
+            },
+          ],
+          "layoutAlgorithm": "squarified",
+          "levels": Array [
+            Object {
+              "dataLabels": Object {
+                "align": "left",
+                "enabled": true,
+                "style": Object {
+                  "fontSize": "15px",
+                  "fontWeight": "bold",
+                },
+                "verticalAlign": "top",
+              },
+              "layoutAlgorithm": "strip",
+              "level": 1,
+            },
+          ],
+          "type": "treemap",
+        },
+      ],
+      "title": Object {
+        "text": "",
+      },
+    }
+  }
+  series={
+    Array [
+      Object {
+        "data": Array [
+          Object {
+            "color": "#EC2500",
+            "id": "A",
+            "name": "Apples",
+          },
+          Object {
+            "color": "#ECE100",
+            "id": "B",
+            "name": "Bananas",
+          },
+          Object {
+            "color": "#EC9800",
+            "id": "O",
+            "name": "Oranges",
+          },
+          Object {
+            "name": "Anne",
+            "parent": "A",
+            "value": 5,
+          },
+          Object {
+            "name": "Rick",
+            "parent": "A",
+            "value": 3,
+          },
+          Object {
+            "name": "Peter",
+            "parent": "A",
+            "value": 4,
+          },
+          Object {
+            "name": "Anne",
+            "parent": "B",
+            "value": 4,
+          },
+          Object {
+            "name": "Rick",
+            "parent": "B",
+            "value": 10,
+          },
+          Object {
+            "name": "Peter",
+            "parent": "B",
+            "value": 1,
+          },
+          Object {
+            "name": "Anne",
+            "parent": "O",
+            "value": 1,
+          },
+          Object {
+            "name": "Rick",
+            "parent": "O",
+            "value": 3,
+          },
+          Object {
+            "name": "Peter",
+            "parent": "O",
+            "value": 3,
+          },
+          Object {
+            "color": "#9EDE00",
+            "name": "Susanne",
+            "parent": "Kiwi",
+            "value": 2,
+          },
+        ],
+      },
+    ]
+  }
+  title=""
+  type="line"
+  xAxis={null}
+/>
+`;
+
+exports[`Tree Map should render tree map with title and data 1`] = `
+<Chart
+  options={
+    Object {
+      "series": Array [
+        Object {
+          "alternateStartingDirection": true,
+          "data": Array [
+            Object {
+              "color": "#EC2500",
+              "id": "A",
+              "name": "Apples",
+            },
+            Object {
+              "color": "#ECE100",
+              "id": "B",
+              "name": "Bananas",
+            },
+            Object {
+              "color": "#EC9800",
+              "id": "O",
+              "name": "Oranges",
+            },
+            Object {
+              "name": "Anne",
+              "parent": "A",
+              "value": 5,
+            },
+            Object {
+              "name": "Rick",
+              "parent": "A",
+              "value": 3,
+            },
+            Object {
+              "name": "Peter",
+              "parent": "A",
+              "value": 4,
+            },
+            Object {
+              "name": "Anne",
+              "parent": "B",
+              "value": 4,
+            },
+            Object {
+              "name": "Rick",
+              "parent": "B",
+              "value": 10,
+            },
+            Object {
+              "name": "Peter",
+              "parent": "B",
+              "value": 1,
+            },
+            Object {
+              "name": "Anne",
+              "parent": "O",
+              "value": 1,
+            },
+            Object {
+              "name": "Rick",
+              "parent": "O",
+              "value": 3,
+            },
+            Object {
+              "name": "Peter",
+              "parent": "O",
+              "value": 3,
+            },
+            Object {
+              "color": "#9EDE00",
+              "name": "Susanne",
+              "parent": "Kiwi",
+              "value": 2,
+            },
+          ],
+          "layoutAlgorithm": "squarified",
+          "levels": Array [
+            Object {
+              "dataLabels": Object {
+                "align": "left",
+                "enabled": true,
+                "style": Object {
+                  "fontSize": "15px",
+                  "fontWeight": "bold",
+                },
+                "verticalAlign": "top",
+              },
+              "layoutAlgorithm": "strip",
+              "level": 1,
+            },
+          ],
+          "type": "treemap",
+        },
+      ],
+      "title": Object {
+        "text": "Chart",
+      },
+    }
+  }
+  series={
+    Array [
+      Object {
+        "data": Array [
+          Object {
+            "color": "#EC2500",
+            "id": "A",
+            "name": "Apples",
+          },
+          Object {
+            "color": "#ECE100",
+            "id": "B",
+            "name": "Bananas",
+          },
+          Object {
+            "color": "#EC9800",
+            "id": "O",
+            "name": "Oranges",
+          },
+          Object {
+            "name": "Anne",
+            "parent": "A",
+            "value": 5,
+          },
+          Object {
+            "name": "Rick",
+            "parent": "A",
+            "value": 3,
+          },
+          Object {
+            "name": "Peter",
+            "parent": "A",
+            "value": 4,
+          },
+          Object {
+            "name": "Anne",
+            "parent": "B",
+            "value": 4,
+          },
+          Object {
+            "name": "Rick",
+            "parent": "B",
+            "value": 10,
+          },
+          Object {
+            "name": "Peter",
+            "parent": "B",
+            "value": 1,
+          },
+          Object {
+            "name": "Anne",
+            "parent": "O",
+            "value": 1,
+          },
+          Object {
+            "name": "Rick",
+            "parent": "O",
+            "value": 3,
+          },
+          Object {
+            "name": "Peter",
+            "parent": "O",
+            "value": 3,
+          },
+          Object {
+            "color": "#9EDE00",
+            "name": "Susanne",
+            "parent": "Kiwi",
+            "value": 2,
+          },
+        ],
+      },
+    ]
+  }
+  title="Chart"
+  type="line"
+  xAxis={null}
+/>
+`;
