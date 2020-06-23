@@ -51,3 +51,249 @@ exports[`Semi Donut should render chart 1`] = `
   xAxis={null}
 />
 `;
+
+exports[`Semi Donut should render chart with data 1`] = `
+<Chart
+  options={
+    Object {
+      "accessibility": Object {
+        "point": Object {
+          "valueSuffix": "%",
+        },
+      },
+      "chart": Object {
+        "plotBackgroundColor": null,
+        "plotBorderWidth": 0,
+        "plotShadow": false,
+      },
+      "plotOptions": Object {
+        "pie": Object {
+          "center": Array [
+            "50%",
+            "75%",
+          ],
+          "dataLabels": Object {
+            "distance": -50,
+            "enabled": true,
+            "style": Object {
+              "color": "white",
+              "fontWeight": "bold",
+            },
+          },
+          "endAngle": 90,
+          "size": "110%",
+          "startAngle": -90,
+        },
+      },
+      "series": Array [
+        Object {
+          "data": Array [
+            Array [
+              "Chrome",
+              58.9,
+            ],
+            Array [
+              "Firefox",
+              13.29,
+            ],
+            Array [
+              "Internet Explorer",
+              13,
+            ],
+            Array [
+              "Edge",
+              3.78,
+            ],
+            Array [
+              "Safari",
+              3.42,
+            ],
+            Object {
+              "dataLabels": Object {
+                "enabled": false,
+              },
+              "name": "Other",
+              "y": 7.61,
+            },
+          ],
+          "innerSize": "50%",
+          "name": "Browser share",
+          "type": "pie",
+        },
+      ],
+      "title": Object {
+        "align": "center",
+        "text": "",
+        "verticalAlign": "middle",
+        "y": 60,
+      },
+      "tooltip": Object {
+        "pointFormat": "{series.name}: <b>{point.percentage:.1f}%</b>",
+      },
+    }
+  }
+  series={
+    Array [
+      Object {
+        "data": Array [
+          Array [
+            "Chrome",
+            58.9,
+          ],
+          Array [
+            "Firefox",
+            13.29,
+          ],
+          Array [
+            "Internet Explorer",
+            13,
+          ],
+          Array [
+            "Edge",
+            3.78,
+          ],
+          Array [
+            "Safari",
+            3.42,
+          ],
+          Object {
+            "dataLabels": Object {
+              "enabled": false,
+            },
+            "name": "Other",
+            "y": 7.61,
+          },
+        ],
+        "innerSize": "50%",
+        "name": "Browser share",
+      },
+    ]
+  }
+  title=""
+  type="line"
+  xAxis={null}
+/>
+`;
+
+exports[`Semi Donut should render chart with title and data 1`] = `
+<Chart
+  options={
+    Object {
+      "accessibility": Object {
+        "point": Object {
+          "valueSuffix": "%",
+        },
+      },
+      "chart": Object {
+        "plotBackgroundColor": null,
+        "plotBorderWidth": 0,
+        "plotShadow": false,
+      },
+      "plotOptions": Object {
+        "pie": Object {
+          "center": Array [
+            "50%",
+            "75%",
+          ],
+          "dataLabels": Object {
+            "distance": -50,
+            "enabled": true,
+            "style": Object {
+              "color": "white",
+              "fontWeight": "bold",
+            },
+          },
+          "endAngle": 90,
+          "size": "110%",
+          "startAngle": -90,
+        },
+      },
+      "series": Array [
+        Object {
+          "data": Array [
+            Array [
+              "Chrome",
+              58.9,
+            ],
+            Array [
+              "Firefox",
+              13.29,
+            ],
+            Array [
+              "Internet Explorer",
+              13,
+            ],
+            Array [
+              "Edge",
+              3.78,
+            ],
+            Array [
+              "Safari",
+              3.42,
+            ],
+            Object {
+              "dataLabels": Object {
+                "enabled": false,
+              },
+              "name": "Other",
+              "y": 7.61,
+            },
+          ],
+          "innerSize": "50%",
+          "name": "Browser share",
+          "type": "pie",
+        },
+      ],
+      "title": Object {
+        "align": "center",
+        "text": "Chart",
+        "verticalAlign": "middle",
+        "y": 60,
+      },
+      "tooltip": Object {
+        "pointFormat": "{series.name}: <b>{point.percentage:.1f}%</b>",
+      },
+    }
+  }
+  series={
+    Array [
+      Object {
+        "data": Array [
+          Array [
+            "Chrome",
+            58.9,
+          ],
+          Array [
+            "Firefox",
+            13.29,
+          ],
+          Array [
+            "Internet Explorer",
+            13,
+          ],
+          Array [
+            "Edge",
+            3.78,
+          ],
+          Array [
+            "Safari",
+            3.42,
+          ],
+          Object {
+            "dataLabels": Object {
+              "enabled": false,
+            },
+            "name": "Other",
+            "y": 7.61,
+          },
+        ],
+        "innerSize": "50%",
+        "name": "Browser share",
+      },
+    ]
+  }
+  title="Chart"
+  type="line"
+  xAxis={null}
+/>
+`;
