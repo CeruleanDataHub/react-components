@@ -7,6 +7,7 @@
     "dist/*"
   ],
   "dependencies": {
+    "@highcharts/map-collection": "^1.1.3",
     "highcharts": "^8.1.0",
     "highcharts-react-official": "^3.0.0",
     "react-scripts": "3.4.1",
