@@ -21,3 +21,132 @@ exports[`Dependency Wheel should render chart 1`] = `
   xAxis={null}
 />
 `;
+
+exports[`Dependency Wheel should render chart with data and title 1`] = `
+<Chart
+  options={
+    Object {
+      "accessibility": Object {
+        "point": Object {
+          "valueDescriptionFormat": "{index}. From {point.from} to {point.to}: {point.weight}.",
+        },
+      },
+      "series": Array [
+        Object {
+          "data": Array [
+            Array [
+              "Brazil",
+              "Canada",
+              5,
+            ],
+            Array [
+              "Brazil",
+              "Mexico",
+              1,
+            ],
+            Array [
+              "Canada",
+              "Brazil",
+              1,
+            ],
+            Array [
+              "Canada",
+              "Mexico",
+              5,
+            ],
+            Array [
+              "Mexico",
+              "Brazil",
+              1,
+            ],
+            Array [
+              "Mexico",
+              "Canada",
+              5,
+            ],
+          ],
+          "dataLabels": Object {
+            "color": "#333",
+            "distance": 10,
+            "textPath": Object {
+              "attributes": Object {
+                "dy": 5,
+              },
+              "enabled": true,
+            },
+          },
+          "keys": Array [
+            "from",
+            "to",
+            "weight",
+          ],
+          "name": "Dependency wheel series",
+          "size": "95%",
+          "type": "dependencywheel",
+        },
+      ],
+      "title": Object {
+        "text": "Dependency wheel",
+      },
+    }
+  }
+  series={
+    Array [
+      Object {
+        "data": Array [
+          Array [
+            "Brazil",
+            "Canada",
+            5,
+          ],
+          Array [
+            "Brazil",
+            "Mexico",
+            1,
+          ],
+          Array [
+            "Canada",
+            "Brazil",
+            1,
+          ],
+          Array [
+            "Canada",
+            "Mexico",
+            5,
+          ],
+          Array [
+            "Mexico",
+            "Brazil",
+            1,
+          ],
+          Array [
+            "Mexico",
+            "Canada",
+            5,
+          ],
+        ],
+        "dataLabels": Object {
+          "color": "#333",
+          "distance": 10,
+          "textPath": Object {
+            "attributes": Object {
+              "dy": 5,
+            },
+            "enabled": true,
+          },
+        },
+        "keys": Array [
+          "from",
+          "to",
+          "weight",
+        ],
+        "name": "Dependency wheel series",
+        "size": "95%",
+      },
+    ]
+  }
+  title="Dependency wheel"
+  type="line"
+  xAxis={null}
+/>
+`;
