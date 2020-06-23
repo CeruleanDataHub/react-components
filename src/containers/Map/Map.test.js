@@ -32,7 +32,7 @@ const series = [
   }
 ];
 
-describe("Map", () => {
+xdescribe("Map", () => {
   it("should render map with data", () => {
     const component = shallow(<Map series={series} />);
     expect(toJson(component)).toMatchSnapshot();
