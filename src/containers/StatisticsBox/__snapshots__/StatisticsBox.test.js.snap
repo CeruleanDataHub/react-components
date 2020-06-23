@@ -86,7 +86,7 @@ exports[`StatisticsBox should render green 1`] = `
       className="Cell__Cell-tAjrW cZXUpN"
     >
       <span
-        className="sc-AxhCb dtGcaw sc-AxiKw fPcOrh"
+        className="sc-AxhCb dtGcaw sc-AxiKw fpvjFK"
       >
         1
       </span>
@@ -197,7 +197,7 @@ exports[`StatisticsBox should render red 1`] = `
       className="Cell__Cell-tAjrW cZXUpN"
     >
       <span
-        className="sc-AxhCb dtGcaw sc-AxiKw fPcOrh"
+        className="sc-AxhCb dtGcaw sc-AxiKw gFQOLe"
       >
         1
       </span>

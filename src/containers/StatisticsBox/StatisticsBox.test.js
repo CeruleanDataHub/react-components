@@ -14,7 +14,7 @@ describe("StatisticsBox", () => {
 
   it("should render green", () => {
     const component = renderer.create(
-      <StatisticsBox title="Title" value={1} growth={0.3} green />
+      <StatisticsBox title="Title" value={1} growth={0.3} greenValue />
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -22,7 +22,7 @@ describe("StatisticsBox", () => {
 
   it("should render red", () => {
     const component = renderer.create(
-      <StatisticsBox title="Title" value={1} growth={0.3} red />
+      <StatisticsBox title="Title" value={1} growth={0.3} redValue />
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
