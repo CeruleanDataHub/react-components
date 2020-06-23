@@ -94,4 +94,36 @@ xdescribe("Chart", () => {
 
     expect(toJson(component)).toMatchSnapshot();
   });
+
+  describe("different types of charts", () => {
+    const xAxis = [
+      {
+        categories: [
+          "monday",
+          "tuesday",
+          "wednesday",
+          "thursday",
+          "friday",
+          "saturday",
+          "sunday"
+        ]
+      }
+    ];
+
+    const series = [
+      { name: "temperature", data: [10, 15, 20, 25, 15, 20, 15] }
+    ];
+
+    const types = ["line", "bar", "area", "areaspline"];
+
+    types.forEach(type => {
+      it(`should render ${type} chart`, () => {
+        const component = shallow(
+          <Chart xAxis={xAxis} series={series} type={type} />
+        );
+
+        expect(toJson(component)).toMatchSnapshot();
+      });
+    });
+  });
 });
