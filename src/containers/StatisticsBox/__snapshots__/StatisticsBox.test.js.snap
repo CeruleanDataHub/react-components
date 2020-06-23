@@ -1,0 +1,297 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatisticsBox should format large values 1`] = `
+<div
+  className="sc-AxirZ dGOzPI"
+>
+  Title
+  <div
+    className="Grid__Grid-gDLjRO jcWKgV"
+  >
+    <div
+      className="Cell__Cell-tAjrW cZXUpN"
+    >
+      <span
+        className="sc-AxhCb dtGcaw sc-AxiKw fPcOrh"
+      >
+        10,000,000,000
+      </span>
+    </div>
+    <span
+      className="sc-AxhUy mCTBF Cell__Cell-tAjrW hmKLft"
+    >
+      <span
+        className="sc-AxgMl ouThN"
+      >
+        <span
+          className="sc-AxiKw fpvjFK"
+        >
+          <div
+            className="sc-AxheI DfsDh sc-AxjAm jnaJRY lni lni-pyramids"
+          />
+        </span>
+        30%
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`StatisticsBox should render 1`] = `
+<div
+  className="sc-AxirZ dGOzPI"
+>
+  Title
+  <div
+    className="Grid__Grid-gDLjRO jcWKgV"
+  >
+    <div
+      className="Cell__Cell-tAjrW cZXUpN"
+    >
+      <span
+        className="sc-AxhCb dtGcaw sc-AxiKw fPcOrh"
+      >
+        1
+      </span>
+    </div>
+    <span
+      className="sc-AxhUy mCTBF Cell__Cell-tAjrW hmKLft"
+    >
+      <span
+        className="sc-AxgMl ouThN"
+      >
+        <span
+          className="sc-AxiKw fpvjFK"
+        >
+          <div
+            className="sc-AxheI DfsDh sc-AxjAm jnaJRY lni lni-pyramids"
+          />
+        </span>
+        30%
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`StatisticsBox should render green 1`] = `
+<div
+  className="sc-AxirZ dGOzPI"
+>
+  Title
+  <div
+    className="Grid__Grid-gDLjRO jcWKgV"
+  >
+    <div
+      className="Cell__Cell-tAjrW cZXUpN"
+    >
+      <span
+        className="sc-AxhCb dtGcaw sc-AxiKw fPcOrh"
+      >
+        1
+      </span>
+    </div>
+    <span
+      className="sc-AxhUy mCTBF Cell__Cell-tAjrW hmKLft"
+    >
+      <span
+        className="sc-AxgMl ouThN"
+      >
+        <span
+          className="sc-AxiKw fpvjFK"
+        >
+          <div
+            className="sc-AxheI DfsDh sc-AxjAm jnaJRY lni lni-pyramids"
+          />
+        </span>
+        30%
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`StatisticsBox should render negative growth 1`] = `
+<div
+  className="sc-AxirZ dGOzPI"
+>
+  Title
+  <div
+    className="Grid__Grid-gDLjRO jcWKgV"
+  >
+    <div
+      className="Cell__Cell-tAjrW cZXUpN"
+    >
+      <span
+        className="sc-AxhCb dtGcaw sc-AxiKw fPcOrh"
+      >
+        1
+      </span>
+    </div>
+    <span
+      className="sc-AxhUy mCTBF Cell__Cell-tAjrW hmKLft"
+    >
+      <span
+        className="sc-AxgMl ouThN"
+      >
+        <span
+          className="sc-AxiKw gFQOLe"
+        >
+          <div
+            className="sc-AxheI DfsDh sc-AxjAm jnaJRY lni lni-pyramids"
+          />
+        </span>
+        -30%
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`StatisticsBox should render positive growth 1`] = `
+<div
+  className="sc-AxirZ dGOzPI"
+>
+  Title
+  <div
+    className="Grid__Grid-gDLjRO jcWKgV"
+  >
+    <div
+      className="Cell__Cell-tAjrW cZXUpN"
+    >
+      <span
+        className="sc-AxhCb dtGcaw sc-AxiKw fPcOrh"
+      >
+        1
+      </span>
+    </div>
+    <span
+      className="sc-AxhUy mCTBF Cell__Cell-tAjrW hmKLft"
+    >
+      <span
+        className="sc-AxgMl ouThN"
+      >
+        <span
+          className="sc-AxiKw fpvjFK"
+        >
+          <div
+            className="sc-AxheI DfsDh sc-AxjAm jnaJRY lni lni-pyramids"
+          />
+        </span>
+        30%
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`StatisticsBox should render red 1`] = `
+<div
+  className="sc-AxirZ dGOzPI"
+>
+  Title
+  <div
+    className="Grid__Grid-gDLjRO jcWKgV"
+  >
+    <div
+      className="Cell__Cell-tAjrW cZXUpN"
+    >
+      <span
+        className="sc-AxhCb dtGcaw sc-AxiKw fPcOrh"
+      >
+        1
+      </span>
+    </div>
+    <span
+      className="sc-AxhUy mCTBF Cell__Cell-tAjrW hmKLft"
+    >
+      <span
+        className="sc-AxgMl ouThN"
+      >
+        <span
+          className="sc-AxiKw fpvjFK"
+        >
+          <div
+            className="sc-AxheI DfsDh sc-AxjAm jnaJRY lni lni-pyramids"
+          />
+        </span>
+        30%
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`StatisticsBox should render two decimal points in growth 1`] = `
+<div
+  className="sc-AxirZ dGOzPI"
+>
+  Title
+  <div
+    className="Grid__Grid-gDLjRO jcWKgV"
+  >
+    <div
+      className="Cell__Cell-tAjrW cZXUpN"
+    >
+      <span
+        className="sc-AxhCb dtGcaw sc-AxiKw fPcOrh"
+      >
+        1
+      </span>
+    </div>
+    <span
+      className="sc-AxhUy mCTBF Cell__Cell-tAjrW hmKLft"
+    >
+      <span
+        className="sc-AxgMl ouThN"
+      >
+        <span
+          className="sc-AxiKw fpvjFK"
+        >
+          <div
+            className="sc-AxheI DfsDh sc-AxjAm jnaJRY lni lni-pyramids"
+          />
+        </span>
+        33.33%
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`StatisticsBox should render zero growth 1`] = `
+<div
+  className="sc-AxirZ dGOzPI"
+>
+  Title
+  <div
+    className="Grid__Grid-gDLjRO jcWKgV"
+  >
+    <div
+      className="Cell__Cell-tAjrW cZXUpN"
+    >
+      <span
+        className="sc-AxhCb dtGcaw sc-AxiKw fPcOrh"
+      >
+        1
+      </span>
+    </div>
+    <span
+      className="sc-AxhUy mCTBF Cell__Cell-tAjrW hmKLft"
+    >
+      <span
+        className="sc-AxgMl ouThN"
+      >
+        <span
+          className="sc-AxiKw creHPu"
+        >
+          <div
+            className="sc-AxheI DfsDh sc-AxjAm jnaJRY lni lni-pyramids"
+          />
+        </span>
+        0%
+      </span>
+    </span>
+  </div>
+</div>
+`;
