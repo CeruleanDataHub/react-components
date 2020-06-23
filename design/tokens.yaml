@@ -1,0 +1,13 @@
+name: cerulean
+  dark:
+    colors:
+      primary: #2B908F
+    chart:
+      - #2B908F
+      - #2B908F
+  light:
+    colors:
+      primary: #2B908F
+    chart:
+        - #2B908F
+        - #2B908F          
