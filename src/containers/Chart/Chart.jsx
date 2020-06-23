@@ -30,7 +30,13 @@ export const Chart = ({
     title: { text: title },
     ...chartDefaults,
     chart: { ...chartDefaults.chart, type },
-    ...options
+    ...options,
+    plotOptions: {
+      ...options.plotOptions,
+      series: {
+        animation: false,
+      },
+    },
   };
 
   return <HighchartsReact highcharts={Highcharts} options={chartOptions} />;
