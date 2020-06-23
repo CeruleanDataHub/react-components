@@ -16,18 +16,20 @@ export const Map = ({ title, minColor, maxColor, series }) => {
     },
     legend: {
       layout: "vertical",
-      align: "right",
-      verticalAlign: "middle"
+      align: "left",
+      verticalAlign: "bottom"
     },
     colorAxis: {
       min: 0,
       minColor,
-      maxColor
+      maxColor,
+      reversed: false,
+      showFirstLabel: false
     },
     mapNavigation: {
       enabled: true,
       buttonOptions: {
-        verticalAlign: "bottom"
+        verticalAlign: "top"
       }
     },
     series

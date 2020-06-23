@@ -3437,18 +3437,20 @@ exports[`Map should render map with data 1`] = `
         "maxColor": "",
         "min": 0,
         "minColor": "",
+        "reversed": false,
+        "showFirstLabel": false,
       },
       "credits": Object {
         "enabled": false,
       },
       "legend": Object {
-        "align": "right",
+        "align": "left",
         "layout": "vertical",
-        "verticalAlign": "middle",
+        "verticalAlign": "bottom",
       },
       "mapNavigation": Object {
         "buttonOptions": Object {
-          "verticalAlign": "bottom",
+          "verticalAlign": "top",
         },
         "enabled": true,
       },
@@ -16751,18 +16753,20 @@ exports[`Map should render map with data and title 1`] = `
         "maxColor": "",
         "min": 0,
         "minColor": "",
+        "reversed": false,
+        "showFirstLabel": false,
       },
       "credits": Object {
         "enabled": false,
       },
       "legend": Object {
-        "align": "right",
+        "align": "left",
         "layout": "vertical",
-        "verticalAlign": "middle",
+        "verticalAlign": "bottom",
       },
       "mapNavigation": Object {
         "buttonOptions": Object {
-          "verticalAlign": "bottom",
+          "verticalAlign": "top",
         },
         "enabled": true,
       },
