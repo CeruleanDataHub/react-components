@@ -66,7 +66,7 @@ exports[`Map should render map with data 1`] = `
         "parts/AreaSplineSeries.js": undefined,
         "parts/Axis.js": [Function],
         "parts/BarSeries.js": undefined,
-        "parts/Chart.js": undefined,
+        "parts/Chart.js": [Function],
         "parts/Color.js": [Function],
         "parts/ColumnSeries.js": undefined,
         "parts/DataLabels.js": undefined,
@@ -78,20 +78,1564 @@ exports[`Map should render map with data 1`] = `
         "parts/Legend.js": [Function],
         "parts/LogarithmicAxis.js": [Function],
         "parts/MSPointer.js": [Function],
-        "parts/Options.js": undefined,
+        "parts/Options.js": Object {
+          "dateFormat": [Function],
+          "defaultOptions": Object {
+            "caption": Object {
+              "align": "left",
+              "margin": 15,
+              "text": "",
+              "verticalAlign": "bottom",
+            },
+            "chart": Object {
+              "backgroundColor": "#ffffff",
+              "borderColor": "#335cad",
+              "borderRadius": 0,
+              "colorCount": 10,
+              "defaultSeriesType": "line",
+              "height": null,
+              "ignoreHiddenSeries": true,
+              "plotBorderColor": "#cccccc",
+              "resetZoomButton": Object {
+                "position": Object {
+                  "align": "right",
+                  "x": -10,
+                  "y": 10,
+                },
+                "theme": Object {
+                  "zIndex": 6,
+                },
+              },
+              "spacing": Array [
+                10,
+                10,
+                15,
+                10,
+              ],
+              "styledMode": false,
+              "width": null,
+            },
+            "colors": Array [
+              "#7cb5ec",
+              "#434348",
+              "#90ed7d",
+              "#f7a35c",
+              "#8085e9",
+              "#f15c80",
+              "#e4d354",
+              "#2b908f",
+              "#f45b5b",
+              "#91e8e1",
+            ],
+            "credits": Object {
+              "enabled": true,
+              "href": "https://www.highcharts.com?credits",
+              "position": Object {
+                "align": "right",
+                "verticalAlign": "bottom",
+                "x": -10,
+                "y": -5,
+              },
+              "style": Object {
+                "color": "#999999",
+                "cursor": "pointer",
+                "fontSize": "9px",
+              },
+              "text": "Highcharts.com",
+            },
+            "global": Object {},
+            "labels": Object {
+              "style": Object {
+                "color": "#333333",
+                "position": "absolute",
+              },
+            },
+            "lang": Object {
+              "decimalPoint": ".",
+              "loading": "Loading...",
+              "months": Array [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December",
+              ],
+              "numericSymbols": Array [
+                "k",
+                "M",
+                "G",
+                "T",
+                "P",
+                "E",
+              ],
+              "resetZoom": "Reset zoom",
+              "resetZoomTitle": "Reset zoom level 1:1",
+              "shortMonths": Array [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dec",
+              ],
+              "thousandsSep": " ",
+              "weekdays": Array [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+              ],
+              "zoomIn": "Zoom in",
+              "zoomOut": "Zoom out",
+            },
+            "legend": Object {
+              "align": "center",
+              "alignColumns": true,
+              "borderColor": "#999999",
+              "borderRadius": 0,
+              "bubbleLegend": Object {
+                "borderColor": undefined,
+                "borderWidth": 2,
+                "className": undefined,
+                "color": undefined,
+                "connectorClassName": undefined,
+                "connectorColor": undefined,
+                "connectorDistance": 60,
+                "connectorWidth": 1,
+                "enabled": false,
+                "labels": Object {
+                  "align": "right",
+                  "allowOverlap": false,
+                  "className": undefined,
+                  "format": "",
+                  "formatter": undefined,
+                  "style": Object {
+                    "color": undefined,
+                    "fontSize": 10,
+                  },
+                  "x": 0,
+                  "y": 0,
+                },
+                "legendIndex": 0,
+                "maxSize": 60,
+                "minSize": 10,
+                "ranges": Object {
+                  "borderColor": undefined,
+                  "color": undefined,
+                  "connectorColor": undefined,
+                  "value": undefined,
+                },
+                "sizeBy": "area",
+                "sizeByAbsoluteValue": false,
+                "zIndex": 1,
+                "zThreshold": 0,
+              },
+              "enabled": true,
+              "itemCheckboxStyle": Object {
+                "height": "13px",
+                "position": "absolute",
+                "width": "13px",
+              },
+              "itemHiddenStyle": Object {
+                "color": "#cccccc",
+              },
+              "itemHoverStyle": Object {
+                "color": "#000000",
+              },
+              "itemStyle": Object {
+                "color": "#333333",
+                "cursor": "pointer",
+                "fontSize": "12px",
+                "fontWeight": "bold",
+                "textOverflow": "ellipsis",
+              },
+              "labelFormatter": [Function],
+              "layout": "horizontal",
+              "navigation": Object {
+                "activeColor": "#003399",
+                "inactiveColor": "#cccccc",
+              },
+              "shadow": false,
+              "squareSymbol": true,
+              "symbolPadding": 5,
+              "title": Object {
+                "style": Object {
+                  "fontWeight": "bold",
+                },
+              },
+              "verticalAlign": "bottom",
+              "x": 0,
+              "y": 0,
+            },
+            "loading": Object {
+              "labelStyle": Object {
+                "fontWeight": "bold",
+                "position": "relative",
+                "top": "45%",
+              },
+              "style": Object {
+                "backgroundColor": "#ffffff",
+                "opacity": 0.5,
+                "position": "absolute",
+                "textAlign": "center",
+              },
+            },
+            "mapNavigation": Object {
+              "buttonOptions": Object {
+                "align": "left",
+                "alignTo": "plotBox",
+                "height": 18,
+                "padding": 5,
+                "style": Object {
+                  "fontSize": "15px",
+                  "fontWeight": "bold",
+                },
+                "theme": Object {
+                  "stroke-width": 1,
+                  "text-align": "center",
+                },
+                "verticalAlign": "top",
+                "width": 18,
+                "x": 0,
+              },
+              "buttons": Object {
+                "zoomIn": Object {
+                  "onclick": [Function],
+                  "text": "+",
+                  "y": 0,
+                },
+                "zoomOut": Object {
+                  "onclick": [Function],
+                  "text": "-",
+                  "y": 28,
+                },
+              },
+              "mouseWheelSensitivity": 1.1,
+            },
+            "plotOptions": Object {
+              "area": Object {
+                "allowPointSelect": false,
+                "animation": Object {
+                  "duration": 1000,
+                },
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "formatter": [Function],
+                  "padding": 5,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "bottom",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "findNearestPointBy": "x",
+                "lineWidth": 2,
+                "marker": Object {
+                  "enabledThreshold": 2,
+                  "lineColor": "#ffffff",
+                  "lineWidth": 0,
+                  "radius": 4,
+                  "states": Object {
+                    "hover": Object {
+                      "animation": Object {
+                        "duration": 50,
+                      },
+                      "enabled": true,
+                      "lineWidthPlus": 1,
+                      "radiusPlus": 2,
+                    },
+                    "normal": Object {
+                      "animation": true,
+                    },
+                    "select": Object {
+                      "fillColor": "#cccccc",
+                      "lineColor": "#000000",
+                      "lineWidth": 2,
+                    },
+                  },
+                },
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": 0,
+                "showCheckbox": false,
+                "softThreshold": false,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "halo": Object {
+                      "opacity": 0.25,
+                      "size": 10,
+                    },
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                  },
+                },
+                "stickyTracking": true,
+                "threshold": 0,
+                "turboThreshold": 1000,
+              },
+              "areaspline": Object {
+                "allowPointSelect": false,
+                "animation": Object {
+                  "duration": 1000,
+                },
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "formatter": [Function],
+                  "padding": 5,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "bottom",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "findNearestPointBy": "x",
+                "lineWidth": 2,
+                "marker": Object {
+                  "enabledThreshold": 2,
+                  "lineColor": "#ffffff",
+                  "lineWidth": 0,
+                  "radius": 4,
+                  "states": Object {
+                    "hover": Object {
+                      "animation": Object {
+                        "duration": 50,
+                      },
+                      "enabled": true,
+                      "lineWidthPlus": 1,
+                      "radiusPlus": 2,
+                    },
+                    "normal": Object {
+                      "animation": true,
+                    },
+                    "select": Object {
+                      "fillColor": "#cccccc",
+                      "lineColor": "#000000",
+                      "lineWidth": 2,
+                    },
+                  },
+                },
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": 0,
+                "showCheckbox": false,
+                "softThreshold": false,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "halo": Object {
+                      "opacity": 0.25,
+                      "size": 10,
+                    },
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                  },
+                },
+                "stickyTracking": true,
+                "threshold": 0,
+                "turboThreshold": 1000,
+              },
+              "bar": Object {
+                "allowPointSelect": false,
+                "animation": Object {
+                  "duration": 1000,
+                },
+                "borderColor": "#ffffff",
+                "borderRadius": 0,
+                "centerInCategory": false,
+                "crisp": true,
+                "cropThreshold": 50,
+                "dataLabels": Object {
+                  "align": undefined,
+                  "formatter": [Function],
+                  "padding": 5,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": undefined,
+                  "x": 0,
+                  "y": undefined,
+                },
+                "events": Object {},
+                "findNearestPointBy": "x",
+                "groupPadding": 0.2,
+                "lineWidth": 2,
+                "marker": null,
+                "minPointLength": 0,
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointPadding": 0.1,
+                "pointRange": null,
+                "showCheckbox": false,
+                "softThreshold": false,
+                "startFromThreshold": true,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "brightness": 0.1,
+                    "halo": false,
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                    "borderColor": "#000000",
+                    "color": "#cccccc",
+                  },
+                },
+                "stickyTracking": false,
+                "threshold": 0,
+                "tooltip": Object {
+                  "distance": 6,
+                },
+                "turboThreshold": 1000,
+              },
+              "bubble": Object {
+                "allowPointSelect": false,
+                "animation": Object {
+                  "duration": 1000,
+                },
+                "animationLimit": 250,
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "formatter": [Function],
+                  "inside": true,
+                  "padding": 5,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "middle",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "findNearestPointBy": "xy",
+                "jitter": Object {
+                  "x": 0,
+                  "y": 0,
+                },
+                "lineWidth": 0,
+                "marker": Object {
+                  "enabled": true,
+                  "enabledThreshold": 2,
+                  "fillOpacity": 0.5,
+                  "lineColor": null,
+                  "lineWidth": 1,
+                  "radius": null,
+                  "states": Object {
+                    "hover": Object {
+                      "animation": Object {
+                        "duration": 50,
+                      },
+                      "enabled": true,
+                      "lineWidthPlus": 1,
+                      "radiusPlus": 0,
+                    },
+                    "normal": Object {
+                      "animation": true,
+                    },
+                    "select": Object {
+                      "fillColor": "#cccccc",
+                      "lineColor": "#000000",
+                      "lineWidth": 2,
+                    },
+                  },
+                  "symbol": "circle",
+                },
+                "maxSize": "20%",
+                "minSize": 8,
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": 0,
+                "showCheckbox": false,
+                "softThreshold": false,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "halo": Object {
+                      "opacity": 0.25,
+                      "size": 5,
+                    },
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                  },
+                },
+                "stickyTracking": true,
+                "tooltip": Object {
+                  "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
+                  "pointFormat": "({point.x}, {point.y}), Size: {point.z}",
+                },
+                "turboThreshold": 0,
+                "zThreshold": 0,
+                "zoneAxis": "z",
+              },
+              "column": Object {
+                "allowPointSelect": false,
+                "animation": Object {
+                  "duration": 1000,
+                },
+                "borderColor": "#ffffff",
+                "borderRadius": 0,
+                "centerInCategory": false,
+                "crisp": true,
+                "cropThreshold": 50,
+                "dataLabels": Object {
+                  "align": undefined,
+                  "formatter": [Function],
+                  "padding": 5,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": undefined,
+                  "x": 0,
+                  "y": undefined,
+                },
+                "events": Object {},
+                "findNearestPointBy": "x",
+                "groupPadding": 0.2,
+                "lineWidth": 2,
+                "marker": null,
+                "minPointLength": 0,
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointPadding": 0.1,
+                "pointRange": null,
+                "showCheckbox": false,
+                "softThreshold": false,
+                "startFromThreshold": true,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "brightness": 0.1,
+                    "halo": false,
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                    "borderColor": "#000000",
+                    "color": "#cccccc",
+                  },
+                },
+                "stickyTracking": false,
+                "threshold": 0,
+                "tooltip": Object {
+                  "distance": 6,
+                },
+                "turboThreshold": 1000,
+              },
+              "heatmap": Object {
+                "allowPointSelect": false,
+                "animation": false,
+                "borderWidth": 0,
+                "clip": true,
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "crop": false,
+                  "formatter": [Function],
+                  "inside": true,
+                  "overflow": false,
+                  "padding": 0,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "middle",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "findNearestPointBy": "xy",
+                "jitter": Object {
+                  "x": 0,
+                  "y": 0,
+                },
+                "lineWidth": 0,
+                "marker": Object {
+                  "enabled": true,
+                  "enabledThreshold": 2,
+                  "lineColor": undefined,
+                  "lineWidth": 0,
+                  "radius": 0,
+                  "states": Object {
+                    "hover": Object {
+                      "animation": Object {
+                        "duration": 50,
+                      },
+                      "enabled": true,
+                      "lineWidthPlus": 0,
+                      "radiusPlus": 2,
+                    },
+                    "normal": Object {
+                      "animation": true,
+                    },
+                    "select": Object {
+                      "fillColor": "#cccccc",
+                      "lineColor": "#000000",
+                      "lineWidth": 2,
+                    },
+                  },
+                  "symbol": "rect",
+                },
+                "nullColor": "#f7f7f7",
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": null,
+                "showCheckbox": false,
+                "softThreshold": true,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "brightness": 0.2,
+                    "halo": false,
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                  },
+                },
+                "stickyTracking": true,
+                "tooltip": Object {
+                  "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
+                  "pointFormat": "{point.x}, {point.y}: {point.value}<br/>",
+                },
+                "turboThreshold": 1000,
+              },
+              "line": Object {
+                "allowPointSelect": false,
+                "animation": Object {
+                  "duration": 1000,
+                },
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "formatter": [Function],
+                  "padding": 5,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "bottom",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "findNearestPointBy": "x",
+                "lineWidth": 2,
+                "marker": Object {
+                  "enabledThreshold": 2,
+                  "lineColor": "#ffffff",
+                  "lineWidth": 0,
+                  "radius": 4,
+                  "states": Object {
+                    "hover": Object {
+                      "animation": Object {
+                        "duration": 50,
+                      },
+                      "enabled": true,
+                      "lineWidthPlus": 1,
+                      "radiusPlus": 2,
+                    },
+                    "normal": Object {
+                      "animation": true,
+                    },
+                    "select": Object {
+                      "fillColor": "#cccccc",
+                      "lineColor": "#000000",
+                      "lineWidth": 2,
+                    },
+                  },
+                },
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": 0,
+                "showCheckbox": false,
+                "softThreshold": true,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "halo": Object {
+                      "opacity": 0.25,
+                      "size": 10,
+                    },
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                  },
+                },
+                "stickyTracking": true,
+                "turboThreshold": 1000,
+              },
+              "map": Object {
+                "allAreas": true,
+                "allowPointSelect": false,
+                "animation": false,
+                "borderColor": "#cccccc",
+                "borderWidth": 1,
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "crop": false,
+                  "formatter": [Function],
+                  "inside": true,
+                  "overflow": false,
+                  "padding": 0,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "middle",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "findNearestPointBy": "xy",
+                "jitter": Object {
+                  "x": 0,
+                  "y": 0,
+                },
+                "joinBy": "hc-key",
+                "lineWidth": 0,
+                "marker": null,
+                "nullColor": "#f7f7f7",
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": 0,
+                "showCheckbox": false,
+                "softThreshold": true,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "brightness": 0.2,
+                    "halo": null,
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 1,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                    "color": "#cccccc",
+                  },
+                },
+                "stickyTracking": false,
+                "tooltip": Object {
+                  "followPointer": true,
+                  "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
+                  "pointFormat": "{point.name}: {point.value}<br/>",
+                },
+                "turboThreshold": 0,
+              },
+              "mapbubble": Object {
+                "allowPointSelect": false,
+                "animation": Object {
+                  "duration": 1000,
+                },
+                "animationLimit": 500,
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "formatter": [Function],
+                  "inside": true,
+                  "padding": 5,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "middle",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "findNearestPointBy": "xy",
+                "jitter": Object {
+                  "x": 0,
+                  "y": 0,
+                },
+                "lineWidth": 0,
+                "marker": Object {
+                  "enabled": true,
+                  "enabledThreshold": 2,
+                  "fillOpacity": 0.5,
+                  "lineColor": null,
+                  "lineWidth": 1,
+                  "radius": null,
+                  "states": Object {
+                    "hover": Object {
+                      "animation": Object {
+                        "duration": 50,
+                      },
+                      "enabled": true,
+                      "lineWidthPlus": 1,
+                      "radiusPlus": 0,
+                    },
+                    "normal": Object {
+                      "animation": true,
+                    },
+                    "select": Object {
+                      "fillColor": "#cccccc",
+                      "lineColor": "#000000",
+                      "lineWidth": 2,
+                    },
+                  },
+                  "symbol": "circle",
+                },
+                "maxSize": "20%",
+                "minSize": 8,
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": 0,
+                "showCheckbox": false,
+                "softThreshold": false,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "halo": Object {
+                      "opacity": 0.25,
+                      "size": 5,
+                    },
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                  },
+                },
+                "stickyTracking": true,
+                "tooltip": Object {
+                  "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
+                  "pointFormat": "{point.name}: {point.z}",
+                },
+                "turboThreshold": 0,
+                "zThreshold": 0,
+                "zoneAxis": "z",
+              },
+              "mapline": Object {
+                "allAreas": true,
+                "allowPointSelect": false,
+                "animation": false,
+                "borderColor": "#cccccc",
+                "borderWidth": 1,
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "crop": false,
+                  "formatter": [Function],
+                  "inside": true,
+                  "overflow": false,
+                  "padding": 0,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "middle",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "fillColor": "none",
+                "findNearestPointBy": "xy",
+                "jitter": Object {
+                  "x": 0,
+                  "y": 0,
+                },
+                "joinBy": "hc-key",
+                "lineWidth": 1,
+                "marker": null,
+                "nullColor": "#f7f7f7",
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": 0,
+                "showCheckbox": false,
+                "softThreshold": true,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "brightness": 0.2,
+                    "halo": null,
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 1,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                    "color": "#cccccc",
+                  },
+                },
+                "stickyTracking": false,
+                "tooltip": Object {
+                  "followPointer": true,
+                  "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
+                  "pointFormat": "{point.name}: {point.value}<br/>",
+                },
+                "turboThreshold": 0,
+              },
+              "mappoint": Object {
+                "allowPointSelect": false,
+                "animation": Object {
+                  "duration": 1000,
+                },
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "crop": false,
+                  "defer": false,
+                  "enabled": true,
+                  "formatter": [Function],
+                  "overflow": false,
+                  "padding": 5,
+                  "style": Object {
+                    "color": "#000000",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "bottom",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "findNearestPointBy": "xy",
+                "jitter": Object {
+                  "x": 0,
+                  "y": 0,
+                },
+                "lineWidth": 0,
+                "marker": Object {
+                  "enabled": true,
+                  "enabledThreshold": 2,
+                  "lineColor": "#ffffff",
+                  "lineWidth": 0,
+                  "radius": 4,
+                  "states": Object {
+                    "hover": Object {
+                      "animation": Object {
+                        "duration": 50,
+                      },
+                      "enabled": true,
+                      "lineWidthPlus": 1,
+                      "radiusPlus": 2,
+                    },
+                    "normal": Object {
+                      "animation": true,
+                    },
+                    "select": Object {
+                      "fillColor": "#cccccc",
+                      "lineColor": "#000000",
+                      "lineWidth": 2,
+                    },
+                  },
+                },
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": 0,
+                "showCheckbox": false,
+                "softThreshold": true,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "halo": Object {
+                      "opacity": 0.25,
+                      "size": 10,
+                    },
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                  },
+                },
+                "stickyTracking": true,
+                "tooltip": Object {
+                  "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
+                  "pointFormat": "x: <b>{point.x}</b><br/>y: <b>{point.y}</b><br/>",
+                },
+                "turboThreshold": 1000,
+              },
+              "pie": Object {
+                "allowPointSelect": false,
+                "animation": Object {
+                  "duration": 1000,
+                },
+                "borderColor": "#ffffff",
+                "borderWidth": 1,
+                "center": Array [
+                  null,
+                  null,
+                ],
+                "clip": false,
+                "colorByPoint": true,
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "allowOverlap": true,
+                  "connectorPadding": 5,
+                  "connectorShape": "fixedOffset",
+                  "crookDistance": "70%",
+                  "distance": 30,
+                  "enabled": true,
+                  "formatter": [Function],
+                  "padding": 5,
+                  "softConnector": true,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "bottom",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "fillColor": undefined,
+                "findNearestPointBy": "x",
+                "ignoreHiddenPoint": true,
+                "inactiveOtherPoints": true,
+                "legendType": "point",
+                "lineWidth": undefined,
+                "marker": null,
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": 0,
+                "showCheckbox": false,
+                "showInLegend": false,
+                "size": null,
+                "slicedOffset": 10,
+                "softThreshold": true,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "brightness": 0.1,
+                    "halo": Object {
+                      "opacity": 0.25,
+                      "size": 10,
+                    },
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                  },
+                },
+                "stickyTracking": false,
+                "tooltip": Object {
+                  "followPointer": true,
+                },
+                "turboThreshold": 1000,
+              },
+              "scatter": Object {
+                "allowPointSelect": false,
+                "animation": Object {
+                  "duration": 1000,
+                },
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "formatter": [Function],
+                  "padding": 5,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "bottom",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "findNearestPointBy": "xy",
+                "jitter": Object {
+                  "x": 0,
+                  "y": 0,
+                },
+                "lineWidth": 0,
+                "marker": Object {
+                  "enabled": true,
+                  "enabledThreshold": 2,
+                  "lineColor": "#ffffff",
+                  "lineWidth": 0,
+                  "radius": 4,
+                  "states": Object {
+                    "hover": Object {
+                      "animation": Object {
+                        "duration": 50,
+                      },
+                      "enabled": true,
+                      "lineWidthPlus": 1,
+                      "radiusPlus": 2,
+                    },
+                    "normal": Object {
+                      "animation": true,
+                    },
+                    "select": Object {
+                      "fillColor": "#cccccc",
+                      "lineColor": "#000000",
+                      "lineWidth": 2,
+                    },
+                  },
+                },
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": 0,
+                "showCheckbox": false,
+                "softThreshold": true,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "halo": Object {
+                      "opacity": 0.25,
+                      "size": 10,
+                    },
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                  },
+                },
+                "stickyTracking": true,
+                "tooltip": Object {
+                  "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
+                  "pointFormat": "x: <b>{point.x}</b><br/>y: <b>{point.y}</b><br/>",
+                },
+                "turboThreshold": 1000,
+              },
+              "spline": Object {
+                "allowPointSelect": false,
+                "animation": Object {
+                  "duration": 1000,
+                },
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "formatter": [Function],
+                  "padding": 5,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "bottom",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "findNearestPointBy": "x",
+                "lineWidth": 2,
+                "marker": Object {
+                  "enabledThreshold": 2,
+                  "lineColor": "#ffffff",
+                  "lineWidth": 0,
+                  "radius": 4,
+                  "states": Object {
+                    "hover": Object {
+                      "animation": Object {
+                        "duration": 50,
+                      },
+                      "enabled": true,
+                      "lineWidthPlus": 1,
+                      "radiusPlus": 2,
+                    },
+                    "normal": Object {
+                      "animation": true,
+                    },
+                    "select": Object {
+                      "fillColor": "#cccccc",
+                      "lineColor": "#000000",
+                      "lineWidth": 2,
+                    },
+                  },
+                },
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": 0,
+                "showCheckbox": false,
+                "softThreshold": true,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "halo": Object {
+                      "opacity": 0.25,
+                      "size": 10,
+                    },
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                  },
+                },
+                "stickyTracking": true,
+                "turboThreshold": 1000,
+              },
+            },
+            "subtitle": Object {
+              "align": "center",
+              "text": "",
+              "widthAdjust": -44,
+            },
+            "symbols": Array [
+              "circle",
+              "diamond",
+              "square",
+              "triangle",
+              "triangle-down",
+            ],
+            "time": Object {
+              "Date": undefined,
+              "getTimezoneOffset": undefined,
+              "timezone": undefined,
+              "timezoneOffset": 0,
+              "useUTC": true,
+            },
+            "title": Object {
+              "align": "center",
+              "margin": 15,
+              "text": "Chart title",
+              "widthAdjust": -44,
+            },
+            "tooltip": Object {
+              "animation": false,
+              "backgroundColor": "rgba(247,247,247,0.85)",
+              "borderRadius": 3,
+              "borderWidth": 1,
+              "dateTimeLabelFormats": Object {
+                "day": "%A, %b %e, %Y",
+                "hour": "%A, %b %e, %H:%M",
+                "millisecond": "%A, %b %e, %H:%M:%S.%L",
+                "minute": "%A, %b %e, %H:%M",
+                "month": "%B %Y",
+                "second": "%A, %b %e, %H:%M:%S",
+                "week": "Week from %A, %b %e, %Y",
+                "year": "%Y",
+              },
+              "enabled": true,
+              "footerFormat": "",
+              "headerFormat": "<span style=\\"font-size: 10px\\">{point.key}</span><br/>",
+              "padding": 8,
+              "pointFormat": "<span style=\\"color:{point.color}\\">●</span> {series.name}: <b>{point.y}</b><br/>",
+              "shadow": true,
+              "snap": 10,
+              "style": Object {
+                "color": "#333333",
+                "cursor": "default",
+                "fontSize": "12px",
+                "whiteSpace": "nowrap",
+              },
+            },
+          },
+          "time": c {
+            "Date": [Function],
+            "getTimezoneOffset": [Function],
+            "options": Object {
+              "Date": undefined,
+              "getTimezoneOffset": undefined,
+              "timezone": undefined,
+              "timezoneOffset": 0,
+              "useUTC": true,
+            },
+            "timezoneOffset": 0,
+            "useUTC": true,
+            "variableTimezone": false,
+          },
+        },
         "parts/PieSeries.js": undefined,
         "parts/PlotLineOrBand.js": [Function],
         "parts/Point.js": [Function],
         "parts/Pointer.js": [Function],
         "parts/Responsive.js": undefined,
         "parts/SVGElement.js": [Function],
+        "parts/SVGLabel.js": [Function],
+        "parts/SVGRenderer.js": [Function],
         "parts/ScatterSeries.js": undefined,
         "parts/ScrollablePlotArea.js": undefined,
         "parts/Series.js": undefined,
         "parts/SplineSeries.js": undefined,
         "parts/Stacking.js": [Function],
         "parts/StackingAxis.js": [Function],
-        "parts/SvgRenderer.js": undefined,
         "parts/Tick.js": [Function],
         "parts/Time.js": [Function],
         "parts/Tooltip.js": [Function],
@@ -120,6 +1664,7 @@ exports[`Map should render map with data 1`] = `
           "format": [Function],
           "getMagnitude": [Function],
           "getNestedProperty": [Function],
+          "getOptions": [Function],
           "getStyle": [Function],
           "inArray": [Function],
           "isArray": [Function],
@@ -141,6 +1686,7 @@ exports[`Map should render map with data 1`] = `
           "removeEvent": [Function],
           "seriesType": [Function],
           "setAnimation": [Function],
+          "setOptions": [Function],
           "splat": [Function],
           "stableSort": [Function],
           "stop": [Function],
@@ -156,6 +1702,7 @@ exports[`Map should render map with data 1`] = `
             "year": 31449600000,
           },
           "uniqueKey": [Function],
+          "useSerialIds": [Function],
           "wrap": [Function],
         },
       },
@@ -641,10 +2188,11 @@ exports[`Map should render map with data 1`] = `
             },
             "borderColor": "#ffffff",
             "borderRadius": 0,
+            "centerInCategory": false,
             "crisp": true,
             "cropThreshold": 50,
             "dataLabels": Object {
-              "align": null,
+              "align": undefined,
               "formatter": [Function],
               "padding": 5,
               "style": Object {
@@ -653,9 +2201,9 @@ exports[`Map should render map with data 1`] = `
                 "fontWeight": "bold",
                 "textOutline": "1px contrast",
               },
-              "verticalAlign": null,
+              "verticalAlign": undefined,
               "x": 0,
-              "y": null,
+              "y": undefined,
             },
             "events": Object {},
             "findNearestPointBy": "x",
@@ -815,10 +2363,11 @@ exports[`Map should render map with data 1`] = `
             },
             "borderColor": "#ffffff",
             "borderRadius": 0,
+            "centerInCategory": false,
             "crisp": true,
             "cropThreshold": 50,
             "dataLabels": Object {
-              "align": null,
+              "align": undefined,
               "formatter": [Function],
               "padding": 5,
               "style": Object {
@@ -827,9 +2376,9 @@ exports[`Map should render map with data 1`] = `
                 "fontWeight": "bold",
                 "textOutline": "1px contrast",
               },
-              "verticalAlign": null,
+              "verticalAlign": undefined,
               "x": 0,
-              "y": null,
+              "y": undefined,
             },
             "events": Object {},
             "findNearestPointBy": "x",
@@ -1738,1228 +3287,6 @@ exports[`Map should render map with data 1`] = `
           },
         },
       },
-      "defaultPlotOptions": Object {
-        "area": Object {
-          "allowPointSelect": false,
-          "animation": Object {
-            "duration": 1000,
-          },
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "formatter": [Function],
-            "padding": 5,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "bottom",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "findNearestPointBy": "x",
-          "lineWidth": 2,
-          "marker": Object {
-            "enabledThreshold": 2,
-            "lineColor": "#ffffff",
-            "lineWidth": 0,
-            "radius": 4,
-            "states": Object {
-              "hover": Object {
-                "animation": Object {
-                  "duration": 50,
-                },
-                "enabled": true,
-                "lineWidthPlus": 1,
-                "radiusPlus": 2,
-              },
-              "normal": Object {
-                "animation": true,
-              },
-              "select": Object {
-                "fillColor": "#cccccc",
-                "lineColor": "#000000",
-                "lineWidth": 2,
-              },
-            },
-          },
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": 0,
-          "showCheckbox": false,
-          "softThreshold": false,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "halo": Object {
-                "opacity": 0.25,
-                "size": 10,
-              },
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-            },
-          },
-          "stickyTracking": true,
-          "threshold": 0,
-          "turboThreshold": 1000,
-        },
-        "areaspline": Object {
-          "allowPointSelect": false,
-          "animation": Object {
-            "duration": 1000,
-          },
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "formatter": [Function],
-            "padding": 5,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "bottom",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "findNearestPointBy": "x",
-          "lineWidth": 2,
-          "marker": Object {
-            "enabledThreshold": 2,
-            "lineColor": "#ffffff",
-            "lineWidth": 0,
-            "radius": 4,
-            "states": Object {
-              "hover": Object {
-                "animation": Object {
-                  "duration": 50,
-                },
-                "enabled": true,
-                "lineWidthPlus": 1,
-                "radiusPlus": 2,
-              },
-              "normal": Object {
-                "animation": true,
-              },
-              "select": Object {
-                "fillColor": "#cccccc",
-                "lineColor": "#000000",
-                "lineWidth": 2,
-              },
-            },
-          },
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": 0,
-          "showCheckbox": false,
-          "softThreshold": false,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "halo": Object {
-                "opacity": 0.25,
-                "size": 10,
-              },
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-            },
-          },
-          "stickyTracking": true,
-          "threshold": 0,
-          "turboThreshold": 1000,
-        },
-        "bar": Object {
-          "allowPointSelect": false,
-          "animation": Object {
-            "duration": 1000,
-          },
-          "borderColor": "#ffffff",
-          "borderRadius": 0,
-          "crisp": true,
-          "cropThreshold": 50,
-          "dataLabels": Object {
-            "align": null,
-            "formatter": [Function],
-            "padding": 5,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": null,
-            "x": 0,
-            "y": null,
-          },
-          "events": Object {},
-          "findNearestPointBy": "x",
-          "groupPadding": 0.2,
-          "lineWidth": 2,
-          "marker": null,
-          "minPointLength": 0,
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointPadding": 0.1,
-          "pointRange": null,
-          "showCheckbox": false,
-          "softThreshold": false,
-          "startFromThreshold": true,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "brightness": 0.1,
-              "halo": false,
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-              "borderColor": "#000000",
-              "color": "#cccccc",
-            },
-          },
-          "stickyTracking": false,
-          "threshold": 0,
-          "tooltip": Object {
-            "distance": 6,
-          },
-          "turboThreshold": 1000,
-        },
-        "bubble": Object {
-          "allowPointSelect": false,
-          "animation": Object {
-            "duration": 1000,
-          },
-          "animationLimit": 250,
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "formatter": [Function],
-            "inside": true,
-            "padding": 5,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "middle",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "findNearestPointBy": "xy",
-          "jitter": Object {
-            "x": 0,
-            "y": 0,
-          },
-          "lineWidth": 0,
-          "marker": Object {
-            "enabled": true,
-            "enabledThreshold": 2,
-            "fillOpacity": 0.5,
-            "lineColor": null,
-            "lineWidth": 1,
-            "radius": null,
-            "states": Object {
-              "hover": Object {
-                "animation": Object {
-                  "duration": 50,
-                },
-                "enabled": true,
-                "lineWidthPlus": 1,
-                "radiusPlus": 0,
-              },
-              "normal": Object {
-                "animation": true,
-              },
-              "select": Object {
-                "fillColor": "#cccccc",
-                "lineColor": "#000000",
-                "lineWidth": 2,
-              },
-            },
-            "symbol": "circle",
-          },
-          "maxSize": "20%",
-          "minSize": 8,
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": 0,
-          "showCheckbox": false,
-          "softThreshold": false,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "halo": Object {
-                "opacity": 0.25,
-                "size": 5,
-              },
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-            },
-          },
-          "stickyTracking": true,
-          "tooltip": Object {
-            "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
-            "pointFormat": "({point.x}, {point.y}), Size: {point.z}",
-          },
-          "turboThreshold": 0,
-          "zThreshold": 0,
-          "zoneAxis": "z",
-        },
-        "column": Object {
-          "allowPointSelect": false,
-          "animation": Object {
-            "duration": 1000,
-          },
-          "borderColor": "#ffffff",
-          "borderRadius": 0,
-          "crisp": true,
-          "cropThreshold": 50,
-          "dataLabels": Object {
-            "align": null,
-            "formatter": [Function],
-            "padding": 5,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": null,
-            "x": 0,
-            "y": null,
-          },
-          "events": Object {},
-          "findNearestPointBy": "x",
-          "groupPadding": 0.2,
-          "lineWidth": 2,
-          "marker": null,
-          "minPointLength": 0,
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointPadding": 0.1,
-          "pointRange": null,
-          "showCheckbox": false,
-          "softThreshold": false,
-          "startFromThreshold": true,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "brightness": 0.1,
-              "halo": false,
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-              "borderColor": "#000000",
-              "color": "#cccccc",
-            },
-          },
-          "stickyTracking": false,
-          "threshold": 0,
-          "tooltip": Object {
-            "distance": 6,
-          },
-          "turboThreshold": 1000,
-        },
-        "heatmap": Object {
-          "allowPointSelect": false,
-          "animation": false,
-          "borderWidth": 0,
-          "clip": true,
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "crop": false,
-            "formatter": [Function],
-            "inside": true,
-            "overflow": false,
-            "padding": 0,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "middle",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "findNearestPointBy": "xy",
-          "jitter": Object {
-            "x": 0,
-            "y": 0,
-          },
-          "lineWidth": 0,
-          "marker": Object {
-            "enabled": true,
-            "enabledThreshold": 2,
-            "lineColor": undefined,
-            "lineWidth": 0,
-            "radius": 0,
-            "states": Object {
-              "hover": Object {
-                "animation": Object {
-                  "duration": 50,
-                },
-                "enabled": true,
-                "lineWidthPlus": 0,
-                "radiusPlus": 2,
-              },
-              "normal": Object {
-                "animation": true,
-              },
-              "select": Object {
-                "fillColor": "#cccccc",
-                "lineColor": "#000000",
-                "lineWidth": 2,
-              },
-            },
-            "symbol": "rect",
-          },
-          "nullColor": "#f7f7f7",
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": null,
-          "showCheckbox": false,
-          "softThreshold": true,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "brightness": 0.2,
-              "halo": false,
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-            },
-          },
-          "stickyTracking": true,
-          "tooltip": Object {
-            "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
-            "pointFormat": "{point.x}, {point.y}: {point.value}<br/>",
-          },
-          "turboThreshold": 1000,
-        },
-        "line": Object {
-          "allowPointSelect": false,
-          "animation": Object {
-            "duration": 1000,
-          },
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "formatter": [Function],
-            "padding": 5,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "bottom",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "findNearestPointBy": "x",
-          "lineWidth": 2,
-          "marker": Object {
-            "enabledThreshold": 2,
-            "lineColor": "#ffffff",
-            "lineWidth": 0,
-            "radius": 4,
-            "states": Object {
-              "hover": Object {
-                "animation": Object {
-                  "duration": 50,
-                },
-                "enabled": true,
-                "lineWidthPlus": 1,
-                "radiusPlus": 2,
-              },
-              "normal": Object {
-                "animation": true,
-              },
-              "select": Object {
-                "fillColor": "#cccccc",
-                "lineColor": "#000000",
-                "lineWidth": 2,
-              },
-            },
-          },
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": 0,
-          "showCheckbox": false,
-          "softThreshold": true,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "halo": Object {
-                "opacity": 0.25,
-                "size": 10,
-              },
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-            },
-          },
-          "stickyTracking": true,
-          "turboThreshold": 1000,
-        },
-        "map": Object {
-          "allAreas": true,
-          "allowPointSelect": false,
-          "animation": false,
-          "borderColor": "#cccccc",
-          "borderWidth": 1,
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "crop": false,
-            "formatter": [Function],
-            "inside": true,
-            "overflow": false,
-            "padding": 0,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "middle",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "findNearestPointBy": "xy",
-          "jitter": Object {
-            "x": 0,
-            "y": 0,
-          },
-          "joinBy": "hc-key",
-          "lineWidth": 0,
-          "marker": null,
-          "nullColor": "#f7f7f7",
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": 0,
-          "showCheckbox": false,
-          "softThreshold": true,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "brightness": 0.2,
-              "halo": null,
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 1,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-              "color": "#cccccc",
-            },
-          },
-          "stickyTracking": false,
-          "tooltip": Object {
-            "followPointer": true,
-            "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
-            "pointFormat": "{point.name}: {point.value}<br/>",
-          },
-          "turboThreshold": 0,
-        },
-        "mapbubble": Object {
-          "allowPointSelect": false,
-          "animation": Object {
-            "duration": 1000,
-          },
-          "animationLimit": 500,
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "formatter": [Function],
-            "inside": true,
-            "padding": 5,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "middle",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "findNearestPointBy": "xy",
-          "jitter": Object {
-            "x": 0,
-            "y": 0,
-          },
-          "lineWidth": 0,
-          "marker": Object {
-            "enabled": true,
-            "enabledThreshold": 2,
-            "fillOpacity": 0.5,
-            "lineColor": null,
-            "lineWidth": 1,
-            "radius": null,
-            "states": Object {
-              "hover": Object {
-                "animation": Object {
-                  "duration": 50,
-                },
-                "enabled": true,
-                "lineWidthPlus": 1,
-                "radiusPlus": 0,
-              },
-              "normal": Object {
-                "animation": true,
-              },
-              "select": Object {
-                "fillColor": "#cccccc",
-                "lineColor": "#000000",
-                "lineWidth": 2,
-              },
-            },
-            "symbol": "circle",
-          },
-          "maxSize": "20%",
-          "minSize": 8,
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": 0,
-          "showCheckbox": false,
-          "softThreshold": false,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "halo": Object {
-                "opacity": 0.25,
-                "size": 5,
-              },
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-            },
-          },
-          "stickyTracking": true,
-          "tooltip": Object {
-            "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
-            "pointFormat": "{point.name}: {point.z}",
-          },
-          "turboThreshold": 0,
-          "zThreshold": 0,
-          "zoneAxis": "z",
-        },
-        "mapline": Object {
-          "allAreas": true,
-          "allowPointSelect": false,
-          "animation": false,
-          "borderColor": "#cccccc",
-          "borderWidth": 1,
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "crop": false,
-            "formatter": [Function],
-            "inside": true,
-            "overflow": false,
-            "padding": 0,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "middle",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "fillColor": "none",
-          "findNearestPointBy": "xy",
-          "jitter": Object {
-            "x": 0,
-            "y": 0,
-          },
-          "joinBy": "hc-key",
-          "lineWidth": 1,
-          "marker": null,
-          "nullColor": "#f7f7f7",
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": 0,
-          "showCheckbox": false,
-          "softThreshold": true,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "brightness": 0.2,
-              "halo": null,
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 1,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-              "color": "#cccccc",
-            },
-          },
-          "stickyTracking": false,
-          "tooltip": Object {
-            "followPointer": true,
-            "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
-            "pointFormat": "{point.name}: {point.value}<br/>",
-          },
-          "turboThreshold": 0,
-        },
-        "mappoint": Object {
-          "allowPointSelect": false,
-          "animation": Object {
-            "duration": 1000,
-          },
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "crop": false,
-            "defer": false,
-            "enabled": true,
-            "formatter": [Function],
-            "overflow": false,
-            "padding": 5,
-            "style": Object {
-              "color": "#000000",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "bottom",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "findNearestPointBy": "xy",
-          "jitter": Object {
-            "x": 0,
-            "y": 0,
-          },
-          "lineWidth": 0,
-          "marker": Object {
-            "enabled": true,
-            "enabledThreshold": 2,
-            "lineColor": "#ffffff",
-            "lineWidth": 0,
-            "radius": 4,
-            "states": Object {
-              "hover": Object {
-                "animation": Object {
-                  "duration": 50,
-                },
-                "enabled": true,
-                "lineWidthPlus": 1,
-                "radiusPlus": 2,
-              },
-              "normal": Object {
-                "animation": true,
-              },
-              "select": Object {
-                "fillColor": "#cccccc",
-                "lineColor": "#000000",
-                "lineWidth": 2,
-              },
-            },
-          },
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": 0,
-          "showCheckbox": false,
-          "softThreshold": true,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "halo": Object {
-                "opacity": 0.25,
-                "size": 10,
-              },
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-            },
-          },
-          "stickyTracking": true,
-          "tooltip": Object {
-            "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
-            "pointFormat": "x: <b>{point.x}</b><br/>y: <b>{point.y}</b><br/>",
-          },
-          "turboThreshold": 1000,
-        },
-        "pie": Object {
-          "allowPointSelect": false,
-          "animation": Object {
-            "duration": 1000,
-          },
-          "borderColor": "#ffffff",
-          "borderWidth": 1,
-          "center": Array [
-            null,
-            null,
-          ],
-          "clip": false,
-          "colorByPoint": true,
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "allowOverlap": true,
-            "connectorPadding": 5,
-            "connectorShape": "fixedOffset",
-            "crookDistance": "70%",
-            "distance": 30,
-            "enabled": true,
-            "formatter": [Function],
-            "padding": 5,
-            "softConnector": true,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "bottom",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "fillColor": undefined,
-          "findNearestPointBy": "x",
-          "ignoreHiddenPoint": true,
-          "inactiveOtherPoints": true,
-          "legendType": "point",
-          "lineWidth": undefined,
-          "marker": null,
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": 0,
-          "showCheckbox": false,
-          "showInLegend": false,
-          "size": null,
-          "slicedOffset": 10,
-          "softThreshold": true,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "brightness": 0.1,
-              "halo": Object {
-                "opacity": 0.25,
-                "size": 10,
-              },
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-            },
-          },
-          "stickyTracking": false,
-          "tooltip": Object {
-            "followPointer": true,
-          },
-          "turboThreshold": 1000,
-        },
-        "scatter": Object {
-          "allowPointSelect": false,
-          "animation": Object {
-            "duration": 1000,
-          },
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "formatter": [Function],
-            "padding": 5,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "bottom",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "findNearestPointBy": "xy",
-          "jitter": Object {
-            "x": 0,
-            "y": 0,
-          },
-          "lineWidth": 0,
-          "marker": Object {
-            "enabled": true,
-            "enabledThreshold": 2,
-            "lineColor": "#ffffff",
-            "lineWidth": 0,
-            "radius": 4,
-            "states": Object {
-              "hover": Object {
-                "animation": Object {
-                  "duration": 50,
-                },
-                "enabled": true,
-                "lineWidthPlus": 1,
-                "radiusPlus": 2,
-              },
-              "normal": Object {
-                "animation": true,
-              },
-              "select": Object {
-                "fillColor": "#cccccc",
-                "lineColor": "#000000",
-                "lineWidth": 2,
-              },
-            },
-          },
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": 0,
-          "showCheckbox": false,
-          "softThreshold": true,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "halo": Object {
-                "opacity": 0.25,
-                "size": 10,
-              },
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-            },
-          },
-          "stickyTracking": true,
-          "tooltip": Object {
-            "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
-            "pointFormat": "x: <b>{point.x}</b><br/>y: <b>{point.y}</b><br/>",
-          },
-          "turboThreshold": 1000,
-        },
-        "spline": Object {
-          "allowPointSelect": false,
-          "animation": Object {
-            "duration": 1000,
-          },
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "formatter": [Function],
-            "padding": 5,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "bottom",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "findNearestPointBy": "x",
-          "lineWidth": 2,
-          "marker": Object {
-            "enabledThreshold": 2,
-            "lineColor": "#ffffff",
-            "lineWidth": 0,
-            "radius": 4,
-            "states": Object {
-              "hover": Object {
-                "animation": Object {
-                  "duration": 50,
-                },
-                "enabled": true,
-                "lineWidthPlus": 1,
-                "radiusPlus": 2,
-              },
-              "normal": Object {
-                "animation": true,
-              },
-              "select": Object {
-                "fillColor": "#cccccc",
-                "lineColor": "#000000",
-                "lineWidth": 2,
-              },
-            },
-          },
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": 0,
-          "showCheckbox": false,
-          "softThreshold": true,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "halo": Object {
-                "opacity": 0.25,
-                "size": 10,
-              },
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-            },
-          },
-          "stickyTracking": true,
-          "turboThreshold": 1000,
-        },
-      },
       "defined": [Function],
       "deg2rad": 0.017453292519943295,
       "destroyObjectProperties": [Function],
@@ -3072,7 +3399,7 @@ exports[`Map should render map with data 1`] = `
       "svg": false,
       "symbolSizes": Object {},
       "syncTimeout": [Function],
-      "time": f {
+      "time": c {
         "Date": [Function],
         "getTimezoneOffset": [Function],
         "options": Object {
@@ -3098,7 +3425,8 @@ exports[`Map should render map with data 1`] = `
       },
       "timers": Array [],
       "uniqueKey": [Function],
-      "version": "8.1.0",
+      "useSerialIds": [Function],
+      "version": "8.1.2",
       "win": [Window],
       "wrap": [Function],
     }
@@ -13052,7 +13380,7 @@ exports[`Map should render map with data and title 1`] = `
         "parts/AreaSplineSeries.js": undefined,
         "parts/Axis.js": [Function],
         "parts/BarSeries.js": undefined,
-        "parts/Chart.js": undefined,
+        "parts/Chart.js": [Function],
         "parts/Color.js": [Function],
         "parts/ColumnSeries.js": undefined,
         "parts/DataLabels.js": undefined,
@@ -13064,20 +13392,1564 @@ exports[`Map should render map with data and title 1`] = `
         "parts/Legend.js": [Function],
         "parts/LogarithmicAxis.js": [Function],
         "parts/MSPointer.js": [Function],
-        "parts/Options.js": undefined,
+        "parts/Options.js": Object {
+          "dateFormat": [Function],
+          "defaultOptions": Object {
+            "caption": Object {
+              "align": "left",
+              "margin": 15,
+              "text": "",
+              "verticalAlign": "bottom",
+            },
+            "chart": Object {
+              "backgroundColor": "#ffffff",
+              "borderColor": "#335cad",
+              "borderRadius": 0,
+              "colorCount": 10,
+              "defaultSeriesType": "line",
+              "height": null,
+              "ignoreHiddenSeries": true,
+              "plotBorderColor": "#cccccc",
+              "resetZoomButton": Object {
+                "position": Object {
+                  "align": "right",
+                  "x": -10,
+                  "y": 10,
+                },
+                "theme": Object {
+                  "zIndex": 6,
+                },
+              },
+              "spacing": Array [
+                10,
+                10,
+                15,
+                10,
+              ],
+              "styledMode": false,
+              "width": null,
+            },
+            "colors": Array [
+              "#7cb5ec",
+              "#434348",
+              "#90ed7d",
+              "#f7a35c",
+              "#8085e9",
+              "#f15c80",
+              "#e4d354",
+              "#2b908f",
+              "#f45b5b",
+              "#91e8e1",
+            ],
+            "credits": Object {
+              "enabled": true,
+              "href": "https://www.highcharts.com?credits",
+              "position": Object {
+                "align": "right",
+                "verticalAlign": "bottom",
+                "x": -10,
+                "y": -5,
+              },
+              "style": Object {
+                "color": "#999999",
+                "cursor": "pointer",
+                "fontSize": "9px",
+              },
+              "text": "Highcharts.com",
+            },
+            "global": Object {},
+            "labels": Object {
+              "style": Object {
+                "color": "#333333",
+                "position": "absolute",
+              },
+            },
+            "lang": Object {
+              "decimalPoint": ".",
+              "loading": "Loading...",
+              "months": Array [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December",
+              ],
+              "numericSymbols": Array [
+                "k",
+                "M",
+                "G",
+                "T",
+                "P",
+                "E",
+              ],
+              "resetZoom": "Reset zoom",
+              "resetZoomTitle": "Reset zoom level 1:1",
+              "shortMonths": Array [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dec",
+              ],
+              "thousandsSep": " ",
+              "weekdays": Array [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+              ],
+              "zoomIn": "Zoom in",
+              "zoomOut": "Zoom out",
+            },
+            "legend": Object {
+              "align": "center",
+              "alignColumns": true,
+              "borderColor": "#999999",
+              "borderRadius": 0,
+              "bubbleLegend": Object {
+                "borderColor": undefined,
+                "borderWidth": 2,
+                "className": undefined,
+                "color": undefined,
+                "connectorClassName": undefined,
+                "connectorColor": undefined,
+                "connectorDistance": 60,
+                "connectorWidth": 1,
+                "enabled": false,
+                "labels": Object {
+                  "align": "right",
+                  "allowOverlap": false,
+                  "className": undefined,
+                  "format": "",
+                  "formatter": undefined,
+                  "style": Object {
+                    "color": undefined,
+                    "fontSize": 10,
+                  },
+                  "x": 0,
+                  "y": 0,
+                },
+                "legendIndex": 0,
+                "maxSize": 60,
+                "minSize": 10,
+                "ranges": Object {
+                  "borderColor": undefined,
+                  "color": undefined,
+                  "connectorColor": undefined,
+                  "value": undefined,
+                },
+                "sizeBy": "area",
+                "sizeByAbsoluteValue": false,
+                "zIndex": 1,
+                "zThreshold": 0,
+              },
+              "enabled": true,
+              "itemCheckboxStyle": Object {
+                "height": "13px",
+                "position": "absolute",
+                "width": "13px",
+              },
+              "itemHiddenStyle": Object {
+                "color": "#cccccc",
+              },
+              "itemHoverStyle": Object {
+                "color": "#000000",
+              },
+              "itemStyle": Object {
+                "color": "#333333",
+                "cursor": "pointer",
+                "fontSize": "12px",
+                "fontWeight": "bold",
+                "textOverflow": "ellipsis",
+              },
+              "labelFormatter": [Function],
+              "layout": "horizontal",
+              "navigation": Object {
+                "activeColor": "#003399",
+                "inactiveColor": "#cccccc",
+              },
+              "shadow": false,
+              "squareSymbol": true,
+              "symbolPadding": 5,
+              "title": Object {
+                "style": Object {
+                  "fontWeight": "bold",
+                },
+              },
+              "verticalAlign": "bottom",
+              "x": 0,
+              "y": 0,
+            },
+            "loading": Object {
+              "labelStyle": Object {
+                "fontWeight": "bold",
+                "position": "relative",
+                "top": "45%",
+              },
+              "style": Object {
+                "backgroundColor": "#ffffff",
+                "opacity": 0.5,
+                "position": "absolute",
+                "textAlign": "center",
+              },
+            },
+            "mapNavigation": Object {
+              "buttonOptions": Object {
+                "align": "left",
+                "alignTo": "plotBox",
+                "height": 18,
+                "padding": 5,
+                "style": Object {
+                  "fontSize": "15px",
+                  "fontWeight": "bold",
+                },
+                "theme": Object {
+                  "stroke-width": 1,
+                  "text-align": "center",
+                },
+                "verticalAlign": "top",
+                "width": 18,
+                "x": 0,
+              },
+              "buttons": Object {
+                "zoomIn": Object {
+                  "onclick": [Function],
+                  "text": "+",
+                  "y": 0,
+                },
+                "zoomOut": Object {
+                  "onclick": [Function],
+                  "text": "-",
+                  "y": 28,
+                },
+              },
+              "mouseWheelSensitivity": 1.1,
+            },
+            "plotOptions": Object {
+              "area": Object {
+                "allowPointSelect": false,
+                "animation": Object {
+                  "duration": 1000,
+                },
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "formatter": [Function],
+                  "padding": 5,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "bottom",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "findNearestPointBy": "x",
+                "lineWidth": 2,
+                "marker": Object {
+                  "enabledThreshold": 2,
+                  "lineColor": "#ffffff",
+                  "lineWidth": 0,
+                  "radius": 4,
+                  "states": Object {
+                    "hover": Object {
+                      "animation": Object {
+                        "duration": 50,
+                      },
+                      "enabled": true,
+                      "lineWidthPlus": 1,
+                      "radiusPlus": 2,
+                    },
+                    "normal": Object {
+                      "animation": true,
+                    },
+                    "select": Object {
+                      "fillColor": "#cccccc",
+                      "lineColor": "#000000",
+                      "lineWidth": 2,
+                    },
+                  },
+                },
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": 0,
+                "showCheckbox": false,
+                "softThreshold": false,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "halo": Object {
+                      "opacity": 0.25,
+                      "size": 10,
+                    },
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                  },
+                },
+                "stickyTracking": true,
+                "threshold": 0,
+                "turboThreshold": 1000,
+              },
+              "areaspline": Object {
+                "allowPointSelect": false,
+                "animation": Object {
+                  "duration": 1000,
+                },
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "formatter": [Function],
+                  "padding": 5,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "bottom",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "findNearestPointBy": "x",
+                "lineWidth": 2,
+                "marker": Object {
+                  "enabledThreshold": 2,
+                  "lineColor": "#ffffff",
+                  "lineWidth": 0,
+                  "radius": 4,
+                  "states": Object {
+                    "hover": Object {
+                      "animation": Object {
+                        "duration": 50,
+                      },
+                      "enabled": true,
+                      "lineWidthPlus": 1,
+                      "radiusPlus": 2,
+                    },
+                    "normal": Object {
+                      "animation": true,
+                    },
+                    "select": Object {
+                      "fillColor": "#cccccc",
+                      "lineColor": "#000000",
+                      "lineWidth": 2,
+                    },
+                  },
+                },
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": 0,
+                "showCheckbox": false,
+                "softThreshold": false,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "halo": Object {
+                      "opacity": 0.25,
+                      "size": 10,
+                    },
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                  },
+                },
+                "stickyTracking": true,
+                "threshold": 0,
+                "turboThreshold": 1000,
+              },
+              "bar": Object {
+                "allowPointSelect": false,
+                "animation": Object {
+                  "duration": 1000,
+                },
+                "borderColor": "#ffffff",
+                "borderRadius": 0,
+                "centerInCategory": false,
+                "crisp": true,
+                "cropThreshold": 50,
+                "dataLabels": Object {
+                  "align": undefined,
+                  "formatter": [Function],
+                  "padding": 5,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": undefined,
+                  "x": 0,
+                  "y": undefined,
+                },
+                "events": Object {},
+                "findNearestPointBy": "x",
+                "groupPadding": 0.2,
+                "lineWidth": 2,
+                "marker": null,
+                "minPointLength": 0,
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointPadding": 0.1,
+                "pointRange": null,
+                "showCheckbox": false,
+                "softThreshold": false,
+                "startFromThreshold": true,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "brightness": 0.1,
+                    "halo": false,
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                    "borderColor": "#000000",
+                    "color": "#cccccc",
+                  },
+                },
+                "stickyTracking": false,
+                "threshold": 0,
+                "tooltip": Object {
+                  "distance": 6,
+                },
+                "turboThreshold": 1000,
+              },
+              "bubble": Object {
+                "allowPointSelect": false,
+                "animation": Object {
+                  "duration": 1000,
+                },
+                "animationLimit": 250,
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "formatter": [Function],
+                  "inside": true,
+                  "padding": 5,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "middle",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "findNearestPointBy": "xy",
+                "jitter": Object {
+                  "x": 0,
+                  "y": 0,
+                },
+                "lineWidth": 0,
+                "marker": Object {
+                  "enabled": true,
+                  "enabledThreshold": 2,
+                  "fillOpacity": 0.5,
+                  "lineColor": null,
+                  "lineWidth": 1,
+                  "radius": null,
+                  "states": Object {
+                    "hover": Object {
+                      "animation": Object {
+                        "duration": 50,
+                      },
+                      "enabled": true,
+                      "lineWidthPlus": 1,
+                      "radiusPlus": 0,
+                    },
+                    "normal": Object {
+                      "animation": true,
+                    },
+                    "select": Object {
+                      "fillColor": "#cccccc",
+                      "lineColor": "#000000",
+                      "lineWidth": 2,
+                    },
+                  },
+                  "symbol": "circle",
+                },
+                "maxSize": "20%",
+                "minSize": 8,
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": 0,
+                "showCheckbox": false,
+                "softThreshold": false,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "halo": Object {
+                      "opacity": 0.25,
+                      "size": 5,
+                    },
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                  },
+                },
+                "stickyTracking": true,
+                "tooltip": Object {
+                  "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
+                  "pointFormat": "({point.x}, {point.y}), Size: {point.z}",
+                },
+                "turboThreshold": 0,
+                "zThreshold": 0,
+                "zoneAxis": "z",
+              },
+              "column": Object {
+                "allowPointSelect": false,
+                "animation": Object {
+                  "duration": 1000,
+                },
+                "borderColor": "#ffffff",
+                "borderRadius": 0,
+                "centerInCategory": false,
+                "crisp": true,
+                "cropThreshold": 50,
+                "dataLabels": Object {
+                  "align": undefined,
+                  "formatter": [Function],
+                  "padding": 5,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": undefined,
+                  "x": 0,
+                  "y": undefined,
+                },
+                "events": Object {},
+                "findNearestPointBy": "x",
+                "groupPadding": 0.2,
+                "lineWidth": 2,
+                "marker": null,
+                "minPointLength": 0,
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointPadding": 0.1,
+                "pointRange": null,
+                "showCheckbox": false,
+                "softThreshold": false,
+                "startFromThreshold": true,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "brightness": 0.1,
+                    "halo": false,
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                    "borderColor": "#000000",
+                    "color": "#cccccc",
+                  },
+                },
+                "stickyTracking": false,
+                "threshold": 0,
+                "tooltip": Object {
+                  "distance": 6,
+                },
+                "turboThreshold": 1000,
+              },
+              "heatmap": Object {
+                "allowPointSelect": false,
+                "animation": false,
+                "borderWidth": 0,
+                "clip": true,
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "crop": false,
+                  "formatter": [Function],
+                  "inside": true,
+                  "overflow": false,
+                  "padding": 0,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "middle",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "findNearestPointBy": "xy",
+                "jitter": Object {
+                  "x": 0,
+                  "y": 0,
+                },
+                "lineWidth": 0,
+                "marker": Object {
+                  "enabled": true,
+                  "enabledThreshold": 2,
+                  "lineColor": undefined,
+                  "lineWidth": 0,
+                  "radius": 0,
+                  "states": Object {
+                    "hover": Object {
+                      "animation": Object {
+                        "duration": 50,
+                      },
+                      "enabled": true,
+                      "lineWidthPlus": 0,
+                      "radiusPlus": 2,
+                    },
+                    "normal": Object {
+                      "animation": true,
+                    },
+                    "select": Object {
+                      "fillColor": "#cccccc",
+                      "lineColor": "#000000",
+                      "lineWidth": 2,
+                    },
+                  },
+                  "symbol": "rect",
+                },
+                "nullColor": "#f7f7f7",
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": null,
+                "showCheckbox": false,
+                "softThreshold": true,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "brightness": 0.2,
+                    "halo": false,
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                  },
+                },
+                "stickyTracking": true,
+                "tooltip": Object {
+                  "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
+                  "pointFormat": "{point.x}, {point.y}: {point.value}<br/>",
+                },
+                "turboThreshold": 1000,
+              },
+              "line": Object {
+                "allowPointSelect": false,
+                "animation": Object {
+                  "duration": 1000,
+                },
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "formatter": [Function],
+                  "padding": 5,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "bottom",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "findNearestPointBy": "x",
+                "lineWidth": 2,
+                "marker": Object {
+                  "enabledThreshold": 2,
+                  "lineColor": "#ffffff",
+                  "lineWidth": 0,
+                  "radius": 4,
+                  "states": Object {
+                    "hover": Object {
+                      "animation": Object {
+                        "duration": 50,
+                      },
+                      "enabled": true,
+                      "lineWidthPlus": 1,
+                      "radiusPlus": 2,
+                    },
+                    "normal": Object {
+                      "animation": true,
+                    },
+                    "select": Object {
+                      "fillColor": "#cccccc",
+                      "lineColor": "#000000",
+                      "lineWidth": 2,
+                    },
+                  },
+                },
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": 0,
+                "showCheckbox": false,
+                "softThreshold": true,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "halo": Object {
+                      "opacity": 0.25,
+                      "size": 10,
+                    },
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                  },
+                },
+                "stickyTracking": true,
+                "turboThreshold": 1000,
+              },
+              "map": Object {
+                "allAreas": true,
+                "allowPointSelect": false,
+                "animation": false,
+                "borderColor": "#cccccc",
+                "borderWidth": 1,
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "crop": false,
+                  "formatter": [Function],
+                  "inside": true,
+                  "overflow": false,
+                  "padding": 0,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "middle",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "findNearestPointBy": "xy",
+                "jitter": Object {
+                  "x": 0,
+                  "y": 0,
+                },
+                "joinBy": "hc-key",
+                "lineWidth": 0,
+                "marker": null,
+                "nullColor": "#f7f7f7",
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": 0,
+                "showCheckbox": false,
+                "softThreshold": true,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "brightness": 0.2,
+                    "halo": null,
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 1,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                    "color": "#cccccc",
+                  },
+                },
+                "stickyTracking": false,
+                "tooltip": Object {
+                  "followPointer": true,
+                  "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
+                  "pointFormat": "{point.name}: {point.value}<br/>",
+                },
+                "turboThreshold": 0,
+              },
+              "mapbubble": Object {
+                "allowPointSelect": false,
+                "animation": Object {
+                  "duration": 1000,
+                },
+                "animationLimit": 500,
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "formatter": [Function],
+                  "inside": true,
+                  "padding": 5,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "middle",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "findNearestPointBy": "xy",
+                "jitter": Object {
+                  "x": 0,
+                  "y": 0,
+                },
+                "lineWidth": 0,
+                "marker": Object {
+                  "enabled": true,
+                  "enabledThreshold": 2,
+                  "fillOpacity": 0.5,
+                  "lineColor": null,
+                  "lineWidth": 1,
+                  "radius": null,
+                  "states": Object {
+                    "hover": Object {
+                      "animation": Object {
+                        "duration": 50,
+                      },
+                      "enabled": true,
+                      "lineWidthPlus": 1,
+                      "radiusPlus": 0,
+                    },
+                    "normal": Object {
+                      "animation": true,
+                    },
+                    "select": Object {
+                      "fillColor": "#cccccc",
+                      "lineColor": "#000000",
+                      "lineWidth": 2,
+                    },
+                  },
+                  "symbol": "circle",
+                },
+                "maxSize": "20%",
+                "minSize": 8,
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": 0,
+                "showCheckbox": false,
+                "softThreshold": false,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "halo": Object {
+                      "opacity": 0.25,
+                      "size": 5,
+                    },
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                  },
+                },
+                "stickyTracking": true,
+                "tooltip": Object {
+                  "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
+                  "pointFormat": "{point.name}: {point.z}",
+                },
+                "turboThreshold": 0,
+                "zThreshold": 0,
+                "zoneAxis": "z",
+              },
+              "mapline": Object {
+                "allAreas": true,
+                "allowPointSelect": false,
+                "animation": false,
+                "borderColor": "#cccccc",
+                "borderWidth": 1,
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "crop": false,
+                  "formatter": [Function],
+                  "inside": true,
+                  "overflow": false,
+                  "padding": 0,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "middle",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "fillColor": "none",
+                "findNearestPointBy": "xy",
+                "jitter": Object {
+                  "x": 0,
+                  "y": 0,
+                },
+                "joinBy": "hc-key",
+                "lineWidth": 1,
+                "marker": null,
+                "nullColor": "#f7f7f7",
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": 0,
+                "showCheckbox": false,
+                "softThreshold": true,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "brightness": 0.2,
+                    "halo": null,
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 1,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                    "color": "#cccccc",
+                  },
+                },
+                "stickyTracking": false,
+                "tooltip": Object {
+                  "followPointer": true,
+                  "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
+                  "pointFormat": "{point.name}: {point.value}<br/>",
+                },
+                "turboThreshold": 0,
+              },
+              "mappoint": Object {
+                "allowPointSelect": false,
+                "animation": Object {
+                  "duration": 1000,
+                },
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "crop": false,
+                  "defer": false,
+                  "enabled": true,
+                  "formatter": [Function],
+                  "overflow": false,
+                  "padding": 5,
+                  "style": Object {
+                    "color": "#000000",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "bottom",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "findNearestPointBy": "xy",
+                "jitter": Object {
+                  "x": 0,
+                  "y": 0,
+                },
+                "lineWidth": 0,
+                "marker": Object {
+                  "enabled": true,
+                  "enabledThreshold": 2,
+                  "lineColor": "#ffffff",
+                  "lineWidth": 0,
+                  "radius": 4,
+                  "states": Object {
+                    "hover": Object {
+                      "animation": Object {
+                        "duration": 50,
+                      },
+                      "enabled": true,
+                      "lineWidthPlus": 1,
+                      "radiusPlus": 2,
+                    },
+                    "normal": Object {
+                      "animation": true,
+                    },
+                    "select": Object {
+                      "fillColor": "#cccccc",
+                      "lineColor": "#000000",
+                      "lineWidth": 2,
+                    },
+                  },
+                },
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": 0,
+                "showCheckbox": false,
+                "softThreshold": true,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "halo": Object {
+                      "opacity": 0.25,
+                      "size": 10,
+                    },
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                  },
+                },
+                "stickyTracking": true,
+                "tooltip": Object {
+                  "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
+                  "pointFormat": "x: <b>{point.x}</b><br/>y: <b>{point.y}</b><br/>",
+                },
+                "turboThreshold": 1000,
+              },
+              "pie": Object {
+                "allowPointSelect": false,
+                "animation": Object {
+                  "duration": 1000,
+                },
+                "borderColor": "#ffffff",
+                "borderWidth": 1,
+                "center": Array [
+                  null,
+                  null,
+                ],
+                "clip": false,
+                "colorByPoint": true,
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "allowOverlap": true,
+                  "connectorPadding": 5,
+                  "connectorShape": "fixedOffset",
+                  "crookDistance": "70%",
+                  "distance": 30,
+                  "enabled": true,
+                  "formatter": [Function],
+                  "padding": 5,
+                  "softConnector": true,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "bottom",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "fillColor": undefined,
+                "findNearestPointBy": "x",
+                "ignoreHiddenPoint": true,
+                "inactiveOtherPoints": true,
+                "legendType": "point",
+                "lineWidth": undefined,
+                "marker": null,
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": 0,
+                "showCheckbox": false,
+                "showInLegend": false,
+                "size": null,
+                "slicedOffset": 10,
+                "softThreshold": true,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "brightness": 0.1,
+                    "halo": Object {
+                      "opacity": 0.25,
+                      "size": 10,
+                    },
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                  },
+                },
+                "stickyTracking": false,
+                "tooltip": Object {
+                  "followPointer": true,
+                },
+                "turboThreshold": 1000,
+              },
+              "scatter": Object {
+                "allowPointSelect": false,
+                "animation": Object {
+                  "duration": 1000,
+                },
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "formatter": [Function],
+                  "padding": 5,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "bottom",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "findNearestPointBy": "xy",
+                "jitter": Object {
+                  "x": 0,
+                  "y": 0,
+                },
+                "lineWidth": 0,
+                "marker": Object {
+                  "enabled": true,
+                  "enabledThreshold": 2,
+                  "lineColor": "#ffffff",
+                  "lineWidth": 0,
+                  "radius": 4,
+                  "states": Object {
+                    "hover": Object {
+                      "animation": Object {
+                        "duration": 50,
+                      },
+                      "enabled": true,
+                      "lineWidthPlus": 1,
+                      "radiusPlus": 2,
+                    },
+                    "normal": Object {
+                      "animation": true,
+                    },
+                    "select": Object {
+                      "fillColor": "#cccccc",
+                      "lineColor": "#000000",
+                      "lineWidth": 2,
+                    },
+                  },
+                },
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": 0,
+                "showCheckbox": false,
+                "softThreshold": true,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "halo": Object {
+                      "opacity": 0.25,
+                      "size": 10,
+                    },
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                  },
+                },
+                "stickyTracking": true,
+                "tooltip": Object {
+                  "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
+                  "pointFormat": "x: <b>{point.x}</b><br/>y: <b>{point.y}</b><br/>",
+                },
+                "turboThreshold": 1000,
+              },
+              "spline": Object {
+                "allowPointSelect": false,
+                "animation": Object {
+                  "duration": 1000,
+                },
+                "crisp": true,
+                "cropThreshold": 300,
+                "dataLabels": Object {
+                  "align": "center",
+                  "formatter": [Function],
+                  "padding": 5,
+                  "style": Object {
+                    "color": "contrast",
+                    "fontSize": "11px",
+                    "fontWeight": "bold",
+                    "textOutline": "1px contrast",
+                  },
+                  "verticalAlign": "bottom",
+                  "x": 0,
+                  "y": 0,
+                },
+                "events": Object {},
+                "findNearestPointBy": "x",
+                "lineWidth": 2,
+                "marker": Object {
+                  "enabledThreshold": 2,
+                  "lineColor": "#ffffff",
+                  "lineWidth": 0,
+                  "radius": 4,
+                  "states": Object {
+                    "hover": Object {
+                      "animation": Object {
+                        "duration": 50,
+                      },
+                      "enabled": true,
+                      "lineWidthPlus": 1,
+                      "radiusPlus": 2,
+                    },
+                    "normal": Object {
+                      "animation": true,
+                    },
+                    "select": Object {
+                      "fillColor": "#cccccc",
+                      "lineColor": "#000000",
+                      "lineWidth": 2,
+                    },
+                  },
+                },
+                "opacity": 1,
+                "point": Object {
+                  "events": Object {},
+                },
+                "pointRange": 0,
+                "showCheckbox": false,
+                "softThreshold": true,
+                "states": Object {
+                  "hover": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "halo": Object {
+                      "opacity": 0.25,
+                      "size": 10,
+                    },
+                    "lineWidthPlus": 1,
+                    "marker": Object {},
+                  },
+                  "inactive": Object {
+                    "animation": Object {
+                      "duration": 50,
+                    },
+                    "opacity": 0.2,
+                  },
+                  "normal": Object {
+                    "animation": true,
+                  },
+                  "select": Object {
+                    "animation": Object {
+                      "duration": 0,
+                    },
+                  },
+                },
+                "stickyTracking": true,
+                "turboThreshold": 1000,
+              },
+            },
+            "subtitle": Object {
+              "align": "center",
+              "text": "",
+              "widthAdjust": -44,
+            },
+            "symbols": Array [
+              "circle",
+              "diamond",
+              "square",
+              "triangle",
+              "triangle-down",
+            ],
+            "time": Object {
+              "Date": undefined,
+              "getTimezoneOffset": undefined,
+              "timezone": undefined,
+              "timezoneOffset": 0,
+              "useUTC": true,
+            },
+            "title": Object {
+              "align": "center",
+              "margin": 15,
+              "text": "Chart title",
+              "widthAdjust": -44,
+            },
+            "tooltip": Object {
+              "animation": false,
+              "backgroundColor": "rgba(247,247,247,0.85)",
+              "borderRadius": 3,
+              "borderWidth": 1,
+              "dateTimeLabelFormats": Object {
+                "day": "%A, %b %e, %Y",
+                "hour": "%A, %b %e, %H:%M",
+                "millisecond": "%A, %b %e, %H:%M:%S.%L",
+                "minute": "%A, %b %e, %H:%M",
+                "month": "%B %Y",
+                "second": "%A, %b %e, %H:%M:%S",
+                "week": "Week from %A, %b %e, %Y",
+                "year": "%Y",
+              },
+              "enabled": true,
+              "footerFormat": "",
+              "headerFormat": "<span style=\\"font-size: 10px\\">{point.key}</span><br/>",
+              "padding": 8,
+              "pointFormat": "<span style=\\"color:{point.color}\\">●</span> {series.name}: <b>{point.y}</b><br/>",
+              "shadow": true,
+              "snap": 10,
+              "style": Object {
+                "color": "#333333",
+                "cursor": "default",
+                "fontSize": "12px",
+                "whiteSpace": "nowrap",
+              },
+            },
+          },
+          "time": c {
+            "Date": [Function],
+            "getTimezoneOffset": [Function],
+            "options": Object {
+              "Date": undefined,
+              "getTimezoneOffset": undefined,
+              "timezone": undefined,
+              "timezoneOffset": 0,
+              "useUTC": true,
+            },
+            "timezoneOffset": 0,
+            "useUTC": true,
+            "variableTimezone": false,
+          },
+        },
         "parts/PieSeries.js": undefined,
         "parts/PlotLineOrBand.js": [Function],
         "parts/Point.js": [Function],
         "parts/Pointer.js": [Function],
         "parts/Responsive.js": undefined,
         "parts/SVGElement.js": [Function],
+        "parts/SVGLabel.js": [Function],
+        "parts/SVGRenderer.js": [Function],
         "parts/ScatterSeries.js": undefined,
         "parts/ScrollablePlotArea.js": undefined,
         "parts/Series.js": undefined,
         "parts/SplineSeries.js": undefined,
         "parts/Stacking.js": [Function],
         "parts/StackingAxis.js": [Function],
-        "parts/SvgRenderer.js": undefined,
         "parts/Tick.js": [Function],
         "parts/Time.js": [Function],
         "parts/Tooltip.js": [Function],
@@ -13106,6 +14978,7 @@ exports[`Map should render map with data and title 1`] = `
           "format": [Function],
           "getMagnitude": [Function],
           "getNestedProperty": [Function],
+          "getOptions": [Function],
           "getStyle": [Function],
           "inArray": [Function],
           "isArray": [Function],
@@ -13127,6 +15000,7 @@ exports[`Map should render map with data and title 1`] = `
           "removeEvent": [Function],
           "seriesType": [Function],
           "setAnimation": [Function],
+          "setOptions": [Function],
           "splat": [Function],
           "stableSort": [Function],
           "stop": [Function],
@@ -13142,6 +15016,7 @@ exports[`Map should render map with data and title 1`] = `
             "year": 31449600000,
           },
           "uniqueKey": [Function],
+          "useSerialIds": [Function],
           "wrap": [Function],
         },
       },
@@ -13627,10 +15502,11 @@ exports[`Map should render map with data and title 1`] = `
             },
             "borderColor": "#ffffff",
             "borderRadius": 0,
+            "centerInCategory": false,
             "crisp": true,
             "cropThreshold": 50,
             "dataLabels": Object {
-              "align": null,
+              "align": undefined,
               "formatter": [Function],
               "padding": 5,
               "style": Object {
@@ -13639,9 +15515,9 @@ exports[`Map should render map with data and title 1`] = `
                 "fontWeight": "bold",
                 "textOutline": "1px contrast",
               },
-              "verticalAlign": null,
+              "verticalAlign": undefined,
               "x": 0,
-              "y": null,
+              "y": undefined,
             },
             "events": Object {},
             "findNearestPointBy": "x",
@@ -13801,10 +15677,11 @@ exports[`Map should render map with data and title 1`] = `
             },
             "borderColor": "#ffffff",
             "borderRadius": 0,
+            "centerInCategory": false,
             "crisp": true,
             "cropThreshold": 50,
             "dataLabels": Object {
-              "align": null,
+              "align": undefined,
               "formatter": [Function],
               "padding": 5,
               "style": Object {
@@ -13813,9 +15690,9 @@ exports[`Map should render map with data and title 1`] = `
                 "fontWeight": "bold",
                 "textOutline": "1px contrast",
               },
-              "verticalAlign": null,
+              "verticalAlign": undefined,
               "x": 0,
-              "y": null,
+              "y": undefined,
             },
             "events": Object {},
             "findNearestPointBy": "x",
@@ -14724,1228 +16601,6 @@ exports[`Map should render map with data and title 1`] = `
           },
         },
       },
-      "defaultPlotOptions": Object {
-        "area": Object {
-          "allowPointSelect": false,
-          "animation": Object {
-            "duration": 1000,
-          },
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "formatter": [Function],
-            "padding": 5,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "bottom",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "findNearestPointBy": "x",
-          "lineWidth": 2,
-          "marker": Object {
-            "enabledThreshold": 2,
-            "lineColor": "#ffffff",
-            "lineWidth": 0,
-            "radius": 4,
-            "states": Object {
-              "hover": Object {
-                "animation": Object {
-                  "duration": 50,
-                },
-                "enabled": true,
-                "lineWidthPlus": 1,
-                "radiusPlus": 2,
-              },
-              "normal": Object {
-                "animation": true,
-              },
-              "select": Object {
-                "fillColor": "#cccccc",
-                "lineColor": "#000000",
-                "lineWidth": 2,
-              },
-            },
-          },
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": 0,
-          "showCheckbox": false,
-          "softThreshold": false,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "halo": Object {
-                "opacity": 0.25,
-                "size": 10,
-              },
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-            },
-          },
-          "stickyTracking": true,
-          "threshold": 0,
-          "turboThreshold": 1000,
-        },
-        "areaspline": Object {
-          "allowPointSelect": false,
-          "animation": Object {
-            "duration": 1000,
-          },
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "formatter": [Function],
-            "padding": 5,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "bottom",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "findNearestPointBy": "x",
-          "lineWidth": 2,
-          "marker": Object {
-            "enabledThreshold": 2,
-            "lineColor": "#ffffff",
-            "lineWidth": 0,
-            "radius": 4,
-            "states": Object {
-              "hover": Object {
-                "animation": Object {
-                  "duration": 50,
-                },
-                "enabled": true,
-                "lineWidthPlus": 1,
-                "radiusPlus": 2,
-              },
-              "normal": Object {
-                "animation": true,
-              },
-              "select": Object {
-                "fillColor": "#cccccc",
-                "lineColor": "#000000",
-                "lineWidth": 2,
-              },
-            },
-          },
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": 0,
-          "showCheckbox": false,
-          "softThreshold": false,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "halo": Object {
-                "opacity": 0.25,
-                "size": 10,
-              },
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-            },
-          },
-          "stickyTracking": true,
-          "threshold": 0,
-          "turboThreshold": 1000,
-        },
-        "bar": Object {
-          "allowPointSelect": false,
-          "animation": Object {
-            "duration": 1000,
-          },
-          "borderColor": "#ffffff",
-          "borderRadius": 0,
-          "crisp": true,
-          "cropThreshold": 50,
-          "dataLabels": Object {
-            "align": null,
-            "formatter": [Function],
-            "padding": 5,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": null,
-            "x": 0,
-            "y": null,
-          },
-          "events": Object {},
-          "findNearestPointBy": "x",
-          "groupPadding": 0.2,
-          "lineWidth": 2,
-          "marker": null,
-          "minPointLength": 0,
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointPadding": 0.1,
-          "pointRange": null,
-          "showCheckbox": false,
-          "softThreshold": false,
-          "startFromThreshold": true,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "brightness": 0.1,
-              "halo": false,
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-              "borderColor": "#000000",
-              "color": "#cccccc",
-            },
-          },
-          "stickyTracking": false,
-          "threshold": 0,
-          "tooltip": Object {
-            "distance": 6,
-          },
-          "turboThreshold": 1000,
-        },
-        "bubble": Object {
-          "allowPointSelect": false,
-          "animation": Object {
-            "duration": 1000,
-          },
-          "animationLimit": 250,
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "formatter": [Function],
-            "inside": true,
-            "padding": 5,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "middle",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "findNearestPointBy": "xy",
-          "jitter": Object {
-            "x": 0,
-            "y": 0,
-          },
-          "lineWidth": 0,
-          "marker": Object {
-            "enabled": true,
-            "enabledThreshold": 2,
-            "fillOpacity": 0.5,
-            "lineColor": null,
-            "lineWidth": 1,
-            "radius": null,
-            "states": Object {
-              "hover": Object {
-                "animation": Object {
-                  "duration": 50,
-                },
-                "enabled": true,
-                "lineWidthPlus": 1,
-                "radiusPlus": 0,
-              },
-              "normal": Object {
-                "animation": true,
-              },
-              "select": Object {
-                "fillColor": "#cccccc",
-                "lineColor": "#000000",
-                "lineWidth": 2,
-              },
-            },
-            "symbol": "circle",
-          },
-          "maxSize": "20%",
-          "minSize": 8,
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": 0,
-          "showCheckbox": false,
-          "softThreshold": false,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "halo": Object {
-                "opacity": 0.25,
-                "size": 5,
-              },
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-            },
-          },
-          "stickyTracking": true,
-          "tooltip": Object {
-            "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
-            "pointFormat": "({point.x}, {point.y}), Size: {point.z}",
-          },
-          "turboThreshold": 0,
-          "zThreshold": 0,
-          "zoneAxis": "z",
-        },
-        "column": Object {
-          "allowPointSelect": false,
-          "animation": Object {
-            "duration": 1000,
-          },
-          "borderColor": "#ffffff",
-          "borderRadius": 0,
-          "crisp": true,
-          "cropThreshold": 50,
-          "dataLabels": Object {
-            "align": null,
-            "formatter": [Function],
-            "padding": 5,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": null,
-            "x": 0,
-            "y": null,
-          },
-          "events": Object {},
-          "findNearestPointBy": "x",
-          "groupPadding": 0.2,
-          "lineWidth": 2,
-          "marker": null,
-          "minPointLength": 0,
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointPadding": 0.1,
-          "pointRange": null,
-          "showCheckbox": false,
-          "softThreshold": false,
-          "startFromThreshold": true,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "brightness": 0.1,
-              "halo": false,
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-              "borderColor": "#000000",
-              "color": "#cccccc",
-            },
-          },
-          "stickyTracking": false,
-          "threshold": 0,
-          "tooltip": Object {
-            "distance": 6,
-          },
-          "turboThreshold": 1000,
-        },
-        "heatmap": Object {
-          "allowPointSelect": false,
-          "animation": false,
-          "borderWidth": 0,
-          "clip": true,
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "crop": false,
-            "formatter": [Function],
-            "inside": true,
-            "overflow": false,
-            "padding": 0,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "middle",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "findNearestPointBy": "xy",
-          "jitter": Object {
-            "x": 0,
-            "y": 0,
-          },
-          "lineWidth": 0,
-          "marker": Object {
-            "enabled": true,
-            "enabledThreshold": 2,
-            "lineColor": undefined,
-            "lineWidth": 0,
-            "radius": 0,
-            "states": Object {
-              "hover": Object {
-                "animation": Object {
-                  "duration": 50,
-                },
-                "enabled": true,
-                "lineWidthPlus": 0,
-                "radiusPlus": 2,
-              },
-              "normal": Object {
-                "animation": true,
-              },
-              "select": Object {
-                "fillColor": "#cccccc",
-                "lineColor": "#000000",
-                "lineWidth": 2,
-              },
-            },
-            "symbol": "rect",
-          },
-          "nullColor": "#f7f7f7",
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": null,
-          "showCheckbox": false,
-          "softThreshold": true,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "brightness": 0.2,
-              "halo": false,
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-            },
-          },
-          "stickyTracking": true,
-          "tooltip": Object {
-            "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
-            "pointFormat": "{point.x}, {point.y}: {point.value}<br/>",
-          },
-          "turboThreshold": 1000,
-        },
-        "line": Object {
-          "allowPointSelect": false,
-          "animation": Object {
-            "duration": 1000,
-          },
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "formatter": [Function],
-            "padding": 5,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "bottom",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "findNearestPointBy": "x",
-          "lineWidth": 2,
-          "marker": Object {
-            "enabledThreshold": 2,
-            "lineColor": "#ffffff",
-            "lineWidth": 0,
-            "radius": 4,
-            "states": Object {
-              "hover": Object {
-                "animation": Object {
-                  "duration": 50,
-                },
-                "enabled": true,
-                "lineWidthPlus": 1,
-                "radiusPlus": 2,
-              },
-              "normal": Object {
-                "animation": true,
-              },
-              "select": Object {
-                "fillColor": "#cccccc",
-                "lineColor": "#000000",
-                "lineWidth": 2,
-              },
-            },
-          },
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": 0,
-          "showCheckbox": false,
-          "softThreshold": true,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "halo": Object {
-                "opacity": 0.25,
-                "size": 10,
-              },
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-            },
-          },
-          "stickyTracking": true,
-          "turboThreshold": 1000,
-        },
-        "map": Object {
-          "allAreas": true,
-          "allowPointSelect": false,
-          "animation": false,
-          "borderColor": "#cccccc",
-          "borderWidth": 1,
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "crop": false,
-            "formatter": [Function],
-            "inside": true,
-            "overflow": false,
-            "padding": 0,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "middle",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "findNearestPointBy": "xy",
-          "jitter": Object {
-            "x": 0,
-            "y": 0,
-          },
-          "joinBy": "hc-key",
-          "lineWidth": 0,
-          "marker": null,
-          "nullColor": "#f7f7f7",
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": 0,
-          "showCheckbox": false,
-          "softThreshold": true,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "brightness": 0.2,
-              "halo": null,
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 1,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-              "color": "#cccccc",
-            },
-          },
-          "stickyTracking": false,
-          "tooltip": Object {
-            "followPointer": true,
-            "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
-            "pointFormat": "{point.name}: {point.value}<br/>",
-          },
-          "turboThreshold": 0,
-        },
-        "mapbubble": Object {
-          "allowPointSelect": false,
-          "animation": Object {
-            "duration": 1000,
-          },
-          "animationLimit": 500,
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "formatter": [Function],
-            "inside": true,
-            "padding": 5,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "middle",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "findNearestPointBy": "xy",
-          "jitter": Object {
-            "x": 0,
-            "y": 0,
-          },
-          "lineWidth": 0,
-          "marker": Object {
-            "enabled": true,
-            "enabledThreshold": 2,
-            "fillOpacity": 0.5,
-            "lineColor": null,
-            "lineWidth": 1,
-            "radius": null,
-            "states": Object {
-              "hover": Object {
-                "animation": Object {
-                  "duration": 50,
-                },
-                "enabled": true,
-                "lineWidthPlus": 1,
-                "radiusPlus": 0,
-              },
-              "normal": Object {
-                "animation": true,
-              },
-              "select": Object {
-                "fillColor": "#cccccc",
-                "lineColor": "#000000",
-                "lineWidth": 2,
-              },
-            },
-            "symbol": "circle",
-          },
-          "maxSize": "20%",
-          "minSize": 8,
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": 0,
-          "showCheckbox": false,
-          "softThreshold": false,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "halo": Object {
-                "opacity": 0.25,
-                "size": 5,
-              },
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-            },
-          },
-          "stickyTracking": true,
-          "tooltip": Object {
-            "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
-            "pointFormat": "{point.name}: {point.z}",
-          },
-          "turboThreshold": 0,
-          "zThreshold": 0,
-          "zoneAxis": "z",
-        },
-        "mapline": Object {
-          "allAreas": true,
-          "allowPointSelect": false,
-          "animation": false,
-          "borderColor": "#cccccc",
-          "borderWidth": 1,
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "crop": false,
-            "formatter": [Function],
-            "inside": true,
-            "overflow": false,
-            "padding": 0,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "middle",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "fillColor": "none",
-          "findNearestPointBy": "xy",
-          "jitter": Object {
-            "x": 0,
-            "y": 0,
-          },
-          "joinBy": "hc-key",
-          "lineWidth": 1,
-          "marker": null,
-          "nullColor": "#f7f7f7",
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": 0,
-          "showCheckbox": false,
-          "softThreshold": true,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "brightness": 0.2,
-              "halo": null,
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 1,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-              "color": "#cccccc",
-            },
-          },
-          "stickyTracking": false,
-          "tooltip": Object {
-            "followPointer": true,
-            "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
-            "pointFormat": "{point.name}: {point.value}<br/>",
-          },
-          "turboThreshold": 0,
-        },
-        "mappoint": Object {
-          "allowPointSelect": false,
-          "animation": Object {
-            "duration": 1000,
-          },
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "crop": false,
-            "defer": false,
-            "enabled": true,
-            "formatter": [Function],
-            "overflow": false,
-            "padding": 5,
-            "style": Object {
-              "color": "#000000",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "bottom",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "findNearestPointBy": "xy",
-          "jitter": Object {
-            "x": 0,
-            "y": 0,
-          },
-          "lineWidth": 0,
-          "marker": Object {
-            "enabled": true,
-            "enabledThreshold": 2,
-            "lineColor": "#ffffff",
-            "lineWidth": 0,
-            "radius": 4,
-            "states": Object {
-              "hover": Object {
-                "animation": Object {
-                  "duration": 50,
-                },
-                "enabled": true,
-                "lineWidthPlus": 1,
-                "radiusPlus": 2,
-              },
-              "normal": Object {
-                "animation": true,
-              },
-              "select": Object {
-                "fillColor": "#cccccc",
-                "lineColor": "#000000",
-                "lineWidth": 2,
-              },
-            },
-          },
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": 0,
-          "showCheckbox": false,
-          "softThreshold": true,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "halo": Object {
-                "opacity": 0.25,
-                "size": 10,
-              },
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-            },
-          },
-          "stickyTracking": true,
-          "tooltip": Object {
-            "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
-            "pointFormat": "x: <b>{point.x}</b><br/>y: <b>{point.y}</b><br/>",
-          },
-          "turboThreshold": 1000,
-        },
-        "pie": Object {
-          "allowPointSelect": false,
-          "animation": Object {
-            "duration": 1000,
-          },
-          "borderColor": "#ffffff",
-          "borderWidth": 1,
-          "center": Array [
-            null,
-            null,
-          ],
-          "clip": false,
-          "colorByPoint": true,
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "allowOverlap": true,
-            "connectorPadding": 5,
-            "connectorShape": "fixedOffset",
-            "crookDistance": "70%",
-            "distance": 30,
-            "enabled": true,
-            "formatter": [Function],
-            "padding": 5,
-            "softConnector": true,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "bottom",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "fillColor": undefined,
-          "findNearestPointBy": "x",
-          "ignoreHiddenPoint": true,
-          "inactiveOtherPoints": true,
-          "legendType": "point",
-          "lineWidth": undefined,
-          "marker": null,
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": 0,
-          "showCheckbox": false,
-          "showInLegend": false,
-          "size": null,
-          "slicedOffset": 10,
-          "softThreshold": true,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "brightness": 0.1,
-              "halo": Object {
-                "opacity": 0.25,
-                "size": 10,
-              },
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-            },
-          },
-          "stickyTracking": false,
-          "tooltip": Object {
-            "followPointer": true,
-          },
-          "turboThreshold": 1000,
-        },
-        "scatter": Object {
-          "allowPointSelect": false,
-          "animation": Object {
-            "duration": 1000,
-          },
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "formatter": [Function],
-            "padding": 5,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "bottom",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "findNearestPointBy": "xy",
-          "jitter": Object {
-            "x": 0,
-            "y": 0,
-          },
-          "lineWidth": 0,
-          "marker": Object {
-            "enabled": true,
-            "enabledThreshold": 2,
-            "lineColor": "#ffffff",
-            "lineWidth": 0,
-            "radius": 4,
-            "states": Object {
-              "hover": Object {
-                "animation": Object {
-                  "duration": 50,
-                },
-                "enabled": true,
-                "lineWidthPlus": 1,
-                "radiusPlus": 2,
-              },
-              "normal": Object {
-                "animation": true,
-              },
-              "select": Object {
-                "fillColor": "#cccccc",
-                "lineColor": "#000000",
-                "lineWidth": 2,
-              },
-            },
-          },
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": 0,
-          "showCheckbox": false,
-          "softThreshold": true,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "halo": Object {
-                "opacity": 0.25,
-                "size": 10,
-              },
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-            },
-          },
-          "stickyTracking": true,
-          "tooltip": Object {
-            "headerFormat": "<span style=\\"color:{point.color}\\">●</span> <span style=\\"font-size: 10px\\"> {series.name}</span><br/>",
-            "pointFormat": "x: <b>{point.x}</b><br/>y: <b>{point.y}</b><br/>",
-          },
-          "turboThreshold": 1000,
-        },
-        "spline": Object {
-          "allowPointSelect": false,
-          "animation": Object {
-            "duration": 1000,
-          },
-          "crisp": true,
-          "cropThreshold": 300,
-          "dataLabels": Object {
-            "align": "center",
-            "formatter": [Function],
-            "padding": 5,
-            "style": Object {
-              "color": "contrast",
-              "fontSize": "11px",
-              "fontWeight": "bold",
-              "textOutline": "1px contrast",
-            },
-            "verticalAlign": "bottom",
-            "x": 0,
-            "y": 0,
-          },
-          "events": Object {},
-          "findNearestPointBy": "x",
-          "lineWidth": 2,
-          "marker": Object {
-            "enabledThreshold": 2,
-            "lineColor": "#ffffff",
-            "lineWidth": 0,
-            "radius": 4,
-            "states": Object {
-              "hover": Object {
-                "animation": Object {
-                  "duration": 50,
-                },
-                "enabled": true,
-                "lineWidthPlus": 1,
-                "radiusPlus": 2,
-              },
-              "normal": Object {
-                "animation": true,
-              },
-              "select": Object {
-                "fillColor": "#cccccc",
-                "lineColor": "#000000",
-                "lineWidth": 2,
-              },
-            },
-          },
-          "opacity": 1,
-          "point": Object {
-            "events": Object {},
-          },
-          "pointRange": 0,
-          "showCheckbox": false,
-          "softThreshold": true,
-          "states": Object {
-            "hover": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "halo": Object {
-                "opacity": 0.25,
-                "size": 10,
-              },
-              "lineWidthPlus": 1,
-              "marker": Object {},
-            },
-            "inactive": Object {
-              "animation": Object {
-                "duration": 50,
-              },
-              "opacity": 0.2,
-            },
-            "normal": Object {
-              "animation": true,
-            },
-            "select": Object {
-              "animation": Object {
-                "duration": 0,
-              },
-            },
-          },
-          "stickyTracking": true,
-          "turboThreshold": 1000,
-        },
-      },
       "defined": [Function],
       "deg2rad": 0.017453292519943295,
       "destroyObjectProperties": [Function],
@@ -16058,7 +16713,7 @@ exports[`Map should render map with data and title 1`] = `
       "svg": false,
       "symbolSizes": Object {},
       "syncTimeout": [Function],
-      "time": f {
+      "time": c {
         "Date": [Function],
         "getTimezoneOffset": [Function],
         "options": Object {
@@ -16084,7 +16739,8 @@ exports[`Map should render map with data and title 1`] = `
       },
       "timers": Array [],
       "uniqueKey": [Function],
-      "version": "8.1.0",
+      "useSerialIds": [Function],
+      "version": "8.1.2",
       "win": [Window],
       "wrap": [Function],
     }
