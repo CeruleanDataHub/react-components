@@ -70,15 +70,20 @@ export const Dropdown = ({ isOpen, label, onClick, items, amountSelected }) => {
 };
 
 Dropdown.propTypes = {
+  /** If dropdown is open or not */
   isOpen: PropTypes.bool,
+  /** Text to show in dropdown */
   label: PropTypes.string,
+  /** Handler function */
   onClick: PropTypes.func,
+  /** Items to be shown in dropdown list */
   items: PropTypes.arrayOf(
     PropTypes.shape({
       value: PropTypes.string,
       label: PropTypes.string
     })
   ),
+  /** Amount of items selected in list */
   amountSelected: PropTypes.number
 };
 
