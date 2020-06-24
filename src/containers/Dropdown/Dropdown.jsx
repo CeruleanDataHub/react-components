@@ -5,32 +5,35 @@ import styled from "styled-components";
 import { CheckboxWrapper } from "../Checkbox/CheckboxWrapper";
 import { Icon } from "../Icon/Icon";
 
+const Container = styled.div`
+  width: 300px;
+  position: relative;
+`;
+
 const DropdownContainer = styled.button`
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 300px;
   height: 40px;
   border: 1px solid #0f181c;
   background: #0f181c;
   border-radius: 4px;
-  position: relative;
   padding: 1.25em;
   cursor: pointer;
 `;
 
 const ItemList = styled.ul`
-  width: calc(100% + 2px);
+  width: 100%;
   padding: 0;
   background: #0f181c;
   position: absolute;
-  top: 24px;
-  left: -1px;
+  top: 22px;
   border-radius: 0 0 4px 4px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  list-style: none;
 `;
 
 const DropdownItem = styled.li`
@@ -47,20 +50,22 @@ const DropdownText = styled.span`
 export const Dropdown = ({ isOpen, label, onClick, items, amountSelected }) => {
   const generateList = listItems =>
     listItems.map(item => (
-      <DropdownItem>
-        <CheckboxWrapper label={item} />
+      <DropdownItem key={item.label}>
+        <CheckboxWrapper label={item.label} />
       </DropdownItem>
     ));
 
   return (
-    <DropdownContainer onClick={onClick}>
-      <DropdownText>{label}</DropdownText>
-      {isOpen && (
-        <DropdownText color="green">{`${amountSelected} selected`}</DropdownText>
-      )}
-      <Icon name={isOpen ? "chevron-up" : "chevron-down"} as={DropdownText} />
+    <Container>
+      <DropdownContainer onClick={onClick}>
+        <DropdownText>{label}</DropdownText>
+        {isOpen && (
+          <DropdownText color="#90ee7e">{`${amountSelected} selected`}</DropdownText>
+        )}
+        <Icon name={isOpen ? "chevron-up" : "chevron-down"} as={DropdownText} />
+      </DropdownContainer>
       {isOpen && <ItemList>{generateList(items)}</ItemList>}
-    </DropdownContainer>
+    </Container>
   );
 };
 
@@ -68,7 +73,12 @@ Dropdown.propTypes = {
   isOpen: PropTypes.bool,
   label: PropTypes.string,
   onClick: PropTypes.func,
-  items: PropTypes.arrayOf(PropTypes.string),
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      value: PropTypes.string,
+      label: PropTypes.string
+    })
+  ),
   amountSelected: PropTypes.number
 };
 
