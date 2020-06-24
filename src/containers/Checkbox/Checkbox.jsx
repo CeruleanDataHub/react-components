@@ -21,22 +21,21 @@ const StyledCheckbox = styled.div`
   display: inline-block;
   width: 16px;
   height: 16px;
-  border: 1px solid ${(props) => (props.checked ? "black" : "grey")};
-  background: ${(props) => (props.checked ? "black" : "white")};
+  border: 1px solid ${props => (props.checked ? "#90ee7e" : "#999")};
+  background: ${props => (props.checked ? "#90ee7e" : "transparent")};
+  text-align: center;
+  border-radius: 4px;
 `;
 
 const CheckmarkIcon = styled.span`
-  color: white;
+  color: black;
   font-size: 0.75em;
   font-weight: bold;
-  position: relative;
-  top: -1px;
-  left: 2px;
 `;
 
 const CheckboxLabel = styled.span`
-  color: #333;
-  margin-left: 0.5em;
+  color: #999;
+  margin-left: 1.5em;
 `;
 
 const CheckboxContainer = styled.label`
@@ -71,12 +70,12 @@ Checkbox.propTypes = {
   className: PropTypes.string,
   checked: PropTypes.bool,
   label: PropTypes.string,
-  onChange: PropTypes.func,
+  onChange: PropTypes.func
 };
 
 Checkbox.defaultProps = {
   className: "",
   checked: false,
   label: "",
-  onChange: () => {},
+  onChange: () => {}
 };
