@@ -57,7 +57,7 @@ Chart.propTypes = {
     })
   ),
   /** Type of the chart */
-  type: PropTypes.oneOf(["line", "bar", "area", "areaspline"]),
+  type: PropTypes.oneOf(["line", "bar", "area", "areaspline", "heatmap"]),
   /** You can use highcharts options to extend the chart behavior */
   // eslint-disable-next-line react/forbid-prop-types
   options: PropTypes.object

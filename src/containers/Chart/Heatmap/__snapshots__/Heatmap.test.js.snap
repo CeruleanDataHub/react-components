@@ -1,0 +1,334 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heatmap should render heatmap 1`] = `
+<Chart
+  options={
+    Object {
+      "chart": Object {
+        "type": "heatmap",
+      },
+      "colorAxis": Object {
+        "maxColor": "#fdeeee",
+        "minColor": "#f45b5b",
+        "stops": Array [
+          Array [
+            0.1,
+            "#f45b5b",
+          ],
+          Array [
+            0.2,
+            "#f56b6b",
+          ],
+          Array [
+            0.3,
+            "#f67b7b",
+          ],
+          Array [
+            0.4,
+            "#f78c8c",
+          ],
+          Array [
+            0.5,
+            "#f89c9c",
+          ],
+          Array [
+            0.6,
+            "#f9adad",
+          ],
+          Array [
+            0.7,
+            "#fabdbd",
+          ],
+          Array [
+            0.8,
+            "#fbcdcd",
+          ],
+          Array [
+            0.9,
+            "#fcdede",
+          ],
+          Array [
+            1,
+            "#fdeeee",
+          ],
+        ],
+      },
+      "legend": Object {
+        "enabled": false,
+      },
+      "plotOptions": Object {
+        "heatmap": Object {
+          "borderColor": "#000000",
+          "borderWidth": 4,
+        },
+      },
+      "tooltip": Object {
+        "enabled": false,
+      },
+      "xAxis": Object {
+        "visible": false,
+      },
+      "yAxis": Object {
+        "reversed": true,
+        "visible": false,
+      },
+    }
+  }
+  series={
+    Array [
+      Object {
+        "data": Array [],
+        "dataLabels": Object {
+          "color": "#000000",
+          "enabled": true,
+        },
+      },
+    ]
+  }
+  title=""
+  type="heatmap"
+  xAxis={null}
+/>
+`;
+
+exports[`Heatmap should render heatmap with data 1`] = `
+<Chart
+  options={
+    Object {
+      "chart": Object {
+        "type": "heatmap",
+      },
+      "colorAxis": Object {
+        "maxColor": "#fdeeee",
+        "minColor": "#f45b5b",
+        "stops": Array [
+          Array [
+            0.1,
+            "#f45b5b",
+          ],
+          Array [
+            0.2,
+            "#f56b6b",
+          ],
+          Array [
+            0.3,
+            "#f67b7b",
+          ],
+          Array [
+            0.4,
+            "#f78c8c",
+          ],
+          Array [
+            0.5,
+            "#f89c9c",
+          ],
+          Array [
+            0.6,
+            "#f9adad",
+          ],
+          Array [
+            0.7,
+            "#fabdbd",
+          ],
+          Array [
+            0.8,
+            "#fbcdcd",
+          ],
+          Array [
+            0.9,
+            "#fcdede",
+          ],
+          Array [
+            1,
+            "#fdeeee",
+          ],
+        ],
+      },
+      "legend": Object {
+        "enabled": false,
+      },
+      "plotOptions": Object {
+        "heatmap": Object {
+          "borderColor": "#000000",
+          "borderWidth": 4,
+        },
+      },
+      "tooltip": Object {
+        "enabled": false,
+      },
+      "xAxis": Object {
+        "visible": false,
+      },
+      "yAxis": Object {
+        "reversed": true,
+        "visible": false,
+      },
+    }
+  }
+  series={
+    Array [
+      Object {
+        "data": Array [
+          Array [
+            0,
+            0,
+            71,
+          ],
+          Array [
+            0,
+            1,
+            45,
+          ],
+          Array [
+            0,
+            2,
+            100,
+          ],
+          Array [
+            0,
+            3,
+            40,
+          ],
+          Array [
+            0,
+            4,
+            59,
+          ],
+          Array [
+            1,
+            0,
+            41,
+          ],
+          Array [
+            1,
+            1,
+            72,
+          ],
+          Array [
+            1,
+            2,
+            29,
+          ],
+          Array [
+            1,
+            3,
+            13,
+          ],
+          Array [
+            1,
+            4,
+            33,
+          ],
+          Array [
+            2,
+            0,
+            85,
+          ],
+          Array [
+            2,
+            1,
+            52,
+          ],
+          Array [
+            2,
+            2,
+            72,
+          ],
+          Array [
+            2,
+            3,
+            52,
+          ],
+          Array [
+            2,
+            4,
+            93,
+          ],
+          Array [
+            3,
+            0,
+            84,
+          ],
+          Array [
+            3,
+            1,
+            72,
+          ],
+          Array [
+            3,
+            2,
+            100,
+          ],
+          Array [
+            3,
+            3,
+            49,
+          ],
+          Array [
+            3,
+            4,
+            92,
+          ],
+          Array [
+            4,
+            0,
+            75,
+          ],
+          Array [
+            4,
+            1,
+            97,
+          ],
+          Array [
+            4,
+            2,
+            63,
+          ],
+          Array [
+            4,
+            3,
+            12,
+          ],
+          Array [
+            4,
+            4,
+            64,
+          ],
+          Array [
+            5,
+            0,
+            74,
+          ],
+          Array [
+            5,
+            1,
+            82,
+          ],
+          Array [
+            5,
+            2,
+            83,
+          ],
+          Array [
+            5,
+            3,
+            91,
+          ],
+          Array [
+            5,
+            4,
+            48,
+          ],
+        ],
+        "dataLabels": Object {
+          "color": "#000000",
+          "enabled": true,
+        },
+      },
+    ]
+  }
+  title=""
+  type="heatmap"
+  xAxis={null}
+/>
+`;
