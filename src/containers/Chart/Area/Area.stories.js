@@ -1,10 +1,10 @@
 import React from "react";
 
-import { Chart } from "./Chart";
+import { Area } from "./Area";
 
 export default {
-  title: "Chart",
-  component: Chart
+  title: "Area",
+  component: Area
 };
 
 const xAxis = [
@@ -26,15 +26,6 @@ const series = [
   { name: "Humidity", data: [29, 39, 26, 53, 9, 46, 31] }
 ];
 
-export const ChartStory = () => (
-  <Chart title="Chart" xAxis={xAxis} series={series} />
-);
-
-export const ChartAreaSplineStory = () => (
-  <Chart
-    title="Sauna histogram as area spline"
-    xAxis={xAxis}
-    series={series}
-    type="areaspline"
-  />
+export const AreaStory = () => (
+  <Area title="Sauna histogram as area" xAxis={xAxis} series={series} />
 );
