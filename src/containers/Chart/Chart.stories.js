@@ -4,7 +4,7 @@ import { Chart } from "./Chart";
 
 export default {
   title: "Chart",
-  component: Chart,
+  component: Chart
 };
 
 const xAxis = [
@@ -16,27 +16,18 @@ const xAxis = [
       "thursday",
       "friday",
       "saturday",
-      "sunday",
-    ],
-  },
+      "sunday"
+    ]
+  }
 ];
 
 const series = [
   { name: "Temperature", data: [99, 80, 82, 59, 90, 6, 99] },
-  { name: "Humidity", data: [29, 39, 26, 53, 9, 46, 31] },
+  { name: "Humidity", data: [29, 39, 26, 53, 9, 46, 31] }
 ];
 
 export const ChartStory = () => (
   <Chart title="Chart" xAxis={xAxis} series={series} />
-);
-
-export const ChartLineStory = () => (
-  <Chart
-    title="Sauna histogram as line"
-    xAxis={xAxis}
-    series={series}
-    type="line"
-  />
 );
 
 export const ChartBarStory = () => (
