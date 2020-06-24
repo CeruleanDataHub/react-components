@@ -114,7 +114,7 @@ xdescribe("Chart", () => {
       { name: "temperature", data: [10, 15, 20, 25, 15, 20, 15] }
     ];
 
-    const types = ["line", "bar", "area", "areaspline", "heatmap"];
+    const types = ["line", "bar", "area", "spline", "areaspline", "heatmap"];
 
     types.forEach(type => {
       it(`should render ${type} chart`, () => {

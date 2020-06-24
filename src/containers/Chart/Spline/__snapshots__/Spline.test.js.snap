@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spline should render chart 1`] = `
+<Chart
+  options={Object {}}
+  series={Array []}
+  title=""
+  type="spline"
+  xAxis={null}
+/>
+`;
+
+exports[`Spline should render chart with simple data 1`] = `
+<Chart
+  options={Object {}}
+  series={
+    Array [
+      Object {
+        "data": Array [
+          10,
+          15,
+          20,
+          25,
+          15,
+          20,
+          15,
+        ],
+        "name": "temperature",
+      },
+    ]
+  }
+  title="Chart"
+  type="spline"
+  xAxis={
+    Array [
+      Object {
+        "categories": Array [
+          "monday",
+          "tuesday",
+          "wednesday",
+          "thursday",
+          "friday",
+          "saturday",
+          "sunday",
+        ],
+      },
+    ]
+  }
+/>
+`;
