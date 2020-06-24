@@ -30,15 +30,6 @@ export const ChartStory = () => (
   <Chart title="Chart" xAxis={xAxis} series={series} />
 );
 
-export const ChartBarStory = () => (
-  <Chart
-    title="Sauna histogram as bar"
-    xAxis={xAxis}
-    series={series}
-    type="bar"
-  />
-);
-
 export const ChartAreaStory = () => (
   <Chart
     title="Sauna histogram as area chart"
