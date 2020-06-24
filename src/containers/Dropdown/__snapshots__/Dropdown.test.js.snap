@@ -92,17 +92,23 @@ exports[`Dropdown should render dropdown with items and clicked open 1`] = `
     <styled.li
       key="Item 1"
     >
-      <CheckboxWrapper
+      <Checkbox
+        checked={false}
+        className=""
         label="Item 1"
-        onToggle={[Function]}
+        onChange={[Function]}
+        value="1"
       />
     </styled.li>
     <styled.li
       key="Item 2"
     >
-      <CheckboxWrapper
+      <Checkbox
+        checked={false}
+        className=""
         label="Item 2"
-        onToggle={[Function]}
+        onChange={[Function]}
+        value="2"
       />
     </styled.li>
   </styled.ul>

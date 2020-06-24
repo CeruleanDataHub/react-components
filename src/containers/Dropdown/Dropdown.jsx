@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
-import { CheckboxWrapper } from "../Checkbox/CheckboxWrapper";
+import { Checkbox } from "../Checkbox/Checkbox";
 import { Icon } from "../Icon/Icon";
 
 const Container = styled.div`
@@ -47,30 +47,53 @@ const DropdownText = styled.span`
   font-weight: bold;
 `;
 
-export const Dropdown = ({ isOpen, label, onClick, items, amountSelected }) => {
-  const generateList = listItems =>
-    listItems.map(item => (
-      <DropdownItem key={item.label}>
-        <CheckboxWrapper label={item.label} />
-      </DropdownItem>
-    ));
+const generateList = (items, handleSelection) =>
+  items.map(({ value, label, checked }) => (
+    <DropdownItem key={label}>
+      <Checkbox
+        checked={checked}
+        value={value}
+        label={label}
+        onChange={handleSelection}
+      />
+    </DropdownItem>
+  ));
+
+const setSelectedItemAsChecked = value => items =>
+  items.map(item => ({
+    ...item,
+    checked: item.value === value ? !item.checked : item.checked
+  }));
+
+export const Dropdown = ({ isOpen, label, onClick, items }) => {
+  const [selectedItems, setSelectedItems] = useState(
+    items.map(item => ({ ...item, checked: false }))
+  );
+
+  const checkedItems = selectedItems.filter(({ checked }) => checked);
+
+  const handleSelection = value => {
+    setSelectedItems(setSelectedItemAsChecked(value));
+  };
 
   return (
     <Container>
       <DropdownContainer onClick={onClick}>
         <DropdownText>{label}</DropdownText>
         {isOpen && (
-          <DropdownText color="#90ee7e">{`${amountSelected} selected`}</DropdownText>
+          <DropdownText color="#90ee7e">{`${checkedItems.length} selected`}</DropdownText>
         )}
         <Icon name={isOpen ? "chevron-up" : "chevron-down"} as={DropdownText} />
       </DropdownContainer>
-      {isOpen && <ItemList>{generateList(items)}</ItemList>}
+      {isOpen && (
+        <ItemList>{generateList(selectedItems, handleSelection)}</ItemList>
+      )}
     </Container>
   );
 };
 
 Dropdown.propTypes = {
-  /** If dropdown is open or not */
+  /** Define dropdown visibility state */
   isOpen: PropTypes.bool,
   /** Text to show in dropdown */
   label: PropTypes.string,
@@ -82,15 +105,12 @@ Dropdown.propTypes = {
       value: PropTypes.string,
       label: PropTypes.string
     })
-  ),
-  /** Amount of items selected in list */
-  amountSelected: PropTypes.number
+  )
 };
 
 Dropdown.defaultProps = {
   isOpen: false,
   label: "",
   onClick: () => {},
-  items: [],
-  amountSelected: 0
+  items: []
 };
