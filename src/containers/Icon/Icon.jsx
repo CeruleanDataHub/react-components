@@ -20,6 +20,8 @@ export const names = [
   "eye",
   "checkmark",
   "pyramids",
+  "chevron-down",
+  "chevron-up"
 ];
 export const iconNameProps = PropTypes.oneOf(names);
 
@@ -28,11 +30,11 @@ Icon.propTypes = {
   as: PropTypes.oneOfType([
     PropTypes.func,
     PropTypes.string,
-    PropTypes.shape({ render: PropTypes.func.isRequired }),
-  ]),
+    PropTypes.shape({ render: PropTypes.func.isRequired })
+  ])
 };
 
 Icon.defaultProps = {
   name: "",
-  as: null,
+  as: null
 };

@@ -19,13 +19,16 @@ describe("Checkbox", () => {
 
   it("applies default styles", () => {
     const component = mount(<Checkbox />);
-    expect(component.find("div")).toHaveStyleRule("border", "1px solid grey");
-    expect(component.find("div")).toHaveStyleRule("background", "white");
+    expect(component.find("div")).toHaveStyleRule("border", "1px solid #999");
+    expect(component.find("div")).toHaveStyleRule("background", "transparent");
   });
 
   it("changes styles according to props", () => {
     const component = mount(<Checkbox checked />);
-    expect(component.find("div")).toHaveStyleRule("border", "1px solid black");
-    expect(component.find("div")).toHaveStyleRule("background", "black");
+    expect(component.find("div")).toHaveStyleRule(
+      "border",
+      "1px solid #90ee7e"
+    );
+    expect(component.find("div")).toHaveStyleRule("background", "#90ee7e");
   });
 });

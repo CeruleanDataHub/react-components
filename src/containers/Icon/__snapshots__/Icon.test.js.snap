@@ -12,6 +12,18 @@ exports[`Icon should render icon checkmark 1`] = `
 />
 `;
 
+exports[`Icon should render icon chevron-down 1`] = `
+<span
+  className="sc-AxjAm jnaJRY lni lni-chevron-down"
+/>
+`;
+
+exports[`Icon should render icon chevron-up 1`] = `
+<span
+  className="sc-AxjAm jnaJRY lni lni-chevron-up"
+/>
+`;
+
 exports[`Icon should render icon cog 1`] = `
 <span
   className="sc-AxjAm jnaJRY lni lni-cog"
