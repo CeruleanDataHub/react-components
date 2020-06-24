@@ -1,5 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Checkbox should accept onChange function 1`] = `
+<styled.label
+  className=""
+>
+  <styled.input
+    checked={false}
+    onChange={[Function]}
+    value={1}
+  />
+  <styled.div
+    checked={false}
+  />
+  <styled.span>
+    Test
+  </styled.span>
+</styled.label>
+`;
+
 exports[`Checkbox should render Checkbox 1`] = `
 <styled.label
   className=""
@@ -59,5 +77,123 @@ exports[`Checkbox should render Checkbox with checked prop 1`] = `
     />
   </styled.div>
   <styled.span />
+</styled.label>
+`;
+
+exports[`Checkbox should render Checkbox with value and label 1`] = `
+<styled.label
+  className=""
+>
+  <styled.input
+    checked={false}
+    onChange={[Function]}
+    value={1}
+  />
+  <styled.div
+    checked={false}
+  />
+  <styled.span>
+    Test
+  </styled.span>
+</styled.label>
+`;
+
+exports[`Checkbox should render Checkbox with value and label, and be checked 1`] = `
+<styled.label
+  className=""
+>
+  <styled.input
+    checked={true}
+    onChange={[Function]}
+    value={1}
+  />
+  <styled.div
+    checked={true}
+  >
+    <Icon
+      as={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "baseHash": 1845756808,
+            "componentId": "sc-AxhCb",
+            "isStatic": false,
+            "rules": Array [
+              "
+  color: black;
+  font-size: 0.75em;
+  font-weight: bold;
+",
+            ],
+            "staticRulesId": "",
+          },
+          "displayName": "styled.span",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "shouldForwardProp": undefined,
+          "styledComponentId": "sc-AxhCb",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      name="checkmark"
+    />
+  </styled.div>
+  <styled.span>
+    Test
+  </styled.span>
+</styled.label>
+`;
+
+exports[`Checkbox should render Checkbox with value and label, and be checked, and have classname 1`] = `
+<styled.label
+  className="test"
+>
+  <styled.input
+    checked={true}
+    onChange={[Function]}
+    value={1}
+  />
+  <styled.div
+    checked={true}
+  >
+    <Icon
+      as={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "baseHash": 1845756808,
+            "componentId": "sc-AxhCb",
+            "isStatic": false,
+            "rules": Array [
+              "
+  color: black;
+  font-size: 0.75em;
+  font-weight: bold;
+",
+            ],
+            "staticRulesId": "",
+          },
+          "displayName": "styled.span",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "shouldForwardProp": undefined,
+          "styledComponentId": "sc-AxhCb",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      name="checkmark"
+    />
+  </styled.div>
+  <styled.span>
+    Test
+  </styled.span>
 </styled.label>
 `;

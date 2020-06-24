@@ -17,6 +17,30 @@ describe("Checkbox", () => {
     expect(toJson(component)).toMatchSnapshot();
   });
 
+  it("should render Checkbox with value and label", () => {
+    const component = shallow(<Checkbox value={1} label="Test" />);
+    expect(toJson(component)).toMatchSnapshot();
+  });
+
+  it("should render Checkbox with value and label, and be checked", () => {
+    const component = shallow(<Checkbox value={1} label="Test" checked />);
+    expect(toJson(component)).toMatchSnapshot();
+  });
+
+  it("should render Checkbox with value and label, and be checked, and have classname", () => {
+    const component = shallow(
+      <Checkbox value={1} label="Test" checked className="test" />
+    );
+    expect(toJson(component)).toMatchSnapshot();
+  });
+
+  it("should accept onChange function", () => {
+    const component = shallow(
+      <Checkbox value={1} label="Test" onChange={() => null} />
+    );
+    expect(toJson(component)).toMatchSnapshot();
+  });
+
   it("applies default styles", () => {
     const component = mount(<Checkbox />);
     expect(component.find("div")).toHaveStyleRule("border", "1px solid #999");

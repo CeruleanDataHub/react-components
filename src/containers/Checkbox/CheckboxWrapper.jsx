@@ -6,9 +6,9 @@ import { Checkbox } from "./Checkbox";
 export const CheckboxWrapper = ({ onToggle, label }) => {
   const [checked, setChecked] = useState(false);
 
-  const onCheckboxChange = event => {
-    setChecked(event.target.checked);
-    onToggle(event.target.checked);
+  const onCheckboxChange = () => {
+    setChecked(!checked);
+    onToggle(!checked);
   };
 
   return (

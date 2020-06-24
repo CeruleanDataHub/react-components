@@ -54,22 +54,25 @@ const CheckboxContainer = styled.label`
   }
 `;
 
-export const Checkbox = ({ className, checked, label, onChange }) => {
-  return (
-    <CheckboxContainer className={className}>
-      <HiddenCheckbox checked={checked} onChange={onChange} />
-      <StyledCheckbox checked={checked}>
-        {checked && <Icon name="checkmark" as={CheckmarkIcon} />}
-      </StyledCheckbox>
-      <CheckboxLabel>{label}</CheckboxLabel>
-    </CheckboxContainer>
-  );
-};
+export const Checkbox = ({ className, checked, value, label, onChange }) => (
+  <CheckboxContainer className={className}>
+    <HiddenCheckbox
+      checked={checked}
+      value={value}
+      onChange={() => onChange(value)}
+    />
+    <StyledCheckbox checked={checked}>
+      {checked && <Icon name="checkmark" as={CheckmarkIcon} />}
+    </StyledCheckbox>
+    <CheckboxLabel>{label}</CheckboxLabel>
+  </CheckboxContainer>
+);
 
 Checkbox.propTypes = {
   className: PropTypes.string,
   checked: PropTypes.bool,
   label: PropTypes.string,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   onChange: PropTypes.func
 };
 
@@ -77,5 +80,6 @@ Checkbox.defaultProps = {
   className: "",
   checked: false,
   label: "",
+  value: undefined,
   onChange: () => {}
 };
