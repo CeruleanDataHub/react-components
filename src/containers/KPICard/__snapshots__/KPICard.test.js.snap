@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StatisticsBox should format large values 1`] = `
+exports[`KPICard should format large values 1`] = `
 <div
   className="sc-AxirZ dGOzPI"
 >
@@ -37,7 +37,7 @@ exports[`StatisticsBox should format large values 1`] = `
 </div>
 `;
 
-exports[`StatisticsBox should render 1`] = `
+exports[`KPICard should render 1`] = `
 <div
   className="sc-AxirZ dGOzPI"
 >
@@ -74,7 +74,7 @@ exports[`StatisticsBox should render 1`] = `
 </div>
 `;
 
-exports[`StatisticsBox should render green 1`] = `
+exports[`KPICard should render green 1`] = `
 <div
   className="sc-AxirZ dGOzPI"
 >
@@ -111,7 +111,7 @@ exports[`StatisticsBox should render green 1`] = `
 </div>
 `;
 
-exports[`StatisticsBox should render negative growth 1`] = `
+exports[`KPICard should render negative growth 1`] = `
 <div
   className="sc-AxirZ dGOzPI"
 >
@@ -148,7 +148,7 @@ exports[`StatisticsBox should render negative growth 1`] = `
 </div>
 `;
 
-exports[`StatisticsBox should render positive growth 1`] = `
+exports[`KPICard should render positive growth 1`] = `
 <div
   className="sc-AxirZ dGOzPI"
 >
@@ -185,7 +185,7 @@ exports[`StatisticsBox should render positive growth 1`] = `
 </div>
 `;
 
-exports[`StatisticsBox should render red 1`] = `
+exports[`KPICard should render red 1`] = `
 <div
   className="sc-AxirZ dGOzPI"
 >
@@ -222,7 +222,7 @@ exports[`StatisticsBox should render red 1`] = `
 </div>
 `;
 
-exports[`StatisticsBox should render two decimal points in growth 1`] = `
+exports[`KPICard should render two decimal points in growth 1`] = `
 <div
   className="sc-AxirZ dGOzPI"
 >
@@ -259,7 +259,7 @@ exports[`StatisticsBox should render two decimal points in growth 1`] = `
 </div>
 `;
 
-exports[`StatisticsBox should render zero growth 1`] = `
+exports[`KPICard should render zero growth 1`] = `
 <div
   className="sc-AxirZ dGOzPI"
 >

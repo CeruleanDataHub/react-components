@@ -44,7 +44,7 @@ const getGrowthColor = growth => {
   return growth > 0 ? colors.green : colors.red;
 };
 
-export const StatisticsBox = ({
+export const KPICard = ({
   title,
   value,
   growth,
@@ -79,7 +79,7 @@ export const StatisticsBox = ({
   </Container>
 );
 
-StatisticsBox.propTypes = {
+KPICard.propTypes = {
   /** Title for the box */
   title: PropTypes.string,
   /** Numeric value */
@@ -92,7 +92,7 @@ StatisticsBox.propTypes = {
   greenValue: PropTypes.bool
 };
 
-StatisticsBox.defaultProps = {
+KPICard.defaultProps = {
   title: "",
   value: 0,
   growth: 0,
