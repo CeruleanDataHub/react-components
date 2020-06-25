@@ -33,10 +33,8 @@ exports[`Semi Donut should render chart 1`] = `
           "startAngle": -90,
         },
       },
-      "series": Array [],
       "title": Object {
         "align": "center",
-        "text": "",
         "verticalAlign": "middle",
         "y": 60,
       },
@@ -85,45 +83,8 @@ exports[`Semi Donut should render chart with data 1`] = `
           "startAngle": -90,
         },
       },
-      "series": Array [
-        Object {
-          "data": Array [
-            Array [
-              "Chrome",
-              58.9,
-            ],
-            Array [
-              "Firefox",
-              13.29,
-            ],
-            Array [
-              "Internet Explorer",
-              13,
-            ],
-            Array [
-              "Edge",
-              3.78,
-            ],
-            Array [
-              "Safari",
-              3.42,
-            ],
-            Object {
-              "dataLabels": Object {
-                "enabled": false,
-              },
-              "name": "Other",
-              "y": 7.61,
-            },
-          ],
-          "innerSize": "50%",
-          "name": "Browser share",
-          "type": "pie",
-        },
-      ],
       "title": Object {
         "align": "center",
-        "text": "",
         "verticalAlign": "middle",
         "y": 60,
       },
@@ -166,6 +127,7 @@ exports[`Semi Donut should render chart with data 1`] = `
         ],
         "innerSize": "50%",
         "name": "Browser share",
+        "type": "pie",
       },
     ]
   }
@@ -208,45 +170,8 @@ exports[`Semi Donut should render chart with title and data 1`] = `
           "startAngle": -90,
         },
       },
-      "series": Array [
-        Object {
-          "data": Array [
-            Array [
-              "Chrome",
-              58.9,
-            ],
-            Array [
-              "Firefox",
-              13.29,
-            ],
-            Array [
-              "Internet Explorer",
-              13,
-            ],
-            Array [
-              "Edge",
-              3.78,
-            ],
-            Array [
-              "Safari",
-              3.42,
-            ],
-            Object {
-              "dataLabels": Object {
-                "enabled": false,
-              },
-              "name": "Other",
-              "y": 7.61,
-            },
-          ],
-          "innerSize": "50%",
-          "name": "Browser share",
-          "type": "pie",
-        },
-      ],
       "title": Object {
         "align": "center",
-        "text": "Chart",
         "verticalAlign": "middle",
         "y": 60,
       },
@@ -289,6 +214,7 @@ exports[`Semi Donut should render chart with title and data 1`] = `
         ],
         "innerSize": "50%",
         "name": "Browser share",
+        "type": "pie",
       },
     ]
   }

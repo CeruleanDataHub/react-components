@@ -2,7 +2,7 @@ import React from "react";
 
 import { Chart } from "../Chart";
 
-export const SemiDonut = ({ title, xAxis, series }) => {
+export const SemiDonut = ({ title, series }) => {
   const options = {
     chart: {
       plotBackgroundColor: null,
@@ -10,7 +10,6 @@ export const SemiDonut = ({ title, xAxis, series }) => {
       plotShadow: false
     },
     title: {
-      text: title,
       align: "center",
       verticalAlign: "middle",
       y: 60
@@ -38,12 +37,15 @@ export const SemiDonut = ({ title, xAxis, series }) => {
         center: ["50%", "75%"],
         size: "110%"
       }
-    },
-    series: series.map(value => ({ ...value, type: "pie" }))
+    }
   };
 
   return (
-    <Chart title={title} xAxis={xAxis} series={series} options={options} />
+    <Chart
+      title={title}
+      series={series.map(value => ({ ...value, type: "pie" }))}
+      options={options}
+    />
   );
 };
 
@@ -51,14 +53,11 @@ SemiDonut.propTypes = {
   ...Chart.propTypes,
   /** Title of the chart */
   title: Chart.propTypes.title,
-  /** Values for X axis */
-  xAxis: Chart.propTypes.xAxis,
   /** Data to be graphed */
   series: Chart.propTypes.series
 };
 
 SemiDonut.defaultProps = {
   title: Chart.defaultProps.title,
-  xAxis: Chart.defaultProps.xAxis,
   series: Chart.defaultProps.series
 };
