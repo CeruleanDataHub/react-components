@@ -17,9 +17,6 @@ const stops = [
 ];
 
 const options = {
-  chart: {
-    type: "heatmap"
-  },
   colorAxis: {
     minColor: stops[0][1],
     maxColor: stops[stops.length - 1][1],
@@ -32,8 +29,8 @@ const options = {
     enabled: false
   },
   plotOptions: { heatmap: { borderColor: "#000000", borderWidth: 4 } },
-  yAxis: { visible: false, reversed: true },
-  xAxis: { visible: false }
+  yAxis: [{ visible: false, reversed: true }],
+  xAxis: [{ visible: false }]
 };
 
 export const Heatmap = ({ data }) => {

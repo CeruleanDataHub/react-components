@@ -4,9 +4,6 @@ exports[`Heatmap should render heatmap 1`] = `
 <Chart
   options={
     Object {
-      "chart": Object {
-        "type": "heatmap",
-      },
       "colorAxis": Object {
         "maxColor": "#fdeeee",
         "minColor": "#f45b5b",
@@ -65,13 +62,17 @@ exports[`Heatmap should render heatmap 1`] = `
       "tooltip": Object {
         "enabled": false,
       },
-      "xAxis": Object {
-        "visible": false,
-      },
-      "yAxis": Object {
-        "reversed": true,
-        "visible": false,
-      },
+      "xAxis": Array [
+        Object {
+          "visible": false,
+        },
+      ],
+      "yAxis": Array [
+        Object {
+          "reversed": true,
+          "visible": false,
+        },
+      ],
     }
   }
   series={
@@ -95,9 +96,6 @@ exports[`Heatmap should render heatmap with data 1`] = `
 <Chart
   options={
     Object {
-      "chart": Object {
-        "type": "heatmap",
-      },
       "colorAxis": Object {
         "maxColor": "#fdeeee",
         "minColor": "#f45b5b",
@@ -156,13 +154,17 @@ exports[`Heatmap should render heatmap with data 1`] = `
       "tooltip": Object {
         "enabled": false,
       },
-      "xAxis": Object {
-        "visible": false,
-      },
-      "yAxis": Object {
-        "reversed": true,
-        "visible": false,
-      },
+      "xAxis": Array [
+        Object {
+          "visible": false,
+        },
+      ],
+      "yAxis": Array [
+        Object {
+          "reversed": true,
+          "visible": false,
+        },
+      ],
     }
   }
   series={
