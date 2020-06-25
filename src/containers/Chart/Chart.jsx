@@ -3,12 +3,14 @@ import HighchartsReact from "highcharts-react-official";
 import HighchartsWheel from "highcharts/modules/dependency-wheel";
 import HighchartSankey from "highcharts/modules/sankey";
 import TreeMap from "highcharts/modules/treemap";
+import DarkUnica from "highcharts/themes/dark-unica";
 import PropTypes from "prop-types";
 import React from "react";
 
 HighchartSankey(Highcharts);
 HighchartsWheel(Highcharts);
 TreeMap(Highcharts);
+DarkUnica(Highcharts);
 
 const chartDefaults = {
   credits: { enabled: false }
