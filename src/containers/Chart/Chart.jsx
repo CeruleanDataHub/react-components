@@ -26,7 +26,7 @@ export const Chart = ({
   const chartOptions = {
     ...chartDefaults,
     ...options,
-    xAxis,
+    xAxis: [...options.xAxis, ...(xAxis || [])],
     series,
     title: { ...options.title, text: title },
     chart: { ...options.chart, type },
