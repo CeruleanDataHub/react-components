@@ -23,10 +23,11 @@ export const Chart = ({
   type = "line",
   options = {}
 }) => {
+  const xAxisData = [...(options.xAxis || []), ...(xAxis || [])];
   const chartOptions = {
     ...chartDefaults,
     ...options,
-    xAxis: [...options.xAxis, ...(xAxis || [])],
+    xAxis: xAxisData.length ? xAxisData : null,
     series,
     title: { ...options.title, text: title },
     chart: { ...options.chart, type },
