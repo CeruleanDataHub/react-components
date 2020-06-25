@@ -11,11 +11,6 @@ HighchartsWheel(Highcharts);
 TreeMap(Highcharts);
 
 const chartDefaults = {
-  chart: {
-    width: 625,
-    height: 299,
-    backgroundColor: "#eeeeee"
-  },
   credits: { enabled: false }
 };
 
@@ -27,12 +22,12 @@ export const Chart = ({
   options = {}
 }) => {
   const chartOptions = {
+    ...chartDefaults,
+    ...options,
     xAxis,
     series,
-    title: { text: title },
-    ...chartDefaults,
-    chart: { ...chartDefaults.chart, type },
-    ...options,
+    title: { ...options.title, text: title },
+    chart: { ...options.chart, type },
     plotOptions: {
       ...options.plotOptions,
       series: {
