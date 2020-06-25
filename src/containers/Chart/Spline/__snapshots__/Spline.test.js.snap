@@ -2,7 +2,13 @@
 
 exports[`Spline should render chart 1`] = `
 <Chart
-  options={Object {}}
+  options={
+    Object {
+      "tooltip": Object {
+        "split": true,
+      },
+    }
+  }
   series={Array []}
   title=""
   type="spline"
@@ -12,7 +18,13 @@ exports[`Spline should render chart 1`] = `
 
 exports[`Spline should render chart with simple data 1`] = `
 <Chart
-  options={Object {}}
+  options={
+    Object {
+      "tooltip": Object {
+        "split": true,
+      },
+    }
+  }
   series={
     Array [
       Object {

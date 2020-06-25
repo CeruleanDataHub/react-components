@@ -2,8 +2,20 @@ import React from "react";
 
 import { Chart } from "../Chart";
 
+const options = {
+  tooltip: {
+    split: true
+  }
+};
+
 export const Spline = ({ title, xAxis, series }) => (
-  <Chart title={title} xAxis={xAxis} series={series} type="spline" />
+  <Chart
+    title={title}
+    xAxis={xAxis}
+    series={series}
+    options={options}
+    type="spline"
+  />
 );
 
 Spline.propTypes = {
