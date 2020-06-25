@@ -2,24 +2,23 @@ import React from "react";
 
 import { Chart } from "../Chart";
 
-export const DependencyWheel = ({ title, xAxis, series }) => {
-  const options = {
-    title: {
-      text: title
-    },
-    accessibility: {
-      point: {
-        valueDescriptionFormat:
-          "{index}. From {point.from} to {point.to}: {point.weight}."
-      }
-    },
-    series: series.map(value => ({ ...value, type: "dependencywheel" }))
-  };
-
-  return (
-    <Chart title={title} xAxis={xAxis} series={series} options={options} />
-  );
+const options = {
+  accessibility: {
+    point: {
+      valueDescriptionFormat:
+        "{index}. From {point.from} to {point.to}: {point.weight}."
+    }
+  }
 };
+
+export const DependencyWheel = ({ title, xAxis, series }) => (
+  <Chart
+    title={title}
+    xAxis={xAxis}
+    series={series.map(value => ({ ...value, type: "dependencywheel" }))}
+    options={options}
+  />
+);
 
 DependencyWheel.propTypes = {
   ...Chart.propTypes,
