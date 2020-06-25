@@ -3,7 +3,6 @@ import React from "react";
 import { Chart } from "../Chart";
 
 const treeMapSeriesOptions = {
-  type: "treemap",
   layoutAlgorithm: "squarified",
   alternateStartingDirection: true,
   levels: [
@@ -23,19 +22,16 @@ const treeMapSeriesOptions = {
   ]
 };
 
-export const TreeMap = ({ title, series }) => {
-  const options = {
-    title: {
-      text: title
-    },
-    series: series.map(value => ({
+export const TreeMap = ({ title, series }) => (
+  <Chart
+    title={title}
+    series={series.map(value => ({
       ...value,
       ...treeMapSeriesOptions
-    }))
-  };
-
-  return <Chart title={title} series={series} options={options} />;
-};
+    }))}
+    type="treemap"
+  />
+);
 
 TreeMap.propTypes = {
   ...Chart.propTypes,
