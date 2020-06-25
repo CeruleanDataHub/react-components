@@ -13,7 +13,7 @@ exports[`Dependency Wheel should render chart 1`] = `
   }
   series={Array []}
   title=""
-  type="line"
+  type="dependencywheel"
   xAxis={null}
 />
 `;
@@ -81,12 +81,11 @@ exports[`Dependency Wheel should render chart with data and title 1`] = `
         ],
         "name": "Dependency wheel series",
         "size": "95%",
-        "type": "dependencywheel",
       },
     ]
   }
   title="Dependency wheel"
-  type="line"
+  type="dependencywheel"
   xAxis={null}
 />
 `;

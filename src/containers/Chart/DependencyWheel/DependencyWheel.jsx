@@ -15,8 +15,9 @@ export const DependencyWheel = ({ title, xAxis, series }) => (
   <Chart
     title={title}
     xAxis={xAxis}
-    series={series.map(value => ({ ...value, type: "dependencywheel" }))}
+    series={series}
     options={options}
+    type="dependencywheel"
   />
 );
 
