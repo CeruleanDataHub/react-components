@@ -45,7 +45,7 @@ exports[`Semi Donut should render chart 1`] = `
   }
   series={Array []}
   title=""
-  type="line"
+  type="pie"
   xAxis={null}
 />
 `;
@@ -127,12 +127,11 @@ exports[`Semi Donut should render chart with data 1`] = `
         ],
         "innerSize": "50%",
         "name": "Browser share",
-        "type": "pie",
       },
     ]
   }
   title=""
-  type="line"
+  type="pie"
   xAxis={null}
 />
 `;
@@ -214,12 +213,11 @@ exports[`Semi Donut should render chart with title and data 1`] = `
         ],
         "innerSize": "50%",
         "name": "Browser share",
-        "type": "pie",
       },
     ]
   }
   title="Chart"
-  type="line"
+  type="pie"
   xAxis={null}
 />
 `;

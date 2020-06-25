@@ -40,13 +40,7 @@ export const SemiDonut = ({ title, series }) => {
     }
   };
 
-  return (
-    <Chart
-      title={title}
-      series={series.map(value => ({ ...value, type: "pie" }))}
-      options={options}
-    />
-  );
+  return <Chart title={title} series={series} options={options} type="pie" />;
 };
 
 SemiDonut.propTypes = {
