@@ -63,7 +63,8 @@ Chart.propTypes = {
     "areaspline",
     "heatmap",
     "treemap",
-    "dependencywheel"
+    "dependencywheel",
+    "pie"
   ]),
   /** You can use highcharts options to extend the chart behavior */
   // eslint-disable-next-line react/forbid-prop-types
