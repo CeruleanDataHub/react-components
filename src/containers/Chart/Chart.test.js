@@ -121,7 +121,8 @@ xdescribe("Chart", () => {
       "spline",
       "areaspline",
       "heatmap",
-      "treemap"
+      "treemap",
+      "dependencywheel"
     ];
 
     types.forEach(type => {
