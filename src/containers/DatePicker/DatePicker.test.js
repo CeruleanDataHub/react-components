@@ -15,4 +15,10 @@ describe("DatePicker", () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+
+  it("should render DatePicker with two months", () => {
+    const component = renderer.create(<DatePicker monthsShown={2} />);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
