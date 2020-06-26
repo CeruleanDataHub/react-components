@@ -19,7 +19,7 @@ export const names = [
   "cog",
   "eye",
   "checkmark",
-  "pyramids",
+  "minus",
   "chevron-down",
   "chevron-up",
   "calendar"
