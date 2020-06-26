@@ -1,42 +1,56 @@
-import { mount, shallow } from "enzyme";
-import toJson from "enzyme-to-json";
+import { mount } from "enzyme";
 import React from "react";
+import renderer from "react-test-renderer";
 
 import { Checkbox } from "./Checkbox";
 
 describe("Checkbox", () => {
   it("should render Checkbox", () => {
-    const component = shallow(<Checkbox />);
-    expect(toJson(component)).toMatchSnapshot();
+    const component = renderer.create(<Checkbox />);
+
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   it("should render Checkbox with checked prop", () => {
-    const component = shallow(<Checkbox checked />);
-    expect(toJson(component)).toMatchSnapshot();
+    const component = renderer.create(<Checkbox checked />);
+
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   it("should render Checkbox with value and label", () => {
-    const component = shallow(<Checkbox value={1} label="Test" />);
-    expect(toJson(component)).toMatchSnapshot();
+    const component = renderer.create(<Checkbox value={1} label="Test" />);
+
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   it("should render Checkbox with value and label, and be checked", () => {
-    const component = shallow(<Checkbox value={1} label="Test" checked />);
-    expect(toJson(component)).toMatchSnapshot();
+    const component = renderer.create(
+      <Checkbox value={1} label="Test" checked />
+    );
+
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   it("should render Checkbox with value and label, and be checked, and have classname", () => {
-    const component = shallow(
+    const component = renderer.create(
       <Checkbox value={1} label="Test" checked className="test" />
     );
-    expect(toJson(component)).toMatchSnapshot();
+
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   it("should accept onChange function", () => {
-    const component = shallow(
+    const component = renderer.create(
       <Checkbox value={1} label="Test" onChange={() => null} />
     );
-    expect(toJson(component)).toMatchSnapshot();
+
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   it("applies default styles", () => {

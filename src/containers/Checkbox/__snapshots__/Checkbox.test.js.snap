@@ -1,199 +1,464 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox should accept onChange function 1`] = `
-<styled.label
-  className=""
+.c1 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c3 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #999;
+  background: transparent;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.c5 {
+  color: #999;
+  margin-left: 1.5em;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  margin: 0.25em 0;
+}
+
+.c0:hover .c2 {
+  border-color: #333;
+}
+
+.c0:hover .c4 {
+  color: #666;
+}
+
+<label
+  className="c0"
 >
-  <styled.input
+  <input
     checked={false}
+    className="c1"
     onChange={[Function]}
+    type="checkbox"
     value={1}
   />
-  <styled.div
+  <div
     checked={false}
+    className="c2 c3"
   />
-  <styled.span>
+  <span
+    className="c4 c5"
+  >
     Test
-  </styled.span>
-</styled.label>
+  </span>
+</label>
 `;
 
 exports[`Checkbox should render Checkbox 1`] = `
-<styled.label
-  className=""
+.c1 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c3 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #999;
+  background: transparent;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.c5 {
+  color: #999;
+  margin-left: 1.5em;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  margin: 0.25em 0;
+}
+
+.c0:hover .c2 {
+  border-color: #333;
+}
+
+.c0:hover .c4 {
+  color: #666;
+}
+
+<label
+  className="c0"
 >
-  <styled.input
+  <input
     checked={false}
+    className="c1"
     onChange={[Function]}
+    type="checkbox"
   />
-  <styled.div
+  <div
     checked={false}
+    className="c2 c3"
   />
-  <styled.span />
-</styled.label>
+  <span
+    className="c4 c5"
+  >
+    
+  </span>
+</label>
 `;
 
 exports[`Checkbox should render Checkbox with checked prop 1`] = `
-<styled.label
-  className=""
->
-  <styled.input
-    checked={true}
-    onChange={[Function]}
-  />
-  <styled.div
-    checked={true}
-  >
-    <Icon
-      as={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "baseHash": 1845756808,
-            "componentId": "sc-AxhCb",
-            "isStatic": false,
-            "rules": Array [
-              "
+.c5 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c1 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c3 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #90ee7e;
+  background: #90ee7e;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.c4 {
   color: black;
   font-size: 0.75em;
   font-weight: bold;
-",
-            ],
-            "staticRulesId": "",
-          },
-          "displayName": "styled.span",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "shouldForwardProp": undefined,
-          "styledComponentId": "sc-AxhCb",
-          "target": "span",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      name="checkmark"
+}
+
+.c7 {
+  color: #999;
+  margin-left: 1.5em;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  margin: 0.25em 0;
+}
+
+.c0:hover .c2 {
+  border-color: #333;
+}
+
+.c0:hover .c6 {
+  color: #666;
+}
+
+<label
+  className="c0"
+>
+  <input
+    checked={true}
+    className="c1"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <div
+    checked={true}
+    className="c2 c3"
+  >
+    <span
+      className="c4 c5 lni lni-checkmark"
     />
-  </styled.div>
-  <styled.span />
-</styled.label>
+  </div>
+  <span
+    className="c6 c7"
+  >
+    
+  </span>
+</label>
 `;
 
 exports[`Checkbox should render Checkbox with value and label 1`] = `
-<styled.label
-  className=""
+.c1 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c3 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #999;
+  background: transparent;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.c5 {
+  color: #999;
+  margin-left: 1.5em;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  margin: 0.25em 0;
+}
+
+.c0:hover .c2 {
+  border-color: #333;
+}
+
+.c0:hover .c4 {
+  color: #666;
+}
+
+<label
+  className="c0"
 >
-  <styled.input
+  <input
     checked={false}
+    className="c1"
     onChange={[Function]}
+    type="checkbox"
     value={1}
   />
-  <styled.div
+  <div
     checked={false}
+    className="c2 c3"
   />
-  <styled.span>
+  <span
+    className="c4 c5"
+  >
     Test
-  </styled.span>
-</styled.label>
+  </span>
+</label>
 `;
 
 exports[`Checkbox should render Checkbox with value and label, and be checked 1`] = `
-<styled.label
-  className=""
->
-  <styled.input
-    checked={true}
-    onChange={[Function]}
-    value={1}
-  />
-  <styled.div
-    checked={true}
-  >
-    <Icon
-      as={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "baseHash": 1845756808,
-            "componentId": "sc-AxhCb",
-            "isStatic": false,
-            "rules": Array [
-              "
+.c5 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c1 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c3 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #90ee7e;
+  background: #90ee7e;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.c4 {
   color: black;
   font-size: 0.75em;
   font-weight: bold;
-",
-            ],
-            "staticRulesId": "",
-          },
-          "displayName": "styled.span",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "shouldForwardProp": undefined,
-          "styledComponentId": "sc-AxhCb",
-          "target": "span",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      name="checkmark"
+}
+
+.c7 {
+  color: #999;
+  margin-left: 1.5em;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  margin: 0.25em 0;
+}
+
+.c0:hover .c2 {
+  border-color: #333;
+}
+
+.c0:hover .c6 {
+  color: #666;
+}
+
+<label
+  className="c0"
+>
+  <input
+    checked={true}
+    className="c1"
+    onChange={[Function]}
+    type="checkbox"
+    value={1}
+  />
+  <div
+    checked={true}
+    className="c2 c3"
+  >
+    <span
+      className="c4 c5 lni lni-checkmark"
     />
-  </styled.div>
-  <styled.span>
+  </div>
+  <span
+    className="c6 c7"
+  >
     Test
-  </styled.span>
-</styled.label>
+  </span>
+</label>
 `;
 
 exports[`Checkbox should render Checkbox with value and label, and be checked, and have classname 1`] = `
-<styled.label
-  className="test"
->
-  <styled.input
-    checked={true}
-    onChange={[Function]}
-    value={1}
-  />
-  <styled.div
-    checked={true}
-  >
-    <Icon
-      as={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "baseHash": 1845756808,
-            "componentId": "sc-AxhCb",
-            "isStatic": false,
-            "rules": Array [
-              "
+.c5 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c1 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c3 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #90ee7e;
+  background: #90ee7e;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.c4 {
   color: black;
   font-size: 0.75em;
   font-weight: bold;
-",
-            ],
-            "staticRulesId": "",
-          },
-          "displayName": "styled.span",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "shouldForwardProp": undefined,
-          "styledComponentId": "sc-AxhCb",
-          "target": "span",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      name="checkmark"
+}
+
+.c7 {
+  color: #999;
+  margin-left: 1.5em;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  margin: 0.25em 0;
+}
+
+.c0:hover .c2 {
+  border-color: #333;
+}
+
+.c0:hover .c6 {
+  color: #666;
+}
+
+<label
+  className="c0 test"
+>
+  <input
+    checked={true}
+    className="c1"
+    onChange={[Function]}
+    type="checkbox"
+    value={1}
+  />
+  <div
+    checked={true}
+    className="c2 c3"
+  >
+    <span
+      className="c4 c5 lni lni-checkmark"
     />
-  </styled.div>
-  <styled.span>
+  </div>
+  <span
+    className="c6 c7"
+  >
     Test
-  </styled.span>
-</styled.label>
+  </span>
+</label>
 `;
