@@ -288,11 +288,6 @@ const dropdownItems = [
   { value: "5", label: "Item 5" }
 ];
 
-const Container = styled.div`
-  background: #000000;
-  color: #999999;
-`;
-
 const repeat = n => new Array(n).fill(null).map((_, i) => i);
 
 const xAxisCategories = ["1", "2", "3", "4", "5", "6", "7"];
@@ -366,6 +361,11 @@ const mapSeries = [
     name: "Data"
   }
 ];
+
+const Container = styled.div`
+  background: #000000;
+  color: #999999;
+`;
 
 const Img = styled.img`
   width: 170px;
@@ -465,7 +465,7 @@ export const KeyperDemoPage2 = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <>
+    <Container>
       <Grid>
         <Cell>
           <Img
@@ -528,7 +528,7 @@ export const KeyperDemoPage2 = () => {
           />
         </Cell>
       </Grid>
-    </>
+    </Container>
   );
 };
 
