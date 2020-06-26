@@ -12,8 +12,13 @@ exports[`Icon should render icon briefcase 1`] = `
 `;
 
 exports[`Icon should render icon calendar 1`] = `
+.c0 {
+  font-size: 4rem;
+  text-align: center;
+}
+
 <span
-  className="sc-AxjAm jnaJRY lni lni-calendar"
+  className="c0 lni lni-calendar"
 />
 `;
 
