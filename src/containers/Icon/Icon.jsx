@@ -21,7 +21,8 @@ export const names = [
   "checkmark",
   "pyramids",
   "chevron-down",
-  "chevron-up"
+  "chevron-up",
+  "calendar"
 ];
 export const iconNameProps = PropTypes.oneOf(names);
 
