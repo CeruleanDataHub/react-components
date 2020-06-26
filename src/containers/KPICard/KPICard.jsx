@@ -33,7 +33,7 @@ const FlexRow = styled.span`
 
 const TriangleIcon = styled.div`
   font-size: 1rem;
-  margin-right: 0.3rem;
+  margin-left: 0.3rem;
 `;
 
 const getGrowthColor = growth => {
@@ -67,12 +67,13 @@ export const KPICard = ({
       <Cell center as={Bottom}>
         <FlexRow>
           <Color textColor={getGrowthColor(growth)}>
+            {growth > 0 ? "+" : ""}
+            {new Intl.NumberFormat("en-EN", {
+              style: "percent",
+              maximumFractionDigits: 2
+            }).format(growth)}
             <Icon name="pyramids" as={TriangleIcon} />
           </Color>
-          {new Intl.NumberFormat("en-EN", {
-            style: "percent",
-            maximumFractionDigits: 2
-          }).format(growth)}
         </FlexRow>
       </Cell>
     </Grid>
