@@ -384,6 +384,14 @@ const PagingButtonSelected = styled(PagingButton)`
   color: #999999;
 `;
 
+const KPIGrid = styled.div`
+  margin-bottom: 0.5rem;
+`;
+
+const KPICell = styled.div`
+  background: #0f191e;
+`;
+
 export const KeyperDemo = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   return (
@@ -411,8 +419,8 @@ export const KeyperDemo = () => {
           <Button text="2" color="transparent" as={PagingButton} />
         </Cell>
       </Grid>
-      <Grid>
-        <Cell>
+      <Grid as={KPIGrid}>
+        <Cell as={KPICell}>
           <KPICard
             title="Logins / week"
             value={3789}
@@ -420,7 +428,7 @@ export const KeyperDemo = () => {
             redValue
           />
         </Cell>
-        <Cell>
+        <Cell as={KPICell}>
           <KPICard
             title="Logins / month"
             value={17283}
@@ -428,7 +436,7 @@ export const KeyperDemo = () => {
             redValue
           />
         </Cell>
-        <Cell>
+        <Cell as={KPICell}>
           <KPICard
             title="Active users / week"
             value={1054}
@@ -436,7 +444,7 @@ export const KeyperDemo = () => {
             greenValue
           />
         </Cell>
-        <Cell>
+        <Cell as={KPICell}>
           <KPICard
             title="Active users / month"
             value={1870}
@@ -489,8 +497,8 @@ export const KeyperDemoPage2 = () => {
           <Button text="2" color="transparent" as={PagingButtonSelected} />
         </Cell>
       </Grid>
-      <Grid>
-        <Cell>
+      <Grid as={KPIGrid}>
+        <Cell as={KPICell}>
           <KPICard
             title="Logins / week"
             value={3789}
@@ -498,7 +506,7 @@ export const KeyperDemoPage2 = () => {
             redValue
           />
         </Cell>
-        <Cell>
+        <Cell as={KPICell}>
           <KPICard
             title="Logins / month"
             value={17283}
@@ -506,7 +514,7 @@ export const KeyperDemoPage2 = () => {
             redValue
           />
         </Cell>
-        <Cell>
+        <Cell as={KPICell}>
           <KPICard
             title="Active users / week"
             value={1054}
@@ -514,7 +522,7 @@ export const KeyperDemoPage2 = () => {
             greenValue
           />
         </Cell>
-        <Cell>
+        <Cell as={KPICell}>
           <KPICard
             title="Active users / month"
             value={1870}
