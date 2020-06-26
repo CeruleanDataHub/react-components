@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
+import { Button } from "../Button/Button";
 import { DependencyWheel } from "../Chart/DependencyWheel/DependencyWheel";
 import { Spline } from "../Chart/Spline/Spline";
 import { TreeMap } from "../Chart/TreeMap/TreeMap";
@@ -288,6 +289,18 @@ const Img = styled.img`
   height: 100px;
 `;
 
+const PagingButton = styled.button`
+  background: transparent;
+  color: #656565;
+  padding: 0.5rem 3rem;
+  margin-left: 5px;
+`;
+
+const PagingButtonSelected = styled(PagingButton)`
+  background: #0f191e;
+  color: #999999;
+`;
+
 export const KeyperDemo = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   return (
@@ -310,7 +323,10 @@ export const KeyperDemo = () => {
         <Cell>
           <DatePicker />
         </Cell>
-        <Cell>Paging placeholder</Cell>
+        <Cell>
+          <Button text="1" color="transparent" as={PagingButtonSelected} />
+          <Button text="2" color="transparent" as={PagingButton} />
+        </Cell>
       </Grid>
       <Grid>
         <Cell>
