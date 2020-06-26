@@ -15,7 +15,7 @@ const Container = styled.div`
   ${DatePickerStyles}
 `;
 
-export const DatePicker = ({ dateFormat }) => {
+export const DatePicker = ({ dateFormat, monthsShown }) => {
   const [startDate, setStartDate] = useState(new Date());
   const ref = React.createRef();
 
@@ -28,6 +28,7 @@ export const DatePicker = ({ dateFormat }) => {
         formatWeekDay={day => day.substring(0, 1)}
         customInput={<DatePickerCustomInput />}
         locale="en-gb"
+        monthsShown={monthsShown}
         ref={ref}
       />
     </Container>
@@ -36,9 +37,12 @@ export const DatePicker = ({ dateFormat }) => {
 
 DatePicker.propTypes = {
   /** How the date should be displayed */
-  dateFormat: PropTypes.string
+  dateFormat: PropTypes.string,
+  /** How many months are shown */
+  monthsShown: PropTypes.number
 };
 
 DatePicker.defaultProps = {
-  dateFormat: "dd.MM.yyyy"
+  dateFormat: "dd.MM.yyyy",
+  monthsShown: 1
 };
