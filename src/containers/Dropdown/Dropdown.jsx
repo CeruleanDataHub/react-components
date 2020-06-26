@@ -34,6 +34,7 @@ const ItemList = styled.ul`
   flex-direction: column;
   align-items: flex-start;
   list-style: none;
+  z-index: 1;
 `;
 
 const DropdownItem = styled.li`
