@@ -21,7 +21,8 @@ export const Chart = ({
   xAxis,
   series,
   type = "line",
-  options = {}
+  options = {},
+  containerProps = null
 }) => {
   const xAxisData = [...(options.xAxis || []), ...(xAxis || [])];
   const chartOptions = {
@@ -39,7 +40,13 @@ export const Chart = ({
     }
   };
 
-  return <HighchartsReact highcharts={Highcharts} options={chartOptions} />;
+  return (
+    <HighchartsReact
+      highcharts={Highcharts}
+      options={chartOptions}
+      containerProps={containerProps}
+    />
+  );
 };
 
 Chart.propTypes = {
@@ -68,7 +75,10 @@ Chart.propTypes = {
   ]),
   /** You can use highcharts options to extend the chart behavior */
   // eslint-disable-next-line react/forbid-prop-types
-  options: PropTypes.object
+  options: PropTypes.object,
+  /** Props to be passed to highcharts, such as styles or classname */
+  // eslint-disable-next-line react/forbid-prop-types
+  containerProps: PropTypes.object
 };
 
 Chart.defaultProps = {
@@ -76,5 +86,6 @@ Chart.defaultProps = {
   xAxis: null,
   series: [],
   type: "line",
-  options: {}
+  options: {},
+  containerProps: null
 };

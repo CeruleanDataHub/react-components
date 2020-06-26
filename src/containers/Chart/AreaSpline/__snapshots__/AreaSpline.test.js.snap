@@ -2,6 +2,7 @@
 
 exports[`AreaSpline should render chart 1`] = `
 <Chart
+  containerProps={null}
   options={Object {}}
   series={Array []}
   title=""
@@ -12,6 +13,7 @@ exports[`AreaSpline should render chart 1`] = `
 
 exports[`AreaSpline should render chart with simple data 1`] = `
 <Chart
+  containerProps={null}
   options={Object {}}
   series={
     Array [

@@ -2,6 +2,7 @@
 
 exports[`Dependency Wheel should render chart 1`] = `
 <Chart
+  containerProps={null}
   options={
     Object {
       "accessibility": Object {
@@ -20,6 +21,7 @@ exports[`Dependency Wheel should render chart 1`] = `
 
 exports[`Dependency Wheel should render chart with data and title 1`] = `
 <Chart
+  containerProps={null}
   options={
     Object {
       "accessibility": Object {

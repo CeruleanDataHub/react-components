@@ -2,6 +2,7 @@
 
 exports[`Semi Donut should render chart 1`] = `
 <Chart
+  containerProps={null}
   options={
     Object {
       "accessibility": Object {
@@ -52,6 +53,7 @@ exports[`Semi Donut should render chart 1`] = `
 
 exports[`Semi Donut should render chart with data 1`] = `
 <Chart
+  containerProps={null}
   options={
     Object {
       "accessibility": Object {
@@ -138,6 +140,7 @@ exports[`Semi Donut should render chart with data 1`] = `
 
 exports[`Semi Donut should render chart with title and data 1`] = `
 <Chart
+  containerProps={null}
   options={
     Object {
       "accessibility": Object {

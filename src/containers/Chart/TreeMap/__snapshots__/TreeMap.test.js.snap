@@ -2,6 +2,7 @@
 
 exports[`Tree Map should render tree map 1`] = `
 <Chart
+  containerProps={null}
   options={Object {}}
   series={Array []}
   title=""
@@ -12,6 +13,7 @@ exports[`Tree Map should render tree map 1`] = `
 
 exports[`Tree Map should render tree map with data 1`] = `
 <Chart
+  containerProps={null}
   options={Object {}}
   series={
     Array [
@@ -112,6 +114,7 @@ exports[`Tree Map should render tree map with data 1`] = `
 
 exports[`Tree Map should render tree map with title and data 1`] = `
 <Chart
+  containerProps={null}
   options={Object {}}
   series={
     Array [

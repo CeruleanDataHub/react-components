@@ -2,6 +2,7 @@
 
 exports[`Spline should render chart 1`] = `
 <Chart
+  containerProps={null}
   options={
     Object {
       "tooltip": Object {
@@ -18,6 +19,7 @@ exports[`Spline should render chart 1`] = `
 
 exports[`Spline should render chart with simple data 1`] = `
 <Chart
+  containerProps={null}
   options={
     Object {
       "tooltip": Object {

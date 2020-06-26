@@ -2,6 +2,7 @@
 
 exports[`Heatmap should render heatmap 1`] = `
 <Chart
+  containerProps={null}
   options={
     Object {
       "colorAxis": Object {
@@ -94,6 +95,7 @@ exports[`Heatmap should render heatmap 1`] = `
 
 exports[`Heatmap should render heatmap with data 1`] = `
 <Chart
+  containerProps={null}
   options={
     Object {
       "colorAxis": Object {

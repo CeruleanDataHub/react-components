@@ -2,6 +2,7 @@
 
 exports[`Line should render chart with simple data 1`] = `
 <Chart
+  containerProps={null}
   options={Object {}}
   series={
     Array [
@@ -41,6 +42,7 @@ exports[`Line should render chart with simple data 1`] = `
 
 exports[`Line should render line chart 1`] = `
 <Chart
+  containerProps={null}
   options={Object {}}
   series={Array []}
   title=""
