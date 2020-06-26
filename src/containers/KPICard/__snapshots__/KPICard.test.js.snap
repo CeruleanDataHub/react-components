@@ -1,33 +1,113 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`KPICard should format large values 1`] = `
+.c2 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-self: stretch;
+}
+
+.c5 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  text-align: center;
+}
+
+.c1 {
+  display: grid;
+  height: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(20px,auto);
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 8px;
+}
+
+.c9 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c0 {
+  padding: 1.2em;
+  font-family: Helvetica;
+  font-size: 0.9rem;
+}
+
+.c7 {
+  color: green;
+}
+
+.c3 {
+  font-size: 2.2rem;
+}
+
+.c4 {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c6 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c8 {
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
+
 <div
-  className="sc-AxirZ dGOzPI"
+  className="c0"
 >
   Title
   <div
-    className="Grid__Grid-gDLjRO jcWKgV"
+    className="c1"
   >
     <div
-      className="Cell__Cell-tAjrW cZXUpN"
+      className="c2"
     >
       <span
-        className="sc-AxhCb dtGcaw sc-AxiKw fPcOrh"
+        className="c3 "
       >
         10,000,000,000
       </span>
     </div>
     <span
-      className="sc-AxhUy mCTBF Cell__Cell-tAjrW hmKLft"
+      className="c4 c5"
     >
       <span
-        className="sc-AxgMl ouThN"
+        className="c6"
       >
         <span
-          className="sc-AxiKw fpvjFK"
+          className="c7"
         >
           <div
-            className="sc-AxheI DfsDh sc-AxjAm jnaJRY lni lni-pyramids"
+            className="c8 c9 lni lni-pyramids"
           />
         </span>
         30%
@@ -38,33 +118,113 @@ exports[`KPICard should format large values 1`] = `
 `;
 
 exports[`KPICard should render 1`] = `
+.c2 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-self: stretch;
+}
+
+.c5 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  text-align: center;
+}
+
+.c1 {
+  display: grid;
+  height: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(20px,auto);
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 8px;
+}
+
+.c9 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c0 {
+  padding: 1.2em;
+  font-family: Helvetica;
+  font-size: 0.9rem;
+}
+
+.c7 {
+  color: green;
+}
+
+.c3 {
+  font-size: 2.2rem;
+}
+
+.c4 {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c6 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c8 {
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
+
 <div
-  className="sc-AxirZ dGOzPI"
+  className="c0"
 >
   Title
   <div
-    className="Grid__Grid-gDLjRO jcWKgV"
+    className="c1"
   >
     <div
-      className="Cell__Cell-tAjrW cZXUpN"
+      className="c2"
     >
       <span
-        className="sc-AxhCb dtGcaw sc-AxiKw fPcOrh"
+        className="c3 "
       >
         1
       </span>
     </div>
     <span
-      className="sc-AxhUy mCTBF Cell__Cell-tAjrW hmKLft"
+      className="c4 c5"
     >
       <span
-        className="sc-AxgMl ouThN"
+        className="c6"
       >
         <span
-          className="sc-AxiKw fpvjFK"
+          className="c7"
         >
           <div
-            className="sc-AxheI DfsDh sc-AxjAm jnaJRY lni lni-pyramids"
+            className="c8 c9 lni lni-pyramids"
           />
         </span>
         30%
@@ -75,33 +235,113 @@ exports[`KPICard should render 1`] = `
 `;
 
 exports[`KPICard should render green 1`] = `
+.c2 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-self: stretch;
+}
+
+.c6 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  text-align: center;
+}
+
+.c1 {
+  display: grid;
+  height: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(20px,auto);
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 8px;
+}
+
+.c9 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c0 {
+  padding: 1.2em;
+  font-family: Helvetica;
+  font-size: 0.9rem;
+}
+
+.c4 {
+  color: green;
+}
+
+.c3 {
+  font-size: 2.2rem;
+}
+
+.c5 {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c7 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c8 {
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
+
 <div
-  className="sc-AxirZ dGOzPI"
+  className="c0"
 >
   Title
   <div
-    className="Grid__Grid-gDLjRO jcWKgV"
+    className="c1"
   >
     <div
-      className="Cell__Cell-tAjrW cZXUpN"
+      className="c2"
     >
       <span
-        className="sc-AxhCb dtGcaw sc-AxiKw fpvjFK"
+        className="c3 c4"
       >
         1
       </span>
     </div>
     <span
-      className="sc-AxhUy mCTBF Cell__Cell-tAjrW hmKLft"
+      className="c5 c6"
     >
       <span
-        className="sc-AxgMl ouThN"
+        className="c7"
       >
         <span
-          className="sc-AxiKw fpvjFK"
+          className="c4"
         >
           <div
-            className="sc-AxheI DfsDh sc-AxjAm jnaJRY lni lni-pyramids"
+            className="c8 c9 lni lni-pyramids"
           />
         </span>
         30%
@@ -112,33 +352,113 @@ exports[`KPICard should render green 1`] = `
 `;
 
 exports[`KPICard should render negative growth 1`] = `
+.c2 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-self: stretch;
+}
+
+.c5 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  text-align: center;
+}
+
+.c1 {
+  display: grid;
+  height: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(20px,auto);
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 8px;
+}
+
+.c9 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c0 {
+  padding: 1.2em;
+  font-family: Helvetica;
+  font-size: 0.9rem;
+}
+
+.c7 {
+  color: red;
+}
+
+.c3 {
+  font-size: 2.2rem;
+}
+
+.c4 {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c6 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c8 {
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
+
 <div
-  className="sc-AxirZ dGOzPI"
+  className="c0"
 >
   Title
   <div
-    className="Grid__Grid-gDLjRO jcWKgV"
+    className="c1"
   >
     <div
-      className="Cell__Cell-tAjrW cZXUpN"
+      className="c2"
     >
       <span
-        className="sc-AxhCb dtGcaw sc-AxiKw fPcOrh"
+        className="c3 "
       >
         1
       </span>
     </div>
     <span
-      className="sc-AxhUy mCTBF Cell__Cell-tAjrW hmKLft"
+      className="c4 c5"
     >
       <span
-        className="sc-AxgMl ouThN"
+        className="c6"
       >
         <span
-          className="sc-AxiKw gFQOLe"
+          className="c7"
         >
           <div
-            className="sc-AxheI DfsDh sc-AxjAm jnaJRY lni lni-pyramids"
+            className="c8 c9 lni lni-pyramids"
           />
         </span>
         -30%
@@ -149,33 +469,113 @@ exports[`KPICard should render negative growth 1`] = `
 `;
 
 exports[`KPICard should render positive growth 1`] = `
+.c2 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-self: stretch;
+}
+
+.c5 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  text-align: center;
+}
+
+.c1 {
+  display: grid;
+  height: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(20px,auto);
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 8px;
+}
+
+.c9 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c0 {
+  padding: 1.2em;
+  font-family: Helvetica;
+  font-size: 0.9rem;
+}
+
+.c7 {
+  color: green;
+}
+
+.c3 {
+  font-size: 2.2rem;
+}
+
+.c4 {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c6 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c8 {
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
+
 <div
-  className="sc-AxirZ dGOzPI"
+  className="c0"
 >
   Title
   <div
-    className="Grid__Grid-gDLjRO jcWKgV"
+    className="c1"
   >
     <div
-      className="Cell__Cell-tAjrW cZXUpN"
+      className="c2"
     >
       <span
-        className="sc-AxhCb dtGcaw sc-AxiKw fPcOrh"
+        className="c3 "
       >
         1
       </span>
     </div>
     <span
-      className="sc-AxhUy mCTBF Cell__Cell-tAjrW hmKLft"
+      className="c4 c5"
     >
       <span
-        className="sc-AxgMl ouThN"
+        className="c6"
       >
         <span
-          className="sc-AxiKw fpvjFK"
+          className="c7"
         >
           <div
-            className="sc-AxheI DfsDh sc-AxjAm jnaJRY lni lni-pyramids"
+            className="c8 c9 lni lni-pyramids"
           />
         </span>
         30%
@@ -186,33 +586,117 @@ exports[`KPICard should render positive growth 1`] = `
 `;
 
 exports[`KPICard should render red 1`] = `
+.c2 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-self: stretch;
+}
+
+.c6 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  text-align: center;
+}
+
+.c1 {
+  display: grid;
+  height: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(20px,auto);
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 8px;
+}
+
+.c10 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c0 {
+  padding: 1.2em;
+  font-family: Helvetica;
+  font-size: 0.9rem;
+}
+
+.c4 {
+  color: red;
+}
+
+.c8 {
+  color: green;
+}
+
+.c3 {
+  font-size: 2.2rem;
+}
+
+.c5 {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c7 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c9 {
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
+
 <div
-  className="sc-AxirZ dGOzPI"
+  className="c0"
 >
   Title
   <div
-    className="Grid__Grid-gDLjRO jcWKgV"
+    className="c1"
   >
     <div
-      className="Cell__Cell-tAjrW cZXUpN"
+      className="c2"
     >
       <span
-        className="sc-AxhCb dtGcaw sc-AxiKw gFQOLe"
+        className="c3 c4"
       >
         1
       </span>
     </div>
     <span
-      className="sc-AxhUy mCTBF Cell__Cell-tAjrW hmKLft"
+      className="c5 c6"
     >
       <span
-        className="sc-AxgMl ouThN"
+        className="c7"
       >
         <span
-          className="sc-AxiKw fpvjFK"
+          className="c8"
         >
           <div
-            className="sc-AxheI DfsDh sc-AxjAm jnaJRY lni lni-pyramids"
+            className="c9 c10 lni lni-pyramids"
           />
         </span>
         30%
@@ -223,33 +707,113 @@ exports[`KPICard should render red 1`] = `
 `;
 
 exports[`KPICard should render two decimal points in growth 1`] = `
+.c2 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-self: stretch;
+}
+
+.c5 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  text-align: center;
+}
+
+.c1 {
+  display: grid;
+  height: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(20px,auto);
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 8px;
+}
+
+.c9 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c0 {
+  padding: 1.2em;
+  font-family: Helvetica;
+  font-size: 0.9rem;
+}
+
+.c7 {
+  color: green;
+}
+
+.c3 {
+  font-size: 2.2rem;
+}
+
+.c4 {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c6 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c8 {
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
+
 <div
-  className="sc-AxirZ dGOzPI"
+  className="c0"
 >
   Title
   <div
-    className="Grid__Grid-gDLjRO jcWKgV"
+    className="c1"
   >
     <div
-      className="Cell__Cell-tAjrW cZXUpN"
+      className="c2"
     >
       <span
-        className="sc-AxhCb dtGcaw sc-AxiKw fPcOrh"
+        className="c3 "
       >
         1
       </span>
     </div>
     <span
-      className="sc-AxhUy mCTBF Cell__Cell-tAjrW hmKLft"
+      className="c4 c5"
     >
       <span
-        className="sc-AxgMl ouThN"
+        className="c6"
       >
         <span
-          className="sc-AxiKw fpvjFK"
+          className="c7"
         >
           <div
-            className="sc-AxheI DfsDh sc-AxjAm jnaJRY lni lni-pyramids"
+            className="c8 c9 lni lni-pyramids"
           />
         </span>
         33.33%
@@ -260,33 +824,113 @@ exports[`KPICard should render two decimal points in growth 1`] = `
 `;
 
 exports[`KPICard should render zero growth 1`] = `
+.c2 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-self: stretch;
+}
+
+.c5 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  text-align: center;
+}
+
+.c1 {
+  display: grid;
+  height: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(20px,auto);
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 8px;
+}
+
+.c9 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c0 {
+  padding: 1.2em;
+  font-family: Helvetica;
+  font-size: 0.9rem;
+}
+
+.c7 {
+  color: #1ea7fd;
+}
+
+.c3 {
+  font-size: 2.2rem;
+}
+
+.c4 {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c6 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c8 {
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
+
 <div
-  className="sc-AxirZ dGOzPI"
+  className="c0"
 >
   Title
   <div
-    className="Grid__Grid-gDLjRO jcWKgV"
+    className="c1"
   >
     <div
-      className="Cell__Cell-tAjrW cZXUpN"
+      className="c2"
     >
       <span
-        className="sc-AxhCb dtGcaw sc-AxiKw fPcOrh"
+        className="c3 "
       >
         1
       </span>
     </div>
     <span
-      className="sc-AxhUy mCTBF Cell__Cell-tAjrW hmKLft"
+      className="c4 c5"
     >
       <span
-        className="sc-AxgMl ouThN"
+        className="c6"
       >
         <span
-          className="sc-AxiKw creHPu"
+          className="c7"
         >
           <div
-            className="sc-AxheI DfsDh sc-AxjAm jnaJRY lni lni-pyramids"
+            className="c8 c9 lni lni-pyramids"
           />
         </span>
         0%

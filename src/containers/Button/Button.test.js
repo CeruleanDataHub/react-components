@@ -1,5 +1,3 @@
-import "jest-styled-components";
-
 import { shallow } from "enzyme";
 import toJson from "enzyme-to-json";
 import React from "react";

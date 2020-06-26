@@ -1,67 +1,127 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Icon should render icon briefcase 1`] = `
+.c0 {
+  font-size: 4rem;
+  text-align: center;
+}
+
 <span
-  className="sc-AxjAm jnaJRY lni lni-briefcase"
+  className="c0 lni lni-briefcase"
 />
 `;
 
 exports[`Icon should render icon checkmark 1`] = `
+.c0 {
+  font-size: 4rem;
+  text-align: center;
+}
+
 <span
-  className="sc-AxjAm jnaJRY lni lni-checkmark"
+  className="c0 lni lni-checkmark"
 />
 `;
 
 exports[`Icon should render icon chevron-down 1`] = `
+.c0 {
+  font-size: 4rem;
+  text-align: center;
+}
+
 <span
-  className="sc-AxjAm jnaJRY lni lni-chevron-down"
+  className="c0 lni lni-chevron-down"
 />
 `;
 
 exports[`Icon should render icon chevron-up 1`] = `
+.c0 {
+  font-size: 4rem;
+  text-align: center;
+}
+
 <span
-  className="sc-AxjAm jnaJRY lni lni-chevron-up"
+  className="c0 lni lni-chevron-up"
 />
 `;
 
 exports[`Icon should render icon cog 1`] = `
+.c0 {
+  font-size: 4rem;
+  text-align: center;
+}
+
 <span
-  className="sc-AxjAm jnaJRY lni lni-cog"
+  className="c0 lni lni-cog"
 />
 `;
 
 exports[`Icon should render icon eye 1`] = `
+.c0 {
+  font-size: 4rem;
+  text-align: center;
+}
+
 <span
-  className="sc-AxjAm jnaJRY lni lni-eye"
+  className="c0 lni lni-eye"
 />
 `;
 
 exports[`Icon should render icon home 1`] = `
+.c0 {
+  font-size: 4rem;
+  text-align: center;
+}
+
 <span
-  className="sc-AxjAm jnaJRY lni lni-home"
+  className="c0 lni lni-home"
 />
 `;
 
 exports[`Icon should render icon pyramids 1`] = `
+.c0 {
+  font-size: 4rem;
+  text-align: center;
+}
+
 <span
-  className="sc-AxjAm jnaJRY lni lni-pyramids"
+  className="c0 lni lni-pyramids"
 />
 `;
 
 exports[`Icon should render icon rocket 1`] = `
+.c0 {
+  font-size: 4rem;
+  text-align: center;
+}
+
 <span
-  className="sc-AxjAm jnaJRY lni lni-rocket"
+  className="c0 lni lni-rocket"
 />
 `;
 
 exports[`Icon should render icon users 1`] = `
+.c0 {
+  font-size: 4rem;
+  text-align: center;
+}
+
 <span
-  className="sc-AxjAm jnaJRY lni lni-users"
+  className="c0 lni lni-users"
 />
 `;
 
 exports[`Icon should render icon with custom styles 1`] = `
+.c1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c0 {
+  font-size: 1.5em;
+  margin-right: 1.75rem;
+}
+
 <span
-  className="sc-AxirZ dPuKDt sc-AxjAm jnaJRY lni lni-home"
+  className="c0 c1 lni lni-home"
 />
 `;

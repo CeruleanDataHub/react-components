@@ -1,14 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Card should render card 1`] = `
+.c0 {
+  margin: "2em";
+  border-radius: 0.5em;
+  border: 2px dashed #ffffff;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 1em;
+  border-radius: 0.25em;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  height: 20em;
+  width: auto;
+  max-width: auto;
+  font-family: "Open Sans",sans-serif;
+  text-align: center;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.c2 {
+  text-align: center;
+}
+
 <div
-  className="sc-AxirZ bnGNSL"
+  className="c0"
 >
   <div
-    className="sc-AxiKw wDwik"
+    className="c1"
   >
     <div
-      className="sc-AxhUy fNfuCs"
+      className="c2"
     >
       
     </div>
@@ -17,14 +52,49 @@ exports[`Card should render card 1`] = `
 `;
 
 exports[`Card should render card with children 1`] = `
+.c0 {
+  margin: "2em";
+  border-radius: 0.5em;
+  border: 2px dashed #ffffff;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 1em;
+  border-radius: 0.25em;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  height: 20em;
+  width: auto;
+  max-width: auto;
+  font-family: "Open Sans",sans-serif;
+  text-align: center;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.c2 {
+  text-align: center;
+}
+
 <div
-  className="sc-AxirZ bnGNSL"
+  className="c0"
 >
   <div
-    className="sc-AxiKw wDwik"
+    className="c1"
   >
     <div
-      className="sc-AxhUy fNfuCs"
+      className="c2"
     >
       Children textual content
     </div>
@@ -33,22 +103,69 @@ exports[`Card should render card with children 1`] = `
 `;
 
 exports[`Card should render card with icon 1`] = `
+.c2 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c0 {
+  margin: "2em";
+  border-radius: 0.5em;
+  border: 2px dashed #ffffff;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 1em;
+  border-radius: 0.25em;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  height: 20em;
+  width: auto;
+  max-width: auto;
+  font-family: "Open Sans",sans-serif;
+  text-align: center;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.c3 {
+  font-family: "Exo 2",sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.c4 {
+  text-align: center;
+}
+
 <div
-  className="sc-AxirZ bnGNSL"
+  className="c0"
 >
   <div
-    className="sc-AxiKw wDwik"
+    className="c1"
   >
     <span
-      className="sc-AxjAm jnaJRY lni lni-users"
+      className="c2 lni lni-users"
     />
     <h3
-      className="sc-AxhCb ICwhD"
+      className="c3"
     >
       Users
     </h3>
     <div
-      className="sc-AxhUy fNfuCs"
+      className="c4"
     >
       
     </div>
@@ -57,22 +174,69 @@ exports[`Card should render card with icon 1`] = `
 `;
 
 exports[`Card should render card with icon and children 1`] = `
+.c2 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c0 {
+  margin: "2em";
+  border-radius: 0.5em;
+  border: 2px dashed #ffffff;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 1em;
+  border-radius: 0.25em;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  height: 20em;
+  width: auto;
+  max-width: auto;
+  font-family: "Open Sans",sans-serif;
+  text-align: center;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.c3 {
+  font-family: "Exo 2",sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.c4 {
+  text-align: center;
+}
+
 <div
-  className="sc-AxirZ bnGNSL"
+  className="c0"
 >
   <div
-    className="sc-AxiKw wDwik"
+    className="c1"
   >
     <span
-      className="sc-AxjAm jnaJRY lni lni-users"
+      className="c2 lni lni-users"
     />
     <h3
-      className="sc-AxhCb ICwhD"
+      className="c3"
     >
       Users
     </h3>
     <div
-      className="sc-AxhUy fNfuCs"
+      className="c4"
     >
       Children textual content
     </div>
