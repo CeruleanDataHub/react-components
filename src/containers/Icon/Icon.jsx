@@ -27,7 +27,9 @@ export const names = [
 export const iconNameProps = PropTypes.oneOf(names);
 
 Icon.propTypes = {
+  /** Icon name */
   name: PropTypes.oneOf(names),
+  /** Extend styles, property is from styled components */
   as: PropTypes.oneOfType([
     PropTypes.func,
     PropTypes.string,
