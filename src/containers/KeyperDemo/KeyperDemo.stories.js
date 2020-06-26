@@ -284,6 +284,11 @@ const dropdownItems = [
   { value: "5", label: "Item 5" }
 ];
 
+const Container = styled.div`
+  background: #000000;
+  color: #999999;
+`;
+
 const Img = styled.img`
   width: 170px;
   height: 100px;
@@ -304,7 +309,7 @@ const PagingButtonSelected = styled(PagingButton)`
 export const KeyperDemo = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   return (
-    <>
+    <Container>
       <Grid>
         <Cell>
           <Img
@@ -364,7 +369,7 @@ export const KeyperDemo = () => {
           />
         </Cell>
       </Grid>
-    </>
+    </Container>
   );
 };
 
