@@ -6,15 +6,14 @@ const StyledButton = styled.button`
   background: transparent;
   color: ${({ color }) => color};
   font-size: 1em;
-  margin: 1em;
   padding: 0.25em 1.5em;
   border: 1px solid ${({ color }) => color};
   border-radius: 4px;
   cursor: pointer;
 `;
 
-export const Button = ({ text, onClick, color }) => (
-  <StyledButton color={color} onClick={onClick}>
+export const Button = ({ text, onClick, color, as }) => (
+  <StyledButton color={color} onClick={onClick} as={as}>
     {text}
   </StyledButton>
 );
@@ -25,11 +24,18 @@ Button.propTypes = {
   /** Handler function */
   onClick: PropTypes.func,
   /** Color of the button */
-  color: PropTypes.string
+  color: PropTypes.string,
+  /** Extend styles, property is from styled components */
+  as: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.string,
+    PropTypes.shape({ render: PropTypes.func.isRequired })
+  ])
 };
 
 Button.defaultProps = {
   text: "",
   onClick: () => null,
-  color: ""
+  color: "",
+  as: null
 };

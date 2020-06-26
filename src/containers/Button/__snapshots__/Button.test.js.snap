@@ -1,17 +1,64 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button should render Button 1`] = `
-<styled.button
-  color=""
-  onClick={[Function]}
-/>
-`;
+exports[`Button should accept 'as' property 1`] = `
+.c1 {
+  background: transparent;
+  color: blue;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid blue;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-exports[`Button should render Button with props 1`] = `
-<styled.button
+.c0 {
+  background: black;
+}
+
+<button
+  className="c0 c1"
   color="blue"
   onClick={[Function]}
 >
   Button
-</styled.button>
+</button>
+`;
+
+exports[`Button should render Button 1`] = `
+.c0 {
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+<button
+  className="c0"
+  color=""
+  onClick={[Function]}
+>
+  
+</button>
+`;
+
+exports[`Button should render Button with props 1`] = `
+.c0 {
+  background: transparent;
+  color: blue;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid blue;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+<button
+  className="c0"
+  color="blue"
+  onClick={[Function]}
+>
+  Button
+</button>
 `;

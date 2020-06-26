@@ -1,6 +1,7 @@
 import { shallow } from "enzyme";
-import toJson from "enzyme-to-json";
 import React from "react";
+import renderer from "react-test-renderer";
+import styled from "styled-components";
 
 import { Button } from "./Button";
 
@@ -8,13 +9,30 @@ const colors = ["crimson", "tomato", "khaki"];
 
 describe("Button", () => {
   it("should render Button", () => {
-    const component = shallow(<Button />);
-    expect(toJson(component)).toMatchSnapshot();
+    const component = renderer.create(<Button />);
+
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   it("should render Button with props", () => {
-    const component = shallow(<Button text="Button" color="blue" />);
-    expect(toJson(component)).toMatchSnapshot();
+    const component = renderer.create(<Button text="Button" color="blue" />);
+
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("should accept 'as' property", () => {
+    const CustomButton = styled.button`
+      background: black;
+    `;
+
+    const component = renderer.create(
+      <Button text="Button" color="blue" as={CustomButton} />
+    );
+
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   describe("Should render Button color based on props", () => {
