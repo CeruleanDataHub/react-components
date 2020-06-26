@@ -7,7 +7,7 @@ import { Icon } from "../Icon/Icon";
 const Container = styled.button`
   display: flex;
   align-items: center;
-  width: 300px;
+  width: 100%;
   height: 40px;
   border: 1px solid #0f181c;
   background: #0f181c;

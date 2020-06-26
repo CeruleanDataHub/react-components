@@ -6,6 +6,10 @@ export const DatePickerStyles = css`
     background: #0f181c;
     padding: 1em;
 
+    &-wrapper {
+      width: 100%;
+    }
+
     &__header {
       background: #0f181c;
       border-bottom: none;

@@ -6,7 +6,6 @@ import { Checkbox } from "../Checkbox/Checkbox";
 import { Icon } from "../Icon/Icon";
 
 const Container = styled.div`
-  width: 300px;
   position: relative;
 `;
 
