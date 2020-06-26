@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { DependencyWheel } from "../Chart/DependencyWheel/DependencyWheel";
 import { Spline } from "../Chart/Spline/Spline";
 import { TreeMap } from "../Chart/TreeMap/TreeMap";
+import { DatePicker } from "../DatePicker/DatePicker";
 import { Dropdown } from "../Dropdown/Dropdown";
 import { Cell, Grid } from "../Grid/Grid";
 import { KPICard } from "../KPICard/KPICard";
@@ -305,7 +306,9 @@ export const KeyperDemo = () => {
             onClick={() => setDropdownOpen(!dropdownOpen)}
           />
         </Cell>
-        <Cell>Datepicker placeholder</Cell>
+        <Cell>
+          <DatePicker />
+        </Cell>
         <Cell>Paging placeholder</Cell>
       </Grid>
       <Grid>
