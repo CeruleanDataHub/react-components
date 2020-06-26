@@ -44,6 +44,14 @@ const getGrowthColor = growth => {
   return growth > 0 ? colors.green : colors.red;
 };
 
+const getIconName = growth => {
+  if (growth === 0) {
+    return "minus";
+  }
+
+  return growth > 0 ? "chevron-up" : "chevron-down";
+};
+
 export const KPICard = ({
   title,
   value,
@@ -72,7 +80,7 @@ export const KPICard = ({
               style: "percent",
               maximumFractionDigits: 2
             }).format(growth)}
-            <Icon name="pyramids" as={TriangleIcon} />
+            <Icon name={getIconName(growth)} as={TriangleIcon} />
           </Color>
         </FlexRow>
       </Cell>

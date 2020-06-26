@@ -109,7 +109,7 @@ exports[`KPICard should format large values 1`] = `
           +
           30%
           <div
-            className="c8 c9 lni lni-pyramids"
+            className="c8 c9 lni lni-chevron-up"
           />
         </span>
       </span>
@@ -227,7 +227,7 @@ exports[`KPICard should render 1`] = `
           +
           30%
           <div
-            className="c8 c9 lni lni-pyramids"
+            className="c8 c9 lni lni-chevron-up"
           />
         </span>
       </span>
@@ -345,7 +345,7 @@ exports[`KPICard should render green 1`] = `
           +
           30%
           <div
-            className="c8 c9 lni lni-pyramids"
+            className="c8 c9 lni lni-chevron-up"
           />
         </span>
       </span>
@@ -463,7 +463,7 @@ exports[`KPICard should render negative growth 1`] = `
           
           -30%
           <div
-            className="c8 c9 lni lni-pyramids"
+            className="c8 c9 lni lni-chevron-down"
           />
         </span>
       </span>
@@ -581,7 +581,7 @@ exports[`KPICard should render positive growth 1`] = `
           +
           30%
           <div
-            className="c8 c9 lni lni-pyramids"
+            className="c8 c9 lni lni-chevron-up"
           />
         </span>
       </span>
@@ -703,7 +703,7 @@ exports[`KPICard should render red 1`] = `
           +
           30%
           <div
-            className="c9 c10 lni lni-pyramids"
+            className="c9 c10 lni lni-chevron-up"
           />
         </span>
       </span>
@@ -821,7 +821,7 @@ exports[`KPICard should render two decimal points in growth 1`] = `
           +
           33.33%
           <div
-            className="c8 c9 lni lni-pyramids"
+            className="c8 c9 lni lni-chevron-up"
           />
         </span>
       </span>
@@ -939,7 +939,7 @@ exports[`KPICard should render zero growth 1`] = `
           
           0%
           <div
-            className="c8 c9 lni lni-pyramids"
+            className="c8 c9 lni lni-minus"
           />
         </span>
       </span>
