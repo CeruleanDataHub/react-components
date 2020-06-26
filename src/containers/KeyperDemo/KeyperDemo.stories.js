@@ -389,7 +389,7 @@ const KPIGrid = styled.div`
 `;
 
 const KPICell = styled.div`
-  background: #0f191e;
+  background: #0f181c;
 `;
 
 export const KeyperDemo = () => {
