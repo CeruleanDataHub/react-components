@@ -491,10 +491,20 @@ export const KeyperDemoPage2 = () => {
       </Grid>
       <Grid>
         <Cell>
-          <KPICard title="Logins / week" value={3789} growth={-0.145} />
+          <KPICard
+            title="Logins / week"
+            value={3789}
+            growth={-0.145}
+            redValue
+          />
         </Cell>
         <Cell>
-          <KPICard title="Logins / month" value={17283} growth={0.87} />
+          <KPICard
+            title="Logins / month"
+            value={17283}
+            growth={0.87}
+            redValue
+          />
         </Cell>
         <Cell>
           <KPICard
@@ -509,7 +519,7 @@ export const KeyperDemoPage2 = () => {
             title="Active users / month"
             value={1870}
             growth={0.953}
-            redValue
+            greenValue
           />
         </Cell>
       </Grid>
