@@ -301,6 +301,7 @@ export const KeyperDemo = () => {
         </Cell>
         <Cell>
           <Dropdown
+            label="Channels"
             items={dropdownItems}
             isOpen={dropdownOpen}
             onClick={() => setDropdownOpen(!dropdownOpen)}
