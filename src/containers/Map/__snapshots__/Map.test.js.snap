@@ -3453,6 +3453,7 @@ exports[`Map should render map with data 1`] = `
         "buttonOptions": Object {
           "verticalAlign": "top",
         },
+        "enableMouseWheelZoom": false,
         "enabled": true,
       },
       "series": Array [
@@ -16770,6 +16771,7 @@ exports[`Map should render map with data and title 1`] = `
         "buttonOptions": Object {
           "verticalAlign": "top",
         },
+        "enableMouseWheelZoom": false,
         "enabled": true,
       },
       "series": Array [

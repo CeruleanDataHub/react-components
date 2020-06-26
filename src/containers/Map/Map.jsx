@@ -34,6 +34,7 @@ export const Map = ({
     },
     mapNavigation: {
       enabled: true,
+      enableMouseWheelZoom: false,
       buttonOptions: {
         verticalAlign: "top"
       }
