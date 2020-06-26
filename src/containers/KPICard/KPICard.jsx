@@ -11,7 +11,7 @@ const Container = styled.div`
   font-size: 0.9rem;
 `;
 
-const colors = { red: "red", green: "green", blue: "#1ea7fd" };
+const colors = { red: "#ff0066", green: "#90ee7e", blue: "#1ea7fd" };
 
 const Color = styled.span`
   color: ${({ textColor }) => textColor};
@@ -60,7 +60,7 @@ export const KPICard = ({
   greenValue = false
 }) => (
   <Container>
-    {title}
+    <Color textColor="#999999">{title}</Color>
     <Grid>
       <Cell middle>
         <Color

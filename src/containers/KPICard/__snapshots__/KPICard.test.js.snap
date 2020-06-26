@@ -1,243 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`KPICard should format large values 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c5 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  text-align: center;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c9 {
-  font-size: 4rem;
-  text-align: center;
-}
-
-.c0 {
-  padding: 1.2em;
-  font-family: Helvetica;
-  font-size: 0.9rem;
-}
-
-.c7 {
-  color: green;
-}
-
 .c3 {
-  font-size: 2.2rem;
-}
-
-.c4 {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c6 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c8 {
-  font-size: 1rem;
-  margin-left: 0.3rem;
-}
-
-<div
-  className="c0"
->
-  Title
-  <div
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      <span
-        className="c3 "
-      >
-        10,000,000,000
-      </span>
-    </div>
-    <span
-      className="c4 c5"
-    >
-      <span
-        className="c6"
-      >
-        <span
-          className="c7"
-        >
-          +
-          30%
-          <div
-            className="c8 c9 lni lni-chevron-up"
-          />
-        </span>
-      </span>
-    </span>
-  </div>
-</div>
-`;
-
-exports[`KPICard should render 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c5 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  text-align: center;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c9 {
-  font-size: 4rem;
-  text-align: center;
-}
-
-.c0 {
-  padding: 1.2em;
-  font-family: Helvetica;
-  font-size: 0.9rem;
-}
-
-.c7 {
-  color: green;
-}
-
-.c3 {
-  font-size: 2.2rem;
-}
-
-.c4 {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c6 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c8 {
-  font-size: 1rem;
-  margin-left: 0.3rem;
-}
-
-<div
-  className="c0"
->
-  Title
-  <div
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      <span
-        className="c3 "
-      >
-        1
-      </span>
-    </div>
-    <span
-      className="c4 c5"
-    >
-      <span
-        className="c6"
-      >
-        <span
-          className="c7"
-        >
-          +
-          30%
-          <div
-            className="c8 c9 lni lni-chevron-up"
-          />
-        </span>
-      </span>
-    </span>
-  </div>
-</div>
-`;
-
-exports[`KPICard should render green 1`] = `
-.c2 {
   height: 100%;
   min-width: 0;
   grid-column-end: span 1;
@@ -264,361 +28,7 @@ exports[`KPICard should render green 1`] = `
   text-align: center;
 }
 
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c9 {
-  font-size: 4rem;
-  text-align: center;
-}
-
-.c0 {
-  padding: 1.2em;
-  font-family: Helvetica;
-  font-size: 0.9rem;
-}
-
-.c4 {
-  color: green;
-}
-
-.c3 {
-  font-size: 2.2rem;
-}
-
-.c5 {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c7 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c8 {
-  font-size: 1rem;
-  margin-left: 0.3rem;
-}
-
-<div
-  className="c0"
->
-  Title
-  <div
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      <span
-        className="c3 c4"
-      >
-        1
-      </span>
-    </div>
-    <span
-      className="c5 c6"
-    >
-      <span
-        className="c7"
-      >
-        <span
-          className="c4"
-        >
-          +
-          30%
-          <div
-            className="c8 c9 lni lni-chevron-up"
-          />
-        </span>
-      </span>
-    </span>
-  </div>
-</div>
-`;
-
-exports[`KPICard should render negative growth 1`] = `
 .c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c5 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  text-align: center;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c9 {
-  font-size: 4rem;
-  text-align: center;
-}
-
-.c0 {
-  padding: 1.2em;
-  font-family: Helvetica;
-  font-size: 0.9rem;
-}
-
-.c7 {
-  color: red;
-}
-
-.c3 {
-  font-size: 2.2rem;
-}
-
-.c4 {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c6 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c8 {
-  font-size: 1rem;
-  margin-left: 0.3rem;
-}
-
-<div
-  className="c0"
->
-  Title
-  <div
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      <span
-        className="c3 "
-      >
-        1
-      </span>
-    </div>
-    <span
-      className="c4 c5"
-    >
-      <span
-        className="c6"
-      >
-        <span
-          className="c7"
-        >
-          
-          -30%
-          <div
-            className="c8 c9 lni lni-chevron-down"
-          />
-        </span>
-      </span>
-    </span>
-  </div>
-</div>
-`;
-
-exports[`KPICard should render positive growth 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c5 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  text-align: center;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c9 {
-  font-size: 4rem;
-  text-align: center;
-}
-
-.c0 {
-  padding: 1.2em;
-  font-family: Helvetica;
-  font-size: 0.9rem;
-}
-
-.c7 {
-  color: green;
-}
-
-.c3 {
-  font-size: 2.2rem;
-}
-
-.c4 {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c6 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c8 {
-  font-size: 1rem;
-  margin-left: 0.3rem;
-}
-
-<div
-  className="c0"
->
-  Title
-  <div
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      <span
-        className="c3 "
-      >
-        1
-      </span>
-    </div>
-    <span
-      className="c4 c5"
-    >
-      <span
-        className="c6"
-      >
-        <span
-          className="c7"
-        >
-          +
-          30%
-          <div
-            className="c8 c9 lni lni-chevron-up"
-          />
-        </span>
-      </span>
-    </span>
-  </div>
-</div>
-`;
-
-exports[`KPICard should render red 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c6 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  text-align: center;
-}
-
-.c1 {
   display: grid;
   height: auto;
   grid-auto-flow: row;
@@ -638,15 +48,15 @@ exports[`KPICard should render red 1`] = `
   font-size: 0.9rem;
 }
 
-.c4 {
-  color: red;
+.c1 {
+  color: #999999;
 }
 
 .c8 {
-  color: green;
+  color: #90ee7e;
 }
 
-.c3 {
+.c4 {
   font-size: 2.2rem;
 }
 
@@ -678,15 +88,145 @@ exports[`KPICard should render red 1`] = `
 <div
   className="c0"
 >
-  Title
-  <div
+  <span
     className="c1"
   >
+    Title
+  </span>
+  <div
+    className="c2"
+  >
     <div
-      className="c2"
+      className="c3"
     >
       <span
-        className="c3 c4"
+        className="c4 "
+      >
+        10,000,000,000
+      </span>
+    </div>
+    <span
+      className="c5 c6"
+    >
+      <span
+        className="c7"
+      >
+        <span
+          className="c8"
+        >
+          +
+          30%
+          <div
+            className="c9 c10 lni lni-chevron-up"
+          />
+        </span>
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`KPICard should render 1`] = `
+.c3 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-self: stretch;
+}
+
+.c6 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  text-align: center;
+}
+
+.c2 {
+  display: grid;
+  height: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(20px,auto);
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 8px;
+}
+
+.c10 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c0 {
+  padding: 1.2em;
+  font-family: Helvetica;
+  font-size: 0.9rem;
+}
+
+.c1 {
+  color: #999999;
+}
+
+.c8 {
+  color: #90ee7e;
+}
+
+.c4 {
+  font-size: 2.2rem;
+}
+
+.c5 {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c7 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c9 {
+  font-size: 1rem;
+  margin-left: 0.3rem;
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="c1"
+  >
+    Title
+  </span>
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4 "
       >
         1
       </span>
@@ -712,8 +252,8 @@ exports[`KPICard should render red 1`] = `
 </div>
 `;
 
-exports[`KPICard should render two decimal points in growth 1`] = `
-.c2 {
+exports[`KPICard should render green 1`] = `
+.c3 {
   height: 100%;
   min-width: 0;
   grid-column-end: span 1;
@@ -732,7 +272,7 @@ exports[`KPICard should render two decimal points in growth 1`] = `
   justify-self: stretch;
 }
 
-.c5 {
+.c7 {
   height: 100%;
   min-width: 0;
   grid-column-end: span 1;
@@ -740,7 +280,7 @@ exports[`KPICard should render two decimal points in growth 1`] = `
   text-align: center;
 }
 
-.c1 {
+.c2 {
   display: grid;
   height: auto;
   grid-auto-flow: row;
@@ -749,7 +289,7 @@ exports[`KPICard should render two decimal points in growth 1`] = `
   grid-gap: 8px;
 }
 
-.c9 {
+.c10 {
   font-size: 4rem;
   text-align: center;
 }
@@ -760,15 +300,19 @@ exports[`KPICard should render two decimal points in growth 1`] = `
   font-size: 0.9rem;
 }
 
-.c7 {
-  color: green;
+.c1 {
+  color: #999999;
 }
 
-.c3 {
-  font-size: 2.2rem;
+.c5 {
+  color: #90ee7e;
 }
 
 .c4 {
+  font-size: 2.2rem;
+}
+
+.c6 {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
@@ -782,13 +326,13 @@ exports[`KPICard should render two decimal points in growth 1`] = `
   flex-direction: column;
 }
 
-.c6 {
+.c8 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
 }
 
-.c8 {
+.c9 {
   font-size: 1rem;
   margin-left: 0.3rem;
 }
@@ -796,32 +340,544 @@ exports[`KPICard should render two decimal points in growth 1`] = `
 <div
   className="c0"
 >
-  Title
-  <div
+  <span
     className="c1"
   >
+    Title
+  </span>
+  <div
+    className="c2"
+  >
     <div
-      className="c2"
+      className="c3"
     >
       <span
-        className="c3 "
+        className="c4 c5"
       >
         1
       </span>
     </div>
     <span
-      className="c4 c5"
+      className="c6 c7"
     >
       <span
-        className="c6"
+        className="c8"
       >
         <span
-          className="c7"
+          className="c5"
+        >
+          +
+          30%
+          <div
+            className="c9 c10 lni lni-chevron-up"
+          />
+        </span>
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`KPICard should render negative growth 1`] = `
+.c3 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-self: stretch;
+}
+
+.c6 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  text-align: center;
+}
+
+.c2 {
+  display: grid;
+  height: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(20px,auto);
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 8px;
+}
+
+.c10 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c0 {
+  padding: 1.2em;
+  font-family: Helvetica;
+  font-size: 0.9rem;
+}
+
+.c1 {
+  color: #999999;
+}
+
+.c8 {
+  color: #ff0066;
+}
+
+.c4 {
+  font-size: 2.2rem;
+}
+
+.c5 {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c7 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c9 {
+  font-size: 1rem;
+  margin-left: 0.3rem;
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="c1"
+  >
+    Title
+  </span>
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4 "
+      >
+        1
+      </span>
+    </div>
+    <span
+      className="c5 c6"
+    >
+      <span
+        className="c7"
+      >
+        <span
+          className="c8"
+        >
+          
+          -30%
+          <div
+            className="c9 c10 lni lni-chevron-down"
+          />
+        </span>
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`KPICard should render positive growth 1`] = `
+.c3 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-self: stretch;
+}
+
+.c6 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  text-align: center;
+}
+
+.c2 {
+  display: grid;
+  height: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(20px,auto);
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 8px;
+}
+
+.c10 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c0 {
+  padding: 1.2em;
+  font-family: Helvetica;
+  font-size: 0.9rem;
+}
+
+.c1 {
+  color: #999999;
+}
+
+.c8 {
+  color: #90ee7e;
+}
+
+.c4 {
+  font-size: 2.2rem;
+}
+
+.c5 {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c7 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c9 {
+  font-size: 1rem;
+  margin-left: 0.3rem;
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="c1"
+  >
+    Title
+  </span>
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4 "
+      >
+        1
+      </span>
+    </div>
+    <span
+      className="c5 c6"
+    >
+      <span
+        className="c7"
+      >
+        <span
+          className="c8"
+        >
+          +
+          30%
+          <div
+            className="c9 c10 lni lni-chevron-up"
+          />
+        </span>
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`KPICard should render red 1`] = `
+.c3 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-self: stretch;
+}
+
+.c7 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  text-align: center;
+}
+
+.c2 {
+  display: grid;
+  height: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(20px,auto);
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 8px;
+}
+
+.c11 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c0 {
+  padding: 1.2em;
+  font-family: Helvetica;
+  font-size: 0.9rem;
+}
+
+.c1 {
+  color: #999999;
+}
+
+.c5 {
+  color: #ff0066;
+}
+
+.c9 {
+  color: #90ee7e;
+}
+
+.c4 {
+  font-size: 2.2rem;
+}
+
+.c6 {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c8 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c10 {
+  font-size: 1rem;
+  margin-left: 0.3rem;
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="c1"
+  >
+    Title
+  </span>
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4 c5"
+      >
+        1
+      </span>
+    </div>
+    <span
+      className="c6 c7"
+    >
+      <span
+        className="c8"
+      >
+        <span
+          className="c9"
+        >
+          +
+          30%
+          <div
+            className="c10 c11 lni lni-chevron-up"
+          />
+        </span>
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`KPICard should render two decimal points in growth 1`] = `
+.c3 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-self: stretch;
+}
+
+.c6 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  text-align: center;
+}
+
+.c2 {
+  display: grid;
+  height: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(20px,auto);
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 8px;
+}
+
+.c10 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c0 {
+  padding: 1.2em;
+  font-family: Helvetica;
+  font-size: 0.9rem;
+}
+
+.c1 {
+  color: #999999;
+}
+
+.c8 {
+  color: #90ee7e;
+}
+
+.c4 {
+  font-size: 2.2rem;
+}
+
+.c5 {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c7 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c9 {
+  font-size: 1rem;
+  margin-left: 0.3rem;
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="c1"
+  >
+    Title
+  </span>
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <span
+        className="c4 "
+      >
+        1
+      </span>
+    </div>
+    <span
+      className="c5 c6"
+    >
+      <span
+        className="c7"
+      >
+        <span
+          className="c8"
         >
           +
           33.33%
           <div
-            className="c8 c9 lni lni-chevron-up"
+            className="c9 c10 lni lni-chevron-up"
           />
         </span>
       </span>
@@ -831,7 +887,7 @@ exports[`KPICard should render two decimal points in growth 1`] = `
 `;
 
 exports[`KPICard should render zero growth 1`] = `
-.c2 {
+.c3 {
   height: 100%;
   min-width: 0;
   grid-column-end: span 1;
@@ -850,7 +906,7 @@ exports[`KPICard should render zero growth 1`] = `
   justify-self: stretch;
 }
 
-.c5 {
+.c6 {
   height: 100%;
   min-width: 0;
   grid-column-end: span 1;
@@ -858,7 +914,7 @@ exports[`KPICard should render zero growth 1`] = `
   text-align: center;
 }
 
-.c1 {
+.c2 {
   display: grid;
   height: auto;
   grid-auto-flow: row;
@@ -867,7 +923,7 @@ exports[`KPICard should render zero growth 1`] = `
   grid-gap: 8px;
 }
 
-.c9 {
+.c10 {
   font-size: 4rem;
   text-align: center;
 }
@@ -878,15 +934,19 @@ exports[`KPICard should render zero growth 1`] = `
   font-size: 0.9rem;
 }
 
-.c7 {
+.c1 {
+  color: #999999;
+}
+
+.c8 {
   color: #1ea7fd;
 }
 
-.c3 {
+.c4 {
   font-size: 2.2rem;
 }
 
-.c4 {
+.c5 {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
@@ -900,13 +960,13 @@ exports[`KPICard should render zero growth 1`] = `
   flex-direction: column;
 }
 
-.c6 {
+.c7 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
 }
 
-.c8 {
+.c9 {
   font-size: 1rem;
   margin-left: 0.3rem;
 }
@@ -914,32 +974,36 @@ exports[`KPICard should render zero growth 1`] = `
 <div
   className="c0"
 >
-  Title
-  <div
+  <span
     className="c1"
   >
+    Title
+  </span>
+  <div
+    className="c2"
+  >
     <div
-      className="c2"
+      className="c3"
     >
       <span
-        className="c3 "
+        className="c4 "
       >
         1
       </span>
     </div>
     <span
-      className="c4 c5"
+      className="c5 c6"
     >
       <span
-        className="c6"
+        className="c7"
       >
         <span
-          className="c7"
+          className="c8"
         >
           
           0%
           <div
-            className="c8 c9 lni lni-minus"
+            className="c9 c10 lni lni-minus"
           />
         </span>
       </span>
