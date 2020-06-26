@@ -375,7 +375,7 @@ const Img = styled.img`
 const PagingButton = styled.button`
   background: transparent;
   color: #656565;
-  padding: 0.5rem 3rem;
+  padding: 0.6rem 3rem;
   margin-left: 5px;
 `;
 
