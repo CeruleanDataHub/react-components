@@ -1,6 +1,5 @@
-import { shallow } from "enzyme";
-import toJson from "enzyme-to-json";
 import React from "react";
+import renderer from "react-test-renderer";
 
 import { Dropdown } from "./Dropdown";
 
@@ -11,12 +10,14 @@ const items = [
 
 describe("Dropdown", () => {
   it("should render dropdown", () => {
-    const component = shallow(<Dropdown />);
-    expect(toJson(component)).toMatchSnapshot();
+    const component = renderer.create(<Dropdown />);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
-  it("should render dropdown with items and clicked open", () => {
-    const component = shallow(<Dropdown items={items} isOpen />);
-    expect(toJson(component)).toMatchSnapshot();
+  it("should render dropdown in open state", () => {
+    const component = renderer.create(<Dropdown items={items} isOpen />);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });

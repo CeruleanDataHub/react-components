@@ -1,116 +1,253 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Dropdown should render dropdown 1`] = `
-<styled.div>
-  <styled.button
-    onClick={[Function]}
-  >
-    <styled.span />
-    <Icon
-      as={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "baseHash": -2021127760,
-            "componentId": "sc-fzoLsD",
-            "isStatic": false,
-            "rules": Array [
-              "
-  color: ",
-              [Function],
-              ";
+.c3 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #0f181c;
+  background: #0f181c;
+  border-radius: 4px;
+  padding: 1.25em;
+  cursor: pointer;
+}
+
+.c2 {
+  color: #999;
   font-size: 1.25em;
   font-weight: bold;
-",
-            ],
-            "staticRulesId": "",
-          },
-          "displayName": "styled.span",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "shouldForwardProp": undefined,
-          "styledComponentId": "sc-fzoLsD",
-          "target": "span",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      name="chevron-down"
-    />
-  </styled.button>
-</styled.div>
-`;
+}
 
-exports[`Dropdown should render dropdown with items and clicked open 1`] = `
-<styled.div>
-  <styled.button
+<div
+  className="c0"
+>
+  <button
+    className="c1"
     onClick={[Function]}
   >
-    <styled.span />
-    <styled.span
+    <span
+      className="c2"
+    >
+      
+    </span>
+    <span
+      className="c2 c3 lni lni-chevron-down"
+    />
+  </button>
+</div>
+`;
+
+exports[`Dropdown should render dropdown in open state 1`] = `
+.c4 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c8 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c10 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #999;
+  background: transparent;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.c12 {
+  color: #999;
+  margin-left: 1.5em;
+}
+
+.c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  margin: 0.25em 0;
+}
+
+.c7:hover .c9 {
+  border-color: #333;
+}
+
+.c7:hover .c11 {
+  color: #666;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #0f181c;
+  background: #0f181c;
+  border-radius: 4px;
+  padding: 1.25em;
+  cursor: pointer;
+}
+
+.c5 {
+  width: 100%;
+  padding: 0;
+  background: #0f181c;
+  position: absolute;
+  top: 22px;
+  border-radius: 0 0 4px 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  list-style: none;
+  z-index: 1;
+}
+
+.c6 {
+  padding-top: 1em;
+  padding-left: 0.5em;
+}
+
+.c2 {
+  color: #999;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.c3 {
+  color: #90ee7e;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1"
+    onClick={[Function]}
+  >
+    <span
+      className="c2"
+    >
+      
+    </span>
+    <span
+      className="c3"
       color="#90ee7e"
     >
       0 selected
-    </styled.span>
-    <Icon
-      as={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "baseHash": -2021127760,
-            "componentId": "sc-fzoLsD",
-            "isStatic": false,
-            "rules": Array [
-              "
-  color: ",
-              [Function],
-              ";
-  font-size: 1.25em;
-  font-weight: bold;
-",
-            ],
-            "staticRulesId": "",
-          },
-          "displayName": "styled.span",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "shouldForwardProp": undefined,
-          "styledComponentId": "sc-fzoLsD",
-          "target": "span",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      name="chevron-up"
+    </span>
+    <span
+      className="c2 c4 lni lni-chevron-up"
     />
-  </styled.button>
-  <styled.ul>
-    <styled.li
-      key="Item 1"
+  </button>
+  <ul
+    className="c5"
+  >
+    <li
+      className="c6"
     >
-      <Checkbox
-        checked={false}
-        className=""
-        label="Item 1"
-        onChange={[Function]}
-        value="1"
-      />
-    </styled.li>
-    <styled.li
-      key="Item 2"
+      <label
+        className="c7"
+      >
+        <input
+          checked={false}
+          className="c8"
+          onChange={[Function]}
+          type="checkbox"
+          value="1"
+        />
+        <div
+          checked={false}
+          className="c9 c10"
+        />
+        <span
+          className="c11 c12"
+        >
+          Item 1
+        </span>
+      </label>
+    </li>
+    <li
+      className="c6"
     >
-      <Checkbox
-        checked={false}
-        className=""
-        label="Item 2"
-        onChange={[Function]}
-        value="2"
-      />
-    </styled.li>
-  </styled.ul>
-</styled.div>
+      <label
+        className="c7"
+      >
+        <input
+          checked={false}
+          className="c8"
+          onChange={[Function]}
+          type="checkbox"
+          value="2"
+        />
+        <div
+          checked={false}
+          className="c9 c10"
+        />
+        <span
+          className="c11 c12"
+        >
+          Item 2
+        </span>
+      </label>
+    </li>
+  </ul>
+</div>
 `;
