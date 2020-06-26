@@ -6,7 +6,13 @@ import React from "react";
 
 highchartsMap(Highcharts);
 
-export const Map = ({ title, minColor, maxColor, series }) => {
+export const Map = ({
+  title,
+  minColor,
+  maxColor,
+  series,
+  containerProps = null
+}) => {
   const mapOptions = {
     title: {
       text: title
@@ -40,6 +46,7 @@ export const Map = ({ title, minColor, maxColor, series }) => {
       highcharts={Highcharts}
       constructorType="mapChart"
       options={mapOptions}
+      containerProps={containerProps}
     />
   );
 };
@@ -58,12 +65,15 @@ Map.propTypes = {
       data: PropTypes.array,
       mapData: PropTypes.object
     })
-  )
+  ),
+  // eslint-disable-next-line react/forbid-prop-types
+  containerProps: PropTypes.object
 };
 
 Map.defaultProps = {
   title: "",
   minColor: "",
   maxColor: "",
-  series: []
+  series: [],
+  containerProps: {}
 };

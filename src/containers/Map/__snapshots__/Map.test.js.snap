@@ -3,6 +3,7 @@
 exports[`Map should render map with data 1`] = `
 <Memo([object Object])
   constructorType="mapChart"
+  containerProps={Object {}}
   highcharts={
     Object {
       "Axis": [Function],
@@ -13319,6 +13320,7 @@ exports[`Map should render map with data 1`] = `
 exports[`Map should render map with data and title 1`] = `
 <Memo([object Object])
   constructorType="mapChart"
+  containerProps={Object {}}
   highcharts={
     Object {
       "Axis": [Function],
