@@ -2,6 +2,8 @@ import PropTypes from "prop-types";
 import React, { forwardRef } from "react";
 import styled from "styled-components";
 
+import { Icon } from "../Icon/Icon";
+
 const Container = styled.button`
   display: flex;
   align-items: center;
@@ -16,18 +18,24 @@ const Container = styled.button`
   cursor: pointer;
 `;
 
-export const DatePickerContainer = forwardRef(({ value, onClick }, ref) => (
+const CalendarIcon = styled.span`
+  font-size: 1.5em;
+  margin-right: 1em;
+`;
+
+export const DatePickerCustomInput = forwardRef(({ value, onClick }, ref) => (
   <Container onClick={onClick} ref={ref}>
+    <Icon name="calendar" as={CalendarIcon} />
     {value}
   </Container>
 ));
 
-DatePickerContainer.propTypes = {
+DatePickerCustomInput.propTypes = {
   value: PropTypes.string,
   onClick: PropTypes.func
 };
 
-DatePickerContainer.defaultProps = {
+DatePickerCustomInput.defaultProps = {
   value: "",
   onClick: () => null
 };

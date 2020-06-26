@@ -8,7 +8,7 @@ export default {
 };
 
 export const DatePickerStory = () => (
-  <div style={{ minHeight: 300 }}>
+  <div style={{ minHeight: 400 }}>
     <DatePicker />
   </div>
 );
