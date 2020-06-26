@@ -1,14 +1,18 @@
+import mapDataFI from "@highcharts/map-collection/countries/fi/fi-all.geo.json";
 import React, { useState } from "react";
 import styled from "styled-components";
 
 import { Button } from "../Button/Button";
 import { DependencyWheel } from "../Chart/DependencyWheel/DependencyWheel";
+import { Heatmap } from "../Chart/Heatmap/Heatmap";
+import { SemiDonut } from "../Chart/SemiDonut/SemiDonut";
 import { Spline } from "../Chart/Spline/Spline";
 import { TreeMap } from "../Chart/TreeMap/TreeMap";
 import { DatePicker } from "../DatePicker/DatePicker";
 import { Dropdown } from "../Dropdown/Dropdown";
 import { Cell, Grid } from "../Grid/Grid";
 import { KPICard } from "../KPICard/KPICard";
+import { Map } from "../Map/Map";
 
 const logins = [
   8052,
@@ -289,6 +293,80 @@ const Container = styled.div`
   color: #999999;
 `;
 
+const repeat = n => new Array(n).fill(null).map((_, i) => i);
+
+const xAxisCategories = ["1", "2", "3", "4", "5", "6", "7"];
+const yAxisCategories = [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday"
+];
+
+const values = [
+  [71, 45, 100, 40, 59],
+  [41, 72, 29, 13, 33],
+  [85, 52, 72, 52, 93],
+  [84, 72, 100, 49, 92],
+  [75, 97, 63, 12, 64],
+  [74, 82, 83, 91, 48],
+  [52, 91, 56, 57, 93]
+];
+
+const data = repeat(xAxisCategories.length)
+  .map(i => repeat(yAxisCategories.length).map(n => [i, n, values[i][n]]))
+  .reduce((a, b) => [...a, ...b], [])
+  .slice(0, 30);
+
+const semiDonutSeries = [
+  {
+    name: "Browser share",
+    innerSize: "50%",
+    data: [
+      ["Chrome", 58.9],
+      ["Firefox", 13.29],
+      ["Internet Explorer", 13],
+      ["Edge", 3.78],
+      ["Safari", 3.42],
+      {
+        name: "Other",
+        y: 7.61,
+        dataLabels: {
+          enabled: false
+        }
+      }
+    ]
+  }
+];
+
+const mapSeries = [
+  {
+    data: [
+      ["fi-3280", 0],
+      ["fi-3272", 1],
+      ["fi-3275", 2],
+      ["fi-3281", 3],
+      ["fi-3279", 4],
+      ["fi-3276", 5],
+      ["fi-3287", 6],
+      ["fi-3286", 7],
+      ["fi-3290", 8],
+      ["fi-3291", 9],
+      ["fi-3292", 10],
+      ["fi-3293", 11],
+      ["fi-3294", 12],
+      ["fi-3295", 13],
+      ["fi-3296", 14],
+      ["fi-3288", 15],
+      ["fi-3285", 16],
+      ["fi-3289", 17]
+    ],
+    mapData: mapDataFI,
+    name: "Data"
+  }
+];
+
 const Img = styled.img`
   width: 170px;
   height: 100px;
@@ -380,6 +458,77 @@ export const KeyperDemo = () => {
         </Cell>
       </Grid>
     </Container>
+  );
+};
+
+export const KeyperDemoPage2 = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  return (
+    <>
+      <Grid>
+        <Cell>
+          <Img
+            src="https://images.unsplash.com/photo-1503792243040-7ce7f5f06085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2515&q=80"
+            alt="Unsplash key as logo placeholder"
+          />
+        </Cell>
+        <Cell>
+          <Dropdown
+            label="Channels"
+            items={dropdownItems}
+            isOpen={dropdownOpen}
+            onClick={() => setDropdownOpen(!dropdownOpen)}
+          />
+        </Cell>
+        <Cell>
+          <DatePicker />
+        </Cell>
+        <Cell>
+          <Button text="1" color="transparent" as={PagingButton} />
+          <Button text="2" color="transparent" as={PagingButtonSelected} />
+        </Cell>
+      </Grid>
+      <Grid>
+        <Cell>
+          <KPICard title="Logins / week" value={3789} growth={-0.145} />
+        </Cell>
+        <Cell>
+          <KPICard title="Logins / month" value={17283} growth={0.87} />
+        </Cell>
+        <Cell>
+          <KPICard
+            title="Active users / week"
+            value={1054}
+            growth={-0.062}
+            greenValue
+          />
+        </Cell>
+        <Cell>
+          <KPICard
+            title="Active users / month"
+            value={1870}
+            growth={0.953}
+            redValue
+          />
+        </Cell>
+      </Grid>
+      <Grid>
+        <Cell>
+          <Heatmap data={data} />
+          <SemiDonut series={semiDonutSeries} />
+        </Cell>
+        <Cell>
+          <Map
+            title="Finland"
+            minColor="#CCE7E7"
+            maxColor="#048B8A"
+            series={mapSeries}
+            containerProps={{ style: { height: "100%" } }}
+          />
+        </Cell>
+      </Grid>
+    </>
   );
 };
 
