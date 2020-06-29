@@ -1,6 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Card should render card 1`] = `
+.c2 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
 .c0 {
   margin: "2em";
   border-radius: 0.5em;
@@ -26,13 +32,12 @@ exports[`Card should render card 1`] = `
   height: 20em;
   width: auto;
   max-width: auto;
-  font-family: "Open Sans",sans-serif;
   text-align: center;
   padding: 1em;
   box-sizing: border-box;
 }
 
-.c2 {
+.c3 {
   text-align: center;
 }
 
@@ -44,14 +49,25 @@ exports[`Card should render card 1`] = `
   >
     <div
       className="c2"
+      size="normal"
     >
-      
+      <div
+        className="c3"
+      >
+        
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`Card should render card with children 1`] = `
+.c2 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
 .c0 {
   margin: "2em";
   border-radius: 0.5em;
@@ -77,13 +93,12 @@ exports[`Card should render card with children 1`] = `
   height: 20em;
   width: auto;
   max-width: auto;
-  font-family: "Open Sans",sans-serif;
   text-align: center;
   padding: 1em;
   box-sizing: border-box;
 }
 
-.c2 {
+.c3 {
   text-align: center;
 }
 
@@ -95,17 +110,34 @@ exports[`Card should render card with children 1`] = `
   >
     <div
       className="c2"
+      size="normal"
     >
-      Children textual content
+      <div
+        className="c3"
+      >
+        Children textual content
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`Card should render card with icon 1`] = `
-.c2 {
+.c3 {
   font-size: 4rem;
   text-align: center;
+}
+
+.c2 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+.c5 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: black;
 }
 
 .c0 {
@@ -133,20 +165,18 @@ exports[`Card should render card with icon 1`] = `
   height: 20em;
   width: auto;
   max-width: auto;
-  font-family: "Open Sans",sans-serif;
   text-align: center;
   padding: 1em;
   box-sizing: border-box;
 }
 
-.c3 {
-  font-family: "Exo 2",sans-serif;
+.c4 {
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
 }
 
-.c4 {
+.c6 {
   text-align: center;
 }
 
@@ -156,27 +186,49 @@ exports[`Card should render card with icon 1`] = `
   <div
     className="c1"
   >
-    <span
-      className="c2 lni lni-users"
-    />
-    <h3
-      className="c3"
-    >
-      Users
-    </h3>
     <div
-      className="c4"
+      className="c2"
+      size="normal"
     >
-      
+      <span
+        className="c3 lni lni-users"
+      />
+      <h3
+        className="c4"
+      >
+        <div
+          className="c5"
+          size="normal"
+        >
+          Users
+        </div>
+      </h3>
+      <div
+        className="c6"
+      >
+        
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`Card should render card with icon and children 1`] = `
-.c2 {
+.c3 {
   font-size: 4rem;
   text-align: center;
+}
+
+.c2 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+.c5 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: black;
 }
 
 .c0 {
@@ -204,20 +256,18 @@ exports[`Card should render card with icon and children 1`] = `
   height: 20em;
   width: auto;
   max-width: auto;
-  font-family: "Open Sans",sans-serif;
   text-align: center;
   padding: 1em;
   box-sizing: border-box;
 }
 
-.c3 {
-  font-family: "Exo 2",sans-serif;
+.c4 {
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
 }
 
-.c4 {
+.c6 {
   text-align: center;
 }
 
@@ -227,18 +277,28 @@ exports[`Card should render card with icon and children 1`] = `
   <div
     className="c1"
   >
-    <span
-      className="c2 lni lni-users"
-    />
-    <h3
-      className="c3"
-    >
-      Users
-    </h3>
     <div
-      className="c4"
+      className="c2"
+      size="normal"
     >
-      Children textual content
+      <span
+        className="c3 lni lni-users"
+      />
+      <h3
+        className="c4"
+      >
+        <div
+          className="c5"
+          size="normal"
+        >
+          Users
+        </div>
+      </h3>
+      <div
+        className="c6"
+      >
+        Children textual content
+      </div>
     </div>
   </div>
 </div>
