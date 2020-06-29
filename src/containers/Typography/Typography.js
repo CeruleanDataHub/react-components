@@ -16,7 +16,7 @@ const fontFamilies = { exo: '"Exo 2"', openSans: '"Open Sans"' };
 
 const fontFamilyStyle = fontFamily => {
   if (!fontFamily) {
-    return "initial";
+    return "unset";
   }
   return `${fontFamilies[fontFamily]}, sans-serif`;
 };
@@ -27,14 +27,8 @@ const Container = styled.div`
   color: ${({ textColor }) => colors[textColor] || colors.black};
 `;
 
-export const Typography = ({
-  size,
-  color,
-  exo = false,
-  fontFamily,
-  children
-}) => (
-  <Container textColor={color} size={size} exo={exo} fontFamily={fontFamily}>
+export const Typography = ({ size, color, fontFamily, children }) => (
+  <Container textColor={color} size={size} fontFamily={fontFamily}>
     {children}
   </Container>
 );
@@ -44,10 +38,8 @@ Typography.propTypes = {
   color: PropTypes.oneOf(["red", "green", "blue", "white", "black", "gray"]),
   /** Text size, values predefined */
   size: PropTypes.oneOf(["normal", "large"]),
-  /** Define whether to render text with Exo 2 font or Open Sans  */
-  exo: PropTypes.bool,
+  /** Define whether to render text with Exo 2 font or Open Sans. If not defined, renders text with default font */
   fontFamily: PropTypes.oneOf(["exo", "openSans"]),
-
   /** React node */
   children: PropTypes.node
 };
@@ -55,7 +47,6 @@ Typography.propTypes = {
 Typography.defaultProps = {
   color: "black",
   size: "normal",
-  exo: false,
   fontFamily: null,
   children: ""
 };
