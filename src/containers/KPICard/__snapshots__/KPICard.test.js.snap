@@ -94,6 +94,7 @@ exports[`KPICard should format large values 1`] = `
 >
   <div
     className="c1"
+    fontFamily="openSans"
     size="normal"
   >
     Title
@@ -106,6 +107,7 @@ exports[`KPICard should format large values 1`] = `
     >
       <div
         className="c4"
+        fontFamily="exo"
         size="large"
       >
         10,000,000,000
@@ -119,6 +121,7 @@ exports[`KPICard should format large values 1`] = `
       >
         <div
           className="c8"
+          fontFamily="exo"
           size="normal"
         >
           +
@@ -227,6 +230,7 @@ exports[`KPICard should render 1`] = `
 >
   <div
     className="c1"
+    fontFamily="openSans"
     size="normal"
   >
     Title
@@ -239,6 +243,7 @@ exports[`KPICard should render 1`] = `
     >
       <div
         className="c4"
+        fontFamily="exo"
         size="large"
       >
         1
@@ -252,6 +257,7 @@ exports[`KPICard should render 1`] = `
       >
         <div
           className="c8"
+          fontFamily="exo"
           size="normal"
         >
           +
@@ -360,6 +366,7 @@ exports[`KPICard should render green 1`] = `
 >
   <div
     className="c1"
+    fontFamily="openSans"
     size="normal"
   >
     Title
@@ -372,6 +379,7 @@ exports[`KPICard should render green 1`] = `
     >
       <div
         className="c4"
+        fontFamily="exo"
         size="large"
       >
         1
@@ -385,6 +393,7 @@ exports[`KPICard should render green 1`] = `
       >
         <div
           className="c8"
+          fontFamily="exo"
           size="normal"
         >
           +
@@ -493,6 +502,7 @@ exports[`KPICard should render negative growth 1`] = `
 >
   <div
     className="c1"
+    fontFamily="openSans"
     size="normal"
   >
     Title
@@ -505,6 +515,7 @@ exports[`KPICard should render negative growth 1`] = `
     >
       <div
         className="c4"
+        fontFamily="exo"
         size="large"
       >
         1
@@ -518,6 +529,7 @@ exports[`KPICard should render negative growth 1`] = `
       >
         <div
           className="c8"
+          fontFamily="exo"
           size="normal"
         >
           
@@ -626,6 +638,7 @@ exports[`KPICard should render positive growth 1`] = `
 >
   <div
     className="c1"
+    fontFamily="openSans"
     size="normal"
   >
     Title
@@ -638,6 +651,7 @@ exports[`KPICard should render positive growth 1`] = `
     >
       <div
         className="c4"
+        fontFamily="exo"
         size="large"
       >
         1
@@ -651,6 +665,7 @@ exports[`KPICard should render positive growth 1`] = `
       >
         <div
           className="c8"
+          fontFamily="exo"
           size="normal"
         >
           +
@@ -759,6 +774,7 @@ exports[`KPICard should render red 1`] = `
 >
   <div
     className="c1"
+    fontFamily="openSans"
     size="normal"
   >
     Title
@@ -771,6 +787,7 @@ exports[`KPICard should render red 1`] = `
     >
       <div
         className="c4"
+        fontFamily="exo"
         size="large"
       >
         1
@@ -784,6 +801,7 @@ exports[`KPICard should render red 1`] = `
       >
         <div
           className="c8"
+          fontFamily="exo"
           size="normal"
         >
           +
@@ -892,6 +910,7 @@ exports[`KPICard should render two decimal points in growth 1`] = `
 >
   <div
     className="c1"
+    fontFamily="openSans"
     size="normal"
   >
     Title
@@ -904,6 +923,7 @@ exports[`KPICard should render two decimal points in growth 1`] = `
     >
       <div
         className="c4"
+        fontFamily="exo"
         size="large"
       >
         1
@@ -917,6 +937,7 @@ exports[`KPICard should render two decimal points in growth 1`] = `
       >
         <div
           className="c8"
+          fontFamily="exo"
           size="normal"
         >
           +
@@ -1025,6 +1046,7 @@ exports[`KPICard should render zero growth 1`] = `
 >
   <div
     className="c1"
+    fontFamily="openSans"
     size="normal"
   >
     Title
@@ -1037,6 +1059,7 @@ exports[`KPICard should render zero growth 1`] = `
     >
       <div
         className="c4"
+        fontFamily="exo"
         size="large"
       >
         1
@@ -1050,6 +1073,7 @@ exports[`KPICard should render zero growth 1`] = `
       >
         <div
           className="c8"
+          fontFamily="exo"
           size="normal"
         >
           

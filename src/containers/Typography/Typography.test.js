@@ -7,7 +7,7 @@ const colors = ["red", "green", "blue", "white", "black", "gray"];
 const sizes = ["normal", "large"];
 
 // true means exo font, false open sans
-const fontFamilies = [false, true];
+const fontFamilies = ["exo", "openSans"];
 
 describe("Typography", () => {
   it("should render", () => {
@@ -16,11 +16,11 @@ describe("Typography", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  fontFamilies.forEach(isExo => {
-    describe(isExo ? "Exo" : "Open Sans", () => {
+  fontFamilies.forEach(fontFamily => {
+    describe(fontFamily, () => {
       it("should render font", () => {
         const component = renderer.create(
-          <Typography exo={isExo}>Test</Typography>
+          <Typography fontFamily={fontFamily}>Test</Typography>
         );
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
@@ -30,7 +30,7 @@ describe("Typography", () => {
         colors.forEach(color => {
           it(`should render ${color} exo font`, () => {
             const component = renderer.create(
-              <Typography color={color} exo={isExo}>
+              <Typography color={color} fontFamily="exo">
                 Test
               </Typography>
             );
@@ -42,9 +42,9 @@ describe("Typography", () => {
 
       describe("Sizes", () => {
         sizes.forEach(size => {
-          it(`should render ${size} exo font`, () => {
+          it(`should render ${size} open sans font`, () => {
             const component = renderer.create(
-              <Typography size={size} exo={isExo}>
+              <Typography size={size} fontFamily="openSans">
                 Test
               </Typography>
             );
@@ -59,7 +59,7 @@ describe("Typography", () => {
           sizes.forEach(size => {
             it(`should render ${color} ${size} exo font`, () => {
               const component = renderer.create(
-                <Typography color={color} size={size} exo={isExo}>
+                <Typography color={color} size={size} fontFamily="exo">
                   Test
                 </Typography>
               );

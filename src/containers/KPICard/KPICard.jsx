@@ -49,11 +49,13 @@ export const KPICard = ({
   greenValue = false
 }) => (
   <Container>
-    <Typography color="gray">{title}</Typography>
+    <Typography color="gray" fontFamily="openSans">
+      {title}
+    </Typography>
     <Grid>
       <Cell middle>
         <Typography
-          exo
+          fontFamily="exo"
           size="large"
           color={(redValue && "red") || (greenValue && "green") || null}
         >
@@ -62,7 +64,7 @@ export const KPICard = ({
       </Cell>
       <Cell center as={Bottom}>
         <FlexRow>
-          <Typography exo color={getGrowthColor(growth)}>
+          <Typography fontFamily="exo" color={getGrowthColor(growth)}>
             {growth > 0 ? "+" : ""}
             {new Intl.NumberFormat("en-EN", {
               style: "percent",

@@ -9,237 +9,253 @@ export default {
 
 export const TypographyStory = () => <Typography>Typography</Typography>;
 
-export const TypographyBlackStory = () => (
-  <Typography color="black">Typography</Typography>
-);
-
-export const TypographyGrayStory = () => (
-  <Typography color="gray">Typography</Typography>
-);
-
-export const TypographyWhiteStory = () => (
-  <div style={{ backgroundColor: "black" }}>
-    <Typography color="white">Typography</Typography>
-  </div>
-);
-
-export const TypographyRedStory = () => (
-  <Typography color="red">Typography</Typography>
-);
-
-export const TypographyGreenStory = () => (
-  <Typography color="green">Typography</Typography>
-);
-
-export const TypographyBlueStory = () => (
-  <Typography color="blue">Typography</Typography>
-);
-
-export const TypographyNormalStory = () => (
-  <Typography size="normal">Typography</Typography>
-);
-
-export const TypographyLargeStory = () => (
-  <Typography size="large">Typography</Typography>
-);
-
-export const TypographyNormalBlackStory = () => (
-  <Typography size="normal" color="black">
+export const TypographyOpenSansBlackStory = () => (
+  <Typography color="black" fontFamily="openSans">
     Typography
   </Typography>
 );
 
-export const TypographyNormalGrayStory = () => (
-  <Typography size="normal" color="gray">
+export const TypographyOpenSansGrayStory = () => (
+  <Typography color="gray" fontFamily="openSans">
     Typography
   </Typography>
 );
 
-export const TypographyNormalWhiteStory = () => (
+export const TypographyOpenSansWhiteStory = () => (
   <div style={{ backgroundColor: "black" }}>
-    <Typography size="normal" color="white">
+    <Typography color="white" fontFamily="openSans">
       Typography
     </Typography>
   </div>
 );
 
-export const TypographyNormalRedStory = () => (
-  <Typography size="normal" color="red">
+export const TypographyOpenSansRedStory = () => (
+  <Typography color="red" fontFamily="openSans">
     Typography
   </Typography>
 );
 
-export const TypographyNormalGreenStory = () => (
-  <Typography size="normal" color="green">
+export const TypographyOpenSansGreenStory = () => (
+  <Typography color="green" fontFamily="openSans">
     Typography
   </Typography>
 );
 
-export const TypographyNormalBlueStory = () => (
-  <Typography size="normal" color="blue">
+export const TypographyOpenSansBlueStory = () => (
+  <Typography color="blue" fontFamily="openSans">
     Typography
   </Typography>
 );
 
-export const TypographyLargeBlackStory = () => (
-  <Typography size="large" color="black">
+export const TypographyOpenSansNormalStory = () => (
+  <Typography size="normal" fontFamily="openSans">
     Typography
   </Typography>
 );
 
-export const TypographyLargeGrayStory = () => (
-  <Typography size="large" color="gray">
+export const TypographyOpenSansLargeStory = () => (
+  <Typography size="large" fontFamily="openSans">
     Typography
   </Typography>
 );
 
-export const TypographyLargeWhiteStory = () => (
+export const TypographyOpenSansNormalBlackStory = () => (
+  <Typography size="normal" color="black" fontFamily="openSans">
+    Typography
+  </Typography>
+);
+
+export const TypographyOpenSansNormalGrayStory = () => (
+  <Typography size="normal" color="gray" fontFamily="openSans">
+    Typography
+  </Typography>
+);
+
+export const TypographyOpenSansNormalWhiteStory = () => (
   <div style={{ backgroundColor: "black" }}>
-    <Typography size="large" color="white">
+    <Typography size="normal" color="white" fontFamily="openSans">
       Typography
     </Typography>
   </div>
 );
 
-export const TypographyLargeRedStory = () => (
-  <Typography size="large" color="red">
+export const TypographyOpenSansNormalRedStory = () => (
+  <Typography size="normal" color="red" fontFamily="openSans">
     Typography
   </Typography>
 );
 
-export const TypographyLargeGreenStory = () => (
-  <Typography size="large" color="green">
+export const TypographyOpenSansNormalGreenStory = () => (
+  <Typography size="normal" color="green" fontFamily="openSans">
     Typography
   </Typography>
 );
 
-export const TypographyLargeBlueStory = () => (
-  <Typography size="large" color="blue">
+export const TypographyOpenSansNormalBlueStory = () => (
+  <Typography size="normal" color="blue" fontFamily="openSans">
+    Typography
+  </Typography>
+);
+
+export const TypographyOpenSansLargeBlackStory = () => (
+  <Typography size="large" color="black" fontFamily="openSans">
+    Typography
+  </Typography>
+);
+
+export const TypographyOpenSansLargeGrayStory = () => (
+  <Typography size="large" color="gray" fontFamily="openSans">
+    Typography
+  </Typography>
+);
+
+export const TypographyOpenSansLargeWhiteStory = () => (
+  <div style={{ backgroundColor: "black" }}>
+    <Typography size="large" color="white" fontFamily="openSans">
+      Typography
+    </Typography>
+  </div>
+);
+
+export const TypographyOpenSansLargeRedStory = () => (
+  <Typography size="large" color="red" fontFamily="openSans">
+    Typography
+  </Typography>
+);
+
+export const TypographyOpenSansLargeGreenStory = () => (
+  <Typography size="large" color="green" fontFamily="openSans">
+    Typography
+  </Typography>
+);
+
+export const TypographyOpenSansLargeBlueStory = () => (
+  <Typography size="large" color="blue" fontFamily="openSans">
     Typography
   </Typography>
 );
 
 export const TypographyExoBlackStory = () => (
-  <Typography color="black" exo>
+  <Typography color="black" fontFamily="exo">
     Typography
   </Typography>
 );
 export const TypographyExoGrayStory = () => (
-  <Typography color="gray" exo>
+  <Typography color="gray" fontFamily="exo">
     Typography
   </Typography>
 );
 
 export const TypographyExoWhiteStory = () => (
   <div style={{ backgroundColor: "black" }}>
-    <Typography color="white" exo>
+    <Typography color="white" fontFamily="exo">
       Typography
     </Typography>
   </div>
 );
 
 export const TypographyExoRedStory = () => (
-  <Typography color="red" exo>
+  <Typography color="red" fontFamily="exo">
     Typography
   </Typography>
 );
 
 export const TypographyExoGreenStory = () => (
-  <Typography color="green" exo>
+  <Typography color="green" fontFamily="exo">
     Typography
   </Typography>
 );
 
 export const TypographyExoBlueStory = () => (
-  <Typography color="blue" exo>
+  <Typography color="blue" fontFamily="exo">
     Typography
   </Typography>
 );
 
 export const TypographyExoNormalStory = () => (
-  <Typography size="normal" exo>
+  <Typography size="normal" fontFamily="exo">
     Typography
   </Typography>
 );
 
 export const TypographyExoNormalBlackStory = () => (
-  <Typography size="normal" color="black" exo>
+  <Typography size="normal" color="black" fontFamily="exo">
     Typography
   </Typography>
 );
 
 export const TypographyExoNormalGrayStory = () => (
-  <Typography size="normal" color="gray" exo>
+  <Typography size="normal" color="gray" fontFamily="exo">
     Typography
   </Typography>
 );
 
 export const TypographyExoNormalWhiteStory = () => (
   <div style={{ backgroundColor: "black" }}>
-    <Typography size="normal" color="white" exo>
+    <Typography size="normal" color="white" fontFamily="exo">
       Typography
     </Typography>
   </div>
 );
 
 export const TypographyExoNormalRedStory = () => (
-  <Typography size="normal" color="red" exo>
+  <Typography size="normal" color="red" fontFamily="exo">
     Typography
   </Typography>
 );
 
 export const TypographyExoNormalGreenStory = () => (
-  <Typography size="normal" color="green" exo>
+  <Typography size="normal" color="green" fontFamily="exo">
     Typography
   </Typography>
 );
 
 export const TypographyExoNormalBlueStory = () => (
-  <Typography size="normal" color="blue" exo>
+  <Typography size="normal" color="blue" fontFamily="exo">
     Typography
   </Typography>
 );
 
 export const TypographyExoLargeStory = () => (
-  <Typography size="large" exo>
+  <Typography size="large" fontFamily="exo">
     Typography
   </Typography>
 );
 
 export const TypographyExoLargeBlackStory = () => (
-  <Typography size="large" color="black" exo>
+  <Typography size="large" color="black" fontFamily="exo">
     Typography
   </Typography>
 );
 
 export const TypographyExoLargeGrayStory = () => (
-  <Typography size="large" color="gray" exo>
+  <Typography size="large" color="gray" fontFamily="exo">
     Typography
   </Typography>
 );
 
 export const TypographyExoLargeWhiteStory = () => (
   <div style={{ backgroundColor: "black" }}>
-    <Typography size="large" color="white" exo>
+    <Typography size="large" color="white" fontFamily="exo">
       Typography
     </Typography>
   </div>
 );
 
 export const TypographyExoLargeRedStory = () => (
-  <Typography size="large" color="red" exo>
+  <Typography size="large" color="red" fontFamily="exo">
     Typography
   </Typography>
 );
 
 export const TypographyExoLargeGreenStory = () => (
-  <Typography size="large" color="green" exo>
+  <Typography size="large" color="green" fontFamily="exo">
     Typography
   </Typography>
 );
 
 export const TypographyExoLargeBlueStory = () => (
-  <Typography size="large" color="blue" exo>
+  <Typography size="large" color="blue" fontFamily="exo">
     Typography
   </Typography>
 );

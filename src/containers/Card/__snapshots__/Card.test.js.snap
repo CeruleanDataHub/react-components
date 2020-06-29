@@ -2,7 +2,7 @@
 
 exports[`Card should render card 1`] = `
 .c2 {
-  font-family: "Open Sans",sans-serif;
+  font-family: initial;
   font-size: 16px;
   color: black;
 }
@@ -49,6 +49,7 @@ exports[`Card should render card 1`] = `
   >
     <div
       className="c2"
+      fontFamily={null}
       size="normal"
     >
       <div
@@ -63,7 +64,7 @@ exports[`Card should render card 1`] = `
 
 exports[`Card should render card with children 1`] = `
 .c2 {
-  font-family: "Open Sans",sans-serif;
+  font-family: initial;
   font-size: 16px;
   color: black;
 }
@@ -110,6 +111,7 @@ exports[`Card should render card with children 1`] = `
   >
     <div
       className="c2"
+      fontFamily={null}
       size="normal"
     >
       <div
@@ -129,13 +131,7 @@ exports[`Card should render card with icon 1`] = `
 }
 
 .c2 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  color: black;
-}
-
-.c5 {
-  font-family: "Exo 2",sans-serif;
+  font-family: initial;
   font-size: 16px;
   color: black;
 }
@@ -176,7 +172,7 @@ exports[`Card should render card with icon 1`] = `
   text-transform: uppercase;
 }
 
-.c6 {
+.c5 {
   text-align: center;
 }
 
@@ -188,6 +184,7 @@ exports[`Card should render card with icon 1`] = `
   >
     <div
       className="c2"
+      fontFamily={null}
       size="normal"
     >
       <span
@@ -197,14 +194,15 @@ exports[`Card should render card with icon 1`] = `
         className="c4"
       >
         <div
-          className="c5"
+          className="c2"
+          fontFamily={null}
           size="normal"
         >
           Users
         </div>
       </h3>
       <div
-        className="c6"
+        className="c5"
       >
         
       </div>
@@ -220,13 +218,7 @@ exports[`Card should render card with icon and children 1`] = `
 }
 
 .c2 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  color: black;
-}
-
-.c5 {
-  font-family: "Exo 2",sans-serif;
+  font-family: initial;
   font-size: 16px;
   color: black;
 }
@@ -267,7 +259,7 @@ exports[`Card should render card with icon and children 1`] = `
   text-transform: uppercase;
 }
 
-.c6 {
+.c5 {
   text-align: center;
 }
 
@@ -279,6 +271,7 @@ exports[`Card should render card with icon and children 1`] = `
   >
     <div
       className="c2"
+      fontFamily={null}
       size="normal"
     >
       <span
@@ -288,14 +281,15 @@ exports[`Card should render card with icon and children 1`] = `
         className="c4"
       >
         <div
-          className="c5"
+          className="c2"
+          fontFamily={null}
           size="normal"
         >
           Users
         </div>
       </h3>
       <div
-        className="c6"
+        className="c5"
       >
         Children textual content
       </div>
