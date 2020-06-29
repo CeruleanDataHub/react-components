@@ -2,8 +2,10 @@ import PropTypes from "prop-types";
 import React, { useState } from "react";
 import styled from "styled-components";
 
+import { Button } from "../Button/Button";
 import { Checkbox } from "../Checkbox/Checkbox";
 import { Icon } from "../Icon/Icon";
+import { Typography } from "../Typography/Typography";
 
 const Container = styled.div`
   position: relative;
@@ -78,18 +80,23 @@ export const Dropdown = ({ isOpen, label, onClick, items }) => {
   };
 
   return (
-    <Container>
-      <DropdownContainer onClick={onClick}>
-        <DropdownText>{label}</DropdownText>
+    <Typography fontFamily="openSans">
+      <Container>
+        <Button onClick={onClick} as={DropdownContainer}>
+          <DropdownText>{label}</DropdownText>
+          {isOpen && (
+            <DropdownText color="#90ee7e">{`${checkedItems.length} selected`}</DropdownText>
+          )}
+          <Icon
+            name={isOpen ? "chevron-up" : "chevron-down"}
+            as={DropdownText}
+          />
+        </Button>
         {isOpen && (
-          <DropdownText color="#90ee7e">{`${checkedItems.length} selected`}</DropdownText>
+          <ItemList>{generateList(selectedItems, handleSelection)}</ItemList>
         )}
-        <Icon name={isOpen ? "chevron-up" : "chevron-down"} as={DropdownText} />
-      </DropdownContainer>
-      {isOpen && (
-        <ItemList>{generateList(selectedItems, handleSelection)}</ItemList>
-      )}
-    </Container>
+      </Container>
+    </Typography>
   );
 };
 

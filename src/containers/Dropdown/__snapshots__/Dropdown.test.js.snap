@@ -2,15 +2,31 @@
 
 exports[`Dropdown should render dropdown 1`] = `
 .c3 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c5 {
   font-size: 4rem;
   text-align: center;
 }
 
 .c0 {
-  position: relative;
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: black;
 }
 
 .c1 {
+  position: relative;
+}
+
+.c2 {
   font-family: inherit;
   display: -webkit-box;
   display: -webkit-flex;
@@ -33,7 +49,7 @@ exports[`Dropdown should render dropdown 1`] = `
   cursor: pointer;
 }
 
-.c2 {
+.c4 {
   color: #999;
   font-size: 1.25em;
   font-weight: bold;
@@ -41,30 +57,47 @@ exports[`Dropdown should render dropdown 1`] = `
 
 <div
   className="c0"
+  fontFamily="openSans"
+  size="normal"
 >
-  <button
+  <div
     className="c1"
-    onClick={[Function]}
   >
-    <span
-      className="c2"
+    <button
+      className="c2 c3"
+      color=""
+      onClick={[Function]}
     >
-      
-    </span>
-    <span
-      className="c2 c3 lni lni-chevron-down"
-    />
-  </button>
+      <span
+        className="c4"
+      >
+        
+      </span>
+      <span
+        className="c4 c5 lni lni-chevron-down"
+      />
+    </button>
+  </div>
 </div>
 `;
 
 exports[`Dropdown should render dropdown in open state 1`] = `
-.c4 {
+.c3 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c6 {
   font-size: 4rem;
   text-align: center;
 }
 
-.c8 {
+.c10 {
   border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
@@ -79,22 +112,23 @@ exports[`Dropdown should render dropdown in open state 1`] = `
   width: 1px;
 }
 
-.c10 {
+.c12 {
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 1em;
+  height: 1em;
   border: 1px solid #999;
   background: transparent;
   text-align: center;
   border-radius: 4px;
+  line-height: 1em;
 }
 
-.c12 {
+.c14 {
   color: #999;
   margin-left: 1.5em;
 }
 
-.c7 {
+.c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -103,19 +137,25 @@ exports[`Dropdown should render dropdown in open state 1`] = `
   margin: 0.25em 0;
 }
 
-.c7:hover .c9 {
+.c9:hover .c11 {
   border-color: #333;
 }
 
-.c7:hover .c11 {
+.c9:hover .c13 {
   color: #666;
 }
 
 .c0 {
-  position: relative;
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: black;
 }
 
 .c1 {
+  position: relative;
+}
+
+.c2 {
   font-family: inherit;
   display: -webkit-box;
   display: -webkit-flex;
@@ -138,7 +178,7 @@ exports[`Dropdown should render dropdown in open state 1`] = `
   cursor: pointer;
 }
 
-.c5 {
+.c7 {
   width: 100%;
   padding: 0;
   background: #0f181c;
@@ -160,18 +200,18 @@ exports[`Dropdown should render dropdown in open state 1`] = `
   z-index: 1;
 }
 
-.c6 {
+.c8 {
   padding-top: 1em;
   padding-left: 0.5em;
 }
 
-.c2 {
+.c4 {
   color: #999;
   font-size: 1.25em;
   font-weight: bold;
 }
 
-.c3 {
+.c5 {
   color: #90ee7e;
   font-size: 1.25em;
   font-weight: bold;
@@ -179,77 +219,84 @@ exports[`Dropdown should render dropdown in open state 1`] = `
 
 <div
   className="c0"
+  fontFamily="openSans"
+  size="normal"
 >
-  <button
+  <div
     className="c1"
-    onClick={[Function]}
   >
-    <span
-      className="c2"
+    <button
+      className="c2 c3"
+      color=""
+      onClick={[Function]}
     >
-      
-    </span>
-    <span
-      className="c3"
-      color="#90ee7e"
-    >
-      0 selected
-    </span>
-    <span
-      className="c2 c4 lni lni-chevron-up"
-    />
-  </button>
-  <ul
-    className="c5"
-  >
-    <li
-      className="c6"
-    >
-      <label
-        className="c7"
+      <span
+        className="c4"
       >
-        <input
-          checked={false}
-          className="c8"
-          onChange={[Function]}
-          type="checkbox"
-          value="1"
-        />
-        <div
-          checked={false}
-          className="c9 c10"
-        />
-        <span
-          className="c11 c12"
-        >
-          Item 1
-        </span>
-      </label>
-    </li>
-    <li
-      className="c6"
-    >
-      <label
-        className="c7"
+        
+      </span>
+      <span
+        className="c5"
+        color="#90ee7e"
       >
-        <input
-          checked={false}
-          className="c8"
-          onChange={[Function]}
-          type="checkbox"
-          value="2"
-        />
-        <div
-          checked={false}
-          className="c9 c10"
-        />
-        <span
-          className="c11 c12"
+        0 selected
+      </span>
+      <span
+        className="c4 c6 lni lni-chevron-up"
+      />
+    </button>
+    <ul
+      className="c7"
+    >
+      <li
+        className="c8"
+      >
+        <label
+          className="c9"
         >
-          Item 2
-        </span>
-      </label>
-    </li>
-  </ul>
+          <input
+            checked={false}
+            className="c10"
+            onChange={[Function]}
+            type="checkbox"
+            value="1"
+          />
+          <div
+            checked={false}
+            className="c11 c12"
+          />
+          <span
+            className="c13 c14"
+          >
+            Item 1
+          </span>
+        </label>
+      </li>
+      <li
+        className="c8"
+      >
+        <label
+          className="c9"
+        >
+          <input
+            checked={false}
+            className="c10"
+            onChange={[Function]}
+            type="checkbox"
+            value="2"
+          />
+          <div
+            checked={false}
+            className="c11 c12"
+          />
+          <span
+            className="c13 c14"
+          >
+            Item 2
+          </span>
+        </label>
+      </li>
+    </ul>
+  </div>
 </div>
 `;

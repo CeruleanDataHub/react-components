@@ -17,16 +17,20 @@ const items = [
   { value: "5", label: "Item 5" }
 ];
 
-export const DropdownStory = () => <Dropdown label="Label" />;
+export const DropdownStory = () => (
+  <div style={{ width: 300 }}>
+    <Dropdown label="Label" />
+  </div>
+);
 
 export const DropdownOpenStory = () => (
-  <div style={{ minHeight: 250 }}>
+  <div style={{ minHeight: 250, width: 300 }}>
     <Dropdown label="Label" isOpen items={items} />
   </div>
 );
 
 export const DropdownToggleStory = () => (
-  <div style={{ minHeight: 250 }}>
+  <div style={{ minHeight: 250, width: 300 }}>
     <DropdownWrapper
       label="Label"
       items={items}

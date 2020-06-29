@@ -417,8 +417,12 @@ export const KeyperDemo = () => {
             <DatePicker />
           </Cell>
           <Cell>
-            <Button text="1" color="transparent" as={PagingButtonSelected} />
-            <Button text="2" color="transparent" as={PagingButton} />
+            <Button color="transparent" as={PagingButtonSelected}>
+              1
+            </Button>
+            <Button color="transparent" as={PagingButton}>
+              2
+            </Button>
           </Cell>
         </Grid>
         <Grid as={KPIGrid}>
