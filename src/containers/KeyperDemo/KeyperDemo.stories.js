@@ -13,6 +13,7 @@ import { Dropdown } from "../Dropdown/Dropdown";
 import { Cell, Grid } from "../Grid/Grid";
 import { KPICard } from "../KPICard/KPICard";
 import { Map } from "../Map/Map";
+import { Typography } from "../Typography/Typography";
 
 const logins = [
   8052,
@@ -396,75 +397,77 @@ export const KeyperDemo = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   return (
     <Container>
-      <Grid>
-        <Cell>
-          <Img
-            src="https://images.unsplash.com/photo-1503792243040-7ce7f5f06085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2515&q=80"
-            alt="Unsplash key as logo placeholder"
-          />
-        </Cell>
-        <Cell>
-          <Dropdown
-            label="Channels"
-            items={dropdownItems}
-            isOpen={dropdownOpen}
-            onClick={() => setDropdownOpen(!dropdownOpen)}
-          />
-        </Cell>
-        <Cell>
-          <DatePicker />
-        </Cell>
-        <Cell>
-          <Button text="1" color="transparent" as={PagingButtonSelected} />
-          <Button text="2" color="transparent" as={PagingButton} />
-        </Cell>
-      </Grid>
-      <Grid as={KPIGrid}>
-        <Cell as={KPICell}>
-          <KPICard
-            title="Logins / week"
-            value={3789}
-            growth={-0.145}
-            redValue
-          />
-        </Cell>
-        <Cell as={KPICell}>
-          <KPICard
-            title="Logins / month"
-            value={17283}
-            growth={0.87}
-            redValue
-          />
-        </Cell>
-        <Cell as={KPICell}>
-          <KPICard
-            title="Active users / week"
-            value={1054}
-            growth={-0.062}
-            greenValue
-          />
-        </Cell>
-        <Cell as={KPICell}>
-          <KPICard
-            title="Active users / month"
-            value={1870}
-            growth={0.953}
-            greenValue
-          />
-        </Cell>
-      </Grid>
-      <Grid>
-        <Cell>
-          <Spline xAxis={splineXAxis} series={splineSeries} />
-          <TreeMap series={treemapSeries} />
-        </Cell>
-        <Cell>
-          <DependencyWheel
-            series={dependencySeries}
-            containerProps={{ style: { height: "100%" } }}
-          />
-        </Cell>
-      </Grid>
+      <Typography>
+        <Grid>
+          <Cell>
+            <Img
+              src="https://images.unsplash.com/photo-1503792243040-7ce7f5f06085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2515&q=80"
+              alt="Unsplash key as logo placeholder"
+            />
+          </Cell>
+          <Cell>
+            <Dropdown
+              label="Channels"
+              items={dropdownItems}
+              isOpen={dropdownOpen}
+              onClick={() => setDropdownOpen(!dropdownOpen)}
+            />
+          </Cell>
+          <Cell>
+            <DatePicker />
+          </Cell>
+          <Cell>
+            <Button text="1" color="transparent" as={PagingButtonSelected} />
+            <Button text="2" color="transparent" as={PagingButton} />
+          </Cell>
+        </Grid>
+        <Grid as={KPIGrid}>
+          <Cell as={KPICell}>
+            <KPICard
+              title="Logins / week"
+              value={3789}
+              growth={-0.145}
+              redValue
+            />
+          </Cell>
+          <Cell as={KPICell}>
+            <KPICard
+              title="Logins / month"
+              value={17283}
+              growth={0.87}
+              redValue
+            />
+          </Cell>
+          <Cell as={KPICell}>
+            <KPICard
+              title="Active users / week"
+              value={1054}
+              growth={-0.062}
+              greenValue
+            />
+          </Cell>
+          <Cell as={KPICell}>
+            <KPICard
+              title="Active users / month"
+              value={1870}
+              growth={0.953}
+              greenValue
+            />
+          </Cell>
+        </Grid>
+        <Grid>
+          <Cell>
+            <Spline xAxis={splineXAxis} series={splineSeries} />
+            <TreeMap series={treemapSeries} />
+          </Cell>
+          <Cell>
+            <DependencyWheel
+              series={dependencySeries}
+              containerProps={{ style: { height: "100%" } }}
+            />
+          </Cell>
+        </Grid>
+      </Typography>
     </Container>
   );
 };
@@ -474,78 +477,80 @@ export const KeyperDemoPage2 = () => {
 
   return (
     <Container>
-      <Grid>
-        <Cell>
-          <Img
-            src="https://images.unsplash.com/photo-1503792243040-7ce7f5f06085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2515&q=80"
-            alt="Unsplash key as logo placeholder"
-          />
-        </Cell>
-        <Cell>
-          <Dropdown
-            label="Channels"
-            items={dropdownItems}
-            isOpen={dropdownOpen}
-            onClick={() => setDropdownOpen(!dropdownOpen)}
-          />
-        </Cell>
-        <Cell>
-          <DatePicker />
-        </Cell>
-        <Cell>
-          <Button text="1" color="transparent" as={PagingButton} />
-          <Button text="2" color="transparent" as={PagingButtonSelected} />
-        </Cell>
-      </Grid>
-      <Grid as={KPIGrid}>
-        <Cell as={KPICell}>
-          <KPICard
-            title="Logins / week"
-            value={3789}
-            growth={-0.145}
-            redValue
-          />
-        </Cell>
-        <Cell as={KPICell}>
-          <KPICard
-            title="Logins / month"
-            value={17283}
-            growth={0.87}
-            redValue
-          />
-        </Cell>
-        <Cell as={KPICell}>
-          <KPICard
-            title="Active users / week"
-            value={1054}
-            growth={-0.062}
-            greenValue
-          />
-        </Cell>
-        <Cell as={KPICell}>
-          <KPICard
-            title="Active users / month"
-            value={1870}
-            growth={0.953}
-            greenValue
-          />
-        </Cell>
-      </Grid>
-      <Grid>
-        <Cell>
-          <Heatmap data={data} />
-          <SemiDonut series={semiDonutSeries} />
-        </Cell>
-        <Cell>
-          <Map
-            title="Finland"
-            minColor="#CCE7E7"
-            maxColor="#048B8A"
-            series={mapSeries}
-            containerProps={{ style: { height: "100%" } }}
-          />
-        </Cell>
-      </Grid>
+      <Typography>
+        <Grid>
+          <Cell>
+            <Img
+              src="https://images.unsplash.com/photo-1503792243040-7ce7f5f06085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2515&q=80"
+              alt="Unsplash key as logo placeholder"
+            />
+          </Cell>
+          <Cell>
+            <Dropdown
+              label="Channels"
+              items={dropdownItems}
+              isOpen={dropdownOpen}
+              onClick={() => setDropdownOpen(!dropdownOpen)}
+            />
+          </Cell>
+          <Cell>
+            <DatePicker />
+          </Cell>
+          <Cell>
+            <Button text="1" color="transparent" as={PagingButton} />
+            <Button text="2" color="transparent" as={PagingButtonSelected} />
+          </Cell>
+        </Grid>
+        <Grid as={KPIGrid}>
+          <Cell as={KPICell}>
+            <KPICard
+              title="Logins / week"
+              value={3789}
+              growth={-0.145}
+              redValue
+            />
+          </Cell>
+          <Cell as={KPICell}>
+            <KPICard
+              title="Logins / month"
+              value={17283}
+              growth={0.87}
+              redValue
+            />
+          </Cell>
+          <Cell as={KPICell}>
+            <KPICard
+              title="Active users / week"
+              value={1054}
+              growth={-0.062}
+              greenValue
+            />
+          </Cell>
+          <Cell as={KPICell}>
+            <KPICard
+              title="Active users / month"
+              value={1870}
+              growth={0.953}
+              greenValue
+            />
+          </Cell>
+        </Grid>
+        <Grid>
+          <Cell>
+            <Heatmap data={data} />
+            <SemiDonut series={semiDonutSeries} />
+          </Cell>
+          <Cell>
+            <Map
+              title="Finland"
+              minColor="#CCE7E7"
+              maxColor="#048B8A"
+              series={mapSeries}
+              containerProps={{ style: { height: "100%" } }}
+            />
+          </Cell>
+        </Grid>
+      </Typography>
     </Container>
   );
 };
