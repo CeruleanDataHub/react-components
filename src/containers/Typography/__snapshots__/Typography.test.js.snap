@@ -1,0 +1,646 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography Exo Colors should render black exo font 1`] = `
+.c0 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Exo Colors should render blue exo font 1`] = `
+.c0 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: #1ea7fd;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Exo Colors should render gray exo font 1`] = `
+.c0 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: #999999;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Exo Colors should render green exo font 1`] = `
+.c0 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: #90ee7e;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Exo Colors should render red exo font 1`] = `
+.c0 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: #ff0066;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Exo Colors should render white exo font 1`] = `
+.c0 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Exo Sizes & Colors combinations should render black large exo font 1`] = `
+.c0 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 40px;
+  color: black;
+}
+
+<div
+  className="c0"
+  size="large"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Exo Sizes & Colors combinations should render black normal exo font 1`] = `
+.c0 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Exo Sizes & Colors combinations should render blue large exo font 1`] = `
+.c0 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 40px;
+  color: #1ea7fd;
+}
+
+<div
+  className="c0"
+  size="large"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Exo Sizes & Colors combinations should render blue normal exo font 1`] = `
+.c0 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: #1ea7fd;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Exo Sizes & Colors combinations should render gray large exo font 1`] = `
+.c0 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 40px;
+  color: #999999;
+}
+
+<div
+  className="c0"
+  size="large"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Exo Sizes & Colors combinations should render gray normal exo font 1`] = `
+.c0 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: #999999;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Exo Sizes & Colors combinations should render green large exo font 1`] = `
+.c0 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 40px;
+  color: #90ee7e;
+}
+
+<div
+  className="c0"
+  size="large"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Exo Sizes & Colors combinations should render green normal exo font 1`] = `
+.c0 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: #90ee7e;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Exo Sizes & Colors combinations should render red large exo font 1`] = `
+.c0 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 40px;
+  color: #ff0066;
+}
+
+<div
+  className="c0"
+  size="large"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Exo Sizes & Colors combinations should render red normal exo font 1`] = `
+.c0 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: #ff0066;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Exo Sizes & Colors combinations should render white large exo font 1`] = `
+.c0 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+<div
+  className="c0"
+  size="large"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Exo Sizes & Colors combinations should render white normal exo font 1`] = `
+.c0 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Exo Sizes should render large exo font 1`] = `
+.c0 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 40px;
+  color: black;
+}
+
+<div
+  className="c0"
+  size="large"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Exo Sizes should render normal exo font 1`] = `
+.c0 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Exo should render font 1`] = `
+.c0 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Open Sans Colors should render black exo font 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Open Sans Colors should render blue exo font 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: #1ea7fd;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Open Sans Colors should render gray exo font 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: #999999;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Open Sans Colors should render green exo font 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: #90ee7e;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Open Sans Colors should render red exo font 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: #ff0066;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Open Sans Colors should render white exo font 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Open Sans Sizes & Colors combinations should render black large exo font 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 40px;
+  color: black;
+}
+
+<div
+  className="c0"
+  size="large"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Open Sans Sizes & Colors combinations should render black normal exo font 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Open Sans Sizes & Colors combinations should render blue large exo font 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 40px;
+  color: #1ea7fd;
+}
+
+<div
+  className="c0"
+  size="large"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Open Sans Sizes & Colors combinations should render blue normal exo font 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: #1ea7fd;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Open Sans Sizes & Colors combinations should render gray large exo font 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 40px;
+  color: #999999;
+}
+
+<div
+  className="c0"
+  size="large"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Open Sans Sizes & Colors combinations should render gray normal exo font 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: #999999;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Open Sans Sizes & Colors combinations should render green large exo font 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 40px;
+  color: #90ee7e;
+}
+
+<div
+  className="c0"
+  size="large"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Open Sans Sizes & Colors combinations should render green normal exo font 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: #90ee7e;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Open Sans Sizes & Colors combinations should render red large exo font 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 40px;
+  color: #ff0066;
+}
+
+<div
+  className="c0"
+  size="large"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Open Sans Sizes & Colors combinations should render red normal exo font 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: #ff0066;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Open Sans Sizes & Colors combinations should render white large exo font 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+<div
+  className="c0"
+  size="large"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Open Sans Sizes & Colors combinations should render white normal exo font 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Open Sans Sizes should render large exo font 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 40px;
+  color: black;
+}
+
+<div
+  className="c0"
+  size="large"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Open Sans Sizes should render normal exo font 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography Open Sans should render font 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
+
+exports[`Typography should render 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+<div
+  className="c0"
+  size="normal"
+>
+  Test
+</div>
+`;
