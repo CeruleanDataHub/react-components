@@ -13,15 +13,15 @@ const StyledButton = styled.button`
   cursor: pointer;
 `;
 
-export const Button = ({ text, onClick, color, as }) => (
+export const Button = ({ children, onClick, color, as }) => (
   <StyledButton color={color} onClick={onClick} as={as}>
-    {text}
+    {children}
   </StyledButton>
 );
 
 Button.propTypes = {
-  /** Text on the button */
-  text: PropTypes.string,
+  /** Children of the button */
+  children: PropTypes.node,
   /** Handler function */
   onClick: PropTypes.func,
   /** Color of the button */
@@ -35,7 +35,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  text: "",
+  children: "",
   onClick: () => null,
   color: "",
   as: null

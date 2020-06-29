@@ -41,7 +41,7 @@ exports[`Button should render Button 1`] = `
   color=""
   onClick={[Function]}
 >
-  
+  Button
 </button>
 `;
 

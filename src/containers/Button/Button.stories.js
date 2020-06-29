@@ -20,12 +20,16 @@ const colors = [
 ];
 
 export const ButtonStory = () => (
-  <Button text="Button" color="blue" onClick={action("button clicked")} />
+  <Button color="blue" onClick={action("button clicked")}>
+    Button
+  </Button>
 );
 
 export const ButtonColorsStory = () =>
   colors.map(color => (
     <span style={{ margin: "0.5em" }} key={color}>
-      <Button text="Button" color={color} onClick={action("button-clicked")} />
+      <Button color={color} onClick={action("button-clicked")}>
+        Button
+      </Button>
     </span>
   ));
