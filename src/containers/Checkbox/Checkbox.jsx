@@ -55,8 +55,8 @@ const CheckboxContainer = styled.label`
   }
 `;
 
-export const Checkbox = ({ className, checked, value, label, onChange }) => (
-  <CheckboxContainer className={className}>
+export const Checkbox = ({ checked, value, label, onChange }) => (
+  <CheckboxContainer>
     <HiddenCheckbox
       checked={checked}
       value={value}
@@ -70,17 +70,19 @@ export const Checkbox = ({ className, checked, value, label, onChange }) => (
 );
 
 Checkbox.propTypes = {
-  className: PropTypes.string,
+  /** Defines if the checkbox is checked or not */
   checked: PropTypes.bool,
+  /** Label text */
   label: PropTypes.string,
+  /** Value of the checkbox item */
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  /** Handler function */
   onChange: PropTypes.func
 };
 
 Checkbox.defaultProps = {
-  className: "",
   checked: false,
   label: "",
   value: undefined,
-  onChange: () => {}
+  onChange: () => null
 };

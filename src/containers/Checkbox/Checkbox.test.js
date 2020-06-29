@@ -35,15 +35,6 @@ describe("Checkbox", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("should render Checkbox with value and label, and be checked, and have classname", () => {
-    const component = renderer.create(
-      <Checkbox value={1} label="Test" checked className="test" />
-    );
-
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
   it("should accept onChange function", () => {
     const component = renderer.create(
       <Checkbox value={1} label="Test" onChange={() => null} />
