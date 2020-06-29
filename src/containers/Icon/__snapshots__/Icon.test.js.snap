@@ -55,6 +55,17 @@ exports[`Icon should render icon chevron-up 1`] = `
 />
 `;
 
+exports[`Icon should render icon close 1`] = `
+.c0 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+<span
+  className="c0 lni lni-close"
+/>
+`;
+
 exports[`Icon should render icon cog 1`] = `
 .c0 {
   font-size: 4rem;
@@ -85,6 +96,17 @@ exports[`Icon should render icon home 1`] = `
 
 <span
   className="c0 lni lni-home"
+/>
+`;
+
+exports[`Icon should render icon menu 1`] = `
+.c0 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+<span
+  className="c0 lni lni-menu"
 />
 `;
 

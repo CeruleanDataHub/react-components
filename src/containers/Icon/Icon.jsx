@@ -22,7 +22,9 @@ export const names = [
   "minus",
   "chevron-down",
   "chevron-up",
-  "calendar"
+  "calendar",
+  "menu",
+  "close"
 ];
 export const iconNameProps = PropTypes.oneOf(names);
 
