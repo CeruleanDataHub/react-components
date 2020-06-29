@@ -3,6 +3,7 @@ import React, { forwardRef } from "react";
 import styled from "styled-components";
 
 import { Icon } from "../Icon/Icon";
+import { Typography } from "../Typography/Typography";
 
 const Container = styled.button`
   font-family: inherit;
@@ -25,10 +26,12 @@ const CalendarIcon = styled.span`
 `;
 
 export const DatePickerCustomInput = forwardRef(({ value, onClick }, ref) => (
-  <Container onClick={onClick} ref={ref}>
-    <Icon name="calendar" as={CalendarIcon} />
-    {value}
-  </Container>
+  <Typography fontFamily="openSans">
+    <Container onClick={onClick} ref={ref}>
+      <Icon name="calendar" as={CalendarIcon} />
+      {value}
+    </Container>
+  </Typography>
 ));
 
 DatePickerCustomInput.propTypes = {

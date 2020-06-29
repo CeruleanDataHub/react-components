@@ -1,12 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DatePicker should render 1`] = `
-.c3 {
+.c4 {
   font-size: 4rem;
   text-align: center;
 }
 
 .c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+.c2 {
   font-family: inherit;
   display: -webkit-box;
   display: -webkit-flex;
@@ -27,7 +33,7 @@ exports[`DatePicker should render 1`] = `
   cursor: pointer;
 }
 
-.c2 {
+.c3 {
   font-size: 1.5em;
   margin-right: 1em;
 }
@@ -131,27 +137,39 @@ exports[`DatePicker should render 1`] = `
     <div
       className="react-datepicker__input-container"
     >
-      <button
+      <div
         className="c1"
-        onClick={[Function]}
+        fontFamily="openSans"
+        size="normal"
       >
-        <span
-          className="c2 c3 lni lni-calendar"
-        />
-        29.06.2020
-      </button>
+        <button
+          className="c2"
+          onClick={[Function]}
+        >
+          <span
+            className="c3 c4 lni lni-calendar"
+          />
+          29.06.2020
+        </button>
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`DatePicker should render DatePicker with custom dateFormat 1`] = `
-.c3 {
+.c4 {
   font-size: 4rem;
   text-align: center;
 }
 
 .c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+.c2 {
   font-family: inherit;
   display: -webkit-box;
   display: -webkit-flex;
@@ -172,7 +190,7 @@ exports[`DatePicker should render DatePicker with custom dateFormat 1`] = `
   cursor: pointer;
 }
 
-.c2 {
+.c3 {
   font-size: 1.5em;
   margin-right: 1em;
 }
@@ -276,27 +294,39 @@ exports[`DatePicker should render DatePicker with custom dateFormat 1`] = `
     <div
       className="react-datepicker__input-container"
     >
-      <button
+      <div
         className="c1"
-        onClick={[Function]}
+        fontFamily="openSans"
+        size="normal"
       >
-        <span
-          className="c2 c3 lni lni-calendar"
-        />
-        06/29/2020
-      </button>
+        <button
+          className="c2"
+          onClick={[Function]}
+        >
+          <span
+            className="c3 c4 lni lni-calendar"
+          />
+          06/29/2020
+        </button>
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`DatePicker should render DatePicker with two months 1`] = `
-.c3 {
+.c4 {
   font-size: 4rem;
   text-align: center;
 }
 
 .c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+.c2 {
   font-family: inherit;
   display: -webkit-box;
   display: -webkit-flex;
@@ -317,7 +347,7 @@ exports[`DatePicker should render DatePicker with two months 1`] = `
   cursor: pointer;
 }
 
-.c2 {
+.c3 {
   font-size: 1.5em;
   margin-right: 1em;
 }
@@ -421,15 +451,21 @@ exports[`DatePicker should render DatePicker with two months 1`] = `
     <div
       className="react-datepicker__input-container"
     >
-      <button
+      <div
         className="c1"
-        onClick={[Function]}
+        fontFamily="openSans"
+        size="normal"
       >
-        <span
-          className="c2 c3 lni lni-calendar"
-        />
-        29.06.2020
-      </button>
+        <button
+          className="c2"
+          onClick={[Function]}
+        >
+          <span
+            className="c3 c4 lni lni-calendar"
+          />
+          29.06.2020
+        </button>
+      </div>
     </div>
   </div>
 </div>

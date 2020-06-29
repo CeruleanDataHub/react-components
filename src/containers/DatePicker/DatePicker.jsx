@@ -26,10 +26,9 @@ export const DatePicker = ({ dateFormat, monthsShown }) => {
         onChange={date => setStartDate(date)}
         dateFormat={dateFormat}
         formatWeekDay={day => day.substring(0, 1)}
-        customInput={<DatePickerCustomInput />}
+        customInput={<DatePickerCustomInput ref={ref} />}
         locale="en-gb"
         monthsShown={monthsShown}
-        ref={ref}
       />
     </Container>
   );
