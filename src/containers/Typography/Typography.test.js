@@ -5,8 +5,6 @@ import { Typography } from "./Typography";
 
 const colors = ["red", "green", "blue", "white", "black", "gray"];
 const sizes = ["normal", "large"];
-
-// true means exo font, false open sans
 const fontFamilies = ["exo", "openSans"];
 
 describe("Typography", () => {
