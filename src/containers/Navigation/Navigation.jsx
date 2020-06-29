@@ -2,38 +2,43 @@ import PropTypes from "prop-types";
 import React, { useState } from "react";
 import styled from "styled-components";
 
+import { Icon } from "../Icon/Icon";
+
 const NavBar = styled.nav`
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  max-width: 18em;
-  transition: width linear 280ms;
-  width: ${(props) => (props.menuOpen ? 20 : 4.5)}em;
   background-color: rgba(0, 0, 0, 0.75);
-  color: #ffffff;
+  z-index: 1;
 `;
 
 const MenuOpen = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 4em;
+  width: 3rem;
   height: 3.5em;
   cursor: pointer;
 `;
+
 const MenuIcon = styled.span`
-  font-size: 2em;
-  margin: 0.5em;
+  font-size: 2rem;
+  margin: 0.5rem;
 `;
 
-export const Navigation = ({ children }) => {
-  const [menuOpen, setMenuOpen] = useState(true);
+export const Navigation = ({
+  menuInitialState = true,
+  onMenuToggle,
+  children
+}) => {
+  const [menuOpen, setMenuOpen] = useState(menuInitialState);
 
   return (
     <NavBar id="left-navigation" menuOpen={menuOpen}>
-      <MenuOpen onClick={() => setMenuOpen(!menuOpen)}>
-        <MenuIcon className={["lnr", menuOpen ? "lnr-cross" : "lnr-menu"]} />
+      <MenuOpen
+        onClick={() => {
+          setMenuOpen(!menuOpen);
+          onMenuToggle(!menuOpen);
+        }}
+      >
+        <Icon name={menuOpen ? "close" : "menu"} as={MenuIcon} />
       </MenuOpen>
       {children}
     </NavBar>
@@ -41,9 +46,13 @@ export const Navigation = ({ children }) => {
 };
 
 Navigation.propTypes = {
-  children: PropTypes.node,
+  menuInitialState: PropTypes.bool,
+  onMenuToggle: PropTypes.func,
+  children: PropTypes.node
 };
 
 Navigation.defaultProps = {
-  children: "",
+  menuInitialState: true,
+  onMenuToggle: () => null,
+  children: ""
 };
