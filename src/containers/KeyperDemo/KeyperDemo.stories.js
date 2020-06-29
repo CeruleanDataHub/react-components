@@ -416,7 +416,6 @@ const KPICell = styled.div`
 
 const GridWithCollapsibleMenu = styled(Grid)`
   grid-template-columns: ${({ menuOpen }) => (menuOpen ? 10 : 4)}rem auto;
-  color: red !important;
 `;
 
 export const KeyperDemo = () => {
