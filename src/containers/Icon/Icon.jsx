@@ -24,7 +24,8 @@ export const names = [
   "chevron-up",
   "calendar",
   "menu",
-  "close"
+  "close",
+  "full-screen"
 ];
 export const iconNameProps = PropTypes.oneOf(names);
 

@@ -88,6 +88,17 @@ exports[`Icon should render icon eye 1`] = `
 />
 `;
 
+exports[`Icon should render icon full-screen 1`] = `
+.c0 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+<span
+  className="c0 lni lni-full-screen"
+/>
+`;
+
 exports[`Icon should render icon home 1`] = `
 .c0 {
   font-size: 4rem;
