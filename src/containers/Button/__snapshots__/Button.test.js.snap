@@ -2,6 +2,7 @@
 
 exports[`Button should accept 'as' property 1`] = `
 .c1 {
+  font-family: inherit;
   background: transparent;
   color: blue;
   font-size: 1em;
@@ -26,6 +27,7 @@ exports[`Button should accept 'as' property 1`] = `
 
 exports[`Button should render Button 1`] = `
 .c0 {
+  font-family: inherit;
   background: transparent;
   font-size: 1em;
   padding: 0.25em 1.5em;
@@ -45,6 +47,7 @@ exports[`Button should render Button 1`] = `
 
 exports[`Button should render Button with props 1`] = `
 .c0 {
+  font-family: inherit;
   background: transparent;
   color: blue;
   font-size: 1em;
