@@ -34,4 +34,18 @@ describe("Grid", () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+
+  it("should render when extending the styles", () => {
+    const CustomGrid = styled(Grid)`
+      grid-template-columns: 4rem auto;
+    `;
+
+    const component = renderer.create(
+      <CustomGrid>
+        <Cell>Content</Cell>
+      </CustomGrid>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
