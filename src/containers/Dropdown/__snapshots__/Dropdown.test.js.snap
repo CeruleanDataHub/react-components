@@ -11,6 +11,7 @@ exports[`Dropdown should render dropdown 1`] = `
 }
 
 .c1 {
+  font-family: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -115,6 +116,7 @@ exports[`Dropdown should render dropdown in open state 1`] = `
 }
 
 .c1 {
+  font-family: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

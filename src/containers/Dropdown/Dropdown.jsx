@@ -10,6 +10,7 @@ const Container = styled.div`
 `;
 
 const DropdownContainer = styled.button`
+  font-family: inherit;
   display: flex;
   justify-content: space-between;
   align-items: center;
