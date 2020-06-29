@@ -34,7 +34,7 @@ const renderItems = ({ items, menuOpen }) =>
   items &&
   items.map(item => (
     <MenuItem key={item.name}>
-      <Typography exo>
+      <Typography fontFamily="exo">
         <Icon name={item.icon} as={MenuIcon} />
         <MenuItemText menuOpen={menuOpen}>{item.name}</MenuItemText>
       </Typography>
