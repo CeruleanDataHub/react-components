@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { Icon } from "../Icon/Icon";
 
 const Container = styled.button`
+  font-family: inherit;
   display: flex;
   align-items: center;
   width: 100%;

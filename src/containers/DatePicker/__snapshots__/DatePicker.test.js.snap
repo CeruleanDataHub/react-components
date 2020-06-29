@@ -7,6 +7,7 @@ exports[`DatePicker should render 1`] = `
 }
 
 .c1 {
+  font-family: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -137,7 +138,7 @@ exports[`DatePicker should render 1`] = `
         <span
           className="c2 c3 lni lni-calendar"
         />
-        26.06.2020
+        29.06.2020
       </button>
     </div>
   </div>
@@ -151,6 +152,7 @@ exports[`DatePicker should render DatePicker with custom dateFormat 1`] = `
 }
 
 .c1 {
+  font-family: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -281,7 +283,7 @@ exports[`DatePicker should render DatePicker with custom dateFormat 1`] = `
         <span
           className="c2 c3 lni lni-calendar"
         />
-        06/26/2020
+        06/29/2020
       </button>
     </div>
   </div>
@@ -295,6 +297,7 @@ exports[`DatePicker should render DatePicker with two months 1`] = `
 }
 
 .c1 {
+  font-family: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -425,7 +428,7 @@ exports[`DatePicker should render DatePicker with two months 1`] = `
         <span
           className="c2 c3 lni lni-calendar"
         />
-        26.06.2020
+        29.06.2020
       </button>
     </div>
   </div>
