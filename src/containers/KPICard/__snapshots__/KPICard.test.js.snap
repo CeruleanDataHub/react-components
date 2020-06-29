@@ -51,7 +51,7 @@ exports[`KPICard should format large values 1`] = `
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
-  color: black;
+  color: unset;
 }
 
 .c8 {
@@ -187,7 +187,7 @@ exports[`KPICard should render 1`] = `
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
-  color: black;
+  color: unset;
 }
 
 .c8 {
@@ -459,7 +459,7 @@ exports[`KPICard should render negative growth 1`] = `
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
-  color: black;
+  color: unset;
 }
 
 .c8 {
@@ -595,7 +595,7 @@ exports[`KPICard should render positive growth 1`] = `
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
-  color: black;
+  color: unset;
 }
 
 .c8 {
@@ -867,7 +867,7 @@ exports[`KPICard should render two decimal points in growth 1`] = `
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
-  color: black;
+  color: unset;
 }
 
 .c8 {
@@ -1003,7 +1003,7 @@ exports[`KPICard should render zero growth 1`] = `
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
-  color: black;
+  color: unset;
 }
 
 .c8 {

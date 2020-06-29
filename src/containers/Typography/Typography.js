@@ -24,7 +24,7 @@ const fontFamilyStyle = fontFamily => {
 const Container = styled.div`
   font-family: ${({ fontFamily }) => fontFamilyStyle(fontFamily)};
   font-size: ${({ size }) => sizes[size] || sizes.normal};
-  color: ${({ textColor }) => colors[textColor] || colors.black};
+  color: ${({ textColor }) => colors[textColor] || "unset"};
 `;
 
 export const Typography = ({ size, color, fontFamily, children }) => (
@@ -35,7 +35,15 @@ export const Typography = ({ size, color, fontFamily, children }) => (
 
 Typography.propTypes = {
   /** Text color, values predefined */
-  color: PropTypes.oneOf(["red", "green", "blue", "white", "black", "gray"]),
+  color: PropTypes.oneOf([
+    "",
+    "red",
+    "green",
+    "blue",
+    "white",
+    "black",
+    "gray"
+  ]),
   /** Text size, values predefined */
   size: PropTypes.oneOf(["normal", "large"]),
   /** Define whether to render text with Exo 2 font or Open Sans. If not defined, renders text with default font */
@@ -45,7 +53,7 @@ Typography.propTypes = {
 };
 
 Typography.defaultProps = {
-  color: "black",
+  color: "",
   size: "normal",
   fontFamily: null,
   children: ""

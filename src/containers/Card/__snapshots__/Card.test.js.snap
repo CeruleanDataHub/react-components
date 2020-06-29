@@ -4,7 +4,7 @@ exports[`Card should render card 1`] = `
 .c2 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
-  color: black;
+  color: unset;
 }
 
 .c0 {
@@ -66,7 +66,7 @@ exports[`Card should render card with children 1`] = `
 .c2 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
-  color: black;
+  color: unset;
 }
 
 .c0 {
@@ -133,13 +133,13 @@ exports[`Card should render card with icon 1`] = `
 .c2 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
-  color: black;
+  color: unset;
 }
 
 .c5 {
   font-family: "Exo 2",sans-serif;
   font-size: 16px;
-  color: black;
+  color: unset;
 }
 
 .c0 {
@@ -226,13 +226,13 @@ exports[`Card should render card with icon and children 1`] = `
 .c2 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
-  color: black;
+  color: unset;
 }
 
 .c5 {
   font-family: "Exo 2",sans-serif;
   font-size: 16px;
-  color: black;
+  color: unset;
 }
 
 .c0 {

@@ -292,7 +292,7 @@ exports[`Typography exo Sizes should render large open sans font 1`] = `
 .c0 {
   font-family: "Open Sans",sans-serif;
   font-size: 40px;
-  color: black;
+  color: unset;
 }
 
 <div
@@ -308,7 +308,7 @@ exports[`Typography exo Sizes should render normal open sans font 1`] = `
 .c0 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
-  color: black;
+  color: unset;
 }
 
 <div
@@ -324,7 +324,7 @@ exports[`Typography exo should render font 1`] = `
 .c0 {
   font-family: "Exo 2",sans-serif;
   font-size: 16px;
-  color: black;
+  color: unset;
 }
 
 <div
@@ -628,7 +628,7 @@ exports[`Typography openSans Sizes should render large open sans font 1`] = `
 .c0 {
   font-family: "Open Sans",sans-serif;
   font-size: 40px;
-  color: black;
+  color: unset;
 }
 
 <div
@@ -644,7 +644,7 @@ exports[`Typography openSans Sizes should render normal open sans font 1`] = `
 .c0 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
-  color: black;
+  color: unset;
 }
 
 <div
@@ -660,7 +660,7 @@ exports[`Typography openSans should render font 1`] = `
 .c0 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
-  color: black;
+  color: unset;
 }
 
 <div
@@ -676,7 +676,7 @@ exports[`Typography should render 1`] = `
 .c0 {
   font-family: unset;
   font-size: 16px;
-  color: black;
+  color: unset;
 }
 
 <div
