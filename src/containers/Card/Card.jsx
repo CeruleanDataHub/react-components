@@ -37,11 +37,11 @@ const CardBody = styled.div`
 export const Card = ({ title, icon, children }) => (
   <CardDash>
     <CardContainer>
-      <Typography>
+      <Typography fontFamily="openSans">
         {icon && <Icon name={icon} />}
         {title && (
           <CardHeader>
-            <Typography exo>{title}</Typography>
+            <Typography fontFamily="exo">{title}</Typography>
           </CardHeader>
         )}
         <CardBody>{children}</CardBody>

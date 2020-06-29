@@ -397,7 +397,7 @@ export const KeyperDemo = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   return (
     <Container>
-      <Typography>
+      <Typography fontFamily="openSans">
         <Grid>
           <Cell>
             <Img
@@ -477,7 +477,7 @@ export const KeyperDemoPage2 = () => {
 
   return (
     <Container>
-      <Typography>
+      <Typography fontFamily="openSans">
         <Grid>
           <Cell>
             <Img
