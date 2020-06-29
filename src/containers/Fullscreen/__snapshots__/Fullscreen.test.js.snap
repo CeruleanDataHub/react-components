@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fullscreen should have onClick listener 1`] = `
+.c1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c0 {
+  cursor: pointer;
+}
+
+<span
+  className="c0"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+  role="button"
+  tabIndex={0}
+>
+  <span
+    className="c1 lni lni-full-screen"
+  />
+</span>
+`;
+
+exports[`Fullscreen should render 1`] = `
+.c1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c0 {
+  cursor: pointer;
+}
+
+<span
+  className="c0"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+  role="button"
+  tabIndex={0}
+>
+  <span
+    className="c1 lni lni-full-screen"
+  />
+</span>
+`;
