@@ -4,21 +4,10 @@ import styled from "styled-components";
 
 import { Cell, Grid } from "../Grid/Grid";
 import { Icon } from "../Icon/Icon";
+import { Typography } from "../Typography/Typography";
 
 const Container = styled.div`
   padding: 1.2em;
-  font-family: Helvetica;
-  font-size: 0.9rem;
-`;
-
-const colors = { red: "#ff0066", green: "#90ee7e", blue: "#1ea7fd" };
-
-const Color = styled.span`
-  color: ${({ textColor }) => textColor};
-`;
-
-const Value = styled.span`
-  font-size: 2.2rem;
 `;
 
 const Bottom = styled.span`
@@ -38,10 +27,10 @@ const TriangleIcon = styled.div`
 
 const getGrowthColor = growth => {
   if (growth === 0) {
-    return colors.blue;
+    return "blue";
   }
 
-  return growth > 0 ? colors.green : colors.red;
+  return growth > 0 ? "green" : "red";
 };
 
 const getIconName = growth => {
@@ -60,28 +49,27 @@ export const KPICard = ({
   greenValue = false
 }) => (
   <Container>
-    <Color textColor="#999999">{title}</Color>
+    <Typography color="gray">{title}</Typography>
     <Grid>
       <Cell middle>
-        <Color
-          textColor={
-            (redValue && colors.red) || (greenValue && colors.green) || null
-          }
-          as={Value}
+        <Typography
+          exo
+          size="large"
+          color={(redValue && "red") || (greenValue && "green") || null}
         >
           {new Intl.NumberFormat().format(value)}
-        </Color>
+        </Typography>
       </Cell>
       <Cell center as={Bottom}>
         <FlexRow>
-          <Color textColor={getGrowthColor(growth)}>
+          <Typography exo color={getGrowthColor(growth)}>
             {growth > 0 ? "+" : ""}
             {new Intl.NumberFormat("en-EN", {
               style: "percent",
               maximumFractionDigits: 2
             }).format(growth)}
             <Icon name={getIconName(growth)} as={TriangleIcon} />
-          </Color>
+          </Typography>
         </FlexRow>
       </Cell>
     </Grid>

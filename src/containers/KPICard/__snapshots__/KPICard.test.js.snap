@@ -42,22 +42,26 @@ exports[`KPICard should format large values 1`] = `
   text-align: center;
 }
 
-.c0 {
-  padding: 1.2em;
-  font-family: Helvetica;
-  font-size: 0.9rem;
-}
-
 .c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
   color: #999999;
 }
 
+.c4 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 40px;
+  color: black;
+}
+
 .c8 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
   color: #90ee7e;
 }
 
-.c4 {
-  font-size: 2.2rem;
+.c0 {
+  padding: 1.2em;
 }
 
 .c5 {
@@ -88,22 +92,24 @@ exports[`KPICard should format large values 1`] = `
 <div
   className="c0"
 >
-  <span
+  <div
     className="c1"
+    size="normal"
   >
     Title
-  </span>
+  </div>
   <div
     className="c2"
   >
     <div
       className="c3"
     >
-      <span
-        className="c4 "
+      <div
+        className="c4"
+        size="large"
       >
         10,000,000,000
-      </span>
+      </div>
     </div>
     <span
       className="c5 c6"
@@ -111,15 +117,16 @@ exports[`KPICard should format large values 1`] = `
       <span
         className="c7"
       >
-        <span
+        <div
           className="c8"
+          size="normal"
         >
           +
           30%
           <div
             className="c9 c10 lni lni-chevron-up"
           />
-        </span>
+        </div>
       </span>
     </span>
   </div>
@@ -168,22 +175,26 @@ exports[`KPICard should render 1`] = `
   text-align: center;
 }
 
-.c0 {
-  padding: 1.2em;
-  font-family: Helvetica;
-  font-size: 0.9rem;
-}
-
 .c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
   color: #999999;
 }
 
+.c4 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 40px;
+  color: black;
+}
+
 .c8 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
   color: #90ee7e;
 }
 
-.c4 {
-  font-size: 2.2rem;
+.c0 {
+  padding: 1.2em;
 }
 
 .c5 {
@@ -214,22 +225,24 @@ exports[`KPICard should render 1`] = `
 <div
   className="c0"
 >
-  <span
+  <div
     className="c1"
+    size="normal"
   >
     Title
-  </span>
+  </div>
   <div
     className="c2"
   >
     <div
       className="c3"
     >
-      <span
-        className="c4 "
+      <div
+        className="c4"
+        size="large"
       >
         1
-      </span>
+      </div>
     </div>
     <span
       className="c5 c6"
@@ -237,15 +250,16 @@ exports[`KPICard should render 1`] = `
       <span
         className="c7"
       >
-        <span
+        <div
           className="c8"
+          size="normal"
         >
           +
           30%
           <div
             className="c9 c10 lni lni-chevron-up"
           />
-        </span>
+        </div>
       </span>
     </span>
   </div>
@@ -272,7 +286,7 @@ exports[`KPICard should render green 1`] = `
   justify-self: stretch;
 }
 
-.c7 {
+.c6 {
   height: 100%;
   min-width: 0;
   grid-column-end: span 1;
@@ -294,25 +308,29 @@ exports[`KPICard should render green 1`] = `
   text-align: center;
 }
 
-.c0 {
-  padding: 1.2em;
-  font-family: Helvetica;
-  font-size: 0.9rem;
-}
-
 .c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
   color: #999999;
 }
 
-.c5 {
+.c4 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 40px;
   color: #90ee7e;
 }
 
-.c4 {
-  font-size: 2.2rem;
+.c8 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: #90ee7e;
 }
 
-.c6 {
+.c0 {
+  padding: 1.2em;
+}
+
+.c5 {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
@@ -326,7 +344,7 @@ exports[`KPICard should render green 1`] = `
   flex-direction: column;
 }
 
-.c8 {
+.c7 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -340,38 +358,41 @@ exports[`KPICard should render green 1`] = `
 <div
   className="c0"
 >
-  <span
+  <div
     className="c1"
+    size="normal"
   >
     Title
-  </span>
+  </div>
   <div
     className="c2"
   >
     <div
       className="c3"
     >
-      <span
-        className="c4 c5"
+      <div
+        className="c4"
+        size="large"
       >
         1
-      </span>
+      </div>
     </div>
     <span
-      className="c6 c7"
+      className="c5 c6"
     >
       <span
-        className="c8"
+        className="c7"
       >
-        <span
-          className="c5"
+        <div
+          className="c8"
+          size="normal"
         >
           +
           30%
           <div
             className="c9 c10 lni lni-chevron-up"
           />
-        </span>
+        </div>
       </span>
     </span>
   </div>
@@ -420,22 +441,26 @@ exports[`KPICard should render negative growth 1`] = `
   text-align: center;
 }
 
-.c0 {
-  padding: 1.2em;
-  font-family: Helvetica;
-  font-size: 0.9rem;
-}
-
 .c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
   color: #999999;
 }
 
+.c4 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 40px;
+  color: black;
+}
+
 .c8 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
   color: #ff0066;
 }
 
-.c4 {
-  font-size: 2.2rem;
+.c0 {
+  padding: 1.2em;
 }
 
 .c5 {
@@ -466,22 +491,24 @@ exports[`KPICard should render negative growth 1`] = `
 <div
   className="c0"
 >
-  <span
+  <div
     className="c1"
+    size="normal"
   >
     Title
-  </span>
+  </div>
   <div
     className="c2"
   >
     <div
       className="c3"
     >
-      <span
-        className="c4 "
+      <div
+        className="c4"
+        size="large"
       >
         1
-      </span>
+      </div>
     </div>
     <span
       className="c5 c6"
@@ -489,15 +516,16 @@ exports[`KPICard should render negative growth 1`] = `
       <span
         className="c7"
       >
-        <span
+        <div
           className="c8"
+          size="normal"
         >
           
           -30%
           <div
             className="c9 c10 lni lni-chevron-down"
           />
-        </span>
+        </div>
       </span>
     </span>
   </div>
@@ -546,22 +574,26 @@ exports[`KPICard should render positive growth 1`] = `
   text-align: center;
 }
 
-.c0 {
-  padding: 1.2em;
-  font-family: Helvetica;
-  font-size: 0.9rem;
-}
-
 .c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
   color: #999999;
 }
 
+.c4 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 40px;
+  color: black;
+}
+
 .c8 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
   color: #90ee7e;
 }
 
-.c4 {
-  font-size: 2.2rem;
+.c0 {
+  padding: 1.2em;
 }
 
 .c5 {
@@ -592,22 +624,24 @@ exports[`KPICard should render positive growth 1`] = `
 <div
   className="c0"
 >
-  <span
+  <div
     className="c1"
+    size="normal"
   >
     Title
-  </span>
+  </div>
   <div
     className="c2"
   >
     <div
       className="c3"
     >
-      <span
-        className="c4 "
+      <div
+        className="c4"
+        size="large"
       >
         1
-      </span>
+      </div>
     </div>
     <span
       className="c5 c6"
@@ -615,15 +649,16 @@ exports[`KPICard should render positive growth 1`] = `
       <span
         className="c7"
       >
-        <span
+        <div
           className="c8"
+          size="normal"
         >
           +
           30%
           <div
             className="c9 c10 lni lni-chevron-up"
           />
-        </span>
+        </div>
       </span>
     </span>
   </div>
@@ -650,7 +685,7 @@ exports[`KPICard should render red 1`] = `
   justify-self: stretch;
 }
 
-.c7 {
+.c6 {
   height: 100%;
   min-width: 0;
   grid-column-end: span 1;
@@ -667,34 +702,34 @@ exports[`KPICard should render red 1`] = `
   grid-gap: 8px;
 }
 
-.c11 {
+.c10 {
   font-size: 4rem;
   text-align: center;
 }
 
-.c0 {
-  padding: 1.2em;
-  font-family: Helvetica;
-  font-size: 0.9rem;
-}
-
 .c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
   color: #999999;
 }
 
-.c5 {
+.c4 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 40px;
   color: #ff0066;
 }
 
-.c9 {
+.c8 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
   color: #90ee7e;
 }
 
-.c4 {
-  font-size: 2.2rem;
+.c0 {
+  padding: 1.2em;
 }
 
-.c6 {
+.c5 {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
@@ -708,13 +743,13 @@ exports[`KPICard should render red 1`] = `
   flex-direction: column;
 }
 
-.c8 {
+.c7 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
 }
 
-.c10 {
+.c9 {
   font-size: 1rem;
   margin-left: 0.3rem;
 }
@@ -722,38 +757,41 @@ exports[`KPICard should render red 1`] = `
 <div
   className="c0"
 >
-  <span
+  <div
     className="c1"
+    size="normal"
   >
     Title
-  </span>
+  </div>
   <div
     className="c2"
   >
     <div
       className="c3"
     >
-      <span
-        className="c4 c5"
+      <div
+        className="c4"
+        size="large"
       >
         1
-      </span>
+      </div>
     </div>
     <span
-      className="c6 c7"
+      className="c5 c6"
     >
       <span
-        className="c8"
+        className="c7"
       >
-        <span
-          className="c9"
+        <div
+          className="c8"
+          size="normal"
         >
           +
           30%
           <div
-            className="c10 c11 lni lni-chevron-up"
+            className="c9 c10 lni lni-chevron-up"
           />
-        </span>
+        </div>
       </span>
     </span>
   </div>
@@ -802,22 +840,26 @@ exports[`KPICard should render two decimal points in growth 1`] = `
   text-align: center;
 }
 
-.c0 {
-  padding: 1.2em;
-  font-family: Helvetica;
-  font-size: 0.9rem;
-}
-
 .c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
   color: #999999;
 }
 
+.c4 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 40px;
+  color: black;
+}
+
 .c8 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
   color: #90ee7e;
 }
 
-.c4 {
-  font-size: 2.2rem;
+.c0 {
+  padding: 1.2em;
 }
 
 .c5 {
@@ -848,22 +890,24 @@ exports[`KPICard should render two decimal points in growth 1`] = `
 <div
   className="c0"
 >
-  <span
+  <div
     className="c1"
+    size="normal"
   >
     Title
-  </span>
+  </div>
   <div
     className="c2"
   >
     <div
       className="c3"
     >
-      <span
-        className="c4 "
+      <div
+        className="c4"
+        size="large"
       >
         1
-      </span>
+      </div>
     </div>
     <span
       className="c5 c6"
@@ -871,15 +915,16 @@ exports[`KPICard should render two decimal points in growth 1`] = `
       <span
         className="c7"
       >
-        <span
+        <div
           className="c8"
+          size="normal"
         >
           +
           33.33%
           <div
             className="c9 c10 lni lni-chevron-up"
           />
-        </span>
+        </div>
       </span>
     </span>
   </div>
@@ -928,22 +973,26 @@ exports[`KPICard should render zero growth 1`] = `
   text-align: center;
 }
 
-.c0 {
-  padding: 1.2em;
-  font-family: Helvetica;
-  font-size: 0.9rem;
-}
-
 .c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
   color: #999999;
 }
 
+.c4 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 40px;
+  color: black;
+}
+
 .c8 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
   color: #1ea7fd;
 }
 
-.c4 {
-  font-size: 2.2rem;
+.c0 {
+  padding: 1.2em;
 }
 
 .c5 {
@@ -974,22 +1023,24 @@ exports[`KPICard should render zero growth 1`] = `
 <div
   className="c0"
 >
-  <span
+  <div
     className="c1"
+    size="normal"
   >
     Title
-  </span>
+  </div>
   <div
     className="c2"
   >
     <div
       className="c3"
     >
-      <span
-        className="c4 "
+      <div
+        className="c4"
+        size="large"
       >
         1
-      </span>
+      </div>
     </div>
     <span
       className="c5 c6"
@@ -997,15 +1048,16 @@ exports[`KPICard should render zero growth 1`] = `
       <span
         className="c7"
       >
-        <span
+        <div
           className="c8"
+          size="normal"
         >
           
           0%
           <div
             className="c9 c10 lni lni-minus"
           />
-        </span>
+        </div>
       </span>
     </span>
   </div>
