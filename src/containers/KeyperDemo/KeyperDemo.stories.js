@@ -10,6 +10,7 @@ import { Spline } from "../Chart/Spline/Spline";
 import { TreeMap } from "../Chart/TreeMap/TreeMap";
 import { DatePicker } from "../DatePicker/DatePicker";
 import { Dropdown } from "../Dropdown/Dropdown";
+import { Fullscreen } from "../Fullscreen/Fullscreen";
 import { Cell, Grid } from "../Grid/Grid";
 import { KPICard } from "../KPICard/KPICard";
 import { Map } from "../Map/Map";
@@ -418,6 +419,9 @@ const GridWithCollapsibleMenu = styled(Grid)`
   grid-template-columns: ${({ menuOpen }) => (menuOpen ? 10 : 4)}rem auto;
 `;
 
+// eslint-disable-next-line no-console
+const mockfullscreen = () => console.log("full screen");
+
 export const KeyperDemo = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(true);
@@ -497,10 +501,12 @@ export const KeyperDemo = () => {
             </Grid>
             <Grid>
               <Cell>
+                <Fullscreen onClick={mockfullscreen} />
                 <Spline xAxis={splineXAxis} series={splineSeries} />
                 <TreeMap series={treemapSeries} />
               </Cell>
               <Cell>
+                <Fullscreen onClick={mockfullscreen} />
                 <DependencyWheel
                   series={dependencySeries}
                   containerProps={{ style: { height: "100%" } }}
@@ -594,9 +600,11 @@ export const KeyperDemoPage2 = () => {
             <Grid>
               <Cell>
                 <Heatmap data={data} />
+                <Fullscreen onClick={mockfullscreen} />
                 <SemiDonut series={semiDonutSeries} />
               </Cell>
               <Cell>
+                <Fullscreen onClick={mockfullscreen} />
                 <Map
                   title="Finland"
                   minColor="#CCE7E7"
