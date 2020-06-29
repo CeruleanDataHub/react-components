@@ -18,12 +18,13 @@ exports[`Checkbox should accept onChange function 1`] = `
 
 .c3 {
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 1em;
+  height: 1em;
   border: 1px solid #999;
   background: transparent;
   text-align: center;
   border-radius: 4px;
+  line-height: 1em;
 }
 
 .c5 {
@@ -88,12 +89,13 @@ exports[`Checkbox should render Checkbox 1`] = `
 
 .c3 {
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 1em;
+  height: 1em;
   border: 1px solid #999;
   background: transparent;
   text-align: center;
   border-radius: 4px;
+  line-height: 1em;
 }
 
 .c5 {
@@ -162,12 +164,13 @@ exports[`Checkbox should render Checkbox with checked prop 1`] = `
 
 .c3 {
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 1em;
+  height: 1em;
   border: 1px solid #90ee7e;
   background: #90ee7e;
   text-align: center;
   border-radius: 4px;
+  line-height: 1em;
 }
 
 .c4 {
@@ -241,12 +244,13 @@ exports[`Checkbox should render Checkbox with value and label 1`] = `
 
 .c3 {
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 1em;
+  height: 1em;
   border: 1px solid #999;
   background: transparent;
   text-align: center;
   border-radius: 4px;
+  line-height: 1em;
 }
 
 .c5 {
@@ -316,12 +320,13 @@ exports[`Checkbox should render Checkbox with value and label, and be checked 1`
 
 .c3 {
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 1em;
+  height: 1em;
   border: 1px solid #90ee7e;
   background: #90ee7e;
   text-align: center;
   border-radius: 4px;
+  line-height: 1em;
 }
 
 .c4 {
@@ -401,12 +406,13 @@ exports[`Checkbox should render Checkbox with value and label, and be checked, a
 
 .c3 {
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 1em;
+  height: 1em;
   border: 1px solid #90ee7e;
   background: #90ee7e;
   text-align: center;
   border-radius: 4px;
+  line-height: 1em;
 }
 
 .c4 {
