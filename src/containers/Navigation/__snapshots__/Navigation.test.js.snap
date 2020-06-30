@@ -1,0 +1,519 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu should have menu toggle event listener 1`] = `
+.c3 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c6 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: unset;
+}
+
+.c7 {
+  font-size: 1.5em;
+  margin-right: 1.75rem;
+  float: left;
+}
+
+.c4 {
+  margin: 1em 0 0 0.25em;
+  padding: 0;
+  list-style-type: none;
+}
+
+.c5 {
+  display: block;
+  padding: 1em;
+  line-height: 1.5em;
+  height: 1.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.c8 {
+  display: block;
+}
+
+.c0 {
+  background-color: rgba(0,0,0,0.75);
+  z-index: 1;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3.5em;
+  cursor: pointer;
+}
+
+.c2 {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+<nav
+  className="c0"
+  id="left-navigation"
+>
+  <div
+    className="c1"
+    onClick={[Function]}
+  >
+    <span
+      className="c2 c3 lni lni-close"
+    />
+  </div>
+  <ul
+    className="c4"
+  >
+    <li
+      className="c5"
+    >
+      <div
+        className="c6"
+        fontFamily="exo"
+        size="normal"
+      >
+        <span
+          className="c7 c3 lni lni-home"
+        />
+        <span
+          className="c8"
+        >
+          Home
+        </span>
+      </div>
+    </li>
+    <li
+      className="c5"
+    >
+      <div
+        className="c6"
+        fontFamily="exo"
+        size="normal"
+      >
+        <span
+          className="c7 c3 lni lni-users"
+        />
+        <span
+          className="c8"
+        >
+          Users
+        </span>
+      </div>
+    </li>
+    <li
+      className="c5"
+    >
+      <div
+        className="c6"
+        fontFamily="exo"
+        size="normal"
+      >
+        <span
+          className="c7 c3 lni lni-rocket"
+        />
+        <span
+          className="c8"
+        >
+          Devices
+        </span>
+      </div>
+    </li>
+    <li
+      className="c5"
+    >
+      <div
+        className="c6"
+        fontFamily="exo"
+        size="normal"
+      >
+        <span
+          className="c7 c3 lni lni-briefcase"
+        />
+        <span
+          className="c8"
+        >
+          Costs
+        </span>
+      </div>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Menu should render 1`] = `
+.c3 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c0 {
+  background-color: rgba(0,0,0,0.75);
+  z-index: 1;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3.5em;
+  cursor: pointer;
+}
+
+.c2 {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+<nav
+  className="c0"
+  id="left-navigation"
+>
+  <div
+    className="c1"
+    onClick={[Function]}
+  >
+    <span
+      className="c2 c3 lni lni-close"
+    />
+  </div>
+  
+</nav>
+`;
+
+exports[`Menu should render children menu 1`] = `
+.c3 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c6 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: unset;
+}
+
+.c7 {
+  font-size: 1.5em;
+  margin-right: 1.75rem;
+  float: left;
+}
+
+.c4 {
+  margin: 1em 0 0 0.25em;
+  padding: 0;
+  list-style-type: none;
+}
+
+.c5 {
+  display: block;
+  padding: 1em;
+  line-height: 1.5em;
+  height: 1.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.c8 {
+  display: block;
+}
+
+.c0 {
+  background-color: rgba(0,0,0,0.75);
+  z-index: 1;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3.5em;
+  cursor: pointer;
+}
+
+.c2 {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+<nav
+  className="c0"
+  id="left-navigation"
+>
+  <div
+    className="c1"
+    onClick={[Function]}
+  >
+    <span
+      className="c2 c3 lni lni-close"
+    />
+  </div>
+  <ul
+    className="c4"
+  >
+    <li
+      className="c5"
+    >
+      <div
+        className="c6"
+        fontFamily="exo"
+        size="normal"
+      >
+        <span
+          className="c7 c3 lni lni-home"
+        />
+        <span
+          className="c8"
+        >
+          Home
+        </span>
+      </div>
+    </li>
+    <li
+      className="c5"
+    >
+      <div
+        className="c6"
+        fontFamily="exo"
+        size="normal"
+      >
+        <span
+          className="c7 c3 lni lni-users"
+        />
+        <span
+          className="c8"
+        >
+          Users
+        </span>
+      </div>
+    </li>
+    <li
+      className="c5"
+    >
+      <div
+        className="c6"
+        fontFamily="exo"
+        size="normal"
+      >
+        <span
+          className="c7 c3 lni lni-rocket"
+        />
+        <span
+          className="c8"
+        >
+          Devices
+        </span>
+      </div>
+    </li>
+    <li
+      className="c5"
+    >
+      <div
+        className="c6"
+        fontFamily="exo"
+        size="normal"
+      >
+        <span
+          className="c7 c3 lni lni-briefcase"
+        />
+        <span
+          className="c8"
+        >
+          Costs
+        </span>
+      </div>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Menu should render children menu closed when given appropriate property 1`] = `
+.c3 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c6 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: unset;
+}
+
+.c7 {
+  font-size: 1.5em;
+  margin-right: 1.75rem;
+  float: left;
+}
+
+.c4 {
+  margin: 1em 0 0 0.25em;
+  padding: 0;
+  list-style-type: none;
+}
+
+.c5 {
+  display: block;
+  padding: 1em;
+  line-height: 1.5em;
+  height: 1.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.c8 {
+  display: block;
+}
+
+.c0 {
+  background-color: rgba(0,0,0,0.75);
+  z-index: 1;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3.5em;
+  cursor: pointer;
+}
+
+.c2 {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+<nav
+  className="c0"
+  id="left-navigation"
+>
+  <div
+    className="c1"
+    onClick={[Function]}
+  >
+    <span
+      className="c2 c3 lni lni-menu"
+    />
+  </div>
+  <ul
+    className="c4"
+  >
+    <li
+      className="c5"
+    >
+      <div
+        className="c6"
+        fontFamily="exo"
+        size="normal"
+      >
+        <span
+          className="c7 c3 lni lni-home"
+        />
+        <span
+          className="c8"
+        >
+          Home
+        </span>
+      </div>
+    </li>
+    <li
+      className="c5"
+    >
+      <div
+        className="c6"
+        fontFamily="exo"
+        size="normal"
+      >
+        <span
+          className="c7 c3 lni lni-users"
+        />
+        <span
+          className="c8"
+        >
+          Users
+        </span>
+      </div>
+    </li>
+    <li
+      className="c5"
+    >
+      <div
+        className="c6"
+        fontFamily="exo"
+        size="normal"
+      >
+        <span
+          className="c7 c3 lni lni-rocket"
+        />
+        <span
+          className="c8"
+        >
+          Devices
+        </span>
+      </div>
+    </li>
+    <li
+      className="c5"
+    >
+      <div
+        className="c6"
+        fontFamily="exo"
+        size="normal"
+      >
+        <span
+          className="c7 c3 lni lni-briefcase"
+        />
+        <span
+          className="c8"
+        >
+          Costs
+        </span>
+      </div>
+    </li>
+  </ul>
+</nav>
+`;
