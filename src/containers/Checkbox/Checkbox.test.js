@@ -44,6 +44,23 @@ describe("Checkbox", () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it("should fire onChange event callback function", () => {
+    const handleChange = jest.fn();
+    const wrapper = mount(
+      <Checkbox value={1} label="Test" onChange={handleChange} />
+    );
+    expect(handleChange).not.toHaveBeenCalled();
+    wrapper.find("input").simulate("change");
+    expect(handleChange).toHaveBeenCalled();
+  });
+
+  it("should call default props onChange function when no onChange property is passed", () => {
+    const component = renderer.create(<Checkbox value={1} label="Test" />);
+    const tree = component.toJSON();
+    component.root.props.onChange();
+    expect(tree).toMatchSnapshot();
+  });
+
   it("applies default styles", () => {
     const component = mount(<Checkbox />);
     expect(component.find("div")).toHaveStyleRule("border", "1px solid #999");
