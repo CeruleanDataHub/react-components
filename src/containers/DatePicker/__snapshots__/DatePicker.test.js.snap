@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DatePicker should render 1`] = `
+exports[`DatePicker with given date should render DatePicker starting from date provided 1`] = `
 .c4 {
   font-size: 4rem;
   text-align: center;
@@ -149,7 +149,7 @@ exports[`DatePicker should render 1`] = `
           <span
             className="c3 c4 lni lni-calendar"
           />
-          29.06.2020
+          12.06.2019
         </button>
       </div>
     </div>
@@ -157,7 +157,7 @@ exports[`DatePicker should render 1`] = `
 </div>
 `;
 
-exports[`DatePicker should render DatePicker with custom dateFormat 1`] = `
+exports[`DatePicker with mocked date should render 1`] = `
 .c4 {
   font-size: 4rem;
   text-align: center;
@@ -306,7 +306,7 @@ exports[`DatePicker should render DatePicker with custom dateFormat 1`] = `
           <span
             className="c3 c4 lni lni-calendar"
           />
-          06/29/2020
+          19.06.2020
         </button>
       </div>
     </div>
@@ -314,7 +314,7 @@ exports[`DatePicker should render DatePicker with custom dateFormat 1`] = `
 </div>
 `;
 
-exports[`DatePicker should render DatePicker with two months 1`] = `
+exports[`DatePicker with mocked date should render DatePicker with custom dateFormat 1`] = `
 .c4 {
   font-size: 4rem;
   text-align: center;
@@ -463,7 +463,164 @@ exports[`DatePicker should render DatePicker with two months 1`] = `
           <span
             className="c3 c4 lni lni-calendar"
           />
-          29.06.2020
+          06/19/2020
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DatePicker with mocked date should render DatePicker with two months 1`] = `
+.c4 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: unset;
+}
+
+.c2 {
+  font-family: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #0f181c;
+  background: #0f181c;
+  padding: 1.25em;
+  color: #999;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c3 {
+  font-size: 1.5em;
+  margin-right: 1em;
+}
+
+.c0 .react-datepicker {
+  border-color: black;
+  background: #0f181c;
+  padding: 1em;
+}
+
+.c0 .react-datepicker-wrapper {
+  width: 100%;
+}
+
+.c0 .react-datepicker__header {
+  background: #0f181c;
+  border-bottom: none;
+}
+
+.c0 .react-datepicker__navigation {
+  top: 40px;
+}
+
+.c0 .react-datepicker__navigation--previous {
+  left: 15px;
+}
+
+.c0 .react-datepicker__navigation--next {
+  right: 15px;
+}
+
+.c0 .react-datepicker__triangle {
+  display: none;
+}
+
+.c0 .react-datepicker__current-month {
+  color: #999;
+  margin: 0;
+  border: 1px solid black;
+  padding: 0.25rem;
+  height: 40px;
+  line-height: 40px;
+}
+
+.c0 .react-datepicker__month {
+  margin: 0;
+}
+
+.c0 .react-datepicker__week {
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.c0 .react-datepicker__day-names {
+  border-bottom: 1px solid black;
+}
+
+.c0 .react-datepicker__day-name {
+  color: #999;
+  margin: 0;
+  border-right: 1px solid black;
+  padding: 0.25rem;
+}
+
+.c0 .react-datepicker__day-name:first-child {
+  border-left: 1px solid black;
+}
+
+.c0 .react-datepicker__day {
+  color: #999;
+  border-radius: 0;
+  border-right: 1px solid black;
+  margin: 0;
+  padding: 0.25rem;
+}
+
+.c0 .react-datepicker__day--selected {
+  background: #90ee7e;
+  color: black;
+}
+
+.c0 .react-datepicker__day--keyboard-selected {
+  background: none;
+}
+
+.c0 .react-datepicker__day:hover {
+  color: black;
+}
+
+.c0 .react-datepicker__day--outside-month {
+  color: transparent;
+  pointer-events: none;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="react-datepicker-wrapper"
+  >
+    <div
+      className="react-datepicker__input-container"
+    >
+      <div
+        className="c1"
+        fontFamily="openSans"
+        size="normal"
+      >
+        <button
+          className="c2"
+          onClick={[Function]}
+        >
+          <span
+            className="c3 c4 lni lni-calendar"
+          />
+          19.06.2020
         </button>
       </div>
     </div>

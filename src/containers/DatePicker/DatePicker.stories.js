@@ -24,3 +24,9 @@ export const DatePickerTwoMonthsShownStory = () => (
     <DatePicker monthsShown={2} />
   </div>
 );
+
+export const DatePickerCustomStartdateStory = () => (
+  <div style={{ minHeight: 400, width: 300 }}>
+    <DatePicker startDate={new Date(2018, 5, 12)} />
+  </div>
+);
