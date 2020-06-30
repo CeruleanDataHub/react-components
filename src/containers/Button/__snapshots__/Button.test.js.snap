@@ -25,6 +25,47 @@ exports[`Button should accept 'as' property 1`] = `
 </button>
 `;
 
+exports[`Button should accept onClick prop 1`] = `
+.c0 {
+  font-family: inherit;
+  background: transparent;
+  color: blue;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid blue;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+<button
+  className="c0"
+  color="blue"
+  onClick={[Function]}
+>
+  Button
+</button>
+`;
+
+exports[`Button should call default props onClick function when no onClick property is passed 1`] = `
+.c0 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+<button
+  className="c0"
+  color=""
+  onClick={[Function]}
+>
+  Button
+</button>
+`;
+
 exports[`Button should render Button 1`] = `
 .c0 {
   font-family: inherit;

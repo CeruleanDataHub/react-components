@@ -37,6 +37,32 @@ describe("Button", () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it("should accept onClick prop", () => {
+    const component = renderer.create(
+      <Button color="blue" onClick={() => null}>
+        Button
+      </Button>
+    );
+
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("should fire onClick event callback function", () => {
+    const handleClick = jest.fn();
+    const component = shallow(<Button onClick={handleClick}>Button</Button>);
+    expect(handleClick).not.toHaveBeenCalled();
+    component.simulate("click");
+    expect(handleClick).toHaveBeenCalled();
+  });
+
+  it("should call default props onClick function when no onClick property is passed", () => {
+    const component = renderer.create(<Button>Button</Button>);
+    component.root.props.onClick();
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
   describe("Should render Button color based on props", () => {
     colors.map(color =>
       it("renders with correct color", () => {
