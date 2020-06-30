@@ -1,0 +1,243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu should render 1`] = `
+.c0 {
+  margin: 1em 0 0 0.25em;
+  padding: 0;
+  list-style-type: none;
+}
+
+<ul
+  className="c0"
+/>
+`;
+
+exports[`Menu should render items 1`] = `
+.c4 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c2 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: unset;
+}
+
+.c3 {
+  font-size: 1.5em;
+  margin-right: 1.75rem;
+  float: left;
+}
+
+.c0 {
+  margin: 1em 0 0 0.25em;
+  padding: 0;
+  list-style-type: none;
+}
+
+.c1 {
+  display: block;
+  padding: 1em;
+  line-height: 1.5em;
+  height: 1.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.c5 {
+  display: block;
+}
+
+<ul
+  className="c0"
+>
+  <li
+    className="c1"
+  >
+    <div
+      className="c2"
+      fontFamily="exo"
+      size="normal"
+    >
+      <span
+        className="c3 c4 lni lni-home"
+      />
+      <span
+        className="c5"
+      >
+        Home
+      </span>
+    </div>
+  </li>
+  <li
+    className="c1"
+  >
+    <div
+      className="c2"
+      fontFamily="exo"
+      size="normal"
+    >
+      <span
+        className="c3 c4 lni lni-users"
+      />
+      <span
+        className="c5"
+      >
+        Users
+      </span>
+    </div>
+  </li>
+  <li
+    className="c1"
+  >
+    <div
+      className="c2"
+      fontFamily="exo"
+      size="normal"
+    >
+      <span
+        className="c3 c4 lni lni-rocket"
+      />
+      <span
+        className="c5"
+      >
+        Devices
+      </span>
+    </div>
+  </li>
+  <li
+    className="c1"
+  >
+    <div
+      className="c2"
+      fontFamily="exo"
+      size="normal"
+    >
+      <span
+        className="c3 c4 lni lni-briefcase"
+      />
+      <span
+        className="c5"
+      >
+        Costs
+      </span>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`Menu should render open menu 1`] = `
+.c4 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.c2 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: unset;
+}
+
+.c3 {
+  font-size: 1.5em;
+  margin-right: 1.75rem;
+  float: left;
+}
+
+.c0 {
+  margin: 1em 0 0 0.25em;
+  padding: 0;
+  list-style-type: none;
+}
+
+.c1 {
+  display: block;
+  padding: 1em;
+  line-height: 1.5em;
+  height: 1.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.c5 {
+  display: block;
+}
+
+<ul
+  className="c0"
+>
+  <li
+    className="c1"
+  >
+    <div
+      className="c2"
+      fontFamily="exo"
+      size="normal"
+    >
+      <span
+        className="c3 c4 lni lni-home"
+      />
+      <span
+        className="c5"
+      >
+        Home
+      </span>
+    </div>
+  </li>
+  <li
+    className="c1"
+  >
+    <div
+      className="c2"
+      fontFamily="exo"
+      size="normal"
+    >
+      <span
+        className="c3 c4 lni lni-users"
+      />
+      <span
+        className="c5"
+      >
+        Users
+      </span>
+    </div>
+  </li>
+  <li
+    className="c1"
+  >
+    <div
+      className="c2"
+      fontFamily="exo"
+      size="normal"
+    >
+      <span
+        className="c3 c4 lni lni-rocket"
+      />
+      <span
+        className="c5"
+      >
+        Devices
+      </span>
+    </div>
+  </li>
+  <li
+    className="c1"
+  >
+    <div
+      className="c2"
+      fontFamily="exo"
+      size="normal"
+    >
+      <span
+        className="c3 c4 lni lni-briefcase"
+      />
+      <span
+        className="c5"
+      >
+        Costs
+      </span>
+    </div>
+  </li>
+</ul>
+`;
