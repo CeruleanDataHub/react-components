@@ -6,7 +6,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",
     library: "react-components",
-    libraryTarget: "umd",
+    libraryTarget: "umd"
   },
   module: {
     rules: [
@@ -14,30 +14,34 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
-        },
+          loader: "babel-loader"
+        }
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
         use: {
-          loader: "file-loader",
-        },
+          loader: "file-loader"
+        }
       },
-    ],
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"]
+      }
+    ]
   },
   externals: {
     react: {
       commonjs: "react",
-      commonjs2: "react",
+      commonjs2: "react"
     },
     "react-dom": {
       commonjs: "react-dom",
-      commonjs2: "react-dom",
+      commonjs2: "react-dom"
     },
     "styled-components": {
       commonjs: "styled-components",
-      commonjs2: "styled-components",
-    },
+      commonjs2: "styled-components"
+    }
   },
-  resolve: { extensions: [".js", ".jsx"] },
+  resolve: { extensions: [".js", ".jsx"] }
 };
