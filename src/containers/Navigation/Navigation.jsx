@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import React, { useState } from "react";
 import styled from "styled-components";
 
+import { Button } from "../Button/Button";
 import { Icon } from "../Icon/Icon";
 
 const NavBar = styled.nav`
@@ -9,13 +10,14 @@ const NavBar = styled.nav`
   z-index: 1;
 `;
 
-const MenuOpen = styled.div`
+const MenuOpen = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
   width: 3rem;
   height: 3.5em;
   cursor: pointer;
+  border: none;
 `;
 
 const MenuIcon = styled.span`
@@ -23,23 +25,20 @@ const MenuIcon = styled.span`
   margin: 0.5rem;
 `;
 
-export const Navigation = ({
-  menuInitialState = true,
-  onMenuToggle,
-  children
-}) => {
+export const Navigation = ({ menuInitialState, onMenuToggle, children }) => {
   const [menuOpen, setMenuOpen] = useState(menuInitialState);
 
   return (
     <NavBar id="left-navigation" menuOpen={menuOpen}>
-      <MenuOpen
+      <Button
         onClick={() => {
           setMenuOpen(!menuOpen);
           onMenuToggle(!menuOpen);
         }}
+        as={MenuOpen}
       >
         <Icon name={menuOpen ? "close" : "menu"} as={MenuIcon} />
-      </MenuOpen>
+      </Button>
       {children}
     </NavBar>
   );

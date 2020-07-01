@@ -1,29 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Menu should have menu toggle event listener 1`] = `
-.c3 {
+exports[`Navigation should call default props onMenuToggle function when no onMenuToggle property is passed 1`] = `
+.c4 {
   text-align: center;
 }
 
-.c6 {
+.c7 {
   font-family: "Exo 2",sans-serif;
   font-size: 16px;
   color: unset;
 }
 
-.c7 {
+.c8 {
   font-size: 1.5em;
   margin-right: 1.75rem;
   float: left;
 }
 
-.c4 {
+.c5 {
   margin: 1em 0 0 0.25em;
   padding: 0;
   list-style-type: none;
 }
 
-.c5 {
+.c6 {
   display: block;
   padding: 1em;
   line-height: 1.5em;
@@ -32,8 +32,18 @@ exports[`Menu should have menu toggle event listener 1`] = `
   text-transform: uppercase;
 }
 
-.c8 {
+.c9 {
   display: block;
+}
+
+.c2 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .c0 {
@@ -57,9 +67,10 @@ exports[`Menu should have menu toggle event listener 1`] = `
   width: 3rem;
   height: 3.5em;
   cursor: pointer;
+  border: none;
 }
 
-.c2 {
+.c3 {
   font-size: 2rem;
   margin: 0.5rem;
 }
@@ -68,84 +79,85 @@ exports[`Menu should have menu toggle event listener 1`] = `
   className="c0"
   id="left-navigation"
 >
-  <div
-    className="c1"
+  <button
+    className="c1 c2"
+    color=""
     onClick={[Function]}
   >
     <span
-      className="c2 c3 lni lni-close"
+      className="c3 c4 lni lni-close"
     />
-  </div>
+  </button>
   <ul
-    className="c4"
+    className="c5"
   >
     <li
-      className="c5"
+      className="c6"
     >
       <div
-        className="c6"
+        className="c7"
         fontFamily="exo"
         size="normal"
       >
         <span
-          className="c7 c3 lni lni-home"
+          className="c8 c4 lni lni-home"
         />
         <span
-          className="c8"
+          className="c9"
         >
           Home
         </span>
       </div>
     </li>
     <li
-      className="c5"
+      className="c6"
     >
       <div
-        className="c6"
+        className="c7"
         fontFamily="exo"
         size="normal"
       >
         <span
-          className="c7 c3 lni lni-users"
+          className="c8 c4 lni lni-users"
         />
         <span
-          className="c8"
+          className="c9"
         >
           Users
         </span>
       </div>
     </li>
     <li
-      className="c5"
+      className="c6"
     >
       <div
-        className="c6"
+        className="c7"
         fontFamily="exo"
         size="normal"
       >
         <span
-          className="c7 c3 lni lni-rocket"
+          className="c8 c4 lni lni-rocket"
         />
         <span
-          className="c8"
+          className="c9"
         >
           Devices
         </span>
       </div>
     </li>
     <li
-      className="c5"
+      className="c6"
     >
       <div
-        className="c6"
+        className="c7"
         fontFamily="exo"
         size="normal"
       >
         <span
-          className="c7 c3 lni lni-briefcase"
+          className="c8 c4 lni lni-briefcase"
         />
         <span
-          className="c8"
+          className="c9"
         >
           Costs
         </span>
@@ -155,9 +167,50 @@ exports[`Menu should have menu toggle event listener 1`] = `
 </nav>
 `;
 
-exports[`Menu should render 1`] = `
-.c3 {
+exports[`Navigation should have menu toggle event listener 1`] = `
+.c4 {
   text-align: center;
+}
+
+.c7 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: unset;
+}
+
+.c8 {
+  font-size: 1.5em;
+  margin-right: 1.75rem;
+  float: left;
+}
+
+.c5 {
+  margin: 1em 0 0 0.25em;
+  padding: 0;
+  list-style-type: none;
+}
+
+.c6 {
+  display: block;
+  padding: 1em;
+  line-height: 1.5em;
+  height: 1.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.c9 {
+  display: block;
+}
+
+.c2 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .c0 {
@@ -181,9 +234,10 @@ exports[`Menu should render 1`] = `
   width: 3rem;
   height: 3.5em;
   cursor: pointer;
+  border: none;
 }
 
-.c2 {
+.c3 {
   font-size: 2rem;
   margin: 0.5rem;
 }
@@ -192,42 +246,179 @@ exports[`Menu should render 1`] = `
   className="c0"
   id="left-navigation"
 >
-  <div
-    className="c1"
+  <button
+    className="c1 c2"
+    color=""
     onClick={[Function]}
   >
     <span
-      className="c2 c3 lni lni-close"
+      className="c3 c4 lni lni-close"
     />
-  </div>
+  </button>
+  <ul
+    className="c5"
+  >
+    <li
+      className="c6"
+    >
+      <div
+        className="c7"
+        fontFamily="exo"
+        size="normal"
+      >
+        <span
+          className="c8 c4 lni lni-home"
+        />
+        <span
+          className="c9"
+        >
+          Home
+        </span>
+      </div>
+    </li>
+    <li
+      className="c6"
+    >
+      <div
+        className="c7"
+        fontFamily="exo"
+        size="normal"
+      >
+        <span
+          className="c8 c4 lni lni-users"
+        />
+        <span
+          className="c9"
+        >
+          Users
+        </span>
+      </div>
+    </li>
+    <li
+      className="c6"
+    >
+      <div
+        className="c7"
+        fontFamily="exo"
+        size="normal"
+      >
+        <span
+          className="c8 c4 lni lni-rocket"
+        />
+        <span
+          className="c9"
+        >
+          Devices
+        </span>
+      </div>
+    </li>
+    <li
+      className="c6"
+    >
+      <div
+        className="c7"
+        fontFamily="exo"
+        size="normal"
+      >
+        <span
+          className="c8 c4 lni lni-briefcase"
+        />
+        <span
+          className="c9"
+        >
+          Costs
+        </span>
+      </div>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Navigation should render 1`] = `
+.c4 {
+  text-align: center;
+}
+
+.c2 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c0 {
+  background-color: rgba(0,0,0,0.75);
+  z-index: 1;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3.5em;
+  cursor: pointer;
+  border: none;
+}
+
+.c3 {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+<nav
+  className="c0"
+  id="left-navigation"
+>
+  <button
+    className="c1 c2"
+    color=""
+    onClick={[Function]}
+  >
+    <span
+      className="c3 c4 lni lni-close"
+    />
+  </button>
   
 </nav>
 `;
 
-exports[`Menu should render children menu 1`] = `
-.c3 {
+exports[`Navigation should render children menu 1`] = `
+.c4 {
   text-align: center;
 }
 
-.c6 {
+.c7 {
   font-family: "Exo 2",sans-serif;
   font-size: 16px;
   color: unset;
 }
 
-.c7 {
+.c8 {
   font-size: 1.5em;
   margin-right: 1.75rem;
   float: left;
 }
 
-.c4 {
+.c5 {
   margin: 1em 0 0 0.25em;
   padding: 0;
   list-style-type: none;
 }
 
-.c5 {
+.c6 {
   display: block;
   padding: 1em;
   line-height: 1.5em;
@@ -236,8 +427,18 @@ exports[`Menu should render children menu 1`] = `
   text-transform: uppercase;
 }
 
-.c8 {
+.c9 {
   display: block;
+}
+
+.c2 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .c0 {
@@ -261,9 +462,10 @@ exports[`Menu should render children menu 1`] = `
   width: 3rem;
   height: 3.5em;
   cursor: pointer;
+  border: none;
 }
 
-.c2 {
+.c3 {
   font-size: 2rem;
   margin: 0.5rem;
 }
@@ -272,84 +474,85 @@ exports[`Menu should render children menu 1`] = `
   className="c0"
   id="left-navigation"
 >
-  <div
-    className="c1"
+  <button
+    className="c1 c2"
+    color=""
     onClick={[Function]}
   >
     <span
-      className="c2 c3 lni lni-close"
+      className="c3 c4 lni lni-close"
     />
-  </div>
+  </button>
   <ul
-    className="c4"
+    className="c5"
   >
     <li
-      className="c5"
+      className="c6"
     >
       <div
-        className="c6"
+        className="c7"
         fontFamily="exo"
         size="normal"
       >
         <span
-          className="c7 c3 lni lni-home"
+          className="c8 c4 lni lni-home"
         />
         <span
-          className="c8"
+          className="c9"
         >
           Home
         </span>
       </div>
     </li>
     <li
-      className="c5"
+      className="c6"
     >
       <div
-        className="c6"
+        className="c7"
         fontFamily="exo"
         size="normal"
       >
         <span
-          className="c7 c3 lni lni-users"
+          className="c8 c4 lni lni-users"
         />
         <span
-          className="c8"
+          className="c9"
         >
           Users
         </span>
       </div>
     </li>
     <li
-      className="c5"
+      className="c6"
     >
       <div
-        className="c6"
+        className="c7"
         fontFamily="exo"
         size="normal"
       >
         <span
-          className="c7 c3 lni lni-rocket"
+          className="c8 c4 lni lni-rocket"
         />
         <span
-          className="c8"
+          className="c9"
         >
           Devices
         </span>
       </div>
     </li>
     <li
-      className="c5"
+      className="c6"
     >
       <div
-        className="c6"
+        className="c7"
         fontFamily="exo"
         size="normal"
       >
         <span
-          className="c7 c3 lni lni-briefcase"
+          className="c8 c4 lni lni-briefcase"
         />
         <span
-          className="c8"
+          className="c9"
         >
           Costs
         </span>
@@ -359,30 +562,30 @@ exports[`Menu should render children menu 1`] = `
 </nav>
 `;
 
-exports[`Menu should render children menu closed when given appropriate property 1`] = `
-.c3 {
+exports[`Navigation should render children menu closed when given appropriate property 1`] = `
+.c4 {
   text-align: center;
 }
 
-.c6 {
+.c7 {
   font-family: "Exo 2",sans-serif;
   font-size: 16px;
   color: unset;
 }
 
-.c7 {
+.c8 {
   font-size: 1.5em;
   margin-right: 1.75rem;
   float: left;
 }
 
-.c4 {
+.c5 {
   margin: 1em 0 0 0.25em;
   padding: 0;
   list-style-type: none;
 }
 
-.c5 {
+.c6 {
   display: block;
   padding: 1em;
   line-height: 1.5em;
@@ -391,8 +594,18 @@ exports[`Menu should render children menu closed when given appropriate property
   text-transform: uppercase;
 }
 
-.c8 {
+.c9 {
   display: block;
+}
+
+.c2 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .c0 {
@@ -416,9 +629,10 @@ exports[`Menu should render children menu closed when given appropriate property
   width: 3rem;
   height: 3.5em;
   cursor: pointer;
+  border: none;
 }
 
-.c2 {
+.c3 {
   font-size: 2rem;
   margin: 0.5rem;
 }
@@ -427,84 +641,85 @@ exports[`Menu should render children menu closed when given appropriate property
   className="c0"
   id="left-navigation"
 >
-  <div
-    className="c1"
+  <button
+    className="c1 c2"
+    color=""
     onClick={[Function]}
   >
     <span
-      className="c2 c3 lni lni-menu"
+      className="c3 c4 lni lni-menu"
     />
-  </div>
+  </button>
   <ul
-    className="c4"
+    className="c5"
   >
     <li
-      className="c5"
+      className="c6"
     >
       <div
-        className="c6"
+        className="c7"
         fontFamily="exo"
         size="normal"
       >
         <span
-          className="c7 c3 lni lni-home"
+          className="c8 c4 lni lni-home"
         />
         <span
-          className="c8"
+          className="c9"
         >
           Home
         </span>
       </div>
     </li>
     <li
-      className="c5"
+      className="c6"
     >
       <div
-        className="c6"
+        className="c7"
         fontFamily="exo"
         size="normal"
       >
         <span
-          className="c7 c3 lni lni-users"
+          className="c8 c4 lni lni-users"
         />
         <span
-          className="c8"
+          className="c9"
         >
           Users
         </span>
       </div>
     </li>
     <li
-      className="c5"
+      className="c6"
     >
       <div
-        className="c6"
+        className="c7"
         fontFamily="exo"
         size="normal"
       >
         <span
-          className="c7 c3 lni lni-rocket"
+          className="c8 c4 lni lni-rocket"
         />
         <span
-          className="c8"
+          className="c9"
         >
           Devices
         </span>
       </div>
     </li>
     <li
-      className="c5"
+      className="c6"
     >
       <div
-        className="c6"
+        className="c7"
         fontFamily="exo"
         size="normal"
       >
         <span
-          className="c7 c3 lni lni-briefcase"
+          className="c8 c4 lni lni-briefcase"
         />
         <span
-          className="c8"
+          className="c9"
         >
           Costs
         </span>
