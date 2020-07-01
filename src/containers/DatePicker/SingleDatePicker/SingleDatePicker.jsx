@@ -8,9 +8,9 @@ import { SingleDatePicker as DatePicker } from "react-dates";
 import momentPropTypes from "react-moment-proptypes";
 import styled from "styled-components";
 
-import { Icon } from "../Icon/Icon";
-import { Typography } from "../Typography/Typography";
-import { SingleDatePickerStyles } from "./datepickerStyles";
+import { Icon } from "../../Icon/Icon";
+import { Typography } from "../../Typography/Typography";
+import { SingleDatePickerStyles } from "../datepickerStyles";
 
 const Container = styled.div`
   ${SingleDatePickerStyles}

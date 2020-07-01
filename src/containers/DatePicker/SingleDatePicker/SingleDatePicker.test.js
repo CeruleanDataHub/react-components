@@ -29,7 +29,7 @@ describe("SingleDatePicker", () => {
 
   it("should render with custom date format", () => {
     const component = renderer.create(
-      <SingleDatePicker dateFormat="MM/DD/YYYY" />
+      <SingleDatePicker dateFormat="MM/DD/yyyy" />
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();

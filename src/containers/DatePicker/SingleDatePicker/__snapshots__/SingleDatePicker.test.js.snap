@@ -19,6 +19,7 @@ exports[`SingleDatePicker should render 1`] = `
 .c0 .SingleDatePicker .SingleDatePickerInput {
   background: #0f181c;
   border-radius: 4px;
+  border: none;
 }
 
 .c0 .SingleDatePicker .DateInput {
@@ -41,10 +42,13 @@ exports[`SingleDatePicker should render 1`] = `
 
 .c0 .SingleDatePicker .DayPicker {
   box-shadow: none;
+  background: #0f181c;
+  border-radius: 0;
 }
 
 .c0 .SingleDatePicker .DayPicker_transitionContainer {
   border-radius: 0;
+  background: #0f181c;
 }
 
 .c0 .SingleDatePicker .CalendarMonthGrid {
@@ -164,6 +168,7 @@ exports[`SingleDatePicker should render with custom date format 1`] = `
 .c0 .SingleDatePicker .SingleDatePickerInput {
   background: #0f181c;
   border-radius: 4px;
+  border: none;
 }
 
 .c0 .SingleDatePicker .DateInput {
@@ -186,10 +191,13 @@ exports[`SingleDatePicker should render with custom date format 1`] = `
 
 .c0 .SingleDatePicker .DayPicker {
   box-shadow: none;
+  background: #0f181c;
+  border-radius: 0;
 }
 
 .c0 .SingleDatePicker .DayPicker_transitionContainer {
   border-radius: 0;
+  background: #0f181c;
 }
 
 .c0 .SingleDatePicker .CalendarMonthGrid {
@@ -274,7 +282,7 @@ exports[`SingleDatePicker should render with custom date format 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="06/19/-0400"
+              value="06/19/0001"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -309,6 +317,7 @@ exports[`SingleDatePicker should render with two months shown 1`] = `
 .c0 .SingleDatePicker .SingleDatePickerInput {
   background: #0f181c;
   border-radius: 4px;
+  border: none;
 }
 
 .c0 .SingleDatePicker .DateInput {
@@ -331,10 +340,13 @@ exports[`SingleDatePicker should render with two months shown 1`] = `
 
 .c0 .SingleDatePicker .DayPicker {
   box-shadow: none;
+  background: #0f181c;
+  border-radius: 0;
 }
 
 .c0 .SingleDatePicker .DayPicker_transitionContainer {
   border-radius: 0;
+  background: #0f181c;
 }
 
 .c0 .SingleDatePicker .CalendarMonthGrid {
@@ -454,6 +466,7 @@ exports[`SingleDatePicker with given date should render with given startDate 1`]
 .c0 .SingleDatePicker .SingleDatePickerInput {
   background: #0f181c;
   border-radius: 4px;
+  border: none;
 }
 
 .c0 .SingleDatePicker .DateInput {
@@ -476,10 +489,13 @@ exports[`SingleDatePicker with given date should render with given startDate 1`]
 
 .c0 .SingleDatePicker .DayPicker {
   box-shadow: none;
+  background: #0f181c;
+  border-radius: 0;
 }
 
 .c0 .SingleDatePicker .DayPicker_transitionContainer {
   border-radius: 0;
+  background: #0f181c;
 }
 
 .c0 .SingleDatePicker .CalendarMonthGrid {

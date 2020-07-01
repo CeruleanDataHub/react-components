@@ -8,7 +8,7 @@ import { Heatmap } from "../Chart/Heatmap/Heatmap";
 import { SemiDonut } from "../Chart/SemiDonut/SemiDonut";
 import { Spline } from "../Chart/Spline/Spline";
 import { TreeMap } from "../Chart/TreeMap/TreeMap";
-import { DatePicker } from "../DatePicker/DatePicker";
+import { SingleDatePicker } from "../DatePicker/SingleDatePicker/SingleDatePicker";
 import { Dropdown } from "../Dropdown/Dropdown";
 import { Fullscreen } from "../Fullscreen/Fullscreen";
 import { Cell, Grid } from "../Grid/Grid";
@@ -466,7 +466,7 @@ export const KeyperDemo = () => {
                 />
               </Cell>
               <Cell>
-                <DatePicker />
+                <SingleDatePicker />
               </Cell>
               <Cell>
                 <Button color="transparent" as={PagingButtonSelected}>
@@ -564,7 +564,7 @@ export const KeyperDemoPage2 = () => {
                 />
               </Cell>
               <Cell>
-                <DatePicker />
+                <SingleDatePicker />
               </Cell>
               <Cell>
                 <Button text="1" color="transparent" as={PagingButton} />
