@@ -30,6 +30,18 @@ describe("DateRangePicker", () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it("should render with custom date format", () => {
+    const component = renderer.create(
+      <DateRangePicker
+        name="test-format"
+        onDatesChange={() => null}
+        dateFormat="MM/DD/yyyy"
+      />
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
   it("should fire onDatesChange event handler", () => {
     const handleClick = jest.fn();
     const component = mount(

@@ -14,6 +14,7 @@ export const DateRangePickerStory = () => (
     <DateRangePicker name="story" onDatesChange={action("date changed")} />
   </div>
 );
+
 export const DateRangePickerCustomRangeStory = () => (
   <div style={{ minHeight: 400 }}>
     <DateRangePicker
@@ -21,6 +22,16 @@ export const DateRangePickerCustomRangeStory = () => (
       onDatesChange={action("date changed")}
       startDate={moment(new Date(2020, 6, 1))}
       endDate={moment(new Date(2020, 6, 12))}
+    />
+  </div>
+);
+
+export const DateRangePickerCustomFormatStory = () => (
+  <div style={{ minHeight: 400 }}>
+    <DateRangePicker
+      name="story"
+      onDatesChange={action("date changed")}
+      dateFormat="MM/DD/yyyy"
     />
   </div>
 );

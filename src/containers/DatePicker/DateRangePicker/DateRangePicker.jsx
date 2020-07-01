@@ -8,6 +8,7 @@ import { DateRangePicker as DateRangePickerWrapper } from "react-dates";
 import momentPropTypes from "react-moment-proptypes";
 import styled from "styled-components";
 
+import { Icon } from "../../Icon/Icon";
 import { Typography } from "../../Typography/Typography";
 import { DateRangePickerStyles } from "../datepickerStyles";
 
@@ -15,11 +16,16 @@ const Container = styled.div`
   ${DateRangePickerStyles};
 `;
 
+const CalendarIcon = styled.span`
+  font-size: 1.25em;
+`;
+
 export const DateRangePicker = ({
   name,
   startDate,
   endDate,
-  onDatesChange
+  onDatesChange,
+  dateFormat
 }) => {
   const [startDateValue, setStartDateValue] = useState(startDate);
   const [endDateValue, setEndDateValue] = useState(endDate);
@@ -44,6 +50,8 @@ export const DateRangePicker = ({
           focusedInput={focusedInputValue}
           onFocusChange={focusedInput => setFocusedInputValue(focusedInput)}
           hideKeyboardShortcutsPanel
+          customInputIcon={<Icon name="calendar" as={CalendarIcon} />}
+          displayFormat={dateFormat}
         />
       </Typography>
     </Container>
@@ -58,12 +66,15 @@ DateRangePicker.propTypes = {
   /** End date to be shown on date picker. Defaults to current day. */
   endDate: momentPropTypes.momentObj,
   /** Event listened for date change */
-  onDatesChange: PropTypes.func.isRequired
+  onDatesChange: PropTypes.func.isRequired,
+  /** How the date should be displayed */
+  dateFormat: PropTypes.string
 };
 
 const currentMoment = moment();
 
 DateRangePicker.defaultProps = {
   startDate: currentMoment,
-  endDate: currentMoment
+  endDate: currentMoment,
+  dateFormat: "DD.MM.yyyy"
 };

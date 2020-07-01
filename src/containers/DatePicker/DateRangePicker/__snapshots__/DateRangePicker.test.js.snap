@@ -1,85 +1,94 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DateRangePicker should render 1`] = `
+.c3 {
+  text-align: center;
+}
+
 .c1 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
   color: unset;
 }
 
-.c0 .SingleDatePicker {
+.c0 .DateRangePicker {
   color: #999;
   cursor: pointer;
 }
 
-.c0 .SingleDatePicker .SingleDatePickerInput {
+.c0 .DateRangePicker .DateRangePickerInput {
   background: #0f181c;
   border-radius: 4px;
   border: none;
 }
 
-.c0 .SingleDatePicker .DateInput {
+.c0 .DateInput {
   color: #999;
 }
 
-.c0 .SingleDatePicker .DateInput_fangStroke {
+.c0 .DateInput_fangStroke {
   fill: #0f181c;
 }
 
-.c0 .SingleDatePicker .DateInput_input {
+.c0 .DateInput_input {
   color: inherit;
   background-color: #0f181c;
   border-radius: 0 4px 4px 0;
 }
 
-.c0 .SingleDatePicker .DateInput_input__focused {
+.c0 .DateInput_input__focused {
   border-bottom-color: transparent;
 }
 
-.c0 .SingleDatePicker .DayPicker {
+.c0 .DayPicker {
   box-shadow: none;
   background: #0f181c;
   border-radius: 0;
 }
 
-.c0 .SingleDatePicker .DayPicker_transitionContainer {
+.c0 .DayPicker_transitionContainer {
   border-radius: 0;
   background: #0f181c;
 }
 
-.c0 .SingleDatePicker .CalendarMonthGrid {
+.c0 .CalendarMonthGrid {
   background: #0f181c;
 }
 
-.c0 .SingleDatePicker .CalendarMonth {
+.c0 .CalendarMonth {
   background: #0f181c;
   padding: 0 13px 10px 13px;
 }
 
-.c0 .SingleDatePicker .CalendarMonth_caption {
+.c0 .CalendarMonth_caption {
   color: #999;
   padding-bottom: 42px;
 }
 
-.c0 .SingleDatePicker .DayPickerNavigation_button__default {
+.c0 .DayPickerNavigation_button__default {
   background: transparent;
   border: none;
 }
 
-.c0 .SingleDatePicker .CalendarDay__default {
+.c0 .CalendarDay__default {
   background: #0f181c;
   color: #999;
   border: 1px solid black;
 }
 
-.c0 .SingleDatePicker .CalendarDay__default:hover {
+.c0 .CalendarDay__default:hover {
   background: white;
   color: black;
 }
 
-.c0 .SingleDatePicker .CalendarDay__selected {
+.c0 .CalendarDay__selected,
+.c0 .CalendarDay__selected_span {
   background: #90ee7e;
   color: black;
+}
+
+.c2 {
+  font-size: 1.25em;
 }
 
 <div
@@ -97,6 +106,17 @@ exports[`DateRangePicker should render 1`] = `
         <div
           className="DateRangePickerInput DateRangePickerInput_1 DateRangePickerInput__withBorder DateRangePickerInput__withBorder_2"
         >
+          <button
+            aria-label="Interact with the calendar and add the check-in date for your trip."
+            className="DateRangePickerInput_calendarIcon DateRangePickerInput_calendarIcon_1"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c2 c3 lni lni-calendar"
+            />
+          </button>
           <div
             className="DateInput DateInput_1"
           >
@@ -115,7 +135,7 @@ exports[`DateRangePicker should render 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="07/01/2020"
+              value="01.07.0001"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -157,7 +177,7 @@ exports[`DateRangePicker should render 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="07/01/2020"
+              value="19.06.0001"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -173,86 +193,95 @@ exports[`DateRangePicker should render 1`] = `
 </div>
 `;
 
-exports[`DateRangePicker with given date should render DateRangePicker starting from date provided 1`] = `
+exports[`DateRangePicker should render with custom date format 1`] = `
+.c3 {
+  text-align: center;
+}
+
 .c1 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
   color: unset;
 }
 
-.c0 .SingleDatePicker {
+.c0 .DateRangePicker {
   color: #999;
   cursor: pointer;
 }
 
-.c0 .SingleDatePicker .SingleDatePickerInput {
+.c0 .DateRangePicker .DateRangePickerInput {
   background: #0f181c;
   border-radius: 4px;
   border: none;
 }
 
-.c0 .SingleDatePicker .DateInput {
+.c0 .DateInput {
   color: #999;
 }
 
-.c0 .SingleDatePicker .DateInput_fangStroke {
+.c0 .DateInput_fangStroke {
   fill: #0f181c;
 }
 
-.c0 .SingleDatePicker .DateInput_input {
+.c0 .DateInput_input {
   color: inherit;
   background-color: #0f181c;
   border-radius: 0 4px 4px 0;
 }
 
-.c0 .SingleDatePicker .DateInput_input__focused {
+.c0 .DateInput_input__focused {
   border-bottom-color: transparent;
 }
 
-.c0 .SingleDatePicker .DayPicker {
+.c0 .DayPicker {
   box-shadow: none;
   background: #0f181c;
   border-radius: 0;
 }
 
-.c0 .SingleDatePicker .DayPicker_transitionContainer {
+.c0 .DayPicker_transitionContainer {
   border-radius: 0;
   background: #0f181c;
 }
 
-.c0 .SingleDatePicker .CalendarMonthGrid {
+.c0 .CalendarMonthGrid {
   background: #0f181c;
 }
 
-.c0 .SingleDatePicker .CalendarMonth {
+.c0 .CalendarMonth {
   background: #0f181c;
   padding: 0 13px 10px 13px;
 }
 
-.c0 .SingleDatePicker .CalendarMonth_caption {
+.c0 .CalendarMonth_caption {
   color: #999;
   padding-bottom: 42px;
 }
 
-.c0 .SingleDatePicker .DayPickerNavigation_button__default {
+.c0 .DayPickerNavigation_button__default {
   background: transparent;
   border: none;
 }
 
-.c0 .SingleDatePicker .CalendarDay__default {
+.c0 .CalendarDay__default {
   background: #0f181c;
   color: #999;
   border: 1px solid black;
 }
 
-.c0 .SingleDatePicker .CalendarDay__default:hover {
+.c0 .CalendarDay__default:hover {
   background: white;
   color: black;
 }
 
-.c0 .SingleDatePicker .CalendarDay__selected {
+.c0 .CalendarDay__selected,
+.c0 .CalendarDay__selected_span {
   background: #90ee7e;
   color: black;
+}
+
+.c2 {
+  font-size: 1.25em;
 }
 
 <div
@@ -270,6 +299,210 @@ exports[`DateRangePicker with given date should render DateRangePicker starting 
         <div
           className="DateRangePickerInput DateRangePickerInput_1 DateRangePickerInput__withBorder DateRangePickerInput__withBorder_2"
         >
+          <button
+            aria-label="Interact with the calendar and add the check-in date for your trip."
+            className="DateRangePickerInput_calendarIcon DateRangePickerInput_calendarIcon_1"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c2 c3 lni lni-calendar"
+            />
+          </button>
+          <div
+            className="DateInput DateInput_1"
+          >
+            <input
+              aria-describedby="DateInput__screen-reader-message-test-format-start"
+              aria-label="Start Date"
+              autoComplete="off"
+              className="DateInput_input DateInput_input_1"
+              disabled={false}
+              id="test-format-start"
+              name="test-format-start"
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              placeholder="Start Date"
+              readOnly={false}
+              required={false}
+              type="text"
+              value="06/19/0001"
+            />
+            <p
+              className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+              id="DateInput__screen-reader-message-test-format-start"
+            >
+              Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+            </p>
+          </div>
+          <div
+            aria-hidden="true"
+            className="DateRangePickerInput_arrow DateRangePickerInput_arrow_1"
+            role="presentation"
+          >
+            <svg
+              className="DateRangePickerInput_arrow_svg DateRangePickerInput_arrow_svg_1"
+              focusable="false"
+              viewBox="0 0 1000 1000"
+            >
+              <path
+                d="M694 242l249 250c12 11 12 21 1 32L694 773c-5 5-10 7-16 7s-11-2-16-7c-11-11-11-21 0-32l210-210H68c-13 0-23-10-23-23s10-23 23-23h806L662 275c-21-22 11-54 32-33z"
+              />
+            </svg>
+          </div>
+          <div
+            className="DateInput DateInput_1"
+          >
+            <input
+              aria-describedby="DateInput__screen-reader-message-test-format-end"
+              aria-label="End Date"
+              autoComplete="off"
+              className="DateInput_input DateInput_input_1"
+              disabled={false}
+              id="test-format-end"
+              name="test-format-end"
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              placeholder="End Date"
+              readOnly={false}
+              required={false}
+              type="text"
+              value="06/19/0001"
+            />
+            <p
+              className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+              id="DateInput__screen-reader-message-test-format-end"
+            >
+              Navigate backward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DateRangePicker with given date should render DateRangePicker starting from date provided 1`] = `
+.c3 {
+  text-align: center;
+}
+
+.c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: unset;
+}
+
+.c0 .DateRangePicker {
+  color: #999;
+  cursor: pointer;
+}
+
+.c0 .DateRangePicker .DateRangePickerInput {
+  background: #0f181c;
+  border-radius: 4px;
+  border: none;
+}
+
+.c0 .DateInput {
+  color: #999;
+}
+
+.c0 .DateInput_fangStroke {
+  fill: #0f181c;
+}
+
+.c0 .DateInput_input {
+  color: inherit;
+  background-color: #0f181c;
+  border-radius: 0 4px 4px 0;
+}
+
+.c0 .DateInput_input__focused {
+  border-bottom-color: transparent;
+}
+
+.c0 .DayPicker {
+  box-shadow: none;
+  background: #0f181c;
+  border-radius: 0;
+}
+
+.c0 .DayPicker_transitionContainer {
+  border-radius: 0;
+  background: #0f181c;
+}
+
+.c0 .CalendarMonthGrid {
+  background: #0f181c;
+}
+
+.c0 .CalendarMonth {
+  background: #0f181c;
+  padding: 0 13px 10px 13px;
+}
+
+.c0 .CalendarMonth_caption {
+  color: #999;
+  padding-bottom: 42px;
+}
+
+.c0 .DayPickerNavigation_button__default {
+  background: transparent;
+  border: none;
+}
+
+.c0 .CalendarDay__default {
+  background: #0f181c;
+  color: #999;
+  border: 1px solid black;
+}
+
+.c0 .CalendarDay__default:hover {
+  background: white;
+  color: black;
+}
+
+.c0 .CalendarDay__selected,
+.c0 .CalendarDay__selected_span {
+  background: #90ee7e;
+  color: black;
+}
+
+.c2 {
+  font-size: 1.25em;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    fontFamily="openSans"
+    size="normal"
+  >
+    <div
+      className="DateRangePicker DateRangePicker_1"
+    >
+      <div>
+        <div
+          className="DateRangePickerInput DateRangePickerInput_1 DateRangePickerInput__withBorder DateRangePickerInput__withBorder_2"
+        >
+          <button
+            aria-label="Interact with the calendar and add the check-in date for your trip."
+            className="DateRangePickerInput_calendarIcon DateRangePickerInput_calendarIcon_1"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c2 c3 lni lni-calendar"
+            />
+          </button>
           <div
             className="DateInput DateInput_1"
           >
@@ -288,7 +521,7 @@ exports[`DateRangePicker with given date should render DateRangePicker starting 
               readOnly={false}
               required={false}
               type="text"
-              value="07/01/2020"
+              value="01.07.2420"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -330,7 +563,7 @@ exports[`DateRangePicker with given date should render DateRangePicker starting 
               readOnly={false}
               required={false}
               type="text"
-              value="07/12/2020"
+              value="12.07.2420"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
