@@ -1,5 +1,4 @@
 export { Header } from "./containers/Header/Header";
-export { Dashboard } from "./containers/Dashboard/Dashboard";
 export { Button } from "./containers/Button/Button";
 export { Card } from "./containers/Card/Card";
 export { Area } from "./containers/Chart/Area/Area";
