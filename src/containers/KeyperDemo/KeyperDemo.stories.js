@@ -419,6 +419,18 @@ const GridWithCollapsibleMenu = styled(Grid)`
   grid-template-columns: ${({ menuOpen }) => (menuOpen ? 10 : 4)}rem auto;
 `;
 
+const FullscreenOnRight = styled.div`
+  position: absolute;
+  z-index: 1;
+  right: 10px;
+  top: 10px;
+  font-size: 1.5rem;
+`;
+
+const PositionRelative = styled.div`
+  position: relative;
+`;
+
 // eslint-disable-next-line no-console
 const mockfullscreen = () => console.log("full screen");
 
@@ -500,13 +512,13 @@ export const KeyperDemo = () => {
               </Cell>
             </Grid>
             <Grid>
-              <Cell>
-                <Fullscreen onClick={mockfullscreen} />
+              <Cell as={PositionRelative}>
+                <Fullscreen onClick={mockfullscreen} as={FullscreenOnRight} />
                 <Spline xAxis={splineXAxis} series={splineSeries} />
                 <TreeMap series={treemapSeries} />
               </Cell>
-              <Cell>
-                <Fullscreen onClick={mockfullscreen} />
+              <Cell as={PositionRelative}>
+                <Fullscreen onClick={mockfullscreen} as={FullscreenOnRight} />
                 <DependencyWheel
                   series={dependencySeries}
                   containerProps={{ style: { height: "100%" } }}
@@ -598,13 +610,13 @@ export const KeyperDemoPage2 = () => {
               </Cell>
             </Grid>
             <Grid>
-              <Cell>
+              <Cell as={PositionRelative}>
                 <Heatmap data={data} />
-                <Fullscreen onClick={mockfullscreen} />
+                <Fullscreen onClick={mockfullscreen} as={FullscreenOnRight} />
                 <SemiDonut series={semiDonutSeries} />
               </Cell>
-              <Cell>
-                <Fullscreen onClick={mockfullscreen} />
+              <Cell as={PositionRelative}>
+                <Fullscreen onClick={mockfullscreen} as={FullscreenOnRight} />
                 <Map
                   title="Finland"
                   minColor="#CCE7E7"
