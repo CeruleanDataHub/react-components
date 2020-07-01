@@ -6,40 +6,37 @@ import React from "react";
 
 highchartsMap(Highcharts);
 
-export const Map = ({
-  title,
-  minColor,
-  maxColor,
-  series,
-  containerProps = null
-}) => {
+const defaultOptions = {
+  credits: {
+    enabled: false
+  },
+  legend: {
+    layout: "vertical",
+    align: "left",
+    verticalAlign: "bottom"
+  },
+  colorAxis: {
+    min: 0,
+    reversed: false,
+    showFirstLabel: false
+  },
+  mapNavigation: {
+    enabled: true,
+    enableMouseWheelZoom: false,
+    buttonOptions: {
+      verticalAlign: "top"
+    }
+  }
+};
+
+export const Map = ({ title, minColor, maxColor, series, containerProps }) => {
   const mapOptions = {
     title: {
       text: title
     },
-    credits: {
-      enabled: false
-    },
-    legend: {
-      layout: "vertical",
-      align: "left",
-      verticalAlign: "bottom"
-    },
-    colorAxis: {
-      min: 0,
-      minColor,
-      maxColor,
-      reversed: false,
-      showFirstLabel: false
-    },
-    mapNavigation: {
-      enabled: true,
-      enableMouseWheelZoom: false,
-      buttonOptions: {
-        verticalAlign: "top"
-      }
-    },
-    series
+    series,
+    ...defaultOptions,
+    colorAxis: { ...defaultOptions.colorAxis, minColor, maxColor }
   };
 
   return (
@@ -67,6 +64,7 @@ Map.propTypes = {
       mapData: PropTypes.object
     })
   ),
+  /** Props to be passed to highcharts, such as styles or classname */
   // eslint-disable-next-line react/forbid-prop-types
   containerProps: PropTypes.object
 };
@@ -76,5 +74,5 @@ Map.defaultProps = {
   minColor: "",
   maxColor: "",
   series: [],
-  containerProps: {}
+  containerProps: null
 };
