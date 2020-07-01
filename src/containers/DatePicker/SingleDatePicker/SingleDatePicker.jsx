@@ -10,7 +10,7 @@ import styled from "styled-components";
 
 import { Icon } from "../../Icon/Icon";
 import { Typography } from "../../Typography/Typography";
-import { SingleDatePickerStyles } from "../datepickerStyles";
+import { SingleDatePickerStyles } from "../datePickerStyles";
 
 const Container = styled.div`
   ${SingleDatePickerStyles}

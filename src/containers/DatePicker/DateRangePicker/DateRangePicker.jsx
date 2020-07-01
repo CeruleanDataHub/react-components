@@ -10,7 +10,7 @@ import styled from "styled-components";
 
 import { Icon } from "../../Icon/Icon";
 import { Typography } from "../../Typography/Typography";
-import { DateRangePickerStyles } from "../datepickerStyles";
+import { DateRangePickerStyles } from "../datePickerStyles";
 
 const Container = styled.div`
   ${DateRangePickerStyles};
