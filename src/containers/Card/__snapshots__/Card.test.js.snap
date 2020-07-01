@@ -126,7 +126,6 @@ exports[`Card should render card with children 1`] = `
 
 exports[`Card should render card with icon 1`] = `
 .c3 {
-  font-size: 4rem;
   text-align: center;
 }
 
@@ -219,7 +218,6 @@ exports[`Card should render card with icon 1`] = `
 
 exports[`Card should render card with icon and children 1`] = `
 .c3 {
-  font-size: 4rem;
   text-align: center;
 }
 

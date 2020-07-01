@@ -38,7 +38,6 @@ exports[`KPICard should format large values 1`] = `
 }
 
 .c10 {
-  font-size: 4rem;
   text-align: center;
 }
 
@@ -174,7 +173,6 @@ exports[`KPICard should render 1`] = `
 }
 
 .c10 {
-  font-size: 4rem;
   text-align: center;
 }
 
@@ -310,7 +308,6 @@ exports[`KPICard should render green 1`] = `
 }
 
 .c10 {
-  font-size: 4rem;
   text-align: center;
 }
 
@@ -446,7 +443,6 @@ exports[`KPICard should render negative growth 1`] = `
 }
 
 .c10 {
-  font-size: 4rem;
   text-align: center;
 }
 
@@ -582,7 +578,6 @@ exports[`KPICard should render positive growth 1`] = `
 }
 
 .c10 {
-  font-size: 4rem;
   text-align: center;
 }
 
@@ -718,7 +713,6 @@ exports[`KPICard should render red 1`] = `
 }
 
 .c10 {
-  font-size: 4rem;
   text-align: center;
 }
 
@@ -854,7 +848,6 @@ exports[`KPICard should render two decimal points in growth 1`] = `
 }
 
 .c10 {
-  font-size: 4rem;
   text-align: center;
 }
 
@@ -990,7 +983,6 @@ exports[`KPICard should render zero growth 1`] = `
 }
 
 .c10 {
-  font-size: 4rem;
   text-align: center;
 }
 

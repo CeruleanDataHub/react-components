@@ -2,7 +2,6 @@
 
 exports[`Menu should have menu toggle event listener 1`] = `
 .c3 {
-  font-size: 4rem;
   text-align: center;
 }
 
@@ -158,7 +157,6 @@ exports[`Menu should have menu toggle event listener 1`] = `
 
 exports[`Menu should render 1`] = `
 .c3 {
-  font-size: 4rem;
   text-align: center;
 }
 
@@ -208,7 +206,6 @@ exports[`Menu should render 1`] = `
 
 exports[`Menu should render children menu 1`] = `
 .c3 {
-  font-size: 4rem;
   text-align: center;
 }
 
@@ -364,7 +361,6 @@ exports[`Menu should render children menu 1`] = `
 
 exports[`Menu should render children menu closed when given appropriate property 1`] = `
 .c3 {
-  font-size: 4rem;
   text-align: center;
 }
 

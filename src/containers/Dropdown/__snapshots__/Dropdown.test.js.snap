@@ -12,7 +12,6 @@ exports[`Dropdown should be able to select item from list 1`] = `
 }
 
 .c6 {
-  font-size: 4rem;
   text-align: center;
 }
 
@@ -251,7 +250,6 @@ exports[`Dropdown should call default props onClick function when no onClick pro
 }
 
 .c5 {
-  font-size: 4rem;
   text-align: center;
 }
 
@@ -332,7 +330,6 @@ exports[`Dropdown should have onClick listener 1`] = `
 }
 
 .c5 {
-  font-size: 4rem;
   text-align: center;
 }
 
@@ -413,7 +410,6 @@ exports[`Dropdown should render dropdown 1`] = `
 }
 
 .c5 {
-  font-size: 4rem;
   text-align: center;
 }
 
@@ -494,7 +490,6 @@ exports[`Dropdown should render dropdown in open state 1`] = `
 }
 
 .c6 {
-  font-size: 4rem;
   text-align: center;
 }
 

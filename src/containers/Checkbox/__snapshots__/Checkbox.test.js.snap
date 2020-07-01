@@ -214,7 +214,6 @@ exports[`Checkbox should render Checkbox 1`] = `
 
 exports[`Checkbox should render Checkbox with checked prop 1`] = `
 .c5 {
-  font-size: 4rem;
   text-align: center;
 }
 
@@ -370,7 +369,6 @@ exports[`Checkbox should render Checkbox with value and label 1`] = `
 
 exports[`Checkbox should render Checkbox with value and label, and be checked 1`] = `
 .c5 {
-  font-size: 4rem;
   text-align: center;
 }
 

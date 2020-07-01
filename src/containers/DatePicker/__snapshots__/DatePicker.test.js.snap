@@ -2,7 +2,6 @@
 
 exports[`DatePicker with given date should render DatePicker starting from date provided 1`] = `
 .c4 {
-  font-size: 4rem;
   text-align: center;
 }
 
@@ -159,7 +158,6 @@ exports[`DatePicker with given date should render DatePicker starting from date 
 
 exports[`DatePicker with mocked date should render 1`] = `
 .c4 {
-  font-size: 4rem;
   text-align: center;
 }
 
@@ -316,7 +314,6 @@ exports[`DatePicker with mocked date should render 1`] = `
 
 exports[`DatePicker with mocked date should render DatePicker with custom dateFormat 1`] = `
 .c4 {
-  font-size: 4rem;
   text-align: center;
 }
 
@@ -473,7 +470,6 @@ exports[`DatePicker with mocked date should render DatePicker with custom dateFo
 
 exports[`DatePicker with mocked date should render DatePicker with two months 1`] = `
 .c4 {
-  font-size: 4rem;
   text-align: center;
 }
 

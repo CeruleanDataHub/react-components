@@ -2,7 +2,6 @@
 
 exports[`Fullscreen should call default props onClick function when no onClick property is passed 1`] = `
 .c1 {
-  font-size: 4rem;
   text-align: center;
 }
 
@@ -48,7 +47,6 @@ exports[`Fullscreen should have onClick listener 1`] = `
 
 exports[`Fullscreen should render 1`] = `
 .c1 {
-  font-size: 4rem;
   text-align: center;
 }
 
