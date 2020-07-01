@@ -82,7 +82,9 @@ exports[`DateRangePicker should render 1`] = `
 }
 
 .c0 .CalendarDay__selected,
-.c0 .CalendarDay__selected_span {
+.c0 .CalendarDay__selected_span,
+.c0 .CalendarDay__hovered_span:hover,
+.c0 .CalendarDay__hovered_span {
   background: #90ee7e;
   color: black;
 }
@@ -275,7 +277,9 @@ exports[`DateRangePicker should render with custom date format 1`] = `
 }
 
 .c0 .CalendarDay__selected,
-.c0 .CalendarDay__selected_span {
+.c0 .CalendarDay__selected_span,
+.c0 .CalendarDay__hovered_span:hover,
+.c0 .CalendarDay__hovered_span {
   background: #90ee7e;
   color: black;
 }
@@ -468,7 +472,9 @@ exports[`DateRangePicker with given date should render DateRangePicker starting 
 }
 
 .c0 .CalendarDay__selected,
-.c0 .CalendarDay__selected_span {
+.c0 .CalendarDay__selected_span,
+.c0 .CalendarDay__hovered_span:hover,
+.c0 .CalendarDay__hovered_span {
   background: #90ee7e;
   color: black;
 }

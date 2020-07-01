@@ -61,7 +61,9 @@ const defaultDatePickerStyles = css`
     }
 
     &__selected,
-    &__selected_span {
+    &__selected_span,
+    &__hovered_span:hover,
+    &__hovered_span {
       background: #90ee7e;
       color: black;
     }
