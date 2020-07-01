@@ -23,7 +23,7 @@ const fontFamilyStyle = fontFamily => {
 
 const Container = styled.div`
   font-family: ${({ fontFamily }) => fontFamilyStyle(fontFamily)};
-  font-size: ${({ size }) => sizes[size] || sizes.normal};
+  font-size: ${({ size }) => sizes[size]};
   color: ${({ textColor }) => colors[textColor] || "unset"};
 `;
 
