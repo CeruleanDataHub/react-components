@@ -1,6 +1,7 @@
 import { shallow } from "enzyme";
 import React from "react";
 import renderer from "react-test-renderer";
+import styled from "styled-components";
 
 import { Fullscreen } from "./Fullscreen";
 
@@ -28,6 +29,16 @@ describe("Fullscreen", () => {
   it("should call default props onClick function when no onClick property is passed", () => {
     const component = renderer.create(<Fullscreen />);
     component.root.props.onClick();
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("should have 'as' prop", () => {
+    const Custom = styled.div`
+      margin-bottom: 0.5rem;
+    `;
+
+    const component = renderer.create(<Fullscreen as={Custom} />);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
