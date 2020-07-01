@@ -42,4 +42,27 @@ xdescribe("Map", () => {
     const component = shallow(<Map series={series} title="Map title" />);
     expect(toJson(component)).toMatchSnapshot();
   });
+
+  it("should accept containerProps property", () => {
+    const component = shallow(
+      <Map
+        series={series}
+        title="Map title"
+        containerProps={{ title: "test" }}
+      />
+    );
+    expect(toJson(component)).toMatchSnapshot();
+  });
+
+  it("should render map with data, title and min and max color values", () => {
+    const component = shallow(
+      <Map
+        series={series}
+        title="Map title"
+        minColor="#000000"
+        maxColor="#ffffff"
+      />
+    );
+    expect(toJson(component)).toMatchSnapshot();
+  });
 });
