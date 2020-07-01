@@ -20,9 +20,9 @@ export const Chart = ({
   title,
   xAxis,
   series,
-  type = "line",
-  options = {},
-  containerProps = null
+  type,
+  options,
+  containerProps
 }) => {
   const xAxisData = [...(options.xAxis || []), ...(xAxis || [])];
   const chartOptions = {
