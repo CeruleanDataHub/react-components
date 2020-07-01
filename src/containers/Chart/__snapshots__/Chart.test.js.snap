@@ -2,6 +2,7 @@
 
 exports[`Chart different types of charts should render area chart 1`] = `
 <Memo([object Object])
+  containerProps={null}
   highcharts={
     Object {
       "Axis": [Function],
@@ -3315,6 +3316,7 @@ exports[`Chart different types of charts should render area chart 1`] = `
 
 exports[`Chart different types of charts should render areaspline chart 1`] = `
 <Memo([object Object])
+  containerProps={null}
   highcharts={
     Object {
       "Axis": [Function],
@@ -6628,6 +6630,7 @@ exports[`Chart different types of charts should render areaspline chart 1`] = `
 
 exports[`Chart different types of charts should render bar chart 1`] = `
 <Memo([object Object])
+  containerProps={null}
   highcharts={
     Object {
       "Axis": [Function],
@@ -9941,6 +9944,7 @@ exports[`Chart different types of charts should render bar chart 1`] = `
 
 exports[`Chart different types of charts should render dependencywheel chart 1`] = `
 <Memo([object Object])
+  containerProps={null}
   highcharts={
     Object {
       "Axis": [Function],
@@ -13254,6 +13258,7 @@ exports[`Chart different types of charts should render dependencywheel chart 1`]
 
 exports[`Chart different types of charts should render heatmap chart 1`] = `
 <Memo([object Object])
+  containerProps={null}
   highcharts={
     Object {
       "Axis": [Function],
@@ -16567,6 +16572,7 @@ exports[`Chart different types of charts should render heatmap chart 1`] = `
 
 exports[`Chart different types of charts should render line chart 1`] = `
 <Memo([object Object])
+  containerProps={null}
   highcharts={
     Object {
       "Axis": [Function],
@@ -19880,6 +19886,7 @@ exports[`Chart different types of charts should render line chart 1`] = `
 
 exports[`Chart different types of charts should render pie chart 1`] = `
 <Memo([object Object])
+  containerProps={null}
   highcharts={
     Object {
       "Axis": [Function],
@@ -23193,6 +23200,7 @@ exports[`Chart different types of charts should render pie chart 1`] = `
 
 exports[`Chart different types of charts should render spline chart 1`] = `
 <Memo([object Object])
+  containerProps={null}
   highcharts={
     Object {
       "Axis": [Function],
@@ -26506,6 +26514,7 @@ exports[`Chart different types of charts should render spline chart 1`] = `
 
 exports[`Chart different types of charts should render treemap chart 1`] = `
 <Memo([object Object])
+  containerProps={null}
   highcharts={
     Object {
       "Axis": [Function],
@@ -29819,6 +29828,7 @@ exports[`Chart different types of charts should render treemap chart 1`] = `
 
 exports[`Chart should render chart 1`] = `
 <Memo([object Object])
+  containerProps={null}
   highcharts={
     Object {
       "Axis": [Function],
@@ -33107,6 +33117,7 @@ exports[`Chart should render chart 1`] = `
 
 exports[`Chart should render chart with custom options 1`] = `
 <Memo([object Object])
+  containerProps={null}
   highcharts={
     Object {
       "Axis": [Function],
@@ -36460,6 +36471,7 @@ exports[`Chart should render chart with custom options 1`] = `
 
 exports[`Chart should render chart with simple data 1`] = `
 <Memo([object Object])
+  containerProps={null}
   highcharts={
     Object {
       "Axis": [Function],
