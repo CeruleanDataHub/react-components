@@ -1,3 +1,4 @@
+import { shallow } from "enzyme";
 import moment from "moment";
 import React from "react";
 import renderer from "react-test-renderer";
@@ -27,6 +28,16 @@ describe("DateRangePicker", () => {
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
+  });
+
+  it("should fire onDatesChange event handler", () => {
+    const handleClick = jest.fn();
+    const component = shallow(
+      <DateRangePicker name="test-onclick" onDatesChange={handleClick} />
+    );
+    expect(handleClick).not.toHaveBeenCalled();
+    component.props().onDatesChange({ startDate: moment(), endDate: moment() });
+    expect(handleClick).toHaveBeenCalled();
   });
 });
 
