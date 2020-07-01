@@ -37,6 +37,7 @@ export const SingleDatePicker = ({ startDate, dateFormat, monthsShown }) => {
           displayFormat={dateFormat}
           customInputIcon={<Icon name="calendar" as={CalendarIcon} />}
           id="single-date-picker"
+          hideKeyboardShortcutsPanel
         />
       </Typography>
     </Container>

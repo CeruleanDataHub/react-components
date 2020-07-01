@@ -7,4 +7,8 @@ export default {
   component: SingleDatePicker
 };
 
-export const SingleDatePickerStory = () => <SingleDatePicker />;
+export const SingleDatePickerStory = () => (
+  <div style={{ minHeight: 400 }}>
+    <SingleDatePicker />
+  </div>
+);
