@@ -20,7 +20,12 @@ const CalendarIcon = styled.span`
   font-size: 1.25em;
 `;
 
-export const SingleDatePicker = ({ startDate, dateFormat, monthsShown }) => {
+export const SingleDatePicker = ({
+  name,
+  startDate,
+  dateFormat,
+  monthsShown
+}) => {
   const [dateValue, setDateValue] = useState(startDate);
   const [isFocused, setIsFocused] = useState(false);
 
@@ -36,7 +41,7 @@ export const SingleDatePicker = ({ startDate, dateFormat, monthsShown }) => {
           firstDayOfWeek={1}
           displayFormat={dateFormat}
           customInputIcon={<Icon name="calendar" as={CalendarIcon} />}
-          id="single-date-picker"
+          id={`${name}-single-datepicker`}
           hideKeyboardShortcutsPanel
         />
       </Typography>
@@ -45,6 +50,8 @@ export const SingleDatePicker = ({ startDate, dateFormat, monthsShown }) => {
 };
 
 SingleDatePicker.propTypes = {
+  /** Unique id for datepicker */
+  name: PropTypes.string.isRequired,
   /** Starting date to be shown on date picker. Defaults to current day. */
   startDate: momentPropTypes.momentObj,
   /** How the date should be displayed. */

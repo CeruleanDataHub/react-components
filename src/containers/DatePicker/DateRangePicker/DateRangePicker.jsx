@@ -6,6 +6,14 @@ import PropTypes from "prop-types";
 import React, { useState } from "react";
 import { DateRangePicker as DateRangePickerWrapper } from "react-dates";
 import momentPropTypes from "react-moment-proptypes";
+import styled from "styled-components";
+
+import { Typography } from "../../Typography/Typography";
+import { DateRangePickerStyles } from "../datepickerStyles";
+
+const Container = styled.div`
+  ${DateRangePickerStyles};
+`;
 
 export const DateRangePicker = ({
   name,
@@ -18,20 +26,27 @@ export const DateRangePicker = ({
   const [focusedInputValue, setFocusedInputValue] = useState(null);
 
   return (
-    <DateRangePickerWrapper
-      onDatesChange={dates => {
-        setStartDateValue(dates.startDate);
-        setEndDateValue(dates.endDate);
-        onDatesChange({ startDate: dates.startDate, endDate: dates.endDate });
-      }}
-      startDate={startDateValue}
-      startDateId={`${name}-start`}
-      endDate={endDateValue}
-      endDateId={`${name}-end`}
-      focusedInput={focusedInputValue}
-      onFocusChange={focusedInput => setFocusedInputValue(focusedInput)}
-      hideKeyboardShortcutsPanel
-    />
+    <Container>
+      <Typography fontFamily="openSans">
+        <DateRangePickerWrapper
+          onDatesChange={dates => {
+            setStartDateValue(dates.startDate);
+            setEndDateValue(dates.endDate);
+            onDatesChange({
+              startDate: dates.startDate,
+              endDate: dates.endDate
+            });
+          }}
+          startDate={startDateValue}
+          startDateId={`${name}-start`}
+          endDate={endDateValue}
+          endDateId={`${name}-end`}
+          focusedInput={focusedInputValue}
+          onFocusChange={focusedInput => setFocusedInputValue(focusedInput)}
+          hideKeyboardShortcutsPanel
+        />
+      </Typography>
+    </Container>
   );
 };
 

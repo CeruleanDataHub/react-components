@@ -9,18 +9,18 @@ export default {
 
 export const SingleDatePickerStory = () => (
   <div style={{ minHeight: 400 }}>
-    <SingleDatePicker />
+    <SingleDatePicker name="default" />
   </div>
 );
 
 export const SingleDatePickerWithCustomDateFormatStory = () => (
   <div style={{ minHeight: 400 }}>
-    <SingleDatePicker dateFormat="MM/DD/yyyy" />
+    <SingleDatePicker name="dateformat" dateFormat="MM/DD/yyyy" />
   </div>
 );
 
 export const SingleDatePickerTwoMonthsShownStory = () => (
   <div style={{ minHeight: 400 }}>
-    <SingleDatePicker monthsShown={2} />
+    <SingleDatePicker name="months" monthsShown={2} />
   </div>
 );

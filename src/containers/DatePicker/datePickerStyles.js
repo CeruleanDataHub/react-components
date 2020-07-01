@@ -77,3 +77,7 @@ export const SingleDatePickerStyles = css`
     }
   }
 `;
+
+export const DateRangePickerStyles = css`
+  ${SingleDatePickerStyles};
+`;

@@ -22,21 +22,23 @@ describe("SingleDatePicker", () => {
   });
 
   it("should render", () => {
-    const component = renderer.create(<SingleDatePicker />);
+    const component = renderer.create(<SingleDatePicker name="test" />);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   it("should render with custom date format", () => {
     const component = renderer.create(
-      <SingleDatePicker dateFormat="MM/DD/yyyy" />
+      <SingleDatePicker name="test-format" dateFormat="MM/DD/yyyy" />
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   it("should render with two months shown", () => {
-    const component = renderer.create(<SingleDatePicker monthsShown={2} />);
+    const component = renderer.create(
+      <SingleDatePicker name="test-months" monthsShown={2} />
+    );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
@@ -45,7 +47,7 @@ describe("SingleDatePicker", () => {
 describe("SingleDatePicker with given date", () => {
   it("should render with given startDate", () => {
     const component = renderer.create(
-      <SingleDatePicker startDate={moment("2020-01-01")} />
+      <SingleDatePicker name="test-date" startDate={moment("2020-01-01")} />
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();

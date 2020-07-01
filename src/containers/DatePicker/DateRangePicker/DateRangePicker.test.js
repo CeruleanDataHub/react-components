@@ -1,4 +1,4 @@
-import { shallow } from "enzyme";
+import { mount } from "enzyme";
 import moment from "moment";
 import React from "react";
 import renderer from "react-test-renderer";
@@ -32,7 +32,7 @@ describe("DateRangePicker", () => {
 
   it("should fire onDatesChange event handler", () => {
     const handleClick = jest.fn();
-    const component = shallow(
+    const component = mount(
       <DateRangePicker name="test-onclick" onDatesChange={handleClick} />
     );
     expect(handleClick).not.toHaveBeenCalled();
