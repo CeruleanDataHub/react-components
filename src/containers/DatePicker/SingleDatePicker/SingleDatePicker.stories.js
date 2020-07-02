@@ -28,6 +28,6 @@ export const SingleDatePickerTwoMonthsShownStory = () => (
 
 export const SingleDatePickerWithCustomStartDateStory = () => (
   <div style={{ minHeight: 400 }}>
-    <SingleDatePicker name="months" startDate={moment("2016-06-01")} />
+    <SingleDatePicker name="startDate" startDate={moment("2016-06-01")} />
   </div>
 );
