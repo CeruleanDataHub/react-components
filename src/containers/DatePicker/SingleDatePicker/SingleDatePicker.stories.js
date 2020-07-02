@@ -1,3 +1,4 @@
+import moment from "moment";
 import React from "react";
 
 import { SingleDatePicker } from "./SingleDatePicker";
@@ -22,5 +23,11 @@ export const SingleDatePickerWithCustomDateFormatStory = () => (
 export const SingleDatePickerTwoMonthsShownStory = () => (
   <div style={{ minHeight: 400 }}>
     <SingleDatePicker name="months" monthsShown={2} />
+  </div>
+);
+
+export const SingleDatePickerWithCustomStartDateStory = () => (
+  <div style={{ minHeight: 400 }}>
+    <SingleDatePicker name="months" startDate={moment("2016-06-01")} />
   </div>
 );

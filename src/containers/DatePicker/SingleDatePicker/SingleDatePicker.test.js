@@ -1,3 +1,4 @@
+import MockDate from "mockdate";
 import moment from "moment";
 import React from "react";
 import renderer from "react-test-renderer";
@@ -5,21 +6,18 @@ import renderer from "react-test-renderer";
 import { SingleDatePicker } from "./SingleDatePicker";
 
 const mockDate = new Date("2020-06-19");
-const RealDate = Date;
+
+const before = () => {
+  MockDate.set(mockDate);
+};
+
+const after = () => {
+  MockDate.reset();
+};
 
 describe("SingleDatePicker", () => {
-  beforeAll(() => {
-    global.Date = class extends RealDate {
-      constructor() {
-        super();
-        return mockDate;
-      }
-    };
-  });
-
-  afterAll(() => {
-    global.Date = RealDate;
-  });
+  beforeAll(before);
+  afterAll(after);
 
   it("should render", () => {
     const component = renderer.create(<SingleDatePicker name="test" />);
