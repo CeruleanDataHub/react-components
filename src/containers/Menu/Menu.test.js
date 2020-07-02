@@ -40,4 +40,12 @@ describe("Menu", () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+
+  it("should render closed menu", () => {
+    const component = renderer.create(
+      <Menu items={menuItems} menuOpen={false} />
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

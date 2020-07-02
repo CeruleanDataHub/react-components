@@ -27,7 +27,7 @@ const MenuItem = styled.li`
 `;
 
 const MenuItemText = styled.span`
-  display: ${props => (props.menuOpen ? "block" : "none")};
+  display: ${({ menuOpen }) => (menuOpen ? "block" : "none")};
 `;
 
 const renderItems = ({ items, menuOpen }) =>
@@ -41,7 +41,7 @@ const renderItems = ({ items, menuOpen }) =>
     </MenuItem>
   ));
 
-export const Menu = ({ items, menuOpen = true }) => (
+export const Menu = ({ items, menuOpen }) => (
   <MenuItems>{renderItems({ items, menuOpen })}</MenuItems>
 );
 
