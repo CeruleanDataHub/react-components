@@ -36,6 +36,11 @@ jobs:
         run: |
           npm test
       -
+        name: Test Coverage
+        id: Coverage
+        run: |
+          npm test -- --coverage
+      -
         name: Build and Publish
         id: Build
         run: |
