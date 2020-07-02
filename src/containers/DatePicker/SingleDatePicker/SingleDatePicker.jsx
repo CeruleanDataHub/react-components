@@ -23,6 +23,7 @@ const CalendarIcon = styled.span`
 export const SingleDatePicker = ({
   name,
   startDate,
+  onDateChange,
   dateFormat,
   monthsShown
 }) => {
@@ -34,7 +35,10 @@ export const SingleDatePicker = ({
       <Typography fontFamily="openSans">
         <DatePicker
           date={dateValue}
-          onDateChange={date => setDateValue(date)}
+          onDateChange={date => {
+            setDateValue(date);
+            onDateChange(date);
+          }}
           focused={isFocused}
           onFocusChange={({ focused }) => setIsFocused(focused)}
           numberOfMonths={monthsShown}
@@ -54,6 +58,8 @@ SingleDatePicker.propTypes = {
   name: PropTypes.string.isRequired,
   /** Starting date to be shown on date picker. Defaults to current day. */
   startDate: momentPropTypes.momentObj,
+  /** Event listened for date change */
+  onDateChange: PropTypes.func.isRequired,
   /** How the date should be displayed. */
   dateFormat: PropTypes.string,
   /** How many months are shown. */

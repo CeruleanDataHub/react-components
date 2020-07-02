@@ -1,3 +1,4 @@
+import { mount } from "enzyme";
 import MockDate from "mockdate";
 import moment from "moment";
 import React from "react";
@@ -39,6 +40,22 @@ describe("SingleDatePicker", () => {
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
+  });
+
+  it("should call onDateChange event handler when date is changed", () => {
+    const handleClick = jest.fn();
+    const wrapper = mount(
+      <SingleDatePicker name="test-onDatesChange" onDateChange={handleClick} />
+    );
+    const event = {
+      target: {
+        value: "2020-07-12"
+      }
+    };
+    expect(handleClick).not.toHaveBeenCalled();
+    wrapper.find("input").simulate("change", event);
+
+    expect(handleClick).toHaveBeenCalled();
   });
 });
 
