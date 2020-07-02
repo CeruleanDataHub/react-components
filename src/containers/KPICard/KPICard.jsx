@@ -41,13 +41,7 @@ const getIconName = growth => {
   return growth > 0 ? "chevron-up" : "chevron-down";
 };
 
-export const KPICard = ({
-  title,
-  value,
-  growth,
-  redValue = false,
-  greenValue = false
-}) => (
+export const KPICard = ({ title, value, growth, redValue, greenValue }) => (
   <Container>
     <Typography color="gray" fontFamily="openSans">
       {title}
