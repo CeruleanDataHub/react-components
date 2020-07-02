@@ -8,19 +8,17 @@ import { DateRangePicker } from "./DateRangePicker";
 const mockDate = new Date("2020-06-19");
 const RealDate = Date;
 
-describe("DateRangePicker", () => {
-  beforeAll(() => {
-    global.Date = class extends RealDate {
-      constructor() {
-        super();
-        return mockDate;
-      }
-    };
-  });
+const before = () => {
+  global.date = mockDate;
+};
 
-  afterAll(() => {
-    global.Date = RealDate;
-  });
+const after = () => {
+  global.Date = RealDate;
+};
+
+describe("DateRangePicker", () => {
+  beforeAll(before);
+  afterAll(after);
 
   it("should render", () => {
     const component = renderer.create(
@@ -54,13 +52,21 @@ describe("DateRangePicker", () => {
 });
 
 describe("DateRangePicker with given date", () => {
+  beforeAll(before);
+  afterAll(after);
+
   it("should render DateRangePicker starting from date provided", () => {
     const component = renderer.create(
       <DateRangePicker
         name="start-end-end"
         onDatesChange={() => null}
-        startDate={moment(new Date(2020, 6, 1))}
-        endDate={moment(new Date(2020, 6, 12))}
+        dateFormat="MM/DD/yyyy"
+        startDate={moment(
+          moment("2020-07-01", "YYYY-MM-DD").format("DD/MM/YYYY")
+        )}
+        endDate={moment(
+          moment("2020-07-12", "YYYY-MM-DD").format("DD/MM/YYYY")
+        )}
       />
     );
     const tree = component.toJSON();

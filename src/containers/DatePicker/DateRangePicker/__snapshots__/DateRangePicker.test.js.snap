@@ -137,7 +137,7 @@ exports[`DateRangePicker should render 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="01.07.0001"
+              value="02.07.2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -179,7 +179,7 @@ exports[`DateRangePicker should render 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="19.06.0001"
+              value="02.07.2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -332,7 +332,7 @@ exports[`DateRangePicker should render with custom date format 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="06/19/0001"
+              value="07/02/2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -374,7 +374,7 @@ exports[`DateRangePicker should render with custom date format 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="06/19/0001"
+              value="07/02/2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -527,7 +527,7 @@ exports[`DateRangePicker with given date should render DateRangePicker starting 
               readOnly={false}
               required={false}
               type="text"
-              value="01.07.2420"
+              value="01/07/2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -569,7 +569,7 @@ exports[`DateRangePicker with given date should render DateRangePicker starting 
               readOnly={false}
               required={false}
               type="text"
-              value="12.07.2420"
+              value="12/07/2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
