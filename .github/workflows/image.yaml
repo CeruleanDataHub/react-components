@@ -34,11 +34,6 @@ jobs:
         name: Test
         id: Test
         run: |
-          npm test
-      -
-        name: Test Coverage
-        id: Coverage
-        run: |
           npm test -- --coverage
       -
         name: Build and Publish
