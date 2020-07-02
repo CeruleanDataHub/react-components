@@ -42,12 +42,42 @@ describe("DateRangePicker", () => {
 
   it("should fire onDatesChange event handler", () => {
     const handleClick = jest.fn();
-    const component = mount(
-      <DateRangePicker name="test-onclick" onDatesChange={handleClick} />
+    const wrapper = mount(
+      <DateRangePicker name="test-onDatesChange" onDatesChange={handleClick} />
     );
     expect(handleClick).not.toHaveBeenCalled();
-    component.props().onDatesChange({ startDate: moment(), endDate: moment() });
+    wrapper.props().onDatesChange({ startDate: moment(), endDate: moment() });
     expect(handleClick).toHaveBeenCalled();
+  });
+
+  it("should call onDatesChange event handler when date is changed", () => {
+    const handleClick = jest.fn();
+    const wrapper = mount(
+      <DateRangePicker name="test-onDatesChange" onDatesChange={handleClick} />
+    );
+    const event = {
+      target: {
+        value: "2020-07-12"
+      }
+    };
+    expect(handleClick).not.toHaveBeenCalled();
+    wrapper
+      .find("input")
+      .first()
+      .simulate("change", event);
+
+    expect(handleClick).toHaveBeenCalled();
+  });
+
+  // TODO: this test seems like a stub for now, it's only for improving coverage
+  it("should change focus of the inputs", () => {
+    const wrapper = mount(
+      <DateRangePicker name="test-onclick" onDatesChange={() => null} />
+    );
+    wrapper
+      .find("input")
+      .first()
+      .simulate("focus");
   });
 });
 

@@ -48,7 +48,7 @@ export const DateRangePicker = ({
           endDate={endDateValue}
           endDateId={`${name}-end`}
           focusedInput={focusedInputValue}
-          onFocusChange={focusedInput => setFocusedInputValue(focusedInput)}
+          onFocusChange={setFocusedInputValue}
           hideKeyboardShortcutsPanel
           customInputIcon={<Icon name="calendar" as={CalendarIcon} />}
           displayFormat={dateFormat}
