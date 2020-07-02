@@ -1,4 +1,5 @@
 import { mount } from "enzyme";
+import MockDate from "mockdate";
 import moment from "moment";
 import React from "react";
 import renderer from "react-test-renderer";
@@ -6,14 +7,13 @@ import renderer from "react-test-renderer";
 import { DateRangePicker } from "./DateRangePicker";
 
 const mockDate = new Date("2020-06-19");
-const RealDate = Date;
 
 const before = () => {
-  global.date = mockDate;
+  MockDate.set(mockDate);
 };
 
 const after = () => {
-  global.Date = RealDate;
+  MockDate.reset();
 };
 
 describe("DateRangePicker", () => {
@@ -61,12 +61,8 @@ describe("DateRangePicker with given date", () => {
         name="start-end-end"
         onDatesChange={() => null}
         dateFormat="MM/DD/yyyy"
-        startDate={moment(
-          moment("2020-07-01", "YYYY-MM-DD").format("DD/MM/YYYY")
-        )}
-        endDate={moment(
-          moment("2020-07-12", "YYYY-MM-DD").format("DD/MM/YYYY")
-        )}
+        startDate={moment("2020-07-01", "YYYY-MM-DD")}
+        endDate={moment("2020-07-12", "YYYY-MM-DD")}
       />
     );
     const tree = component.toJSON();
