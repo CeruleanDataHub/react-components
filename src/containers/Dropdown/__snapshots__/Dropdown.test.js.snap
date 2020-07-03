@@ -106,8 +106,7 @@ exports[`Dropdown should be able to select item from list 1`] = `
   align-items: center;
   width: 100%;
   height: 40px;
-  border: 1px solid #0f181c;
-  background: #0f181c;
+  border: 1px solid;
   border-radius: 4px;
   padding: 1.25em;
   cursor: pointer;
@@ -116,7 +115,8 @@ exports[`Dropdown should be able to select item from list 1`] = `
 .c7 {
   width: 100%;
   padding: 0;
-  background: #0f181c;
+  border: 1px solid;
+  border-top: none;
   position: absolute;
   top: 22px;
   border-radius: 0 0 4px 4px;
@@ -133,6 +133,7 @@ exports[`Dropdown should be able to select item from list 1`] = `
   align-items: flex-start;
   list-style: none;
   z-index: 1;
+  box-sizing: border-box;
 }
 
 .c8 {
@@ -147,7 +148,6 @@ exports[`Dropdown should be able to select item from list 1`] = `
 }
 
 .c5 {
-  color: #90ee7e;
   font-size: 1.25em;
   font-weight: bold;
 }
@@ -170,7 +170,6 @@ exports[`Dropdown should be able to select item from list 1`] = `
       />
       <span
         className="c5"
-        color="#90ee7e"
       >
         1 selected
       </span>
@@ -279,8 +278,7 @@ exports[`Dropdown should call default props onClick function when no onClick pro
   align-items: center;
   width: 100%;
   height: 40px;
-  border: 1px solid #0f181c;
-  background: #0f181c;
+  border: 1px solid;
   border-radius: 4px;
   padding: 1.25em;
   cursor: pointer;
@@ -359,8 +357,7 @@ exports[`Dropdown should have onClick listener 1`] = `
   align-items: center;
   width: 100%;
   height: 40px;
-  border: 1px solid #0f181c;
-  background: #0f181c;
+  border: 1px solid;
   border-radius: 4px;
   padding: 1.25em;
   cursor: pointer;
@@ -439,8 +436,7 @@ exports[`Dropdown should render dropdown 1`] = `
   align-items: center;
   width: 100%;
   height: 40px;
-  border: 1px solid #0f181c;
-  background: #0f181c;
+  border: 1px solid;
   border-radius: 4px;
   padding: 1.25em;
   cursor: pointer;
@@ -567,8 +563,7 @@ exports[`Dropdown should render dropdown in open state 1`] = `
   align-items: center;
   width: 100%;
   height: 40px;
-  border: 1px solid #0f181c;
-  background: #0f181c;
+  border: 1px solid;
   border-radius: 4px;
   padding: 1.25em;
   cursor: pointer;
@@ -577,7 +572,8 @@ exports[`Dropdown should render dropdown in open state 1`] = `
 .c7 {
   width: 100%;
   padding: 0;
-  background: #0f181c;
+  border: 1px solid;
+  border-top: none;
   position: absolute;
   top: 22px;
   border-radius: 0 0 4px 4px;
@@ -594,6 +590,7 @@ exports[`Dropdown should render dropdown in open state 1`] = `
   align-items: flex-start;
   list-style: none;
   z-index: 1;
+  box-sizing: border-box;
 }
 
 .c8 {
@@ -608,7 +605,6 @@ exports[`Dropdown should render dropdown in open state 1`] = `
 }
 
 .c5 {
-  color: #90ee7e;
   font-size: 1.25em;
   font-weight: bold;
 }
@@ -633,7 +629,6 @@ exports[`Dropdown should render dropdown in open state 1`] = `
       </span>
       <span
         className="c5"
-        color="#90ee7e"
       >
         0 selected
       </span>
