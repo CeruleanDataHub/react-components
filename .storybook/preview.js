@@ -13,5 +13,5 @@ addParameters({
 });
 
 addDecorator(storyFn => (
-  <ThemeProvider theme={darkTheme}>{storyFn()}</ThemeProvider>
+  <ThemeProvider theme={lightTheme}>{storyFn()}</ThemeProvider>
 ));

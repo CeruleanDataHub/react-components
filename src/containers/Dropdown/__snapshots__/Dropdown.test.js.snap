@@ -45,15 +45,13 @@ exports[`Dropdown should be able to select item from list 1`] = `
   display: inline-block;
   width: 1em;
   height: 1em;
-  border: 1px solid #90ee7e;
-  background: #90ee7e;
+  border: 1px solid;
   text-align: center;
   border-radius: 4px;
   line-height: 1em;
 }
 
 .c13 {
-  color: black;
   font-size: 0.75em;
   font-weight: bold;
 }

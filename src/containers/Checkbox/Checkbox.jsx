@@ -21,15 +21,16 @@ const StyledCheckbox = styled.div`
   display: inline-block;
   width: 1em;
   height: 1em;
-  border: 1px solid ${props => (props.checked ? "#90ee7e" : "#999")};
-  background: ${props => (props.checked ? "#90ee7e" : "transparent")};
+  border: 1px solid ${({ checked, theme }) => (checked ? theme.green : "#999")};
+  background: ${({ checked, theme }) =>
+    checked ? theme.green : "transparent"};
   text-align: center;
   border-radius: 4px;
   line-height: 1em;
 `;
 
 const CheckmarkIcon = styled.span`
-  color: black;
+  color: ${({ theme }) => theme.checkmark};
   font-size: 0.75em;
   font-weight: bold;
 `;

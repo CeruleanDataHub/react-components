@@ -236,15 +236,13 @@ exports[`Checkbox should render Checkbox with checked prop 1`] = `
   display: inline-block;
   width: 1em;
   height: 1em;
-  border: 1px solid #90ee7e;
-  background: #90ee7e;
+  border: 1px solid;
   text-align: center;
   border-radius: 4px;
   line-height: 1em;
 }
 
 .c4 {
-  color: black;
   font-size: 0.75em;
   font-weight: bold;
 }
@@ -391,15 +389,13 @@ exports[`Checkbox should render Checkbox with value and label, and be checked 1`
   display: inline-block;
   width: 1em;
   height: 1em;
-  border: 1px solid #90ee7e;
-  background: #90ee7e;
+  border: 1px solid;
   text-align: center;
   border-radius: 4px;
   line-height: 1em;
 }
 
 .c4 {
-  color: black;
   font-size: 0.75em;
   font-weight: bold;
 }
