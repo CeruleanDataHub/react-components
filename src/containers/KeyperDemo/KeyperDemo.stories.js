@@ -386,7 +386,7 @@ const menuItems = [
 ];
 
 const Container = styled.div`
-  background: #000000;
+  background: ${({ theme }) => theme.background};
   color: #999999;
 `;
 

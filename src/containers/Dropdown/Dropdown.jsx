@@ -18,8 +18,8 @@ const DropdownContainer = styled.button`
   align-items: center;
   width: 100%;
   height: 40px;
-  border: 1px solid #0f181c;
-  background: #0f181c;
+  border: 1px solid ${({ theme }) => theme.border};
+  background: ${({ theme }) => theme.background};
   border-radius: 4px;
   padding: 1.25em;
   cursor: pointer;
@@ -28,7 +28,9 @@ const DropdownContainer = styled.button`
 const ItemList = styled.ul`
   width: 100%;
   padding: 0;
-  background: #0f181c;
+  background: ${({ theme }) => theme.background};
+  border: 1px solid ${({ theme }) => theme.border};
+  border-top: none;
   position: absolute;
   top: 22px;
   border-radius: 0 0 4px 4px;
@@ -37,6 +39,7 @@ const ItemList = styled.ul`
   align-items: flex-start;
   list-style: none;
   z-index: 1;
+  box-sizing: border-box;
 `;
 
 const DropdownItem = styled.li`
@@ -45,7 +48,7 @@ const DropdownItem = styled.li`
 `;
 
 const DropdownText = styled.span`
-  color: ${({ color }) => color || "#999"};
+  color: ${({ green, theme }) => (green ? theme.green : "#999")};
   font-size: 1.25em;
   font-weight: bold;
 `;
@@ -85,7 +88,9 @@ export const Dropdown = ({ isOpen, label, onClick, items }) => {
         <Button onClick={onClick} as={DropdownContainer}>
           <DropdownText>{label}</DropdownText>
           {isOpen && (
-            <DropdownText color="#90ee7e">{`${checkedItems.length} selected`}</DropdownText>
+            <DropdownText green>
+              {`${checkedItems.length} selected`}
+            </DropdownText>
           )}
           <Icon
             name={isOpen ? "chevron-up" : "chevron-down"}
