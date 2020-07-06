@@ -1,3 +1,4 @@
+import { withKnobs } from "@storybook/addon-knobs";
 import moment from "moment";
 import React from "react";
 
@@ -5,7 +6,8 @@ import { SingleDatePicker } from "./SingleDatePicker";
 
 export default {
   title: "SingleDatePicker",
-  component: SingleDatePicker
+  component: SingleDatePicker,
+  decorators: [withKnobs]
 };
 
 export const SingleDatePickerStory = () => (

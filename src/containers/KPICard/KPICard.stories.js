@@ -1,3 +1,4 @@
+import { withKnobs } from "@storybook/addon-knobs";
 import React from "react";
 
 import { Cell, Grid } from "../Grid/Grid";
@@ -5,7 +6,8 @@ import { KPICard } from "./KPICard";
 
 export default {
   title: "KPICard",
-  component: KPICard
+  component: KPICard,
+  decorators: [withKnobs]
 };
 
 export const KPICardStory = () => (

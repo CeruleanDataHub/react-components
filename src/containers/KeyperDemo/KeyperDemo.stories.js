@@ -1,4 +1,5 @@
 import mapDataFI from "@highcharts/map-collection/countries/fi/fi-all.geo.json";
+import { withKnobs } from "@storybook/addon-knobs";
 import React, { useState } from "react";
 import styled from "styled-components";
 
@@ -635,5 +636,6 @@ export const KeyperDemoPage2 = () => {
 
 export default {
   title: "Keyper Demo",
-  component: KeyperDemo
+  component: KeyperDemo,
+  decorators: [withKnobs]
 };

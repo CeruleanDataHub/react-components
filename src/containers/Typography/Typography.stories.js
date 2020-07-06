@@ -1,10 +1,12 @@
+import { withKnobs } from "@storybook/addon-knobs";
 import React from "react";
 
 import { Typography } from "./Typography";
 
 export default {
   title: "Typography",
-  component: Typography
+  component: Typography,
+  decorators: [withKnobs]
 };
 
 export const TypographyStory = () => <Typography>Typography</Typography>;

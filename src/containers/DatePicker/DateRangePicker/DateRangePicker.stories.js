@@ -1,4 +1,5 @@
 import { action } from "@storybook/addon-actions";
+import { withKnobs } from "@storybook/addon-knobs";
 import moment from "moment";
 import React from "react";
 
@@ -6,7 +7,8 @@ import { DateRangePicker } from "./DateRangePicker";
 
 export default {
   title: "DateRangePicker",
-  component: DateRangePicker
+  component: DateRangePicker,
+  decorators: [withKnobs]
 };
 
 export const DateRangePickerStory = () => (

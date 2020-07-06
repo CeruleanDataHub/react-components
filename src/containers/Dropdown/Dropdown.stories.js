@@ -1,4 +1,5 @@
 import { action } from "@storybook/addon-actions";
+import { withKnobs } from "@storybook/addon-knobs";
 import React from "react";
 
 import { Dropdown } from "./Dropdown";
@@ -6,7 +7,8 @@ import { DropdownWrapper } from "./DropdownWrapper";
 
 export default {
   title: "Dropdown",
-  component: Dropdown
+  component: Dropdown,
+  decorators: [withKnobs]
 };
 
 const items = [

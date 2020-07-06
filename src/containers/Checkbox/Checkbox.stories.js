@@ -1,4 +1,5 @@
 import { action } from "@storybook/addon-actions";
+import { withKnobs } from "@storybook/addon-knobs";
 import React from "react";
 
 import { Checkbox } from "./Checkbox";
@@ -6,7 +7,8 @@ import { CheckboxWrapper } from "./CheckboxWrapper";
 
 export default {
   title: "Checkbox",
-  component: Checkbox
+  component: Checkbox,
+  decorators: [withKnobs]
 };
 
 const checkboxes = [...Array(10).keys()].map(index => index + 1);

@@ -1,11 +1,13 @@
 import { action } from "@storybook/addon-actions";
+import { withKnobs } from "@storybook/addon-knobs";
 import React from "react";
 
 import { Button } from "./Button";
 
 export default {
   title: "Button",
-  component: Button
+  component: Button,
+  decorators: [withKnobs]
 };
 
 const colors = [
