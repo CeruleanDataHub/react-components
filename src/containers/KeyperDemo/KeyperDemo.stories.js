@@ -477,6 +477,7 @@ export const KeyperDemo = () => {
               </Cell>
               <Cell>
                 <SingleDatePicker
+                  name="keyper-calendar"
                   startDate={selectedDate}
                   onDateChange={setSelectedDate}
                 />
@@ -576,6 +577,7 @@ export const KeyperDemoPage2 = () => {
               </Cell>
               <Cell>
                 <SingleDatePicker
+                  name="keyper-calendar"
                   startDate={selectedDate}
                   onDateChange={setSelectedDate}
                 />
