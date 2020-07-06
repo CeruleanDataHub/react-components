@@ -1,5 +1,6 @@
 import mapDataFI from "@highcharts/map-collection/countries/fi/fi-all.geo.json";
 import { withKnobs } from "@storybook/addon-knobs";
+import moment from "moment";
 import React, { useState } from "react";
 import styled from "styled-components";
 
@@ -448,6 +449,7 @@ const mockfullscreen = () => console.log("full screen");
 export const KeyperDemo = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(true);
+  const [selectedDate, setSelectedDate] = useState(moment());
 
   return (
     <Container>
@@ -474,7 +476,10 @@ export const KeyperDemo = () => {
                 />
               </Cell>
               <Cell>
-                <SingleDatePicker />
+                <SingleDatePicker
+                  startDate={selectedDate}
+                  onDateChange={setSelectedDate}
+                />
               </Cell>
               <Cell>
                 <Button color="transparent" as={PagingButtonSelected}>
@@ -543,6 +548,7 @@ export const KeyperDemo = () => {
 export const KeyperDemoPage2 = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(true);
+  const [selectedDate, setSelectedDate] = useState(moment());
 
   return (
     <Container>
@@ -569,7 +575,10 @@ export const KeyperDemoPage2 = () => {
                 />
               </Cell>
               <Cell>
-                <SingleDatePicker />
+                <SingleDatePicker
+                  startDate={selectedDate}
+                  onDateChange={setSelectedDate}
+                />
               </Cell>
               <Cell>
                 <Button text="1" color="transparent" as={PagingButton}>
