@@ -6,6 +6,7 @@ export const lightTheme = {
   checkmark: "#fff",
   boxShadow: "0 0 7px #e0e1e4",
   active: "#fff",
+  menuColor: "#999",
   logoImg:
     "https://images.unsplash.com/photo-1577712319170-c52781180114?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3642&q=80",
   calendar: {
@@ -24,6 +25,7 @@ export const darkTheme = {
   checkmark: "#000",
   boxShadow: "none",
   active: "#0f191e",
+  menuColor: "#ffffff",
   logoImg:
     "https://images.unsplash.com/photo-1503792243040-7ce7f5f06085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2515&q=80",
   calendar: {

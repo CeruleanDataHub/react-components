@@ -443,24 +443,26 @@ const PositionRelative = styled.div`
   position: relative;
 `;
 
+const NavigatonContainer = styled.div`
+  color: ${({ theme }) => theme.menuColor};
+`;
+
 // eslint-disable-next-line no-console
 const mockfullscreen = () => console.log("full screen");
 
 export const KeyperDemo = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
   const [selectedDate, setSelectedDate] = useState(moment());
 
   return (
     <Container>
       <Typography fontFamily="openSans">
         <GridWithCollapsibleMenu menuOpen={menuOpen}>
-          <Cell>
-            <Typography color="white">
-              <Navigation onMenuToggle={setMenuOpen}>
-                <Menu items={menuItems} menuOpen={menuOpen} />
-              </Navigation>
-            </Typography>
+          <Cell as={NavigatonContainer}>
+            <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
+              <Menu items={menuItems} menuOpen={menuOpen} />
+            </Navigation>
           </Cell>
           <Cell>
             <Grid as={HeaderRow}>
@@ -548,19 +550,17 @@ export const KeyperDemo = () => {
 
 export const KeyperDemoPage2 = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
   const [selectedDate, setSelectedDate] = useState(moment());
 
   return (
     <Container>
       <Typography fontFamily="openSans">
         <GridWithCollapsibleMenu menuOpen={menuOpen}>
-          <Cell>
-            <Typography color="white">
-              <Navigation onMenuToggle={setMenuOpen}>
-                <Menu items={menuItems} menuOpen={menuOpen} />
-              </Navigation>
-            </Typography>
+          <Cell as={NavigatonContainer}>
+            <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
+              <Menu items={menuItems} menuOpen={menuOpen} />
+            </Navigation>
           </Cell>
           <Cell>
             <Grid as={HeaderRow}>
