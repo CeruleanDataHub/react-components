@@ -6,7 +6,6 @@ import { Button } from "../Button/Button";
 import { Icon } from "../Icon/Icon";
 
 const NavBar = styled.nav`
-  background-color: rgba(0, 0, 0, 0.75);
   z-index: 1;
 `;
 
@@ -18,6 +17,7 @@ const MenuOpen = styled.button`
   height: 3.5em;
   cursor: pointer;
   border: none;
+  margin: 0 auto;
 `;
 
 const MenuIcon = styled.span`
