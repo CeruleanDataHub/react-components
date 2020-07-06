@@ -387,13 +387,20 @@ const menuItems = [
 ];
 
 const Container = styled.div`
-  background: ${({ theme }) => theme.background};
+  background: ${({ theme }) => theme.keyperBackground};
   color: #999999;
 `;
 
-const Img = styled.img`
+const HeaderRow = styled.div`
+  margin-bottom: 2rem;
+`;
+
+const Logo = styled.div`
   width: 170px;
   height: 100px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(${({ theme }) => theme.logoImg});
 `;
 
 const PagingButton = styled.button`
@@ -404,8 +411,9 @@ const PagingButton = styled.button`
 `;
 
 const PagingButtonSelected = styled(PagingButton)`
-  background: #0f191e;
   color: #999999;
+  background: ${({ theme }) => theme.active};
+  box-shadow: ${({ theme }) => theme.boxShadow};
 `;
 
 const KPIGrid = styled.div`
@@ -413,7 +421,9 @@ const KPIGrid = styled.div`
 `;
 
 const KPICell = styled.div`
-  background: #0f181c;
+  background: ${({ theme }) => theme.background};
+  box-shadow: ${({ theme }) => theme.boxShadow};
+  border-radius: 4px;
 `;
 
 const GridWithCollapsibleMenu = styled(Grid)`
@@ -451,12 +461,9 @@ export const KeyperDemo = () => {
             </Typography>
           </Cell>
           <Cell>
-            <Grid>
+            <Grid as={HeaderRow}>
               <Cell>
-                <Img
-                  src="https://images.unsplash.com/photo-1503792243040-7ce7f5f06085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2515&q=80"
-                  alt="Unsplash key as logo placeholder"
-                />
+                <Logo />
               </Cell>
               <Cell>
                 <Dropdown
@@ -549,12 +556,9 @@ export const KeyperDemoPage2 = () => {
             </Typography>
           </Cell>
           <Cell>
-            <Grid>
+            <Grid as={HeaderRow}>
               <Cell>
-                <Img
-                  src="https://images.unsplash.com/photo-1503792243040-7ce7f5f06085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2515&q=80"
-                  alt="Unsplash key as logo placeholder"
-                />
+                <Logo />
               </Cell>
               <Cell>
                 <Dropdown
@@ -568,12 +572,12 @@ export const KeyperDemoPage2 = () => {
                 <SingleDatePicker />
               </Cell>
               <Cell>
-                <Button text="1" color="transparent" as={PagingButton} />
-                <Button
-                  text="2"
-                  color="transparent"
-                  as={PagingButtonSelected}
-                />
+                <Button text="1" color="transparent" as={PagingButton}>
+                  1
+                </Button>
+                <Button color="transparent" as={PagingButtonSelected}>
+                  2
+                </Button>
               </Cell>
             </Grid>
             <Grid as={KPIGrid}>
