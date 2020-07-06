@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DateRangePicker should render 1`] = `
+exports[`DateRangePicker dark should render 1`] = `
 .c3 {
   text-align: center;
 }
@@ -24,6 +24,10 @@ exports[`DateRangePicker should render 1`] = `
 
 .c0 .DateInput {
   color: #999;
+}
+
+.c0 .DateInput_fang {
+  display: none;
 }
 
 .c0 .DateInput_fangStroke {
@@ -73,12 +77,12 @@ exports[`DateRangePicker should render 1`] = `
 .c0 .CalendarDay__default {
   background: #0f181c;
   color: #999;
-  border: 1px solid black;
+  border: 1px solid #000000;
 }
 
 .c0 .CalendarDay__default:hover {
-  background: white;
-  color: black;
+  background: #ffffff;
+  color: #000000;
 }
 
 .c0 .CalendarDay__selected,
@@ -86,7 +90,7 @@ exports[`DateRangePicker should render 1`] = `
 .c0 .CalendarDay__hovered_span:hover,
 .c0 .CalendarDay__hovered_span {
   background: #90ee7e;
-  color: black;
+  color: #000000;
 }
 
 .c2 {
@@ -137,7 +141,7 @@ exports[`DateRangePicker should render 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="03.07.2020"
+              value="06.07.2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -179,7 +183,7 @@ exports[`DateRangePicker should render 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="03.07.2020"
+              value="06.07.2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -195,7 +199,7 @@ exports[`DateRangePicker should render 1`] = `
 </div>
 `;
 
-exports[`DateRangePicker should render with custom date format 1`] = `
+exports[`DateRangePicker dark should render with custom date format 1`] = `
 .c3 {
   text-align: center;
 }
@@ -219,6 +223,10 @@ exports[`DateRangePicker should render with custom date format 1`] = `
 
 .c0 .DateInput {
   color: #999;
+}
+
+.c0 .DateInput_fang {
+  display: none;
 }
 
 .c0 .DateInput_fangStroke {
@@ -268,12 +276,12 @@ exports[`DateRangePicker should render with custom date format 1`] = `
 .c0 .CalendarDay__default {
   background: #0f181c;
   color: #999;
-  border: 1px solid black;
+  border: 1px solid #000000;
 }
 
 .c0 .CalendarDay__default:hover {
-  background: white;
-  color: black;
+  background: #ffffff;
+  color: #000000;
 }
 
 .c0 .CalendarDay__selected,
@@ -281,7 +289,7 @@ exports[`DateRangePicker should render with custom date format 1`] = `
 .c0 .CalendarDay__hovered_span:hover,
 .c0 .CalendarDay__hovered_span {
   background: #90ee7e;
-  color: black;
+  color: #000000;
 }
 
 .c2 {
@@ -332,7 +340,7 @@ exports[`DateRangePicker should render with custom date format 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="07/03/2020"
+              value="07/06/2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -374,7 +382,405 @@ exports[`DateRangePicker should render with custom date format 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="07/03/2020"
+              value="07/06/2020"
+            />
+            <p
+              className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+              id="DateInput__screen-reader-message-test-format-end"
+            >
+              Navigate backward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DateRangePicker light should render 1`] = `
+.c3 {
+  text-align: center;
+}
+
+.c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: unset;
+}
+
+.c0 .DateRangePicker {
+  color: #999;
+  cursor: pointer;
+}
+
+.c0 .DateRangePicker .DateRangePickerInput {
+  background: #fff;
+  border-radius: 4px;
+  border: none;
+}
+
+.c0 .DateInput {
+  color: #999;
+}
+
+.c0 .DateInput_fang {
+  display: none;
+}
+
+.c0 .DateInput_fangStroke {
+  fill: #fff;
+}
+
+.c0 .DateInput_input {
+  color: inherit;
+  background-color: #fff;
+  border-radius: 0 4px 4px 0;
+}
+
+.c0 .DateInput_input__focused {
+  border-bottom-color: transparent;
+}
+
+.c0 .DayPicker {
+  box-shadow: none;
+  background: #fff;
+  border-radius: 0;
+}
+
+.c0 .DayPicker_transitionContainer {
+  border-radius: 0;
+  background: #fff;
+}
+
+.c0 .CalendarMonthGrid {
+  background: #fff;
+}
+
+.c0 .CalendarMonth {
+  background: #fff;
+  padding: 0 13px 10px 13px;
+}
+
+.c0 .CalendarMonth_caption {
+  color: #999;
+  padding-bottom: 42px;
+}
+
+.c0 .DayPickerNavigation_button__default {
+  background: transparent;
+  border: none;
+}
+
+.c0 .CalendarDay__default {
+  background: #fff;
+  color: #999;
+  border: 1px solid #dedede;
+}
+
+.c0 .CalendarDay__default:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.c0 .CalendarDay__selected,
+.c0 .CalendarDay__selected_span,
+.c0 .CalendarDay__hovered_span:hover,
+.c0 .CalendarDay__hovered_span {
+  background: #2a908e;
+  color: #ffffff;
+}
+
+.c2 {
+  font-size: 1.25em;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    fontFamily="openSans"
+    size="normal"
+  >
+    <div
+      className="DateRangePicker DateRangePicker_1"
+    >
+      <div>
+        <div
+          className="DateRangePickerInput DateRangePickerInput_1 DateRangePickerInput__withBorder DateRangePickerInput__withBorder_2"
+        >
+          <button
+            aria-label="Interact with the calendar and add the check-in date for your trip."
+            className="DateRangePickerInput_calendarIcon DateRangePickerInput_calendarIcon_1"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c2 c3 lni lni-calendar"
+            />
+          </button>
+          <div
+            className="DateInput DateInput_1"
+          >
+            <input
+              aria-describedby="DateInput__screen-reader-message-test-start"
+              aria-label="Start Date"
+              autoComplete="off"
+              className="DateInput_input DateInput_input_1"
+              disabled={false}
+              id="test-start"
+              name="test-start"
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              placeholder="Start Date"
+              readOnly={false}
+              required={false}
+              type="text"
+              value="06.07.2020"
+            />
+            <p
+              className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+              id="DateInput__screen-reader-message-test-start"
+            >
+              Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+            </p>
+          </div>
+          <div
+            aria-hidden="true"
+            className="DateRangePickerInput_arrow DateRangePickerInput_arrow_1"
+            role="presentation"
+          >
+            <svg
+              className="DateRangePickerInput_arrow_svg DateRangePickerInput_arrow_svg_1"
+              focusable="false"
+              viewBox="0 0 1000 1000"
+            >
+              <path
+                d="M694 242l249 250c12 11 12 21 1 32L694 773c-5 5-10 7-16 7s-11-2-16-7c-11-11-11-21 0-32l210-210H68c-13 0-23-10-23-23s10-23 23-23h806L662 275c-21-22 11-54 32-33z"
+              />
+            </svg>
+          </div>
+          <div
+            className="DateInput DateInput_1"
+          >
+            <input
+              aria-describedby="DateInput__screen-reader-message-test-end"
+              aria-label="End Date"
+              autoComplete="off"
+              className="DateInput_input DateInput_input_1"
+              disabled={false}
+              id="test-end"
+              name="test-end"
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              placeholder="End Date"
+              readOnly={false}
+              required={false}
+              type="text"
+              value="06.07.2020"
+            />
+            <p
+              className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+              id="DateInput__screen-reader-message-test-end"
+            >
+              Navigate backward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DateRangePicker light should render with custom date format 1`] = `
+.c3 {
+  text-align: center;
+}
+
+.c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: unset;
+}
+
+.c0 .DateRangePicker {
+  color: #999;
+  cursor: pointer;
+}
+
+.c0 .DateRangePicker .DateRangePickerInput {
+  background: #fff;
+  border-radius: 4px;
+  border: none;
+}
+
+.c0 .DateInput {
+  color: #999;
+}
+
+.c0 .DateInput_fang {
+  display: none;
+}
+
+.c0 .DateInput_fangStroke {
+  fill: #fff;
+}
+
+.c0 .DateInput_input {
+  color: inherit;
+  background-color: #fff;
+  border-radius: 0 4px 4px 0;
+}
+
+.c0 .DateInput_input__focused {
+  border-bottom-color: transparent;
+}
+
+.c0 .DayPicker {
+  box-shadow: none;
+  background: #fff;
+  border-radius: 0;
+}
+
+.c0 .DayPicker_transitionContainer {
+  border-radius: 0;
+  background: #fff;
+}
+
+.c0 .CalendarMonthGrid {
+  background: #fff;
+}
+
+.c0 .CalendarMonth {
+  background: #fff;
+  padding: 0 13px 10px 13px;
+}
+
+.c0 .CalendarMonth_caption {
+  color: #999;
+  padding-bottom: 42px;
+}
+
+.c0 .DayPickerNavigation_button__default {
+  background: transparent;
+  border: none;
+}
+
+.c0 .CalendarDay__default {
+  background: #fff;
+  color: #999;
+  border: 1px solid #dedede;
+}
+
+.c0 .CalendarDay__default:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.c0 .CalendarDay__selected,
+.c0 .CalendarDay__selected_span,
+.c0 .CalendarDay__hovered_span:hover,
+.c0 .CalendarDay__hovered_span {
+  background: #2a908e;
+  color: #ffffff;
+}
+
+.c2 {
+  font-size: 1.25em;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    fontFamily="openSans"
+    size="normal"
+  >
+    <div
+      className="DateRangePicker DateRangePicker_1"
+    >
+      <div>
+        <div
+          className="DateRangePickerInput DateRangePickerInput_1 DateRangePickerInput__withBorder DateRangePickerInput__withBorder_2"
+        >
+          <button
+            aria-label="Interact with the calendar and add the check-in date for your trip."
+            className="DateRangePickerInput_calendarIcon DateRangePickerInput_calendarIcon_1"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c2 c3 lni lni-calendar"
+            />
+          </button>
+          <div
+            className="DateInput DateInput_1"
+          >
+            <input
+              aria-describedby="DateInput__screen-reader-message-test-format-start"
+              aria-label="Start Date"
+              autoComplete="off"
+              className="DateInput_input DateInput_input_1"
+              disabled={false}
+              id="test-format-start"
+              name="test-format-start"
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              placeholder="Start Date"
+              readOnly={false}
+              required={false}
+              type="text"
+              value="07/06/2020"
+            />
+            <p
+              className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+              id="DateInput__screen-reader-message-test-format-start"
+            >
+              Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+            </p>
+          </div>
+          <div
+            aria-hidden="true"
+            className="DateRangePickerInput_arrow DateRangePickerInput_arrow_1"
+            role="presentation"
+          >
+            <svg
+              className="DateRangePickerInput_arrow_svg DateRangePickerInput_arrow_svg_1"
+              focusable="false"
+              viewBox="0 0 1000 1000"
+            >
+              <path
+                d="M694 242l249 250c12 11 12 21 1 32L694 773c-5 5-10 7-16 7s-11-2-16-7c-11-11-11-21 0-32l210-210H68c-13 0-23-10-23-23s10-23 23-23h806L662 275c-21-22 11-54 32-33z"
+              />
+            </svg>
+          </div>
+          <div
+            className="DateInput DateInput_1"
+          >
+            <input
+              aria-describedby="DateInput__screen-reader-message-test-format-end"
+              aria-label="End Date"
+              autoComplete="off"
+              className="DateInput_input DateInput_input_1"
+              disabled={false}
+              id="test-format-end"
+              name="test-format-end"
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              placeholder="End Date"
+              readOnly={false}
+              required={false}
+              type="text"
+              value="07/06/2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -407,6 +813,205 @@ exports[`DateRangePicker with given date should render DateRangePicker starting 
 }
 
 .c0 .DateRangePicker .DateRangePickerInput {
+  background: #fff;
+  border-radius: 4px;
+  border: none;
+}
+
+.c0 .DateInput {
+  color: #999;
+}
+
+.c0 .DateInput_fang {
+  display: none;
+}
+
+.c0 .DateInput_fangStroke {
+  fill: #fff;
+}
+
+.c0 .DateInput_input {
+  color: inherit;
+  background-color: #fff;
+  border-radius: 0 4px 4px 0;
+}
+
+.c0 .DateInput_input__focused {
+  border-bottom-color: transparent;
+}
+
+.c0 .DayPicker {
+  box-shadow: none;
+  background: #fff;
+  border-radius: 0;
+}
+
+.c0 .DayPicker_transitionContainer {
+  border-radius: 0;
+  background: #fff;
+}
+
+.c0 .CalendarMonthGrid {
+  background: #fff;
+}
+
+.c0 .CalendarMonth {
+  background: #fff;
+  padding: 0 13px 10px 13px;
+}
+
+.c0 .CalendarMonth_caption {
+  color: #999;
+  padding-bottom: 42px;
+}
+
+.c0 .DayPickerNavigation_button__default {
+  background: transparent;
+  border: none;
+}
+
+.c0 .CalendarDay__default {
+  background: #fff;
+  color: #999;
+  border: 1px solid #dedede;
+}
+
+.c0 .CalendarDay__default:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.c0 .CalendarDay__selected,
+.c0 .CalendarDay__selected_span,
+.c0 .CalendarDay__hovered_span:hover,
+.c0 .CalendarDay__hovered_span {
+  background: #2a908e;
+  color: #ffffff;
+}
+
+.c2 {
+  font-size: 1.25em;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    fontFamily="openSans"
+    size="normal"
+  >
+    <div
+      className="DateRangePicker DateRangePicker_1"
+    >
+      <div>
+        <div
+          className="DateRangePickerInput DateRangePickerInput_1 DateRangePickerInput__withBorder DateRangePickerInput__withBorder_2"
+        >
+          <button
+            aria-label="Interact with the calendar and add the check-in date for your trip."
+            className="DateRangePickerInput_calendarIcon DateRangePickerInput_calendarIcon_1"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c2 c3 lni lni-calendar"
+            />
+          </button>
+          <div
+            className="DateInput DateInput_1"
+          >
+            <input
+              aria-describedby="DateInput__screen-reader-message-start-end-end-start"
+              aria-label="Start Date"
+              autoComplete="off"
+              className="DateInput_input DateInput_input_1"
+              disabled={false}
+              id="start-end-end-start"
+              name="start-end-end-start"
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              placeholder="Start Date"
+              readOnly={false}
+              required={false}
+              type="text"
+              value="07/01/2020"
+            />
+            <p
+              className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+              id="DateInput__screen-reader-message-start-end-end-start"
+            >
+              Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+            </p>
+          </div>
+          <div
+            aria-hidden="true"
+            className="DateRangePickerInput_arrow DateRangePickerInput_arrow_1"
+            role="presentation"
+          >
+            <svg
+              className="DateRangePickerInput_arrow_svg DateRangePickerInput_arrow_svg_1"
+              focusable="false"
+              viewBox="0 0 1000 1000"
+            >
+              <path
+                d="M694 242l249 250c12 11 12 21 1 32L694 773c-5 5-10 7-16 7s-11-2-16-7c-11-11-11-21 0-32l210-210H68c-13 0-23-10-23-23s10-23 23-23h806L662 275c-21-22 11-54 32-33z"
+              />
+            </svg>
+          </div>
+          <div
+            className="DateInput DateInput_1"
+          >
+            <input
+              aria-describedby="DateInput__screen-reader-message-start-end-end-end"
+              aria-label="End Date"
+              autoComplete="off"
+              className="DateInput_input DateInput_input_1"
+              disabled={false}
+              id="start-end-end-end"
+              name="start-end-end-end"
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              placeholder="End Date"
+              readOnly={false}
+              required={false}
+              type="text"
+              value="07/12/2020"
+            />
+            <p
+              className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+              id="DateInput__screen-reader-message-start-end-end-end"
+            >
+              Navigate backward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DateRangePicker with given date should render DateRangePicker starting from date provided 2`] = `
+.c3 {
+  text-align: center;
+}
+
+.c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: unset;
+}
+
+.c0 .DateRangePicker {
+  color: #999;
+  cursor: pointer;
+}
+
+.c0 .DateRangePicker .DateRangePickerInput {
   background: #0f181c;
   border-radius: 4px;
   border: none;
@@ -414,6 +1019,10 @@ exports[`DateRangePicker with given date should render DateRangePicker starting 
 
 .c0 .DateInput {
   color: #999;
+}
+
+.c0 .DateInput_fang {
+  display: none;
 }
 
 .c0 .DateInput_fangStroke {
@@ -463,12 +1072,12 @@ exports[`DateRangePicker with given date should render DateRangePicker starting 
 .c0 .CalendarDay__default {
   background: #0f181c;
   color: #999;
-  border: 1px solid black;
+  border: 1px solid #000000;
 }
 
 .c0 .CalendarDay__default:hover {
-  background: white;
-  color: black;
+  background: #ffffff;
+  color: #000000;
 }
 
 .c0 .CalendarDay__selected,
@@ -476,7 +1085,7 @@ exports[`DateRangePicker with given date should render DateRangePicker starting 
 .c0 .CalendarDay__hovered_span:hover,
 .c0 .CalendarDay__hovered_span {
   background: #90ee7e;
-  color: black;
+  color: #000000;
 }
 
 .c2 {

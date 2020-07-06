@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SingleDatePicker should render 1`] = `
+exports[`SingleDatePicker dark should render 1`] = `
 .c3 {
   text-align: center;
 }
@@ -14,6 +14,7 @@ exports[`SingleDatePicker should render 1`] = `
 .c0 .SingleDatePicker {
   color: #999;
   cursor: pointer;
+  box-shadow: none;
 }
 
 .c0 .SingleDatePicker .SingleDatePickerInput {
@@ -24,6 +25,10 @@ exports[`SingleDatePicker should render 1`] = `
 
 .c0 .SingleDatePicker .DateInput {
   color: #999;
+}
+
+.c0 .SingleDatePicker .DateInput_fang {
+  display: none;
 }
 
 .c0 .SingleDatePicker .DateInput_fangStroke {
@@ -73,12 +78,12 @@ exports[`SingleDatePicker should render 1`] = `
 .c0 .SingleDatePicker .CalendarDay__default {
   background: #0f181c;
   color: #999;
-  border: 1px solid black;
+  border: 1px solid #000000;
 }
 
 .c0 .SingleDatePicker .CalendarDay__default:hover {
-  background: white;
-  color: black;
+  background: #ffffff;
+  color: #000000;
 }
 
 .c0 .SingleDatePicker .CalendarDay__selected,
@@ -86,7 +91,7 @@ exports[`SingleDatePicker should render 1`] = `
 .c0 .SingleDatePicker .CalendarDay__hovered_span:hover,
 .c0 .SingleDatePicker .CalendarDay__hovered_span {
   background: #90ee7e;
-  color: black;
+  color: #000000;
 }
 
 .c2 {
@@ -136,7 +141,7 @@ exports[`SingleDatePicker should render 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="03.07.2020"
+              value="06.07.2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -152,7 +157,7 @@ exports[`SingleDatePicker should render 1`] = `
 </div>
 `;
 
-exports[`SingleDatePicker should render with custom date format 1`] = `
+exports[`SingleDatePicker dark should render with custom date format 1`] = `
 .c3 {
   text-align: center;
 }
@@ -166,6 +171,7 @@ exports[`SingleDatePicker should render with custom date format 1`] = `
 .c0 .SingleDatePicker {
   color: #999;
   cursor: pointer;
+  box-shadow: none;
 }
 
 .c0 .SingleDatePicker .SingleDatePickerInput {
@@ -176,6 +182,10 @@ exports[`SingleDatePicker should render with custom date format 1`] = `
 
 .c0 .SingleDatePicker .DateInput {
   color: #999;
+}
+
+.c0 .SingleDatePicker .DateInput_fang {
+  display: none;
 }
 
 .c0 .SingleDatePicker .DateInput_fangStroke {
@@ -225,12 +235,12 @@ exports[`SingleDatePicker should render with custom date format 1`] = `
 .c0 .SingleDatePicker .CalendarDay__default {
   background: #0f181c;
   color: #999;
-  border: 1px solid black;
+  border: 1px solid #000000;
 }
 
 .c0 .SingleDatePicker .CalendarDay__default:hover {
-  background: white;
-  color: black;
+  background: #ffffff;
+  color: #000000;
 }
 
 .c0 .SingleDatePicker .CalendarDay__selected,
@@ -238,7 +248,7 @@ exports[`SingleDatePicker should render with custom date format 1`] = `
 .c0 .SingleDatePicker .CalendarDay__hovered_span:hover,
 .c0 .SingleDatePicker .CalendarDay__hovered_span {
   background: #90ee7e;
-  color: black;
+  color: #000000;
 }
 
 .c2 {
@@ -288,7 +298,7 @@ exports[`SingleDatePicker should render with custom date format 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="07/03/2020"
+              value="07/06/2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -304,7 +314,7 @@ exports[`SingleDatePicker should render with custom date format 1`] = `
 </div>
 `;
 
-exports[`SingleDatePicker should render with two months shown 1`] = `
+exports[`SingleDatePicker dark should render with two months shown 1`] = `
 .c3 {
   text-align: center;
 }
@@ -318,6 +328,7 @@ exports[`SingleDatePicker should render with two months shown 1`] = `
 .c0 .SingleDatePicker {
   color: #999;
   cursor: pointer;
+  box-shadow: none;
 }
 
 .c0 .SingleDatePicker .SingleDatePickerInput {
@@ -328,6 +339,10 @@ exports[`SingleDatePicker should render with two months shown 1`] = `
 
 .c0 .SingleDatePicker .DateInput {
   color: #999;
+}
+
+.c0 .SingleDatePicker .DateInput_fang {
+  display: none;
 }
 
 .c0 .SingleDatePicker .DateInput_fangStroke {
@@ -377,12 +392,12 @@ exports[`SingleDatePicker should render with two months shown 1`] = `
 .c0 .SingleDatePicker .CalendarDay__default {
   background: #0f181c;
   color: #999;
-  border: 1px solid black;
+  border: 1px solid #000000;
 }
 
 .c0 .SingleDatePicker .CalendarDay__default:hover {
-  background: white;
-  color: black;
+  background: #ffffff;
+  color: #000000;
 }
 
 .c0 .SingleDatePicker .CalendarDay__selected,
@@ -390,7 +405,7 @@ exports[`SingleDatePicker should render with two months shown 1`] = `
 .c0 .SingleDatePicker .CalendarDay__hovered_span:hover,
 .c0 .SingleDatePicker .CalendarDay__hovered_span {
   background: #90ee7e;
-  color: black;
+  color: #000000;
 }
 
 .c2 {
@@ -440,7 +455,478 @@ exports[`SingleDatePicker should render with two months shown 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="03.07.2020"
+              value="06.07.2020"
+            />
+            <p
+              className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+              id="DateInput__screen-reader-message-test-months-single-datepicker"
+            >
+              Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SingleDatePicker light should render 1`] = `
+.c3 {
+  text-align: center;
+}
+
+.c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: unset;
+}
+
+.c0 .SingleDatePicker {
+  color: #999;
+  cursor: pointer;
+  box-shadow: 0 0 7px #e0e1e4;
+}
+
+.c0 .SingleDatePicker .SingleDatePickerInput {
+  background: #fff;
+  border-radius: 4px;
+  border: none;
+}
+
+.c0 .SingleDatePicker .DateInput {
+  color: #999;
+}
+
+.c0 .SingleDatePicker .DateInput_fang {
+  display: none;
+}
+
+.c0 .SingleDatePicker .DateInput_fangStroke {
+  fill: #fff;
+}
+
+.c0 .SingleDatePicker .DateInput_input {
+  color: inherit;
+  background-color: #fff;
+  border-radius: 0 4px 4px 0;
+}
+
+.c0 .SingleDatePicker .DateInput_input__focused {
+  border-bottom-color: transparent;
+}
+
+.c0 .SingleDatePicker .DayPicker {
+  box-shadow: none;
+  background: #fff;
+  border-radius: 0;
+}
+
+.c0 .SingleDatePicker .DayPicker_transitionContainer {
+  border-radius: 0;
+  background: #fff;
+}
+
+.c0 .SingleDatePicker .CalendarMonthGrid {
+  background: #fff;
+}
+
+.c0 .SingleDatePicker .CalendarMonth {
+  background: #fff;
+  padding: 0 13px 10px 13px;
+}
+
+.c0 .SingleDatePicker .CalendarMonth_caption {
+  color: #999;
+  padding-bottom: 42px;
+}
+
+.c0 .SingleDatePicker .DayPickerNavigation_button__default {
+  background: transparent;
+  border: none;
+}
+
+.c0 .SingleDatePicker .CalendarDay__default {
+  background: #fff;
+  color: #999;
+  border: 1px solid #dedede;
+}
+
+.c0 .SingleDatePicker .CalendarDay__default:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.c0 .SingleDatePicker .CalendarDay__selected,
+.c0 .SingleDatePicker .CalendarDay__selected_span,
+.c0 .SingleDatePicker .CalendarDay__hovered_span:hover,
+.c0 .SingleDatePicker .CalendarDay__hovered_span {
+  background: #2a908e;
+  color: #ffffff;
+}
+
+.c2 {
+  font-size: 1.25em;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    fontFamily="openSans"
+    size="normal"
+  >
+    <div
+      className="SingleDatePicker SingleDatePicker_1"
+    >
+      <div>
+        <div
+          className="SingleDatePickerInput SingleDatePickerInput_1 SingleDatePickerInput__withBorder SingleDatePickerInput__withBorder_2"
+        >
+          <button
+            className="SingleDatePickerInput_calendarIcon SingleDatePickerInput_calendarIcon_1"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c2 c3 lni lni-calendar"
+            />
+          </button>
+          <div
+            className="DateInput DateInput_1"
+          >
+            <input
+              aria-describedby="DateInput__screen-reader-message-test-single-datepicker"
+              aria-label="Date"
+              autoComplete="off"
+              className="DateInput_input DateInput_input_1"
+              disabled={false}
+              id="test-single-datepicker"
+              name="test-single-datepicker"
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              placeholder="Date"
+              readOnly={false}
+              required={false}
+              type="text"
+              value="06.07.2020"
+            />
+            <p
+              className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+              id="DateInput__screen-reader-message-test-single-datepicker"
+            >
+              Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SingleDatePicker light should render with custom date format 1`] = `
+.c3 {
+  text-align: center;
+}
+
+.c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: unset;
+}
+
+.c0 .SingleDatePicker {
+  color: #999;
+  cursor: pointer;
+  box-shadow: 0 0 7px #e0e1e4;
+}
+
+.c0 .SingleDatePicker .SingleDatePickerInput {
+  background: #fff;
+  border-radius: 4px;
+  border: none;
+}
+
+.c0 .SingleDatePicker .DateInput {
+  color: #999;
+}
+
+.c0 .SingleDatePicker .DateInput_fang {
+  display: none;
+}
+
+.c0 .SingleDatePicker .DateInput_fangStroke {
+  fill: #fff;
+}
+
+.c0 .SingleDatePicker .DateInput_input {
+  color: inherit;
+  background-color: #fff;
+  border-radius: 0 4px 4px 0;
+}
+
+.c0 .SingleDatePicker .DateInput_input__focused {
+  border-bottom-color: transparent;
+}
+
+.c0 .SingleDatePicker .DayPicker {
+  box-shadow: none;
+  background: #fff;
+  border-radius: 0;
+}
+
+.c0 .SingleDatePicker .DayPicker_transitionContainer {
+  border-radius: 0;
+  background: #fff;
+}
+
+.c0 .SingleDatePicker .CalendarMonthGrid {
+  background: #fff;
+}
+
+.c0 .SingleDatePicker .CalendarMonth {
+  background: #fff;
+  padding: 0 13px 10px 13px;
+}
+
+.c0 .SingleDatePicker .CalendarMonth_caption {
+  color: #999;
+  padding-bottom: 42px;
+}
+
+.c0 .SingleDatePicker .DayPickerNavigation_button__default {
+  background: transparent;
+  border: none;
+}
+
+.c0 .SingleDatePicker .CalendarDay__default {
+  background: #fff;
+  color: #999;
+  border: 1px solid #dedede;
+}
+
+.c0 .SingleDatePicker .CalendarDay__default:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.c0 .SingleDatePicker .CalendarDay__selected,
+.c0 .SingleDatePicker .CalendarDay__selected_span,
+.c0 .SingleDatePicker .CalendarDay__hovered_span:hover,
+.c0 .SingleDatePicker .CalendarDay__hovered_span {
+  background: #2a908e;
+  color: #ffffff;
+}
+
+.c2 {
+  font-size: 1.25em;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    fontFamily="openSans"
+    size="normal"
+  >
+    <div
+      className="SingleDatePicker SingleDatePicker_1"
+    >
+      <div>
+        <div
+          className="SingleDatePickerInput SingleDatePickerInput_1 SingleDatePickerInput__withBorder SingleDatePickerInput__withBorder_2"
+        >
+          <button
+            className="SingleDatePickerInput_calendarIcon SingleDatePickerInput_calendarIcon_1"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c2 c3 lni lni-calendar"
+            />
+          </button>
+          <div
+            className="DateInput DateInput_1"
+          >
+            <input
+              aria-describedby="DateInput__screen-reader-message-test-format-single-datepicker"
+              aria-label="Date"
+              autoComplete="off"
+              className="DateInput_input DateInput_input_1"
+              disabled={false}
+              id="test-format-single-datepicker"
+              name="test-format-single-datepicker"
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              placeholder="Date"
+              readOnly={false}
+              required={false}
+              type="text"
+              value="07/06/2020"
+            />
+            <p
+              className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+              id="DateInput__screen-reader-message-test-format-single-datepicker"
+            >
+              Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SingleDatePicker light should render with two months shown 1`] = `
+.c3 {
+  text-align: center;
+}
+
+.c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: unset;
+}
+
+.c0 .SingleDatePicker {
+  color: #999;
+  cursor: pointer;
+  box-shadow: 0 0 7px #e0e1e4;
+}
+
+.c0 .SingleDatePicker .SingleDatePickerInput {
+  background: #fff;
+  border-radius: 4px;
+  border: none;
+}
+
+.c0 .SingleDatePicker .DateInput {
+  color: #999;
+}
+
+.c0 .SingleDatePicker .DateInput_fang {
+  display: none;
+}
+
+.c0 .SingleDatePicker .DateInput_fangStroke {
+  fill: #fff;
+}
+
+.c0 .SingleDatePicker .DateInput_input {
+  color: inherit;
+  background-color: #fff;
+  border-radius: 0 4px 4px 0;
+}
+
+.c0 .SingleDatePicker .DateInput_input__focused {
+  border-bottom-color: transparent;
+}
+
+.c0 .SingleDatePicker .DayPicker {
+  box-shadow: none;
+  background: #fff;
+  border-radius: 0;
+}
+
+.c0 .SingleDatePicker .DayPicker_transitionContainer {
+  border-radius: 0;
+  background: #fff;
+}
+
+.c0 .SingleDatePicker .CalendarMonthGrid {
+  background: #fff;
+}
+
+.c0 .SingleDatePicker .CalendarMonth {
+  background: #fff;
+  padding: 0 13px 10px 13px;
+}
+
+.c0 .SingleDatePicker .CalendarMonth_caption {
+  color: #999;
+  padding-bottom: 42px;
+}
+
+.c0 .SingleDatePicker .DayPickerNavigation_button__default {
+  background: transparent;
+  border: none;
+}
+
+.c0 .SingleDatePicker .CalendarDay__default {
+  background: #fff;
+  color: #999;
+  border: 1px solid #dedede;
+}
+
+.c0 .SingleDatePicker .CalendarDay__default:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.c0 .SingleDatePicker .CalendarDay__selected,
+.c0 .SingleDatePicker .CalendarDay__selected_span,
+.c0 .SingleDatePicker .CalendarDay__hovered_span:hover,
+.c0 .SingleDatePicker .CalendarDay__hovered_span {
+  background: #2a908e;
+  color: #ffffff;
+}
+
+.c2 {
+  font-size: 1.25em;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    fontFamily="openSans"
+    size="normal"
+  >
+    <div
+      className="SingleDatePicker SingleDatePicker_1"
+    >
+      <div>
+        <div
+          className="SingleDatePickerInput SingleDatePickerInput_1 SingleDatePickerInput__withBorder SingleDatePickerInput__withBorder_2"
+        >
+          <button
+            className="SingleDatePickerInput_calendarIcon SingleDatePickerInput_calendarIcon_1"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c2 c3 lni lni-calendar"
+            />
+          </button>
+          <div
+            className="DateInput DateInput_1"
+          >
+            <input
+              aria-describedby="DateInput__screen-reader-message-test-months-single-datepicker"
+              aria-label="Date"
+              autoComplete="off"
+              className="DateInput_input DateInput_input_1"
+              disabled={false}
+              id="test-months-single-datepicker"
+              name="test-months-single-datepicker"
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              placeholder="Date"
+              readOnly={false}
+              required={false}
+              type="text"
+              value="06.07.2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -470,6 +956,164 @@ exports[`SingleDatePicker with given date should render with given startDate 1`]
 .c0 .SingleDatePicker {
   color: #999;
   cursor: pointer;
+  box-shadow: 0 0 7px #e0e1e4;
+}
+
+.c0 .SingleDatePicker .SingleDatePickerInput {
+  background: #fff;
+  border-radius: 4px;
+  border: none;
+}
+
+.c0 .SingleDatePicker .DateInput {
+  color: #999;
+}
+
+.c0 .SingleDatePicker .DateInput_fang {
+  display: none;
+}
+
+.c0 .SingleDatePicker .DateInput_fangStroke {
+  fill: #fff;
+}
+
+.c0 .SingleDatePicker .DateInput_input {
+  color: inherit;
+  background-color: #fff;
+  border-radius: 0 4px 4px 0;
+}
+
+.c0 .SingleDatePicker .DateInput_input__focused {
+  border-bottom-color: transparent;
+}
+
+.c0 .SingleDatePicker .DayPicker {
+  box-shadow: none;
+  background: #fff;
+  border-radius: 0;
+}
+
+.c0 .SingleDatePicker .DayPicker_transitionContainer {
+  border-radius: 0;
+  background: #fff;
+}
+
+.c0 .SingleDatePicker .CalendarMonthGrid {
+  background: #fff;
+}
+
+.c0 .SingleDatePicker .CalendarMonth {
+  background: #fff;
+  padding: 0 13px 10px 13px;
+}
+
+.c0 .SingleDatePicker .CalendarMonth_caption {
+  color: #999;
+  padding-bottom: 42px;
+}
+
+.c0 .SingleDatePicker .DayPickerNavigation_button__default {
+  background: transparent;
+  border: none;
+}
+
+.c0 .SingleDatePicker .CalendarDay__default {
+  background: #fff;
+  color: #999;
+  border: 1px solid #dedede;
+}
+
+.c0 .SingleDatePicker .CalendarDay__default:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.c0 .SingleDatePicker .CalendarDay__selected,
+.c0 .SingleDatePicker .CalendarDay__selected_span,
+.c0 .SingleDatePicker .CalendarDay__hovered_span:hover,
+.c0 .SingleDatePicker .CalendarDay__hovered_span {
+  background: #2a908e;
+  color: #ffffff;
+}
+
+.c2 {
+  font-size: 1.25em;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    fontFamily="openSans"
+    size="normal"
+  >
+    <div
+      className="SingleDatePicker SingleDatePicker_1"
+    >
+      <div>
+        <div
+          className="SingleDatePickerInput SingleDatePickerInput_1 SingleDatePickerInput__withBorder SingleDatePickerInput__withBorder_2"
+        >
+          <button
+            className="SingleDatePickerInput_calendarIcon SingleDatePickerInput_calendarIcon_1"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c2 c3 lni lni-calendar"
+            />
+          </button>
+          <div
+            className="DateInput DateInput_1"
+          >
+            <input
+              aria-describedby="DateInput__screen-reader-message-test-date-single-datepicker"
+              aria-label="Date"
+              autoComplete="off"
+              className="DateInput_input DateInput_input_1"
+              disabled={false}
+              id="test-date-single-datepicker"
+              name="test-date-single-datepicker"
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              placeholder="Date"
+              readOnly={false}
+              required={false}
+              type="text"
+              value="01.01.2020"
+            />
+            <p
+              className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+              id="DateInput__screen-reader-message-test-date-single-datepicker"
+            >
+              Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SingleDatePicker with given date should render with given startDate 2`] = `
+.c3 {
+  text-align: center;
+}
+
+.c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: unset;
+}
+
+.c0 .SingleDatePicker {
+  color: #999;
+  cursor: pointer;
+  box-shadow: none;
 }
 
 .c0 .SingleDatePicker .SingleDatePickerInput {
@@ -480,6 +1124,10 @@ exports[`SingleDatePicker with given date should render with given startDate 1`]
 
 .c0 .SingleDatePicker .DateInput {
   color: #999;
+}
+
+.c0 .SingleDatePicker .DateInput_fang {
+  display: none;
 }
 
 .c0 .SingleDatePicker .DateInput_fangStroke {
@@ -529,12 +1177,12 @@ exports[`SingleDatePicker with given date should render with given startDate 1`]
 .c0 .SingleDatePicker .CalendarDay__default {
   background: #0f181c;
   color: #999;
-  border: 1px solid black;
+  border: 1px solid #000000;
 }
 
 .c0 .SingleDatePicker .CalendarDay__default:hover {
-  background: white;
-  color: black;
+  background: #ffffff;
+  color: #000000;
 }
 
 .c0 .SingleDatePicker .CalendarDay__selected,
@@ -542,7 +1190,7 @@ exports[`SingleDatePicker with given date should render with given startDate 1`]
 .c0 .SingleDatePicker .CalendarDay__hovered_span:hover,
 .c0 .SingleDatePicker .CalendarDay__hovered_span {
   background: #90ee7e;
-  color: black;
+  color: #000000;
 }
 
 .c2 {
