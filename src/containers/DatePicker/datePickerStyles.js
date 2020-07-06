@@ -4,13 +4,17 @@ const defaultDatePickerStyles = css`
   .DateInput {
     color: #999;
 
+    &_fang {
+      display: none;
+    }
+
     &_fangStroke {
-      fill: #0f181c;
+      fill: ${({ theme }) => theme.background};
     }
 
     &_input {
       color: inherit;
-      background-color: #0f181c;
+      background-color: ${({ theme }) => theme.background};
       border-radius: 0 4px 4px 0;
 
       &__focused {
@@ -21,20 +25,20 @@ const defaultDatePickerStyles = css`
 
   .DayPicker {
     box-shadow: none;
-    background: #0f181c;
+    background: ${({ theme }) => theme.background};
     border-radius: 0;
     &_transitionContainer {
       border-radius: 0;
-      background: #0f181c;
+      background: ${({ theme }) => theme.background};
     }
   }
 
   .CalendarMonthGrid {
-    background: #0f181c;
+    background: ${({ theme }) => theme.background};
   }
 
   .CalendarMonth {
-    background: #0f181c;
+    background: ${({ theme }) => theme.background};
     padding: 0 13px 10px 13px;
     &_caption {
       color: #999;
@@ -51,12 +55,12 @@ const defaultDatePickerStyles = css`
 
   .CalendarDay {
     &__default {
-      background: #0f181c;
+      background: ${({ theme }) => theme.background};
       color: #999;
-      border: 1px solid black;
+      border: 1px solid ${({ theme }) => theme.calendar.day.borderColor};
       &:hover {
-        background: white;
-        color: black;
+        background: #ffffff;
+        color: #000000;
       }
     }
 
@@ -64,8 +68,8 @@ const defaultDatePickerStyles = css`
     &__selected_span,
     &__hovered_span:hover,
     &__hovered_span {
-      background: #90ee7e;
-      color: black;
+      background: ${({ theme }) => theme.calendar.day.selected.background};
+      color: ${({ theme }) => theme.calendar.day.selected.color};
     }
   }
 `;
@@ -74,9 +78,10 @@ export const SingleDatePickerStyles = css`
   .SingleDatePicker {
     color: #999;
     cursor: pointer;
+    box-shadow: ${({ theme }) => theme.boxShadow};
 
     .SingleDatePickerInput {
-      background: #0f181c;
+      background: ${({ theme }) => theme.background};
       border-radius: 4px;
       border: none;
     }
@@ -90,7 +95,7 @@ export const DateRangePickerStyles = css`
     cursor: pointer;
 
     .DateRangePickerInput {
-      background: #0f181c;
+      background: ${({ theme }) => theme.background};
       border-radius: 4px;
       border: none;
     }

@@ -7,7 +7,13 @@ export const lightTheme = {
   boxShadow: "0 0 7px #e0e1e4",
   active: "#fff",
   logoImg:
-    "https://images.unsplash.com/photo-1577712319170-c52781180114?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3642&q=80"
+    "https://images.unsplash.com/photo-1577712319170-c52781180114?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3642&q=80",
+  calendar: {
+    day: {
+      borderColor: "#dedede",
+      selected: { background: "#2a908e", color: "#ffffff" }
+    }
+  }
 };
 
 export const darkTheme = {
@@ -19,5 +25,11 @@ export const darkTheme = {
   boxShadow: "none",
   active: "#0f191e",
   logoImg:
-    "https://images.unsplash.com/photo-1503792243040-7ce7f5f06085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2515&q=80"
+    "https://images.unsplash.com/photo-1503792243040-7ce7f5f06085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2515&q=80",
+  calendar: {
+    day: {
+      borderColor: "#000000",
+      selected: { background: "#90ee7e", color: "#000000" }
+    }
+  }
 };
