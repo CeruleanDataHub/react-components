@@ -26,7 +26,9 @@ export const names = [
   "close",
   "dashboard",
   "full-screen",
-  "layers"
+  "layers",
+  "exit",
+  "enter"
 ];
 export const iconNameProps = PropTypes.oneOf(names);
 
