@@ -445,6 +445,10 @@ const PositionRelative = styled.div`
 
 const NavigatonContainer = styled.div`
   color: ${({ theme }) => theme.menuColor};
+
+  button {
+    color: ${({ theme }) => theme.menuColor};
+  }
 `;
 
 // eslint-disable-next-line no-console
