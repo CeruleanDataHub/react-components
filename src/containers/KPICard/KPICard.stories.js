@@ -42,6 +42,15 @@ export const KPICardRedValueZeroGrowthStory = () => (
   <KPICard title="Logins / week" value={3789} growth={0} redValue />
 );
 
+export const KPICardNoGrowthPercentageStory = () => (
+  <KPICard
+    title="Logins / week"
+    value={3789}
+    growth={0}
+    showPercentage={false}
+  />
+);
+
 export const KPICardGridStory = () => (
   <Grid>
     <Cell>
