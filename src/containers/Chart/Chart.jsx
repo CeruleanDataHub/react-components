@@ -16,6 +16,9 @@ const chartDefaults = {
   credits: { enabled: false }
 };
 
+/**
+ * The `Chart` component should only be used as a building block for other components. Do not use this component directly.
+ */
 export const Chart = ({
   title,
   xAxis,

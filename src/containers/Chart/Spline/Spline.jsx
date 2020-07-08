@@ -8,6 +8,9 @@ const options = {
   }
 };
 
+/**
+ * Use this component to generate Spline charts. Component properties are inherited from the `Chart` component.
+ */
 export const Spline = ({ title, xAxis, series }) => (
   <Chart
     title={title}

@@ -33,6 +33,9 @@ const options = {
   xAxis: [{ visible: false }]
 };
 
+/**
+ * Use this component to generate Heatmap charts. Component properties are inherited from the `Chart` component.
+ */
 export const Heatmap = ({ data }) => {
   const series = [
     {

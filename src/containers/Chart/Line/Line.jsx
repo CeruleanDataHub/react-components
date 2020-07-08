@@ -2,6 +2,9 @@ import React from "react";
 
 import { Chart } from "../Chart";
 
+/**
+ * Use this component to generate Line charts. Component properties are inherited from the `Chart` component.
+ */
 export const Line = ({ title, xAxis, series }) => (
   <Chart title={title} xAxis={xAxis} series={series} type="line" />
 );

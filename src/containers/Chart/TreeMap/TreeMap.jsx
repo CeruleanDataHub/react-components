@@ -22,6 +22,9 @@ const treeMapSeriesOptions = {
   ]
 };
 
+/**
+ * Use this component to generate TreeMap charts. Component properties are inherited from the `Chart` component.
+ */
 export const TreeMap = ({ title, series }) => (
   <Chart
     title={title}

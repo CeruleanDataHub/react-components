@@ -12,6 +12,9 @@ const options = {
   }
 };
 
+/**
+ * Use this component to generate Dependency wheel charts. Component properties are inherited from the `Chart` component.
+ */
 export const DependencyWheel = ({ title, xAxis, series, containerProps }) => (
   <Chart
     title={title}
