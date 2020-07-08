@@ -24,7 +24,7 @@ const themes = [
 ];
 
 themes.forEach(({ name, theme }) => {
-  describe(`DateRangePicker ${name}`, () => {
+  xdescribe(`DateRangePicker ${name}`, () => {
     beforeAll(before);
     afterAll(after);
 
