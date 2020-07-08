@@ -6,6 +6,16 @@
   "files": [
     "dist/*"
   ],
+  "description": "Component library for Cerulean Data Hub",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CeruleanDataHub/react-components"
+  },
+  "homepage": "https://github.com/CeruleanDataHub/react-components",
+  "bugs": {
+    "url": "https://github.com/CeruleanDataHub/react-components/issues"
+  },
+  "license": "LGPL-3.0",
   "dependencies": {
     "@highcharts/map-collection": "^1.1.3",
     "highcharts": "^8.1.2",
