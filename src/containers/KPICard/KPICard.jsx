@@ -41,7 +41,14 @@ const getIconName = growth => {
   return growth > 0 ? "chevron-up" : "chevron-down";
 };
 
-export const KPICard = ({ title, value, growth, redValue, greenValue }) => (
+export const KPICard = ({
+  title,
+  value,
+  growth,
+  showPercentage,
+  redValue,
+  greenValue
+}) => (
   <Container>
     <Typography color="gray" fontFamily="openSans">
       {title}
@@ -56,18 +63,20 @@ export const KPICard = ({ title, value, growth, redValue, greenValue }) => (
           {new Intl.NumberFormat().format(value)}
         </Typography>
       </Cell>
-      <Cell center as={Bottom}>
-        <FlexRow>
-          <Typography fontFamily="exo" color={getGrowthColor(growth)}>
-            {growth > 0 ? "+" : ""}
-            {new Intl.NumberFormat("en-EN", {
-              style: "percent",
-              maximumFractionDigits: 2
-            }).format(growth)}
-            <Icon name={getIconName(growth)} as={TriangleIcon} />
-          </Typography>
-        </FlexRow>
-      </Cell>
+      {showPercentage && (
+        <Cell center as={Bottom}>
+          <FlexRow>
+            <Typography fontFamily="exo" color={getGrowthColor(growth)}>
+              {growth > 0 ? "+" : ""}
+              {new Intl.NumberFormat("en-EN", {
+                style: "percent",
+                maximumFractionDigits: 2
+              }).format(growth)}
+              <Icon name={getIconName(growth)} as={TriangleIcon} />
+            </Typography>
+          </FlexRow>
+        </Cell>
+      )}
     </Grid>
   </Container>
 );
@@ -79,6 +88,8 @@ KPICard.propTypes = {
   value: PropTypes.number,
   /** Growth is converted from a fraction to percent, for example value 0.15 indicates 15% */
   growth: PropTypes.number,
+  /** Defines whether to show the growth percentage */
+  showPercentage: PropTypes.bool,
   /** Defines whether the value should be red */
   redValue: PropTypes.bool,
   /** Defines whether the value should be green */
@@ -89,6 +100,7 @@ KPICard.defaultProps = {
   title: "",
   value: 0,
   growth: 0,
+  showPercentage: true,
   redValue: false,
   greenValue: false
 };

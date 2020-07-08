@@ -270,6 +270,79 @@ exports[`KPICard should render 1`] = `
 </div>
 `;
 
+exports[`KPICard should render card without the percentage 1`] = `
+.c3 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-self: stretch;
+}
+
+.c2 {
+  display: grid;
+  height: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(20px,auto);
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 8px;
+}
+
+.c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: #999999;
+}
+
+.c4 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 40px;
+  color: unset;
+}
+
+.c0 {
+  padding: 1.2em;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    fontFamily="openSans"
+    size="normal"
+  >
+    Title
+  </div>
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+        fontFamily="exo"
+        size="large"
+      >
+        1
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`KPICard should render green 1`] = `
 .c3 {
   height: 100%;
@@ -401,6 +474,79 @@ exports[`KPICard should render green 1`] = `
         </div>
       </span>
     </span>
+  </div>
+</div>
+`;
+
+exports[`KPICard should render green card without the percentage 1`] = `
+.c3 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-self: stretch;
+}
+
+.c2 {
+  display: grid;
+  height: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(20px,auto);
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 8px;
+}
+
+.c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: #999999;
+}
+
+.c4 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 40px;
+  color: #90ee7e;
+}
+
+.c0 {
+  padding: 1.2em;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    fontFamily="openSans"
+    size="normal"
+  >
+    Title
+  </div>
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+        fontFamily="exo"
+        size="large"
+      >
+        1
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -540,6 +686,79 @@ exports[`KPICard should render negative growth 1`] = `
 </div>
 `;
 
+exports[`KPICard should render negative growth without percentage 1`] = `
+.c3 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-self: stretch;
+}
+
+.c2 {
+  display: grid;
+  height: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(20px,auto);
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 8px;
+}
+
+.c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: #999999;
+}
+
+.c4 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 40px;
+  color: unset;
+}
+
+.c0 {
+  padding: 1.2em;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    fontFamily="openSans"
+    size="normal"
+  >
+    Title
+  </div>
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+        fontFamily="exo"
+        size="large"
+      >
+        1
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`KPICard should render positive growth 1`] = `
 .c3 {
   height: 100%;
@@ -675,6 +894,79 @@ exports[`KPICard should render positive growth 1`] = `
 </div>
 `;
 
+exports[`KPICard should render positive growth without percentage 1`] = `
+.c3 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-self: stretch;
+}
+
+.c2 {
+  display: grid;
+  height: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(20px,auto);
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 8px;
+}
+
+.c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: #999999;
+}
+
+.c4 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 40px;
+  color: unset;
+}
+
+.c0 {
+  padding: 1.2em;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    fontFamily="openSans"
+    size="normal"
+  >
+    Title
+  </div>
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+        fontFamily="exo"
+        size="large"
+      >
+        1
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`KPICard should render red 1`] = `
 .c3 {
   height: 100%;
@@ -806,6 +1098,79 @@ exports[`KPICard should render red 1`] = `
         </div>
       </span>
     </span>
+  </div>
+</div>
+`;
+
+exports[`KPICard should render red card without the percentage 1`] = `
+.c3 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-self: stretch;
+}
+
+.c2 {
+  display: grid;
+  height: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(20px,auto);
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 8px;
+}
+
+.c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: #999999;
+}
+
+.c4 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 40px;
+  color: #ff0066;
+}
+
+.c0 {
+  padding: 1.2em;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    fontFamily="openSans"
+    size="normal"
+  >
+    Title
+  </div>
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+        fontFamily="exo"
+        size="large"
+      >
+        1
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -1076,6 +1441,79 @@ exports[`KPICard should render zero growth 1`] = `
         </div>
       </span>
     </span>
+  </div>
+</div>
+`;
+
+exports[`KPICard should render zero growth without percentage 1`] = `
+.c3 {
+  height: 100%;
+  min-width: 0;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-self: stretch;
+}
+
+.c2 {
+  display: grid;
+  height: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(20px,auto);
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 8px;
+}
+
+.c1 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: #999999;
+}
+
+.c4 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 40px;
+  color: unset;
+}
+
+.c0 {
+  padding: 1.2em;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    fontFamily="openSans"
+    size="normal"
+  >
+    Title
+  </div>
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+        fontFamily="exo"
+        size="large"
+      >
+        1
+      </div>
+    </div>
   </div>
 </div>
 `;
