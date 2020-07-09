@@ -4,7 +4,7 @@ import React from "react";
 
 import { Chart } from "./Chart";
 
-xdescribe("Chart", () => {
+describe("Chart", () => {
   it("should render chart", () => {
     const component = shallow(<Chart />);
 
