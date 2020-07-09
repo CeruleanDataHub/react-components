@@ -47,7 +47,6 @@ export const SemiDonut = ({ title, series }) => (
 );
 
 SemiDonut.propTypes = {
-  ...Chart.propTypes,
   /** Title of the chart, type is inherited from the `Chart` base component */
   title: Chart.propTypes.title,
   /** Data to be graphed, type is inherited from the `Chart` base component */

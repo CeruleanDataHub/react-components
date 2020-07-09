@@ -27,7 +27,6 @@ export const DependencyWheel = ({ title, xAxis, series, containerProps }) => (
 );
 
 DependencyWheel.propTypes = {
-  ...Chart.propTypes,
   /** Title of the chart, type is inherited from the `Chart` base component */
   title: Chart.propTypes.title,
   /** Values for X axis, type is inherited from the `Chart` base component */
