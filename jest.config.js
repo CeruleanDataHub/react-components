@@ -8,10 +8,10 @@ module.exports = {
   // Values are lower than they should be due to skipped tests
   coverageThreshold: {
     global: {
-      branches: 90,
-      functions: 93,
-      lines: 95,
-      statements: -11
+      branches: 90.4,
+      functions: 97.5,
+      lines: 97.8,
+      statements: -5
     }
   }
 };
