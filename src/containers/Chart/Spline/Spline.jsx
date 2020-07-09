@@ -22,11 +22,11 @@ export const Spline = ({ title, xAxis, series }) => (
 );
 
 Spline.propTypes = {
-  /** Title of the chart */
+  /** Title of the chart, type is inherited from the `Chart` base component */
   title: Chart.propTypes.title,
-  /** Values for X axis */
+  /** Values for X axis, type is inherited from the `Chart` base component */
   xAxis: Chart.propTypes.xAxis,
-  /** Data to be graphed */
+  /** Data to be graphed, type is inherited from the `Chart` base component */
   series: Chart.propTypes.series
 };
 

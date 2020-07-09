@@ -38,9 +38,9 @@ export const TreeMap = ({ title, series }) => (
 
 TreeMap.propTypes = {
   ...Chart.propTypes,
-  /** Title of the chart */
+  /** Title of the chart, type is inherited from the `Chart` base component */
   title: Chart.propTypes.title,
-  /** Data to be graphed */
+  /** Data to be graphed, type is inherited from the `Chart` base component */
   series: Chart.propTypes.series
 };
 
