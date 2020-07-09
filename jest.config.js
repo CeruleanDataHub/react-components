@@ -5,13 +5,12 @@ module.exports = {
   moduleNameMapper: {
     "\\.(css)$": "<rootDir>/styleMock.js"
   },
-  // Values are lower than they should be due to skipped tests
   coverageThreshold: {
     global: {
-      branches: 90.4,
-      functions: 97.5,
-      lines: 97.8,
-      statements: -5
+      branches: 100,
+      functions: 100,
+      lines: 100,
+      statements: 0
     }
   }
 };
