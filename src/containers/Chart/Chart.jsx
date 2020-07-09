@@ -56,11 +56,13 @@ Chart.propTypes = {
   /** Title of the chart */
   title: PropTypes.string,
   /** Values for X axis */
+  // eslint-disable-next-line react/forbid-prop-types
   xAxis: PropTypes.arrayOf(PropTypes.shape({ categories: PropTypes.array })),
   /** Data to be graphed */
   series: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string,
+      // eslint-disable-next-line react/forbid-prop-types
       data: PropTypes.array
     })
   ),
