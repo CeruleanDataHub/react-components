@@ -1,5 +1,4 @@
 import { mount } from "enzyme";
-import MockDate from "mockdate";
 import moment from "moment";
 import React from "react";
 import renderer from "react-test-renderer";
@@ -8,15 +7,20 @@ import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "../../../styles/theme";
 import { SingleDatePicker } from "./SingleDatePicker";
 
-const mockDate = new Date("2020-06-19");
+jest.mock("moment", () => {
+  const mockedMoment = jest.requireActual("moment");
+  const mockedDate = "2020-06-19";
+  const momentInstance = mockedMoment(mockedDate);
+  jest.spyOn(momentInstance, "format");
 
-const before = () => {
-  MockDate.set(mockDate);
-};
+  function fakeMoment() {
+    return momentInstance;
+  }
 
-const after = () => {
-  MockDate.reset();
-};
+  Object.assign(fakeMoment, mockedMoment);
+
+  return fakeMoment;
+});
 
 const themes = [
   { name: "light", theme: lightTheme },
@@ -24,10 +28,7 @@ const themes = [
 ];
 
 themes.forEach(({ name, theme }) => {
-  xdescribe(`SingleDatePicker ${name}`, () => {
-    beforeAll(before);
-    afterAll(after);
-
+  describe(`SingleDatePicker ${name}`, () => {
     it("should render", () => {
       const component = renderer.create(
         <ThemeProvider theme={theme}>
