@@ -141,7 +141,7 @@ exports[`DateRangePicker dark should render 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="06.07.2020"
+              value="19.06.2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -183,7 +183,7 @@ exports[`DateRangePicker dark should render 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="06.07.2020"
+              value="19.06.2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -340,7 +340,7 @@ exports[`DateRangePicker dark should render with custom date format 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="07/06/2020"
+              value="06/19/2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -382,7 +382,7 @@ exports[`DateRangePicker dark should render with custom date format 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="07/06/2020"
+              value="06/19/2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -539,7 +539,7 @@ exports[`DateRangePicker light should render 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="06.07.2020"
+              value="19.06.2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -581,7 +581,7 @@ exports[`DateRangePicker light should render 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="06.07.2020"
+              value="19.06.2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -738,7 +738,7 @@ exports[`DateRangePicker light should render with custom date format 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="07/06/2020"
+              value="06/19/2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -780,7 +780,7 @@ exports[`DateRangePicker light should render with custom date format 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="07/06/2020"
+              value="06/19/2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -937,7 +937,7 @@ exports[`DateRangePicker with given date should render DateRangePicker starting 
               readOnly={false}
               required={false}
               type="text"
-              value="07/01/2020"
+              value="06/19/2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -979,7 +979,7 @@ exports[`DateRangePicker with given date should render DateRangePicker starting 
               readOnly={false}
               required={false}
               type="text"
-              value="07/12/2020"
+              value="06/19/2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -1136,7 +1136,7 @@ exports[`DateRangePicker with given date should render DateRangePicker starting 
               readOnly={false}
               required={false}
               type="text"
-              value="07/01/2020"
+              value="06/19/2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -1178,7 +1178,7 @@ exports[`DateRangePicker with given date should render DateRangePicker starting 
               readOnly={false}
               required={false}
               type="text"
-              value="07/12/2020"
+              value="06/19/2020"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
