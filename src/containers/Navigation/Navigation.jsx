@@ -45,8 +45,11 @@ export const Navigation = ({ menuInitialState, onMenuToggle, children }) => {
 };
 
 Navigation.propTypes = {
+  /** Defines should the menu be initially open or closed */
   menuInitialState: PropTypes.bool,
+  /** Menu toggle event callback */
   onMenuToggle: PropTypes.func,
+  /** React node */
   children: PropTypes.node
 };
 
