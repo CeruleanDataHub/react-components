@@ -39,6 +39,7 @@ exports[`Navigation should call default props onMenuToggle function when no onMe
 
 .c10 {
   margin-left: 1rem;
+  opacity: 1;
 }
 
 .c2 {
@@ -226,6 +227,7 @@ exports[`Navigation should have menu toggle event listener 1`] = `
 
 .c10 {
   margin-left: 1rem;
+  opacity: 1;
 }
 
 .c2 {
@@ -473,6 +475,7 @@ exports[`Navigation should render children menu 1`] = `
 
 .c10 {
   margin-left: 1rem;
+  opacity: 1;
 }
 
 .c2 {
@@ -660,6 +663,7 @@ exports[`Navigation should render children menu closed when given appropriate pr
 
 .c10 {
   margin-left: 1rem;
+  opacity: 1;
 }
 
 .c2 {

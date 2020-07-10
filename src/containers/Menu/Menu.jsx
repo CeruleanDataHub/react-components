@@ -30,6 +30,8 @@ const Flex = styled.div`
 
 const MenuItemText = styled.span`
   margin-left: 1rem;
+  /* text still selectable in browser */
+  opacity: ${({ menuOpen }) => (menuOpen ? 1 : 0)};
 `;
 
 const SingleItem = ({ name, icon, menuOpen }) => (
