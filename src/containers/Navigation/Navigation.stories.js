@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 
 import { Menu } from "../Menu/Menu";
 import { Navigation } from "./Navigation";
@@ -21,6 +22,35 @@ export const NavigationWithToggleStory = () => {
     <Navigation onMenuToggle={setMenuOpen}>
       <Menu items={menuItems} menuOpen={menuOpen} />
     </Navigation>
+  );
+};
+
+const NavigationWrapper = styled.div`
+  transition: width linear 280ms;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  width: ${({ menuOpen }) => (menuOpen ? 20 : 4)}em;
+
+  button {
+    color: #ffffff;
+  }
+
+  .menu-text {
+    transition: opacity linear 280ms;
+    /* text still selectable in browser */
+    opacity: ${({ menuOpen }) => (menuOpen ? 1 : 0)};
+  }
+`;
+
+export const NavigationWithToggleAndAnimationStory = () => {
+  const [menuOpen, setMenuOpen] = useState(true);
+
+  return (
+    <NavigationWrapper menuOpen={menuOpen}>
+      <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
+        <Menu items={menuItems} menuOpen={menuOpen} />
+      </Navigation>
+    </NavigationWrapper>
   );
 };
 
