@@ -37,8 +37,6 @@ const NavigationWrapper = styled.div`
 
   .menu-text {
     transition: opacity linear 280ms;
-    /* text still selectable in browser */
-    opacity: ${({ menuOpen }) => (menuOpen ? 1 : 0)};
   }
 `;
 
