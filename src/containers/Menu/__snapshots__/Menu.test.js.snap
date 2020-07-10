@@ -13,7 +13,7 @@ exports[`Menu should render 1`] = `
 `;
 
 exports[`Menu should render closed menu 1`] = `
-.c4 {
+.c5 {
   text-align: center;
 }
 
@@ -23,10 +23,8 @@ exports[`Menu should render closed menu 1`] = `
   color: unset;
 }
 
-.c3 {
+.c4 {
   font-size: 1.5em;
-  margin-right: 1.75rem;
-  float: left;
 }
 
 .c0 {
@@ -44,8 +42,15 @@ exports[`Menu should render closed menu 1`] = `
   text-transform: uppercase;
 }
 
-.c5 {
-  display: none;
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c6 {
+  margin-left: 1rem;
 }
 
 <ul
@@ -59,14 +64,18 @@ exports[`Menu should render closed menu 1`] = `
       fontFamily="exo"
       size="normal"
     >
-      <span
-        className="c3 c4 lni lni-home"
-      />
-      <span
-        className="c5"
+      <div
+        className="c3"
       >
-        Home
-      </span>
+        <span
+          className="c4 c5 lni lni-home"
+        />
+        <span
+          className="c6 menu-text"
+        >
+          Home
+        </span>
+      </div>
     </div>
   </li>
   <li
@@ -77,14 +86,18 @@ exports[`Menu should render closed menu 1`] = `
       fontFamily="exo"
       size="normal"
     >
-      <span
-        className="c3 c4 lni lni-users"
-      />
-      <span
-        className="c5"
+      <div
+        className="c3"
       >
-        Users
-      </span>
+        <span
+          className="c4 c5 lni lni-users"
+        />
+        <span
+          className="c6 menu-text"
+        >
+          Users
+        </span>
+      </div>
     </div>
   </li>
   <li
@@ -95,14 +108,18 @@ exports[`Menu should render closed menu 1`] = `
       fontFamily="exo"
       size="normal"
     >
-      <span
-        className="c3 c4 lni lni-rocket"
-      />
-      <span
-        className="c5"
+      <div
+        className="c3"
       >
-        Devices
-      </span>
+        <span
+          className="c4 c5 lni lni-rocket"
+        />
+        <span
+          className="c6 menu-text"
+        >
+          Devices
+        </span>
+      </div>
     </div>
   </li>
   <li
@@ -113,21 +130,25 @@ exports[`Menu should render closed menu 1`] = `
       fontFamily="exo"
       size="normal"
     >
-      <span
-        className="c3 c4 lni lni-briefcase"
-      />
-      <span
-        className="c5"
+      <div
+        className="c3"
       >
-        Costs
-      </span>
+        <span
+          className="c4 c5 lni lni-briefcase"
+        />
+        <span
+          className="c6 menu-text"
+        >
+          Costs
+        </span>
+      </div>
     </div>
   </li>
 </ul>
 `;
 
 exports[`Menu should render items 1`] = `
-.c4 {
+.c5 {
   text-align: center;
 }
 
@@ -137,10 +158,8 @@ exports[`Menu should render items 1`] = `
   color: unset;
 }
 
-.c3 {
+.c4 {
   font-size: 1.5em;
-  margin-right: 1.75rem;
-  float: left;
 }
 
 .c0 {
@@ -158,8 +177,15 @@ exports[`Menu should render items 1`] = `
   text-transform: uppercase;
 }
 
-.c5 {
-  display: block;
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c6 {
+  margin-left: 1rem;
 }
 
 <ul
@@ -173,14 +199,18 @@ exports[`Menu should render items 1`] = `
       fontFamily="exo"
       size="normal"
     >
-      <span
-        className="c3 c4 lni lni-home"
-      />
-      <span
-        className="c5"
+      <div
+        className="c3"
       >
-        Home
-      </span>
+        <span
+          className="c4 c5 lni lni-home"
+        />
+        <span
+          className="c6 menu-text"
+        >
+          Home
+        </span>
+      </div>
     </div>
   </li>
   <li
@@ -191,14 +221,18 @@ exports[`Menu should render items 1`] = `
       fontFamily="exo"
       size="normal"
     >
-      <span
-        className="c3 c4 lni lni-users"
-      />
-      <span
-        className="c5"
+      <div
+        className="c3"
       >
-        Users
-      </span>
+        <span
+          className="c4 c5 lni lni-users"
+        />
+        <span
+          className="c6 menu-text"
+        >
+          Users
+        </span>
+      </div>
     </div>
   </li>
   <li
@@ -209,14 +243,18 @@ exports[`Menu should render items 1`] = `
       fontFamily="exo"
       size="normal"
     >
-      <span
-        className="c3 c4 lni lni-rocket"
-      />
-      <span
-        className="c5"
+      <div
+        className="c3"
       >
-        Devices
-      </span>
+        <span
+          className="c4 c5 lni lni-rocket"
+        />
+        <span
+          className="c6 menu-text"
+        >
+          Devices
+        </span>
+      </div>
     </div>
   </li>
   <li
@@ -227,21 +265,25 @@ exports[`Menu should render items 1`] = `
       fontFamily="exo"
       size="normal"
     >
-      <span
-        className="c3 c4 lni lni-briefcase"
-      />
-      <span
-        className="c5"
+      <div
+        className="c3"
       >
-        Costs
-      </span>
+        <span
+          className="c4 c5 lni lni-briefcase"
+        />
+        <span
+          className="c6 menu-text"
+        >
+          Costs
+        </span>
+      </div>
     </div>
   </li>
 </ul>
 `;
 
 exports[`Menu should render open menu 1`] = `
-.c4 {
+.c5 {
   text-align: center;
 }
 
@@ -251,10 +293,8 @@ exports[`Menu should render open menu 1`] = `
   color: unset;
 }
 
-.c3 {
+.c4 {
   font-size: 1.5em;
-  margin-right: 1.75rem;
-  float: left;
 }
 
 .c0 {
@@ -272,8 +312,15 @@ exports[`Menu should render open menu 1`] = `
   text-transform: uppercase;
 }
 
-.c5 {
-  display: block;
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c6 {
+  margin-left: 1rem;
 }
 
 <ul
@@ -287,14 +334,18 @@ exports[`Menu should render open menu 1`] = `
       fontFamily="exo"
       size="normal"
     >
-      <span
-        className="c3 c4 lni lni-home"
-      />
-      <span
-        className="c5"
+      <div
+        className="c3"
       >
-        Home
-      </span>
+        <span
+          className="c4 c5 lni lni-home"
+        />
+        <span
+          className="c6 menu-text"
+        >
+          Home
+        </span>
+      </div>
     </div>
   </li>
   <li
@@ -305,14 +356,18 @@ exports[`Menu should render open menu 1`] = `
       fontFamily="exo"
       size="normal"
     >
-      <span
-        className="c3 c4 lni lni-users"
-      />
-      <span
-        className="c5"
+      <div
+        className="c3"
       >
-        Users
-      </span>
+        <span
+          className="c4 c5 lni lni-users"
+        />
+        <span
+          className="c6 menu-text"
+        >
+          Users
+        </span>
+      </div>
     </div>
   </li>
   <li
@@ -323,14 +378,18 @@ exports[`Menu should render open menu 1`] = `
       fontFamily="exo"
       size="normal"
     >
-      <span
-        className="c3 c4 lni lni-rocket"
-      />
-      <span
-        className="c5"
+      <div
+        className="c3"
       >
-        Devices
-      </span>
+        <span
+          className="c4 c5 lni lni-rocket"
+        />
+        <span
+          className="c6 menu-text"
+        >
+          Devices
+        </span>
+      </div>
     </div>
   </li>
   <li
@@ -341,14 +400,18 @@ exports[`Menu should render open menu 1`] = `
       fontFamily="exo"
       size="normal"
     >
-      <span
-        className="c3 c4 lni lni-briefcase"
-      />
-      <span
-        className="c5"
+      <div
+        className="c3"
       >
-        Costs
-      </span>
+        <span
+          className="c4 c5 lni lni-briefcase"
+        />
+        <span
+          className="c6 menu-text"
+        >
+          Costs
+        </span>
+      </div>
     </div>
   </li>
 </ul>

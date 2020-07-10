@@ -7,8 +7,6 @@ import { Typography } from "../Typography/Typography";
 
 const MenuIcon = styled.span`
   font-size: 1.5em;
-  margin-right: 1.75rem;
-  float: left;
 `;
 
 const MenuItems = styled.ul`
@@ -26,23 +24,45 @@ const MenuItem = styled.li`
   text-transform: uppercase;
 `;
 
-const MenuItemText = styled.span`
-  display: ${({ menuOpen }) => (menuOpen ? "block" : "none")};
+const Flex = styled.div`
+  display: flex;
 `;
 
-const renderItems = ({ items, menuOpen }) =>
-  items &&
-  items.map(item => (
-    <MenuItem key={item.name}>
-      <Typography fontFamily="exo">
-        <Icon name={item.icon} as={MenuIcon} />
-        <MenuItemText menuOpen={menuOpen}>{item.name}</MenuItemText>
-      </Typography>
-    </MenuItem>
-  ));
+const MenuItemText = styled.span`
+  margin-left: 1rem;
+`;
+
+const SingleItem = ({ name, icon, menuOpen }) => (
+  <MenuItem>
+    <Typography fontFamily="exo">
+      <Flex>
+        <Icon name={icon} as={MenuIcon} />
+        <MenuItemText className="menu-text" menuOpen={menuOpen}>
+          {name}
+        </MenuItemText>
+      </Flex>
+    </Typography>
+  </MenuItem>
+);
+
+SingleItem.propTypes = {
+  name: PropTypes.string,
+  icon: Icon.propTypes.name,
+  menuOpen: PropTypes.bool
+};
+
+SingleItem.defaultProps = {
+  name: "",
+  icon: "",
+  menuOpen: true
+};
 
 export const Menu = ({ items, menuOpen }) => (
-  <MenuItems>{renderItems({ items, menuOpen })}</MenuItems>
+  <MenuItems>
+    {items.map(({ name, icon }) => (
+      <SingleItem name={name} icon={icon} menuOpen={menuOpen} key={name} />
+    ))}
+  </MenuItems>
 );
 
 Menu.propTypes = {
