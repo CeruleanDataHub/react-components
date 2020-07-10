@@ -14,4 +14,6 @@ const items = [
   { name: "Second", icon: "eye" }
 ];
 
-export const ChartStory = () => <Menu items={items} />;
+export const MenuStory = () => <Menu items={items} />;
+export const MenuOpenStory = () => <Menu items={items} menuOpen />;
+export const MenuClosedStory = () => <Menu items={items} menuOpen={false} />;
