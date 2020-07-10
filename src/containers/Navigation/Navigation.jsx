@@ -17,7 +17,7 @@ const MenuOpen = styled.button`
   height: 3.5em;
   cursor: pointer;
   border: none;
-  margin: 0 auto;
+  margin-left: 0.5em;
 `;
 
 const MenuIcon = styled.span`
@@ -29,7 +29,7 @@ export const Navigation = ({ menuInitialState, onMenuToggle, children }) => {
   const [menuOpen, setMenuOpen] = useState(menuInitialState);
 
   return (
-    <NavBar id="left-navigation" menuOpen={menuOpen}>
+    <NavBar menuOpen={menuOpen}>
       <Button
         onClick={() => {
           setMenuOpen(!menuOpen);
