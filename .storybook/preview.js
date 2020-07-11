@@ -3,6 +3,7 @@ import { boolean } from "@storybook/addon-knobs";
 import { addDecorator, addParameters } from "@storybook/react";
 import React, { StrictMode } from "react";
 import { ThemeProvider } from "styled-components";
+import { Normalize } from "styled-normalize";
 
 import { darkTheme, lightTheme } from "../src/styles/theme";
 
@@ -15,6 +16,7 @@ addParameters({
 
 addDecorator(storyFn => (
   <StrictMode>
+    <Normalize />
     <ThemeProvider
       theme={
         boolean("Toggle light and dark theme", true) ? lightTheme : darkTheme
