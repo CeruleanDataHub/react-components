@@ -1,26 +1,47 @@
 import { mount } from "enzyme";
+import PropTypes from "prop-types";
 import React from "react";
 import renderer from "react-test-renderer";
 
 import { Menu } from "../Menu/Menu";
 import { Navigation } from "./Navigation";
 
+const MenuLinkExample = ({ to, children }) => <a href={to}>{children}</a>;
+
+MenuLinkExample.propTypes = {
+  to: PropTypes.string,
+  children: PropTypes.node
+};
+
+MenuLinkExample.defaultProps = {
+  to: "",
+  children: ""
+};
+
 const menuItems = [
   {
     name: "Home",
-    icon: "home"
+    icon: "home",
+    LinkComponent: MenuLinkExample,
+    to: "#home"
   },
   {
     name: "Users",
-    icon: "users"
+    icon: "users",
+    LinkComponent: MenuLinkExample,
+    to: "#users"
   },
   {
     name: "Devices",
-    icon: "rocket"
+    icon: "rocket",
+    LinkComponent: MenuLinkExample,
+    to: "#devices"
   },
   {
     name: "Costs",
-    icon: "briefcase"
+    icon: "briefcase",
+    LinkComponent: MenuLinkExample,
+    to: "#costs"
   }
 ];
 

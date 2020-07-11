@@ -30,6 +30,12 @@ exports[`Navigation should call default props onMenuToggle function when no onMe
   text-transform: uppercase;
 }
 
+.c6 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+}
+
 .c8 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -104,18 +110,22 @@ exports[`Navigation should call default props onMenuToggle function when no onMe
         fontFamily="exo"
         size="normal"
       >
-        <div
-          className="c8"
+        <a
+          href="#home"
         >
-          <span
-            className="c9 c4 lni lni-home"
-          />
-          <span
-            className="c10 menu-text"
+          <div
+            className="c8"
           >
-            Home
-          </span>
-        </div>
+            <span
+              className="c9 c4 lni lni-home"
+            />
+            <span
+              className="c10 menu-text"
+            >
+              Home
+            </span>
+          </div>
+        </a>
       </div>
     </li>
     <li
@@ -126,18 +136,22 @@ exports[`Navigation should call default props onMenuToggle function when no onMe
         fontFamily="exo"
         size="normal"
       >
-        <div
-          className="c8"
+        <a
+          href="#users"
         >
-          <span
-            className="c9 c4 lni lni-users"
-          />
-          <span
-            className="c10 menu-text"
+          <div
+            className="c8"
           >
-            Users
-          </span>
-        </div>
+            <span
+              className="c9 c4 lni lni-users"
+            />
+            <span
+              className="c10 menu-text"
+            >
+              Users
+            </span>
+          </div>
+        </a>
       </div>
     </li>
     <li
@@ -148,18 +162,22 @@ exports[`Navigation should call default props onMenuToggle function when no onMe
         fontFamily="exo"
         size="normal"
       >
-        <div
-          className="c8"
+        <a
+          href="#devices"
         >
-          <span
-            className="c9 c4 lni lni-rocket"
-          />
-          <span
-            className="c10 menu-text"
+          <div
+            className="c8"
           >
-            Devices
-          </span>
-        </div>
+            <span
+              className="c9 c4 lni lni-rocket"
+            />
+            <span
+              className="c10 menu-text"
+            >
+              Devices
+            </span>
+          </div>
+        </a>
       </div>
     </li>
     <li
@@ -170,18 +188,22 @@ exports[`Navigation should call default props onMenuToggle function when no onMe
         fontFamily="exo"
         size="normal"
       >
-        <div
-          className="c8"
+        <a
+          href="#costs"
         >
-          <span
-            className="c9 c4 lni lni-briefcase"
-          />
-          <span
-            className="c10 menu-text"
+          <div
+            className="c8"
           >
-            Costs
-          </span>
-        </div>
+            <span
+              className="c9 c4 lni lni-briefcase"
+            />
+            <span
+              className="c10 menu-text"
+            >
+              Costs
+            </span>
+          </div>
+        </a>
       </div>
     </li>
   </ul>
@@ -218,6 +240,12 @@ exports[`Navigation should have menu toggle event listener 1`] = `
   text-transform: uppercase;
 }
 
+.c6 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+}
+
 .c8 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -292,18 +320,22 @@ exports[`Navigation should have menu toggle event listener 1`] = `
         fontFamily="exo"
         size="normal"
       >
-        <div
-          className="c8"
+        <a
+          href="#home"
         >
-          <span
-            className="c9 c4 lni lni-home"
-          />
-          <span
-            className="c10 menu-text"
+          <div
+            className="c8"
           >
-            Home
-          </span>
-        </div>
+            <span
+              className="c9 c4 lni lni-home"
+            />
+            <span
+              className="c10 menu-text"
+            >
+              Home
+            </span>
+          </div>
+        </a>
       </div>
     </li>
     <li
@@ -314,18 +346,22 @@ exports[`Navigation should have menu toggle event listener 1`] = `
         fontFamily="exo"
         size="normal"
       >
-        <div
-          className="c8"
+        <a
+          href="#users"
         >
-          <span
-            className="c9 c4 lni lni-users"
-          />
-          <span
-            className="c10 menu-text"
+          <div
+            className="c8"
           >
-            Users
-          </span>
-        </div>
+            <span
+              className="c9 c4 lni lni-users"
+            />
+            <span
+              className="c10 menu-text"
+            >
+              Users
+            </span>
+          </div>
+        </a>
       </div>
     </li>
     <li
@@ -336,18 +372,22 @@ exports[`Navigation should have menu toggle event listener 1`] = `
         fontFamily="exo"
         size="normal"
       >
-        <div
-          className="c8"
+        <a
+          href="#devices"
         >
-          <span
-            className="c9 c4 lni lni-rocket"
-          />
-          <span
-            className="c10 menu-text"
+          <div
+            className="c8"
           >
-            Devices
-          </span>
-        </div>
+            <span
+              className="c9 c4 lni lni-rocket"
+            />
+            <span
+              className="c10 menu-text"
+            >
+              Devices
+            </span>
+          </div>
+        </a>
       </div>
     </li>
     <li
@@ -358,18 +398,22 @@ exports[`Navigation should have menu toggle event listener 1`] = `
         fontFamily="exo"
         size="normal"
       >
-        <div
-          className="c8"
+        <a
+          href="#costs"
         >
-          <span
-            className="c9 c4 lni lni-briefcase"
-          />
-          <span
-            className="c10 menu-text"
+          <div
+            className="c8"
           >
-            Costs
-          </span>
-        </div>
+            <span
+              className="c9 c4 lni lni-briefcase"
+            />
+            <span
+              className="c10 menu-text"
+            >
+              Costs
+            </span>
+          </div>
+        </a>
       </div>
     </li>
   </ul>
@@ -466,6 +510,12 @@ exports[`Navigation should render children menu 1`] = `
   text-transform: uppercase;
 }
 
+.c6 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+}
+
 .c8 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -540,18 +590,22 @@ exports[`Navigation should render children menu 1`] = `
         fontFamily="exo"
         size="normal"
       >
-        <div
-          className="c8"
+        <a
+          href="#home"
         >
-          <span
-            className="c9 c4 lni lni-home"
-          />
-          <span
-            className="c10 menu-text"
+          <div
+            className="c8"
           >
-            Home
-          </span>
-        </div>
+            <span
+              className="c9 c4 lni lni-home"
+            />
+            <span
+              className="c10 menu-text"
+            >
+              Home
+            </span>
+          </div>
+        </a>
       </div>
     </li>
     <li
@@ -562,18 +616,22 @@ exports[`Navigation should render children menu 1`] = `
         fontFamily="exo"
         size="normal"
       >
-        <div
-          className="c8"
+        <a
+          href="#users"
         >
-          <span
-            className="c9 c4 lni lni-users"
-          />
-          <span
-            className="c10 menu-text"
+          <div
+            className="c8"
           >
-            Users
-          </span>
-        </div>
+            <span
+              className="c9 c4 lni lni-users"
+            />
+            <span
+              className="c10 menu-text"
+            >
+              Users
+            </span>
+          </div>
+        </a>
       </div>
     </li>
     <li
@@ -584,18 +642,22 @@ exports[`Navigation should render children menu 1`] = `
         fontFamily="exo"
         size="normal"
       >
-        <div
-          className="c8"
+        <a
+          href="#devices"
         >
-          <span
-            className="c9 c4 lni lni-rocket"
-          />
-          <span
-            className="c10 menu-text"
+          <div
+            className="c8"
           >
-            Devices
-          </span>
-        </div>
+            <span
+              className="c9 c4 lni lni-rocket"
+            />
+            <span
+              className="c10 menu-text"
+            >
+              Devices
+            </span>
+          </div>
+        </a>
       </div>
     </li>
     <li
@@ -606,18 +668,22 @@ exports[`Navigation should render children menu 1`] = `
         fontFamily="exo"
         size="normal"
       >
-        <div
-          className="c8"
+        <a
+          href="#costs"
         >
-          <span
-            className="c9 c4 lni lni-briefcase"
-          />
-          <span
-            className="c10 menu-text"
+          <div
+            className="c8"
           >
-            Costs
-          </span>
-        </div>
+            <span
+              className="c9 c4 lni lni-briefcase"
+            />
+            <span
+              className="c10 menu-text"
+            >
+              Costs
+            </span>
+          </div>
+        </a>
       </div>
     </li>
   </ul>
@@ -652,6 +718,12 @@ exports[`Navigation should render children menu closed when given appropriate pr
   height: 1.5em;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+.c6 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
 }
 
 .c8 {
@@ -728,18 +800,22 @@ exports[`Navigation should render children menu closed when given appropriate pr
         fontFamily="exo"
         size="normal"
       >
-        <div
-          className="c8"
+        <a
+          href="#home"
         >
-          <span
-            className="c9 c4 lni lni-home"
-          />
-          <span
-            className="c10 menu-text"
+          <div
+            className="c8"
           >
-            Home
-          </span>
-        </div>
+            <span
+              className="c9 c4 lni lni-home"
+            />
+            <span
+              className="c10 menu-text"
+            >
+              Home
+            </span>
+          </div>
+        </a>
       </div>
     </li>
     <li
@@ -750,18 +826,22 @@ exports[`Navigation should render children menu closed when given appropriate pr
         fontFamily="exo"
         size="normal"
       >
-        <div
-          className="c8"
+        <a
+          href="#users"
         >
-          <span
-            className="c9 c4 lni lni-users"
-          />
-          <span
-            className="c10 menu-text"
+          <div
+            className="c8"
           >
-            Users
-          </span>
-        </div>
+            <span
+              className="c9 c4 lni lni-users"
+            />
+            <span
+              className="c10 menu-text"
+            >
+              Users
+            </span>
+          </div>
+        </a>
       </div>
     </li>
     <li
@@ -772,18 +852,22 @@ exports[`Navigation should render children menu closed when given appropriate pr
         fontFamily="exo"
         size="normal"
       >
-        <div
-          className="c8"
+        <a
+          href="#devices"
         >
-          <span
-            className="c9 c4 lni lni-rocket"
-          />
-          <span
-            className="c10 menu-text"
+          <div
+            className="c8"
           >
-            Devices
-          </span>
-        </div>
+            <span
+              className="c9 c4 lni lni-rocket"
+            />
+            <span
+              className="c10 menu-text"
+            >
+              Devices
+            </span>
+          </div>
+        </a>
       </div>
     </li>
     <li
@@ -794,18 +878,22 @@ exports[`Navigation should render children menu closed when given appropriate pr
         fontFamily="exo"
         size="normal"
       >
-        <div
-          className="c8"
+        <a
+          href="#costs"
         >
-          <span
-            className="c9 c4 lni lni-briefcase"
-          />
-          <span
-            className="c10 menu-text"
+          <div
+            className="c8"
           >
-            Costs
-          </span>
-        </div>
+            <span
+              className="c9 c4 lni lni-briefcase"
+            />
+            <span
+              className="c10 menu-text"
+            >
+              Costs
+            </span>
+          </div>
+        </a>
       </div>
     </li>
   </ul>

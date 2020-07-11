@@ -42,6 +42,12 @@ exports[`Menu should render closed menu 1`] = `
   text-transform: uppercase;
 }
 
+.c1 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+}
+
 .c3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -65,18 +71,22 @@ exports[`Menu should render closed menu 1`] = `
       fontFamily="exo"
       size="normal"
     >
-      <div
-        className="c3"
+      <a
+        href="#home"
       >
-        <span
-          className="c4 c5 lni lni-home"
-        />
-        <span
-          className="c6 menu-text"
+        <div
+          className="c3"
         >
-          Home
-        </span>
-      </div>
+          <span
+            className="c4 c5 lni lni-home"
+          />
+          <span
+            className="c6 menu-text"
+          >
+            Home
+          </span>
+        </div>
+      </a>
     </div>
   </li>
   <li
@@ -87,18 +97,22 @@ exports[`Menu should render closed menu 1`] = `
       fontFamily="exo"
       size="normal"
     >
-      <div
-        className="c3"
+      <a
+        href="#users"
       >
-        <span
-          className="c4 c5 lni lni-users"
-        />
-        <span
-          className="c6 menu-text"
+        <div
+          className="c3"
         >
-          Users
-        </span>
-      </div>
+          <span
+            className="c4 c5 lni lni-users"
+          />
+          <span
+            className="c6 menu-text"
+          >
+            Users
+          </span>
+        </div>
+      </a>
     </div>
   </li>
   <li
@@ -109,18 +123,22 @@ exports[`Menu should render closed menu 1`] = `
       fontFamily="exo"
       size="normal"
     >
-      <div
-        className="c3"
+      <a
+        href="#devices"
       >
-        <span
-          className="c4 c5 lni lni-rocket"
-        />
-        <span
-          className="c6 menu-text"
+        <div
+          className="c3"
         >
-          Devices
-        </span>
-      </div>
+          <span
+            className="c4 c5 lni lni-rocket"
+          />
+          <span
+            className="c6 menu-text"
+          >
+            Devices
+          </span>
+        </div>
+      </a>
     </div>
   </li>
   <li
@@ -131,18 +149,22 @@ exports[`Menu should render closed menu 1`] = `
       fontFamily="exo"
       size="normal"
     >
-      <div
-        className="c3"
+      <a
+        href="#costs"
       >
-        <span
-          className="c4 c5 lni lni-briefcase"
-        />
-        <span
-          className="c6 menu-text"
+        <div
+          className="c3"
         >
-          Costs
-        </span>
-      </div>
+          <span
+            className="c4 c5 lni lni-briefcase"
+          />
+          <span
+            className="c6 menu-text"
+          >
+            Costs
+          </span>
+        </div>
+      </a>
     </div>
   </li>
 </ul>
@@ -178,6 +200,12 @@ exports[`Menu should render items 1`] = `
   text-transform: uppercase;
 }
 
+.c1 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+}
+
 .c3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -201,18 +229,22 @@ exports[`Menu should render items 1`] = `
       fontFamily="exo"
       size="normal"
     >
-      <div
-        className="c3"
+      <a
+        href="#home"
       >
-        <span
-          className="c4 c5 lni lni-home"
-        />
-        <span
-          className="c6 menu-text"
+        <div
+          className="c3"
         >
-          Home
-        </span>
-      </div>
+          <span
+            className="c4 c5 lni lni-home"
+          />
+          <span
+            className="c6 menu-text"
+          >
+            Home
+          </span>
+        </div>
+      </a>
     </div>
   </li>
   <li
@@ -223,18 +255,22 @@ exports[`Menu should render items 1`] = `
       fontFamily="exo"
       size="normal"
     >
-      <div
-        className="c3"
+      <a
+        href="#users"
       >
-        <span
-          className="c4 c5 lni lni-users"
-        />
-        <span
-          className="c6 menu-text"
+        <div
+          className="c3"
         >
-          Users
-        </span>
-      </div>
+          <span
+            className="c4 c5 lni lni-users"
+          />
+          <span
+            className="c6 menu-text"
+          >
+            Users
+          </span>
+        </div>
+      </a>
     </div>
   </li>
   <li
@@ -245,18 +281,22 @@ exports[`Menu should render items 1`] = `
       fontFamily="exo"
       size="normal"
     >
-      <div
-        className="c3"
+      <a
+        href="#devices"
       >
-        <span
-          className="c4 c5 lni lni-rocket"
-        />
-        <span
-          className="c6 menu-text"
+        <div
+          className="c3"
         >
-          Devices
-        </span>
-      </div>
+          <span
+            className="c4 c5 lni lni-rocket"
+          />
+          <span
+            className="c6 menu-text"
+          >
+            Devices
+          </span>
+        </div>
+      </a>
     </div>
   </li>
   <li
@@ -267,18 +307,22 @@ exports[`Menu should render items 1`] = `
       fontFamily="exo"
       size="normal"
     >
-      <div
-        className="c3"
+      <a
+        href="#costs"
       >
-        <span
-          className="c4 c5 lni lni-briefcase"
-        />
-        <span
-          className="c6 menu-text"
+        <div
+          className="c3"
         >
-          Costs
-        </span>
-      </div>
+          <span
+            className="c4 c5 lni lni-briefcase"
+          />
+          <span
+            className="c6 menu-text"
+          >
+            Costs
+          </span>
+        </div>
+      </a>
     </div>
   </li>
 </ul>
@@ -314,6 +358,170 @@ exports[`Menu should render open menu 1`] = `
   text-transform: uppercase;
 }
 
+.c1 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c6 {
+  margin-left: 1rem;
+  opacity: 1;
+}
+
+<ul
+  className="c0"
+>
+  <li
+    className="c1"
+  >
+    <div
+      className="c2"
+      fontFamily="exo"
+      size="normal"
+    >
+      <a
+        href="#home"
+      >
+        <div
+          className="c3"
+        >
+          <span
+            className="c4 c5 lni lni-home"
+          />
+          <span
+            className="c6 menu-text"
+          >
+            Home
+          </span>
+        </div>
+      </a>
+    </div>
+  </li>
+  <li
+    className="c1"
+  >
+    <div
+      className="c2"
+      fontFamily="exo"
+      size="normal"
+    >
+      <a
+        href="#users"
+      >
+        <div
+          className="c3"
+        >
+          <span
+            className="c4 c5 lni lni-users"
+          />
+          <span
+            className="c6 menu-text"
+          >
+            Users
+          </span>
+        </div>
+      </a>
+    </div>
+  </li>
+  <li
+    className="c1"
+  >
+    <div
+      className="c2"
+      fontFamily="exo"
+      size="normal"
+    >
+      <a
+        href="#devices"
+      >
+        <div
+          className="c3"
+        >
+          <span
+            className="c4 c5 lni lni-rocket"
+          />
+          <span
+            className="c6 menu-text"
+          >
+            Devices
+          </span>
+        </div>
+      </a>
+    </div>
+  </li>
+  <li
+    className="c1"
+  >
+    <div
+      className="c2"
+      fontFamily="exo"
+      size="normal"
+    >
+      <a
+        href="#costs"
+      >
+        <div
+          className="c3"
+        >
+          <span
+            className="c4 c5 lni lni-briefcase"
+          />
+          <span
+            className="c6 menu-text"
+          >
+            Costs
+          </span>
+        </div>
+      </a>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`Menu should render without link component 1`] = `
+.c5 {
+  text-align: center;
+}
+
+.c2 {
+  font-family: "Exo 2",sans-serif;
+  font-size: 16px;
+  color: unset;
+}
+
+.c4 {
+  font-size: 1.5em;
+}
+
+.c0 {
+  margin: 1em 0 0 0.25em;
+  padding: 0;
+  list-style-type: none;
+}
+
+.c1 {
+  display: block;
+  padding: 1em;
+  line-height: 1.5em;
+  height: 1.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.c1 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+}
+
 .c3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -347,72 +555,6 @@ exports[`Menu should render open menu 1`] = `
           className="c6 menu-text"
         >
           Home
-        </span>
-      </div>
-    </div>
-  </li>
-  <li
-    className="c1"
-  >
-    <div
-      className="c2"
-      fontFamily="exo"
-      size="normal"
-    >
-      <div
-        className="c3"
-      >
-        <span
-          className="c4 c5 lni lni-users"
-        />
-        <span
-          className="c6 menu-text"
-        >
-          Users
-        </span>
-      </div>
-    </div>
-  </li>
-  <li
-    className="c1"
-  >
-    <div
-      className="c2"
-      fontFamily="exo"
-      size="normal"
-    >
-      <div
-        className="c3"
-      >
-        <span
-          className="c4 c5 lni lni-rocket"
-        />
-        <span
-          className="c6 menu-text"
-        >
-          Devices
-        </span>
-      </div>
-    </div>
-  </li>
-  <li
-    className="c1"
-  >
-    <div
-      className="c2"
-      fontFamily="exo"
-      size="normal"
-    >
-      <div
-        className="c3"
-      >
-        <span
-          className="c4 c5 lni lni-briefcase"
-        />
-        <span
-          className="c6 menu-text"
-        >
-          Costs
         </span>
       </div>
     </div>
