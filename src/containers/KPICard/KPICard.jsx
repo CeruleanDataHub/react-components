@@ -46,6 +46,8 @@ export const KPICard = ({
   value,
   growth,
   showPercentage,
+  dataFormat,
+  currency,
   redValue,
   greenValue
 }) => (
@@ -60,7 +62,10 @@ export const KPICard = ({
           size="large"
           color={(redValue && "red") || (greenValue && "green") || null}
         >
-          {new Intl.NumberFormat().format(value)}
+          {new Intl.NumberFormat("en-EN", {
+            style: dataFormat,
+            ...(currency ? { currency } : {})
+          }).format(value)}
         </Typography>
       </Cell>
       {showPercentage && (
@@ -90,6 +95,10 @@ KPICard.propTypes = {
   growth: PropTypes.number,
   /** Defines whether to show the growth percentage */
   showPercentage: PropTypes.bool,
+  /** Defines whether the data should be displayed as a decimal or as currency */
+  dataFormat: PropTypes.oneOf(["decimal", "currency"]),
+  /** Defines in which currency the value would be printed */
+  currency: PropTypes.oneOf([null, "EUR", "USD"]),
   /** Defines whether the value should be red */
   redValue: PropTypes.bool,
   /** Defines whether the value should be green */
@@ -101,6 +110,8 @@ KPICard.defaultProps = {
   value: 0,
   growth: 0,
   showPercentage: true,
+  dataFormat: "decimal",
+  currency: null,
   redValue: false,
   greenValue: false
 };

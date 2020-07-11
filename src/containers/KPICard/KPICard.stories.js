@@ -77,3 +77,31 @@ export const KPICardGridStory = () => (
     </Cell>
   </Grid>
 );
+
+export const KPICardEuro = () => (
+  <KPICard title="Euro" value={3789} currency="EUR" dataFormat="currency" />
+);
+
+export const KPICardUSD = () => (
+  <KPICard title="USD" value={3789} currency="USD" dataFormat="currency" />
+);
+
+export const KPICardEuroWithoutPercentage = () => (
+  <KPICard
+    title="Euro"
+    value={3789}
+    currency="EUR"
+    dataFormat="currency"
+    showPercentage={false}
+  />
+);
+
+export const KPICardUSDWithoutPercentage = () => (
+  <KPICard
+    title="USD"
+    value={3789}
+    currency="USD"
+    dataFormat="currency"
+    showPercentage={false}
+  />
+);

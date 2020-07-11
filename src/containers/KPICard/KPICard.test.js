@@ -127,4 +127,48 @@ describe("KPICard", () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+
+  it("should render currency with euro", () => {
+    const component = renderer.create(
+      <KPICard title="Euro" value={3789} currency="EUR" dataFormat="currency" />
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("should render currency with USD", () => {
+    const component = renderer.create(
+      <KPICard title="USD" value={3789} currency="USD" dataFormat="currency" />
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("should render currency with euro and without percentage", () => {
+    const component = renderer.create(
+      <KPICard
+        title="Euro"
+        value={3789}
+        currency="EUR"
+        dataFormat="currency"
+        showPercentage={false}
+      />
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("should render currency with USD and without percentage", () => {
+    const component = renderer.create(
+      <KPICard
+        title="USD"
+        value={3789}
+        currency="USD"
+        dataFormat="currency"
+        showPercentage={false}
+      />
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
