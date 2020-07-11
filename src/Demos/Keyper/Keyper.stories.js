@@ -4,21 +4,21 @@ import moment from "moment";
 import React, { useState } from "react";
 import styled from "styled-components";
 
-import { Button } from "../Button/Button";
-import { DependencyWheel } from "../Chart/DependencyWheel/DependencyWheel";
-import { Heatmap } from "../Chart/Heatmap/Heatmap";
-import { SemiDonut } from "../Chart/SemiDonut/SemiDonut";
-import { Spline } from "../Chart/Spline/Spline";
-import { TreeMap } from "../Chart/TreeMap/TreeMap";
-import { SingleDatePicker } from "../DatePicker/SingleDatePicker/SingleDatePicker";
-import { Dropdown } from "../Dropdown/Dropdown";
-import { Fullscreen } from "../Fullscreen/Fullscreen";
-import { Cell, Grid } from "../Grid/Grid";
-import { KPICard } from "../KPICard/KPICard";
-import { Map } from "../Map/Map";
-import { Menu } from "../Menu/Menu";
-import { Navigation } from "../Navigation/Navigation";
-import { Typography } from "../Typography/Typography";
+import { Button } from "../../containers/Button/Button";
+import { DependencyWheel } from "../../containers/Chart/DependencyWheel/DependencyWheel";
+import { Heatmap } from "../../containers/Chart/Heatmap/Heatmap";
+import { SemiDonut } from "../../containers/Chart/SemiDonut/SemiDonut";
+import { Spline } from "../../containers/Chart/Spline/Spline";
+import { TreeMap } from "../../containers/Chart/TreeMap/TreeMap";
+import { SingleDatePicker } from "../../containers/DatePicker/SingleDatePicker/SingleDatePicker";
+import { Dropdown } from "../../containers/Dropdown/Dropdown";
+import { Fullscreen } from "../../containers/Fullscreen/Fullscreen";
+import { Cell, Grid } from "../../containers/Grid/Grid";
+import { KPICard } from "../../containers/KPICard/KPICard";
+import { Map } from "../../containers/Map/Map";
+import { Menu } from "../../containers/Menu/Menu";
+import { Navigation } from "../../containers/Navigation/Navigation";
+import { Typography } from "../../containers/Typography/Typography";
 
 const logins = [
   8052,
