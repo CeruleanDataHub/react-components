@@ -5,49 +5,42 @@ import styled from "styled-components";
 import { Icon } from "../Icon/Icon";
 import { Typography } from "../Typography/Typography";
 
-const CardDash = styled.div`
-  margin: "2em";
-  border-radius: 0.5em;
-  border: 2px dashed #ffffff;
-`;
 const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: ${props => props["justify-content"] || "center"};
-  margin: 1em;
+  justify-content: center;
   border-radius: 0.25em;
   border: 1px solid #000000;
   background-color: #ffffff;
-  height: ${props => props.height || "20em"};
-  width: ${props => props.width || "auto"};
-  max-width: ${props => props["max-width"] || "auto"};
-  text-align: ${props => props["text-align"] || "center"};
-  padding: 1em;
+  height: 20em;
+  text-align: center;
   box-sizing: border-box;
 `;
+
 const CardHeader = styled.h3`
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
 `;
+
 const CardBody = styled.div`
   text-align: center;
 `;
 
+const LargeIcon = styled.span`
+  font-size: 3rem;
+`;
+
 export const Card = ({ title, icon, children }) => (
-  <CardDash>
-    <CardContainer>
-      <Typography fontFamily="openSans">
-        {icon && <Icon name={icon} />}
-        {title && (
-          <CardHeader>
-            <Typography fontFamily="exo">{title}</Typography>
-          </CardHeader>
-        )}
-        <CardBody>{children}</CardBody>
-      </Typography>
-    </CardContainer>
-  </CardDash>
+  <CardContainer>
+    {icon && <Icon name={icon} as={LargeIcon} />}
+    {title && (
+      <CardHeader>
+        <Typography fontFamily="exo">{title}</Typography>
+      </CardHeader>
+    )}
+    <CardBody>{children}</CardBody>
+  </CardContainer>
 );
 
 Card.propTypes = {
