@@ -70,6 +70,16 @@ exports[`Icon should render icon cog 1`] = `
 />
 `;
 
+exports[`Icon should render icon control-panel 1`] = `
+.c0 {
+  text-align: center;
+}
+
+<span
+  className="c0 lni lni-control-panel"
+/>
+`;
+
 exports[`Icon should render icon dashboard 1`] = `
 .c0 {
   text-align: center;
@@ -167,6 +177,16 @@ exports[`Icon should render icon rocket 1`] = `
 
 <span
   className="c0 lni lni-rocket"
+/>
+`;
+
+exports[`Icon should render icon user 1`] = `
+.c0 {
+  text-align: center;
+}
+
+<span
+  className="c0 lni lni-user"
 />
 `;
 

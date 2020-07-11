@@ -6,12 +6,16 @@ const IconStyled = styled.span`
   text-align: center;
 `;
 
+/**
+ * Icon library is based on https://lineicons.com/icons/
+ */
 export const Icon = ({ name, as }) => (
   <IconStyled className={["lni", `lni-${name}`]} as={as} />
 );
 
 export const names = [
   "home",
+  "user",
   "users",
   "rocket",
   "briefcase",
@@ -28,7 +32,8 @@ export const names = [
   "full-screen",
   "layers",
   "exit",
-  "enter"
+  "enter",
+  "control-panel"
 ];
 export const iconNameProps = PropTypes.oneOf(names);
 
