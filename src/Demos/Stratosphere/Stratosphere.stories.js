@@ -1,7 +1,6 @@
 import { withKnobs } from "@storybook/addon-knobs";
 import PropTypes from "prop-types";
 import React, { useRef, useState } from "react";
-import { usePopper } from "react-popper-2";
 import styled from "styled-components";
 
 import { Button } from "../../containers/Button/Button";
@@ -14,6 +13,7 @@ import { Icon } from "../../containers/Icon/Icon";
 import { KPICard } from "../../containers/KPICard/KPICard";
 import { Menu } from "../../containers/Menu/Menu";
 import { Navigation } from "../../containers/Navigation/Navigation";
+import { Popover } from "../../containers/Popover/Popover";
 import { Typography } from "../../containers/Typography/Typography";
 
 const logins = [
@@ -283,38 +283,6 @@ const CardGrid = styled.div`
   }
 `;
 
-const PopperContainer = styled.div`
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  background-color: white;
-  padding: 20px;
-  text-align: center;
-
-  #arrow {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    &:after {
-      content: " ";
-      background-color: white;
-      box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
-      position: absolute;
-      top: -25px;
-      left: 0;
-      transform: rotate(45deg);
-      width: 10px;
-      height: 10px;
-    }
-  }
-
-  &[data-popper-placement^="top"] > #arrow {
-    bottom: -30px;
-    :after {
-      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-    }
-  }
-`;
-
 const SearchInput = styled.input`
   width: 100%;
   padding: 0.6rem;
@@ -326,33 +294,9 @@ const mockonlick = () => console.log("clicked on element");
 export const StratosphereDemo = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [popupOpen, setPopupOpen] = useState(false);
+  const [popoverOpen, setPopoverOpen] = useState(false);
 
   const containerRef = useRef(null);
-  const popupRef = useRef(null);
-
-  const [arrowRef, setArrowRef] = useState(null);
-
-  const { styles, attributes } = usePopper(
-    containerRef.current,
-    popupRef.current,
-    {
-      modifiers: [
-        {
-          name: "arrow",
-          options: {
-            element: arrowRef
-          }
-        },
-        {
-          name: "offset",
-          options: {
-            offset: [0, 10]
-          }
-        }
-      ]
-    }
-  );
 
   return (
     <Container>
@@ -376,20 +320,12 @@ export const StratosphereDemo = () => {
                   onClick={() => setDropdownOpen(!dropdownOpen)}
                 />
                 <UserPicture
-                  onClick={() => setPopupOpen(!popupOpen)}
+                  onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
                 />
-                {popupOpen ? (
-                  <PopperContainer
-                    ref={popupRef}
-                    style={styles.popper}
-                    // eslint-disable-next-line react/jsx-props-no-spreading
-                    {...attributes.popper}
-                  >
-                    <div ref={setArrowRef} style={styles.arrow} id="arrow" />
-                    <p>Popup content</p>
-                  </PopperContainer>
-                ) : null}
+                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                  <p>Popover content</p>
+                </Popover>
               </Cell>
             </Grid>
 
@@ -492,6 +428,9 @@ export const StratosphereDemo = () => {
 export const StratosphereUsersAndRolesDemo = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [popoverOpen, setPopoverOpen] = useState(false);
+
+  const containerRef = useRef(null);
 
   return (
     <Container>
@@ -514,7 +453,13 @@ export const StratosphereUsersAndRolesDemo = () => {
                   isOpen={dropdownOpen}
                   onClick={() => setDropdownOpen(!dropdownOpen)}
                 />
-                <UserPicture onClick={mockonlick} />
+                <UserPicture
+                  onClick={() => setPopoverOpen(!popoverOpen)}
+                  ref={containerRef}
+                />
+                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                  <p>Popover content</p>
+                </Popover>
               </Cell>
             </Grid>
             <Typography color="black" size="large">
@@ -580,6 +525,9 @@ export const StratosphereUsersAndRolesDemo = () => {
 export const StratosphereManageUsersDemo = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [popoverOpen, setPopoverOpen] = useState(false);
+
+  const containerRef = useRef(null);
 
   return (
     <Container>
@@ -602,7 +550,13 @@ export const StratosphereManageUsersDemo = () => {
                   isOpen={dropdownOpen}
                   onClick={() => setDropdownOpen(!dropdownOpen)}
                 />
-                <UserPicture onClick={mockonlick} />
+                <UserPicture
+                  onClick={() => setPopoverOpen(!popoverOpen)}
+                  ref={containerRef}
+                />
+                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                  <p>Popover content</p>
+                </Popover>
               </Cell>
             </Grid>
             <Typography color="black" size="large">
