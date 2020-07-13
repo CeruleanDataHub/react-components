@@ -20,6 +20,7 @@ exports[`Button should accept 'as' property 1`] = `
   className="c0 c1"
   color="blue"
   onClick={[Function]}
+  type="button"
 >
   Button
 </button>
@@ -41,6 +42,7 @@ exports[`Button should accept onClick prop 1`] = `
   className="c0"
   color="blue"
   onClick={[Function]}
+  type="button"
 >
   Button
 </button>
@@ -61,6 +63,7 @@ exports[`Button should call default props onClick function when no onClick prope
   className="c0"
   color=""
   onClick={[Function]}
+  type="button"
 >
   Button
 </button>
@@ -81,6 +84,7 @@ exports[`Button should render Button 1`] = `
   className="c0"
   color=""
   onClick={[Function]}
+  type="button"
 >
   Button
 </button>
@@ -102,6 +106,70 @@ exports[`Button should render Button with props 1`] = `
   className="c0"
   color="blue"
   onClick={[Function]}
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`Button type should render button button 1`] = `
+.c0 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+<button
+  className="c0"
+  color=""
+  onClick={[Function]}
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`Button type should render reset button 1`] = `
+.c0 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+<button
+  className="c0"
+  color=""
+  onClick={[Function]}
+  type="reset"
+>
+  Button
+</button>
+`;
+
+exports[`Button type should render submit button 1`] = `
+.c0 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+<button
+  className="c0"
+  color=""
+  onClick={[Function]}
+  type="submit"
 >
   Button
 </button>

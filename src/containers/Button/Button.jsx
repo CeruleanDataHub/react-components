@@ -13,8 +13,8 @@ const StyledButton = styled.button`
   cursor: pointer;
 `;
 
-export const Button = ({ children, onClick, color, as }) => (
-  <StyledButton color={color} onClick={onClick} as={as}>
+export const Button = ({ children, onClick, color, type, as }) => (
+  <StyledButton color={color} onClick={onClick} type={type} as={as}>
     {children}
   </StyledButton>
 );
@@ -26,6 +26,8 @@ Button.propTypes = {
   onClick: PropTypes.func,
   /** Color of the button */
   color: PropTypes.string,
+  /** Button type */
+  type: PropTypes.oneOf(["button", "submit", "reset"]),
   /** Extend styles, property is from styled components */
   as: PropTypes.oneOfType([
     PropTypes.func,
@@ -38,5 +40,6 @@ Button.defaultProps = {
   children: "",
   onClick: () => null,
   color: "",
+  type: "button",
   as: null
 };

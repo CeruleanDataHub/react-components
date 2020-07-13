@@ -48,6 +48,17 @@ describe("Button", () => {
     expect(tree).toMatchSnapshot();
   });
 
+  describe("type", () => {
+    ["button", "submit", "reset"].forEach(type => {
+      it(`should render ${type} button`, () => {
+        const component = renderer.create(<Button type={type}>Button</Button>);
+
+        const tree = component.toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+    });
+  });
+
   it("should fire onClick event callback function", () => {
     const handleClick = jest.fn();
     const component = shallow(<Button onClick={handleClick}>Button</Button>);
