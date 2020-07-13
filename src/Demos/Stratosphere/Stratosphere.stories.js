@@ -4,11 +4,13 @@ import React, { useRef, useState } from "react";
 import { usePopper } from "react-popper-2";
 import styled from "styled-components";
 
+import { Button } from "../../containers/Button/Button";
 import { Card } from "../../containers/Card/Card";
 import { Line } from "../../containers/Chart/Line/Line";
 import { Dropdown } from "../../containers/Dropdown/Dropdown";
 import { Fullscreen } from "../../containers/Fullscreen/Fullscreen";
 import { Cell, Grid } from "../../containers/Grid/Grid";
+import { Icon } from "../../containers/Icon/Icon";
 import { KPICard } from "../../containers/KPICard/KPICard";
 import { Menu } from "../../containers/Menu/Menu";
 import { Navigation } from "../../containers/Navigation/Navigation";
@@ -313,6 +315,11 @@ const PopperContainer = styled.div`
   }
 `;
 
+const SearchInput = styled.input`
+  width: 100%;
+  padding: 0.6rem;
+`;
+
 // eslint-disable-next-line no-console
 const mockonlick = () => console.log("clicked on element");
 
@@ -564,6 +571,70 @@ export const StratosphereUsersAndRolesDemo = () => {
                 </LinkComponent>
               </Cell>
             </Grid>
+          </Cell>
+        </GridWithCollapsibleMenu>
+      </Typography>
+    </Container>
+  );
+};
+export const StratosphereManageUsersDemo = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <Container>
+      <Typography fontFamily="openSans">
+        <GridWithCollapsibleMenu menuOpen={menuOpen}>
+          <Cell as={NavigatonContainer}>
+            <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
+              <Menu items={menuItems} menuOpen={menuOpen} />
+            </Navigation>
+          </Cell>
+          <Cell as={Content}>
+            <Grid as={HeaderRow}>
+              <Cell>
+                <Logo />
+              </Cell>
+              <Cell as={UserPictureContainer}>
+                <Dropdown
+                  label="Customer name"
+                  items={dropdownItems}
+                  isOpen={dropdownOpen}
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                />
+                <UserPicture onClick={mockonlick} />
+              </Cell>
+            </Grid>
+            <Typography color="black" size="large">
+              <Icon name="arrow-left-circle" />
+              Manage Users
+            </Typography>
+            <form
+              onSubmit={() => {
+                // eslint-disable-next-line no-console
+                console.log("submit");
+              }}
+            >
+              <Grid>
+                <Cell>
+                  <SearchInput type="search" />
+                </Cell>
+                <Cell>
+                  <Dropdown
+                    label="Customer name"
+                    items={dropdownItems}
+                    isOpen={dropdownOpen}
+                    onClick={() => setDropdownOpen(!dropdownOpen)}
+                  />
+                </Cell>
+                <Cell>
+                  <Button type="submit">
+                    <Icon name="search" />
+                    Search
+                  </Button>
+                </Cell>
+              </Grid>
+            </form>
           </Cell>
         </GridWithCollapsibleMenu>
       </Typography>
