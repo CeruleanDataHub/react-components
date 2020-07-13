@@ -25,6 +25,7 @@
     "react-dates": "^21.8.0",
     "react-moment-proptypes": "^1.7.0",
     "react-popper": "^2.2.3",
+    "react-popper-2": "npm:react-popper@^2.2.3",
     "react-scripts": "3.4.1",
     "styled-css-grid": "^1.2.1",
     "styled-normalize": "^8.0.7"
