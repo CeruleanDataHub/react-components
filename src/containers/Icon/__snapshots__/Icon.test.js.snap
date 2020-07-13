@@ -1,5 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Icon should render icon arrow-left-circle 1`] = `
+.c0 {
+  text-align: center;
+}
+
+<span
+  className="c0 lni lni-arrow-left-circle"
+/>
+`;
+
 exports[`Icon should render icon briefcase 1`] = `
 .c0 {
   text-align: center;
@@ -177,6 +187,16 @@ exports[`Icon should render icon rocket 1`] = `
 
 <span
   className="c0 lni lni-rocket"
+/>
+`;
+
+exports[`Icon should render icon search 1`] = `
+.c0 {
+  text-align: center;
+}
+
+<span
+  className="c0 lni lni-search"
 />
 `;
 
