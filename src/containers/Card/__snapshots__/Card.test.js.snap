@@ -80,6 +80,7 @@ exports[`Card should render card with icon 1`] = `
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: unset;
 }
 
@@ -150,6 +151,7 @@ exports[`Card should render card with icon and children 1`] = `
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: unset;
 }
 

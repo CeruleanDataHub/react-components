@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 const sizes = { normal: "16px", large: "40px" };
+const lineHeights = { normal: "20px", large: "55px" };
 const colors = {
   red: "#ff0066",
   green: "#90ee7e",
@@ -24,6 +25,7 @@ const fontFamilyStyle = fontFamily => {
 const Container = styled.div`
   font-family: ${({ fontFamily }) => fontFamilyStyle(fontFamily)};
   font-size: ${({ size }) => sizes[size]};
+  line-height: ${({ size }) => lineHeights[size]};
   color: ${({ textColor }) => colors[textColor] || "unset"};
 `;
 

@@ -81,6 +81,7 @@ exports[`Dropdown should be able to select item from list 1`] = `
 .c0 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: unset;
 }
 
@@ -162,6 +163,7 @@ exports[`Dropdown should be able to select item from list 1`] = `
       className="c2 c3"
       color=""
       onClick={[Function]}
+      type="button"
     >
       <span
         className="c4"
@@ -253,6 +255,7 @@ exports[`Dropdown should call default props onClick function when no onClick pro
 .c0 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: unset;
 }
 
@@ -300,6 +303,7 @@ exports[`Dropdown should call default props onClick function when no onClick pro
       className="c2 c3"
       color=""
       onClick={[Function]}
+      type="button"
     >
       <span
         className="c4"
@@ -332,6 +336,7 @@ exports[`Dropdown should have onClick listener 1`] = `
 .c0 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: unset;
 }
 
@@ -379,6 +384,7 @@ exports[`Dropdown should have onClick listener 1`] = `
       className="c2 c3"
       color=""
       onClick={[Function]}
+      type="button"
     >
       <span
         className="c4"
@@ -411,6 +417,7 @@ exports[`Dropdown should render dropdown 1`] = `
 .c0 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: unset;
 }
 
@@ -458,6 +465,7 @@ exports[`Dropdown should render dropdown 1`] = `
       className="c2 c3"
       color=""
       onClick={[Function]}
+      type="button"
     >
       <span
         className="c4"
@@ -538,6 +546,7 @@ exports[`Dropdown should render dropdown in open state 1`] = `
 .c0 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: unset;
 }
 
@@ -619,6 +628,7 @@ exports[`Dropdown should render dropdown in open state 1`] = `
       className="c2 c3"
       color=""
       onClick={[Function]}
+      type="button"
     >
       <span
         className="c4"

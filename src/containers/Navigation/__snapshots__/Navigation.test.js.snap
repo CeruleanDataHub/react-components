@@ -8,6 +8,7 @@ exports[`Navigation should call default props onMenuToggle function when no onMe
 .c7 {
   font-family: "Exo 2",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: unset;
 }
 
@@ -94,6 +95,7 @@ exports[`Navigation should call default props onMenuToggle function when no onMe
     className="c1 c2"
     color=""
     onClick={[Function]}
+    type="button"
   >
     <span
       className="c3 c4 lni lni-close"
@@ -218,6 +220,7 @@ exports[`Navigation should have menu toggle event listener 1`] = `
 .c7 {
   font-family: "Exo 2",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: unset;
 }
 
@@ -304,6 +307,7 @@ exports[`Navigation should have menu toggle event listener 1`] = `
     className="c1 c2"
     color=""
     onClick={[Function]}
+    type="button"
   >
     <span
       className="c3 c4 lni lni-close"
@@ -471,6 +475,7 @@ exports[`Navigation should render 1`] = `
     className="c1 c2"
     color=""
     onClick={[Function]}
+    type="button"
   >
     <span
       className="c3 c4 lni lni-close"
@@ -488,6 +493,7 @@ exports[`Navigation should render children menu 1`] = `
 .c7 {
   font-family: "Exo 2",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: unset;
 }
 
@@ -574,6 +580,7 @@ exports[`Navigation should render children menu 1`] = `
     className="c1 c2"
     color=""
     onClick={[Function]}
+    type="button"
   >
     <span
       className="c3 c4 lni lni-close"
@@ -698,6 +705,7 @@ exports[`Navigation should render children menu closed when given appropriate pr
 .c7 {
   font-family: "Exo 2",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: unset;
 }
 
@@ -784,6 +792,7 @@ exports[`Navigation should render children menu closed when given appropriate pr
     className="c1 c2"
     color=""
     onClick={[Function]}
+    type="button"
   >
     <span
       className="c3 c4 lni lni-menu"

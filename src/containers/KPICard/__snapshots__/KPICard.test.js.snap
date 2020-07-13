@@ -44,18 +44,21 @@ exports[`KPICard should format large values 1`] = `
 .c1 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #999999;
 }
 
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
+  line-height: 55px;
   color: unset;
 }
 
 .c8 {
   font-family: "Exo 2",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #90ee7e;
 }
 
@@ -179,18 +182,21 @@ exports[`KPICard should render 1`] = `
 .c1 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #999999;
 }
 
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
+  line-height: 55px;
   color: unset;
 }
 
 .c8 {
   font-family: "Exo 2",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #90ee7e;
 }
 
@@ -302,12 +308,14 @@ exports[`KPICard should render card without the percentage 1`] = `
 .c1 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #999999;
 }
 
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
+  line-height: 55px;
   color: unset;
 }
 
@@ -387,18 +395,21 @@ exports[`KPICard should render currency with USD 1`] = `
 .c1 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #999999;
 }
 
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
+  line-height: 55px;
   color: unset;
 }
 
 .c8 {
   font-family: "Exo 2",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #1ea7fd;
 }
 
@@ -510,12 +521,14 @@ exports[`KPICard should render currency with USD and without percentage 1`] = `
 .c1 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #999999;
 }
 
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
+  line-height: 55px;
   color: unset;
 }
 
@@ -595,18 +608,21 @@ exports[`KPICard should render currency with euro 1`] = `
 .c1 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #999999;
 }
 
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
+  line-height: 55px;
   color: unset;
 }
 
 .c8 {
   font-family: "Exo 2",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #1ea7fd;
 }
 
@@ -718,12 +734,14 @@ exports[`KPICard should render currency with euro and without percentage 1`] = `
 .c1 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #999999;
 }
 
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
+  line-height: 55px;
   color: unset;
 }
 
@@ -803,18 +821,21 @@ exports[`KPICard should render green 1`] = `
 .c1 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #999999;
 }
 
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
+  line-height: 55px;
   color: #90ee7e;
 }
 
 .c8 {
   font-family: "Exo 2",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #90ee7e;
 }
 
@@ -926,12 +947,14 @@ exports[`KPICard should render green card without the percentage 1`] = `
 .c1 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #999999;
 }
 
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
+  line-height: 55px;
   color: #90ee7e;
 }
 
@@ -1011,18 +1034,21 @@ exports[`KPICard should render negative growth 1`] = `
 .c1 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #999999;
 }
 
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
+  line-height: 55px;
   color: unset;
 }
 
 .c8 {
   font-family: "Exo 2",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #ff0066;
 }
 
@@ -1134,12 +1160,14 @@ exports[`KPICard should render negative growth without percentage 1`] = `
 .c1 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #999999;
 }
 
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
+  line-height: 55px;
   color: unset;
 }
 
@@ -1219,18 +1247,21 @@ exports[`KPICard should render positive growth 1`] = `
 .c1 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #999999;
 }
 
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
+  line-height: 55px;
   color: unset;
 }
 
 .c8 {
   font-family: "Exo 2",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #90ee7e;
 }
 
@@ -1342,12 +1373,14 @@ exports[`KPICard should render positive growth without percentage 1`] = `
 .c1 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #999999;
 }
 
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
+  line-height: 55px;
   color: unset;
 }
 
@@ -1427,18 +1460,21 @@ exports[`KPICard should render red 1`] = `
 .c1 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #999999;
 }
 
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
+  line-height: 55px;
   color: #ff0066;
 }
 
 .c8 {
   font-family: "Exo 2",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #90ee7e;
 }
 
@@ -1550,12 +1586,14 @@ exports[`KPICard should render red card without the percentage 1`] = `
 .c1 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #999999;
 }
 
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
+  line-height: 55px;
   color: #ff0066;
 }
 
@@ -1635,18 +1673,21 @@ exports[`KPICard should render two decimal points in growth 1`] = `
 .c1 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #999999;
 }
 
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
+  line-height: 55px;
   color: unset;
 }
 
 .c8 {
   font-family: "Exo 2",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #90ee7e;
 }
 
@@ -1770,18 +1811,21 @@ exports[`KPICard should render zero growth 1`] = `
 .c1 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #999999;
 }
 
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
+  line-height: 55px;
   color: unset;
 }
 
 .c8 {
   font-family: "Exo 2",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #1ea7fd;
 }
 
@@ -1893,12 +1937,14 @@ exports[`KPICard should render zero growth without percentage 1`] = `
 .c1 {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+  line-height: 20px;
   color: #999999;
 }
 
 .c4 {
   font-family: "Exo 2",sans-serif;
   font-size: 40px;
+  line-height: 55px;
   color: unset;
 }
 
