@@ -289,12 +289,19 @@ const SearchInput = styled.input`
   padding: 0.6rem;
 `;
 
-const SearchButton = styled.button`
-  width: 100%;
+const ButtonWithIcon = styled.button`
   padding: 0.6rem;
   span {
     margin-right: 0.4rem;
   }
+`;
+
+const SearchButton = styled(ButtonWithIcon)`
+  width: 100%;
+`;
+
+const GridContentRight = styled.div`
+  grid-column-end: none;
 `;
 
 // eslint-disable-next-line no-console
@@ -622,12 +629,23 @@ export const StratosphereManageUsersDemo = () => {
                 </Popover>
               </Cell>
             </Grid>
-            <Typography color="black" size="large">
-              <Icon name="arrow-left-circle" />
-              Manage Users
-            </Typography>
+            <Grid>
+              <Cell>
+                <Typography color="black" size="large">
+                  <Icon name="arrow-left-circle" />
+                  Manage Users
+                </Typography>
+              </Cell>
+              <Cell as={GridContentRight}>
+                <Button as={ButtonWithIcon}>
+                  <Icon name="plus" />
+                  Invite User
+                </Button>
+              </Cell>
+            </Grid>
             <form
-              onSubmit={() => {
+              onSubmit={event => {
+                event.preventDefault();
                 // eslint-disable-next-line no-console
                 console.log("submit");
               }}
