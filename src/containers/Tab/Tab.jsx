@@ -19,6 +19,7 @@ const Container = styled.div`
 const Text = styled.span`
   font-size: 1em;
   color: black;
+  user-select: none;
 `;
 
 export const Tab = ({ text, active, onClick }) => (

@@ -19,16 +19,12 @@ const TabsContainer = styled.div`
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("Tab 1");
 
-  const handleTabSelect = value => {
-    setActiveTab(value);
-  };
-
   return (
     <TabsContainer>
       {tabs.map(tab => (
         <Tab
           text={tab}
-          onClick={() => handleTabSelect(tab)}
+          onClick={() => setActiveTab(tab)}
           active={activeTab === tab}
           key={tab}
         />

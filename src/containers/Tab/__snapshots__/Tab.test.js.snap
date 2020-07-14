@@ -29,6 +29,10 @@ exports[`Tab should call default props onClick function when no onClick property
 .c2 {
   font-size: 1em;
   color: black;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 <div
@@ -78,6 +82,10 @@ exports[`Tab should render correctly 1`] = `
 .c2 {
   font-size: 1em;
   color: black;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 <div
@@ -127,6 +135,10 @@ exports[`Tab should render correctly in active state 1`] = `
 .c2 {
   font-size: 1em;
   color: black;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 <div
