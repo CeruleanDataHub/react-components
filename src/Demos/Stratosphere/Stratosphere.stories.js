@@ -6,6 +6,7 @@ import styled from "styled-components";
 import { Button } from "../../containers/Button/Button";
 import { Card } from "../../containers/Card/Card";
 import { Line } from "../../containers/Chart/Line/Line";
+import { DataTable } from "../../containers/DataTable/DataTable";
 import { Dropdown } from "../../containers/Dropdown/Dropdown";
 import { Fullscreen } from "../../containers/Fullscreen/Fullscreen";
 import { Cell, Grid } from "../../containers/Grid/Grid";
@@ -530,6 +531,60 @@ export const StratosphereUsersAndRolesDemo = () => {
     </Container>
   );
 };
+
+// eslint-disable-next-line react/prop-types
+const UserDataCell = ({ id }) => {
+  const [popoverOpen, setPopoverOpen] = useState(false);
+  const moreRef = useRef(null);
+
+  return (
+    <>
+      {/* TODO: popover is in incorrect location */}
+      <Button onClick={() => setPopoverOpen(!popoverOpen)} forwardRef={moreRef}>
+        <Icon name="more" />
+      </Button>
+      <Popover isOpen={popoverOpen} containerRef={moreRef}>
+        <p>{id}</p>
+      </Popover>
+    </>
+  );
+};
+
+const manageUsersData = {
+  data: [
+    {
+      id: 1,
+      name: "Conan the Barbarian",
+      logins: "1982",
+      lastLogin: "2 days ago"
+    },
+    {
+      id: 2,
+      name: "Conan the Barbarian 2",
+      logins: "1984",
+      lastLogin: "24 days ago"
+    },
+    {
+      id: 3,
+      name: "Conan the Barbarian 3",
+      logins: "1985",
+      lastLogin: "2 days ago"
+    }
+  ],
+  columns: [
+    { id: 1, name: "Name", selector: "name" },
+    { id: 2, name: "Logins", selector: "logins" },
+    { id: 3, name: "Last login", selector: "lastLogin" },
+    {
+      id: 4,
+      name: "",
+      selector: "actions",
+      // eslint-disable-next-line react/prop-types
+      cell: ({ id }) => <UserDataCell id={id} />
+    }
+  ]
+};
+
 export const StratosphereManageUsersDemo = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [searchDropdownOpen, setSearchDropdownOpen] = useState(false);
@@ -598,6 +653,11 @@ export const StratosphereManageUsersDemo = () => {
                 </Cell>
               </Grid>
             </form>
+
+            <DataTable
+              columns={manageUsersData.columns}
+              data={manageUsersData.data}
+            />
           </Cell>
         </GridWithCollapsibleMenu>
       </Typography>
