@@ -35,7 +35,8 @@ export const names = [
   "enter",
   "control-panel",
   "arrow-left-circle",
-  "search"
+  "search",
+  "more"
 ];
 export const iconNameProps = PropTypes.oneOf(names);
 

@@ -180,6 +180,16 @@ exports[`Icon should render icon minus 1`] = `
 />
 `;
 
+exports[`Icon should render icon more 1`] = `
+.c0 {
+  text-align: center;
+}
+
+<span
+  className="c0 lni lni-more"
+/>
+`;
+
 exports[`Icon should render icon rocket 1`] = `
 .c0 {
   text-align: center;
