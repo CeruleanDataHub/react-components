@@ -21,6 +21,7 @@ Array [
   background-color: white;
   padding: 20px;
   text-align: center;
+  z-index: 1;
 }
 
 .c0 #arrow {

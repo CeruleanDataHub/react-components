@@ -9,6 +9,7 @@ const PopperContainer = styled.div`
   background-color: white;
   padding: 20px;
   text-align: center;
+  z-index: 1;
 
   #arrow {
     position: absolute;
