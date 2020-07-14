@@ -539,7 +539,6 @@ const UserDataCell = ({ id }) => {
 
   return (
     <>
-      {/* TODO: popover is in incorrect location */}
       <Button onClick={() => setPopoverOpen(!popoverOpen)} ref={moreRef}>
         <Icon name="more" />
       </Button>
