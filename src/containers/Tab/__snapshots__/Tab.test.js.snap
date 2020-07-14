@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tab should call default props onClick function when no onClick property is passed 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: unset;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0.5em 1.5em;
+  background: #ddd;
+  border: 1px solid black;
+  border-bottom-color: transparent;
+  cursor: pointer;
+  margin-right: 1em;
+  border-radius: 3px 3px 0 0;
+}
+
+.c2 {
+  font-size: 1em;
+  color: black;
+}
+
+<div
+  className="c0"
+  fontFamily="openSans"
+  size="normal"
+>
+  <div
+    className="c1"
+    onClick={[Function]}
+  >
+    <span
+      className="c2"
+    >
+      Tab
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Tab should render correctly 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: unset;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0.5em 1.5em;
+  background: #ddd;
+  border: 1px solid black;
+  border-bottom-color: transparent;
+  cursor: pointer;
+  margin-right: 1em;
+  border-radius: 3px 3px 0 0;
+}
+
+.c2 {
+  font-size: 1em;
+  color: black;
+}
+
+<div
+  className="c0"
+  fontFamily="openSans"
+  size="normal"
+>
+  <div
+    className="c1"
+    onClick={[Function]}
+  >
+    <span
+      className="c2"
+    >
+      Tab
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Tab should render correctly in active state 1`] = `
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: unset;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0.5em 1.5em;
+  background: white;
+  border: 1px solid black;
+  border-bottom-color: transparent;
+  cursor: pointer;
+  margin-right: 1em;
+  border-radius: 3px 3px 0 0;
+}
+
+.c2 {
+  font-size: 1em;
+  color: black;
+}
+
+<div
+  className="c0"
+  fontFamily="openSans"
+  size="normal"
+>
+  <div
+    className="c1"
+    onClick={[Function]}
+  >
+    <span
+      className="c2"
+    >
+      Tab
+    </span>
+  </div>
+</div>
+`;
