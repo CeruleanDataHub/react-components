@@ -288,6 +288,14 @@ const SearchInput = styled.input`
   padding: 0.6rem;
 `;
 
+const SearchButton = styled.button`
+  width: 100%;
+  padding: 0.6rem;
+  span {
+    margin-right: 0.4rem;
+  }
+`;
+
 // eslint-disable-next-line no-console
 const mockonlick = () => console.log("clicked on element");
 
@@ -524,6 +532,7 @@ export const StratosphereUsersAndRolesDemo = () => {
 };
 export const StratosphereManageUsersDemo = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [searchDropdownOpen, setSearchDropdownOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [popoverOpen, setPopoverOpen] = useState(false);
 
@@ -577,12 +586,12 @@ export const StratosphereManageUsersDemo = () => {
                   <Dropdown
                     label="Customer name"
                     items={dropdownItems}
-                    isOpen={dropdownOpen}
-                    onClick={() => setDropdownOpen(!dropdownOpen)}
+                    isOpen={searchDropdownOpen}
+                    onClick={() => setSearchDropdownOpen(!searchDropdownOpen)}
                   />
                 </Cell>
                 <Cell>
-                  <Button type="submit">
+                  <Button type="submit" as={SearchButton}>
                     <Icon name="search" />
                     Search
                   </Button>
