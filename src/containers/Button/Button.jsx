@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import React from "react";
+import React, { forwardRef } from "react";
 import styled from "styled-components";
 
 const StyledButton = styled.button`
@@ -13,10 +13,12 @@ const StyledButton = styled.button`
   cursor: pointer;
 `;
 
-export const Button = ({ children, onClick, color, type, as }) => (
-  <StyledButton color={color} onClick={onClick} type={type} as={as}>
-    {children}
-  </StyledButton>
+export const Button = forwardRef(
+  ({ children, onClick, color, type, as }, ref) => (
+    <StyledButton color={color} onClick={onClick} type={type} as={as} ref={ref}>
+      {children}
+    </StyledButton>
+  )
 );
 
 Button.propTypes = {

@@ -1,4 +1,4 @@
-import { shallow } from "enzyme";
+import { mount, shallow } from "enzyme";
 import React from "react";
 import renderer from "react-test-renderer";
 import styled from "styled-components";
@@ -72,6 +72,12 @@ describe("Button", () => {
     component.root.props.onClick();
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
+  });
+
+  it("should contain forwarded ref", () => {
+    const ref = React.createRef();
+    const component = mount(<Button ref={ref}>Button</Button>);
+    expect(component.find("button").instance()).toEqual(ref.current);
   });
 
   describe("Should render Button color based on props", () => {
