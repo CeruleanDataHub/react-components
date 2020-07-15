@@ -1,27 +1,31 @@
+import { shallow } from "enzyme";
+import toJson from "enzyme-to-json";
 import React from "react";
-import renderer from "react-test-renderer";
+import { ModalProvider } from "styled-react-modal";
 
 import { Modal } from "./Modal";
 
 describe("Modal", () => {
   it("should render open Modal with children", () => {
-    const component = renderer.create(
-      <Modal isOpen>
-        <p>Modal content</p>
-      </Modal>
+    const component = shallow(
+      <ModalProvider>
+        <Modal isOpen>
+          <p>Modal content</p>
+        </Modal>
+      </ModalProvider>
     );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(toJson(component)).toMatchSnapshot();
   });
 
   it("should call default props onBackgroundClick function when no onBackgroundClick property is passed", () => {
-    const component = renderer.create(
-      <Modal isopen>
-        <p>Modal content</p>
-      </Modal>
+    const component = shallow(
+      <ModalProvider>
+        <Modal isOpen>
+          <p>Modal content</p>
+        </Modal>
+      </ModalProvider>
     );
-    component.root.props.onBackgroundClick();
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    component.find("Modal").invoke("onBackgroundClick");
+    expect(toJson(component)).toMatchSnapshot();
   });
 });

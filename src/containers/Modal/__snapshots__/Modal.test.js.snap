@@ -1,5 +1,85 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Modal should call default props onBackgroundClick function when no onBackgroundClick property is passed 1`] = `null`;
+exports[`Modal should call default props onBackgroundClick function when no onBackgroundClick property is passed 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "BackgroundComponent": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "baseHash": 216114690,
+          "componentId": "baseStyles__BaseModalBackground-sTbLb",
+          "isStatic": false,
+          "rules": Array [
+            "display:flex;position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:30;background-color:rgba(0,0,0,0.5);align-items:center;justify-content:center;",
+          ],
+          "staticRulesId": "",
+        },
+        "displayName": "baseStyles__BaseModalBackground",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "shouldForwardProp": undefined,
+        "styledComponentId": "baseStyles__BaseModalBackground-sTbLb",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+      "modalNode": null,
+    }
+  }
+>
+  <Modal
+    isOpen={true}
+    onBackgroundClick={[Function]}
+  >
+    <p>
+      Modal content
+    </p>
+  </Modal>
+  <div />
+</ContextProvider>
+`;
 
-exports[`Modal should render open Modal with children 1`] = `null`;
+exports[`Modal should render open Modal with children 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "BackgroundComponent": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "baseHash": 216114690,
+          "componentId": "baseStyles__BaseModalBackground-sTbLb",
+          "isStatic": false,
+          "rules": Array [
+            "display:flex;position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:30;background-color:rgba(0,0,0,0.5);align-items:center;justify-content:center;",
+          ],
+          "staticRulesId": "",
+        },
+        "displayName": "baseStyles__BaseModalBackground",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "shouldForwardProp": undefined,
+        "styledComponentId": "baseStyles__BaseModalBackground-sTbLb",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+      "modalNode": null,
+    }
+  }
+>
+  <Modal
+    isOpen={true}
+    onBackgroundClick={[Function]}
+  >
+    <p>
+      Modal content
+    </p>
+  </Modal>
+  <div />
+</ContextProvider>
+`;
