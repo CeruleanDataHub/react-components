@@ -190,6 +190,16 @@ exports[`Icon should render icon more 1`] = `
 />
 `;
 
+exports[`Icon should render icon plus 1`] = `
+.c0 {
+  text-align: center;
+}
+
+<span
+  className="c0 lni lni-plus"
+/>
+`;
+
 exports[`Icon should render icon rocket 1`] = `
 .c0 {
   text-align: center;
@@ -207,6 +217,16 @@ exports[`Icon should render icon search 1`] = `
 
 <span
   className="c0 lni lni-search"
+/>
+`;
+
+exports[`Icon should render icon trash 1`] = `
+.c0 {
+  text-align: center;
+}
+
+<span
+  className="c0 lni lni-trash"
 />
 `;
 
