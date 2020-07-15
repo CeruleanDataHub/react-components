@@ -6,8 +6,8 @@ import styled from "styled-components";
 import { Button } from "../../containers/Button/Button";
 import { Card } from "../../containers/Card/Card";
 import { Line } from "../../containers/Chart/Line/Line";
+import { CheckboxDropdown } from "../../containers/CheckboxDropdown/CheckboxDropdown";
 import { DataTable } from "../../containers/DataTable/DataTable";
-import { Dropdown } from "../../containers/Dropdown/Dropdown";
 import { Fullscreen } from "../../containers/Fullscreen/Fullscreen";
 import { Cell, Grid } from "../../containers/Grid/Grid";
 import { Icon } from "../../containers/Icon/Icon";
@@ -329,7 +329,7 @@ export const StratosphereDemo = () => {
                 <Logo />
               </Cell>
               <Cell as={UserPictureContainer}>
-                <Dropdown
+                <CheckboxDropdown
                   label="Customer name"
                   items={dropdownItems}
                   isOpen={dropdownOpen}
@@ -463,7 +463,7 @@ export const StratosphereUsersAndRolesDemo = () => {
                 <Logo />
               </Cell>
               <Cell as={UserPictureContainer}>
-                <Dropdown
+                <CheckboxDropdown
                   label="Customer name"
                   items={dropdownItems}
                   isOpen={dropdownOpen}
@@ -614,7 +614,7 @@ export const StratosphereManageUsersDemo = () => {
                 <Logo />
               </Cell>
               <Cell as={UserPictureContainer}>
-                <Dropdown
+                <CheckboxDropdown
                   label="Customer name"
                   items={dropdownItems}
                   isOpen={dropdownOpen}
@@ -655,7 +655,7 @@ export const StratosphereManageUsersDemo = () => {
                   <SearchInput type="search" />
                 </Cell>
                 <Cell>
-                  <Dropdown
+                  <CheckboxDropdown
                     label="Customer name"
                     items={dropdownItems}
                     isOpen={searchDropdownOpen}
