@@ -1,9 +1,8 @@
 import { action } from "@storybook/addon-actions";
 import { withKnobs } from "@storybook/addon-knobs";
-import React from "react";
+import React, { useState } from "react";
 
 import { Dropdown } from "./Dropdown";
-import { DropdownWrapper } from "./DropdownWrapper";
 
 export default {
   title: "Dropdown",
@@ -11,32 +10,48 @@ export default {
   decorators: [withKnobs]
 };
 
-const items = [
-  { value: "1", label: "Item 1" },
-  { value: "2", label: "Item 2" },
-  { value: "3", label: "Item 3" },
-  { value: "4", label: "Item 4" },
-  { value: "5", label: "Item 5" }
-];
-
 export const DropdownStory = () => (
   <div style={{ width: 300 }}>
-    <Dropdown label="Label" />
+    <Dropdown label="Label">Dropdown item</Dropdown>
   </div>
 );
 
 export const DropdownOpenStory = () => (
   <div style={{ minHeight: 250, width: 300 }}>
-    <Dropdown label="Label" isOpen items={items} />
+    <Dropdown label="Label" isOpen>
+      Dropdown item
+    </Dropdown>
   </div>
 );
 
-export const DropdownToggleStory = () => (
+export const DropdownOpenWithCustomChildrenStory = () => (
   <div style={{ minHeight: 250, width: 300 }}>
-    <DropdownWrapper
-      label="Label"
-      items={items}
-      onClick={action("dropdown-open")}
-    />
+    <Dropdown label="Label" isOpen>
+      <ul>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>fourth</li>
+      </ul>
+    </Dropdown>
   </div>
 );
+
+export const DropdownToggleStory = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div style={{ minHeight: 250, width: 300 }}>
+      <Dropdown
+        label="Label"
+        isOpen={isOpen}
+        onClick={() => {
+          setIsOpen(!isOpen);
+          action("dropdown-open");
+        }}
+      >
+        Dropdown item
+      </Dropdown>
+    </div>
+  );
+};
