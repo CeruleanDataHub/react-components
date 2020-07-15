@@ -1,0 +1,1147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckboxDropdown should be able to select item from list 1`] = `
+.c5 {
+  text-align: center;
+}
+
+.c9 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c15 {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 1px solid #999;
+  background: transparent;
+  text-align: center;
+  border-radius: 4px;
+  line-height: 1em;
+}
+
+.c11 {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 1px solid;
+  text-align: center;
+  border-radius: 4px;
+  line-height: 1em;
+}
+
+.c12 {
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.c14 {
+  color: #999;
+  margin-left: 1.5em;
+}
+
+.c8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  margin: 0.25em 0;
+}
+
+.c8:hover .c10 {
+  border-color: #333;
+}
+
+.c8:hover .c13 {
+  color: #666;
+}
+
+.c3 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: unset;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  font-family: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 1.25em;
+  cursor: pointer;
+}
+
+.c6 {
+  width: 100%;
+  padding: 0;
+  border: 1px solid;
+  border-top: none;
+  position: absolute;
+  top: 22px;
+  border-radius: 0 0 4px 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  list-style: none;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.c4 {
+  color: #999;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.c7 {
+  padding-top: 1em;
+  padding-left: 0.5em;
+}
+
+<div
+  className="c0"
+  fontFamily="openSans"
+  size="normal"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2 c3"
+      color=""
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        className="c4"
+      >
+        Array [
+          "",
+          .c0 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+<span
+            className="c0"
+          >
+            1 selected
+          </span>,
+        ]
+      </span>
+      <span
+        className="c4 c5 lni lni-chevron-up"
+      />
+    </button>
+    <ul
+      className="c6"
+    >
+      <li
+        className="c7"
+      >
+        <label
+          className="c8"
+        >
+          <input
+            checked={true}
+            className="c9"
+            onChange={[Function]}
+            type="checkbox"
+            value="1"
+          />
+          <div
+            checked={true}
+            className="c10 c11"
+          >
+            <span
+              className="c12 c5 lni lni-checkmark"
+            />
+          </div>
+          <span
+            className="c13 c14"
+          >
+            Item 1
+          </span>
+        </label>
+      </li>
+      <li
+        className="c7"
+      >
+        <label
+          className="c8"
+        >
+          <input
+            checked={false}
+            className="c9"
+            onChange={[Function]}
+            type="checkbox"
+            value="2"
+          />
+          <div
+            checked={false}
+            className="c10 c15"
+          />
+          <span
+            className="c13 c14"
+          >
+            Item 2
+          </span>
+        </label>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`CheckboxDropdown should call default props onClick function when no onClick property is passed 1`] = `
+.c5 {
+  text-align: center;
+}
+
+.c3 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: unset;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  font-family: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 1.25em;
+  cursor: pointer;
+}
+
+.c4 {
+  color: #999;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+<div
+  className="c0"
+  fontFamily="openSans"
+  size="normal"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2 c3"
+      color=""
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        className="c4"
+      >
+        
+      </span>
+      <span
+        className="c4 c5 lni lni-chevron-down"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`CheckboxDropdown should have onClick listener 1`] = `
+.c5 {
+  text-align: center;
+}
+
+.c3 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: unset;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  font-family: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 1.25em;
+  cursor: pointer;
+}
+
+.c4 {
+  color: #999;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+<div
+  className="c0"
+  fontFamily="openSans"
+  size="normal"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2 c3"
+      color=""
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        className="c4"
+      >
+        
+      </span>
+      <span
+        className="c4 c5 lni lni-chevron-down"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`CheckboxDropdown should render 1`] = `
+.c5 {
+  text-align: center;
+}
+
+.c3 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: unset;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  font-family: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 1.25em;
+  cursor: pointer;
+}
+
+.c4 {
+  color: #999;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+<div
+  className="c0"
+  fontFamily="openSans"
+  size="normal"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2 c3"
+      color=""
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        className="c4"
+      >
+        
+      </span>
+      <span
+        className="c4 c5 lni lni-chevron-down"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`CheckboxDropdown should render in open state 1`] = `
+.c6 {
+  text-align: center;
+}
+
+.c10 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c12 {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 1px solid #999;
+  background: transparent;
+  text-align: center;
+  border-radius: 4px;
+  line-height: 1em;
+}
+
+.c14 {
+  color: #999;
+  margin-left: 1.5em;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  margin: 0.25em 0;
+}
+
+.c9:hover .c11 {
+  border-color: #333;
+}
+
+.c9:hover .c13 {
+  color: #666;
+}
+
+.c3 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: unset;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  font-family: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 1.25em;
+  cursor: pointer;
+}
+
+.c7 {
+  width: 100%;
+  padding: 0;
+  border: 1px solid;
+  border-top: none;
+  position: absolute;
+  top: 22px;
+  border-radius: 0 0 4px 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  list-style: none;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.c4 {
+  color: #999;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.c8 {
+  padding-top: 1em;
+  padding-left: 0.5em;
+}
+
+.c5 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+<div
+  className="c0"
+  fontFamily="openSans"
+  size="normal"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2 c3"
+      color=""
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        className="c4"
+      >
+        
+        <span
+          className="c5"
+        >
+          0 selected
+        </span>
+      </span>
+      <span
+        className="c4 c6 lni lni-chevron-up"
+      />
+    </button>
+    <ul
+      className="c7"
+    >
+      <li
+        className="c8"
+      >
+        <label
+          className="c9"
+        >
+          <input
+            checked={false}
+            className="c10"
+            onChange={[Function]}
+            type="checkbox"
+            value="1"
+          />
+          <div
+            checked={false}
+            className="c11 c12"
+          />
+          <span
+            className="c13 c14"
+          >
+            Item 1
+          </span>
+        </label>
+      </li>
+      <li
+        className="c8"
+      >
+        <label
+          className="c9"
+        >
+          <input
+            checked={false}
+            className="c10"
+            onChange={[Function]}
+            type="checkbox"
+            value="2"
+          />
+          <div
+            checked={false}
+            className="c11 c12"
+          />
+          <span
+            className="c13 c14"
+          >
+            Item 2
+          </span>
+        </label>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`CheckboxDropdown should render label 1`] = `
+.c6 {
+  text-align: center;
+}
+
+.c10 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c12 {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 1px solid #999;
+  background: transparent;
+  text-align: center;
+  border-radius: 4px;
+  line-height: 1em;
+}
+
+.c14 {
+  color: #999;
+  margin-left: 1.5em;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  margin: 0.25em 0;
+}
+
+.c9:hover .c11 {
+  border-color: #333;
+}
+
+.c9:hover .c13 {
+  color: #666;
+}
+
+.c3 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: unset;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  font-family: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 1.25em;
+  cursor: pointer;
+}
+
+.c7 {
+  width: 100%;
+  padding: 0;
+  border: 1px solid;
+  border-top: none;
+  position: absolute;
+  top: 22px;
+  border-radius: 0 0 4px 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  list-style: none;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.c4 {
+  color: #999;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.c8 {
+  padding-top: 1em;
+  padding-left: 0.5em;
+}
+
+.c5 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+<div
+  className="c0"
+  fontFamily="openSans"
+  size="normal"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2 c3"
+      color=""
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        className="c4"
+      >
+        hello
+        <span
+          className="c5"
+        >
+          0 selected
+        </span>
+      </span>
+      <span
+        className="c4 c6 lni lni-chevron-up"
+      />
+    </button>
+    <ul
+      className="c7"
+    >
+      <li
+        className="c8"
+      >
+        <label
+          className="c9"
+        >
+          <input
+            checked={false}
+            className="c10"
+            onChange={[Function]}
+            type="checkbox"
+            value="1"
+          />
+          <div
+            checked={false}
+            className="c11 c12"
+          />
+          <span
+            className="c13 c14"
+          >
+            Item 1
+          </span>
+        </label>
+      </li>
+      <li
+        className="c8"
+      >
+        <label
+          className="c9"
+        >
+          <input
+            checked={false}
+            className="c10"
+            onChange={[Function]}
+            type="checkbox"
+            value="2"
+          />
+          <div
+            checked={false}
+            className="c11 c12"
+          />
+          <span
+            className="c13 c14"
+          >
+            Item 2
+          </span>
+        </label>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`CheckboxDropdown should render react node label 1`] = `
+.c6 {
+  text-align: center;
+}
+
+.c10 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c12 {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 1px solid #999;
+  background: transparent;
+  text-align: center;
+  border-radius: 4px;
+  line-height: 1em;
+}
+
+.c14 {
+  color: #999;
+  margin-left: 1.5em;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  margin: 0.25em 0;
+}
+
+.c9:hover .c11 {
+  border-color: #333;
+}
+
+.c9:hover .c13 {
+  color: #666;
+}
+
+.c3 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c0 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: unset;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  font-family: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 1.25em;
+  cursor: pointer;
+}
+
+.c7 {
+  width: 100%;
+  padding: 0;
+  border: 1px solid;
+  border-top: none;
+  position: absolute;
+  top: 22px;
+  border-radius: 0 0 4px 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  list-style: none;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.c4 {
+  color: #999;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.c8 {
+  padding-top: 1em;
+  padding-left: 0.5em;
+}
+
+.c5 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+<div
+  className="c0"
+  fontFamily="openSans"
+  size="normal"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2 c3"
+      color=""
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        className="c4"
+      >
+        <div>
+          hello
+        </div>
+        <span
+          className="c5"
+        >
+          0 selected
+        </span>
+      </span>
+      <span
+        className="c4 c6 lni lni-chevron-up"
+      />
+    </button>
+    <ul
+      className="c7"
+    >
+      <li
+        className="c8"
+      >
+        <label
+          className="c9"
+        >
+          <input
+            checked={false}
+            className="c10"
+            onChange={[Function]}
+            type="checkbox"
+            value="1"
+          />
+          <div
+            checked={false}
+            className="c11 c12"
+          />
+          <span
+            className="c13 c14"
+          >
+            Item 1
+          </span>
+        </label>
+      </li>
+      <li
+        className="c8"
+      >
+        <label
+          className="c9"
+        >
+          <input
+            checked={false}
+            className="c10"
+            onChange={[Function]}
+            type="checkbox"
+            value="2"
+          />
+          <div
+            checked={false}
+            className="c11 c12"
+          />
+          <span
+            className="c13 c14"
+          >
+            Item 2
+          </span>
+        </label>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
