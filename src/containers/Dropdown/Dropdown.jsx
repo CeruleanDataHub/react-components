@@ -1,9 +1,8 @@
 import PropTypes from "prop-types";
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import { Button } from "../Button/Button";
-import { Checkbox } from "../Checkbox/Checkbox";
 import { Icon } from "../Icon/Icon";
 import { Typography } from "../Typography/Typography";
 
@@ -42,88 +41,38 @@ const ItemList = styled.ul`
   box-sizing: border-box;
 `;
 
-const DropdownItem = styled.li`
-  padding-top: 1em;
-  padding-left: 0.5em;
-`;
-
 const DropdownText = styled.span`
-  color: ${({ green, theme }) => (green ? theme.green : "#999")};
+  color: #999;
   font-size: 1.25em;
   font-weight: bold;
 `;
 
-const generateList = (items, handleSelection) =>
-  items.map(({ value, label, checked }) => (
-    <DropdownItem key={label}>
-      <Checkbox
-        checked={checked}
-        value={value}
-        label={label}
-        onChange={handleSelection}
-      />
-    </DropdownItem>
-  ));
-
-const setSelectedItemAsChecked = value => items =>
-  items.map(item => ({
-    ...item,
-    checked: item.value === value ? !item.checked : item.checked
-  }));
-
-export const Dropdown = ({ isOpen, label, onClick, items }) => {
-  const [selectedItems, setSelectedItems] = useState(
-    items.map(item => ({ ...item, checked: false }))
-  );
-
-  const checkedItems = selectedItems.filter(({ checked }) => checked);
-
-  const handleSelection = value => {
-    setSelectedItems(setSelectedItemAsChecked(value));
-  };
-
-  return (
-    <Typography fontFamily="openSans">
-      <Container>
-        <Button onClick={onClick} as={DropdownContainer}>
-          <DropdownText>{label}</DropdownText>
-          {isOpen && (
-            <DropdownText green>
-              {`${checkedItems.length} selected`}
-            </DropdownText>
-          )}
-          <Icon
-            name={isOpen ? "chevron-up" : "chevron-down"}
-            as={DropdownText}
-          />
-        </Button>
-        {isOpen && (
-          <ItemList>{generateList(selectedItems, handleSelection)}</ItemList>
-        )}
-      </Container>
-    </Typography>
-  );
-};
+export const Dropdown = ({ isOpen, label, onClick, children }) => (
+  <Typography fontFamily="openSans">
+    <Container>
+      <Button onClick={onClick} as={DropdownContainer}>
+        <DropdownText>{label}</DropdownText>
+        <Icon name={isOpen ? "chevron-up" : "chevron-down"} as={DropdownText} />
+      </Button>
+      {isOpen && <ItemList>{children}</ItemList>}
+    </Container>
+  </Typography>
+);
 
 Dropdown.propTypes = {
   /** Define dropdown visibility state */
   isOpen: PropTypes.bool,
   /** Text to show in dropdown */
-  label: PropTypes.string,
+  label: PropTypes.node,
   /** Handler function */
   onClick: PropTypes.func,
-  /** Items to be shown in dropdown list */
-  items: PropTypes.arrayOf(
-    PropTypes.shape({
-      value: PropTypes.string,
-      label: PropTypes.string
-    })
-  )
+  /** Children component to render */
+  children: PropTypes.node
 };
 
 Dropdown.defaultProps = {
   isOpen: false,
   label: "",
   onClick: () => {},
-  items: []
+  children: ""
 };

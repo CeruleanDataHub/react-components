@@ -10,8 +10,8 @@ import { Heatmap } from "../../containers/Chart/Heatmap/Heatmap";
 import { SemiDonut } from "../../containers/Chart/SemiDonut/SemiDonut";
 import { Spline } from "../../containers/Chart/Spline/Spline";
 import { TreeMap } from "../../containers/Chart/TreeMap/TreeMap";
+import { CheckboxDropdown } from "../../containers/CheckboxDropdown/CheckboxDropdown";
 import { SingleDatePicker } from "../../containers/DatePicker/SingleDatePicker/SingleDatePicker";
-import { Dropdown } from "../../containers/Dropdown/Dropdown";
 import { Fullscreen } from "../../containers/Fullscreen/Fullscreen";
 import { Cell, Grid } from "../../containers/Grid/Grid";
 import { KPICard } from "../../containers/KPICard/KPICard";
@@ -474,7 +474,7 @@ export const KeyperDemo = () => {
                 <Logo />
               </Cell>
               <Cell>
-                <Dropdown
+                <CheckboxDropdown
                   label="Channels"
                   items={dropdownItems}
                   isOpen={dropdownOpen}
@@ -572,7 +572,7 @@ export const KeyperDemoPage2 = () => {
                 <Logo />
               </Cell>
               <Cell>
-                <Dropdown
+                <CheckboxDropdown
                   label="Channels"
                   items={dropdownItems}
                   isOpen={dropdownOpen}
