@@ -3,12 +3,12 @@ import React from "react";
 import ModalWrapper from "styled-react-modal";
 
 const StyledModal = ModalWrapper.styled`
-  width: 20rem;
-  height: 20rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: white;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 0 18px -3px rgba(27, 27, 27, 0.8);
+  width: 75%;
 `;
 
 export const Modal = ({ children, isOpen, onBackgroundClick }) => (
