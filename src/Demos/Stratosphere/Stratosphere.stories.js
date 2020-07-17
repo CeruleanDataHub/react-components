@@ -7,9 +7,9 @@ import { Button } from "../../containers/Button/Button";
 import { Card } from "../../containers/Card/Card";
 import { Line } from "../../containers/Chart/Line/Line";
 import { Checkbox } from "../../containers/Checkbox/Checkbox";
-import { CheckboxDropdown } from "../../containers/CheckboxDropdown/CheckboxDropdown";
 import { Confirm } from "../../containers/Confirm/Confirm";
 import { DataTable } from "../../containers/DataTable/DataTable";
+import { Dropdown } from "../../containers/Dropdown/Dropdown";
 import { Fullscreen } from "../../containers/Fullscreen/Fullscreen";
 import { Cell, Grid } from "../../containers/Grid/Grid";
 import { Icon } from "../../containers/Icon/Icon";
@@ -145,14 +145,6 @@ const splineXAxis = [{ categories }];
 const splineSeries = [
   { name: "Logins", data: logins },
   { name: "Active users", data: activeUsers }
-];
-
-const dropdownItems = [
-  { value: "1", label: "Item 1" },
-  { value: "2", label: "Item 2" },
-  { value: "3", label: "Item 3" },
-  { value: "4", label: "Item 4" },
-  { value: "5", label: "Item 5" }
 ];
 
 const LinkComponent = ({ to, children }) => (
@@ -346,12 +338,18 @@ export const StratosphereDemo = () => {
                 <Logo />
               </Cell>
               <Cell as={UserPictureContainer}>
-                <CheckboxDropdown
+                <Dropdown
                   label="Customer name"
-                  items={dropdownItems}
-                  isOpen={dropdownOpen}
                   onClick={() => setDropdownOpen(!dropdownOpen)}
-                />
+                  isOpen={dropdownOpen}
+                >
+                  <ul>
+                    <li>first</li>
+                    <li>second</li>
+                    <li>third</li>
+                    <li>fourth</li>
+                  </ul>
+                </Dropdown>
                 <UserPicture
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
@@ -480,12 +478,18 @@ export const StratosphereUsersAndRolesDemo = () => {
                 <Logo />
               </Cell>
               <Cell as={UserPictureContainer}>
-                <CheckboxDropdown
+                <Dropdown
                   label="Customer name"
-                  items={dropdownItems}
-                  isOpen={dropdownOpen}
                   onClick={() => setDropdownOpen(!dropdownOpen)}
-                />
+                  isOpen={dropdownOpen}
+                >
+                  <ul>
+                    <li>first</li>
+                    <li>second</li>
+                    <li>third</li>
+                    <li>fourth</li>
+                  </ul>
+                </Dropdown>
                 <UserPicture
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
@@ -631,12 +635,18 @@ export const StratosphereManageUsersDemo = () => {
                 <Logo />
               </Cell>
               <Cell as={UserPictureContainer}>
-                <CheckboxDropdown
+                <Dropdown
                   label="Customer name"
-                  items={dropdownItems}
-                  isOpen={dropdownOpen}
                   onClick={() => setDropdownOpen(!dropdownOpen)}
-                />
+                  isOpen={dropdownOpen}
+                >
+                  <ul>
+                    <li>first</li>
+                    <li>second</li>
+                    <li>third</li>
+                    <li>fourth</li>
+                  </ul>
+                </Dropdown>
                 <UserPicture
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
@@ -672,12 +682,18 @@ export const StratosphereManageUsersDemo = () => {
                   <SearchInput type="search" />
                 </Cell>
                 <Cell>
-                  <CheckboxDropdown
+                  <Dropdown
                     label="Customer name"
-                    items={dropdownItems}
-                    isOpen={searchDropdownOpen}
                     onClick={() => setSearchDropdownOpen(!searchDropdownOpen)}
-                  />
+                    isOpen={searchDropdownOpen}
+                  >
+                    <ul>
+                      <li>first</li>
+                      <li>second</li>
+                      <li>third</li>
+                      <li>fourth</li>
+                    </ul>
+                  </Dropdown>
                 </Cell>
                 <Cell>
                   <Button type="submit" as={SearchButton}>
@@ -747,12 +763,18 @@ export const StratosphereManageUsersWithModalDemo = () => {
                 <Logo />
               </Cell>
               <Cell as={UserPictureContainer}>
-                <CheckboxDropdown
+                <Dropdown
                   label="Customer name"
-                  items={dropdownItems}
-                  isOpen={dropdownOpen}
                   onClick={() => setDropdownOpen(!dropdownOpen)}
-                />
+                  isOpen={dropdownOpen}
+                >
+                  <ul>
+                    <li>first</li>
+                    <li>second</li>
+                    <li>third</li>
+                    <li>fourth</li>
+                  </ul>
+                </Dropdown>
                 <UserPicture
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
@@ -788,12 +810,18 @@ export const StratosphereManageUsersWithModalDemo = () => {
                   <SearchInput type="search" />
                 </Cell>
                 <Cell>
-                  <CheckboxDropdown
+                  <Dropdown
                     label="Customer name"
-                    items={dropdownItems}
-                    isOpen={searchDropdownOpen}
                     onClick={() => setSearchDropdownOpen(!searchDropdownOpen)}
-                  />
+                    isOpen={searchDropdownOpen}
+                  >
+                    <ul>
+                      <li>first</li>
+                      <li>second</li>
+                      <li>third</li>
+                      <li>fourth</li>
+                    </ul>
+                  </Dropdown>
                 </Cell>
                 <Cell>
                   <Button type="submit" as={SearchButton}>
@@ -859,12 +887,18 @@ export const StratosphereManageUsersWithModalDemo = () => {
 
                 <Grid>
                   <Cell>
-                    <CheckboxDropdown
+                    <Dropdown
                       label="Roles"
-                      items={dropdownItems}
-                      isOpen={modalDropdownOpen}
                       onClick={() => setModalDropdownOpen(!modalDropdownOpen)}
-                    />
+                      isOpen={modalDropdownOpen}
+                    >
+                      <ul>
+                        <li>first</li>
+                        <li>second</li>
+                        <li>third</li>
+                        <li>fourth</li>
+                      </ul>
+                    </Dropdown>
                   </Cell>
                   <Cell>
                     <Button>Add role</Button>
@@ -930,12 +964,18 @@ export const StratosphereManageGroupsWithModalDemo = () => {
                 <Logo />
               </Cell>
               <Cell as={UserPictureContainer}>
-                <CheckboxDropdown
+                <Dropdown
                   label="Customer name"
-                  items={dropdownItems}
-                  isOpen={dropdownOpen}
                   onClick={() => setDropdownOpen(!dropdownOpen)}
-                />
+                  isOpen={dropdownOpen}
+                >
+                  <ul>
+                    <li>first</li>
+                    <li>second</li>
+                    <li>third</li>
+                    <li>fourth</li>
+                  </ul>
+                </Dropdown>
                 <UserPicture
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
@@ -971,12 +1011,18 @@ export const StratosphereManageGroupsWithModalDemo = () => {
                   <SearchInput type="search" />
                 </Cell>
                 <Cell>
-                  <CheckboxDropdown
+                  <Dropdown
                     label="Customer name"
-                    items={dropdownItems}
-                    isOpen={searchDropdownOpen}
                     onClick={() => setSearchDropdownOpen(!searchDropdownOpen)}
-                  />
+                    isOpen={searchDropdownOpen}
+                  >
+                    <ul>
+                      <li>first</li>
+                      <li>second</li>
+                      <li>third</li>
+                      <li>fourth</li>
+                    </ul>
+                  </Dropdown>
                 </Cell>
                 <Cell>
                   <Button type="submit" as={SearchButton}>
@@ -1042,12 +1088,18 @@ export const StratosphereManageGroupsWithModalDemo = () => {
 
                 <Grid>
                   <Cell>
-                    <CheckboxDropdown
+                    <Dropdown
                       label="Groups"
-                      items={dropdownItems}
-                      isOpen={modalDropdownOpen}
                       onClick={() => setModalDropdownOpen(!modalDropdownOpen)}
-                    />
+                      isOpen={modalDropdownOpen}
+                    >
+                      <ul>
+                        <li>first</li>
+                        <li>second</li>
+                        <li>third</li>
+                        <li>fourth</li>
+                      </ul>
+                    </Dropdown>
                   </Cell>
                   <Cell>
                     <Button>Add to Group</Button>
@@ -1117,12 +1169,18 @@ export const StratosphereManageHierarchiesWithModalDemo = () => {
                 <Logo />
               </Cell>
               <Cell as={UserPictureContainer}>
-                <CheckboxDropdown
+                <Dropdown
                   label="Customer name"
-                  items={dropdownItems}
-                  isOpen={dropdownOpen}
                   onClick={() => setDropdownOpen(!dropdownOpen)}
-                />
+                  isOpen={dropdownOpen}
+                >
+                  <ul>
+                    <li>first</li>
+                    <li>second</li>
+                    <li>third</li>
+                    <li>fourth</li>
+                  </ul>
+                </Dropdown>
                 <UserPicture
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
@@ -1158,12 +1216,18 @@ export const StratosphereManageHierarchiesWithModalDemo = () => {
                   <SearchInput type="search" />
                 </Cell>
                 <Cell>
-                  <CheckboxDropdown
+                  <Dropdown
                     label="Customer name"
-                    items={dropdownItems}
-                    isOpen={searchDropdownOpen}
                     onClick={() => setSearchDropdownOpen(!searchDropdownOpen)}
-                  />
+                    isOpen={searchDropdownOpen}
+                  >
+                    <ul>
+                      <li>first</li>
+                      <li>second</li>
+                      <li>third</li>
+                      <li>fourth</li>
+                    </ul>
+                  </Dropdown>
                 </Cell>
                 <Cell>
                   <Button type="submit" as={SearchButton}>
@@ -1223,18 +1287,24 @@ export const StratosphereManageHierarchiesWithModalDemo = () => {
 
                 <TabsContainer>
                   <Tab text="Roles" />
-                  <Tab text="Groups" active />
-                  <Tab text="Hierarchies" />
+                  <Tab text="Groups" />
+                  <Tab text="Hierarchies" active />
                 </TabsContainer>
 
                 <Grid>
                   <Cell>
-                    <CheckboxDropdown
+                    <Dropdown
                       label="Hierarchies"
-                      items={dropdownItems}
-                      isOpen={modalDropdownOpen}
                       onClick={() => setModalDropdownOpen(!modalDropdownOpen)}
-                    />
+                      isOpen={modalDropdownOpen}
+                    >
+                      <ul>
+                        <li>first</li>
+                        <li>second</li>
+                        <li>third</li>
+                        <li>fourth</li>
+                      </ul>
+                    </Dropdown>
                   </Cell>
                   <Cell>
                     <Button>Add to Group</Button>
@@ -1281,12 +1351,18 @@ export const StratosphereManageUsersWithConfirmDemo = () => {
                 <Logo />
               </Cell>
               <Cell as={UserPictureContainer}>
-                <CheckboxDropdown
+                <Dropdown
                   label="Customer name"
-                  items={dropdownItems}
-                  isOpen={dropdownOpen}
                   onClick={() => setDropdownOpen(!dropdownOpen)}
-                />
+                  isOpen={dropdownOpen}
+                >
+                  <ul>
+                    <li>first</li>
+                    <li>second</li>
+                    <li>third</li>
+                    <li>fourth</li>
+                  </ul>
+                </Dropdown>
                 <UserPicture
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
@@ -1322,12 +1398,18 @@ export const StratosphereManageUsersWithConfirmDemo = () => {
                   <SearchInput type="search" />
                 </Cell>
                 <Cell>
-                  <CheckboxDropdown
+                  <Dropdown
                     label="Customer name"
-                    items={dropdownItems}
-                    isOpen={searchDropdownOpen}
                     onClick={() => setSearchDropdownOpen(!searchDropdownOpen)}
-                  />
+                    isOpen={searchDropdownOpen}
+                  >
+                    <ul>
+                      <li>first</li>
+                      <li>second</li>
+                      <li>third</li>
+                      <li>fourth</li>
+                    </ul>
+                  </Dropdown>
                 </Cell>
                 <Cell>
                   <Button type="submit" as={SearchButton}>
@@ -1386,12 +1468,18 @@ export const StratosphereManageUsersWithDeleteDemo = () => {
                 <Logo />
               </Cell>
               <Cell as={UserPictureContainer}>
-                <CheckboxDropdown
+                <Dropdown
                   label="Customer name"
-                  items={dropdownItems}
-                  isOpen={dropdownOpen}
                   onClick={() => setDropdownOpen(!dropdownOpen)}
-                />
+                  isOpen={dropdownOpen}
+                >
+                  <ul>
+                    <li>first</li>
+                    <li>second</li>
+                    <li>third</li>
+                    <li>fourth</li>
+                  </ul>
+                </Dropdown>
                 <UserPicture
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
@@ -1427,12 +1515,18 @@ export const StratosphereManageUsersWithDeleteDemo = () => {
                   <SearchInput type="search" />
                 </Cell>
                 <Cell>
-                  <CheckboxDropdown
+                  <Dropdown
                     label="Customer name"
-                    items={dropdownItems}
-                    isOpen={searchDropdownOpen}
                     onClick={() => setSearchDropdownOpen(!searchDropdownOpen)}
-                  />
+                    isOpen={searchDropdownOpen}
+                  >
+                    <ul>
+                      <li>first</li>
+                      <li>second</li>
+                      <li>third</li>
+                      <li>fourth</li>
+                    </ul>
+                  </Dropdown>
                 </Cell>
                 <Cell>
                   <Button type="submit" as={SearchButton}>
@@ -1507,12 +1601,18 @@ export const StratosphereManageRolesDemo = () => {
                 <Logo />
               </Cell>
               <Cell as={UserPictureContainer}>
-                <CheckboxDropdown
+                <Dropdown
                   label="Customer name"
-                  items={dropdownItems}
-                  isOpen={dropdownOpen}
                   onClick={() => setDropdownOpen(!dropdownOpen)}
-                />
+                  isOpen={dropdownOpen}
+                >
+                  <ul>
+                    <li>first</li>
+                    <li>second</li>
+                    <li>third</li>
+                    <li>fourth</li>
+                  </ul>
+                </Dropdown>
                 <UserPicture
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
@@ -1548,12 +1648,18 @@ export const StratosphereManageRolesDemo = () => {
                   <SearchInput type="search" />
                 </Cell>
                 <Cell>
-                  <CheckboxDropdown
+                  <Dropdown
                     label="Customer name"
-                    items={dropdownItems}
-                    isOpen={searchDropdownOpen}
                     onClick={() => setSearchDropdownOpen(!searchDropdownOpen)}
-                  />
+                    isOpen={searchDropdownOpen}
+                  >
+                    <ul>
+                      <li>first</li>
+                      <li>second</li>
+                      <li>third</li>
+                      <li>fourth</li>
+                    </ul>
+                  </Dropdown>
                 </Cell>
                 <Cell>
                   <Button type="submit" as={SearchButton}>
@@ -1621,12 +1727,18 @@ export const StratosphereManageRolesWithModalDemo = () => {
                 <Logo />
               </Cell>
               <Cell as={UserPictureContainer}>
-                <CheckboxDropdown
+                <Dropdown
                   label="Customer name"
-                  items={dropdownItems}
-                  isOpen={dropdownOpen}
                   onClick={() => setDropdownOpen(!dropdownOpen)}
-                />
+                  isOpen={dropdownOpen}
+                >
+                  <ul>
+                    <li>first</li>
+                    <li>second</li>
+                    <li>third</li>
+                    <li>fourth</li>
+                  </ul>
+                </Dropdown>
                 <UserPicture
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
@@ -1662,12 +1774,18 @@ export const StratosphereManageRolesWithModalDemo = () => {
                   <SearchInput type="search" />
                 </Cell>
                 <Cell>
-                  <CheckboxDropdown
+                  <Dropdown
                     label="Customer name"
-                    items={dropdownItems}
-                    isOpen={searchDropdownOpen}
                     onClick={() => setSearchDropdownOpen(!searchDropdownOpen)}
-                  />
+                    isOpen={searchDropdownOpen}
+                  >
+                    <ul>
+                      <li>first</li>
+                      <li>second</li>
+                      <li>third</li>
+                      <li>fourth</li>
+                    </ul>
+                  </Dropdown>
                 </Cell>
                 <Cell>
                   <Button type="submit" as={SearchButton}>
@@ -1759,12 +1877,18 @@ export const StratosphereSwitchTabsModalDemo = () => {
     <>
       <Grid>
         <Cell>
-          <CheckboxDropdown
+          <Dropdown
             label="Roles"
-            items={dropdownItems}
-            isOpen={modalDropdownOpen}
             onClick={() => setModalDropdownOpen(!modalDropdownOpen)}
-          />
+            isOpen={modalDropdownOpen}
+          >
+            <ul>
+              <li>first</li>
+              <li>second</li>
+              <li>third</li>
+              <li>fourth</li>
+            </ul>
+          </Dropdown>
         </Cell>
         <Cell>
           <Button>Add role</Button>
@@ -1786,12 +1910,18 @@ export const StratosphereSwitchTabsModalDemo = () => {
     <>
       <Grid>
         <Cell>
-          <CheckboxDropdown
+          <Dropdown
             label="Groups"
-            items={dropdownItems}
-            isOpen={modalDropdownOpen}
             onClick={() => setModalDropdownOpen(!modalDropdownOpen)}
-          />
+            isOpen={modalDropdownOpen}
+          >
+            <ul>
+              <li>first</li>
+              <li>second</li>
+              <li>third</li>
+              <li>fourth</li>
+            </ul>
+          </Dropdown>
         </Cell>
         <Cell>
           <Button>Add to Group</Button>
@@ -1813,12 +1943,18 @@ export const StratosphereSwitchTabsModalDemo = () => {
     <>
       <Grid>
         <Cell>
-          <CheckboxDropdown
+          <Dropdown
             label="Hierarchies"
-            items={dropdownItems}
-            isOpen={modalDropdownOpen}
             onClick={() => setModalDropdownOpen(!modalDropdownOpen)}
-          />
+            isOpen={modalDropdownOpen}
+          >
+            <ul>
+              <li>first</li>
+              <li>second</li>
+              <li>third</li>
+              <li>fourth</li>
+            </ul>
+          </Dropdown>
         </Cell>
         <Cell>
           <Button>Add to Group</Button>
@@ -1861,12 +1997,18 @@ export const StratosphereSwitchTabsModalDemo = () => {
                 <Logo />
               </Cell>
               <Cell as={UserPictureContainer}>
-                <CheckboxDropdown
+                <Dropdown
                   label="Customer name"
-                  items={dropdownItems}
-                  isOpen={dropdownOpen}
                   onClick={() => setDropdownOpen(!dropdownOpen)}
-                />
+                  isOpen={dropdownOpen}
+                >
+                  <ul>
+                    <li>first</li>
+                    <li>second</li>
+                    <li>third</li>
+                    <li>fourth</li>
+                  </ul>
+                </Dropdown>
                 <UserPicture
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
@@ -1902,12 +2044,18 @@ export const StratosphereSwitchTabsModalDemo = () => {
                   <SearchInput type="search" />
                 </Cell>
                 <Cell>
-                  <CheckboxDropdown
+                  <Dropdown
                     label="Customer name"
-                    items={dropdownItems}
-                    isOpen={searchDropdownOpen}
                     onClick={() => setSearchDropdownOpen(!searchDropdownOpen)}
-                  />
+                    isOpen={searchDropdownOpen}
+                  >
+                    <ul>
+                      <li>first</li>
+                      <li>second</li>
+                      <li>third</li>
+                      <li>fourth</li>
+                    </ul>
+                  </Dropdown>
                 </Cell>
                 <Cell>
                   <Button type="submit" as={SearchButton}>
