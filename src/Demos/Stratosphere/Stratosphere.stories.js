@@ -1427,7 +1427,7 @@ export const StratosphereManageUsersWithConfirmDemo = () => {
 
             <Confirm
               title="Block User Name"
-              text="Are you sure you want to block this user?"
+              content="Are you sure you want to block this user?"
               isOpen
               onConfirm={() => {
                 // eslint-disable-next-line no-console
@@ -1544,7 +1544,7 @@ export const StratosphereManageUsersWithDeleteDemo = () => {
 
             <Confirm
               title="Delete User Name"
-              text="Are you sure you want to delete this user?"
+              content="Are you sure you want to delete this user?"
               isOpen
               onConfirm={() => {
                 // eslint-disable-next-line no-console
