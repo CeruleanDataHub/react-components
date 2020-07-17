@@ -1,0 +1,1410 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Confirm should call default props onCancel function when no onCancel property is passed 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 30;
+  background-color: rgba(0,0,0,0.5);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c4 {
+  font-family: inherit;
+  background: transparent;
+  color: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c6 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: unset;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 0 18px -3px rgba(27,27,27,0.8);
+  width: 40%;
+}
+
+.c3 {
+  text-align: right;
+}
+
+.c3 button {
+  margin: 0.2rem;
+}
+
+.c7 {
+  background: blue;
+  color: white;
+  font-weight: bold;
+}
+
+.c5 {
+  color: blue;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<p>
+  <Confirm
+    isOpen={true}
+    onCancel={[Function]}
+    onConfirm={[Function]}
+    text=""
+    title=""
+  >
+    <Component
+      isOpen={true}
+    >
+      <j
+        WrapperComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "baseHash": 2127463992,
+              "componentId": "Modal__wrap-gmoXzh",
+              "isStatic": false,
+              "rules": Array [
+                "
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 0 18px -3px rgba(27, 27, 27, 0.8);
+  width: 40%;
+",
+              ],
+              "staticRulesId": "",
+            },
+            "displayName": "Modal__wrap",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "shouldForwardProp": undefined,
+            "styledComponentId": "Modal__wrap-gmoXzh",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        backgroundProps={Object {}}
+        isOpen={true}
+      >
+        <Portal
+          containerInfo={
+            .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 30;
+  background-color: rgba(0,0,0,0.5);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  font-family: inherit;
+  background: transparent;
+  color: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c7 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: unset;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 0 18px -3px rgba(27,27,27,0.8);
+  width: 40%;
+}
+
+.c3 {
+  text-align: right;
+}
+
+.c3 button {
+  margin: 0.2rem;
+}
+
+.c6 {
+  background: blue;
+  color: white;
+  font-weight: bold;
+}
+
+.c4 {
+  color: blue;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<div>
+              <div
+                class="c0"
+              >
+                <div
+                  class="c1"
+                >
+                  <div
+                    class="c2"
+                    font-family="openSans"
+                  >
+                    <p />
+                    <p />
+                    <div
+                      class="c3"
+                    >
+                      <button
+                        class="c4 c5"
+                        color="transparent"
+                        type="button"
+                      >
+                        Cancel
+                      </button>
+                      <button
+                        class="c6 c7"
+                        color=""
+                        type="button"
+                      >
+                        Confirm
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          }
+        >
+          <baseStyles__BaseModalBackground
+            onClick={[Function]}
+          >
+            <div
+              className="c0"
+              onClick={[Function]}
+            >
+              <Modal__wrap>
+                <div
+                  className="c1"
+                >
+                  <Typography
+                    color=""
+                    fontFamily="openSans"
+                    size="normal"
+                  >
+                    <styled.div
+                      fontFamily="openSans"
+                      size="normal"
+                      textColor=""
+                    >
+                      <div
+                        className="c2"
+                        fontFamily="openSans"
+                        size="normal"
+                      >
+                        <p />
+                        <p />
+                        <styled.div>
+                          <div
+                            className="c3"
+                          >
+                            <ForwardRef
+                              as={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "baseHash": 2075994405,
+                                    "componentId": "sc-AxhUy",
+                                    "isStatic": false,
+                                    "rules": Array [
+                                      "
+  color: blue;
+  text-decoration: underline;
+",
+                                    ],
+                                    "staticRulesId": "",
+                                  },
+                                  "displayName": "styled.button",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "shouldForwardProp": undefined,
+                                  "styledComponentId": "sc-AxhUy",
+                                  "target": "button",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              color="transparent"
+                              onClick={[Function]}
+                              type="button"
+                            >
+                              <styled.button
+                                as={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "baseHash": 2075994405,
+                                      "componentId": "sc-AxhUy",
+                                      "isStatic": false,
+                                      "rules": Array [
+                                        "
+  color: blue;
+  text-decoration: underline;
+",
+                                      ],
+                                      "staticRulesId": "",
+                                    },
+                                    "displayName": "styled.button",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "shouldForwardProp": undefined,
+                                    "styledComponentId": "sc-AxhUy",
+                                    "target": "button",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                color="transparent"
+                                onClick={[Function]}
+                                type="button"
+                              >
+                                <styled.button
+                                  className="c4"
+                                  color="transparent"
+                                  onClick={[Function]}
+                                  type="button"
+                                >
+                                  <button
+                                    className="c5 c4"
+                                    color="transparent"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Cancel
+                                  </button>
+                                </styled.button>
+                              </styled.button>
+                            </ForwardRef>
+                            <ForwardRef
+                              as={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "baseHash": 1845756808,
+                                    "componentId": "sc-AxhCb",
+                                    "isStatic": false,
+                                    "rules": Array [
+                                      "
+  background: blue;
+  color: white;
+  font-weight: bold;
+",
+                                    ],
+                                    "staticRulesId": "",
+                                  },
+                                  "displayName": "styled.button",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "shouldForwardProp": undefined,
+                                  "styledComponentId": "sc-AxhCb",
+                                  "target": "button",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              color=""
+                              onClick={[Function]}
+                              type="button"
+                            >
+                              <styled.button
+                                as={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "baseHash": 1845756808,
+                                      "componentId": "sc-AxhCb",
+                                      "isStatic": false,
+                                      "rules": Array [
+                                        "
+  background: blue;
+  color: white;
+  font-weight: bold;
+",
+                                      ],
+                                      "staticRulesId": "",
+                                    },
+                                    "displayName": "styled.button",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "shouldForwardProp": undefined,
+                                    "styledComponentId": "sc-AxhCb",
+                                    "target": "button",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                color=""
+                                onClick={[Function]}
+                                type="button"
+                              >
+                                <styled.button
+                                  className="c6"
+                                  color=""
+                                  onClick={[Function]}
+                                  type="button"
+                                >
+                                  <button
+                                    className="c7 c6"
+                                    color=""
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Confirm
+                                  </button>
+                                </styled.button>
+                              </styled.button>
+                            </ForwardRef>
+                          </div>
+                        </styled.div>
+                      </div>
+                    </styled.div>
+                  </Typography>
+                </div>
+              </Modal__wrap>
+            </div>
+          </baseStyles__BaseModalBackground>
+        </Portal>
+      </j>
+    </Component>
+  </Confirm>
+  <div />
+</p>
+`;
+
+exports[`Confirm should call default props onConfirm function when no onConfirm property is passed 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 30;
+  background-color: rgba(0,0,0,0.5);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c4 {
+  font-family: inherit;
+  background: transparent;
+  color: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c6 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: unset;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 0 18px -3px rgba(27,27,27,0.8);
+  width: 40%;
+}
+
+.c3 {
+  text-align: right;
+}
+
+.c3 button {
+  margin: 0.2rem;
+}
+
+.c7 {
+  background: blue;
+  color: white;
+  font-weight: bold;
+}
+
+.c5 {
+  color: blue;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<p>
+  <Confirm
+    isOpen={true}
+    onCancel={[Function]}
+    onConfirm={[Function]}
+    text=""
+    title=""
+  >
+    <Component
+      isOpen={true}
+    >
+      <j
+        WrapperComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "baseHash": 2127463992,
+              "componentId": "Modal__wrap-gmoXzh",
+              "isStatic": false,
+              "rules": Array [
+                "
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 0 18px -3px rgba(27, 27, 27, 0.8);
+  width: 40%;
+",
+              ],
+              "staticRulesId": "",
+            },
+            "displayName": "Modal__wrap",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "shouldForwardProp": undefined,
+            "styledComponentId": "Modal__wrap-gmoXzh",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        backgroundProps={Object {}}
+        isOpen={true}
+      >
+        <Portal
+          containerInfo={
+            .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 30;
+  background-color: rgba(0,0,0,0.5);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  font-family: inherit;
+  background: transparent;
+  color: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c7 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: unset;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 0 18px -3px rgba(27,27,27,0.8);
+  width: 40%;
+}
+
+.c3 {
+  text-align: right;
+}
+
+.c3 button {
+  margin: 0.2rem;
+}
+
+.c6 {
+  background: blue;
+  color: white;
+  font-weight: bold;
+}
+
+.c4 {
+  color: blue;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<div>
+              <div
+                class="c0"
+              >
+                <div
+                  class="c1"
+                >
+                  <div
+                    class="c2"
+                    font-family="openSans"
+                  >
+                    <p />
+                    <p />
+                    <div
+                      class="c3"
+                    >
+                      <button
+                        class="c4 c5"
+                        color="transparent"
+                        type="button"
+                      >
+                        Cancel
+                      </button>
+                      <button
+                        class="c6 c7"
+                        color=""
+                        type="button"
+                      >
+                        Confirm
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          }
+        >
+          <baseStyles__BaseModalBackground
+            onClick={[Function]}
+          >
+            <div
+              className="c0"
+              onClick={[Function]}
+            >
+              <Modal__wrap>
+                <div
+                  className="c1"
+                >
+                  <Typography
+                    color=""
+                    fontFamily="openSans"
+                    size="normal"
+                  >
+                    <styled.div
+                      fontFamily="openSans"
+                      size="normal"
+                      textColor=""
+                    >
+                      <div
+                        className="c2"
+                        fontFamily="openSans"
+                        size="normal"
+                      >
+                        <p />
+                        <p />
+                        <styled.div>
+                          <div
+                            className="c3"
+                          >
+                            <ForwardRef
+                              as={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "baseHash": 2075994405,
+                                    "componentId": "sc-AxhUy",
+                                    "isStatic": false,
+                                    "rules": Array [
+                                      "
+  color: blue;
+  text-decoration: underline;
+",
+                                    ],
+                                    "staticRulesId": "",
+                                  },
+                                  "displayName": "styled.button",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "shouldForwardProp": undefined,
+                                  "styledComponentId": "sc-AxhUy",
+                                  "target": "button",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              color="transparent"
+                              onClick={[Function]}
+                              type="button"
+                            >
+                              <styled.button
+                                as={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "baseHash": 2075994405,
+                                      "componentId": "sc-AxhUy",
+                                      "isStatic": false,
+                                      "rules": Array [
+                                        "
+  color: blue;
+  text-decoration: underline;
+",
+                                      ],
+                                      "staticRulesId": "",
+                                    },
+                                    "displayName": "styled.button",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "shouldForwardProp": undefined,
+                                    "styledComponentId": "sc-AxhUy",
+                                    "target": "button",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                color="transparent"
+                                onClick={[Function]}
+                                type="button"
+                              >
+                                <styled.button
+                                  className="c4"
+                                  color="transparent"
+                                  onClick={[Function]}
+                                  type="button"
+                                >
+                                  <button
+                                    className="c5 c4"
+                                    color="transparent"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Cancel
+                                  </button>
+                                </styled.button>
+                              </styled.button>
+                            </ForwardRef>
+                            <ForwardRef
+                              as={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "baseHash": 1845756808,
+                                    "componentId": "sc-AxhCb",
+                                    "isStatic": false,
+                                    "rules": Array [
+                                      "
+  background: blue;
+  color: white;
+  font-weight: bold;
+",
+                                    ],
+                                    "staticRulesId": "",
+                                  },
+                                  "displayName": "styled.button",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "shouldForwardProp": undefined,
+                                  "styledComponentId": "sc-AxhCb",
+                                  "target": "button",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              color=""
+                              onClick={[Function]}
+                              type="button"
+                            >
+                              <styled.button
+                                as={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "baseHash": 1845756808,
+                                      "componentId": "sc-AxhCb",
+                                      "isStatic": false,
+                                      "rules": Array [
+                                        "
+  background: blue;
+  color: white;
+  font-weight: bold;
+",
+                                      ],
+                                      "staticRulesId": "",
+                                    },
+                                    "displayName": "styled.button",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "shouldForwardProp": undefined,
+                                    "styledComponentId": "sc-AxhCb",
+                                    "target": "button",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                color=""
+                                onClick={[Function]}
+                                type="button"
+                              >
+                                <styled.button
+                                  className="c6"
+                                  color=""
+                                  onClick={[Function]}
+                                  type="button"
+                                >
+                                  <button
+                                    className="c7 c6"
+                                    color=""
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Confirm
+                                  </button>
+                                </styled.button>
+                              </styled.button>
+                            </ForwardRef>
+                          </div>
+                        </styled.div>
+                      </div>
+                    </styled.div>
+                  </Typography>
+                </div>
+              </Modal__wrap>
+            </div>
+          </baseStyles__BaseModalBackground>
+        </Portal>
+      </j>
+    </Component>
+  </Confirm>
+  <div />
+</p>
+`;
+
+exports[`Confirm should render 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 30;
+  background-color: rgba(0,0,0,0.5);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c4 {
+  font-family: inherit;
+  background: transparent;
+  color: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c6 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: unset;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 0 18px -3px rgba(27,27,27,0.8);
+  width: 40%;
+}
+
+.c3 {
+  text-align: right;
+}
+
+.c3 button {
+  margin: 0.2rem;
+}
+
+.c7 {
+  background: blue;
+  color: white;
+  font-weight: bold;
+}
+
+.c5 {
+  color: blue;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<p>
+  <Confirm
+    isOpen={true}
+    onCancel={[Function]}
+    onConfirm={[Function]}
+    text="Confirm modal content"
+    title="Confirm title"
+  >
+    <Component
+      isOpen={true}
+    >
+      <j
+        WrapperComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "baseHash": 2127463992,
+              "componentId": "Modal__wrap-gmoXzh",
+              "isStatic": false,
+              "rules": Array [
+                "
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 0 18px -3px rgba(27, 27, 27, 0.8);
+  width: 40%;
+",
+              ],
+              "staticRulesId": "",
+            },
+            "displayName": "Modal__wrap",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "shouldForwardProp": undefined,
+            "styledComponentId": "Modal__wrap-gmoXzh",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        backgroundProps={Object {}}
+        isOpen={true}
+      >
+        <Portal
+          containerInfo={
+            .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 30;
+  background-color: rgba(0,0,0,0.5);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  font-family: inherit;
+  background: transparent;
+  color: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c7 {
+  font-family: inherit;
+  background: transparent;
+  font-size: 1em;
+  padding: 0.25em 1.5em;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: unset;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 0 18px -3px rgba(27,27,27,0.8);
+  width: 40%;
+}
+
+.c3 {
+  text-align: right;
+}
+
+.c3 button {
+  margin: 0.2rem;
+}
+
+.c6 {
+  background: blue;
+  color: white;
+  font-weight: bold;
+}
+
+.c4 {
+  color: blue;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<div>
+              <div
+                class="c0"
+              >
+                <div
+                  class="c1"
+                >
+                  <div
+                    class="c2"
+                    font-family="openSans"
+                  >
+                    <p>
+                      Confirm title
+                    </p>
+                    <p>
+                      Confirm modal content
+                    </p>
+                    <div
+                      class="c3"
+                    >
+                      <button
+                        class="c4 c5"
+                        color="transparent"
+                        type="button"
+                      >
+                        Cancel
+                      </button>
+                      <button
+                        class="c6 c7"
+                        color=""
+                        type="button"
+                      >
+                        Confirm
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          }
+        >
+          <baseStyles__BaseModalBackground
+            onClick={[Function]}
+          >
+            <div
+              className="c0"
+              onClick={[Function]}
+            >
+              <Modal__wrap>
+                <div
+                  className="c1"
+                >
+                  <Typography
+                    color=""
+                    fontFamily="openSans"
+                    size="normal"
+                  >
+                    <styled.div
+                      fontFamily="openSans"
+                      size="normal"
+                      textColor=""
+                    >
+                      <div
+                        className="c2"
+                        fontFamily="openSans"
+                        size="normal"
+                      >
+                        <p>
+                          Confirm title
+                        </p>
+                        <p>
+                          Confirm modal content
+                        </p>
+                        <styled.div>
+                          <div
+                            className="c3"
+                          >
+                            <ForwardRef
+                              as={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "baseHash": 2075994405,
+                                    "componentId": "sc-AxhUy",
+                                    "isStatic": false,
+                                    "rules": Array [
+                                      "
+  color: blue;
+  text-decoration: underline;
+",
+                                    ],
+                                    "staticRulesId": "",
+                                  },
+                                  "displayName": "styled.button",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "shouldForwardProp": undefined,
+                                  "styledComponentId": "sc-AxhUy",
+                                  "target": "button",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              color="transparent"
+                              onClick={[Function]}
+                              type="button"
+                            >
+                              <styled.button
+                                as={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "baseHash": 2075994405,
+                                      "componentId": "sc-AxhUy",
+                                      "isStatic": false,
+                                      "rules": Array [
+                                        "
+  color: blue;
+  text-decoration: underline;
+",
+                                      ],
+                                      "staticRulesId": "",
+                                    },
+                                    "displayName": "styled.button",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "shouldForwardProp": undefined,
+                                    "styledComponentId": "sc-AxhUy",
+                                    "target": "button",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                color="transparent"
+                                onClick={[Function]}
+                                type="button"
+                              >
+                                <styled.button
+                                  className="c4"
+                                  color="transparent"
+                                  onClick={[Function]}
+                                  type="button"
+                                >
+                                  <button
+                                    className="c5 c4"
+                                    color="transparent"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Cancel
+                                  </button>
+                                </styled.button>
+                              </styled.button>
+                            </ForwardRef>
+                            <ForwardRef
+                              as={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "baseHash": 1845756808,
+                                    "componentId": "sc-AxhCb",
+                                    "isStatic": false,
+                                    "rules": Array [
+                                      "
+  background: blue;
+  color: white;
+  font-weight: bold;
+",
+                                    ],
+                                    "staticRulesId": "",
+                                  },
+                                  "displayName": "styled.button",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "shouldForwardProp": undefined,
+                                  "styledComponentId": "sc-AxhCb",
+                                  "target": "button",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              color=""
+                              onClick={[Function]}
+                              type="button"
+                            >
+                              <styled.button
+                                as={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "baseHash": 1845756808,
+                                      "componentId": "sc-AxhCb",
+                                      "isStatic": false,
+                                      "rules": Array [
+                                        "
+  background: blue;
+  color: white;
+  font-weight: bold;
+",
+                                      ],
+                                      "staticRulesId": "",
+                                    },
+                                    "displayName": "styled.button",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "shouldForwardProp": undefined,
+                                    "styledComponentId": "sc-AxhCb",
+                                    "target": "button",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                color=""
+                                onClick={[Function]}
+                                type="button"
+                              >
+                                <styled.button
+                                  className="c6"
+                                  color=""
+                                  onClick={[Function]}
+                                  type="button"
+                                >
+                                  <button
+                                    className="c7 c6"
+                                    color=""
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Confirm
+                                  </button>
+                                </styled.button>
+                              </styled.button>
+                            </ForwardRef>
+                          </div>
+                        </styled.div>
+                      </div>
+                    </styled.div>
+                  </Typography>
+                </div>
+              </Modal__wrap>
+            </div>
+          </baseStyles__BaseModalBackground>
+        </Portal>
+      </j>
+    </Component>
+  </Confirm>
+  <div />
+</p>
+`;
