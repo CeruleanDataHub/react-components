@@ -1727,7 +1727,7 @@ export const StratosphereManageRolesWithModalDemo = () => {
 
                 <TabsContainer>
                   <Tab text="Permissions" active />
-                  <Tab text="Hierarchies" />
+                  <Tab text="Settings" />
                 </TabsContainer>
 
                 <input type="text" placeholder="repo" />
