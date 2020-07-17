@@ -34,11 +34,11 @@ const CancelButton = styled.button`
   text-decoration: underline;
 `;
 
-export const Confirm = ({ title, text, isOpen, onConfirm, onCancel }) => (
+export const Confirm = ({ title, content, isOpen, onConfirm, onCancel }) => (
   <StyledModal isOpen={isOpen}>
     <Typography fontFamily="openSans">
-      <p>{title}</p>
-      <p>{text}</p>
+      <div>{title}</div>
+      <div>{content}</div>
       <TextAlignRight>
         <Button color="transparent" onClick={onCancel} as={CancelButton}>
           Cancel
@@ -54,8 +54,8 @@ export const Confirm = ({ title, text, isOpen, onConfirm, onCancel }) => (
 Confirm.propTypes = {
   /** Confirm modal title */
   title: PropTypes.string,
-  /** Confirm modal text */
-  text: PropTypes.string,
+  /** Confirm modal content */
+  content: PropTypes.node,
   /** Is confirm open or not */
   isOpen: PropTypes.bool,
   /** Function for confirmation event */
@@ -66,7 +66,7 @@ Confirm.propTypes = {
 
 Confirm.defaultProps = {
   title: "",
-  text: "",
+  content: "",
   isOpen: false,
   onConfirm: () => null,
   onCancel: () => null

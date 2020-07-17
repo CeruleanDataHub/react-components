@@ -9,7 +9,29 @@ describe("Confirm", () => {
   it("should render", () => {
     const component = mount(
       <ModalProvider>
-        <Confirm title="Confirm title" text="Confirm modal content" isOpen />
+        <Confirm title="Confirm title" content="Confirm modal content" isOpen />
+      </ModalProvider>
+    );
+    expect(toJson(component)).toMatchSnapshot();
+  });
+
+  it("should render closed", () => {
+    const component = mount(
+      <ModalProvider>
+        <Confirm title="Confirm title" content="Confirm modal content" />
+      </ModalProvider>
+    );
+    expect(toJson(component)).toMatchSnapshot();
+  });
+
+  it("should render content as reacr node", () => {
+    const component = mount(
+      <ModalProvider>
+        <Confirm
+          title="Confirm title"
+          content={<div>Confirm modal content within a component</div>}
+          isOpen
+        />
       </ModalProvider>
     );
     expect(toJson(component)).toMatchSnapshot();
