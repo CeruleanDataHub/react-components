@@ -1745,6 +1745,254 @@ export const StratosphereManageRolesWithModalDemo = () => {
   );
 };
 
+export const StratosphereSwitchTabsModalDemo = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [modalDropdownOpen, setModalDropdownOpen] = useState(false);
+  const [searchDropdownOpen, setSearchDropdownOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [popoverOpen, setPopoverOpen] = useState(false);
+  const [selectedTab, setSelectedTab] = useState("Roles");
+
+  const containerRef = useRef(null);
+
+  const renderManageRoles = () => (
+    <>
+      <Grid>
+        <Cell>
+          <CheckboxDropdown
+            label="Roles"
+            items={dropdownItems}
+            isOpen={modalDropdownOpen}
+            onClick={() => setModalDropdownOpen(!modalDropdownOpen)}
+          />
+        </Cell>
+        <Cell>
+          <Button>Add role</Button>
+        </Cell>
+      </Grid>
+
+      <DataTable
+        columns={manageUsersModalData.columns}
+        data={manageUsersModalData.data}
+      />
+
+      <TextAlignRight>
+        <a href="/manage">Manage Roles</a>
+      </TextAlignRight>
+    </>
+  );
+
+  const renderManageGroups = () => (
+    <>
+      <Grid>
+        <Cell>
+          <CheckboxDropdown
+            label="Groups"
+            items={dropdownItems}
+            isOpen={modalDropdownOpen}
+            onClick={() => setModalDropdownOpen(!modalDropdownOpen)}
+          />
+        </Cell>
+        <Cell>
+          <Button>Add to Group</Button>
+        </Cell>
+      </Grid>
+
+      <DataTable
+        columns={manageGroupsModalData.columns}
+        data={manageGroupsModalData.data}
+      />
+
+      <TextAlignRight>
+        <a href="/manage">Manage Groups</a>
+      </TextAlignRight>
+    </>
+  );
+
+  const renderManageHierarchies = () => (
+    <>
+      <Grid>
+        <Cell>
+          <CheckboxDropdown
+            label="Hierarchies"
+            items={dropdownItems}
+            isOpen={modalDropdownOpen}
+            onClick={() => setModalDropdownOpen(!modalDropdownOpen)}
+          />
+        </Cell>
+        <Cell>
+          <Button>Add to Group</Button>
+        </Cell>
+      </Grid>
+
+      <DataTable
+        columns={manageHierarchiesModalData.columns}
+        data={manageHierarchiesModalData.data}
+      />
+
+      <TextAlignRight>
+        <a href="/manage">Manage Hierarchies</a>
+      </TextAlignRight>
+    </>
+  );
+
+  const renderModalContent = () => {
+    if (selectedTab === "Roles") {
+      return renderManageRoles();
+    }
+    if (selectedTab === "Groups") {
+      return renderManageGroups();
+    }
+    return renderManageHierarchies();
+  };
+
+  return (
+    <Container>
+      <Typography fontFamily="openSans">
+        <GridWithCollapsibleMenu menuOpen={menuOpen}>
+          <Cell as={NavigatonContainer}>
+            <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
+              <Menu items={menuItems} menuOpen={menuOpen} />
+            </Navigation>
+          </Cell>
+          <Cell as={Content}>
+            <Grid as={HeaderRow}>
+              <Cell>
+                <Logo />
+              </Cell>
+              <Cell as={UserPictureContainer}>
+                <CheckboxDropdown
+                  label="Customer name"
+                  items={dropdownItems}
+                  isOpen={dropdownOpen}
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                />
+                <UserPicture
+                  onClick={() => setPopoverOpen(!popoverOpen)}
+                  ref={containerRef}
+                />
+                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                  <p>Popover content</p>
+                </Popover>
+              </Cell>
+            </Grid>
+            <Grid>
+              <Cell>
+                <Typography color="black" size="large">
+                  <Icon name="arrow-left-circle" as={IconMarginRight} />
+                  Manage Users
+                </Typography>
+              </Cell>
+              <Cell as={GridContentRight}>
+                <Button as={ButtonWithIcon}>
+                  <Icon name="plus" />
+                  Invite User
+                </Button>
+              </Cell>
+            </Grid>
+            <form
+              onSubmit={event => {
+                event.preventDefault();
+                // eslint-disable-next-line no-console
+                console.log("submit");
+              }}
+            >
+              <Grid>
+                <Cell>
+                  <SearchInput type="search" />
+                </Cell>
+                <Cell>
+                  <CheckboxDropdown
+                    label="Customer name"
+                    items={dropdownItems}
+                    isOpen={searchDropdownOpen}
+                    onClick={() => setSearchDropdownOpen(!searchDropdownOpen)}
+                  />
+                </Cell>
+                <Cell>
+                  <Button type="submit" as={SearchButton}>
+                    <Icon name="search" />
+                    Search
+                  </Button>
+                </Cell>
+              </Grid>
+            </form>
+
+            <DataTable
+              columns={manageUsersData.columns}
+              data={manageUsersData.data}
+            />
+
+            <Modal
+              isOpen
+              onBackgroundClick={() => {
+                // eslint-disable-next-line no-console
+                console.log("click on background");
+              }}
+            >
+              <Typography fontFamily="openSans">
+                <Grid>
+                  <Cell>
+                    <Typography color="black" size="large">
+                      User
+                    </Typography>
+                  </Cell>
+                  <Cell as={GridContentRight}>
+                    <Button
+                      color="transparent"
+                      onClick={() => {
+                        // eslint-disable-next-line no-console
+                        console.log("close modal");
+                      }}
+                    >
+                      <Typography color="black">
+                        <Icon name="close" />
+                      </Typography>
+                    </Button>
+                  </Cell>
+                </Grid>
+
+                <Grid>
+                  <Cell>
+                    <UserPicture
+                      onClick={() => setPopoverOpen(!popoverOpen)}
+                      ref={containerRef}
+                    />
+                  </Cell>
+                  <Cell>
+                    <p>Name: User Name</p>
+                    <p>Email: User@example.com</p>
+                  </Cell>
+                </Grid>
+
+                <TabsContainer>
+                  <Tab
+                    text="Roles"
+                    active={selectedTab === "Roles"}
+                    onClick={() => setSelectedTab("Roles")}
+                  />
+                  <Tab
+                    text="Groups"
+                    active={selectedTab === "Groups"}
+                    onClick={() => setSelectedTab("Groups")}
+                  />
+                  <Tab
+                    text="Hierarchies"
+                    active={selectedTab === "Hierarchies"}
+                    onClick={() => setSelectedTab("Hierarchies")}
+                  />
+                </TabsContainer>
+
+                {renderModalContent()}
+              </Typography>
+            </Modal>
+          </Cell>
+        </GridWithCollapsibleMenu>
+      </Typography>
+    </Container>
+  );
+};
+
 export default {
   title: "Stratosphere Demo",
   component: StratosphereDemo,
