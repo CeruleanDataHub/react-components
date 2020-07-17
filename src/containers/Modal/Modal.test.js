@@ -17,6 +17,17 @@ describe("Modal", () => {
     expect(toJson(component)).toMatchSnapshot();
   });
 
+  it("should render closed Modal with children", () => {
+    const component = mount(
+      <ModalProvider>
+        <Modal>
+          <p>Modal content</p>
+        </Modal>
+      </ModalProvider>
+    );
+    expect(toJson(component)).toMatchSnapshot();
+  });
+
   it("should call default props onBackgroundClick function when no onBackgroundClick property is passed", () => {
     const component = mount(
       <ModalProvider>

@@ -161,6 +161,58 @@ exports[`Modal should call default props onBackgroundClick function when no onBa
 </p>
 `;
 
+exports[`Modal should render closed Modal with children 1`] = `
+<p>
+  <Modal
+    isOpen={false}
+    onBackgroundClick={[Function]}
+  >
+    <Component
+      isOpen={false}
+      onBackgroundClick={[Function]}
+    >
+      <j
+        WrapperComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "baseHash": 2127463992,
+              "componentId": "Modal__wrap-gmoXzh",
+              "isStatic": false,
+              "rules": Array [
+                "
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 0 18px -3px rgba(27, 27, 27, 0.8);
+  width: 75%;
+",
+              ],
+              "staticRulesId": "",
+            },
+            "displayName": "Modal__wrap",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "shouldForwardProp": undefined,
+            "styledComponentId": "Modal__wrap-gmoXzh",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        backgroundProps={Object {}}
+        isOpen={false}
+        onBackgroundClick={[Function]}
+      />
+    </Component>
+  </Modal>
+  <div />
+</p>
+`;
+
 exports[`Modal should render open Modal with children 1`] = `
 .c0 {
   display: -webkit-box;
