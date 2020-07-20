@@ -28,6 +28,7 @@
     "react-popper": "^2.2.3",
     "react-popper-2": "npm:react-popper@^2.2.3",
     "react-scripts": "3.4.1",
+    "react-sortable-tree": "^2.7.1",
     "styled-css-grid": "^1.2.1",
     "styled-normalize": "^8.0.7",
     "styled-react-modal": "^2.0.1"
