@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TreeView calls default generateNodeProps handler if no prop is passed 1`] = `
+<styled.div>
+  <DragDropContext(SortableTreeWithoutDndContext)
+    canDrag={false}
+    generateNodeProps={[Function]}
+    onChange={[Function]}
+    treeData={
+      Array [
+        Object {
+          "children": Array [
+            Object {
+              "children": Array [
+                Object {
+                  "title": "Child 1",
+                },
+                Object {
+                  "title": "Child 2",
+                },
+              ],
+              "title": "Parent A",
+            },
+            Object {
+              "children": Array [
+                Object {
+                  "title": "Child 3",
+                },
+                Object {
+                  "title": "Child 4",
+                },
+              ],
+              "title": "Parent B",
+            },
+            Object {
+              "children": Array [
+                Object {
+                  "title": "Child 5",
+                },
+                Object {
+                  "title": "Child 6",
+                },
+              ],
+              "title": "Parent C",
+            },
+          ],
+          "expanded": true,
+          "subtitle": "Subtitle",
+          "title": "Top level parent",
+        },
+      ]
+    }
+  />
+</styled.div>
+`;
+
+exports[`TreeView calls default onChange handler if no prop is passed 1`] = `
+<styled.div>
+  <DragDropContext(SortableTreeWithoutDndContext)
+    canDrag={false}
+    generateNodeProps={[Function]}
+    onChange={[Function]}
+    treeData={
+      Array [
+        Object {
+          "children": Array [
+            Object {
+              "children": Array [
+                Object {
+                  "title": "Child 1",
+                },
+                Object {
+                  "title": "Child 2",
+                },
+              ],
+              "title": "Parent A",
+            },
+            Object {
+              "children": Array [
+                Object {
+                  "title": "Child 3",
+                },
+                Object {
+                  "title": "Child 4",
+                },
+              ],
+              "title": "Parent B",
+            },
+            Object {
+              "children": Array [
+                Object {
+                  "title": "Child 5",
+                },
+                Object {
+                  "title": "Child 6",
+                },
+              ],
+              "title": "Parent C",
+            },
+          ],
+          "expanded": true,
+          "subtitle": "Subtitle",
+          "title": "Top level parent",
+        },
+      ]
+    }
+  />
+</styled.div>
+`;
+
+exports[`TreeView should render 1`] = `
+<styled.div>
+  <DragDropContext(SortableTreeWithoutDndContext)
+    canDrag={false}
+    generateNodeProps={[Function]}
+    onChange={[Function]}
+    treeData={
+      Array [
+        Object {
+          "children": Array [
+            Object {
+              "children": Array [
+                Object {
+                  "title": "Child 1",
+                },
+                Object {
+                  "title": "Child 2",
+                },
+              ],
+              "title": "Parent A",
+            },
+            Object {
+              "children": Array [
+                Object {
+                  "title": "Child 3",
+                },
+                Object {
+                  "title": "Child 4",
+                },
+              ],
+              "title": "Parent B",
+            },
+            Object {
+              "children": Array [
+                Object {
+                  "title": "Child 5",
+                },
+                Object {
+                  "title": "Child 6",
+                },
+              ],
+              "title": "Parent C",
+            },
+          ],
+          "expanded": true,
+          "subtitle": "Subtitle",
+          "title": "Top level parent",
+        },
+      ]
+    }
+  />
+</styled.div>
+`;
+
+exports[`TreeView should render with canDrag prop 1`] = `
+<styled.div>
+  <DragDropContext(SortableTreeWithoutDndContext)
+    canDrag={true}
+    generateNodeProps={[Function]}
+    onChange={[Function]}
+    treeData={
+      Array [
+        Object {
+          "children": Array [
+            Object {
+              "children": Array [
+                Object {
+                  "title": "Child 1",
+                },
+                Object {
+                  "title": "Child 2",
+                },
+              ],
+              "title": "Parent A",
+            },
+            Object {
+              "children": Array [
+                Object {
+                  "title": "Child 3",
+                },
+                Object {
+                  "title": "Child 4",
+                },
+              ],
+              "title": "Parent B",
+            },
+            Object {
+              "children": Array [
+                Object {
+                  "title": "Child 5",
+                },
+                Object {
+                  "title": "Child 6",
+                },
+              ],
+              "title": "Parent C",
+            },
+          ],
+          "expanded": true,
+          "subtitle": "Subtitle",
+          "title": "Top level parent",
+        },
+      ]
+    }
+  />
+</styled.div>
+`;
