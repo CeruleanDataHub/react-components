@@ -2141,6 +2141,320 @@ export const StratosphereSwitchTabsModalDemo = () => {
   );
 };
 
+const manageGroupsData = {
+  data: [
+    { id: 1, name: "Class of '20", users: 5, permissions: 6, hierarchies: 2 }
+  ],
+  columns: [
+    { id: 1, name: "Name", selector: "name" },
+    { id: 2, name: "Users", selector: "users" },
+    { id: 3, name: "Permissions", selector: "permissions" },
+    { id: 4, name: "Hierarchies", selector: "hierarchies" },
+    {
+      id: 5,
+      name: "",
+      selector: "actions",
+      // eslint-disable-next-line react/prop-types
+      cell: ({ id }) => <UserDataCell id={id} />
+    }
+  ]
+};
+
+export const StratosphereManageGroupsDemo = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [popoverOpen, setPopoverOpen] = useState(false);
+
+  const containerRef = useRef(null);
+
+  return (
+    <Container>
+      <Typography fontFamily="openSans">
+        <GridWithCollapsibleMenu menuOpen={menuOpen}>
+          <Cell as={NavigatonContainer}>
+            <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
+              <Menu items={menuItems} menuOpen={menuOpen} />
+            </Navigation>
+          </Cell>
+          <Cell as={Content}>
+            <Grid as={HeaderRow}>
+              <Cell>
+                <Logo />
+              </Cell>
+              <Cell as={UserPictureContainer}>
+                <Dropdown
+                  label="Customer name"
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                  isOpen={dropdownOpen}
+                >
+                  <ul>
+                    <li>first</li>
+                    <li>second</li>
+                    <li>third</li>
+                    <li>fourth</li>
+                  </ul>
+                </Dropdown>
+                <UserPicture
+                  onClick={() => setPopoverOpen(!popoverOpen)}
+                  ref={containerRef}
+                />
+                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                  <p>Popover content</p>
+                </Popover>
+              </Cell>
+            </Grid>
+            <Grid>
+              <Cell>
+                <Typography color="black" size="large">
+                  <Icon name="arrow-left-circle" as={IconMarginRight} />
+                  Manage Groups
+                </Typography>
+              </Cell>
+              <Cell as={GridContentRight}>
+                <Button as={ButtonWithIcon}>
+                  <Icon name="plus" />
+                  Create Group
+                </Button>
+              </Cell>
+            </Grid>
+            <form
+              onSubmit={event => {
+                event.preventDefault();
+                // eslint-disable-next-line no-console
+                console.log("submit");
+              }}
+            >
+              <Grid>
+                <Cell>
+                  <SearchInput type="search" />
+                </Cell>
+                <Cell>
+                  <Button type="submit" as={SearchButton}>
+                    <Icon name="search" />
+                    Search
+                  </Button>
+                </Cell>
+              </Grid>
+            </form>
+
+            <DataTable
+              columns={manageGroupsData.columns}
+              data={manageGroupsData.data}
+            />
+          </Cell>
+        </GridWithCollapsibleMenu>
+      </Typography>
+    </Container>
+  );
+};
+
+const manageGroupsAssignUserModalData = {
+  data: [
+    {
+      id: 1,
+      name: "Firstname Lastname",
+      email: "email@address.com",
+      checked: true
+    },
+    {
+      id: 2,
+      name: "Firstname Lastname 2",
+      email: "email2@address.com",
+      checked: true
+    },
+    {
+      id: 3,
+      name: "Firstname Lastname 3",
+      email: "email3@address.com",
+      checked: true
+    }
+  ],
+  columns: [
+    {
+      id: 1,
+      name: "Name",
+      selector: "name",
+      // eslint-disable-next-line react/prop-types
+      cell: ({ checked, name }) => <Checkbox checked={checked} label={name} />
+    },
+    { id: 2, name: "Email", selector: "email" }
+  ]
+};
+
+export const StratosphereManageGroupsAssignUserModalDemo = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [popoverOpen, setPopoverOpen] = useState(false);
+  const [modalDropdownOpen, setModalDropdownOpen] = useState(false);
+
+  const containerRef = useRef(null);
+
+  return (
+    <Container>
+      <Typography fontFamily="openSans">
+        <GridWithCollapsibleMenu menuOpen={menuOpen}>
+          <Cell as={NavigatonContainer}>
+            <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
+              <Menu items={menuItems} menuOpen={menuOpen} />
+            </Navigation>
+          </Cell>
+          <Cell as={Content}>
+            <Grid as={HeaderRow}>
+              <Cell>
+                <Logo />
+              </Cell>
+              <Cell as={UserPictureContainer}>
+                <Dropdown
+                  label="Customer name"
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                  isOpen={dropdownOpen}
+                >
+                  <ul>
+                    <li>first</li>
+                    <li>second</li>
+                    <li>third</li>
+                    <li>fourth</li>
+                  </ul>
+                </Dropdown>
+                <UserPicture
+                  onClick={() => setPopoverOpen(!popoverOpen)}
+                  ref={containerRef}
+                />
+                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                  <p>Popover content</p>
+                </Popover>
+              </Cell>
+            </Grid>
+            <Grid>
+              <Cell>
+                <Typography color="black" size="large">
+                  <Icon name="arrow-left-circle" as={IconMarginRight} />
+                  Manage Groups
+                </Typography>
+              </Cell>
+              <Cell as={GridContentRight}>
+                <Button as={ButtonWithIcon}>
+                  <Icon name="plus" />
+                  Create Group
+                </Button>
+              </Cell>
+            </Grid>
+            <form
+              onSubmit={event => {
+                event.preventDefault();
+                // eslint-disable-next-line no-console
+                console.log("submit");
+              }}
+            >
+              <Grid>
+                <Cell>
+                  <SearchInput type="search" />
+                </Cell>
+                <Cell>
+                  <Button type="submit" as={SearchButton}>
+                    <Icon name="search" />
+                    Search
+                  </Button>
+                </Cell>
+              </Grid>
+            </form>
+
+            <DataTable
+              columns={manageGroupsData.columns}
+              data={manageGroupsData.data}
+            />
+
+            <Modal
+              isOpen
+              onBackgroundClick={() => {
+                // eslint-disable-next-line no-console
+                console.log("click on background");
+              }}
+            >
+              <Typography fontFamily="openSans">
+                <Grid>
+                  <Cell>
+                    <Typography color="black" size="large">
+                      Group
+                    </Typography>
+                  </Cell>
+                  <Cell as={GridContentRight}>
+                    <Button
+                      color="transparent"
+                      onClick={() => {
+                        // eslint-disable-next-line no-console
+                        console.log("close modal");
+                      }}
+                    >
+                      <Typography color="black">
+                        <Icon name="close" />
+                      </Typography>
+                    </Button>
+                  </Cell>
+                </Grid>
+
+                <Grid>
+                  <Cell>
+                    <UserPicture
+                      onClick={() => setPopoverOpen(!popoverOpen)}
+                      ref={containerRef}
+                    />
+                  </Cell>
+                  <Cell>
+                    <p>Name: User Name</p>
+                    <p>Tenant: University of Delft</p>
+                    <p>Hierarchy: Faculty of Business Administration</p>
+                  </Cell>
+                </Grid>
+
+                <TabsContainer>
+                  <Tab text="Assign User" active />
+                  <Tab text="Users" />
+                  <Tab text="Hierarchy" />
+                </TabsContainer>
+
+                <Grid>
+                  <Cell>
+                    <input type="text" placeholder="Username" />
+                  </Cell>
+
+                  <Cell>
+                    <Dropdown
+                      label="Field"
+                      onClick={() => setModalDropdownOpen(!modalDropdownOpen)}
+                      isOpen={modalDropdownOpen}
+                    >
+                      <ul>
+                        <li>Username</li>
+                        <li>Email</li>
+                      </ul>
+                    </Dropdown>
+                  </Cell>
+                  <Cell>
+                    <Button
+                      onClick={() => {
+                        // eslint-disable-next-line no-console
+                        console.log("search clicked");
+                      }}
+                    >
+                      Search
+                    </Button>
+                  </Cell>
+                </Grid>
+
+                <DataTable
+                  columns={manageGroupsAssignUserModalData.columns}
+                  data={manageGroupsAssignUserModalData.data}
+                />
+              </Typography>
+            </Modal>
+          </Cell>
+        </GridWithCollapsibleMenu>
+      </Typography>
+    </Container>
+  );
+};
+
 export default {
   title: "Stratosphere Demo",
   component: StratosphereDemo,
