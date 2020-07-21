@@ -39,7 +39,9 @@ export const names = [
   "more",
   "plus",
   "trash",
-  "lock"
+  "lock",
+  "plane",
+  "caravan"
 ];
 export const iconNameProps = PropTypes.oneOf(names);
 

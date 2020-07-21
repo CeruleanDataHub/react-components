@@ -30,6 +30,16 @@ exports[`Icon should render icon calendar 1`] = `
 />
 `;
 
+exports[`Icon should render icon caravan 1`] = `
+.c0 {
+  text-align: center;
+}
+
+<span
+  className="c0 lni lni-caravan"
+/>
+`;
+
 exports[`Icon should render icon checkmark 1`] = `
 .c0 {
   text-align: center;
@@ -197,6 +207,16 @@ exports[`Icon should render icon more 1`] = `
 
 <span
   className="c0 lni lni-more"
+/>
+`;
+
+exports[`Icon should render icon plane 1`] = `
+.c0 {
+  text-align: center;
+}
+
+<span
+  className="c0 lni lni-plane"
 />
 `;
 
