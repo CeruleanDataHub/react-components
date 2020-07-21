@@ -38,7 +38,8 @@ export const names = [
   "search",
   "more",
   "plus",
-  "trash"
+  "trash",
+  "lock"
 ];
 export const iconNameProps = PropTypes.oneOf(names);
 

@@ -160,6 +160,16 @@ exports[`Icon should render icon layers 1`] = `
 />
 `;
 
+exports[`Icon should render icon lock 1`] = `
+.c0 {
+  text-align: center;
+}
+
+<span
+  className="c0 lni lni-lock"
+/>
+`;
+
 exports[`Icon should render icon menu 1`] = `
 .c0 {
   text-align: center;
