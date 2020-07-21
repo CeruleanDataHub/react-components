@@ -2480,25 +2480,33 @@ const treeData = [
   }
 ];
 
-const AdditionalNodeProp = path => {
+const AdditionalNodeProp = (node, path) => {
   const [popoverOpen, setPopoverOpen] = useState(false);
   const moreRef = useRef(null);
 
   return (
     <>
-      <Button
-        key={path}
-        onClick={() => setPopoverOpen(!popoverOpen)}
-        ref={moreRef}
-      >
-        <Icon name="more" />
-      </Button>
-      <Popover isOpen={popoverOpen} containerRef={moreRef}>
-        <p>
-          Path:&nbsp;
-          {path.path}
-        </p>
-      </Popover>
+      {node.node.title === "Houston Inc." ? (
+        <Icon name="lock" />
+      ) : (
+        <>
+          <Button
+            key={path}
+            onClick={() => setPopoverOpen(!popoverOpen)}
+            ref={moreRef}
+          >
+            <Icon name="more" />
+          </Button>
+          <Popover isOpen={popoverOpen} containerRef={moreRef}>
+            <ul>
+              <li>Grant access</li>
+              <li>Add devices</li>
+              <li>Create hierarchy</li>
+              <li>Edit</li>
+            </ul>
+          </Popover>
+        </>
+      )}
     </>
   );
 };
@@ -2511,8 +2519,8 @@ export const StratosphereHierarchiesDemo = () => {
 
   const containerRef = useRef(null);
 
-  const handleGenerateNodeProps = ({ path }) => ({
-    buttons: [<AdditionalNodeProp path={path} />]
+  const handleGenerateNodeProps = ({ node, path }) => ({
+    buttons: [<AdditionalNodeProp node={node} path={path} />]
   });
 
   return (
