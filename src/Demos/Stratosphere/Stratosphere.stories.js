@@ -3146,6 +3146,110 @@ export const StratosphereManageGroupsHierarchiesDeleteConfirmModalDemo = () => {
   );
 };
 
+export const StratosphereDevicesAndDeploymentsDemo = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [popoverOpen, setPopoverOpen] = useState(false);
+
+  const containerRef = useRef(null);
+
+  return (
+    <Container>
+      <Typography fontFamily="openSans">
+        <GridWithCollapsibleMenu menuOpen={menuOpen}>
+          <Cell as={NavigatonContainer}>
+            <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
+              <Menu items={menuItems} menuOpen={menuOpen} />
+            </Navigation>
+          </Cell>
+          <Cell as={Content}>
+            <Grid as={HeaderRow}>
+              <Cell>
+                <Logo />
+              </Cell>
+              <Cell as={UserPictureContainer}>
+                <Dropdown
+                  label="Customer name"
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                  isOpen={dropdownOpen}
+                >
+                  <ul>
+                    <li>first</li>
+                    <li>second</li>
+                    <li>third</li>
+                    <li>fourth</li>
+                  </ul>
+                </Dropdown>
+                <UserPicture
+                  onClick={() => setPopoverOpen(!popoverOpen)}
+                  ref={containerRef}
+                />
+                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                  <p>Popover content</p>
+                </Popover>
+              </Cell>
+            </Grid>
+            <Typography color="black" size="large">
+              Users &amp; Roles
+            </Typography>
+            <Grid as={KPIGrid}>
+              <Cell as={KPICell}>
+                <KPICard
+                  title="Largest Amount of telemetry in a Day"
+                  value={789}
+                  growth={0.05}
+                  redValue
+                />
+              </Cell>
+              <Cell as={KPICell}>
+                <KPICard
+                  title="Active devices / <prev month>"
+                  value={1485}
+                  growth={0.23}
+                  redValue
+                />
+              </Cell>
+              <Cell as={KPICell}>
+                <KPICard
+                  title="Active devices / <this month> so far"
+                  value={2234}
+                  growth={0.45}
+                  greenValue
+                />
+              </Cell>
+              <Cell as={KPICell}>
+                <KPICard
+                  title="Active devices / <this month>"
+                  value={1834}
+                  growth={0.23}
+                  greenValue
+                />
+              </Cell>
+            </Grid>
+            <Grid as={CardGrid}>
+              <Cell>
+                <LinkComponent to="#manage-users">
+                  <Card title="Manage Devices" icon="rocket" />
+                </LinkComponent>
+              </Cell>
+              <Cell>
+                <LinkComponent to="#manage-users">
+                  <Card title="Manage Enrollments" icon="caravan" />
+                </LinkComponent>
+              </Cell>
+              <Cell>
+                <LinkComponent to="#manage-users">
+                  <Card title="Manage Fleet" icon="plane" />
+                </LinkComponent>
+              </Cell>
+            </Grid>
+          </Cell>
+        </GridWithCollapsibleMenu>
+      </Typography>
+    </Container>
+  );
+};
+
 export default {
   title: "Stratosphere Demo",
   component: StratosphereDemo,
