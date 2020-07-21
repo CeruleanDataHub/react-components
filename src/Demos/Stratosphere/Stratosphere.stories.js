@@ -19,6 +19,7 @@ import { Modal } from "../../containers/Modal/Modal";
 import { Navigation } from "../../containers/Navigation/Navigation";
 import { Popover } from "../../containers/Popover/Popover";
 import { Tab } from "../../containers/Tab/Tab";
+import { TreeView } from "../../containers/TreeView/TreeView";
 import { Typography } from "../../containers/Typography/Typography";
 
 const logins = [
@@ -200,6 +201,7 @@ const menuItems = [
 const Container = styled.div`
   background: ${({ theme }) => theme.keyperBackground};
   color: #999999;
+  height: 100%;
 `;
 
 const Content = styled.div`
@@ -311,6 +313,10 @@ const TextAlignRight = styled.div`
 
 const IconMarginRight = styled.div`
   margin-right: 0.5rem;
+`;
+
+const TreeViewContainer = styled.div`
+  height: 500px;
 `;
 
 // eslint-disable-next-line no-console
@@ -2448,6 +2454,144 @@ export const StratosphereManageGroupsAssignUserModalDemo = () => {
                 />
               </Typography>
             </Modal>
+          </Cell>
+        </GridWithCollapsibleMenu>
+      </Typography>
+    </Container>
+  );
+};
+
+const treeData = [
+  {
+    title: "Houston Inc.",
+    expanded: true,
+    children: [
+      {
+        title: "Meeting rooms",
+        children: [
+          { title: "Sirius" },
+          { title: "Solar" },
+          { title: "Pluto" },
+          { title: "Space" },
+          { title: "Hacklab" }
+        ]
+      }
+    ]
+  }
+];
+
+const AdditionalNodeProp = path => {
+  const [popoverOpen, setPopoverOpen] = useState(false);
+  const moreRef = useRef(null);
+
+  return (
+    <>
+      <Button
+        key={path}
+        onClick={() => setPopoverOpen(!popoverOpen)}
+        ref={moreRef}
+      >
+        <Icon name="more" />
+      </Button>
+      <Popover isOpen={popoverOpen} containerRef={moreRef}>
+        <p>
+          Path:&nbsp;
+          {path.path}
+        </p>
+      </Popover>
+    </>
+  );
+};
+
+export const StratosphereHierarchiesDemo = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [popoverOpen, setPopoverOpen] = useState(false);
+  const [hierarchyTreeData, setHierarchyTreeData] = useState(treeData);
+
+  const containerRef = useRef(null);
+
+  const handleGenerateNodeProps = ({ path }) => ({
+    buttons: [<AdditionalNodeProp path={path} />]
+  });
+
+  return (
+    <Container>
+      <Typography fontFamily="openSans">
+        <GridWithCollapsibleMenu menuOpen={menuOpen}>
+          <Cell as={NavigatonContainer}>
+            <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
+              <Menu items={menuItems} menuOpen={menuOpen} />
+            </Navigation>
+          </Cell>
+          <Cell as={Content}>
+            <Grid as={HeaderRow}>
+              <Cell>
+                <Logo />
+              </Cell>
+              <Cell as={UserPictureContainer}>
+                <Dropdown
+                  label="Customer name"
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                  isOpen={dropdownOpen}
+                >
+                  <ul>
+                    <li>first</li>
+                    <li>second</li>
+                    <li>third</li>
+                    <li>fourth</li>
+                  </ul>
+                </Dropdown>
+                <UserPicture
+                  onClick={() => setPopoverOpen(!popoverOpen)}
+                  ref={containerRef}
+                />
+                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                  <p>Popover content</p>
+                </Popover>
+              </Cell>
+            </Grid>
+            <Grid>
+              <Cell>
+                <Typography color="black" size="large">
+                  Hierarchies
+                </Typography>
+              </Cell>
+              <Cell as={GridContentRight}>
+                <Button as={ButtonWithIcon}>
+                  <Icon name="plus" />
+                  Create hierarchy
+                </Button>
+              </Cell>
+            </Grid>
+            <form
+              onSubmit={event => {
+                event.preventDefault();
+                // eslint-disable-next-line no-console
+                console.log("submit");
+              }}
+            >
+              <Grid>
+                <Cell>
+                  <SearchInput type="search" />
+                </Cell>
+                <Cell>
+                  <Button type="submit" as={SearchButton}>
+                    <Icon name="search" />
+                    Search
+                  </Button>
+                </Cell>
+              </Grid>
+            </form>
+            <Typography color="black">
+              <TreeViewContainer>
+                <TreeView
+                  treeData={hierarchyTreeData}
+                  onChange={data => setHierarchyTreeData(data)}
+                  generateNodeProps={handleGenerateNodeProps}
+                />
+              </TreeViewContainer>
+            </Typography>
           </Cell>
         </GridWithCollapsibleMenu>
       </Typography>
