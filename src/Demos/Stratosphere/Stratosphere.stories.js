@@ -736,7 +736,7 @@ const manageUsersModalData = {
   columns: [
     { id: 1, name: "Name", selector: "name" },
     {
-      id: 4,
+      id: 2,
       name: "",
       selector: "actions",
       // eslint-disable-next-line react/prop-types
@@ -937,7 +937,7 @@ const manageGroupsModalData = {
   columns: [
     { id: 1, name: "Name", selector: "name" },
     {
-      id: 4,
+      id: 2,
       name: "",
       selector: "actions",
       // eslint-disable-next-line react/prop-types
@@ -1142,7 +1142,7 @@ const manageHierarchiesModalData = {
   columns: [
     { id: 1, name: "Name", selector: "name" },
     {
-      id: 4,
+      id: 2,
       name: "",
       selector: "actions",
       // eslint-disable-next-line react/prop-types
@@ -2266,7 +2266,7 @@ const manageGroupsAssignUserModalData = {
       id: 2,
       name: "Firstname Lastname 2",
       email: "email2@address.com",
-      checked: true
+      checked: false
     },
     {
       id: 3,
@@ -2423,7 +2423,6 @@ export const StratosphereManageGroupsAssignUserModalDemo = () => {
                   <Cell>
                     <input type="text" placeholder="Username" />
                   </Cell>
-
                   <Cell>
                     <Dropdown
                       label="Field"
@@ -2600,6 +2599,546 @@ export const StratosphereHierarchiesDemo = () => {
                 />
               </TreeViewContainer>
             </Typography>
+          </Cell>
+        </GridWithCollapsibleMenu>
+      </Typography>
+    </Container>
+  );
+};
+
+const manageGroupsUsersModalData = {
+  data: [
+    {
+      id: 1,
+      name: "Firstname Lastname",
+      email: "email@address.com"
+    }
+  ],
+  columns: [
+    { id: 1, name: "Name", selector: "name" },
+    { id: 2, name: "Email", selector: "email" }
+  ]
+};
+
+export const StratosphereManageGroupsUsersModalDemo = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [popoverOpen, setPopoverOpen] = useState(false);
+
+  const containerRef = useRef(null);
+
+  return (
+    <Container>
+      <Typography fontFamily="openSans">
+        <GridWithCollapsibleMenu menuOpen={menuOpen}>
+          <Cell as={NavigatonContainer}>
+            <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
+              <Menu items={menuItems} menuOpen={menuOpen} />
+            </Navigation>
+          </Cell>
+          <Cell as={Content}>
+            <Grid as={HeaderRow}>
+              <Cell>
+                <Logo />
+              </Cell>
+              <Cell as={UserPictureContainer}>
+                <Dropdown
+                  label="Customer name"
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                  isOpen={dropdownOpen}
+                >
+                  <ul>
+                    <li>first</li>
+                    <li>second</li>
+                    <li>third</li>
+                    <li>fourth</li>
+                  </ul>
+                </Dropdown>
+                <UserPicture
+                  onClick={() => setPopoverOpen(!popoverOpen)}
+                  ref={containerRef}
+                />
+                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                  <p>Popover content</p>
+                </Popover>
+              </Cell>
+            </Grid>
+            <Grid>
+              <Cell>
+                <Typography color="black" size="large">
+                  <Icon name="arrow-left-circle" as={IconMarginRight} />
+                  Manage Groups
+                </Typography>
+              </Cell>
+              <Cell as={GridContentRight}>
+                <Button as={ButtonWithIcon}>
+                  <Icon name="plus" />
+                  Create Group
+                </Button>
+              </Cell>
+            </Grid>
+            <form
+              onSubmit={event => {
+                event.preventDefault();
+                // eslint-disable-next-line no-console
+                console.log("submit");
+              }}
+            >
+              <Grid>
+                <Cell>
+                  <SearchInput type="search" />
+                </Cell>
+                <Cell>
+                  <Button type="submit" as={SearchButton}>
+                    <Icon name="search" />
+                    Search
+                  </Button>
+                </Cell>
+              </Grid>
+            </form>
+
+            <DataTable
+              columns={manageGroupsData.columns}
+              data={manageGroupsData.data}
+            />
+
+            <Modal
+              isOpen
+              onBackgroundClick={() => {
+                // eslint-disable-next-line no-console
+                console.log("click on background");
+              }}
+            >
+              <Typography fontFamily="openSans">
+                <Grid>
+                  <Cell>
+                    <Typography color="black" size="large">
+                      Group
+                    </Typography>
+                  </Cell>
+                  <Cell as={GridContentRight}>
+                    <Button
+                      color="transparent"
+                      onClick={() => {
+                        // eslint-disable-next-line no-console
+                        console.log("close modal");
+                      }}
+                    >
+                      <Typography color="black">
+                        <Icon name="close" />
+                      </Typography>
+                    </Button>
+                  </Cell>
+                </Grid>
+
+                <Grid>
+                  <Cell>
+                    <UserPicture
+                      onClick={() => setPopoverOpen(!popoverOpen)}
+                      ref={containerRef}
+                    />
+                  </Cell>
+                  <Cell>
+                    <p>Name: User Name</p>
+                    <p>Tenant: University of Delft</p>
+                    <p>Hierarchy: Faculty of Business Administration</p>
+                  </Cell>
+                </Grid>
+
+                <TabsContainer>
+                  <Tab text="Assign User" />
+                  <Tab text="Users" active />
+                  <Tab text="Hierarchy" />
+                </TabsContainer>
+
+                <input
+                  type="text"
+                  placeholder="Search"
+                  onChange={() => {
+                    // eslint-disable-next-line no-console
+                    console.log("search clicked");
+                  }}
+                />
+
+                <DataTable
+                  columns={manageGroupsUsersModalData.columns}
+                  data={manageGroupsUsersModalData.data}
+                />
+              </Typography>
+            </Modal>
+          </Cell>
+        </GridWithCollapsibleMenu>
+      </Typography>
+    </Container>
+  );
+};
+
+const manageGroupsHierarchiesModalData = {
+  data: [
+    { id: 1, name: "Houston Inc" },
+    {
+      id: 2,
+      name:
+        "Haaga-Helia / Faculty of Business Administration / IoT Course Spring 2021"
+    },
+    { id: 3, name: "University of Delft" }
+  ],
+  columns: [
+    { id: 1, name: "Name", selector: "name" },
+    {
+      id: 2,
+      name: "",
+      selector: "actions",
+      // eslint-disable-next-line react/prop-types
+      cell: ({ id }) => <ModalDataTableToolCell id={id} />
+    }
+  ]
+};
+
+export const StratosphereManageGroupsHierarchiesModalDemo = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [popoverOpen, setPopoverOpen] = useState(false);
+  const [modalDropdownOpen, setModalDropdownOpen] = useState(false);
+
+  const containerRef = useRef(null);
+
+  return (
+    <Container>
+      <Typography fontFamily="openSans">
+        <GridWithCollapsibleMenu menuOpen={menuOpen}>
+          <Cell as={NavigatonContainer}>
+            <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
+              <Menu items={menuItems} menuOpen={menuOpen} />
+            </Navigation>
+          </Cell>
+          <Cell as={Content}>
+            <Grid as={HeaderRow}>
+              <Cell>
+                <Logo />
+              </Cell>
+              <Cell as={UserPictureContainer}>
+                <Dropdown
+                  label="Customer name"
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                  isOpen={dropdownOpen}
+                >
+                  <ul>
+                    <li>first</li>
+                    <li>second</li>
+                    <li>third</li>
+                    <li>fourth</li>
+                  </ul>
+                </Dropdown>
+                <UserPicture
+                  onClick={() => setPopoverOpen(!popoverOpen)}
+                  ref={containerRef}
+                />
+                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                  <p>Popover content</p>
+                </Popover>
+              </Cell>
+            </Grid>
+            <Grid>
+              <Cell>
+                <Typography color="black" size="large">
+                  <Icon name="arrow-left-circle" as={IconMarginRight} />
+                  Manage Groups
+                </Typography>
+              </Cell>
+              <Cell as={GridContentRight}>
+                <Button as={ButtonWithIcon}>
+                  <Icon name="plus" />
+                  Create Group
+                </Button>
+              </Cell>
+            </Grid>
+            <form
+              onSubmit={event => {
+                event.preventDefault();
+                // eslint-disable-next-line no-console
+                console.log("submit");
+              }}
+            >
+              <Grid>
+                <Cell>
+                  <SearchInput type="search" />
+                </Cell>
+                <Cell>
+                  <Button type="submit" as={SearchButton}>
+                    <Icon name="search" />
+                    Search
+                  </Button>
+                </Cell>
+              </Grid>
+            </form>
+
+            <DataTable
+              columns={manageGroupsData.columns}
+              data={manageGroupsData.data}
+            />
+
+            <Modal
+              isOpen
+              onBackgroundClick={() => {
+                // eslint-disable-next-line no-console
+                console.log("click on background");
+              }}
+            >
+              <Typography fontFamily="openSans">
+                <Grid>
+                  <Cell>
+                    <Typography color="black" size="large">
+                      Group
+                    </Typography>
+                  </Cell>
+                  <Cell as={GridContentRight}>
+                    <Button
+                      color="transparent"
+                      onClick={() => {
+                        // eslint-disable-next-line no-console
+                        console.log("close modal");
+                      }}
+                    >
+                      <Typography color="black">
+                        <Icon name="close" />
+                      </Typography>
+                    </Button>
+                  </Cell>
+                </Grid>
+
+                <Grid>
+                  <Cell>
+                    <UserPicture
+                      onClick={() => setPopoverOpen(!popoverOpen)}
+                      ref={containerRef}
+                    />
+                  </Cell>
+                  <Cell>
+                    <p>Name: User Name</p>
+                    <p>Tenant: University of Delft</p>
+                    <p>Hierarchy: Faculty of Business Administration</p>
+                  </Cell>
+                </Grid>
+
+                <TabsContainer>
+                  <Tab text="Assign User" />
+                  <Tab text="Users" />
+                  <Tab text="Hierarchy" active />
+                </TabsContainer>
+
+                <Grid>
+                  <Cell>
+                    <Dropdown
+                      label="Field"
+                      onClick={() => setModalDropdownOpen(!modalDropdownOpen)}
+                      isOpen={modalDropdownOpen}
+                    >
+                      <ul>
+                        <li>Username</li>
+                        <li>Email</li>
+                      </ul>
+                    </Dropdown>
+                  </Cell>
+                  <Cell>
+                    <Button
+                      onClick={() => {
+                        // eslint-disable-next-line no-console
+                        console.log("Grant Access clicked");
+                      }}
+                    >
+                      Grant Access
+                    </Button>
+                  </Cell>
+                </Grid>
+                <DataTable
+                  columns={manageGroupsHierarchiesModalData.columns}
+                  data={manageGroupsHierarchiesModalData.data}
+                />
+              </Typography>
+            </Modal>
+          </Cell>
+        </GridWithCollapsibleMenu>
+      </Typography>
+    </Container>
+  );
+};
+export const StratosphereManageGroupsHierarchiesDeleteConfirmModalDemo = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [popoverOpen, setPopoverOpen] = useState(false);
+  const [modalDropdownOpen, setModalDropdownOpen] = useState(false);
+
+  const containerRef = useRef(null);
+
+  return (
+    <Container>
+      <Typography fontFamily="openSans">
+        <GridWithCollapsibleMenu menuOpen={menuOpen}>
+          <Cell as={NavigatonContainer}>
+            <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
+              <Menu items={menuItems} menuOpen={menuOpen} />
+            </Navigation>
+          </Cell>
+          <Cell as={Content}>
+            <Grid as={HeaderRow}>
+              <Cell>
+                <Logo />
+              </Cell>
+              <Cell as={UserPictureContainer}>
+                <Dropdown
+                  label="Customer name"
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                  isOpen={dropdownOpen}
+                >
+                  <ul>
+                    <li>first</li>
+                    <li>second</li>
+                    <li>third</li>
+                    <li>fourth</li>
+                  </ul>
+                </Dropdown>
+                <UserPicture
+                  onClick={() => setPopoverOpen(!popoverOpen)}
+                  ref={containerRef}
+                />
+                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                  <p>Popover content</p>
+                </Popover>
+              </Cell>
+            </Grid>
+            <Grid>
+              <Cell>
+                <Typography color="black" size="large">
+                  <Icon name="arrow-left-circle" as={IconMarginRight} />
+                  Manage Groups
+                </Typography>
+              </Cell>
+              <Cell as={GridContentRight}>
+                <Button as={ButtonWithIcon}>
+                  <Icon name="plus" />
+                  Create Group
+                </Button>
+              </Cell>
+            </Grid>
+            <form
+              onSubmit={event => {
+                event.preventDefault();
+                // eslint-disable-next-line no-console
+                console.log("submit");
+              }}
+            >
+              <Grid>
+                <Cell>
+                  <SearchInput type="search" />
+                </Cell>
+                <Cell>
+                  <Button type="submit" as={SearchButton}>
+                    <Icon name="search" />
+                    Search
+                  </Button>
+                </Cell>
+              </Grid>
+            </form>
+
+            <DataTable
+              columns={manageGroupsData.columns}
+              data={manageGroupsData.data}
+            />
+
+            <Modal
+              isOpen
+              onBackgroundClick={() => {
+                // eslint-disable-next-line no-console
+                console.log("click on background");
+              }}
+            >
+              <Typography fontFamily="openSans">
+                <Grid>
+                  <Cell>
+                    <Typography color="black" size="large">
+                      Group
+                    </Typography>
+                  </Cell>
+                  <Cell as={GridContentRight}>
+                    <Button
+                      color="transparent"
+                      onClick={() => {
+                        // eslint-disable-next-line no-console
+                        console.log("close modal");
+                      }}
+                    >
+                      <Typography color="black">
+                        <Icon name="close" />
+                      </Typography>
+                    </Button>
+                  </Cell>
+                </Grid>
+
+                <Grid>
+                  <Cell>
+                    <UserPicture
+                      onClick={() => setPopoverOpen(!popoverOpen)}
+                      ref={containerRef}
+                    />
+                  </Cell>
+                  <Cell>
+                    <p>Name: User Name</p>
+                    <p>Tenant: University of Delft</p>
+                    <p>Hierarchy: Faculty of Business Administration</p>
+                  </Cell>
+                </Grid>
+
+                <TabsContainer>
+                  <Tab text="Assign User" />
+                  <Tab text="Users" />
+                  <Tab text="Hierarchy" active />
+                </TabsContainer>
+
+                <Grid>
+                  <Cell>
+                    <Dropdown
+                      label="Field"
+                      onClick={() => setModalDropdownOpen(!modalDropdownOpen)}
+                      isOpen={modalDropdownOpen}
+                    >
+                      <ul>
+                        <li>Username</li>
+                        <li>Email</li>
+                      </ul>
+                    </Dropdown>
+                  </Cell>
+                  <Cell>
+                    <Button
+                      onClick={() => {
+                        // eslint-disable-next-line no-console
+                        console.log("Grant Access clicked");
+                      }}
+                    >
+                      Grant Access
+                    </Button>
+                  </Cell>
+                </Grid>
+                <DataTable
+                  columns={manageGroupsHierarchiesModalData.columns}
+                  data={manageGroupsHierarchiesModalData.data}
+                />
+              </Typography>
+
+              <Confirm
+                title="Delete Class of '20"
+                content="Are you sure you want to delete this group?"
+                isOpen
+                onConfirm={() => {
+                  // eslint-disable-next-line no-console
+                  console.log("click on confirm");
+                }}
+                onCancel={() => {
+                  // eslint-disable-next-line no-console
+                  console.log("click on cancel");
+                }}
+              />
+            </Modal>
           </Cell>
         </GridWithCollapsibleMenu>
       </Typography>
