@@ -43,25 +43,19 @@ describe("TreeView", () => {
       <TreeView treeData={treeData} onChange={handleChange} />
     );
     expect(handleChange).not.toHaveBeenCalled();
-    component
-      .find("DragDropContext(SortableTreeWithoutDndContext)")
-      .simulate("change");
+    component.find("SortableTree").simulate("change");
     expect(handleChange).toHaveBeenCalled();
   });
 
   it("calls default onChange handler if no prop is passed", () => {
     const component = shallow(<TreeView treeData={treeData} />);
-    component
-      .find("DragDropContext(SortableTreeWithoutDndContext)")
-      .prop("onChange")();
+    component.find("SortableTree").prop("onChange")();
     expect(toJson(component)).toMatchSnapshot();
   });
 
   it("calls default generateNodeProps handler if no prop is passed", () => {
     const component = shallow(<TreeView treeData={treeData} />);
-    component
-      .find("DragDropContext(SortableTreeWithoutDndContext)")
-      .prop("generateNodeProps")();
+    component.find("SortableTree").prop("generateNodeProps")();
     expect(toJson(component)).toMatchSnapshot();
   });
 });

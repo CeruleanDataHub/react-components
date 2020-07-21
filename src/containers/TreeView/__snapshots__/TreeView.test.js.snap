@@ -2,7 +2,7 @@
 
 exports[`TreeView calls default generateNodeProps handler if no prop is passed 1`] = `
 <styled.div>
-  <DragDropContext(SortableTreeWithoutDndContext)
+  <SortableTree
     canDrag={false}
     generateNodeProps={[Function]}
     onChange={[Function]}
@@ -56,7 +56,7 @@ exports[`TreeView calls default generateNodeProps handler if no prop is passed 1
 
 exports[`TreeView calls default onChange handler if no prop is passed 1`] = `
 <styled.div>
-  <DragDropContext(SortableTreeWithoutDndContext)
+  <SortableTree
     canDrag={false}
     generateNodeProps={[Function]}
     onChange={[Function]}
@@ -110,7 +110,7 @@ exports[`TreeView calls default onChange handler if no prop is passed 1`] = `
 
 exports[`TreeView should render 1`] = `
 <styled.div>
-  <DragDropContext(SortableTreeWithoutDndContext)
+  <SortableTree
     canDrag={false}
     generateNodeProps={[Function]}
     onChange={[Function]}
@@ -164,7 +164,7 @@ exports[`TreeView should render 1`] = `
 
 exports[`TreeView should render with canDrag prop 1`] = `
 <styled.div>
-  <DragDropContext(SortableTreeWithoutDndContext)
+  <SortableTree
     canDrag={true}
     generateNodeProps={[Function]}
     onChange={[Function]}
