@@ -1,3 +1,4 @@
+import { action } from "@storybook/addon-actions";
 import { withKnobs } from "@storybook/addon-knobs";
 import moment from "moment";
 import React from "react";
@@ -12,24 +13,36 @@ export default {
 
 export const SingleDatePickerStory = () => (
   <div style={{ minHeight: 400 }}>
-    <SingleDatePicker name="default" />
+    <SingleDatePicker name="default" onDateChange={action("date changed")} />
   </div>
 );
 
 export const SingleDatePickerWithCustomDateFormatStory = () => (
   <div style={{ minHeight: 400 }}>
-    <SingleDatePicker name="dateformat" dateFormat="MM/DD/yyyy" />
+    <SingleDatePicker
+      name="dateformat"
+      dateFormat="MM/DD/yyyy"
+      onDateChange={action("date changed")}
+    />
   </div>
 );
 
 export const SingleDatePickerTwoMonthsShownStory = () => (
   <div style={{ minHeight: 400 }}>
-    <SingleDatePicker name="months" monthsShown={2} />
+    <SingleDatePicker
+      name="months"
+      monthsShown={2}
+      onDateChange={action("date changed")}
+    />
   </div>
 );
 
 export const SingleDatePickerWithCustomStartDateStory = () => (
   <div style={{ minHeight: 400 }}>
-    <SingleDatePicker name="startDate" startDate={moment("2016-06-01")} />
+    <SingleDatePicker
+      name="startDate"
+      startDate={moment("2016-06-01")}
+      onDateChange={action("date changed")}
+    />
   </div>
 );
