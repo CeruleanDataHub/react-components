@@ -2,19 +2,15 @@ import PropTypes from "prop-types";
 import React from "react";
 import { Cell, Grid as GridWrapper } from "styled-css-grid";
 
-const Grid = ({ as, className, children, columns = children.length }) => {
-  console.log("columns", columns);
-  console.log("children", children.length);
-  return (
-    <GridWrapper
-      columns={columns || children.length}
-      as={as}
-      className={className}
-    >
-      {children}
-    </GridWrapper>
-  );
-};
+const Grid = ({ as, className, children, columns = children.length }) => (
+  <GridWrapper
+    columns={columns || children.length}
+    as={as}
+    className={className}
+  >
+    {children}
+  </GridWrapper>
+);
 
 Grid.propTypes = {
   /** Extend styles, property is from styled components */
