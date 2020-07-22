@@ -2963,6 +2963,7 @@ export const StratosphereManageGroupsHierarchiesModalDemo = () => {
     </Container>
   );
 };
+
 export const StratosphereManageGroupsHierarchiesDeleteConfirmModalDemo = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -3190,7 +3191,7 @@ export const StratosphereDevicesAndDeploymentsDemo = () => {
               </Cell>
             </Grid>
             <Typography color="black" size="large">
-              Users &amp; Roles
+              Devices &amp; Deployments
             </Typography>
             <Grid as={KPIGrid}>
               <Cell as={KPICell}>
@@ -3243,6 +3244,129 @@ export const StratosphereDevicesAndDeploymentsDemo = () => {
                 </LinkComponent>
               </Cell>
             </Grid>
+          </Cell>
+        </GridWithCollapsibleMenu>
+      </Typography>
+    </Container>
+  );
+};
+
+const manageDevicesData = {
+  data: [
+    {
+      id: 1,
+      name: "rintakylan-well",
+      alerts: "45",
+      lastEntry: "2 days ago"
+    },
+    {
+      id: 2,
+      name: "rintakylan-well-2",
+      alerts: "3",
+      lastEntry: "24 seconds ago"
+    }
+  ],
+  columns: [
+    { id: 1, name: "Name", selector: "name" },
+    { id: 2, name: "Alerts", selector: "alerts" },
+    { id: 3, name: "Last Entry", selector: "lastEntry" },
+    {
+      id: 4,
+      name: "",
+      selector: "actions",
+      // eslint-disable-next-line react/prop-types
+      cell: ({ id }) => <UserDataCell id={id} />
+    }
+  ]
+};
+
+export const StratosphereManageDevicesDemo = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [popoverOpen, setPopoverOpen] = useState(false);
+  const [searchDropdownOpen, setSearchDropdownOpen] = useState(false);
+
+  const containerRef = useRef(null);
+
+  return (
+    <Container>
+      <Typography fontFamily="openSans">
+        <GridWithCollapsibleMenu menuOpen={menuOpen}>
+          <Cell as={NavigatonContainer}>
+            <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
+              <Menu items={menuItems} menuOpen={menuOpen} />
+            </Navigation>
+          </Cell>
+          <Cell as={Content}>
+            <Grid as={HeaderRow}>
+              <Cell>
+                <Logo />
+              </Cell>
+              <Cell as={UserPictureContainer}>
+                <Dropdown
+                  label="Customer name"
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                  isOpen={dropdownOpen}
+                >
+                  <ul>
+                    <li>first</li>
+                    <li>second</li>
+                    <li>third</li>
+                    <li>fourth</li>
+                  </ul>
+                </Dropdown>
+                <UserPicture
+                  onClick={() => setPopoverOpen(!popoverOpen)}
+                  ref={containerRef}
+                />
+                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                  <p>Popover content</p>
+                </Popover>
+              </Cell>
+            </Grid>
+
+            <Typography color="black" size="large">
+              <Icon name="arrow-left-circle" as={IconMarginRight} />
+              Manage Devices
+            </Typography>
+
+            <form
+              onSubmit={event => {
+                event.preventDefault();
+                // eslint-disable-next-line no-console
+                console.log("submit");
+              }}
+            >
+              <Grid>
+                <Cell>
+                  <SearchInput type="search" />
+                </Cell>
+
+                <Cell>
+                  <Dropdown
+                    label="Field"
+                    onClick={() => setSearchDropdownOpen(!searchDropdownOpen)}
+                    isOpen={searchDropdownOpen}
+                  >
+                    <ul>
+                      <li>Name</li>
+                      <li>ID</li>
+                    </ul>
+                  </Dropdown>
+                </Cell>
+                <Cell>
+                  <Button type="submit" as={SearchButton}>
+                    <Icon name="search" />
+                    Search
+                  </Button>
+                </Cell>
+              </Grid>
+            </form>
+
+            <DataTable
+              columns={manageDevicesData.columns}
+              data={manageDevicesData.data}
+            />
           </Cell>
         </GridWithCollapsibleMenu>
       </Typography>
