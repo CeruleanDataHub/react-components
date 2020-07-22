@@ -282,10 +282,6 @@ const CardGrid = styled.div`
   }
 `;
 
-const SearchGrid = styled.div`
-  grid-template-columns: 3fr 1fr 1fr;
-`;
-
 const SearchInput = styled.input`
   width: 100%;
   padding: 0.6rem;
@@ -687,7 +683,7 @@ export const StratosphereManageUsersDemo = () => {
                 console.log("submit");
               }}
             >
-              <Grid as={SearchGrid}>
+              <Grid columns="3fr 1fr 1fr">
                 <Cell>
                   <SearchInput type="search" />
                 </Cell>
@@ -815,7 +811,7 @@ export const StratosphereManageUsersWithModalDemo = () => {
                 console.log("submit");
               }}
             >
-              <Grid as={SearchGrid}>
+              <Grid columns="3fr 1fr 1fr">
                 <Cell>
                   <SearchInput type="search" />
                 </Cell>
@@ -1016,7 +1012,7 @@ export const StratosphereManageGroupsWithModalDemo = () => {
                 console.log("submit");
               }}
             >
-              <Grid as={SearchGrid}>
+              <Grid columns="3fr 1fr 1fr">
                 <Cell>
                   <SearchInput type="search" />
                 </Cell>
@@ -1221,7 +1217,7 @@ export const StratosphereManageHierarchiesWithModalDemo = () => {
                 console.log("submit");
               }}
             >
-              <Grid as={SearchGrid}>
+              <Grid columns="3fr 1fr 1fr">
                 <Cell>
                   <SearchInput type="search" />
                 </Cell>
@@ -1403,7 +1399,7 @@ export const StratosphereManageUsersWithConfirmDemo = () => {
                 console.log("submit");
               }}
             >
-              <Grid as={SearchGrid}>
+              <Grid columns="3fr 1fr 1fr">
                 <Cell>
                   <SearchInput type="search" />
                 </Cell>
@@ -1520,7 +1516,7 @@ export const StratosphereManageUsersWithDeleteDemo = () => {
                 console.log("submit");
               }}
             >
-              <Grid as={SearchGrid}>
+              <Grid columns="3fr 1fr 1fr">
                 <Cell>
                   <SearchInput type="search" />
                 </Cell>
@@ -1653,7 +1649,7 @@ export const StratosphereManageRolesDemo = () => {
                 console.log("submit");
               }}
             >
-              <Grid as={SearchGrid}>
+              <Grid columns="3fr 1fr 1fr">
                 <Cell>
                   <SearchInput type="search" />
                 </Cell>
@@ -1779,7 +1775,7 @@ export const StratosphereManageRolesWithModalDemo = () => {
                 console.log("submit");
               }}
             >
-              <Grid as={SearchGrid}>
+              <Grid columns="3fr 1fr 1fr">
                 <Cell>
                   <SearchInput type="search" />
                 </Cell>
@@ -2049,7 +2045,7 @@ export const StratosphereSwitchTabsModalDemo = () => {
                 console.log("submit");
               }}
             >
-              <Grid as={SearchGrid}>
+              <Grid columns="3fr 1fr 1fr">
                 <Cell>
                   <SearchInput type="search" />
                 </Cell>
@@ -2234,7 +2230,7 @@ export const StratosphereManageGroupsDemo = () => {
                 console.log("submit");
               }}
             >
-              <Grid as={SearchGrid}>
+              <Grid columns="3fr 1fr 1fr">
                 <Cell>
                   <SearchInput type="search" />
                 </Cell>
@@ -2356,7 +2352,7 @@ export const StratosphereManageGroupsAssignUserModalDemo = () => {
                 console.log("submit");
               }}
             >
-              <Grid as={SearchGrid}>
+              <Grid columns="3fr 1fr 1fr">
                 <Cell>
                   <SearchInput type="search" />
                 </Cell>
@@ -2582,7 +2578,7 @@ export const StratosphereHierarchiesDemo = () => {
                 console.log("submit");
               }}
             >
-              <Grid as={SearchGrid}>
+              <Grid columns="3fr 1fr 1fr">
                 <Cell>
                   <SearchInput type="search" />
                 </Cell>
@@ -2688,7 +2684,7 @@ export const StratosphereManageGroupsUsersModalDemo = () => {
                 console.log("submit");
               }}
             >
-              <Grid as={SearchGrid}>
+              <Grid columns="3fr 1fr 1fr">
                 <Cell>
                   <SearchInput type="search" />
                 </Cell>
@@ -2864,7 +2860,7 @@ export const StratosphereManageGroupsHierarchiesModalDemo = () => {
                 console.log("submit");
               }}
             >
-              <Grid as={SearchGrid}>
+              <Grid columns="3fr 1fr 1fr">
                 <Cell>
                   <SearchInput type="search" />
                 </Cell>
@@ -3033,7 +3029,7 @@ export const StratosphereManageGroupsHierarchiesDeleteConfirmModalDemo = () => {
                 console.log("submit");
               }}
             >
-              <Grid as={SearchGrid}>
+              <Grid columns="3fr 1fr 1fr">
                 <Cell>
                   <SearchInput type="search" />
                 </Cell>
@@ -3341,7 +3337,7 @@ export const StratosphereManageDevicesDemo = () => {
                 console.log("submit");
               }}
             >
-              <Grid as={SearchGrid}>
+              <Grid columns="3fr 1fr 1fr">
                 <Cell>
                   <SearchInput type="search" />
                 </Cell>
