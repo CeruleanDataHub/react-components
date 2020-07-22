@@ -35,7 +35,6 @@ const ItemList = styled.ul`
   border-radius: 0 0 4px 4px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   list-style: none;
   z-index: 1;
   box-sizing: border-box;
@@ -47,11 +46,17 @@ const DropdownText = styled.span`
   font-weight: bold;
 `;
 
+const DropdownTextWrapped = styled(DropdownText)`
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+`;
+
 export const Dropdown = ({ isOpen, label, onClick, children }) => (
   <Typography fontFamily="openSans">
     <Container>
       <Button onClick={onClick} as={DropdownContainer}>
-        <DropdownText>{label}</DropdownText>
+        <DropdownTextWrapped>{label}</DropdownTextWrapped>
         <Icon name={isOpen ? "chevron-up" : "chevron-down"} as={DropdownText} />
       </Button>
       {isOpen && <ItemList>{children}</ItemList>}

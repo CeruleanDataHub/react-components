@@ -11,7 +11,7 @@ exports[`Dropdown should call default props onClick function when no onClick pro
   cursor: pointer;
 }
 
-.c5 {
+.c6 {
   text-align: center;
 }
 
@@ -48,10 +48,19 @@ exports[`Dropdown should call default props onClick function when no onClick pro
   cursor: pointer;
 }
 
+.c5 {
+  color: #999;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
 .c4 {
   color: #999;
   font-size: 1.25em;
   font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 <div
@@ -74,7 +83,7 @@ exports[`Dropdown should call default props onClick function when no onClick pro
         
       </span>
       <span
-        className="c4 c5 lni lni-chevron-down"
+        className="c5 c6 lni lni-chevron-down"
       />
     </button>
   </div>
@@ -92,7 +101,7 @@ exports[`Dropdown should have onClick listener 1`] = `
   cursor: pointer;
 }
 
-.c5 {
+.c6 {
   text-align: center;
 }
 
@@ -129,10 +138,19 @@ exports[`Dropdown should have onClick listener 1`] = `
   cursor: pointer;
 }
 
+.c5 {
+  color: #999;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
 .c4 {
   color: #999;
   font-size: 1.25em;
   font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 <div
@@ -155,7 +173,7 @@ exports[`Dropdown should have onClick listener 1`] = `
         
       </span>
       <span
-        className="c4 c5 lni lni-chevron-down"
+        className="c5 c6 lni lni-chevron-down"
       />
     </button>
   </div>
@@ -173,7 +191,7 @@ exports[`Dropdown should render dropdown 1`] = `
   cursor: pointer;
 }
 
-.c5 {
+.c6 {
   text-align: center;
 }
 
@@ -210,10 +228,19 @@ exports[`Dropdown should render dropdown 1`] = `
   cursor: pointer;
 }
 
+.c5 {
+  color: #999;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
 .c4 {
   color: #999;
   font-size: 1.25em;
   font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 <div
@@ -236,7 +263,7 @@ exports[`Dropdown should render dropdown 1`] = `
         
       </span>
       <span
-        className="c4 c5 lni lni-chevron-down"
+        className="c5 c6 lni lni-chevron-down"
       />
     </button>
   </div>
@@ -254,7 +281,7 @@ exports[`Dropdown should render dropdown in open state 1`] = `
   cursor: pointer;
 }
 
-.c5 {
+.c6 {
   text-align: center;
 }
 
@@ -291,7 +318,7 @@ exports[`Dropdown should render dropdown in open state 1`] = `
   cursor: pointer;
 }
 
-.c6 {
+.c7 {
   width: 100%;
   padding: 0;
   border: 1px solid;
@@ -306,19 +333,24 @@ exports[`Dropdown should render dropdown in open state 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   list-style: none;
   z-index: 1;
   box-sizing: border-box;
+}
+
+.c5 {
+  color: #999;
+  font-size: 1.25em;
+  font-weight: bold;
 }
 
 .c4 {
   color: #999;
   font-size: 1.25em;
   font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 <div
@@ -341,11 +373,11 @@ exports[`Dropdown should render dropdown in open state 1`] = `
         
       </span>
       <span
-        className="c4 c5 lni lni-chevron-up"
+        className="c5 c6 lni lni-chevron-up"
       />
     </button>
     <ul
-      className="c6"
+      className="c7"
     >
       Content
     </ul>
@@ -364,7 +396,7 @@ exports[`Dropdown should render react node children 1`] = `
   cursor: pointer;
 }
 
-.c5 {
+.c6 {
   text-align: center;
 }
 
@@ -401,7 +433,7 @@ exports[`Dropdown should render react node children 1`] = `
   cursor: pointer;
 }
 
-.c6 {
+.c7 {
   width: 100%;
   padding: 0;
   border: 1px solid;
@@ -416,19 +448,24 @@ exports[`Dropdown should render react node children 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   list-style: none;
   z-index: 1;
   box-sizing: border-box;
+}
+
+.c5 {
+  color: #999;
+  font-size: 1.25em;
+  font-weight: bold;
 }
 
 .c4 {
   color: #999;
   font-size: 1.25em;
   font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 <div
@@ -451,11 +488,11 @@ exports[`Dropdown should render react node children 1`] = `
         
       </span>
       <span
-        className="c4 c5 lni lni-chevron-up"
+        className="c5 c6 lni lni-chevron-up"
       />
     </button>
     <ul
-      className="c6"
+      className="c7"
     >
       <div>
         Test content

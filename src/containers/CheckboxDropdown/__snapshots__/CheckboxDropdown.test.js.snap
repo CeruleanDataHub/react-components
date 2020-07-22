@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CheckboxDropdown should be able to select item from list 1`] = `
-.c5 {
+.c6 {
   text-align: center;
 }
 
-.c9 {
+.c10 {
   border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
@@ -20,7 +20,7 @@ exports[`CheckboxDropdown should be able to select item from list 1`] = `
   width: 1px;
 }
 
-.c15 {
+.c16 {
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -31,7 +31,7 @@ exports[`CheckboxDropdown should be able to select item from list 1`] = `
   line-height: 1em;
 }
 
-.c11 {
+.c12 {
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -41,17 +41,17 @@ exports[`CheckboxDropdown should be able to select item from list 1`] = `
   line-height: 1em;
 }
 
-.c12 {
+.c13 {
   font-size: 0.75em;
   font-weight: bold;
 }
 
-.c14 {
+.c15 {
   color: #999;
   margin-left: 1.5em;
 }
 
-.c8 {
+.c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -60,11 +60,11 @@ exports[`CheckboxDropdown should be able to select item from list 1`] = `
   margin: 0.25em 0;
 }
 
-.c8:hover .c10 {
+.c9:hover .c11 {
   border-color: #333;
 }
 
-.c8:hover .c13 {
+.c9:hover .c14 {
   color: #666;
 }
 
@@ -111,7 +111,7 @@ exports[`CheckboxDropdown should be able to select item from list 1`] = `
   cursor: pointer;
 }
 
-.c6 {
+.c7 {
   width: 100%;
   padding: 0;
   border: 1px solid;
@@ -126,22 +126,27 @@ exports[`CheckboxDropdown should be able to select item from list 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   list-style: none;
   z-index: 1;
   box-sizing: border-box;
+}
+
+.c5 {
+  color: #999;
+  font-size: 1.25em;
+  font-weight: bold;
 }
 
 .c4 {
   color: #999;
   font-size: 1.25em;
   font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
-.c7 {
+.c8 {
   padding-top: 1em;
   padding-left: 0.5em;
 }
@@ -178,59 +183,59 @@ exports[`CheckboxDropdown should be able to select item from list 1`] = `
         ]
       </span>
       <span
-        className="c4 c5 lni lni-chevron-up"
+        className="c5 c6 lni lni-chevron-up"
       />
     </button>
     <ul
-      className="c6"
+      className="c7"
     >
       <li
-        className="c7"
+        className="c8"
       >
         <label
-          className="c8"
+          className="c9"
         >
           <input
             checked={true}
-            className="c9"
+            className="c10"
             onChange={[Function]}
             type="checkbox"
             value="1"
           />
           <div
             checked={true}
-            className="c10 c11"
+            className="c11 c12"
           >
             <span
-              className="c12 c5 lni lni-checkmark"
+              className="c13 c6 lni lni-checkmark"
             />
           </div>
           <span
-            className="c13 c14"
+            className="c14 c15"
           >
             Item 1
           </span>
         </label>
       </li>
       <li
-        className="c7"
+        className="c8"
       >
         <label
-          className="c8"
+          className="c9"
         >
           <input
             checked={false}
-            className="c9"
+            className="c10"
             onChange={[Function]}
             type="checkbox"
             value="2"
           />
           <div
             checked={false}
-            className="c10 c15"
+            className="c11 c16"
           />
           <span
-            className="c13 c14"
+            className="c14 c15"
           >
             Item 2
           </span>
@@ -242,7 +247,7 @@ exports[`CheckboxDropdown should be able to select item from list 1`] = `
 `;
 
 exports[`CheckboxDropdown should call default props onClick function when no onClick property is passed 1`] = `
-.c5 {
+.c6 {
   text-align: center;
 }
 
@@ -289,10 +294,19 @@ exports[`CheckboxDropdown should call default props onClick function when no onC
   cursor: pointer;
 }
 
+.c5 {
+  color: #999;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
 .c4 {
   color: #999;
   font-size: 1.25em;
   font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 <div
@@ -315,7 +329,7 @@ exports[`CheckboxDropdown should call default props onClick function when no onC
         
       </span>
       <span
-        className="c4 c5 lni lni-chevron-down"
+        className="c5 c6 lni lni-chevron-down"
       />
     </button>
   </div>
@@ -323,7 +337,7 @@ exports[`CheckboxDropdown should call default props onClick function when no onC
 `;
 
 exports[`CheckboxDropdown should have onClick listener 1`] = `
-.c5 {
+.c6 {
   text-align: center;
 }
 
@@ -370,10 +384,19 @@ exports[`CheckboxDropdown should have onClick listener 1`] = `
   cursor: pointer;
 }
 
+.c5 {
+  color: #999;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
 .c4 {
   color: #999;
   font-size: 1.25em;
   font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 <div
@@ -396,7 +419,7 @@ exports[`CheckboxDropdown should have onClick listener 1`] = `
         
       </span>
       <span
-        className="c4 c5 lni lni-chevron-down"
+        className="c5 c6 lni lni-chevron-down"
       />
     </button>
   </div>
@@ -404,7 +427,7 @@ exports[`CheckboxDropdown should have onClick listener 1`] = `
 `;
 
 exports[`CheckboxDropdown should render 1`] = `
-.c5 {
+.c6 {
   text-align: center;
 }
 
@@ -451,10 +474,19 @@ exports[`CheckboxDropdown should render 1`] = `
   cursor: pointer;
 }
 
+.c5 {
+  color: #999;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
 .c4 {
   color: #999;
   font-size: 1.25em;
   font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 <div
@@ -477,7 +509,7 @@ exports[`CheckboxDropdown should render 1`] = `
         
       </span>
       <span
-        className="c4 c5 lni lni-chevron-down"
+        className="c5 c6 lni lni-chevron-down"
       />
     </button>
   </div>
@@ -485,11 +517,11 @@ exports[`CheckboxDropdown should render 1`] = `
 `;
 
 exports[`CheckboxDropdown should render in open state 1`] = `
-.c6 {
+.c7 {
   text-align: center;
 }
 
-.c10 {
+.c11 {
   border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
@@ -504,7 +536,7 @@ exports[`CheckboxDropdown should render in open state 1`] = `
   width: 1px;
 }
 
-.c12 {
+.c13 {
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -515,12 +547,12 @@ exports[`CheckboxDropdown should render in open state 1`] = `
   line-height: 1em;
 }
 
-.c14 {
+.c15 {
   color: #999;
   margin-left: 1.5em;
 }
 
-.c9 {
+.c10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -529,11 +561,11 @@ exports[`CheckboxDropdown should render in open state 1`] = `
   margin: 0.25em 0;
 }
 
-.c9:hover .c11 {
+.c10:hover .c12 {
   border-color: #333;
 }
 
-.c9:hover .c13 {
+.c10:hover .c14 {
   color: #666;
 }
 
@@ -580,7 +612,7 @@ exports[`CheckboxDropdown should render in open state 1`] = `
   cursor: pointer;
 }
 
-.c7 {
+.c8 {
   width: 100%;
   padding: 0;
   border: 1px solid;
@@ -595,22 +627,27 @@ exports[`CheckboxDropdown should render in open state 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   list-style: none;
   z-index: 1;
   box-sizing: border-box;
+}
+
+.c6 {
+  color: #999;
+  font-size: 1.25em;
+  font-weight: bold;
 }
 
 .c4 {
   color: #999;
   font-size: 1.25em;
   font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
-.c8 {
+.c9 {
   padding-top: 1em;
   padding-left: 0.5em;
 }
@@ -645,55 +682,55 @@ exports[`CheckboxDropdown should render in open state 1`] = `
         </span>
       </span>
       <span
-        className="c4 c6 lni lni-chevron-up"
+        className="c6 c7 lni lni-chevron-up"
       />
     </button>
     <ul
-      className="c7"
+      className="c8"
     >
       <li
-        className="c8"
+        className="c9"
       >
         <label
-          className="c9"
+          className="c10"
         >
           <input
             checked={false}
-            className="c10"
+            className="c11"
             onChange={[Function]}
             type="checkbox"
             value="1"
           />
           <div
             checked={false}
-            className="c11 c12"
+            className="c12 c13"
           />
           <span
-            className="c13 c14"
+            className="c14 c15"
           >
             Item 1
           </span>
         </label>
       </li>
       <li
-        className="c8"
+        className="c9"
       >
         <label
-          className="c9"
+          className="c10"
         >
           <input
             checked={false}
-            className="c10"
+            className="c11"
             onChange={[Function]}
             type="checkbox"
             value="2"
           />
           <div
             checked={false}
-            className="c11 c12"
+            className="c12 c13"
           />
           <span
-            className="c13 c14"
+            className="c14 c15"
           >
             Item 2
           </span>
@@ -705,11 +742,11 @@ exports[`CheckboxDropdown should render in open state 1`] = `
 `;
 
 exports[`CheckboxDropdown should render label 1`] = `
-.c6 {
+.c7 {
   text-align: center;
 }
 
-.c10 {
+.c11 {
   border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
@@ -724,7 +761,7 @@ exports[`CheckboxDropdown should render label 1`] = `
   width: 1px;
 }
 
-.c12 {
+.c13 {
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -735,12 +772,12 @@ exports[`CheckboxDropdown should render label 1`] = `
   line-height: 1em;
 }
 
-.c14 {
+.c15 {
   color: #999;
   margin-left: 1.5em;
 }
 
-.c9 {
+.c10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -749,11 +786,11 @@ exports[`CheckboxDropdown should render label 1`] = `
   margin: 0.25em 0;
 }
 
-.c9:hover .c11 {
+.c10:hover .c12 {
   border-color: #333;
 }
 
-.c9:hover .c13 {
+.c10:hover .c14 {
   color: #666;
 }
 
@@ -800,7 +837,7 @@ exports[`CheckboxDropdown should render label 1`] = `
   cursor: pointer;
 }
 
-.c7 {
+.c8 {
   width: 100%;
   padding: 0;
   border: 1px solid;
@@ -815,22 +852,27 @@ exports[`CheckboxDropdown should render label 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   list-style: none;
   z-index: 1;
   box-sizing: border-box;
+}
+
+.c6 {
+  color: #999;
+  font-size: 1.25em;
+  font-weight: bold;
 }
 
 .c4 {
   color: #999;
   font-size: 1.25em;
   font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
-.c8 {
+.c9 {
   padding-top: 1em;
   padding-left: 0.5em;
 }
@@ -865,55 +907,55 @@ exports[`CheckboxDropdown should render label 1`] = `
         </span>
       </span>
       <span
-        className="c4 c6 lni lni-chevron-up"
+        className="c6 c7 lni lni-chevron-up"
       />
     </button>
     <ul
-      className="c7"
+      className="c8"
     >
       <li
-        className="c8"
+        className="c9"
       >
         <label
-          className="c9"
+          className="c10"
         >
           <input
             checked={false}
-            className="c10"
+            className="c11"
             onChange={[Function]}
             type="checkbox"
             value="1"
           />
           <div
             checked={false}
-            className="c11 c12"
+            className="c12 c13"
           />
           <span
-            className="c13 c14"
+            className="c14 c15"
           >
             Item 1
           </span>
         </label>
       </li>
       <li
-        className="c8"
+        className="c9"
       >
         <label
-          className="c9"
+          className="c10"
         >
           <input
             checked={false}
-            className="c10"
+            className="c11"
             onChange={[Function]}
             type="checkbox"
             value="2"
           />
           <div
             checked={false}
-            className="c11 c12"
+            className="c12 c13"
           />
           <span
-            className="c13 c14"
+            className="c14 c15"
           >
             Item 2
           </span>
@@ -925,11 +967,11 @@ exports[`CheckboxDropdown should render label 1`] = `
 `;
 
 exports[`CheckboxDropdown should render react node label 1`] = `
-.c6 {
+.c7 {
   text-align: center;
 }
 
-.c10 {
+.c11 {
   border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
@@ -944,7 +986,7 @@ exports[`CheckboxDropdown should render react node label 1`] = `
   width: 1px;
 }
 
-.c12 {
+.c13 {
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -955,12 +997,12 @@ exports[`CheckboxDropdown should render react node label 1`] = `
   line-height: 1em;
 }
 
-.c14 {
+.c15 {
   color: #999;
   margin-left: 1.5em;
 }
 
-.c9 {
+.c10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -969,11 +1011,11 @@ exports[`CheckboxDropdown should render react node label 1`] = `
   margin: 0.25em 0;
 }
 
-.c9:hover .c11 {
+.c10:hover .c12 {
   border-color: #333;
 }
 
-.c9:hover .c13 {
+.c10:hover .c14 {
   color: #666;
 }
 
@@ -1020,7 +1062,7 @@ exports[`CheckboxDropdown should render react node label 1`] = `
   cursor: pointer;
 }
 
-.c7 {
+.c8 {
   width: 100%;
   padding: 0;
   border: 1px solid;
@@ -1035,22 +1077,27 @@ exports[`CheckboxDropdown should render react node label 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   list-style: none;
   z-index: 1;
   box-sizing: border-box;
+}
+
+.c6 {
+  color: #999;
+  font-size: 1.25em;
+  font-weight: bold;
 }
 
 .c4 {
   color: #999;
   font-size: 1.25em;
   font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
-.c8 {
+.c9 {
   padding-top: 1em;
   padding-left: 0.5em;
 }
@@ -1087,55 +1134,55 @@ exports[`CheckboxDropdown should render react node label 1`] = `
         </span>
       </span>
       <span
-        className="c4 c6 lni lni-chevron-up"
+        className="c6 c7 lni lni-chevron-up"
       />
     </button>
     <ul
-      className="c7"
+      className="c8"
     >
       <li
-        className="c8"
+        className="c9"
       >
         <label
-          className="c9"
+          className="c10"
         >
           <input
             checked={false}
-            className="c10"
+            className="c11"
             onChange={[Function]}
             type="checkbox"
             value="1"
           />
           <div
             checked={false}
-            className="c11 c12"
+            className="c12 c13"
           />
           <span
-            className="c13 c14"
+            className="c14 c15"
           >
             Item 1
           </span>
         </label>
       </li>
       <li
-        className="c8"
+        className="c9"
       >
         <label
-          className="c9"
+          className="c10"
         >
           <input
             checked={false}
-            className="c10"
+            className="c11"
             onChange={[Function]}
             type="checkbox"
             value="2"
           />
           <div
             checked={false}
-            className="c11 c12"
+            className="c12 c13"
           />
           <span
-            className="c13 c14"
+            className="c14 c15"
           >
             Item 2
           </span>
