@@ -21,6 +21,16 @@ describe("Grid", () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it("should render grid with custom columns", () => {
+    const component = renderer.create(
+      <Grid columns="2fr 1fr">
+        <Cell>Content</Cell>
+      </Grid>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
   it("should render grid with extended styles", () => {
     const CustomGrid = styled.div`
       margin-bottom: 0.5rem;
