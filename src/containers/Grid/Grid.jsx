@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { Cell, Grid as GridWrapper } from "styled-css-grid";
 
-const Grid = ({ as, className, children, columns = children.length }) => (
+const Grid = ({ as, className, children, columns }) => (
   <GridWrapper
     columns={columns || children.length}
     as={as}
