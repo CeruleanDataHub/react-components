@@ -23,14 +23,21 @@ export const SelectStory = () => {
   const [isOpen, setIsOpen] = useState(true);
   const [selectedItem, setSelectedItem] = useState({});
 
+  const onItemSelect = item => {
+    setSelectedItem(item);
+    setIsOpen(false);
+  };
+
   return (
     <div style={{ minHeight: 250, width: 300 }}>
       <Select
-        label={selectedItem ? selectedItem.label : "Select value"}
+        label={
+          Object.keys(selectedItem).length ? selectedItem.value : "Select value"
+        }
         items={items}
         isOpen={isOpen}
-        onOpen={setIsOpen}
-        onChange={setSelectedItem}
+        onOpen={() => setIsOpen(!isOpen)}
+        onChange={item => onItemSelect(item)}
         selectedOption={selectedItem}
       />
     </div>
