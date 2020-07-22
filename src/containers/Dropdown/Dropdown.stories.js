@@ -23,6 +23,13 @@ export const DropdownOpenStory = () => (
     </Dropdown>
   </div>
 );
+export const DropdownLongLabelStory = () => (
+  <div style={{ minHeight: 250, width: 300 }}>
+    <Dropdown label="Extra long label; Extra long label; Extra long label; Extra long label">
+      Dropdown item
+    </Dropdown>
+  </div>
+);
 
 export const DropdownOpenWithCustomChildrenStory = () => (
   <div style={{ minHeight: 250, width: 300 }}>
