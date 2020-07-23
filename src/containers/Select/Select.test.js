@@ -27,13 +27,14 @@ describe("Select", () => {
     const component = mount(
       <Select items={[{ id: "1", value: "test" }]} onChange={handleChange} />
     );
-    component.find("Select").simulate("change");
+    component.simulate("change");
     expect(handleChange).toHaveBeenCalled();
   });
 
   it("should be able to call the default onChange function when no onChange callback provided", () => {
     const component = mount(<Select items={[{ id: "1", value: "test" }]} />);
-    component.find("Select").prop("onChange")();
+    component.simulate("change");
+
     expect(toJson(component)).toMatchSnapshot();
   });
 });
