@@ -6,7 +6,8 @@ module.exports = {
     "\\.(css)$": "<rootDir>/styleMock.js",
     "^dnd-core$": "dnd-core/dist/cjs",
     "^react-dnd-html5-backend$": "react-dnd-html5-backend/dist/cjs",
-    "^react-dnd$": "react-dnd/dist/cjs"
+    "^react-dnd$": "react-dnd/dist/cjs",
+    "^.+.svg$": "jest-transform-stub"
   },
   coverageThreshold: {
     global: {
