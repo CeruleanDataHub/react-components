@@ -8,8 +8,6 @@ const SelectContainer = styled.select`
   appearance: none;
   font-family: inherit;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   height: 40px;
   border: 1px solid ${({ theme }) => theme.border};
@@ -25,6 +23,7 @@ const SelectContainer = styled.select`
   text-overflow: ellipsis;
   overflow: hidden;
   color: #999;
+  line-height: 1.5;
 `;
 
 export const Select = ({ onChange, items, selectedOption }) => (
