@@ -1,29 +1,14 @@
 import { mount } from "enzyme";
+import toJson from "enzyme-to-json";
 import React from "react";
 import renderer from "react-test-renderer";
 
 import { Select } from "./Select";
 
 describe("Select", () => {
-  it("should render in closed state", () => {
+  it("should render", () => {
     const component = renderer.create(
-      <Select items={[{ id: 1, value: "test" }]} />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("should render in open state", () => {
-    const component = renderer.create(
-      <Select items={[{ id: 1, value: "test" }]} isOpen />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("should render label", () => {
-    const component = renderer.create(
-      <Select items={[{ id: 1, value: "test" }]} label="Test" />
+      <Select items={[{ id: "1", value: "test" }]} />
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -31,57 +16,24 @@ describe("Select", () => {
 
   it("should render selected option", () => {
     const component = renderer.create(
-      <Select
-        items={[{ id: 1, value: "test" }]}
-        selectedOption={{ id: 1 }}
-        isOpen
-      />
+      <Select items={[{ id: "1", value: "test" }]} selectedOption="test" />
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  it("should be able to open the select component", () => {
-    const open = jest.fn();
-    const wrapper = mount(
-      <Select items={[{ id: 1, value: "test" }]} onOpen={open} />
-    );
-
-    expect(open).not.toHaveBeenCalled();
-    wrapper.find("button").simulate("click");
-    expect(open).toHaveBeenCalled();
-  });
-
-  it("should select value from list", () => {
+  it("should call onChange handler", () => {
     const handleChange = jest.fn();
-    const wrapper = mount(
-      <Select
-        items={[{ id: 1, value: "test" }]}
-        isOpen
-        onChange={handleChange}
-      />
+    const component = mount(
+      <Select items={[{ id: "1", value: "test" }]} onChange={handleChange} />
     );
-
-    expect(handleChange).not.toHaveBeenCalled();
-    wrapper
-      .find("div.select")
-      .first()
-      .simulate("click");
+    component.find("Select").simulate("change");
     expect(handleChange).toHaveBeenCalled();
   });
 
-  it("should be able to call the default onOpen function when no onOpen callback provided", () => {
-    const wrapper = mount(<Select items={[{ id: 1, value: "test" }]} />);
-
-    wrapper.find("button").simulate("click");
-  });
-
   it("should be able to call the default onChange function when no onChange callback provided", () => {
-    const wrapper = mount(<Select items={[{ id: 1, value: "test" }]} isOpen />);
-
-    wrapper
-      .find("div.select")
-      .first()
-      .simulate("click");
+    const component = mount(<Select items={[{ id: "1", value: "test" }]} />);
+    component.find("Select").prop("onChange")();
+    expect(toJson(component)).toMatchSnapshot();
   });
 });
