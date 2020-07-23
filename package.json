@@ -46,7 +46,10 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint",
-      "pre-push": "npm test -- --coverage"
+      "pre-push": "npm test -- --coverage",
+      "post-checkout": "yarnhook",
+      "post-merge": "yarnhook",
+      "post-rewrite": "yarnhook"
     }
   },
   "eslintConfig": {
@@ -103,7 +106,8 @@
     "react-test-renderer": "^16.13.1",
     "styled-components": "^5.1.0",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "yarnhook": "^0.4.3"
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",
