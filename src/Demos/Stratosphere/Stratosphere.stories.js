@@ -13,6 +13,7 @@ import { Dropdown } from "../../containers/Dropdown/Dropdown";
 import { Fullscreen } from "../../containers/Fullscreen/Fullscreen";
 import { Cell, Grid } from "../../containers/Grid/Grid";
 import { Icon } from "../../containers/Icon/Icon";
+import { Input } from "../../containers/Input/Input";
 import { KPICard } from "../../containers/KPICard/KPICard";
 import { Menu } from "../../containers/Menu/Menu";
 import { Modal } from "../../containers/Modal/Modal";
@@ -872,7 +873,7 @@ export const StratosphereManageUsersWithModalDemo = () => {
                   </Cell>
                 </Grid>
 
-                <Grid>
+                <Grid columns="1fr 12fr">
                   <Cell>
                     <UserPicture
                       onClick={() => setPopoverOpen(!popoverOpen)}
@@ -891,7 +892,7 @@ export const StratosphereManageUsersWithModalDemo = () => {
                   <Tab text="Hierarchies" />
                 </TabsContainer>
 
-                <Grid>
+                <Grid columns="6fr 1fr">
                   <Cell>
                     <Dropdown
                       label="Roles"
@@ -1073,7 +1074,7 @@ export const StratosphereManageGroupsWithModalDemo = () => {
                   </Cell>
                 </Grid>
 
-                <Grid>
+                <Grid columns="1fr 12fr">
                   <Cell>
                     <UserPicture
                       onClick={() => setPopoverOpen(!popoverOpen)}
@@ -1092,7 +1093,7 @@ export const StratosphereManageGroupsWithModalDemo = () => {
                   <Tab text="Hierarchies" />
                 </TabsContainer>
 
-                <Grid>
+                <Grid columns="6fr 1fr">
                   <Cell>
                     <Dropdown
                       label="Groups"
@@ -1278,7 +1279,7 @@ export const StratosphereManageHierarchiesWithModalDemo = () => {
                   </Cell>
                 </Grid>
 
-                <Grid>
+                <Grid columns="1fr 12fr">
                   <Cell>
                     <UserPicture
                       onClick={() => setPopoverOpen(!popoverOpen)}
@@ -1297,7 +1298,7 @@ export const StratosphereManageHierarchiesWithModalDemo = () => {
                   <Tab text="Hierarchies" active />
                 </TabsContainer>
 
-                <Grid>
+                <Grid columns="6fr 1fr">
                   <Cell>
                     <Dropdown
                       label="Hierarchies"
@@ -1836,7 +1837,7 @@ export const StratosphereManageRolesWithModalDemo = () => {
                   </Cell>
                 </Grid>
 
-                <Grid>
+                <Grid columns="1fr 12fr">
                   <Cell>
                     <UserPicture
                       onClick={() => setPopoverOpen(!popoverOpen)}
@@ -1854,7 +1855,7 @@ export const StratosphereManageRolesWithModalDemo = () => {
                   <Tab text="Settings" />
                 </TabsContainer>
 
-                <input type="text" placeholder="repo" />
+                <Input placeholder="Repo" />
 
                 <DataTable
                   columns={manageRolesModalData.columns}
@@ -2106,7 +2107,7 @@ export const StratosphereSwitchTabsModalDemo = () => {
                   </Cell>
                 </Grid>
 
-                <Grid>
+                <Grid columns="1fr 12fr">
                   <Cell>
                     <UserPicture
                       onClick={() => setPopoverOpen(!popoverOpen)}
@@ -2399,7 +2400,7 @@ export const StratosphereManageGroupsAssignUserModalDemo = () => {
                   </Cell>
                 </Grid>
 
-                <Grid>
+                <Grid columns="1fr 12fr">
                   <Cell>
                     <UserPicture
                       onClick={() => setPopoverOpen(!popoverOpen)}
@@ -2421,7 +2422,7 @@ export const StratosphereManageGroupsAssignUserModalDemo = () => {
 
                 <Grid>
                   <Cell>
-                    <input type="text" placeholder="Username" />
+                    <Input placeholder="Username" />
                   </Cell>
                   <Cell>
                     <Dropdown
@@ -2731,7 +2732,7 @@ export const StratosphereManageGroupsUsersModalDemo = () => {
                   </Cell>
                 </Grid>
 
-                <Grid>
+                <Grid columns="1fr 12fr">
                   <Cell>
                     <UserPicture
                       onClick={() => setPopoverOpen(!popoverOpen)}
@@ -2751,8 +2752,7 @@ export const StratosphereManageGroupsUsersModalDemo = () => {
                   <Tab text="Hierarchy" />
                 </TabsContainer>
 
-                <input
-                  type="text"
+                <Input
                   placeholder="Search"
                   onChange={() => {
                     // eslint-disable-next-line no-console
@@ -2907,7 +2907,7 @@ export const StratosphereManageGroupsHierarchiesModalDemo = () => {
                   </Cell>
                 </Grid>
 
-                <Grid>
+                <Grid columns="1fr 12fr">
                   <Cell>
                     <UserPicture
                       onClick={() => setPopoverOpen(!popoverOpen)}
@@ -2927,7 +2927,7 @@ export const StratosphereManageGroupsHierarchiesModalDemo = () => {
                   <Tab text="Hierarchy" active />
                 </TabsContainer>
 
-                <Grid>
+                <Grid columns="6fr 1fr">
                   <Cell>
                     <Dropdown
                       label="Field"
@@ -3076,7 +3076,7 @@ export const StratosphereManageGroupsHierarchiesDeleteConfirmModalDemo = () => {
                   </Cell>
                 </Grid>
 
-                <Grid>
+                <Grid columns="1fr 12fr">
                   <Cell>
                     <UserPicture
                       onClick={() => setPopoverOpen(!popoverOpen)}
@@ -3096,7 +3096,7 @@ export const StratosphereManageGroupsHierarchiesDeleteConfirmModalDemo = () => {
                   <Tab text="Hierarchy" active />
                 </TabsContainer>
 
-                <Grid>
+                <Grid columns="6fr 1fr">
                   <Cell>
                     <Dropdown
                       label="Field"
