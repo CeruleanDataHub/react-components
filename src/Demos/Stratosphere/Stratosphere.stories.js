@@ -966,7 +966,7 @@ export const StratosphereManageUsersWithModalDemo = () => {
                   </Cell>
                 </Grid>
 
-                <Grid columns="1fr 12fr">
+                <Grid columns="min-content 1fr">
                   <Cell>
                     <UserPicture
                       onClick={() => setPopoverOpen(!popoverOpen)}
@@ -1167,7 +1167,7 @@ export const StratosphereManageGroupsWithModalDemo = () => {
                   </Cell>
                 </Grid>
 
-                <Grid columns="1fr 12fr">
+                <Grid columns="min-content 1fr">
                   <Cell>
                     <UserPicture
                       onClick={() => setPopoverOpen(!popoverOpen)}
@@ -1372,7 +1372,7 @@ export const StratosphereManageHierarchiesWithModalDemo = () => {
                   </Cell>
                 </Grid>
 
-                <Grid columns="1fr 12fr">
+                <Grid columns="min-content 1fr">
                   <Cell>
                     <UserPicture
                       onClick={() => setPopoverOpen(!popoverOpen)}
@@ -1951,7 +1951,7 @@ export const StratosphereManageRolesWithModalDemo = () => {
                   </Cell>
                 </Grid>
 
-                <Grid columns="1fr 12fr">
+                <Grid columns="min-content 1fr">
                   <Cell>
                     <UserPicture
                       onClick={() => setPopoverOpen(!popoverOpen)}
@@ -2221,7 +2221,7 @@ export const StratosphereSwitchTabsModalDemo = () => {
                   </Cell>
                 </Grid>
 
-                <Grid columns="1fr 12fr">
+                <Grid columns="min-content 1fr">
                   <Cell>
                     <UserPicture
                       onClick={() => setPopoverOpen(!popoverOpen)}
@@ -2535,7 +2535,7 @@ export const StratosphereManageGroupsAssignUserModalDemo = () => {
                   </Cell>
                 </Grid>
 
-                <Grid columns="1fr 12fr">
+                <Grid columns="min-content 1fr">
                   <Cell>
                     <UserPicture
                       onClick={() => setPopoverOpen(!popoverOpen)}
@@ -2888,7 +2888,7 @@ export const StratosphereManageGroupsUsersModalDemo = () => {
                   </Cell>
                 </Grid>
 
-                <Grid columns="1fr 12fr">
+                <Grid columns="min-content 1fr">
                   <Cell>
                     <UserPicture
                       onClick={() => setPopoverOpen(!popoverOpen)}
@@ -3063,7 +3063,7 @@ export const StratosphereManageGroupsHierarchiesModalDemo = () => {
                   </Cell>
                 </Grid>
 
-                <Grid columns="1fr 12fr">
+                <Grid columns="min-content 1fr">
                   <Cell>
                     <UserPicture
                       onClick={() => setPopoverOpen(!popoverOpen)}
@@ -3232,7 +3232,7 @@ export const StratosphereManageGroupsHierarchiesDeleteConfirmModalDemo = () => {
                   </Cell>
                 </Grid>
 
-                <Grid columns="1fr 12fr">
+                <Grid columns="min-content 1fr">
                   <Cell>
                     <UserPicture
                       onClick={() => setPopoverOpen(!popoverOpen)}
