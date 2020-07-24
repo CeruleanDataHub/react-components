@@ -318,11 +318,6 @@ const CardGrid = styled.div`
   }
 `;
 
-const SearchInput = styled.input`
-  width: 100%;
-  padding: 0.6rem;
-`;
-
 const ButtonWithIcon = styled.button`
   padding: 0.6rem;
   span {
@@ -784,7 +779,7 @@ export const StratosphereManageUsersDemo = () => {
             >
               <Grid columns="3fr 1fr 1fr">
                 <Cell>
-                  <SearchInput type="search" />
+                  <Input type="search" placeholder="Search" />
                 </Cell>
                 <Cell>
                   <Dropdown
@@ -912,7 +907,7 @@ export const StratosphereManageUsersWithModalDemo = () => {
             >
               <Grid columns="3fr 1fr 1fr">
                 <Cell>
-                  <SearchInput type="search" />
+                  <Input type="search" placeholder="Search" />
                 </Cell>
                 <Cell>
                   <Dropdown
@@ -1113,7 +1108,7 @@ export const StratosphereManageGroupsWithModalDemo = () => {
             >
               <Grid columns="3fr 1fr 1fr">
                 <Cell>
-                  <SearchInput type="search" />
+                  <Input type="search" placeholder="Search" />
                 </Cell>
                 <Cell>
                   <Dropdown
@@ -1318,7 +1313,7 @@ export const StratosphereManageHierarchiesWithModalDemo = () => {
             >
               <Grid columns="3fr 1fr 1fr">
                 <Cell>
-                  <SearchInput type="search" />
+                  <Input type="search" placeholder="Search" />
                 </Cell>
                 <Cell>
                   <Dropdown
@@ -1500,7 +1495,7 @@ export const StratosphereManageUsersWithConfirmDemo = () => {
             >
               <Grid columns="3fr 1fr 1fr">
                 <Cell>
-                  <SearchInput type="search" />
+                  <Input type="search" placeholder="Search" />
                 </Cell>
                 <Cell>
                   <Dropdown
@@ -1617,7 +1612,7 @@ export const StratosphereManageUsersWithDeleteDemo = () => {
             >
               <Grid columns="3fr 1fr 1fr">
                 <Cell>
-                  <SearchInput type="search" />
+                  <Input type="search" placeholder="Search" />
                 </Cell>
                 <Cell>
                   <Dropdown
@@ -1771,7 +1766,7 @@ export const StratosphereManageRolesDemo = () => {
             >
               <Grid columns="3fr 1fr 1fr">
                 <Cell>
-                  <SearchInput type="search" />
+                  <Input type="search" placeholder="Search" />
                 </Cell>
                 <Cell>
                   <Dropdown
@@ -1897,7 +1892,7 @@ export const StratosphereManageRolesWithModalDemo = () => {
             >
               <Grid columns="3fr 1fr 1fr">
                 <Cell>
-                  <SearchInput type="search" />
+                  <Input type="search" placeholder="Search" />
                 </Cell>
                 <Cell>
                   <Dropdown
@@ -2167,7 +2162,7 @@ export const StratosphereSwitchTabsModalDemo = () => {
             >
               <Grid columns="3fr 1fr 1fr">
                 <Cell>
-                  <SearchInput type="search" />
+                  <Input type="search" placeholder="Search" />
                 </Cell>
                 <Cell>
                   <Dropdown
@@ -2373,7 +2368,7 @@ export const StratosphereManageGroupsDemo = () => {
             >
               <Grid columns="3fr 1fr 1fr">
                 <Cell>
-                  <SearchInput type="search" />
+                  <Input type="search" placeholder="Search" />
                 </Cell>
                 <Cell>
                   <Button type="submit" as={SearchButton}>
@@ -2495,7 +2490,7 @@ export const StratosphereManageGroupsAssignUserModalDemo = () => {
             >
               <Grid columns="3fr 1fr 1fr">
                 <Cell>
-                  <SearchInput type="search" />
+                  <Input type="search" placeholder="Search" />
                 </Cell>
                 <Cell>
                   <Button type="submit" as={SearchButton}>
@@ -2742,7 +2737,7 @@ export const StratosphereHierarchiesDemo = () => {
             >
               <Grid columns="3fr 1fr 1fr">
                 <Cell>
-                  <SearchInput type="search" />
+                  <Input type="search" placeholder="Search" />
                 </Cell>
                 <Cell>
                   <Button type="submit" as={SearchButton}>
@@ -2848,7 +2843,7 @@ export const StratosphereManageGroupsUsersModalDemo = () => {
             >
               <Grid columns="3fr 1fr 1fr">
                 <Cell>
-                  <SearchInput type="search" />
+                  <Input type="search" placeholder="Search" />
                 </Cell>
                 <Cell>
                   <Button type="submit" as={SearchButton}>
@@ -3023,7 +3018,7 @@ export const StratosphereManageGroupsHierarchiesModalDemo = () => {
             >
               <Grid columns="3fr 1fr 1fr">
                 <Cell>
-                  <SearchInput type="search" />
+                  <Input type="search" placeholder="Search" />
                 </Cell>
                 <Cell>
                   <Button type="submit" as={SearchButton}>
@@ -3192,7 +3187,7 @@ export const StratosphereManageGroupsHierarchiesDeleteConfirmModalDemo = () => {
             >
               <Grid columns="3fr 1fr 1fr">
                 <Cell>
-                  <SearchInput type="search" />
+                  <Input type="search" placeholder="Search" />
                 </Cell>
                 <Cell>
                   <Button type="submit" as={SearchButton}>
@@ -3542,7 +3537,7 @@ export const StratosphereManageDevicesDemo = () => {
             >
               <Grid columns="3fr 1fr 1fr">
                 <Cell>
-                  <SearchInput type="search" />
+                  <Input type="search" placeholder="Search" />
                 </Cell>
 
                 <Cell>
