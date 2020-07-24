@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input should be able to call default onChange function when no function is passed 1`] = `
+.c0 {
+  padding: 1rem;
+  width: 100%;
+}
+
+<input
+  className="c0"
+  onChange={[Function]}
+  placeholder="test"
+  type="text"
+/>
+`;
+
+exports[`Input should render 1`] = `
+.c0 {
+  padding: 1rem;
+  width: 100%;
+}
+
+<input
+  className="c0"
+  onChange={[Function]}
+  placeholder=""
+  type="text"
+/>
+`;
+
+exports[`Input should render placeholder 1`] = `
+.c0 {
+  padding: 1rem;
+  width: 100%;
+}
+
+<input
+  className="c0"
+  onChange={[Function]}
+  placeholder="test"
+  type="text"
+/>
+`;
+
+exports[`Input types should render search input 1`] = `
+.c0 {
+  padding: 1rem;
+  width: 100%;
+}
+
+<input
+  className="c0"
+  onChange={[Function]}
+  placeholder="test"
+  type="search"
+/>
+`;
+
+exports[`Input types should render text input 1`] = `
+.c0 {
+  padding: 1rem;
+  width: 100%;
+}
+
+<input
+  className="c0"
+  onChange={[Function]}
+  placeholder="test"
+  type="text"
+/>
+`;
