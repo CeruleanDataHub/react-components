@@ -276,6 +276,41 @@ const UserPictureContainer = styled.div`
   justify-content: flex-end;
 `;
 
+const ListWrapper = styled.div`
+  width: 100%;
+  text-align: start;
+`;
+
+const PopoverContentList = styled.ul`
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
+const PopoverContentListItem = styled.li`
+  padding: 0.5em 3em 0.5em 1.25em;
+  display: block;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    background: papayawhip;
+  }
+`;
+
+const ListItemIcon = styled.span`
+  font-size: 0.75em;
+  margin-right: 0.5rem;
+`;
+
+const ListDivider = styled.div`
+  margin: 0.25em 0;
+  border: 1px solid #ddd;
+`;
+
 const CardGrid = styled.div`
   a {
     color: black;
@@ -362,7 +397,28 @@ export const StratosphereDemo = () => {
                   ref={containerRef}
                 />
                 <Popover isOpen={popoverOpen} containerRef={containerRef}>
-                  <p>Popover content</p>
+                  <PopoverContentList>
+                    <ListWrapper>
+                      <PopoverContentListItem>Profile</PopoverContentListItem>
+                      <PopoverContentListItem>Settings</PopoverContentListItem>
+                      <ListDivider />
+                      <PopoverContentListItem>
+                        <Icon name="rocket" as={ListItemIcon} />
+                        Manage devices
+                      </PopoverContentListItem>
+                      <PopoverContentListItem>
+                        <Icon name="user" as={ListItemIcon} />
+                        Manage users
+                      </PopoverContentListItem>
+                      <PopoverContentListItem>
+                        <Icon name="users" as={ListItemIcon} />
+                        Manage roles
+                      </PopoverContentListItem>
+                      <ListDivider />
+                      <PopoverContentListItem>Help</PopoverContentListItem>
+                      <PopoverContentListItem>Log out</PopoverContentListItem>
+                    </ListWrapper>
+                  </PopoverContentList>
                 </Popover>
               </Cell>
             </Grid>
@@ -502,7 +558,28 @@ export const StratosphereUsersAndRolesDemo = () => {
                   ref={containerRef}
                 />
                 <Popover isOpen={popoverOpen} containerRef={containerRef}>
-                  <p>Popover content</p>
+                  <PopoverContentList>
+                    <ListWrapper>
+                      <PopoverContentListItem>Profile</PopoverContentListItem>
+                      <PopoverContentListItem>Settings</PopoverContentListItem>
+                      <ListDivider />
+                      <PopoverContentListItem>
+                        <Icon name="rocket" as={ListItemIcon} />
+                        Manage devices
+                      </PopoverContentListItem>
+                      <PopoverContentListItem>
+                        <Icon name="user" as={ListItemIcon} />
+                        Manage users
+                      </PopoverContentListItem>
+                      <PopoverContentListItem>
+                        <Icon name="users" as={ListItemIcon} />
+                        Manage roles
+                      </PopoverContentListItem>
+                      <ListDivider />
+                      <PopoverContentListItem>Help</PopoverContentListItem>
+                      <PopoverContentListItem>Log out</PopoverContentListItem>
+                    </ListWrapper>
+                  </PopoverContentList>
                 </Popover>
               </Cell>
             </Grid>
@@ -659,7 +736,28 @@ export const StratosphereManageUsersDemo = () => {
                   ref={containerRef}
                 />
                 <Popover isOpen={popoverOpen} containerRef={containerRef}>
-                  <p>Popover content</p>
+                  <PopoverContentList>
+                    <ListWrapper>
+                      <PopoverContentListItem>Profile</PopoverContentListItem>
+                      <PopoverContentListItem>Settings</PopoverContentListItem>
+                      <ListDivider />
+                      <PopoverContentListItem>
+                        <Icon name="rocket" as={ListItemIcon} />
+                        Manage devices
+                      </PopoverContentListItem>
+                      <PopoverContentListItem>
+                        <Icon name="user" as={ListItemIcon} />
+                        Manage users
+                      </PopoverContentListItem>
+                      <PopoverContentListItem>
+                        <Icon name="users" as={ListItemIcon} />
+                        Manage roles
+                      </PopoverContentListItem>
+                      <ListDivider />
+                      <PopoverContentListItem>Help</PopoverContentListItem>
+                      <PopoverContentListItem>Log out</PopoverContentListItem>
+                    </ListWrapper>
+                  </PopoverContentList>
                 </Popover>
               </Cell>
             </Grid>
@@ -1625,7 +1723,28 @@ export const StratosphereManageRolesDemo = () => {
                   ref={containerRef}
                 />
                 <Popover isOpen={popoverOpen} containerRef={containerRef}>
-                  <p>Popover content</p>
+                  <PopoverContentList>
+                    <ListWrapper>
+                      <PopoverContentListItem>Profile</PopoverContentListItem>
+                      <PopoverContentListItem>Settings</PopoverContentListItem>
+                      <ListDivider />
+                      <PopoverContentListItem>
+                        <Icon name="rocket" as={ListItemIcon} />
+                        Manage devices
+                      </PopoverContentListItem>
+                      <PopoverContentListItem>
+                        <Icon name="user" as={ListItemIcon} />
+                        Manage users
+                      </PopoverContentListItem>
+                      <PopoverContentListItem>
+                        <Icon name="users" as={ListItemIcon} />
+                        Manage roles
+                      </PopoverContentListItem>
+                      <ListDivider />
+                      <PopoverContentListItem>Help</PopoverContentListItem>
+                      <PopoverContentListItem>Log out</PopoverContentListItem>
+                    </ListWrapper>
+                  </PopoverContentList>
                 </Popover>
               </Cell>
             </Grid>
@@ -2206,7 +2325,28 @@ export const StratosphereManageGroupsDemo = () => {
                   ref={containerRef}
                 />
                 <Popover isOpen={popoverOpen} containerRef={containerRef}>
-                  <p>Popover content</p>
+                  <PopoverContentList>
+                    <ListWrapper>
+                      <PopoverContentListItem>Profile</PopoverContentListItem>
+                      <PopoverContentListItem>Settings</PopoverContentListItem>
+                      <ListDivider />
+                      <PopoverContentListItem>
+                        <Icon name="rocket" as={ListItemIcon} />
+                        Manage devices
+                      </PopoverContentListItem>
+                      <PopoverContentListItem>
+                        <Icon name="user" as={ListItemIcon} />
+                        Manage users
+                      </PopoverContentListItem>
+                      <PopoverContentListItem>
+                        <Icon name="users" as={ListItemIcon} />
+                        Manage roles
+                      </PopoverContentListItem>
+                      <ListDivider />
+                      <PopoverContentListItem>Help</PopoverContentListItem>
+                      <PopoverContentListItem>Log out</PopoverContentListItem>
+                    </ListWrapper>
+                  </PopoverContentList>
                 </Popover>
               </Cell>
             </Grid>
@@ -2555,7 +2695,28 @@ export const StratosphereHierarchiesDemo = () => {
                   ref={containerRef}
                 />
                 <Popover isOpen={popoverOpen} containerRef={containerRef}>
-                  <p>Popover content</p>
+                  <PopoverContentList>
+                    <ListWrapper>
+                      <PopoverContentListItem>Profile</PopoverContentListItem>
+                      <PopoverContentListItem>Settings</PopoverContentListItem>
+                      <ListDivider />
+                      <PopoverContentListItem>
+                        <Icon name="rocket" as={ListItemIcon} />
+                        Manage devices
+                      </PopoverContentListItem>
+                      <PopoverContentListItem>
+                        <Icon name="user" as={ListItemIcon} />
+                        Manage users
+                      </PopoverContentListItem>
+                      <PopoverContentListItem>
+                        <Icon name="users" as={ListItemIcon} />
+                        Manage roles
+                      </PopoverContentListItem>
+                      <ListDivider />
+                      <PopoverContentListItem>Help</PopoverContentListItem>
+                      <PopoverContentListItem>Log out</PopoverContentListItem>
+                    </ListWrapper>
+                  </PopoverContentList>
                 </Popover>
               </Cell>
             </Grid>
@@ -3186,7 +3347,28 @@ export const StratosphereDevicesAndDeploymentsDemo = () => {
                   ref={containerRef}
                 />
                 <Popover isOpen={popoverOpen} containerRef={containerRef}>
-                  <p>Popover content</p>
+                  <PopoverContentList>
+                    <ListWrapper>
+                      <PopoverContentListItem>Profile</PopoverContentListItem>
+                      <PopoverContentListItem>Settings</PopoverContentListItem>
+                      <ListDivider />
+                      <PopoverContentListItem>
+                        <Icon name="rocket" as={ListItemIcon} />
+                        Manage devices
+                      </PopoverContentListItem>
+                      <PopoverContentListItem>
+                        <Icon name="user" as={ListItemIcon} />
+                        Manage users
+                      </PopoverContentListItem>
+                      <PopoverContentListItem>
+                        <Icon name="users" as={ListItemIcon} />
+                        Manage roles
+                      </PopoverContentListItem>
+                      <ListDivider />
+                      <PopoverContentListItem>Help</PopoverContentListItem>
+                      <PopoverContentListItem>Log out</PopoverContentListItem>
+                    </ListWrapper>
+                  </PopoverContentList>
                 </Popover>
               </Cell>
             </Grid>
@@ -3320,7 +3502,28 @@ export const StratosphereManageDevicesDemo = () => {
                   ref={containerRef}
                 />
                 <Popover isOpen={popoverOpen} containerRef={containerRef}>
-                  <p>Popover content</p>
+                  <PopoverContentList>
+                    <ListWrapper>
+                      <PopoverContentListItem>Profile</PopoverContentListItem>
+                      <PopoverContentListItem>Settings</PopoverContentListItem>
+                      <ListDivider />
+                      <PopoverContentListItem>
+                        <Icon name="rocket" as={ListItemIcon} />
+                        Manage devices
+                      </PopoverContentListItem>
+                      <PopoverContentListItem>
+                        <Icon name="user" as={ListItemIcon} />
+                        Manage users
+                      </PopoverContentListItem>
+                      <PopoverContentListItem>
+                        <Icon name="users" as={ListItemIcon} />
+                        Manage roles
+                      </PopoverContentListItem>
+                      <ListDivider />
+                      <PopoverContentListItem>Help</PopoverContentListItem>
+                      <PopoverContentListItem>Log out</PopoverContentListItem>
+                    </ListWrapper>
+                  </PopoverContentList>
                 </Popover>
               </Cell>
             </Grid>
