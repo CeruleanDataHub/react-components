@@ -52,6 +52,7 @@ export const DateRangePicker = ({
           hideKeyboardShortcutsPanel
           customInputIcon={<Icon name="calendar" as={CalendarIcon} />}
           displayFormat={dateFormat}
+          isOutsideRange={() => false}
         />
       </Typography>
     </Container>

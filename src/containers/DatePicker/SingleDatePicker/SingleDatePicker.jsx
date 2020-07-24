@@ -47,6 +47,7 @@ export const SingleDatePicker = ({
           customInputIcon={<Icon name="calendar" as={CalendarIcon} />}
           id={`${name}-single-datepicker`}
           hideKeyboardShortcutsPanel
+          isOutsideRange={() => false}
         />
       </Typography>
     </Container>
