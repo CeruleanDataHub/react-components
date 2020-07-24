@@ -5,6 +5,7 @@ import styled from "styled-components";
 const InputWrapper = styled.input`
   padding: 1rem;
   width: 100%;
+  box-sizing: border-box;
 `;
 
 export const Input = ({ type, placeholder, onChange }) => (
