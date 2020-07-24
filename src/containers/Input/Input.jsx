@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 const InputWrapper = styled.input`
-  padding: 1rem;
+  padding: 0.6rem;
   width: 100%;
   box-sizing: border-box;
 `;

@@ -2,7 +2,7 @@
 
 exports[`Input should be able to call default onChange function when no function is passed 1`] = `
 .c0 {
-  padding: 1rem;
+  padding: 0.6rem;
   width: 100%;
   box-sizing: border-box;
 }
@@ -17,7 +17,7 @@ exports[`Input should be able to call default onChange function when no function
 
 exports[`Input should render 1`] = `
 .c0 {
-  padding: 1rem;
+  padding: 0.6rem;
   width: 100%;
   box-sizing: border-box;
 }
@@ -32,7 +32,7 @@ exports[`Input should render 1`] = `
 
 exports[`Input should render placeholder 1`] = `
 .c0 {
-  padding: 1rem;
+  padding: 0.6rem;
   width: 100%;
   box-sizing: border-box;
 }
@@ -47,7 +47,7 @@ exports[`Input should render placeholder 1`] = `
 
 exports[`Input types should render search input 1`] = `
 .c0 {
-  padding: 1rem;
+  padding: 0.6rem;
   width: 100%;
   box-sizing: border-box;
 }
@@ -62,7 +62,7 @@ exports[`Input types should render search input 1`] = `
 
 exports[`Input types should render text input 1`] = `
 .c0 {
-  padding: 1rem;
+  padding: 0.6rem;
   width: 100%;
   box-sizing: border-box;
 }
