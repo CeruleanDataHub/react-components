@@ -7,9 +7,10 @@ const PopperContainer = styled.div`
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   background-color: white;
-  padding: 20px;
+  padding-top: 20px;
   text-align: center;
   z-index: 1;
+  min-width: 100px;
 
   #arrow {
     position: absolute;
