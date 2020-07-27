@@ -219,6 +219,7 @@ exports[`DataTable should render 1`] = `
 .c0 {
   position: relative;
   width: 100%;
+  border-radius: inherit;
   overflow-x: auto;
   overflow-y: hidden;
   min-height: 0;
@@ -614,6 +615,7 @@ exports[`DataTable should render pagination 1`] = `
 .c0 {
   position: relative;
   width: 100%;
+  border-radius: inherit;
   overflow-x: auto;
   overflow-y: hidden;
   min-height: 0;
