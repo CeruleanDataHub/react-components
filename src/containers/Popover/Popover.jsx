@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { usePopper } from "react-popper-2";
 import styled from "styled-components";
 
@@ -37,10 +37,10 @@ const PopperContainer = styled.div`
   }
 `;
 
-export const Popover = ({ isOpen, containerRef, children }) => {
+export const Popover = ({ isOpen, containerRef, popperRef, children }) => {
   const [arrowRef, setArrowRef] = useState(null);
-  const popoverRef = useRef(null);
-  const { styles } = usePopper(containerRef.current, popoverRef.current, {
+
+  const { styles } = usePopper(containerRef.current, popperRef.current, {
     modifiers: [
       {
         name: "arrow",
@@ -62,7 +62,7 @@ export const Popover = ({ isOpen, containerRef, children }) => {
   }
 
   return (
-    <PopperContainer ref={popoverRef} style={styles.popper}>
+    <PopperContainer ref={popperRef} style={styles.popper}>
       <div ref={setArrowRef} style={styles.arrow} id="arrow" />
       {children}
     </PopperContainer>
@@ -78,6 +78,12 @@ Popover.propTypes = {
     // eslint-disable-next-line no-undef
     PropTypes.shape({ current: PropTypes.instanceOf(Element) })
   ]),
+  /** Reference for popover element */
+  popperRef: PropTypes.oneOfType([
+    PropTypes.func,
+    // eslint-disable-next-line no-undef
+    PropTypes.shape({ current: PropTypes.instanceOf(Element) })
+  ]),
   /** React node */
   children: PropTypes.node
 };
@@ -85,5 +91,6 @@ Popover.propTypes = {
 Popover.defaultProps = {
   isOpen: false,
   containerRef: null,
+  popperRef: null,
   children: ""
 };

@@ -2,6 +2,7 @@ import { withKnobs } from "@storybook/addon-knobs";
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
 
+import { useOutsideClick } from "../../hooks/useOutsideClick";
 import { Icon } from "../Icon/Icon";
 import { Typography } from "../Typography/Typography";
 import { Popover } from "./Popover";
@@ -49,7 +50,9 @@ const ListDivider = styled.div`
 
 export const PopoverStory = () => {
   const containerRef = useRef(null);
+  const popoverRef = useRef(null);
   const [popoverOpen, setPopoverOpen] = useState(false);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   return (
     <div style={{ height: 350 }}>
@@ -61,7 +64,11 @@ export const PopoverStory = () => {
         >
           Toggle popover
         </button>
-        <Popover isOpen={popoverOpen} containerRef={containerRef}>
+        <Popover
+          isOpen={popoverOpen}
+          containerRef={containerRef}
+          popperRef={popoverRef}
+        >
           <PopoverContentList>
             <ListWrapper>
               <PopoverContentListItem>Profile</PopoverContentListItem>
@@ -92,13 +99,14 @@ export const PopoverStory = () => {
 
 export const PopoverOpenStory = () => {
   const containerRef = useRef(null);
+  const popoverRef = useRef(null);
 
   return (
     <div style={{ height: 100 }}>
       <button type="button" ref={containerRef}>
         Popover is open under the button
       </button>
-      <Popover isOpen containerRef={containerRef}>
+      <Popover isOpen containerRef={containerRef} popperRef={popoverRef}>
         Popover
       </Popover>
     </div>

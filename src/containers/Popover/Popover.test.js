@@ -6,13 +6,18 @@ import { Popover } from "./Popover";
 // eslint-disable-next-line react/prop-types
 const Wrapper = ({ isOpen }) => {
   const containerRef = useRef(null);
+  const popoverRef = useRef(null);
 
   return (
     <>
       <button type="button" ref={containerRef}>
         Button
       </button>
-      <Popover isOpen={isOpen} containerRef={containerRef}>
+      <Popover
+        isOpen={isOpen}
+        containerRef={containerRef}
+        popperRef={popoverRef}
+      >
         <div>Popover test content</div>
       </Popover>
     </>
