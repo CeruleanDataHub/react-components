@@ -22,6 +22,7 @@ import { Popover } from "../../containers/Popover/Popover";
 import { Tab } from "../../containers/Tab/Tab";
 import { TreeView } from "../../containers/TreeView/TreeView";
 import { Typography } from "../../containers/Typography/Typography";
+import { useOutsideClick } from "../../hooks/useOutsideClick";
 
 const logins = [
   8052,
@@ -359,6 +360,8 @@ export const StratosphereDemo = () => {
   const [popoverOpen, setPopoverOpen] = useState(false);
 
   const containerRef = useRef(null);
+  const popoverRef = useRef(null);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   return (
     <Container>
@@ -391,7 +394,11 @@ export const StratosphereDemo = () => {
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
                 />
-                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                <Popover
+                  isOpen={popoverOpen}
+                  containerRef={containerRef}
+                  popperRef={popoverRef}
+                >
                   <PopoverContentList>
                     <ListWrapper>
                       <PopoverContentListItem>Profile</PopoverContentListItem>
@@ -520,6 +527,8 @@ export const StratosphereUsersAndRolesDemo = () => {
   const [popoverOpen, setPopoverOpen] = useState(false);
 
   const containerRef = useRef(null);
+  const popoverRef = useRef(null);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   return (
     <Container>
@@ -552,7 +561,11 @@ export const StratosphereUsersAndRolesDemo = () => {
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
                 />
-                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                <Popover
+                  isOpen={popoverOpen}
+                  containerRef={containerRef}
+                  popperRef={popoverRef}
+                >
                   <PopoverContentList>
                     <ListWrapper>
                       <PopoverContentListItem>Profile</PopoverContentListItem>
@@ -643,13 +656,19 @@ export const StratosphereUsersAndRolesDemo = () => {
 const UserDataCell = ({ id }) => {
   const [popoverOpen, setPopoverOpen] = useState(false);
   const moreRef = useRef(null);
+  const popoverRef = useRef(null);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   return (
     <>
       <Button onClick={() => setPopoverOpen(!popoverOpen)} ref={moreRef}>
         <Icon name="more" />
       </Button>
-      <Popover isOpen={popoverOpen} containerRef={moreRef}>
+      <Popover
+        isOpen={popoverOpen}
+        containerRef={moreRef}
+        popperRef={popoverRef}
+      >
         <p>{id}</p>
       </Popover>
     </>
@@ -698,6 +717,8 @@ export const StratosphereManageUsersDemo = () => {
   const [popoverOpen, setPopoverOpen] = useState(false);
 
   const containerRef = useRef(null);
+  const popoverRef = useRef(null);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   return (
     <Container>
@@ -730,7 +751,11 @@ export const StratosphereManageUsersDemo = () => {
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
                 />
-                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                <Popover
+                  isOpen={popoverOpen}
+                  containerRef={containerRef}
+                  popperRef={popoverRef}
+                >
                   <PopoverContentList>
                     <ListWrapper>
                       <PopoverContentListItem>Profile</PopoverContentListItem>
@@ -847,6 +872,8 @@ export const StratosphereManageUsersWithModalDemo = () => {
   const [popoverOpen, setPopoverOpen] = useState(false);
 
   const containerRef = useRef(null);
+  const popoverRef = useRef(null);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   return (
     <Container>
@@ -879,7 +906,11 @@ export const StratosphereManageUsersWithModalDemo = () => {
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
                 />
-                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                <Popover
+                  isOpen={popoverOpen}
+                  containerRef={containerRef}
+                  popperRef={popoverRef}
+                >
                   <p>Popover content</p>
                 </Popover>
               </Cell>
@@ -1048,6 +1079,8 @@ export const StratosphereManageGroupsWithModalDemo = () => {
   const [popoverOpen, setPopoverOpen] = useState(false);
 
   const containerRef = useRef(null);
+  const popoverRef = useRef(null);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   return (
     <Container>
@@ -1080,7 +1113,11 @@ export const StratosphereManageGroupsWithModalDemo = () => {
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
                 />
-                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                <Popover
+                  isOpen={popoverOpen}
+                  containerRef={containerRef}
+                  popperRef={popoverRef}
+                >
                   <p>Popover content</p>
                 </Popover>
               </Cell>
@@ -1253,6 +1290,8 @@ export const StratosphereManageHierarchiesWithModalDemo = () => {
   const [popoverOpen, setPopoverOpen] = useState(false);
 
   const containerRef = useRef(null);
+  const popoverRef = useRef(null);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   return (
     <Container>
@@ -1285,7 +1324,11 @@ export const StratosphereManageHierarchiesWithModalDemo = () => {
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
                 />
-                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                <Popover
+                  isOpen={popoverOpen}
+                  containerRef={containerRef}
+                  popperRef={popoverRef}
+                >
                   <p>Popover content</p>
                 </Popover>
               </Cell>
@@ -1435,6 +1478,8 @@ export const StratosphereManageUsersWithConfirmDemo = () => {
   const [popoverOpen, setPopoverOpen] = useState(false);
 
   const containerRef = useRef(null);
+  const popoverRef = useRef(null);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   return (
     <Container>
@@ -1467,7 +1512,11 @@ export const StratosphereManageUsersWithConfirmDemo = () => {
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
                 />
-                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                <Popover
+                  isOpen={popoverOpen}
+                  containerRef={containerRef}
+                  popperRef={popoverRef}
+                >
                   <p>Popover content</p>
                 </Popover>
               </Cell>
@@ -1552,6 +1601,8 @@ export const StratosphereManageUsersWithDeleteDemo = () => {
   const [popoverOpen, setPopoverOpen] = useState(false);
 
   const containerRef = useRef(null);
+  const popoverRef = useRef(null);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   return (
     <Container>
@@ -1584,7 +1635,11 @@ export const StratosphereManageUsersWithDeleteDemo = () => {
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
                 />
-                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                <Popover
+                  isOpen={popoverOpen}
+                  containerRef={containerRef}
+                  popperRef={popoverRef}
+                >
                   <p>Popover content</p>
                 </Popover>
               </Cell>
@@ -1685,6 +1740,8 @@ export const StratosphereManageRolesDemo = () => {
   const [popoverOpen, setPopoverOpen] = useState(false);
 
   const containerRef = useRef(null);
+  const popoverRef = useRef(null);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   return (
     <Container>
@@ -1717,7 +1774,11 @@ export const StratosphereManageRolesDemo = () => {
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
                 />
-                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                <Popover
+                  isOpen={popoverOpen}
+                  containerRef={containerRef}
+                  popperRef={popoverRef}
+                >
                   <PopoverContentList>
                     <ListWrapper>
                       <PopoverContentListItem>Profile</PopoverContentListItem>
@@ -1832,6 +1893,8 @@ export const StratosphereManageRolesWithModalDemo = () => {
   const [popoverOpen, setPopoverOpen] = useState(false);
 
   const containerRef = useRef(null);
+  const popoverRef = useRef(null);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   return (
     <Container>
@@ -1864,7 +1927,11 @@ export const StratosphereManageRolesWithModalDemo = () => {
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
                 />
-                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                <Popover
+                  isOpen={popoverOpen}
+                  containerRef={containerRef}
+                  popperRef={popoverRef}
+                >
                   <p>Popover content</p>
                 </Popover>
               </Cell>
@@ -1993,6 +2060,8 @@ export const StratosphereSwitchTabsModalDemo = () => {
   const [selectedTab, setSelectedTab] = useState("Roles");
 
   const containerRef = useRef(null);
+  const popoverRef = useRef(null);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   const renderManageRoles = () => (
     <>
@@ -2134,7 +2203,11 @@ export const StratosphereSwitchTabsModalDemo = () => {
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
                 />
-                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                <Popover
+                  isOpen={popoverOpen}
+                  containerRef={containerRef}
+                  popperRef={popoverRef}
+                >
                   <p>Popover content</p>
                 </Popover>
               </Cell>
@@ -2287,6 +2360,8 @@ export const StratosphereManageGroupsDemo = () => {
   const [popoverOpen, setPopoverOpen] = useState(false);
 
   const containerRef = useRef(null);
+  const popoverRef = useRef(null);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   return (
     <Container>
@@ -2319,7 +2394,11 @@ export const StratosphereManageGroupsDemo = () => {
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
                 />
-                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                <Popover
+                  isOpen={popoverOpen}
+                  containerRef={containerRef}
+                  popperRef={popoverRef}
+                >
                   <PopoverContentList>
                     <ListWrapper>
                       <PopoverContentListItem>Profile</PopoverContentListItem>
@@ -2430,6 +2509,8 @@ export const StratosphereManageGroupsAssignUserModalDemo = () => {
   const [modalDropdownOpen, setModalDropdownOpen] = useState(false);
 
   const containerRef = useRef(null);
+  const popoverRef = useRef(null);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   return (
     <Container>
@@ -2462,7 +2543,11 @@ export const StratosphereManageGroupsAssignUserModalDemo = () => {
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
                 />
-                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                <Popover
+                  isOpen={popoverOpen}
+                  containerRef={containerRef}
+                  popperRef={popoverRef}
+                >
                   <p>Popover content</p>
                 </Popover>
               </Cell>
@@ -2618,6 +2703,8 @@ const treeData = [
 const AdditionalNodeProp = (node, path) => {
   const [popoverOpen, setPopoverOpen] = useState(false);
   const moreRef = useRef(null);
+  const popoverRef = useRef(null);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   return (
     <>
@@ -2632,7 +2719,11 @@ const AdditionalNodeProp = (node, path) => {
           >
             <Icon name="more" />
           </Button>
-          <Popover isOpen={popoverOpen} containerRef={moreRef}>
+          <Popover
+            isOpen={popoverOpen}
+            containerRef={moreRef}
+            popperRef={popoverRef}
+          >
             <ul>
               <li>Grant access</li>
               <li>Add devices</li>
@@ -2653,6 +2744,8 @@ export const StratosphereHierarchiesDemo = () => {
   const [hierarchyTreeData, setHierarchyTreeData] = useState(treeData);
 
   const containerRef = useRef(null);
+  const popoverRef = useRef(null);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   const handleGenerateNodeProps = ({ node, path }) => ({
     buttons: [<AdditionalNodeProp node={node} path={path} />]
@@ -2689,7 +2782,11 @@ export const StratosphereHierarchiesDemo = () => {
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
                 />
-                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                <Popover
+                  isOpen={popoverOpen}
+                  containerRef={containerRef}
+                  popperRef={popoverRef}
+                >
                   <PopoverContentList>
                     <ListWrapper>
                       <PopoverContentListItem>Profile</PopoverContentListItem>
@@ -2783,6 +2880,8 @@ export const StratosphereManageGroupsUsersModalDemo = () => {
   const [popoverOpen, setPopoverOpen] = useState(false);
 
   const containerRef = useRef(null);
+  const popoverRef = useRef(null);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   return (
     <Container>
@@ -2815,7 +2914,11 @@ export const StratosphereManageGroupsUsersModalDemo = () => {
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
                 />
-                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                <Popover
+                  isOpen={popoverOpen}
+                  containerRef={containerRef}
+                  popperRef={popoverRef}
+                >
                   <p>Popover content</p>
                 </Popover>
               </Cell>
@@ -2958,6 +3061,8 @@ export const StratosphereManageGroupsHierarchiesModalDemo = () => {
   const [modalDropdownOpen, setModalDropdownOpen] = useState(false);
 
   const containerRef = useRef(null);
+  const popoverRef = useRef(null);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   return (
     <Container>
@@ -2990,7 +3095,11 @@ export const StratosphereManageGroupsHierarchiesModalDemo = () => {
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
                 />
-                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                <Popover
+                  isOpen={popoverOpen}
+                  containerRef={containerRef}
+                  popperRef={popoverRef}
+                >
                   <p>Popover content</p>
                 </Popover>
               </Cell>
@@ -3127,6 +3236,8 @@ export const StratosphereManageGroupsHierarchiesDeleteConfirmModalDemo = () => {
   const [modalDropdownOpen, setModalDropdownOpen] = useState(false);
 
   const containerRef = useRef(null);
+  const popoverRef = useRef(null);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   return (
     <Container>
@@ -3159,7 +3270,11 @@ export const StratosphereManageGroupsHierarchiesDeleteConfirmModalDemo = () => {
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
                 />
-                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                <Popover
+                  isOpen={popoverOpen}
+                  containerRef={containerRef}
+                  popperRef={popoverRef}
+                >
                   <p>Popover content</p>
                 </Popover>
               </Cell>
@@ -3309,6 +3424,8 @@ export const StratosphereDevicesAndDeploymentsDemo = () => {
   const [popoverOpen, setPopoverOpen] = useState(false);
 
   const containerRef = useRef(null);
+  const popoverRef = useRef(null);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   return (
     <Container>
@@ -3341,7 +3458,11 @@ export const StratosphereDevicesAndDeploymentsDemo = () => {
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
                 />
-                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                <Popover
+                  isOpen={popoverOpen}
+                  containerRef={containerRef}
+                  popperRef={popoverRef}
+                >
                   <PopoverContentList>
                     <ListWrapper>
                       <PopoverContentListItem>Profile</PopoverContentListItem>
@@ -3464,6 +3585,8 @@ export const StratosphereManageDevicesDemo = () => {
   const [searchDropdownOpen, setSearchDropdownOpen] = useState(false);
 
   const containerRef = useRef(null);
+  const popoverRef = useRef(null);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   return (
     <Container>
@@ -3496,7 +3619,11 @@ export const StratosphereManageDevicesDemo = () => {
                   onClick={() => setPopoverOpen(!popoverOpen)}
                   ref={containerRef}
                 />
-                <Popover isOpen={popoverOpen} containerRef={containerRef}>
+                <Popover
+                  isOpen={popoverOpen}
+                  containerRef={containerRef}
+                  popperRef={popoverRef}
+                >
                   <PopoverContentList>
                     <ListWrapper>
                       <PopoverContentListItem>Profile</PopoverContentListItem>
