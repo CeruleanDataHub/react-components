@@ -37,10 +37,10 @@ const PopperContainer = styled.div`
   }
 `;
 
-export const Popover = ({ isOpen, containerRef, popperRef, children }) => {
+export const Popover = ({ isOpen, containerRef, popoverRef, children }) => {
   const [arrowRef, setArrowRef] = useState(null);
 
-  const { styles } = usePopper(containerRef.current, popperRef.current, {
+  const { styles } = usePopper(containerRef.current, popoverRef.current, {
     modifiers: [
       {
         name: "arrow",
@@ -62,7 +62,7 @@ export const Popover = ({ isOpen, containerRef, popperRef, children }) => {
   }
 
   return (
-    <PopperContainer ref={popperRef} style={styles.popper}>
+    <PopperContainer ref={popoverRef} style={styles.popper}>
       <div ref={setArrowRef} style={styles.arrow} id="arrow" />
       {children}
     </PopperContainer>
@@ -79,7 +79,7 @@ Popover.propTypes = {
     PropTypes.shape({ current: PropTypes.instanceOf(Element) })
   ]),
   /** Reference for popover element */
-  popperRef: PropTypes.oneOfType([
+  popoverRef: PropTypes.oneOfType([
     PropTypes.func,
     // eslint-disable-next-line no-undef
     PropTypes.shape({ current: PropTypes.instanceOf(Element) })
@@ -91,6 +91,6 @@ Popover.propTypes = {
 Popover.defaultProps = {
   isOpen: false,
   containerRef: null,
-  popperRef: null,
+  popoverRef: null,
   children: ""
 };

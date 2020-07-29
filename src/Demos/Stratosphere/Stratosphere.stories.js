@@ -397,7 +397,7 @@ export const StratosphereDemo = () => {
                 <Popover
                   isOpen={popoverOpen}
                   containerRef={containerRef}
-                  popperRef={popoverRef}
+                  popoverRef={popoverRef}
                 >
                   <PopoverContentList>
                     <ListWrapper>
@@ -564,7 +564,7 @@ export const StratosphereUsersAndRolesDemo = () => {
                 <Popover
                   isOpen={popoverOpen}
                   containerRef={containerRef}
-                  popperRef={popoverRef}
+                  popoverRef={popoverRef}
                 >
                   <PopoverContentList>
                     <ListWrapper>
@@ -667,7 +667,7 @@ const UserDataCell = ({ id }) => {
       <Popover
         isOpen={popoverOpen}
         containerRef={moreRef}
-        popperRef={popoverRef}
+        popoverRef={popoverRef}
       >
         <p>{id}</p>
       </Popover>
@@ -754,7 +754,7 @@ export const StratosphereManageUsersDemo = () => {
                 <Popover
                   isOpen={popoverOpen}
                   containerRef={containerRef}
-                  popperRef={popoverRef}
+                  popoverRef={popoverRef}
                 >
                   <PopoverContentList>
                     <ListWrapper>
@@ -909,7 +909,7 @@ export const StratosphereManageUsersWithModalDemo = () => {
                 <Popover
                   isOpen={popoverOpen}
                   containerRef={containerRef}
-                  popperRef={popoverRef}
+                  popoverRef={popoverRef}
                 >
                   <p>Popover content</p>
                 </Popover>
@@ -1116,7 +1116,7 @@ export const StratosphereManageGroupsWithModalDemo = () => {
                 <Popover
                   isOpen={popoverOpen}
                   containerRef={containerRef}
-                  popperRef={popoverRef}
+                  popoverRef={popoverRef}
                 >
                   <p>Popover content</p>
                 </Popover>
@@ -1327,7 +1327,7 @@ export const StratosphereManageHierarchiesWithModalDemo = () => {
                 <Popover
                   isOpen={popoverOpen}
                   containerRef={containerRef}
-                  popperRef={popoverRef}
+                  popoverRef={popoverRef}
                 >
                   <p>Popover content</p>
                 </Popover>
@@ -1515,7 +1515,7 @@ export const StratosphereManageUsersWithConfirmDemo = () => {
                 <Popover
                   isOpen={popoverOpen}
                   containerRef={containerRef}
-                  popperRef={popoverRef}
+                  popoverRef={popoverRef}
                 >
                   <p>Popover content</p>
                 </Popover>
@@ -1638,7 +1638,7 @@ export const StratosphereManageUsersWithDeleteDemo = () => {
                 <Popover
                   isOpen={popoverOpen}
                   containerRef={containerRef}
-                  popperRef={popoverRef}
+                  popoverRef={popoverRef}
                 >
                   <p>Popover content</p>
                 </Popover>
@@ -1777,7 +1777,7 @@ export const StratosphereManageRolesDemo = () => {
                 <Popover
                   isOpen={popoverOpen}
                   containerRef={containerRef}
-                  popperRef={popoverRef}
+                  popoverRef={popoverRef}
                 >
                   <PopoverContentList>
                     <ListWrapper>
@@ -1930,7 +1930,7 @@ export const StratosphereManageRolesWithModalDemo = () => {
                 <Popover
                   isOpen={popoverOpen}
                   containerRef={containerRef}
-                  popperRef={popoverRef}
+                  popoverRef={popoverRef}
                 >
                   <p>Popover content</p>
                 </Popover>
@@ -2206,7 +2206,7 @@ export const StratosphereSwitchTabsModalDemo = () => {
                 <Popover
                   isOpen={popoverOpen}
                   containerRef={containerRef}
-                  popperRef={popoverRef}
+                  popoverRef={popoverRef}
                 >
                   <p>Popover content</p>
                 </Popover>
@@ -2397,7 +2397,7 @@ export const StratosphereManageGroupsDemo = () => {
                 <Popover
                   isOpen={popoverOpen}
                   containerRef={containerRef}
-                  popperRef={popoverRef}
+                  popoverRef={popoverRef}
                 >
                   <PopoverContentList>
                     <ListWrapper>
@@ -2546,7 +2546,7 @@ export const StratosphereManageGroupsAssignUserModalDemo = () => {
                 <Popover
                   isOpen={popoverOpen}
                   containerRef={containerRef}
-                  popperRef={popoverRef}
+                  popoverRef={popoverRef}
                 >
                   <p>Popover content</p>
                 </Popover>
@@ -2722,7 +2722,7 @@ const AdditionalNodeProp = (node, path) => {
           <Popover
             isOpen={popoverOpen}
             containerRef={moreRef}
-            popperRef={popoverRef}
+            popoverRef={popoverRef}
           >
             <ul>
               <li>Grant access</li>
@@ -2785,7 +2785,7 @@ export const StratosphereHierarchiesDemo = () => {
                 <Popover
                   isOpen={popoverOpen}
                   containerRef={containerRef}
-                  popperRef={popoverRef}
+                  popoverRef={popoverRef}
                 >
                   <PopoverContentList>
                     <ListWrapper>
@@ -2917,7 +2917,7 @@ export const StratosphereManageGroupsUsersModalDemo = () => {
                 <Popover
                   isOpen={popoverOpen}
                   containerRef={containerRef}
-                  popperRef={popoverRef}
+                  popoverRef={popoverRef}
                 >
                   <p>Popover content</p>
                 </Popover>
@@ -3098,7 +3098,7 @@ export const StratosphereManageGroupsHierarchiesModalDemo = () => {
                 <Popover
                   isOpen={popoverOpen}
                   containerRef={containerRef}
-                  popperRef={popoverRef}
+                  popoverRef={popoverRef}
                 >
                   <p>Popover content</p>
                 </Popover>
@@ -3273,7 +3273,7 @@ export const StratosphereManageGroupsHierarchiesDeleteConfirmModalDemo = () => {
                 <Popover
                   isOpen={popoverOpen}
                   containerRef={containerRef}
-                  popperRef={popoverRef}
+                  popoverRef={popoverRef}
                 >
                   <p>Popover content</p>
                 </Popover>
@@ -3461,7 +3461,7 @@ export const StratosphereDevicesAndDeploymentsDemo = () => {
                 <Popover
                   isOpen={popoverOpen}
                   containerRef={containerRef}
-                  popperRef={popoverRef}
+                  popoverRef={popoverRef}
                 >
                   <PopoverContentList>
                     <ListWrapper>
@@ -3622,7 +3622,7 @@ export const StratosphereManageDevicesDemo = () => {
                 <Popover
                   isOpen={popoverOpen}
                   containerRef={containerRef}
-                  popperRef={popoverRef}
+                  popoverRef={popoverRef}
                 >
                   <PopoverContentList>
                     <ListWrapper>

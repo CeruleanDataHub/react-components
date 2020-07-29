@@ -16,7 +16,7 @@ const Wrapper = ({ isOpen }) => {
       <Popover
         isOpen={isOpen}
         containerRef={containerRef}
-        popperRef={popoverRef}
+        popoverRef={popoverRef}
       >
         <div>Popover test content</div>
       </Popover>

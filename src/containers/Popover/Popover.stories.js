@@ -67,7 +67,7 @@ export const PopoverStory = () => {
         <Popover
           isOpen={popoverOpen}
           containerRef={containerRef}
-          popperRef={popoverRef}
+          popoverRef={popoverRef}
         >
           <PopoverContentList>
             <ListWrapper>
@@ -106,7 +106,7 @@ export const PopoverOpenStory = () => {
       <button type="button" ref={containerRef}>
         Popover is open under the button
       </button>
-      <Popover isOpen containerRef={containerRef} popperRef={popoverRef}>
+      <Popover isOpen containerRef={containerRef} popoverRef={popoverRef}>
         Popover
       </Popover>
     </div>
