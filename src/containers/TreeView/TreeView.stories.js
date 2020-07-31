@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 
+import { useOutsideClick } from "../../hooks/useOutsideClick";
 import { Button } from "../Button/Button";
 import { Icon } from "../Icon/Icon";
 import { Popover } from "../Popover/Popover";
@@ -55,6 +56,8 @@ export const TreeViewDraggableStory = () => {
 const AdditionalNodeProp = path => {
   const [popoverOpen, setPopoverOpen] = useState(false);
   const moreRef = useRef(null);
+  const popoverRef = useRef(null);
+  useOutsideClick(popoverRef, () => setPopoverOpen(false));
 
   return (
     <>
@@ -65,7 +68,11 @@ const AdditionalNodeProp = path => {
       >
         <Icon name="more" />
       </Button>
-      <Popover isOpen={popoverOpen} containerRef={moreRef}>
+      <Popover
+        isOpen={popoverOpen}
+        containerRef={moreRef}
+        popoverRef={popoverRef}
+      >
         <p>
           Path:&nbsp;
           {path.path}

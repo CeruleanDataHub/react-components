@@ -9,7 +9,7 @@ export default {
   component: Modal
 };
 
-const ModalToggle = () => {
+export const ModalStory = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleModal = () => {
@@ -17,19 +17,15 @@ const ModalToggle = () => {
   };
 
   return (
-    <Typography fontFamily="openSans">
-      <Button onClick={toggleModal} color="blue">
-        Open modal
-      </Button>
-      <Modal isOpen={isOpen} onBackgroundClick={toggleModal}>
-        <p>Modal content</p>
-      </Modal>
-    </Typography>
+    <div style={{ height: 500 }}>
+      <Typography fontFamily="openSans">
+        <Button onClick={toggleModal} color="blue">
+          Open modal
+        </Button>
+        <Modal isOpen={isOpen} onBackgroundClick={toggleModal}>
+          <p>Modal content</p>
+        </Modal>
+      </Typography>
+    </div>
   );
 };
-
-export const ModalToggleStory = () => (
-  <div style={{ minHeight: 500 }}>
-    <ModalToggle />
-  </div>
-);

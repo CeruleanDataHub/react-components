@@ -17,7 +17,7 @@ Input.propTypes = {
   type: PropTypes.oneOf(["text", "search"]),
   /** Placeholder text */
   placeholder: PropTypes.string,
-  /** onChangehandler function */
+  /** onChange handler function */
   onChange: PropTypes.func
 };
 

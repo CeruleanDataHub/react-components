@@ -37,7 +37,7 @@ TreeView.propTypes = {
   ),
   /** Handler function */
   onChange: PropTypes.func,
-  /** Is the tree draggable or not */
+  /** Determines if the items can be dragged or not */
   canDrag: PropTypes.bool,
   /** Used for rendering additional node props, for example buttons */
   generateNodeProps: PropTypes.func
