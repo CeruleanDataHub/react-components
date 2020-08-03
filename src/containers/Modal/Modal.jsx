@@ -9,6 +9,7 @@ const StyledModal = ModalWrapper.styled`
   padding: 1rem;
   box-shadow: 0 0 18px -3px rgba(27, 27, 27, 0.8);
   width: 75%;
+  border: 1px solid red;
 `;
 
 export const Modal = ({ children, isOpen, onBackgroundClick }) => (

@@ -37,11 +37,15 @@ export const names = [
   "arrow-left-circle",
   "search",
   "more",
+  "more-alt",
   "plus",
   "trash",
   "lock",
   "plane",
-  "caravan"
+  "caravan",
+  "chef-hat",
+  "network",
+  "vector"
 ];
 export const iconNameProps = PropTypes.oneOf(names);
 

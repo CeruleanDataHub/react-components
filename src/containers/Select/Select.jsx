@@ -1,11 +1,8 @@
 import PropTypes from "prop-types";
-import React from "react";
+import React, { forwardRef } from "react";
 import styled from "styled-components";
 
-import selectArrow from "../../assets/images/chevron-down.svg";
-
 const SelectContainer = styled.select`
-  appearance: none;
   font-family: inherit;
   display: flex;
   width: 100%;
@@ -15,26 +12,22 @@ const SelectContainer = styled.select`
   border-radius: 4px;
   padding: 0 3em 0 1.25em;
   cursor: pointer;
-  background-image: url(${selectArrow});
-  background-size: 1em;
-  background-repeat: no-repeat;
-  background-position: right 1em top 50%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  color: #999;
+  color: #000;
   line-height: 1.5;
 `;
 
-export const Select = ({ onChange, items, selectedOption }) => (
-  <SelectContainer onChange={onChange} value={selectedOption}>
+export const Select = forwardRef(({ onChange, items, selectedOption }, ref) => (
+  <SelectContainer onChange={onChange} value={selectedOption} ref={ref}>
     {items.map(item => (
       <option className="select" value={item.value} key={item.id}>
         {item.value}
       </option>
     ))}
   </SelectContainer>
-);
+));
 
 Select.propTypes = {
   /** Currently selected option */

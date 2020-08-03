@@ -52,16 +52,21 @@ const DropdownTextWrapped = styled(DropdownText)`
   overflow: hidden;
 `;
 
-export const Dropdown = ({ isOpen, label, onClick, children }) => (
-  <Typography fontFamily="openSans">
-    <Container>
-      <Button onClick={onClick} as={DropdownContainer}>
-        <DropdownTextWrapped>{label}</DropdownTextWrapped>
-        <Icon name={isOpen ? "chevron-up" : "chevron-down"} as={DropdownText} />
-      </Button>
-      {isOpen && <ItemList>{children}</ItemList>}
-    </Container>
-  </Typography>
+export const Dropdown = React.forwardRef(
+  ({ isOpen, label, onClick, children }, ref) => (
+    <Typography fontFamily="openSans">
+      <Container ref={ref}>
+        <Button onClick={onClick} as={DropdownContainer}>
+          <DropdownTextWrapped>{label}</DropdownTextWrapped>
+          <Icon
+            name={isOpen ? "chevron-up" : "chevron-down"}
+            as={DropdownText}
+          />
+        </Button>
+        {isOpen && <ItemList>{children}</ItemList>}
+      </Container>
+    </Typography>
+  )
 );
 
 Dropdown.propTypes = {
