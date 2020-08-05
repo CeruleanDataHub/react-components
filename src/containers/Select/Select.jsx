@@ -19,23 +19,52 @@ const SelectContainer = styled.select`
   line-height: 1.5;
 `;
 
-export const Select = forwardRef(({ onChange, items, selectedOption }, ref) => (
-  <SelectContainer onChange={onChange} value={selectedOption} ref={ref}>
-    {items.map(item => (
-      <option className="select" value={item.value} key={item.id}>
-        {item.value}
-      </option>
-    ))}
-  </SelectContainer>
-));
+const mapOptions = options =>
+  options.map(({ id, value }) => (
+    <option id={id} value={value} key={id}>
+      {value}
+    </option>
+  ));
+
+const mapOptionGroups = optionGroups =>
+  optionGroups.map(({ group, children }) => (
+    <optgroup label={group} key={group}>
+      {mapOptions(children)}
+    </optgroup>
+  ));
+
+export const Select = forwardRef(({ onChange, items, selectedOption }, ref) => {
+  const isOptionsGroup = items.some(item =>
+    Object.keys(item).includes("group")
+  );
+
+  return (
+    <SelectContainer onChange={onChange} value={selectedOption} ref={ref}>
+      {isOptionsGroup ? mapOptionGroups(items) : mapOptions(items)}
+    </SelectContainer>
+  );
+});
 
 Select.propTypes = {
   /** Currently selected option */
   selectedOption: PropTypes.string,
   /** Select options */
-  items: PropTypes.arrayOf(
-    PropTypes.shape({ id: PropTypes.string, value: PropTypes.string })
-  ),
+  items: PropTypes.oneOfType([
+    PropTypes.arrayOf(
+      PropTypes.shape({ id: PropTypes.string, value: PropTypes.string })
+    ),
+    PropTypes.arrayOf(
+      PropTypes.shape({
+        group: PropTypes.string,
+        children: PropTypes.arrayOf(
+          PropTypes.shape({
+            id: PropTypes.string,
+            value: PropTypes.string
+          })
+        )
+      })
+    )
+  ]),
   /** onChange handler function */
   onChange: PropTypes.func
 };

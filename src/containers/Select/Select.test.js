@@ -22,6 +22,33 @@ describe("Select", () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it("should render option groups", () => {
+    const items = [
+      {
+        group: "Group 1",
+        children: [
+          { id: "1", value: "Label 1" },
+          { id: "2", value: "Label 2" }
+        ]
+      },
+      {
+        group: "Group 2",
+        children: [
+          {
+            id: "3",
+            value:
+              "Extra long line of text which will overflow the select container."
+          }
+        ]
+      }
+    ];
+    const component = renderer.create(
+      <Select items={items} selectedOption="Label 1" />
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
   it("should call onChange handler", () => {
     const handleChange = jest.fn();
     const component = mount(
