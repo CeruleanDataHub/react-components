@@ -1,11 +1,8 @@
 import PropTypes from "prop-types";
-import React from "react";
+import React, { forwardRef } from "react";
 import styled from "styled-components";
 
-import selectArrow from "../../assets/images/chevron-down.svg";
-
 const SelectContainer = styled.select`
-  appearance: none;
   font-family: inherit;
   display: flex;
   width: 100%;
@@ -15,34 +12,59 @@ const SelectContainer = styled.select`
   border-radius: 4px;
   padding: 0 3em 0 1.25em;
   cursor: pointer;
-  background-image: url(${selectArrow});
-  background-size: 1em;
-  background-repeat: no-repeat;
-  background-position: right 1em top 50%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  color: #999;
+  color: #000;
   line-height: 1.5;
 `;
 
-export const Select = ({ onChange, items, selectedOption }) => (
-  <SelectContainer onChange={onChange} value={selectedOption}>
-    {items.map(item => (
-      <option className="select" value={item.value} key={item.id}>
-        {item.value}
-      </option>
-    ))}
-  </SelectContainer>
-);
+const mapOptions = options =>
+  options.map(({ id, value }) => (
+    <option id={id} value={value} key={id}>
+      {value}
+    </option>
+  ));
+
+const mapOptionGroups = optionGroups =>
+  optionGroups.map(({ group, children }) => (
+    <optgroup label={group} key={group}>
+      {mapOptions(children)}
+    </optgroup>
+  ));
+
+export const Select = forwardRef(({ onChange, items, selectedOption }, ref) => {
+  const isOptionsGroup = items.some(item =>
+    Object.keys(item).includes("group")
+  );
+
+  return (
+    <SelectContainer onChange={onChange} value={selectedOption} ref={ref}>
+      {isOptionsGroup ? mapOptionGroups(items) : mapOptions(items)}
+    </SelectContainer>
+  );
+});
 
 Select.propTypes = {
   /** Currently selected option */
   selectedOption: PropTypes.string,
   /** Select options */
-  items: PropTypes.arrayOf(
-    PropTypes.shape({ id: PropTypes.string, value: PropTypes.string })
-  ),
+  items: PropTypes.oneOfType([
+    PropTypes.arrayOf(
+      PropTypes.shape({ id: PropTypes.string, value: PropTypes.string })
+    ),
+    PropTypes.arrayOf(
+      PropTypes.shape({
+        group: PropTypes.string,
+        children: PropTypes.arrayOf(
+          PropTypes.shape({
+            id: PropTypes.string,
+            value: PropTypes.string
+          })
+        )
+      })
+    )
+  ]),
   /** onChange handler function */
   onChange: PropTypes.func
 };
