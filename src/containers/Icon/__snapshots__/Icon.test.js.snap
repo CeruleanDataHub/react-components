@@ -50,6 +50,16 @@ exports[`Icon should render icon checkmark 1`] = `
 />
 `;
 
+exports[`Icon should render icon chef-hat 1`] = `
+.c0 {
+  text-align: center;
+}
+
+<span
+  className="c0 lni lni-chef-hat"
+/>
+`;
+
 exports[`Icon should render icon chevron-down 1`] = `
 .c0 {
   text-align: center;
@@ -210,6 +220,26 @@ exports[`Icon should render icon more 1`] = `
 />
 `;
 
+exports[`Icon should render icon more-alt 1`] = `
+.c0 {
+  text-align: center;
+}
+
+<span
+  className="c0 lni lni-more-alt"
+/>
+`;
+
+exports[`Icon should render icon network 1`] = `
+.c0 {
+  text-align: center;
+}
+
+<span
+  className="c0 lni lni-network"
+/>
+`;
+
 exports[`Icon should render icon plane 1`] = `
 .c0 {
   text-align: center;
@@ -277,6 +307,16 @@ exports[`Icon should render icon users 1`] = `
 
 <span
   className="c0 lni lni-users"
+/>
+`;
+
+exports[`Icon should render icon vector 1`] = `
+.c0 {
+  text-align: center;
+}
+
+<span
+  className="c0 lni lni-vector"
 />
 `;
 
