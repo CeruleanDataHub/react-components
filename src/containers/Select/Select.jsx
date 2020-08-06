@@ -20,9 +20,9 @@ const SelectContainer = styled.select`
 `;
 
 const mapOptions = options =>
-  options.map(({ id, value }) => (
+  options.map(({ id, value, name }) => (
     <option id={id} value={value} key={id}>
-      {value}
+      {name || value}
     </option>
   ));
 
@@ -51,7 +51,11 @@ Select.propTypes = {
   /** Select options */
   items: PropTypes.oneOfType([
     PropTypes.arrayOf(
-      PropTypes.shape({ id: PropTypes.string, value: PropTypes.string })
+      PropTypes.shape({
+        id: PropTypes.string,
+        value: PropTypes.string,
+        name: PropTypes.string
+      })
     ),
     PropTypes.arrayOf(
       PropTypes.shape({
@@ -59,7 +63,8 @@ Select.propTypes = {
         children: PropTypes.arrayOf(
           PropTypes.shape({
             id: PropTypes.string,
-            value: PropTypes.string
+            value: PropTypes.string,
+            name: PropTypes.string
           })
         )
       })
