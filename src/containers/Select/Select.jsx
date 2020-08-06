@@ -20,11 +20,15 @@ const SelectContainer = styled.select`
 `;
 
 const mapOptions = options =>
-  options.map(({ id, value, name }) => (
-    <option id={id} value={value} key={id}>
-      {name || value}
-    </option>
-  ));
+  options.map(({ id, value, name, indentLevel }) => {
+    const spaces = new Array(indentLevel || 0).fill("\u00A0").join("");
+    return (
+      <option id={id} value={value} key={id}>
+        {spaces}
+        {name || value}
+      </option>
+    );
+  });
 
 const mapOptionGroups = optionGroups =>
   optionGroups.map(({ group, children }) => (
@@ -54,7 +58,8 @@ Select.propTypes = {
       PropTypes.shape({
         id: PropTypes.string,
         value: PropTypes.string,
-        name: PropTypes.string
+        name: PropTypes.string,
+        indentLevel: PropTypes.number
       })
     ),
     PropTypes.arrayOf(
@@ -64,7 +69,8 @@ Select.propTypes = {
           PropTypes.shape({
             id: PropTypes.string,
             value: PropTypes.string,
-            name: PropTypes.string
+            name: PropTypes.string,
+            indentLevel: PropTypes.number
           })
         )
       })
