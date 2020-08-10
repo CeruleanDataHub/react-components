@@ -36,8 +36,8 @@ describe("Select", () => {
         group: "Group 1",
         children: [
           { id: "1", value: "Label 1" },
-          { id: "2", value: "Label 2" },
-        ],
+          { id: "2", value: "Label 2" }
+        ]
       },
       {
         group: "Group 2",
@@ -45,10 +45,10 @@ describe("Select", () => {
           {
             id: "3",
             value:
-              "Extra long line of text which will overflow the select container.",
-          },
-        ],
-      },
+              "Extra long line of text which will overflow the select container."
+          }
+        ]
+      }
     ];
     const component = renderer.create(
       <Select items={items} selectedOption="Label 1" />
@@ -71,5 +71,13 @@ describe("Select", () => {
     component.simulate("change");
 
     expect(toJson(component)).toMatchSnapshot();
+  });
+
+  it("should render the option with spaces", () => {
+    const component = renderer.create(
+      <Select items={[{ id: "1", indentLevel: 2, value: "test" }]} />
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });
