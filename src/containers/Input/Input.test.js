@@ -1,6 +1,7 @@
 import { shallow } from "enzyme";
 import React from "react";
 import renderer from "react-test-renderer";
+import styled from "styled-components";
 
 import { Input } from "./Input";
 
@@ -31,6 +32,18 @@ describe("Input", () => {
     const component = renderer.create(<Input placeholder="test" />);
     const tree = component.toJSON();
     component.root.props.onChange();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("should render input with extended styles", () => {
+    const StyledInput = styled.input`
+      background: papayawhip;
+      color: limegreen;
+    `;
+    const component = renderer.create(
+      <Input placeholder="test" as={StyledInput} />
+    );
+    const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
 

@@ -30,6 +30,26 @@ exports[`Input should render 1`] = `
 />
 `;
 
+exports[`Input should render input with extended styles 1`] = `
+.c1 {
+  padding: 0.6rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c0 {
+  background: papayawhip;
+  color: limegreen;
+}
+
+<input
+  className="c0 c1"
+  onChange={[Function]}
+  placeholder="test"
+  type="text"
+/>
+`;
+
 exports[`Input should render placeholder 1`] = `
 .c0 {
   padding: 0.6rem;

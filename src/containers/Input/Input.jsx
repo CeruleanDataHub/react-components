@@ -8,8 +8,13 @@ const InputWrapper = styled.input`
   box-sizing: border-box;
 `;
 
-export const Input = ({ type, placeholder, onChange }) => (
-  <InputWrapper type={type} onChange={onChange} placeholder={placeholder} />
+export const Input = ({ type, placeholder, onChange, as }) => (
+  <InputWrapper
+    type={type}
+    onChange={onChange}
+    placeholder={placeholder}
+    as={as}
+  />
 );
 
 Input.propTypes = {
@@ -18,11 +23,18 @@ Input.propTypes = {
   /** Placeholder text */
   placeholder: PropTypes.string,
   /** onChange handler function */
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
+  /** Extend styles, property is from styled components */
+  as: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.string,
+    PropTypes.shape({ render: PropTypes.func.isRequired })
+  ])
 };
 
 Input.defaultProps = {
   type: "text",
   placeholder: "",
-  onChange: () => {}
+  onChange: () => {},
+  as: null
 };
