@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import React, { forwardRef, useState } from "react";
+import React, { forwardRef } from "react";
 import styled from "styled-components";
 
 const SelectContainer = styled.select`
