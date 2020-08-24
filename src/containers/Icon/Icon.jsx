@@ -6,12 +6,19 @@ const IconStyled = styled.span`
   text-align: center;
 `;
 
+const CustomIcon = styled.img`
+  height: 2em;
+`;
+
 /**
  * Icon library is based on https://lineicons.com/icons/
  */
-export const Icon = ({ name, as }) => (
-  <IconStyled className={["lni", `lni-${name}`]} as={as} />
-);
+export const Icon = ({ name, customIcon, as }) =>
+  customIcon ? (
+    <CustomIcon src={customIcon} />
+  ) : (
+    <IconStyled className={["lni", `lni-${name}`]} as={as} />
+  );
 
 export const names = [
   "home",
@@ -52,6 +59,8 @@ export const iconNameProps = PropTypes.oneOf(names);
 Icon.propTypes = {
   /** Icon name */
   name: PropTypes.oneOf(names),
+  /** Custom icon if icon library does not have a suitable one */
+  customIcon: PropTypes.node,
   /** Extend styles, property is from styled components */
   as: PropTypes.oneOfType([
     PropTypes.func,
@@ -62,5 +71,6 @@ Icon.propTypes = {
 
 Icon.defaultProps = {
   name: "",
+  customIcon: null,
   as: null
 };
