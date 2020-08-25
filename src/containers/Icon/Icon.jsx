@@ -21,6 +21,7 @@ export const Icon = ({ name, customIcon, as }) =>
   );
 
 export const names = [
+  "",
   "home",
   "user",
   "users",
@@ -54,13 +55,14 @@ export const names = [
   "network",
   "vector"
 ];
+
 export const iconNameProps = PropTypes.oneOf(names);
 
 Icon.propTypes = {
   /** Icon name */
   name: PropTypes.oneOf(names),
   /** Custom icon if icon library does not have a suitable one */
-  customIcon: PropTypes.node,
+  customIcon: PropTypes.shape({}),
   /** Extend styles, property is from styled components */
   as: PropTypes.oneOfType([
     PropTypes.func,
