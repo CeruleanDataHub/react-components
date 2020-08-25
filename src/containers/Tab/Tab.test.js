@@ -3,6 +3,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 
 import { Tab } from "./Tab";
+import { Icon } from "../Icon/Icon";
 
 describe("Tab", () => {
   it("should render correctly", () => {
@@ -33,5 +34,11 @@ describe("Tab", () => {
     component.root.props.onClick();
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
+  });
+
+  it("should render icon", () => {
+    const component = mount(<Tab icon={<Icon name="chef-hat" />} />);
+
+    expect(component.contains(<Icon name="chef-hat" />)).toBe(true);
   });
 });

@@ -6,7 +6,6 @@ import { Typography } from "../Typography/Typography";
 
 const Container = styled.div`
   display: flex;
-  justify-content: center;
   padding: 0.5em 1.5em;
   background: ${({ active }) => (active ? "white" : "#ddd")};
   border: 1px solid black;
@@ -14,6 +13,8 @@ const Container = styled.div`
   cursor: pointer;
   margin-right: 1em;
   border-radius: 3px 3px 0 0;
+  align-items: center;
+  justify-content: space-evenly;
 `;
 
 const Text = styled.span`
@@ -22,9 +23,11 @@ const Text = styled.span`
   user-select: none;
 `;
 
-export const Tab = ({ text, active, onClick }) => (
+export const Tab = ({ text, icon, active, onClick }) => (
   <Typography fontFamily="openSans">
     <Container active={active} onClick={onClick}>
+      {icon && icon}
+
       <Text>{text}</Text>
     </Container>
   </Typography>
@@ -33,6 +36,8 @@ export const Tab = ({ text, active, onClick }) => (
 Tab.propTypes = {
   /** Text of the tab */
   text: PropTypes.string,
+  /** Icon of the tab */
+  icon: PropTypes.node,
   /** Is the tab selected or not */
   active: PropTypes.bool,
   /** Handler function */
@@ -41,6 +46,7 @@ Tab.propTypes = {
 
 Tab.defaultProps = {
   text: "",
+  icon: null,
   active: false,
   onClick: () => null
 };

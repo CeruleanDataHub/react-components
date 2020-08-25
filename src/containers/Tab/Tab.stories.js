@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 import { Tab } from "./Tab";
+import { Icon } from "../Icon/Icon";
 
 export default {
   title: "Tab",
@@ -48,5 +49,15 @@ export const TabActiveStory = () => (
 export const MultipleTabsStory = () => (
   <div>
     <Tabs />
+  </div>
+);
+
+export const TabWithIconStory = () => (
+  <div style={{ width: 200 }}>
+    <Tab
+      text="Tab with icon"
+      onClick={action("tab-clicked")}
+      icon={<Icon name="chef-hat" />}
+    />
   </div>
 );

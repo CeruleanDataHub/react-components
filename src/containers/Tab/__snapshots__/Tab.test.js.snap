@@ -13,10 +13,6 @@ exports[`Tab should call default props onClick function when no onClick property
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   padding: 0.5em 1.5em;
   background: #ddd;
   border: 1px solid black;
@@ -24,6 +20,14 @@ exports[`Tab should call default props onClick function when no onClick property
   cursor: pointer;
   margin-right: 1em;
   border-radius: 3px 3px 0 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 .c2 {
@@ -66,10 +70,6 @@ exports[`Tab should render correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   padding: 0.5em 1.5em;
   background: #ddd;
   border: 1px solid black;
@@ -77,6 +77,14 @@ exports[`Tab should render correctly 1`] = `
   cursor: pointer;
   margin-right: 1em;
   border-radius: 3px 3px 0 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 .c2 {
@@ -119,10 +127,6 @@ exports[`Tab should render correctly in active state 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   padding: 0.5em 1.5em;
   background: white;
   border: 1px solid black;
@@ -130,6 +134,14 @@ exports[`Tab should render correctly in active state 1`] = `
   cursor: pointer;
   margin-right: 1em;
   border-radius: 3px 3px 0 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 .c2 {
