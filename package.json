@@ -1,6 +1,6 @@
 {
   "name": "@ceruleandatahub/react-components",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "author": "Antti Rintala <antti.rintala@houston-inc.com>",
   "main": "dist/index.js",
   "files": [
@@ -27,7 +27,7 @@
     "react-moment-proptypes": "^1.7.0",
     "react-popper": "^2.2.3",
     "react-popper-2": "npm:react-popper@^2.2.3",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^3.4.3",
     "react-sortable-tree": "^2.8.0",
     "styled-css-grid": "^1.2.1",
     "styled-normalize": "^8.0.7",
