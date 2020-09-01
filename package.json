@@ -1,6 +1,6 @@
 {
   "name": "@ceruleandatahub/react-components",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "author": "Antti Rintala <antti.rintala@houston-inc.com>",
   "main": "dist/index.js",
   "files": [
