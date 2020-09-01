@@ -26,6 +26,13 @@ const series = [
   { name: "Humidity", data: [29, 39, 26, 53, 9, 46, 31] }
 ];
 
+const options = { plotOptions: { series: { dataLabels: { enabled: false } } } };
+
 export const LineStory = () => (
-  <Line title="Sauna histogram as line" xAxis={xAxis} series={series} />
+  <Line
+    title="Sauna histogram as line"
+    xAxis={xAxis}
+    series={series}
+    options={options}
+  />
 );
