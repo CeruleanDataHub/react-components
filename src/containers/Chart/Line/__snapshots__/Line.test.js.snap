@@ -1,9 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Line should render chart with simple data 1`] = `
+exports[`Line renders with simple data 1`] = `
 <Chart
   containerProps={null}
   options={Object {}}
+  series={
+    Array [
+      Object {
+        "data": Array [
+          10,
+          15,
+          20,
+          25,
+          15,
+          20,
+          15,
+        ],
+        "name": "temperature",
+      },
+    ]
+  }
+  title=""
+  type="line"
+  xAxis={
+    Array [
+      Object {
+        "categories": Array [
+          "monday",
+          "tuesday",
+          "wednesday",
+          "thursday",
+          "friday",
+          "saturday",
+          "sunday",
+        ],
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Line renders without legend 1`] = `
+<Chart
+  containerProps={null}
+  options={
+    Object {
+      "legend": Object {
+        "enabled": false,
+      },
+    }
+  }
   series={
     Array [
       Object {

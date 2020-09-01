@@ -26,13 +26,17 @@ const series = [
   { name: "Humidity", data: [29, 39, 26, 53, 9, 46, 31] }
 ];
 
-const options = { plotOptions: { series: { dataLabels: { enabled: false } } } };
+const legendDisabledOptions = { legend: { enabled: false } };
 
 export const LineStory = () => (
+  <Line title="Sauna histogram as line" xAxis={xAxis} series={series} />
+);
+
+export const LineLegendDisabledStory = () => (
   <Line
-    title="Sauna histogram as line"
+    title="Sauna temperature"
     xAxis={xAxis}
-    series={series}
-    options={options}
+    series={[series[0]]}
+    options={legendDisabledOptions}
   />
 );

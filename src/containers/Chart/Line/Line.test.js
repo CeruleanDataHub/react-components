@@ -11,27 +11,47 @@ describe("Line", () => {
     expect(toJson(component)).toMatchSnapshot();
   });
 
-  it("should render chart with simple data", () => {
-    const xAxis = [
-      {
-        categories: [
-          "monday",
-          "tuesday",
-          "wednesday",
-          "thursday",
-          "friday",
-          "saturday",
-          "sunday"
-        ]
-      }
-    ];
+  describe("renders", () => {
+    let xAxisStub;
+    let seriesStub;
+    let optionsStub;
 
-    const series = [
-      { name: "temperature", data: [10, 15, 20, 25, 15, 20, 15] }
-    ];
+    beforeEach(() => {
+      xAxisStub = [
+        {
+          categories: [
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday",
+            "saturday",
+            "sunday"
+          ]
+        }
+      ];
 
-    const component = shallow(<Line xAxis={xAxis} series={series} />);
+      seriesStub = [
+        { name: "temperature", data: [10, 15, 20, 25, 15, 20, 15] }
+      ];
 
-    expect(toJson(component)).toMatchSnapshot();
+      optionsStub = {
+        legend: { enabled: false }
+      };
+    });
+
+    it("with simple data", () => {
+      const component = shallow(<Line xAxis={xAxisStub} series={seriesStub} />);
+
+      expect(toJson(component)).toMatchSnapshot();
+    });
+
+    it("without legend", () => {
+      const component = shallow(
+        <Line xAxis={xAxisStub} series={seriesStub} options={optionsStub} />
+      );
+
+      expect(component).toMatchSnapshot();
+    });
   });
 });
