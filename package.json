@@ -21,6 +21,7 @@
     "@popperjs/core": "^2.4.4",
     "highcharts": "^8.1.2",
     "highcharts-react-official": "^3.0.0",
+    "lodash": "^4.17.20",
     "moment": "^2.27.0",
     "react-data-table-component": "^6.11.0",
     "react-dates": "^21.8.0",
