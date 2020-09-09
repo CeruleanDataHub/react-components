@@ -8,6 +8,7 @@ import { Typography } from "../Typography/Typography";
 
 const Container = styled.div`
   padding: 1.2em;
+  background-color: ${({theme}) => theme.background}
 `;
 
 const Bottom = styled.span`
