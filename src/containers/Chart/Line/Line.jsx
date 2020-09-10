@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 
 import { Chart } from "../Chart";
@@ -5,13 +6,14 @@ import { Chart } from "../Chart";
 /**
  * Use this component to generate Line charts. Component properties are inherited from the `Chart` component.
  */
-export const Line = ({ title, xAxis, series, options }) => (
+export const Line = ({ title, xAxis, series, options, containerProps }) => (
   <Chart
     title={title}
     xAxis={xAxis}
     series={series}
     options={options}
     type="line"
+    containerProps={containerProps}
   />
 );
 
@@ -23,12 +25,16 @@ Line.propTypes = {
   /** Data to be graphed, type is inherited from the `Chart` base component */
   series: Chart.propTypes.series,
   /** Options object for chart */
-  options: Chart.propTypes.options
+  options: Chart.propTypes.options,
+  /** Props to be passed to highcharts, such as styles or classname */
+  // eslint-disable-next-line react/forbid-prop-types
+  containerProps: PropTypes.object
 };
 
 Line.defaultProps = {
   title: Chart.defaultProps.title,
   xAxis: Chart.defaultProps.xAxis,
   series: Chart.defaultProps.series,
-  options: Chart.defaultProps.options
+  options: Chart.defaultProps.options,
+  containerProps: null
 };

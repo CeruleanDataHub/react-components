@@ -36,7 +36,7 @@ const options = {
 /**
  * Use this component to generate Heatmap charts. Component properties are inherited from the `Chart` component.
  */
-export const Heatmap = ({ data }) => {
+export const Heatmap = ({ data, containerProps }) => {
   const series = [
     {
       data,
@@ -47,14 +47,25 @@ export const Heatmap = ({ data }) => {
     }
   ];
 
-  return <Chart series={series} options={options} type="heatmap" />;
+  return (
+    <Chart
+      series={series}
+      options={options}
+      type="heatmap"
+      containerProps={containerProps}
+    />
+  );
 };
 
 Heatmap.propTypes = {
   /** Data to be graphed */
-  data: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.number))
+  data: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.number)),
+  /** Props to be passed to highcharts, such as styles or classname */
+  // eslint-disable-next-line react/forbid-prop-types
+  containerProps: PropTypes.object
 };
 
 Heatmap.defaultProps = {
-  data: []
+  data: [],
+  containerProps: null
 };
