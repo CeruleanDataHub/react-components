@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SpinnerTentative renders 1`] = `
+.c0 {
+  margin: 1em;
+  width: 60px;
+  height: 60px;
+  background-color: lightgray;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.c1 {
+  width: 32px;
+  height: 32px;
+  margin: 8px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  -webkit-animation: spinner 1.2s cubic-bezier(0.5,0,0.5,1) infinite;
+  animation: spinner 1.2s cubic-bezier(0.5,0,0.5,1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+<SpinnerTentative
+  condition={false}
+>
+  <styled.div>
+    <div
+      className="c0"
+    >
+      <styled.div>
+        <div
+          className="c1"
+        />
+      </styled.div>
+    </div>
+  </styled.div>
+</SpinnerTentative>
+`;
