@@ -19,7 +19,7 @@ jobs:
         run: |
           set -e
           export VERSION=$(jq '.version' < package.json | sed 's/"//g')
-          echo "::set-env name=VERSION::$VERSION"
+          echo "name=VERSION::$VERSION" >> $GITHUB_ENV
       -
         name: Install
         id: Install
