@@ -1,8 +1,9 @@
-import { action } from "@storybook/addon-actions";
-import { withKnobs } from "@storybook/addon-knobs";
-import React from "react";
+import { action } from '@storybook/addon-actions';
+import { withKnobs } from '@storybook/addon-knobs';
+import React from 'react';
+import styled from 'styled-components';
 
-import { Button } from "./Button";
+import { Button } from './Button';
 
 export default {
   title: "Button",
@@ -35,3 +36,11 @@ export const ButtonColorsStory = () =>
       </Button>
     </span>
   ));
+
+export const CustomStyledButtonStory = () => {
+  const StyledButton = styled(Button)`
+    color: green;
+    background: tomato;
+  `
+  return <StyledButton>Button</StyledButton>
+}

@@ -14,8 +14,8 @@ const StyledButton = styled.button`
 `;
 
 export const Button = forwardRef(
-  ({ children, onClick, color, type, as }, ref) => (
-    <StyledButton color={color} onClick={onClick} type={type} as={as} ref={ref}>
+  ({ children, className, onClick, color, type, as }, ref) => (
+    <StyledButton className={className} color={color} onClick={onClick} type={type} as={as} ref={ref}>
       {children}
     </StyledButton>
   )
@@ -24,6 +24,7 @@ export const Button = forwardRef(
 Button.propTypes = {
   /** Children of the button */
   children: PropTypes.node,
+  className: PropTypes.string,
   /** Handler function */
   onClick: PropTypes.func,
   /** Color of the button */
@@ -40,6 +41,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
   children: "",
+  className: "",
   onClick: () => null,
   color: "",
   type: "button",

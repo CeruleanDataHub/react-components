@@ -314,6 +314,7 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                                   "withComponent": [Function],
                                 }
                               }
+                              className=""
                               color="transparent"
                               onClick={[Function]}
                               type="button"
@@ -346,6 +347,7 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                                     "withComponent": [Function],
                                   }
                                 }
+                                className=""
                                 color="transparent"
                                 onClick={[Function]}
                                 type="button"
@@ -396,6 +398,7 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                                   "withComponent": [Function],
                                 }
                               }
+                              className=""
                               color=""
                               onClick={[Function]}
                               type="button"
@@ -429,6 +432,7 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                                     "withComponent": [Function],
                                   }
                                 }
+                                className=""
                                 color=""
                                 onClick={[Function]}
                                 type="button"
@@ -781,6 +785,7 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                                   "withComponent": [Function],
                                 }
                               }
+                              className=""
                               color="transparent"
                               onClick={[Function]}
                               type="button"
@@ -813,6 +818,7 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                                     "withComponent": [Function],
                                   }
                                 }
+                                className=""
                                 color="transparent"
                                 onClick={[Function]}
                                 type="button"
@@ -863,6 +869,7 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                                   "withComponent": [Function],
                                 }
                               }
+                              className=""
                               color=""
                               onClick={[Function]}
                               type="button"
@@ -896,6 +903,7 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                                     "withComponent": [Function],
                                   }
                                 }
+                                className=""
                                 color=""
                                 onClick={[Function]}
                                 type="button"
@@ -1256,6 +1264,7 @@ exports[`Confirm should render 1`] = `
                                   "withComponent": [Function],
                                 }
                               }
+                              className=""
                               color="transparent"
                               onClick={[Function]}
                               type="button"
@@ -1288,6 +1297,7 @@ exports[`Confirm should render 1`] = `
                                     "withComponent": [Function],
                                   }
                                 }
+                                className=""
                                 color="transparent"
                                 onClick={[Function]}
                                 type="button"
@@ -1338,6 +1348,7 @@ exports[`Confirm should render 1`] = `
                                   "withComponent": [Function],
                                 }
                               }
+                              className=""
                               color=""
                               onClick={[Function]}
                               type="button"
@@ -1371,6 +1382,7 @@ exports[`Confirm should render 1`] = `
                                     "withComponent": [Function],
                                   }
                                 }
+                                className=""
                                 color=""
                                 onClick={[Function]}
                                 type="button"
@@ -1792,6 +1804,7 @@ exports[`Confirm should render content as reacr node 1`] = `
                                   "withComponent": [Function],
                                 }
                               }
+                              className=""
                               color="transparent"
                               onClick={[Function]}
                               type="button"
@@ -1824,6 +1837,7 @@ exports[`Confirm should render content as reacr node 1`] = `
                                     "withComponent": [Function],
                                   }
                                 }
+                                className=""
                                 color="transparent"
                                 onClick={[Function]}
                                 type="button"
@@ -1874,6 +1888,7 @@ exports[`Confirm should render content as reacr node 1`] = `
                                   "withComponent": [Function],
                                 }
                               }
+                              className=""
                               color=""
                               onClick={[Function]}
                               type="button"
@@ -1907,6 +1922,7 @@ exports[`Confirm should render content as reacr node 1`] = `
                                     "withComponent": [Function],
                                   }
                                 }
+                                className=""
                                 color=""
                                 onClick={[Function]}
                                 type="button"
