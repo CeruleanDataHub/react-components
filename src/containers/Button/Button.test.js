@@ -1,92 +1,69 @@
-import { mount, shallow } from "enzyme";
+import {mount} from "enzyme";
 import React from "react";
-import renderer from "react-test-renderer";
 import styled from "styled-components";
 
-import { Button } from "./Button";
-
-const colors = ["crimson", "tomato", "khaki"];
+import {Button} from "./Button";
 
 describe("Button", () => {
-  it("should render Button", () => {
-    const component = renderer.create(<Button>Button</Button>);
+  let component;
+  let handleClickMock;
 
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+  beforeEach(() => {
+    handleClickMock = jest.fn();
+    component = mount(<Button onClick={handleClickMock}>Button</Button>);
   });
 
-  it("should render Button with props", () => {
-    const component = renderer.create(<Button color="blue">Button</Button>);
-
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+  it("renders", () => {
+    expect(component).toMatchSnapshot();
   });
 
-  it("should accept 'as' property", () => {
+  it("does not call onClick yet", () => {
+    expect(handleClickMock).not.toHaveBeenCalled();
+  })
+
+  it("when button is clicked, should call callback function", () => {
+    component.simulate("click");
+
+    expect(handleClickMock).toHaveBeenCalled();
+  });
+
+
+  it("given 'color' prop, should have correct prop", () => {
+    component = mount(<Button onClick={() => {}} color="blue">Button</Button>);
+
+    expect(component).toHaveProp('color', 'blue')
+  });
+
+  it("given 'as' prop, should have correct prop", () => {
     const CustomButton = styled.button`
       background: black;
     `;
 
-    const component = renderer.create(
-      <Button color="blue" as={CustomButton}>
-        Button
-      </Button>
-    );
+    component = mount(<Button onClick={() => {}} as={CustomButton}>Button</Button>);
 
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(component).toHaveProp('as', CustomButton)
   });
 
-  it("should accept onClick prop", () => {
-    const component = renderer.create(
-      <Button color="blue" onClick={() => null}>
-        Button
-      </Button>
-    );
+  it("given 'onClick' prop, should have correct prop", () => {
+    component = mount(<Button onClick={handleClickMock}>Button</Button>);
 
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(component).toHaveProp('onClick', handleClickMock)
   });
 
-  describe("type", () => {
+  describe("Type", () => {
     ["button", "submit", "reset"].forEach(type => {
-      it(`should render ${type} button`, () => {
-        const component = renderer.create(<Button type={type}>Button</Button>);
+      it(`given 'type' ${type} prop, has correct prop`, () => {
+        component = mount(<Button onClick={() => {}} type={type}>Button</Button>);
 
-        const tree = component.toJSON();
-        expect(tree).toMatchSnapshot();
+        expect(component).toHaveProp('type', type);
       });
     });
   });
 
-  it("should fire onClick event callback function", () => {
-    const handleClick = jest.fn();
-    const component = shallow(<Button onClick={handleClick}>Button</Button>);
-    expect(handleClick).not.toHaveBeenCalled();
-    component.simulate("click");
-    expect(handleClick).toHaveBeenCalled();
-  });
-
-  it("should call default props onClick function when no onClick property is passed", () => {
-    const component = renderer.create(<Button>Button</Button>);
-    component.root.props.onClick();
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("should contain forwarded ref", () => {
+  it("given button with ref, should contain forwarded ref", () => {
     const ref = React.createRef();
-    const component = mount(<Button ref={ref}>Button</Button>);
-    expect(component.find("button").instance()).toEqual(ref.current);
-  });
+    component = mount(<Button onClick={() => {}} ref={ref}>Button</Button>);
 
-  describe("Should render Button color based on props", () => {
-    colors.map(color =>
-      it("renders with correct color", () => {
-        const component = shallow(<Button color={color}>Button</Button>);
-        expect(component).toHaveStyleRule("color", color);
-        expect(component).toHaveStyleRule("border", `1px solid ${color}`);
-      })
-    );
+    expect(component.find("button").instance()).toEqual(ref.current);
   });
 });

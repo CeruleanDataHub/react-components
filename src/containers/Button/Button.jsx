@@ -26,7 +26,7 @@ Button.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   /** Handler function */
-  onClick: PropTypes.func,
+  onClick: PropTypes.func.isRequired,
   /** Color of the button */
   color: PropTypes.string,
   /** Button type */
@@ -42,7 +42,6 @@ Button.propTypes = {
 Button.defaultProps = {
   children: "",
   className: "",
-  onClick: () => null,
   color: "",
   type: "button",
   as: null
