@@ -30,7 +30,7 @@ Button.propTypes = {
   /** Color of the button */
   color: PropTypes.string,
   /** Button type */
-  type: PropTypes.oneOf(["button", "submit", "reset"]),
+  type: PropTypes.string,
   /** Extend styles, property is from styled components */
   as: PropTypes.oneOfType([
     PropTypes.func,
