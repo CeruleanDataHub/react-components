@@ -42,5 +42,5 @@ export const CustomStyledButtonStory = () => {
     color: green;
     background: tomato;
   `
-  return <StyledButton>Button</StyledButton>
+  return <StyledButton onClick={action("button-clicked")}>Button</StyledButton>
 }
