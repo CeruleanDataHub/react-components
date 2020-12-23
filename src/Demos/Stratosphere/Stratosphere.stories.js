@@ -789,7 +789,7 @@ export const StratosphereManageUsersDemo = () => {
                 </Typography>
               </Cell>
               <Cell as={GridContentRight}>
-                <Button as={ButtonWithIcon}>
+                <Button onClick={() => {}} as={ButtonWithIcon}>
                   <Icon name="plus" />
                   Invite User
                 </Button>
@@ -821,7 +821,7 @@ export const StratosphereManageUsersDemo = () => {
                   </Dropdown>
                 </Cell>
                 <Cell>
-                  <Button type="submit" as={SearchButton}>
+                  <Button onClick={() => {}} type="submit" as={SearchButton}>
                     <Icon name="search" />
                     Search
                   </Button>
@@ -841,7 +841,7 @@ export const StratosphereManageUsersDemo = () => {
 };
 
 const ModalDataTableToolCell = () => (
-  <Button>
+  <Button onClick={() => {}}>
     <Icon name="trash" />
   </Button>
 );
@@ -923,7 +923,7 @@ export const StratosphereManageUsersWithModalDemo = () => {
                 </Typography>
               </Cell>
               <Cell as={GridContentRight}>
-                <Button as={ButtonWithIcon}>
+                <Button as={ButtonWithIcon} onClick={() => {}}>
                   <Icon name="plus" />
                   Invite User
                 </Button>
@@ -955,7 +955,7 @@ export const StratosphereManageUsersWithModalDemo = () => {
                   </Dropdown>
                 </Cell>
                 <Cell>
-                  <Button type="submit" as={SearchButton}>
+                  <Button type="submit" as={SearchButton} onClick={() => {}}>
                     <Icon name="search" />
                     Search
                   </Button>
@@ -1032,7 +1032,7 @@ export const StratosphereManageUsersWithModalDemo = () => {
                     </Dropdown>
                   </Cell>
                   <Cell>
-                    <Button>Add role</Button>
+                    <Button onClick={() => {}}>Add role</Button>
                   </Cell>
                 </Grid>
 
@@ -1130,7 +1130,7 @@ export const StratosphereManageGroupsWithModalDemo = () => {
                 </Typography>
               </Cell>
               <Cell as={GridContentRight}>
-                <Button as={ButtonWithIcon}>
+                <Button onClick={() => {}} as={ButtonWithIcon}>
                   <Icon name="plus" />
                   Invite User
                 </Button>
@@ -1162,7 +1162,7 @@ export const StratosphereManageGroupsWithModalDemo = () => {
                   </Dropdown>
                 </Cell>
                 <Cell>
-                  <Button type="submit" as={SearchButton}>
+                  <Button onClick={() => {}} type="submit" as={SearchButton}>
                     <Icon name="search" />
                     Search
                   </Button>
@@ -1239,7 +1239,7 @@ export const StratosphereManageGroupsWithModalDemo = () => {
                     </Dropdown>
                   </Cell>
                   <Cell>
-                    <Button>Add to Group</Button>
+                    <Button onClick={() => {}}>Add to Group</Button>
                   </Cell>
                 </Grid>
 
@@ -1341,7 +1341,7 @@ export const StratosphereManageHierarchiesWithModalDemo = () => {
                 </Typography>
               </Cell>
               <Cell as={GridContentRight}>
-                <Button as={ButtonWithIcon}>
+                <Button onClick={() => {}} as={ButtonWithIcon}>
                   <Icon name="plus" />
                   Invite User
                 </Button>
@@ -1373,7 +1373,7 @@ export const StratosphereManageHierarchiesWithModalDemo = () => {
                   </Dropdown>
                 </Cell>
                 <Cell>
-                  <Button type="submit" as={SearchButton}>
+                  <Button onClick={() => {}} type="submit" as={SearchButton}>
                     <Icon name="search" />
                     Search
                   </Button>
@@ -1450,7 +1450,7 @@ export const StratosphereManageHierarchiesWithModalDemo = () => {
                     </Dropdown>
                   </Cell>
                   <Cell>
-                    <Button>Add to Group</Button>
+                    <Button onClick={() => {}}>Add to Group</Button>
                   </Cell>
                 </Grid>
 
@@ -1529,7 +1529,7 @@ export const StratosphereManageUsersWithConfirmDemo = () => {
                 </Typography>
               </Cell>
               <Cell as={GridContentRight}>
-                <Button as={ButtonWithIcon}>
+                <Button onClick={() => {}} as={ButtonWithIcon}>
                   <Icon name="plus" />
                   Invite User
                 </Button>
@@ -1561,7 +1561,7 @@ export const StratosphereManageUsersWithConfirmDemo = () => {
                   </Dropdown>
                 </Cell>
                 <Cell>
-                  <Button type="submit" as={SearchButton}>
+                  <Button onClick={() => {}} type="submit" as={SearchButton}>
                     <Icon name="search" />
                     Search
                   </Button>
@@ -1652,7 +1652,7 @@ export const StratosphereManageUsersWithDeleteDemo = () => {
                 </Typography>
               </Cell>
               <Cell as={GridContentRight}>
-                <Button as={ButtonWithIcon}>
+                <Button onClick={() => {}} as={ButtonWithIcon}>
                   <Icon name="plus" />
                   Invite User
                 </Button>
@@ -1684,7 +1684,7 @@ export const StratosphereManageUsersWithDeleteDemo = () => {
                   </Dropdown>
                 </Cell>
                 <Cell>
-                  <Button type="submit" as={SearchButton}>
+                  <Button onClick={() => {}} type="submit" as={SearchButton}>
                     <Icon name="search" />
                     Search
                   </Button>
@@ -1812,7 +1812,7 @@ export const StratosphereManageRolesDemo = () => {
                 </Typography>
               </Cell>
               <Cell as={GridContentRight}>
-                <Button as={ButtonWithIcon}>
+                <Button onClick={() => {}} as={ButtonWithIcon}>
                   <Icon name="plus" />
                   Create Role
                 </Button>
@@ -1844,7 +1844,7 @@ export const StratosphereManageRolesDemo = () => {
                   </Dropdown>
                 </Cell>
                 <Cell>
-                  <Button type="submit" as={SearchButton}>
+                  <Button onClick={() => {}} type="submit" as={SearchButton}>
                     <Icon name="search" />
                     Search
                   </Button>
@@ -1944,7 +1944,7 @@ export const StratosphereManageRolesWithModalDemo = () => {
                 </Typography>
               </Cell>
               <Cell as={GridContentRight}>
-                <Button as={ButtonWithIcon}>
+                <Button onClick={() => {}} as={ButtonWithIcon}>
                   <Icon name="plus" />
                   Create Role
                 </Button>
@@ -1976,7 +1976,7 @@ export const StratosphereManageRolesWithModalDemo = () => {
                   </Dropdown>
                 </Cell>
                 <Cell>
-                  <Button type="submit" as={SearchButton}>
+                  <Button onClick={() => {}} type="submit" as={SearchButton}>
                     <Icon name="search" />
                     Search
                   </Button>
@@ -2081,7 +2081,7 @@ export const StratosphereSwitchTabsModalDemo = () => {
           </Dropdown>
         </Cell>
         <Cell>
-          <Button>Add role</Button>
+          <Button onClick={() => {}}>Add role</Button>
         </Cell>
       </Grid>
 
@@ -2114,7 +2114,7 @@ export const StratosphereSwitchTabsModalDemo = () => {
           </Dropdown>
         </Cell>
         <Cell>
-          <Button>Add to Group</Button>
+          <Button onClick={() => {}}>Add to Group</Button>
         </Cell>
       </Grid>
 
@@ -2147,7 +2147,7 @@ export const StratosphereSwitchTabsModalDemo = () => {
           </Dropdown>
         </Cell>
         <Cell>
-          <Button>Add to Group</Button>
+          <Button onClick={() => {}}>Add to Group</Button>
         </Cell>
       </Grid>
 
@@ -2220,7 +2220,7 @@ export const StratosphereSwitchTabsModalDemo = () => {
                 </Typography>
               </Cell>
               <Cell as={GridContentRight}>
-                <Button as={ButtonWithIcon}>
+                <Button onClick={() => {}} as={ButtonWithIcon}>
                   <Icon name="plus" />
                   Invite User
                 </Button>
@@ -2252,7 +2252,7 @@ export const StratosphereSwitchTabsModalDemo = () => {
                   </Dropdown>
                 </Cell>
                 <Cell>
-                  <Button type="submit" as={SearchButton}>
+                  <Button onClick={() => {}} type="submit" as={SearchButton}>
                     <Icon name="search" />
                     Search
                   </Button>
@@ -2432,7 +2432,7 @@ export const StratosphereManageGroupsDemo = () => {
                 </Typography>
               </Cell>
               <Cell as={GridContentRight}>
-                <Button as={ButtonWithIcon}>
+                <Button onClick={() => {}} as={ButtonWithIcon}>
                   <Icon name="plus" />
                   Create Group
                 </Button>
@@ -2450,7 +2450,7 @@ export const StratosphereManageGroupsDemo = () => {
                   <Input type="search" placeholder="Search" />
                 </Cell>
                 <Cell>
-                  <Button type="submit" as={SearchButton}>
+                  <Button onClick={() => {}} type="submit" as={SearchButton}>
                     <Icon name="search" />
                     Search
                   </Button>
@@ -2560,7 +2560,7 @@ export const StratosphereManageGroupsAssignUserModalDemo = () => {
                 </Typography>
               </Cell>
               <Cell as={GridContentRight}>
-                <Button as={ButtonWithIcon}>
+                <Button onClick={() => {}} as={ButtonWithIcon}>
                   <Icon name="plus" />
                   Create Group
                 </Button>
@@ -2578,7 +2578,7 @@ export const StratosphereManageGroupsAssignUserModalDemo = () => {
                   <Input type="search" placeholder="Search" />
                 </Cell>
                 <Cell>
-                  <Button type="submit" as={SearchButton}>
+                  <Button onClick={() => {}} type="submit" as={SearchButton}>
                     <Icon name="search" />
                     Search
                   </Button>
@@ -2819,7 +2819,7 @@ export const StratosphereHierarchiesDemo = () => {
                 </Typography>
               </Cell>
               <Cell as={GridContentRight}>
-                <Button as={ButtonWithIcon}>
+                <Button onClick={() => {}} as={ButtonWithIcon}>
                   <Icon name="plus" />
                   Create hierarchy
                 </Button>
@@ -2837,7 +2837,7 @@ export const StratosphereHierarchiesDemo = () => {
                   <Input type="search" placeholder="Search" />
                 </Cell>
                 <Cell>
-                  <Button type="submit" as={SearchButton}>
+                  <Button onClick={() => {}} type="submit" as={SearchButton}>
                     <Icon name="search" />
                     Search
                   </Button>
@@ -2931,7 +2931,7 @@ export const StratosphereManageGroupsUsersModalDemo = () => {
                 </Typography>
               </Cell>
               <Cell as={GridContentRight}>
-                <Button as={ButtonWithIcon}>
+                <Button onClick={() => {}} as={ButtonWithIcon}>
                   <Icon name="plus" />
                   Create Group
                 </Button>
@@ -2949,7 +2949,7 @@ export const StratosphereManageGroupsUsersModalDemo = () => {
                   <Input type="search" placeholder="Search" />
                 </Cell>
                 <Cell>
-                  <Button type="submit" as={SearchButton}>
+                  <Button onClick={() => {}} type="submit" as={SearchButton}>
                     <Icon name="search" />
                     Search
                   </Button>
@@ -3112,7 +3112,7 @@ export const StratosphereManageGroupsHierarchiesModalDemo = () => {
                 </Typography>
               </Cell>
               <Cell as={GridContentRight}>
-                <Button as={ButtonWithIcon}>
+                <Button onClick={() => {}} as={ButtonWithIcon}>
                   <Icon name="plus" />
                   Create Group
                 </Button>
@@ -3130,7 +3130,7 @@ export const StratosphereManageGroupsHierarchiesModalDemo = () => {
                   <Input type="search" placeholder="Search" />
                 </Cell>
                 <Cell>
-                  <Button type="submit" as={SearchButton}>
+                  <Button onClick={() => {}} type="submit" as={SearchButton}>
                     <Icon name="search" />
                     Search
                   </Button>
@@ -3287,7 +3287,7 @@ export const StratosphereManageGroupsHierarchiesDeleteConfirmModalDemo = () => {
                 </Typography>
               </Cell>
               <Cell as={GridContentRight}>
-                <Button as={ButtonWithIcon}>
+                <Button onClick={() => {}} as={ButtonWithIcon}>
                   <Icon name="plus" />
                   Create Group
                 </Button>
@@ -3305,7 +3305,7 @@ export const StratosphereManageGroupsHierarchiesDeleteConfirmModalDemo = () => {
                   <Input type="search" placeholder="Search" />
                 </Cell>
                 <Cell>
-                  <Button type="submit" as={SearchButton}>
+                  <Button onClick={() => {}} type="submit" as={SearchButton}>
                     <Icon name="search" />
                     Search
                   </Button>
@@ -3680,7 +3680,7 @@ export const StratosphereManageDevicesDemo = () => {
                   </Dropdown>
                 </Cell>
                 <Cell>
-                  <Button type="submit" as={SearchButton}>
+                  <Button onClick={() => {}} type="submit" as={SearchButton}>
                     <Icon name="search" />
                     Search
                   </Button>
