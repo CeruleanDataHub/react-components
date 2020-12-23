@@ -489,10 +489,10 @@ export const KeyperDemo = () => {
                 />
               </Cell>
               <Cell>
-                <Button color="transparent" as={PagingButtonSelected}>
+                <Button onClick={() => {}} color="transparent" as={PagingButtonSelected}>
                   1
                 </Button>
-                <Button color="transparent" as={PagingButton}>
+                <Button onClick={() => {}} color="transparent" as={PagingButton}>
                   2
                 </Button>
               </Cell>
@@ -587,10 +587,10 @@ export const KeyperDemoPage2 = () => {
                 />
               </Cell>
               <Cell>
-                <Button text="1" color="transparent" as={PagingButton}>
+                <Button onClick={() => {}} text="1" color="transparent" as={PagingButton}>
                   1
                 </Button>
-                <Button color="transparent" as={PagingButtonSelected}>
+                <Button onClick={() => {}} color="transparent" as={PagingButtonSelected}>
                   2
                 </Button>
               </Cell>
