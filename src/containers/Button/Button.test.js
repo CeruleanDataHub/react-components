@@ -27,8 +27,10 @@ describe("Button", () => {
     expect(handleClickMock).toHaveBeenCalled();
   });
 
-  it("should have empty string as default value for color prop", () => {
-    expect(component).toHaveProp('color', '')
+  it("given 'color' prop, should have correct prop", () => {
+    component = mount(<Button onClick={() => {}} color="blue">Button</Button>);
+
+    expect(component.find('button[data-button-test]')).toHaveProp('color', 'blue')
   });
 
   it("given custom style, should have correct style rule", () => {
@@ -44,7 +46,7 @@ describe("Button", () => {
   it("given 'onClick' prop, should have correct prop", () => {
     component = mount(<Button onClick={handleClickMock}>Button</Button>);
 
-    expect(component).toHaveProp('onClick', handleClickMock)
+    expect(component.find('button[data-button-test]')).toHaveProp('onClick', handleClickMock)
   });
 
   describe("Type", () => {
@@ -52,7 +54,7 @@ describe("Button", () => {
       it(`given 'type' ${type} prop, has correct prop`, () => {
         component = mount(<Button onClick={() => {}} type={type}>Button</Button>);
 
-        expect(component).toHaveProp('type', type);
+        expect(component.find('button[data-button-test]')).toHaveProp('type', type)
       });
     });
   });
