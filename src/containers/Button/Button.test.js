@@ -31,14 +31,14 @@ describe("Button", () => {
     expect(component).toHaveProp('color', '')
   });
 
-  it("given 'as' prop, should have correct prop", () => {
+  it("given custom style, should have correct style rule", () => {
     const CustomButton = styled.button`
       background: black;
     `;
 
     component = mount(<Button onClick={() => {}} as={CustomButton}>Button</Button>);
 
-    expect(component).toHaveProp('as', CustomButton)
+    expect(component.find('button[data-button-test]')).toHaveStyleRule('background', 'black')
   });
 
   it("given 'onClick' prop, should have correct prop", () => {

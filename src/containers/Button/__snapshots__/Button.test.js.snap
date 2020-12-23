@@ -22,12 +22,14 @@ exports[`Button renders 1`] = `
     as={null}
     className=""
     color=""
+    data-button-test={true}
     onClick={[MockFunction]}
     type="button"
   >
     <button
       className="c0"
       color=""
+      data-button-test={true}
       onClick={[MockFunction]}
       type="button"
     >

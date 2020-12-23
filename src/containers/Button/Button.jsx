@@ -15,7 +15,7 @@ const StyledButton = styled.button`
 
 export const Button = forwardRef(
   ({ children, className, onClick, color, type, as }, ref) => (
-    <StyledButton className={className} color={color} onClick={onClick} type={type} as={as} ref={ref}>
+    <StyledButton data-button-test className={className} color={color} onClick={onClick} type={type} as={as} ref={ref}>
       {children}
     </StyledButton>
   )
