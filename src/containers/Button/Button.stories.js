@@ -22,6 +22,11 @@ const colors = [
   "palevioletred"
 ];
 
+const StyledButton = styled(Button)`
+    color: green;
+    background: tomato;
+  `
+
 export const ButtonStory = () => (
   <Button color="blue" onClick={action("button clicked")}>
     Button
@@ -37,10 +42,5 @@ export const ButtonColorsStory = () =>
     </span>
   ));
 
-export const CustomStyledButtonStory = () => {
-  const StyledButton = styled(Button)`
-    color: green;
-    background: tomato;
-  `
-  return <StyledButton onClick={action("button-clicked")}>Button</StyledButton>
-}
+export const CustomStyledButtonStory = () =>
+  <StyledButton onClick={action("button-clicked")}>Button</StyledButton>
