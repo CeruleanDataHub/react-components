@@ -236,6 +236,7 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                       <button
                         class="c4 c5"
                         color="transparent"
+                        data-button-test="true"
                         type="button"
                       >
                         Cancel
@@ -243,6 +244,7 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                       <button
                         class="c6 c7"
                         color=""
+                        data-button-test="true"
                         type="button"
                       >
                         Confirm
@@ -349,18 +351,21 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                                 }
                                 className=""
                                 color="transparent"
+                                data-button-test={true}
                                 onClick={[Function]}
                                 type="button"
                               >
                                 <styled.button
                                   className="c4"
                                   color="transparent"
+                                  data-button-test={true}
                                   onClick={[Function]}
                                   type="button"
                                 >
                                   <button
                                     className="c5 c4"
                                     color="transparent"
+                                    data-button-test={true}
                                     onClick={[Function]}
                                     type="button"
                                   >
@@ -434,18 +439,21 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                                 }
                                 className=""
                                 color=""
+                                data-button-test={true}
                                 onClick={[Function]}
                                 type="button"
                               >
                                 <styled.button
                                   className="c6"
                                   color=""
+                                  data-button-test={true}
                                   onClick={[Function]}
                                   type="button"
                                 >
                                   <button
                                     className="c7 c6"
                                     color=""
+                                    data-button-test={true}
                                     onClick={[Function]}
                                     type="button"
                                   >
@@ -707,6 +715,7 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                       <button
                         class="c4 c5"
                         color="transparent"
+                        data-button-test="true"
                         type="button"
                       >
                         Cancel
@@ -714,6 +723,7 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                       <button
                         class="c6 c7"
                         color=""
+                        data-button-test="true"
                         type="button"
                       >
                         Confirm
@@ -820,18 +830,21 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                                 }
                                 className=""
                                 color="transparent"
+                                data-button-test={true}
                                 onClick={[Function]}
                                 type="button"
                               >
                                 <styled.button
                                   className="c4"
                                   color="transparent"
+                                  data-button-test={true}
                                   onClick={[Function]}
                                   type="button"
                                 >
                                   <button
                                     className="c5 c4"
                                     color="transparent"
+                                    data-button-test={true}
                                     onClick={[Function]}
                                     type="button"
                                   >
@@ -905,18 +918,21 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                                 }
                                 className=""
                                 color=""
+                                data-button-test={true}
                                 onClick={[Function]}
                                 type="button"
                               >
                                 <styled.button
                                   className="c6"
                                   color=""
+                                  data-button-test={true}
                                   onClick={[Function]}
                                   type="button"
                                 >
                                   <button
                                     className="c7 c6"
                                     color=""
+                                    data-button-test={true}
                                     onClick={[Function]}
                                     type="button"
                                   >
@@ -1182,6 +1198,7 @@ exports[`Confirm should render 1`] = `
                       <button
                         class="c4 c5"
                         color="transparent"
+                        data-button-test="true"
                         type="button"
                       >
                         Cancel
@@ -1189,6 +1206,7 @@ exports[`Confirm should render 1`] = `
                       <button
                         class="c6 c7"
                         color=""
+                        data-button-test="true"
                         type="button"
                       >
                         Confirm
@@ -1299,18 +1317,21 @@ exports[`Confirm should render 1`] = `
                                 }
                                 className=""
                                 color="transparent"
+                                data-button-test={true}
                                 onClick={[Function]}
                                 type="button"
                               >
                                 <styled.button
                                   className="c4"
                                   color="transparent"
+                                  data-button-test={true}
                                   onClick={[Function]}
                                   type="button"
                                 >
                                   <button
                                     className="c5 c4"
                                     color="transparent"
+                                    data-button-test={true}
                                     onClick={[Function]}
                                     type="button"
                                   >
@@ -1384,18 +1405,21 @@ exports[`Confirm should render 1`] = `
                                 }
                                 className=""
                                 color=""
+                                data-button-test={true}
                                 onClick={[Function]}
                                 type="button"
                               >
                                 <styled.button
                                   className="c6"
                                   color=""
+                                  data-button-test={true}
                                   onClick={[Function]}
                                   type="button"
                                 >
                                   <button
                                     className="c7 c6"
                                     color=""
+                                    data-button-test={true}
                                     onClick={[Function]}
                                     type="button"
                                   >
@@ -1720,6 +1744,7 @@ exports[`Confirm should render content as reacr node 1`] = `
                       <button
                         class="c4 c5"
                         color="transparent"
+                        data-button-test="true"
                         type="button"
                       >
                         Cancel
@@ -1727,6 +1752,7 @@ exports[`Confirm should render content as reacr node 1`] = `
                       <button
                         class="c6 c7"
                         color=""
+                        data-button-test="true"
                         type="button"
                       >
                         Confirm
@@ -1839,18 +1865,21 @@ exports[`Confirm should render content as reacr node 1`] = `
                                 }
                                 className=""
                                 color="transparent"
+                                data-button-test={true}
                                 onClick={[Function]}
                                 type="button"
                               >
                                 <styled.button
                                   className="c4"
                                   color="transparent"
+                                  data-button-test={true}
                                   onClick={[Function]}
                                   type="button"
                                 >
                                   <button
                                     className="c5 c4"
                                     color="transparent"
+                                    data-button-test={true}
                                     onClick={[Function]}
                                     type="button"
                                   >
@@ -1924,18 +1953,21 @@ exports[`Confirm should render content as reacr node 1`] = `
                                 }
                                 className=""
                                 color=""
+                                data-button-test={true}
                                 onClick={[Function]}
                                 type="button"
                               >
                                 <styled.button
                                   className="c6"
                                   color=""
+                                  data-button-test={true}
                                   onClick={[Function]}
                                   type="button"
                                 >
                                   <button
                                     className="c7 c6"
                                     color=""
+                                    data-button-test={true}
                                     onClick={[Function]}
                                     type="button"
                                   >

@@ -162,6 +162,7 @@ exports[`CheckboxDropdown should be able to select item from list 1`] = `
     <button
       className="c2 c3"
       color=""
+      data-button-test={true}
       onClick={[Function]}
       type="button"
     >
@@ -320,6 +321,7 @@ exports[`CheckboxDropdown should call default props onClick function when no onC
     <button
       className="c2 c3"
       color=""
+      data-button-test={true}
       onClick={[Function]}
       type="button"
     >
@@ -410,6 +412,7 @@ exports[`CheckboxDropdown should have onClick listener 1`] = `
     <button
       className="c2 c3"
       color=""
+      data-button-test={true}
       onClick={[Function]}
       type="button"
     >
@@ -500,6 +503,7 @@ exports[`CheckboxDropdown should render 1`] = `
     <button
       className="c2 c3"
       color=""
+      data-button-test={true}
       onClick={[Function]}
       type="button"
     >
@@ -668,6 +672,7 @@ exports[`CheckboxDropdown should render in open state 1`] = `
     <button
       className="c2 c3"
       color=""
+      data-button-test={true}
       onClick={[Function]}
       type="button"
     >
@@ -893,6 +898,7 @@ exports[`CheckboxDropdown should render label 1`] = `
     <button
       className="c2 c3"
       color=""
+      data-button-test={true}
       onClick={[Function]}
       type="button"
     >
@@ -1118,6 +1124,7 @@ exports[`CheckboxDropdown should render react node label 1`] = `
     <button
       className="c2 c3"
       color=""
+      data-button-test={true}
       onClick={[Function]}
       type="button"
     >

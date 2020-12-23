@@ -94,6 +94,7 @@ exports[`Navigation should call default props onMenuToggle function when no onMe
   <button
     className="c1 c2"
     color=""
+    data-button-test={true}
     onClick={[Function]}
     type="button"
   >
@@ -306,6 +307,7 @@ exports[`Navigation should have menu toggle event listener 1`] = `
   <button
     className="c1 c2"
     color=""
+    data-button-test={true}
     onClick={[Function]}
     type="button"
   >
@@ -474,6 +476,7 @@ exports[`Navigation should render 1`] = `
   <button
     className="c1 c2"
     color=""
+    data-button-test={true}
     onClick={[Function]}
     type="button"
   >
@@ -579,6 +582,7 @@ exports[`Navigation should render children menu 1`] = `
   <button
     className="c1 c2"
     color=""
+    data-button-test={true}
     onClick={[Function]}
     type="button"
   >
@@ -791,6 +795,7 @@ exports[`Navigation should render children menu closed when given appropriate pr
   <button
     className="c1 c2"
     color=""
+    data-button-test={true}
     onClick={[Function]}
     type="button"
   >

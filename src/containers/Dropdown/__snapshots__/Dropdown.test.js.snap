@@ -74,6 +74,7 @@ exports[`Dropdown should call default props onClick function when no onClick pro
     <button
       className="c2 c3"
       color=""
+      data-button-test={true}
       onClick={[Function]}
       type="button"
     >
@@ -164,6 +165,7 @@ exports[`Dropdown should have onClick listener 1`] = `
     <button
       className="c2 c3"
       color=""
+      data-button-test={true}
       onClick={[Function]}
       type="button"
     >
@@ -254,6 +256,7 @@ exports[`Dropdown should render dropdown 1`] = `
     <button
       className="c2 c3"
       color=""
+      data-button-test={true}
       onClick={[Function]}
       type="button"
     >
@@ -364,6 +367,7 @@ exports[`Dropdown should render dropdown in open state 1`] = `
     <button
       className="c2 c3"
       color=""
+      data-button-test={true}
       onClick={[Function]}
       type="button"
     >
@@ -479,6 +483,7 @@ exports[`Dropdown should render react node children 1`] = `
     <button
       className="c2 c3"
       color=""
+      data-button-test={true}
       onClick={[Function]}
       type="button"
     >
