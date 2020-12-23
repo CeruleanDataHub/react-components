@@ -27,11 +27,8 @@ describe("Button", () => {
     expect(handleClickMock).toHaveBeenCalled();
   });
 
-
-  it("given 'color' prop, should have correct prop", () => {
-    component = mount(<Button onClick={() => {}} color="blue">Button</Button>);
-
-    expect(component).toHaveProp('color', 'blue')
+  it("should have empty string as default value for color prop", () => {
+    expect(component).toHaveProp('color', '')
   });
 
   it("given 'as' prop, should have correct prop", () => {
