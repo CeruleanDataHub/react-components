@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Dropdown should call default props onClick function when no onClick property is passed 1`] = `
+.c6 {
+  text-align: center;
+}
+
 .c3 {
   font-family: inherit;
   background: transparent;
@@ -9,10 +13,6 @@ exports[`Dropdown should call default props onClick function when no onClick pro
   border: 1px solid;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.c6 {
-  text-align: center;
 }
 
 .c0 {
@@ -78,6 +78,7 @@ exports[`Dropdown should call default props onClick function when no onClick pro
       onClick={[Function]}
       type="button"
     >
+      
       <span
         className="c4"
       >
@@ -92,6 +93,10 @@ exports[`Dropdown should call default props onClick function when no onClick pro
 `;
 
 exports[`Dropdown should have onClick listener 1`] = `
+.c6 {
+  text-align: center;
+}
+
 .c3 {
   font-family: inherit;
   background: transparent;
@@ -100,10 +105,6 @@ exports[`Dropdown should have onClick listener 1`] = `
   border: 1px solid;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.c6 {
-  text-align: center;
 }
 
 .c0 {
@@ -169,6 +170,7 @@ exports[`Dropdown should have onClick listener 1`] = `
       onClick={[Function]}
       type="button"
     >
+      
       <span
         className="c4"
       >
@@ -183,6 +185,10 @@ exports[`Dropdown should have onClick listener 1`] = `
 `;
 
 exports[`Dropdown should render dropdown 1`] = `
+.c6 {
+  text-align: center;
+}
+
 .c3 {
   font-family: inherit;
   background: transparent;
@@ -191,10 +197,6 @@ exports[`Dropdown should render dropdown 1`] = `
   border: 1px solid;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.c6 {
-  text-align: center;
 }
 
 .c0 {
@@ -260,6 +262,7 @@ exports[`Dropdown should render dropdown 1`] = `
       onClick={[Function]}
       type="button"
     >
+      
       <span
         className="c4"
       >
@@ -274,6 +277,10 @@ exports[`Dropdown should render dropdown 1`] = `
 `;
 
 exports[`Dropdown should render dropdown in open state 1`] = `
+.c6 {
+  text-align: center;
+}
+
 .c3 {
   font-family: inherit;
   background: transparent;
@@ -282,10 +289,6 @@ exports[`Dropdown should render dropdown in open state 1`] = `
   border: 1px solid;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.c6 {
-  text-align: center;
 }
 
 .c0 {
@@ -371,6 +374,7 @@ exports[`Dropdown should render dropdown in open state 1`] = `
       onClick={[Function]}
       type="button"
     >
+      
       <span
         className="c4"
       >
@@ -390,6 +394,10 @@ exports[`Dropdown should render dropdown in open state 1`] = `
 `;
 
 exports[`Dropdown should render react node children 1`] = `
+.c6 {
+  text-align: center;
+}
+
 .c3 {
   font-family: inherit;
   background: transparent;
@@ -398,10 +406,6 @@ exports[`Dropdown should render react node children 1`] = `
   border: 1px solid;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.c6 {
-  text-align: center;
 }
 
 .c0 {
@@ -487,6 +491,7 @@ exports[`Dropdown should render react node children 1`] = `
       onClick={[Function]}
       type="button"
     >
+      
       <span
         className="c4"
       >

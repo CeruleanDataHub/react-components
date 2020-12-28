@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React, { forwardRef } from "react";
 import styled from "styled-components";
+import {Icon} from "../Icon/Icon";
 
 const StyledButton = styled.button`
   font-family: inherit;
@@ -13,9 +14,15 @@ const StyledButton = styled.button`
   cursor: pointer;
 `;
 
+const StyledIcon = styled(Icon)`
+  margin: 2px;
+`
+
 export const Button = forwardRef(
-  ({ children, className, onClick, color, type, as }, ref) => (
+  ({ children, className, onClick, color, type, as, icon }, ref) => (
     <StyledButton data-button-test className={className} color={color} onClick={onClick} type={type} as={as} ref={ref}>
+      { icon && <StyledIcon className={className} data-button-icon-test name={icon} /> }
+
       {children}
     </StyledButton>
   )
@@ -36,7 +43,8 @@ Button.propTypes = {
     PropTypes.func,
     PropTypes.string,
     PropTypes.shape({ render: PropTypes.func.isRequired })
-  ])
+  ]),
+  icon: PropTypes.string,
 };
 
 Button.defaultProps = {
@@ -44,5 +52,6 @@ Button.defaultProps = {
   className: "",
   color: "",
   type: "button",
-  as: null
+  as: null,
+  icon: "",
 };

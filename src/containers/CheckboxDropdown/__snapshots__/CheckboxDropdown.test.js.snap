@@ -325,6 +325,7 @@ exports[`CheckboxDropdown should call default props onClick function when no onC
       onClick={[Function]}
       type="button"
     >
+      
       <span
         className="c4"
       >
@@ -416,6 +417,7 @@ exports[`CheckboxDropdown should have onClick listener 1`] = `
       onClick={[Function]}
       type="button"
     >
+      
       <span
         className="c4"
       >
@@ -507,6 +509,7 @@ exports[`CheckboxDropdown should render 1`] = `
       onClick={[Function]}
       type="button"
     >
+      
       <span
         className="c4"
       >
@@ -676,6 +679,7 @@ exports[`CheckboxDropdown should render in open state 1`] = `
       onClick={[Function]}
       type="button"
     >
+      
       <span
         className="c4"
       >
@@ -902,6 +906,7 @@ exports[`CheckboxDropdown should render label 1`] = `
       onClick={[Function]}
       type="button"
     >
+      
       <span
         className="c4"
       >
@@ -1128,6 +1133,7 @@ exports[`CheckboxDropdown should render react node label 1`] = `
       onClick={[Function]}
       type="button"
     >
+      
       <span
         className="c4"
       >

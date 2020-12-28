@@ -33,6 +33,12 @@ describe("Button", () => {
     expect(component.find('button[data-button-test]')).toHaveProp('color', 'blue')
   });
 
+  it("given 'icon' prop, should have correct prop", () => {
+    component = mount(<Button onClick={() => {}} icon="chef-hat">Some content</Button> )
+
+    expect(component.find('Icon[data-button-icon-test]')).toHaveProp('name', 'chef-hat')
+  });
+
   it("given custom style, should have correct style rule", () => {
     const CustomButton = styled.button`
       background: black;

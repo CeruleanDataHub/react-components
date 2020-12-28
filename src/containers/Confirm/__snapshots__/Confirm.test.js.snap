@@ -239,6 +239,7 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                         data-button-test="true"
                         type="button"
                       >
+                        
                         Cancel
                       </button>
                       <button
@@ -247,6 +248,7 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                         data-button-test="true"
                         type="button"
                       >
+                        
                         Confirm
                       </button>
                     </div>
@@ -294,8 +296,8 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "baseHash": 2075994405,
-                                    "componentId": "sc-AxhUy",
+                                    "baseHash": -1474970742,
+                                    "componentId": "sc-Axmtr",
                                     "isStatic": false,
                                     "rules": Array [
                                       "
@@ -309,7 +311,7 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
                                   "shouldForwardProp": undefined,
-                                  "styledComponentId": "sc-AxhUy",
+                                  "styledComponentId": "sc-Axmtr",
                                   "target": "button",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -318,6 +320,7 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                               }
                               className=""
                               color="transparent"
+                              icon=""
                               onClick={[Function]}
                               type="button"
                             >
@@ -327,8 +330,8 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "baseHash": 2075994405,
-                                      "componentId": "sc-AxhUy",
+                                      "baseHash": -1474970742,
+                                      "componentId": "sc-Axmtr",
                                       "isStatic": false,
                                       "rules": Array [
                                         "
@@ -342,7 +345,7 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
                                     "shouldForwardProp": undefined,
-                                    "styledComponentId": "sc-AxhUy",
+                                    "styledComponentId": "sc-Axmtr",
                                     "target": "button",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -380,8 +383,8 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "baseHash": 1845756808,
-                                    "componentId": "sc-AxhCb",
+                                    "baseHash": 1882630949,
+                                    "componentId": "sc-AxheI",
                                     "isStatic": false,
                                     "rules": Array [
                                       "
@@ -396,7 +399,7 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
                                   "shouldForwardProp": undefined,
-                                  "styledComponentId": "sc-AxhCb",
+                                  "styledComponentId": "sc-AxheI",
                                   "target": "button",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -405,6 +408,7 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                               }
                               className=""
                               color=""
+                              icon=""
                               onClick={[Function]}
                               type="button"
                             >
@@ -414,8 +418,8 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "baseHash": 1845756808,
-                                      "componentId": "sc-AxhCb",
+                                      "baseHash": 1882630949,
+                                      "componentId": "sc-AxheI",
                                       "isStatic": false,
                                       "rules": Array [
                                         "
@@ -430,7 +434,7 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
                                     "shouldForwardProp": undefined,
-                                    "styledComponentId": "sc-AxhCb",
+                                    "styledComponentId": "sc-AxheI",
                                     "target": "button",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -718,6 +722,7 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                         data-button-test="true"
                         type="button"
                       >
+                        
                         Cancel
                       </button>
                       <button
@@ -726,6 +731,7 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                         data-button-test="true"
                         type="button"
                       >
+                        
                         Confirm
                       </button>
                     </div>
@@ -773,8 +779,8 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "baseHash": 2075994405,
-                                    "componentId": "sc-AxhUy",
+                                    "baseHash": -1474970742,
+                                    "componentId": "sc-Axmtr",
                                     "isStatic": false,
                                     "rules": Array [
                                       "
@@ -788,7 +794,7 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
                                   "shouldForwardProp": undefined,
-                                  "styledComponentId": "sc-AxhUy",
+                                  "styledComponentId": "sc-Axmtr",
                                   "target": "button",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -797,6 +803,7 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                               }
                               className=""
                               color="transparent"
+                              icon=""
                               onClick={[Function]}
                               type="button"
                             >
@@ -806,8 +813,8 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "baseHash": 2075994405,
-                                      "componentId": "sc-AxhUy",
+                                      "baseHash": -1474970742,
+                                      "componentId": "sc-Axmtr",
                                       "isStatic": false,
                                       "rules": Array [
                                         "
@@ -821,7 +828,7 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
                                     "shouldForwardProp": undefined,
-                                    "styledComponentId": "sc-AxhUy",
+                                    "styledComponentId": "sc-Axmtr",
                                     "target": "button",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -859,8 +866,8 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "baseHash": 1845756808,
-                                    "componentId": "sc-AxhCb",
+                                    "baseHash": 1882630949,
+                                    "componentId": "sc-AxheI",
                                     "isStatic": false,
                                     "rules": Array [
                                       "
@@ -875,7 +882,7 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
                                   "shouldForwardProp": undefined,
-                                  "styledComponentId": "sc-AxhCb",
+                                  "styledComponentId": "sc-AxheI",
                                   "target": "button",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -884,6 +891,7 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                               }
                               className=""
                               color=""
+                              icon=""
                               onClick={[Function]}
                               type="button"
                             >
@@ -893,8 +901,8 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "baseHash": 1845756808,
-                                      "componentId": "sc-AxhCb",
+                                      "baseHash": 1882630949,
+                                      "componentId": "sc-AxheI",
                                       "isStatic": false,
                                       "rules": Array [
                                         "
@@ -909,7 +917,7 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
                                     "shouldForwardProp": undefined,
-                                    "styledComponentId": "sc-AxhCb",
+                                    "styledComponentId": "sc-AxheI",
                                     "target": "button",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -1201,6 +1209,7 @@ exports[`Confirm should render 1`] = `
                         data-button-test="true"
                         type="button"
                       >
+                        
                         Cancel
                       </button>
                       <button
@@ -1209,6 +1218,7 @@ exports[`Confirm should render 1`] = `
                         data-button-test="true"
                         type="button"
                       >
+                        
                         Confirm
                       </button>
                     </div>
@@ -1260,8 +1270,8 @@ exports[`Confirm should render 1`] = `
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "baseHash": 2075994405,
-                                    "componentId": "sc-AxhUy",
+                                    "baseHash": -1474970742,
+                                    "componentId": "sc-Axmtr",
                                     "isStatic": false,
                                     "rules": Array [
                                       "
@@ -1275,7 +1285,7 @@ exports[`Confirm should render 1`] = `
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
                                   "shouldForwardProp": undefined,
-                                  "styledComponentId": "sc-AxhUy",
+                                  "styledComponentId": "sc-Axmtr",
                                   "target": "button",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -1284,6 +1294,7 @@ exports[`Confirm should render 1`] = `
                               }
                               className=""
                               color="transparent"
+                              icon=""
                               onClick={[Function]}
                               type="button"
                             >
@@ -1293,8 +1304,8 @@ exports[`Confirm should render 1`] = `
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "baseHash": 2075994405,
-                                      "componentId": "sc-AxhUy",
+                                      "baseHash": -1474970742,
+                                      "componentId": "sc-Axmtr",
                                       "isStatic": false,
                                       "rules": Array [
                                         "
@@ -1308,7 +1319,7 @@ exports[`Confirm should render 1`] = `
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
                                     "shouldForwardProp": undefined,
-                                    "styledComponentId": "sc-AxhUy",
+                                    "styledComponentId": "sc-Axmtr",
                                     "target": "button",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -1346,8 +1357,8 @@ exports[`Confirm should render 1`] = `
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "baseHash": 1845756808,
-                                    "componentId": "sc-AxhCb",
+                                    "baseHash": 1882630949,
+                                    "componentId": "sc-AxheI",
                                     "isStatic": false,
                                     "rules": Array [
                                       "
@@ -1362,7 +1373,7 @@ exports[`Confirm should render 1`] = `
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
                                   "shouldForwardProp": undefined,
-                                  "styledComponentId": "sc-AxhCb",
+                                  "styledComponentId": "sc-AxheI",
                                   "target": "button",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -1371,6 +1382,7 @@ exports[`Confirm should render 1`] = `
                               }
                               className=""
                               color=""
+                              icon=""
                               onClick={[Function]}
                               type="button"
                             >
@@ -1380,8 +1392,8 @@ exports[`Confirm should render 1`] = `
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "baseHash": 1845756808,
-                                      "componentId": "sc-AxhCb",
+                                      "baseHash": 1882630949,
+                                      "componentId": "sc-AxheI",
                                       "isStatic": false,
                                       "rules": Array [
                                         "
@@ -1396,7 +1408,7 @@ exports[`Confirm should render 1`] = `
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
                                     "shouldForwardProp": undefined,
-                                    "styledComponentId": "sc-AxhCb",
+                                    "styledComponentId": "sc-AxheI",
                                     "target": "button",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -1747,6 +1759,7 @@ exports[`Confirm should render content as reacr node 1`] = `
                         data-button-test="true"
                         type="button"
                       >
+                        
                         Cancel
                       </button>
                       <button
@@ -1755,6 +1768,7 @@ exports[`Confirm should render content as reacr node 1`] = `
                         data-button-test="true"
                         type="button"
                       >
+                        
                         Confirm
                       </button>
                     </div>
@@ -1808,8 +1822,8 @@ exports[`Confirm should render content as reacr node 1`] = `
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "baseHash": 2075994405,
-                                    "componentId": "sc-AxhUy",
+                                    "baseHash": -1474970742,
+                                    "componentId": "sc-Axmtr",
                                     "isStatic": false,
                                     "rules": Array [
                                       "
@@ -1823,7 +1837,7 @@ exports[`Confirm should render content as reacr node 1`] = `
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
                                   "shouldForwardProp": undefined,
-                                  "styledComponentId": "sc-AxhUy",
+                                  "styledComponentId": "sc-Axmtr",
                                   "target": "button",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -1832,6 +1846,7 @@ exports[`Confirm should render content as reacr node 1`] = `
                               }
                               className=""
                               color="transparent"
+                              icon=""
                               onClick={[Function]}
                               type="button"
                             >
@@ -1841,8 +1856,8 @@ exports[`Confirm should render content as reacr node 1`] = `
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "baseHash": 2075994405,
-                                      "componentId": "sc-AxhUy",
+                                      "baseHash": -1474970742,
+                                      "componentId": "sc-Axmtr",
                                       "isStatic": false,
                                       "rules": Array [
                                         "
@@ -1856,7 +1871,7 @@ exports[`Confirm should render content as reacr node 1`] = `
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
                                     "shouldForwardProp": undefined,
-                                    "styledComponentId": "sc-AxhUy",
+                                    "styledComponentId": "sc-Axmtr",
                                     "target": "button",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -1894,8 +1909,8 @@ exports[`Confirm should render content as reacr node 1`] = `
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "baseHash": 1845756808,
-                                    "componentId": "sc-AxhCb",
+                                    "baseHash": 1882630949,
+                                    "componentId": "sc-AxheI",
                                     "isStatic": false,
                                     "rules": Array [
                                       "
@@ -1910,7 +1925,7 @@ exports[`Confirm should render content as reacr node 1`] = `
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
                                   "shouldForwardProp": undefined,
-                                  "styledComponentId": "sc-AxhCb",
+                                  "styledComponentId": "sc-AxheI",
                                   "target": "button",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -1919,6 +1934,7 @@ exports[`Confirm should render content as reacr node 1`] = `
                               }
                               className=""
                               color=""
+                              icon=""
                               onClick={[Function]}
                               type="button"
                             >
@@ -1928,8 +1944,8 @@ exports[`Confirm should render content as reacr node 1`] = `
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "baseHash": 1845756808,
-                                      "componentId": "sc-AxhCb",
+                                      "baseHash": 1882630949,
+                                      "componentId": "sc-AxheI",
                                       "isStatic": false,
                                       "rules": Array [
                                         "
@@ -1944,7 +1960,7 @@ exports[`Confirm should render content as reacr node 1`] = `
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
                                     "shouldForwardProp": undefined,
-                                    "styledComponentId": "sc-AxhCb",
+                                    "styledComponentId": "sc-AxheI",
                                     "target": "button",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],

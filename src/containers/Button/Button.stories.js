@@ -44,3 +44,9 @@ export const ButtonColorsStory = () =>
 
 export const CustomStyledButtonStory = () =>
   <StyledButton onClick={action("button-clicked")}>Button</StyledButton>
+
+export const IconButtonStory = () => (
+  <Button icon="chef-hat" onClick={action("button clicked")}>
+    Button
+  </Button>
+);

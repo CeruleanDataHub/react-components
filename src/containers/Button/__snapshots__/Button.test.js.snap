@@ -15,6 +15,7 @@ exports[`Button renders 1`] = `
   as={null}
   className=""
   color=""
+  icon=""
   onClick={[MockFunction]}
   type="button"
 >

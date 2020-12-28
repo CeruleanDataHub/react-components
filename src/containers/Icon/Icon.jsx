@@ -13,11 +13,11 @@ const CustomIcon = styled.img`
 /**
  * Icon library is based on https://lineicons.com/icons/
  */
-export const Icon = ({ name, customIcon, as }) =>
+export const Icon = ({ className, name, customIcon, as }) =>
   customIcon ? (
     <CustomIcon src={customIcon} />
   ) : (
-    <IconStyled className={["lni", `lni-${name}`]} as={as} />
+    <IconStyled className={[className, "lni", `lni-${name}`]} as={as} />
   );
 
 export const names = [
@@ -68,11 +68,13 @@ Icon.propTypes = {
     PropTypes.func,
     PropTypes.string,
     PropTypes.shape({ render: PropTypes.func.isRequired })
-  ])
+  ]),
+  className: PropTypes.string,
 };
 
 Icon.defaultProps = {
   name: "",
   customIcon: null,
-  as: null
+  as: null,
+  className: "",
 };
