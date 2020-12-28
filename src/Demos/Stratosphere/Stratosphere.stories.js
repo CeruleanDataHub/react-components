@@ -248,7 +248,7 @@ const PositionRelative = styled.div`
   position: relative;
 `;
 
-const NavigatonContainer = styled.div`
+const NavigationContainer = styled.div`
   color: ${({ theme }) => theme.menuColor};
 
   button {
@@ -367,7 +367,7 @@ export const StratosphereDemo = () => {
     <Container>
       <Typography fontFamily="openSans">
         <GridWithCollapsibleMenu menuOpen={menuOpen}>
-          <Cell as={NavigatonContainer}>
+          <Cell as={NavigationContainer}>
             <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
               <Menu items={menuItems} menuOpen={menuOpen} />
             </Navigation>
@@ -534,7 +534,7 @@ export const StratosphereUsersAndRolesDemo = () => {
     <Container>
       <Typography fontFamily="openSans">
         <GridWithCollapsibleMenu menuOpen={menuOpen}>
-          <Cell as={NavigatonContainer}>
+          <Cell as={NavigationContainer}>
             <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
               <Menu items={menuItems} menuOpen={menuOpen} />
             </Navigation>
@@ -724,7 +724,7 @@ export const StratosphereManageUsersDemo = () => {
     <Container>
       <Typography fontFamily="openSans">
         <GridWithCollapsibleMenu menuOpen={menuOpen}>
-          <Cell as={NavigatonContainer}>
+          <Cell as={NavigationContainer}>
             <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
               <Menu items={menuItems} menuOpen={menuOpen} />
             </Navigation>
@@ -879,7 +879,7 @@ export const StratosphereManageUsersWithModalDemo = () => {
     <Container>
       <Typography fontFamily="openSans">
         <GridWithCollapsibleMenu menuOpen={menuOpen}>
-          <Cell as={NavigatonContainer}>
+          <Cell as={NavigationContainer}>
             <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
               <Menu items={menuItems} menuOpen={menuOpen} />
             </Navigation>
@@ -1086,7 +1086,7 @@ export const StratosphereManageGroupsWithModalDemo = () => {
     <Container>
       <Typography fontFamily="openSans">
         <GridWithCollapsibleMenu menuOpen={menuOpen}>
-          <Cell as={NavigatonContainer}>
+          <Cell as={NavigationContainer}>
             <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
               <Menu items={menuItems} menuOpen={menuOpen} />
             </Navigation>
@@ -1297,7 +1297,7 @@ export const StratosphereManageHierarchiesWithModalDemo = () => {
     <Container>
       <Typography fontFamily="openSans">
         <GridWithCollapsibleMenu menuOpen={menuOpen}>
-          <Cell as={NavigatonContainer}>
+          <Cell as={NavigationContainer}>
             <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
               <Menu items={menuItems} menuOpen={menuOpen} />
             </Navigation>
@@ -1485,7 +1485,7 @@ export const StratosphereManageUsersWithConfirmDemo = () => {
     <Container>
       <Typography fontFamily="openSans">
         <GridWithCollapsibleMenu menuOpen={menuOpen}>
-          <Cell as={NavigatonContainer}>
+          <Cell as={NavigationContainer}>
             <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
               <Menu items={menuItems} menuOpen={menuOpen} />
             </Navigation>
@@ -1608,7 +1608,7 @@ export const StratosphereManageUsersWithDeleteDemo = () => {
     <Container>
       <Typography fontFamily="openSans">
         <GridWithCollapsibleMenu menuOpen={menuOpen}>
-          <Cell as={NavigatonContainer}>
+          <Cell as={NavigationContainer}>
             <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
               <Menu items={menuItems} menuOpen={menuOpen} />
             </Navigation>
@@ -1747,7 +1747,7 @@ export const StratosphereManageRolesDemo = () => {
     <Container>
       <Typography fontFamily="openSans">
         <GridWithCollapsibleMenu menuOpen={menuOpen}>
-          <Cell as={NavigatonContainer}>
+          <Cell as={NavigationContainer}>
             <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
               <Menu items={menuItems} menuOpen={menuOpen} />
             </Navigation>
@@ -1900,7 +1900,7 @@ export const StratosphereManageRolesWithModalDemo = () => {
     <Container>
       <Typography fontFamily="openSans">
         <GridWithCollapsibleMenu menuOpen={menuOpen}>
-          <Cell as={NavigatonContainer}>
+          <Cell as={NavigationContainer}>
             <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
               <Menu items={menuItems} menuOpen={menuOpen} />
             </Navigation>
@@ -2176,7 +2176,7 @@ export const StratosphereSwitchTabsModalDemo = () => {
     <Container>
       <Typography fontFamily="openSans">
         <GridWithCollapsibleMenu menuOpen={menuOpen}>
-          <Cell as={NavigatonContainer}>
+          <Cell as={NavigationContainer}>
             <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
               <Menu items={menuItems} menuOpen={menuOpen} />
             </Navigation>
@@ -2367,7 +2367,7 @@ export const StratosphereManageGroupsDemo = () => {
     <Container>
       <Typography fontFamily="openSans">
         <GridWithCollapsibleMenu menuOpen={menuOpen}>
-          <Cell as={NavigatonContainer}>
+          <Cell as={NavigationContainer}>
             <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
               <Menu items={menuItems} menuOpen={menuOpen} />
             </Navigation>
@@ -2516,7 +2516,7 @@ export const StratosphereManageGroupsAssignUserModalDemo = () => {
     <Container>
       <Typography fontFamily="openSans">
         <GridWithCollapsibleMenu menuOpen={menuOpen}>
-          <Cell as={NavigatonContainer}>
+          <Cell as={NavigationContainer}>
             <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
               <Menu items={menuItems} menuOpen={menuOpen} />
             </Navigation>
@@ -2755,7 +2755,7 @@ export const StratosphereHierarchiesDemo = () => {
     <Container>
       <Typography fontFamily="openSans">
         <GridWithCollapsibleMenu menuOpen={menuOpen}>
-          <Cell as={NavigatonContainer}>
+          <Cell as={NavigationContainer}>
             <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
               <Menu items={menuItems} menuOpen={menuOpen} />
             </Navigation>
@@ -2887,7 +2887,7 @@ export const StratosphereManageGroupsUsersModalDemo = () => {
     <Container>
       <Typography fontFamily="openSans">
         <GridWithCollapsibleMenu menuOpen={menuOpen}>
-          <Cell as={NavigatonContainer}>
+          <Cell as={NavigationContainer}>
             <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
               <Menu items={menuItems} menuOpen={menuOpen} />
             </Navigation>
@@ -3068,7 +3068,7 @@ export const StratosphereManageGroupsHierarchiesModalDemo = () => {
     <Container>
       <Typography fontFamily="openSans">
         <GridWithCollapsibleMenu menuOpen={menuOpen}>
-          <Cell as={NavigatonContainer}>
+          <Cell as={NavigationContainer}>
             <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
               <Menu items={menuItems} menuOpen={menuOpen} />
             </Navigation>
@@ -3243,7 +3243,7 @@ export const StratosphereManageGroupsHierarchiesDeleteConfirmModalDemo = () => {
     <Container>
       <Typography fontFamily="openSans">
         <GridWithCollapsibleMenu menuOpen={menuOpen}>
-          <Cell as={NavigatonContainer}>
+          <Cell as={NavigationContainer}>
             <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
               <Menu items={menuItems} menuOpen={menuOpen} />
             </Navigation>
@@ -3431,7 +3431,7 @@ export const StratosphereDevicesAndDeploymentsDemo = () => {
     <Container>
       <Typography fontFamily="openSans">
         <GridWithCollapsibleMenu menuOpen={menuOpen}>
-          <Cell as={NavigatonContainer}>
+          <Cell as={NavigationContainer}>
             <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
               <Menu items={menuItems} menuOpen={menuOpen} />
             </Navigation>
@@ -3592,7 +3592,7 @@ export const StratosphereManageDevicesDemo = () => {
     <Container>
       <Typography fontFamily="openSans">
         <GridWithCollapsibleMenu menuOpen={menuOpen}>
-          <Cell as={NavigatonContainer}>
+          <Cell as={NavigationContainer}>
             <Navigation onMenuToggle={setMenuOpen} menuInitialState={menuOpen}>
               <Menu items={menuItems} menuOpen={menuOpen} />
             </Navigation>
