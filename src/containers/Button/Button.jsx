@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React, { forwardRef } from "react";
 import styled from "styled-components";
-import {Icon} from "../Icon/Icon";
+import { Icon } from "../Icon/Icon";
 
 const StyledButton = styled.button`
   font-family: inherit;
