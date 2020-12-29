@@ -1,8 +1,8 @@
-import {mount} from "enzyme";
+import { mount } from "enzyme";
 import React from "react";
 import styled from "styled-components";
 
-import {Button} from "./Button";
+import { Button } from "./Button";
 
 describe("Button", () => {
   let component;
