@@ -15,7 +15,7 @@ const StyledButton = styled.button`
 `;
 
 const StyledIcon = styled(Icon)`
-  margin: 2px;
+  margin: 0 2px;
 `
 
 export const Button = forwardRef(
