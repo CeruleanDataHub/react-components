@@ -42,7 +42,8 @@
     "test-watch": "jest --watch",
     "watch": "webpack --watch",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "bump-patch-number": "./npm-scripts/bump-patch-number.sh"
   },
   "husky": {
     "hooks": {
