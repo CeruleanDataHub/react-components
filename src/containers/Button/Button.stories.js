@@ -50,3 +50,7 @@ export const IconButtonStory = () => (
     Button
   </Button>
 );
+
+export const TextlessIconButtonStory = () => (
+  <Button icon="chef-hat" onClick={action("button clicked")} />
+);

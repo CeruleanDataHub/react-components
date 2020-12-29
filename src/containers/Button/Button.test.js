@@ -17,6 +17,12 @@ describe("Button", () => {
     expect(component).toMatchSnapshot();
   });
 
+  it('given button without children, has no children', () => {
+    component = mount(<Button onClick={() => {}} />)
+
+    expect(component.find('button[data-button-test]').children()).not.toExist()
+  });
+
   it("does not call onClick yet", () => {
     expect(handleClickMock).not.toHaveBeenCalled();
   })
