@@ -1,52 +1,69 @@
-import { mount } from "enzyme";
 import React from "react";
 import renderer from "react-test-renderer";
 
 import { Dropdown } from "./Dropdown";
 
 describe("Dropdown", () => {
-  it("should render dropdown", () => {
-    const component = renderer.create(<Dropdown>Content</Dropdown>);
+  let component;
+
+  beforeEach(() => {
+     component = renderer.create(<Dropdown>Some content</Dropdown>);
+  });
+
+  it("renders", () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  it("should render dropdown in open state", () => {
-    const component = renderer.create(<Dropdown isOpen>Content</Dropdown>);
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+  it('has default onClick', () => {
+    const actual = component.root.findByType('button').props.onClick;
+    expect(actual).toBeTruthy()
   });
 
-  it("should render react node children", () => {
-    const component = renderer.create(
-      <Dropdown isOpen>
-        <div>Test content</div>
-      </Dropdown>
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+  describe('given open dropdown with children', () => {
+    let isOpenStub;
+    let childrenStub
+
+    beforeEach(() => {
+      isOpenStub = true;
+      childrenStub = <li>Some content</li>
+
+      component = renderer.create(<Dropdown isOpen={isOpenStub}>{childrenStub}</Dropdown>);
+    });
+
+    it("should show itemList", () => {
+      expect(component.root.findByProps({"data-item-list-test": true})).toBeTruthy()
+    });
+
+    it("should have correct children", () => {
+      const {children} = component.root.findByProps({"data-item-list-test": true}).props;
+      expect(children).toEqual(childrenStub)
+    });
   });
 
-  it("should have onClick listener", () => {
-    const component = renderer.create(
-      <Dropdown onClick={() => null}>Content</Dropdown>
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+  describe('given onClick', () => {
+    let onClickMock;
 
-  it("should fire onClick event callback function", () => {
-    const handleClick = jest.fn();
-    const component = mount(<Dropdown onClick={handleClick}>Content</Dropdown>);
-    expect(handleClick).not.toHaveBeenCalled();
-    component.find("button").simulate("click");
-    expect(handleClick).toHaveBeenCalled();
-  });
+    beforeEach(() => {
+      onClickMock = jest.fn()
+      component = renderer.create(
+        <Dropdown onClick={onClickMock}>Some content</Dropdown>
+      );
+    });
 
-  it("should call default props onClick function when no onClick property is passed", () => {
-    const component = renderer.create(<Dropdown>Content</Dropdown>);
-    const tree = component.toJSON();
-    component.root.props.onClick();
-    expect(tree).toMatchSnapshot();
+    it("has onClick", () => {
+      const actual = component.root.findByType('button').props.onClick;
+      expect(actual).toEqual(onClickMock)
+    });
+
+    it("does not call onClick yet", () => {
+      expect(onClickMock).not.toHaveBeenCalled();
+    });
+
+    it("when called, calls callback function", () => {
+      component.root.findByType("button").props.onClick()
+
+      expect(onClickMock).toHaveBeenCalled();
+    });
   });
 });

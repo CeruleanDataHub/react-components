@@ -189,6 +189,7 @@ exports[`CheckboxDropdown should be able to select item from list 1`] = `
     </button>
     <ul
       className="c7"
+      data-item-list-test={true}
     >
       <li
         className="c8"
@@ -696,6 +697,7 @@ exports[`CheckboxDropdown should render in open state 1`] = `
     </button>
     <ul
       className="c8"
+      data-item-list-test={true}
     >
       <li
         className="c9"
@@ -923,6 +925,7 @@ exports[`CheckboxDropdown should render label 1`] = `
     </button>
     <ul
       className="c8"
+      data-item-list-test={true}
     >
       <li
         className="c9"
@@ -1152,6 +1155,7 @@ exports[`CheckboxDropdown should render react node label 1`] = `
     </button>
     <ul
       className="c8"
+      data-item-list-test={true}
     >
       <li
         className="c9"
