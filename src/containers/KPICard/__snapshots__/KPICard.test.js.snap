@@ -1,97 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`KPICard should format large values 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c4 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  text-align: center;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c7 {
-  text-align: center;
-}
-
-.c0 {
-  padding: 1.2em;
-}
-
-.c3 {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c6 {
-  font-size: 1rem;
-  margin-left: 0.3rem;
-}
-
 <div
-  className="c0"
+  className="sc-AxiKw gFhYFB"
 >
   Title
   <div
-    className="c1"
+    className="Grid__Grid-gDLjRO jcWKgV"
   >
     <div
-      className="c2"
+      className="Cell__Cell-tAjrW cZXUpN"
     >
       10,000,000,000
     </div>
     <span
-      className="c3 c4"
+      className="sc-AxhCb gyCRuM Cell__Cell-tAjrW hmKLft"
     >
       <span
-        className="c5"
+        className="sc-AxhUy eJslfT"
       >
         +
         30%
         <div
-          className="c6 c7 lni lni-chevron-up"
+          className="sc-AxgMl jmOfdg sc-AxjAm jWlVxK lni lni-chevron-up"
         />
       </span>
     </span>
@@ -100,245 +31,196 @@ exports[`KPICard should format large values 1`] = `
 `;
 
 exports[`KPICard should render 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c4 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  text-align: center;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c7 {
-  text-align: center;
-}
-
-.c0 {
-  padding: 1.2em;
-}
-
-.c3 {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
+<KPICard
+  currency={null}
+  dataFormat="decimal"
+  growth={0}
+  showPercentage={true}
+  title=""
+  value={0}
+>
+  <styled.div>
+    <div
+      className="sc-AxiKw gFhYFB"
+    >
+      <Grid
+        as={null}
+        className=""
+        columns=""
+      >
+        <Grid__Grid
+          as={null}
+          className=""
+          columns={2}
+        >
+          <div
+            className="Grid__Grid-gDLjRO jcWKgV"
+          >
+            <Cell__Cell
+              middle={true}
+            >
+              <div
+                className="Cell__Cell-tAjrW cZXUpN"
+              >
+                0
+              </div>
+            </Cell__Cell>
+            <Cell__Cell
+              as={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "baseHash": 1845756808,
+                    "componentId": "sc-AxhCb",
+                    "isStatic": false,
+                    "rules": Array [
+                      "
   justify-content: flex-end;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.c5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c6 {
+",
+                    ],
+                    "staticRulesId": "",
+                  },
+                  "displayName": "styled.span",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "shouldForwardProp": undefined,
+                  "styledComponentId": "sc-AxhCb",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              center={true}
+            >
+              <styled.span
+                center={true}
+                className="Cell__Cell-tAjrW hmKLft"
+              >
+                <span
+                  className="sc-AxhCb gyCRuM Cell__Cell-tAjrW hmKLft"
+                >
+                  <styled.span>
+                    <span
+                      className="sc-AxhUy eJslfT"
+                    >
+                      0%
+                      <Icon
+                        as={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "baseHash": 1105857511,
+                              "componentId": "sc-AxgMl",
+                              "isStatic": false,
+                              "rules": Array [
+                                "
   font-size: 1rem;
   margin-left: 0.3rem;
-}
-
-<div
-  className="c0"
->
-  Title
-  <div
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      1
+",
+                              ],
+                              "staticRulesId": "",
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "shouldForwardProp": undefined,
+                            "styledComponentId": "sc-AxgMl",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        className=""
+                        customIcon={null}
+                        name="minus"
+                      >
+                        <styled.span
+                          as={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "baseHash": 1105857511,
+                                "componentId": "sc-AxgMl",
+                                "isStatic": false,
+                                "rules": Array [
+                                  "
+  font-size: 1rem;
+  margin-left: 0.3rem;
+",
+                                ],
+                                "staticRulesId": "",
+                              },
+                              "displayName": "styled.div",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "shouldForwardProp": undefined,
+                              "styledComponentId": "sc-AxgMl",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          className={
+                            Array [
+                              "",
+                              "lni",
+                              "lni-minus",
+                            ]
+                          }
+                        >
+                          <styled.div
+                            className="sc-AxjAm jWlVxK lni lni-minus"
+                          >
+                            <div
+                              className="sc-AxgMl jmOfdg sc-AxjAm jWlVxK lni lni-minus"
+                            />
+                          </styled.div>
+                        </styled.span>
+                      </Icon>
+                    </span>
+                  </styled.span>
+                </span>
+              </styled.span>
+            </Cell__Cell>
+          </div>
+        </Grid__Grid>
+      </Grid>
     </div>
-    <span
-      className="c3 c4"
-    >
-      <span
-        className="c5"
-      >
-        +
-        30%
-        <div
-          className="c6 c7 lni lni-chevron-up"
-        />
-      </span>
-    </span>
-  </div>
-</div>
-`;
-
-exports[`KPICard should render card without the percentage 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c0 {
-  padding: 1.2em;
-}
-
-<div
-  className="c0"
->
-  Title
-  <div
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      1
-    </div>
-  </div>
-</div>
+  </styled.div>
+</KPICard>
 `;
 
 exports[`KPICard should render currency with USD 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c4 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  text-align: center;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c7 {
-  text-align: center;
-}
-
-.c0 {
-  padding: 1.2em;
-}
-
-.c3 {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c6 {
-  font-size: 1rem;
-  margin-left: 0.3rem;
-}
-
 <div
-  className="c0"
+  className="sc-AxiKw gFhYFB"
 >
   USD
   <div
-    className="c1"
+    className="Grid__Grid-gDLjRO jcWKgV"
   >
     <div
-      className="c2"
+      className="Cell__Cell-tAjrW cZXUpN"
     >
       $3,789.00
     </div>
     <span
-      className="c3 c4"
+      className="sc-AxhCb gyCRuM Cell__Cell-tAjrW hmKLft"
     >
       <span
-        className="c5"
+        className="sc-AxhUy eJslfT"
       >
         
         0%
         <div
-          className="c6 c7 lni lni-minus"
+          className="sc-AxgMl jmOfdg sc-AxjAm jWlVxK lni lni-minus"
         />
       </span>
     </span>
@@ -347,47 +229,15 @@ exports[`KPICard should render currency with USD 1`] = `
 `;
 
 exports[`KPICard should render currency with USD and without percentage 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c0 {
-  padding: 1.2em;
-}
-
 <div
-  className="c0"
+  className="sc-AxiKw gFhYFB"
 >
   USD
   <div
-    className="c1"
+    className="Grid__Grid-gDLjRO jcWKgV"
   >
     <div
-      className="c2"
+      className="Cell__Cell-tAjrW cZXUpN"
     >
       $3,789.00
     </div>
@@ -396,97 +246,28 @@ exports[`KPICard should render currency with USD and without percentage 1`] = `
 `;
 
 exports[`KPICard should render currency with euro 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c4 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  text-align: center;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c7 {
-  text-align: center;
-}
-
-.c0 {
-  padding: 1.2em;
-}
-
-.c3 {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c6 {
-  font-size: 1rem;
-  margin-left: 0.3rem;
-}
-
 <div
-  className="c0"
+  className="sc-AxiKw gFhYFB"
 >
   Euro
   <div
-    className="c1"
+    className="Grid__Grid-gDLjRO jcWKgV"
   >
     <div
-      className="c2"
+      className="Cell__Cell-tAjrW cZXUpN"
     >
       €3,789.00
     </div>
     <span
-      className="c3 c4"
+      className="sc-AxhCb gyCRuM Cell__Cell-tAjrW hmKLft"
     >
       <span
-        className="c5"
+        className="sc-AxhUy eJslfT"
       >
         
         0%
         <div
-          className="c6 c7 lni lni-minus"
+          className="sc-AxgMl jmOfdg sc-AxjAm jWlVxK lni lni-minus"
         />
       </span>
     </span>
@@ -495,47 +276,15 @@ exports[`KPICard should render currency with euro 1`] = `
 `;
 
 exports[`KPICard should render currency with euro and without percentage 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c0 {
-  padding: 1.2em;
-}
-
 <div
-  className="c0"
+  className="sc-AxiKw gFhYFB"
 >
   Euro
   <div
-    className="c1"
+    className="Grid__Grid-gDLjRO jcWKgV"
   >
     <div
-      className="c2"
+      className="Cell__Cell-tAjrW cZXUpN"
     >
       €3,789.00
     </div>
@@ -544,97 +293,28 @@ exports[`KPICard should render currency with euro and without percentage 1`] = `
 `;
 
 exports[`KPICard should render green 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c4 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  text-align: center;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c7 {
-  text-align: center;
-}
-
-.c0 {
-  padding: 1.2em;
-}
-
-.c3 {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c6 {
-  font-size: 1rem;
-  margin-left: 0.3rem;
-}
-
 <div
-  className="c0"
+  className="sc-AxiKw gFhYFB"
 >
   Title
   <div
-    className="c1"
+    className="Grid__Grid-gDLjRO jcWKgV"
   >
     <div
-      className="c2"
+      className="Cell__Cell-tAjrW cZXUpN"
     >
       1
     </div>
     <span
-      className="c3 c4"
+      className="sc-AxhCb gyCRuM Cell__Cell-tAjrW hmKLft"
     >
       <span
-        className="c5"
+        className="sc-AxhUy eJslfT"
       >
         +
         30%
         <div
-          className="c6 c7 lni lni-chevron-up"
+          className="sc-AxgMl jmOfdg sc-AxjAm jWlVxK lni lni-chevron-up"
         />
       </span>
     </span>
@@ -642,147 +322,29 @@ exports[`KPICard should render green 1`] = `
 </div>
 `;
 
-exports[`KPICard should render green card without the percentage 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c0 {
-  padding: 1.2em;
-}
-
-<div
-  className="c0"
->
-  Title
-  <div
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      1
-    </div>
-  </div>
-</div>
-`;
-
 exports[`KPICard should render negative growth 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c4 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  text-align: center;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c7 {
-  text-align: center;
-}
-
-.c0 {
-  padding: 1.2em;
-}
-
-.c3 {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c6 {
-  font-size: 1rem;
-  margin-left: 0.3rem;
-}
-
 <div
-  className="c0"
+  className="sc-AxiKw gFhYFB"
 >
   Title
   <div
-    className="c1"
+    className="Grid__Grid-gDLjRO jcWKgV"
   >
     <div
-      className="c2"
+      className="Cell__Cell-tAjrW cZXUpN"
     >
       1
     </div>
     <span
-      className="c3 c4"
+      className="sc-AxhCb gyCRuM Cell__Cell-tAjrW hmKLft"
     >
       <span
-        className="c5"
+        className="sc-AxhUy eJslfT"
       >
         
         -30%
         <div
-          className="c6 c7 lni lni-chevron-down"
+          className="sc-AxgMl jmOfdg sc-AxjAm jWlVxK lni lni-chevron-down"
         />
       </span>
     </span>
@@ -791,47 +353,15 @@ exports[`KPICard should render negative growth 1`] = `
 `;
 
 exports[`KPICard should render negative growth without percentage 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c0 {
-  padding: 1.2em;
-}
-
 <div
-  className="c0"
+  className="sc-AxiKw gFhYFB"
 >
   Title
   <div
-    className="c1"
+    className="Grid__Grid-gDLjRO jcWKgV"
   >
     <div
-      className="c2"
+      className="Cell__Cell-tAjrW cZXUpN"
     >
       1
     </div>
@@ -840,97 +370,28 @@ exports[`KPICard should render negative growth without percentage 1`] = `
 `;
 
 exports[`KPICard should render positive growth 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c4 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  text-align: center;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c7 {
-  text-align: center;
-}
-
-.c0 {
-  padding: 1.2em;
-}
-
-.c3 {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c6 {
-  font-size: 1rem;
-  margin-left: 0.3rem;
-}
-
 <div
-  className="c0"
+  className="sc-AxiKw gFhYFB"
 >
   Title
   <div
-    className="c1"
+    className="Grid__Grid-gDLjRO jcWKgV"
   >
     <div
-      className="c2"
+      className="Cell__Cell-tAjrW cZXUpN"
     >
       1
     </div>
     <span
-      className="c3 c4"
+      className="sc-AxhCb gyCRuM Cell__Cell-tAjrW hmKLft"
     >
       <span
-        className="c5"
+        className="sc-AxhUy eJslfT"
       >
         +
         30%
         <div
-          className="c6 c7 lni lni-chevron-up"
+          className="sc-AxgMl jmOfdg sc-AxjAm jWlVxK lni lni-chevron-up"
         />
       </span>
     </span>
@@ -939,47 +400,15 @@ exports[`KPICard should render positive growth 1`] = `
 `;
 
 exports[`KPICard should render positive growth without percentage 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c0 {
-  padding: 1.2em;
-}
-
 <div
-  className="c0"
+  className="sc-AxiKw gFhYFB"
 >
   Title
   <div
-    className="c1"
+    className="Grid__Grid-gDLjRO jcWKgV"
   >
     <div
-      className="c2"
+      className="Cell__Cell-tAjrW cZXUpN"
     >
       1
     </div>
@@ -988,97 +417,28 @@ exports[`KPICard should render positive growth without percentage 1`] = `
 `;
 
 exports[`KPICard should render red 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c4 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  text-align: center;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c7 {
-  text-align: center;
-}
-
-.c0 {
-  padding: 1.2em;
-}
-
-.c3 {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c6 {
-  font-size: 1rem;
-  margin-left: 0.3rem;
-}
-
 <div
-  className="c0"
+  className="sc-AxiKw gFhYFB"
 >
   Title
   <div
-    className="c1"
+    className="Grid__Grid-gDLjRO jcWKgV"
   >
     <div
-      className="c2"
+      className="Cell__Cell-tAjrW cZXUpN"
     >
       1
     </div>
     <span
-      className="c3 c4"
+      className="sc-AxhCb gyCRuM Cell__Cell-tAjrW hmKLft"
     >
       <span
-        className="c5"
+        className="sc-AxhUy eJslfT"
       >
         +
         30%
         <div
-          className="c6 c7 lni lni-chevron-up"
+          className="sc-AxgMl jmOfdg sc-AxjAm jWlVxK lni lni-chevron-up"
         />
       </span>
     </span>
@@ -1086,147 +446,29 @@ exports[`KPICard should render red 1`] = `
 </div>
 `;
 
-exports[`KPICard should render red card without the percentage 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c0 {
-  padding: 1.2em;
-}
-
-<div
-  className="c0"
->
-  Title
-  <div
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      1
-    </div>
-  </div>
-</div>
-`;
-
 exports[`KPICard should render two decimal points in growth 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c4 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  text-align: center;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c7 {
-  text-align: center;
-}
-
-.c0 {
-  padding: 1.2em;
-}
-
-.c3 {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c6 {
-  font-size: 1rem;
-  margin-left: 0.3rem;
-}
-
 <div
-  className="c0"
+  className="sc-AxiKw gFhYFB"
 >
   Title
   <div
-    className="c1"
+    className="Grid__Grid-gDLjRO jcWKgV"
   >
     <div
-      className="c2"
+      className="Cell__Cell-tAjrW cZXUpN"
     >
       1
     </div>
     <span
-      className="c3 c4"
+      className="sc-AxhCb gyCRuM Cell__Cell-tAjrW hmKLft"
     >
       <span
-        className="c5"
+        className="sc-AxhUy eJslfT"
       >
         +
         33.33%
         <div
-          className="c6 c7 lni lni-chevron-up"
+          className="sc-AxgMl jmOfdg sc-AxjAm jWlVxK lni lni-chevron-up"
         />
       </span>
     </span>
@@ -1235,97 +477,28 @@ exports[`KPICard should render two decimal points in growth 1`] = `
 `;
 
 exports[`KPICard should render zero growth 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c4 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  text-align: center;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c7 {
-  text-align: center;
-}
-
-.c0 {
-  padding: 1.2em;
-}
-
-.c3 {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c6 {
-  font-size: 1rem;
-  margin-left: 0.3rem;
-}
-
 <div
-  className="c0"
+  className="sc-AxiKw gFhYFB"
 >
   Title
   <div
-    className="c1"
+    className="Grid__Grid-gDLjRO jcWKgV"
   >
     <div
-      className="c2"
+      className="Cell__Cell-tAjrW cZXUpN"
     >
       1
     </div>
     <span
-      className="c3 c4"
+      className="sc-AxhCb gyCRuM Cell__Cell-tAjrW hmKLft"
     >
       <span
-        className="c5"
+        className="sc-AxhUy eJslfT"
       >
         
         0%
         <div
-          className="c6 c7 lni lni-minus"
+          className="sc-AxgMl jmOfdg sc-AxjAm jWlVxK lni lni-minus"
         />
       </span>
     </span>
@@ -1334,47 +507,15 @@ exports[`KPICard should render zero growth 1`] = `
 `;
 
 exports[`KPICard should render zero growth without percentage 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-self: stretch;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 8px;
-}
-
-.c0 {
-  padding: 1.2em;
-}
-
 <div
-  className="c0"
+  className="sc-AxiKw gFhYFB"
 >
   Title
   <div
-    className="c1"
+    className="Grid__Grid-gDLjRO jcWKgV"
   >
     <div
-      className="c2"
+      className="Cell__Cell-tAjrW cZXUpN"
     >
       1
     </div>

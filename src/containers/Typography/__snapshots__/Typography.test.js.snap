@@ -1,15 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Typography exo Colors should render black exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: black;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm kBatYO"
   fontFamily="exo"
   size="normal"
 >
@@ -18,15 +11,8 @@ exports[`Typography exo Colors should render black exo font 1`] = `
 `;
 
 exports[`Typography exo Colors should render blue exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #1ea7fd;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm eTPBNi"
   fontFamily="exo"
   size="normal"
 >
@@ -35,15 +21,8 @@ exports[`Typography exo Colors should render blue exo font 1`] = `
 `;
 
 exports[`Typography exo Colors should render gray exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #999999;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm dfa-dQm"
   fontFamily="exo"
   size="normal"
 >
@@ -52,15 +31,8 @@ exports[`Typography exo Colors should render gray exo font 1`] = `
 `;
 
 exports[`Typography exo Colors should render green exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #90ee7e;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm kxpAJd"
   fontFamily="exo"
   size="normal"
 >
@@ -69,15 +41,8 @@ exports[`Typography exo Colors should render green exo font 1`] = `
 `;
 
 exports[`Typography exo Colors should render red exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ff0066;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm hTKtVO"
   fontFamily="exo"
   size="normal"
 >
@@ -86,15 +51,8 @@ exports[`Typography exo Colors should render red exo font 1`] = `
 `;
 
 exports[`Typography exo Colors should render white exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: white;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm jGnDVe"
   fontFamily="exo"
   size="normal"
 >
@@ -103,15 +61,8 @@ exports[`Typography exo Colors should render white exo font 1`] = `
 `;
 
 exports[`Typography exo Sizes & Colors combinations should render black large exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 40px;
-  line-height: 55px;
-  color: black;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm cowTHD"
   fontFamily="exo"
   size="large"
 >
@@ -120,15 +71,8 @@ exports[`Typography exo Sizes & Colors combinations should render black large ex
 `;
 
 exports[`Typography exo Sizes & Colors combinations should render black normal exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: black;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm kBatYO"
   fontFamily="exo"
   size="normal"
 >
@@ -137,15 +81,8 @@ exports[`Typography exo Sizes & Colors combinations should render black normal e
 `;
 
 exports[`Typography exo Sizes & Colors combinations should render blue large exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 40px;
-  line-height: 55px;
-  color: #1ea7fd;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm ebHQZj"
   fontFamily="exo"
   size="large"
 >
@@ -154,15 +91,8 @@ exports[`Typography exo Sizes & Colors combinations should render blue large exo
 `;
 
 exports[`Typography exo Sizes & Colors combinations should render blue normal exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #1ea7fd;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm eTPBNi"
   fontFamily="exo"
   size="normal"
 >
@@ -171,15 +101,8 @@ exports[`Typography exo Sizes & Colors combinations should render blue normal ex
 `;
 
 exports[`Typography exo Sizes & Colors combinations should render gray large exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 40px;
-  line-height: 55px;
-  color: #999999;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm bpqeif"
   fontFamily="exo"
   size="large"
 >
@@ -188,15 +111,8 @@ exports[`Typography exo Sizes & Colors combinations should render gray large exo
 `;
 
 exports[`Typography exo Sizes & Colors combinations should render gray normal exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #999999;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm dfa-dQm"
   fontFamily="exo"
   size="normal"
 >
@@ -205,15 +121,8 @@ exports[`Typography exo Sizes & Colors combinations should render gray normal ex
 `;
 
 exports[`Typography exo Sizes & Colors combinations should render green large exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 40px;
-  line-height: 55px;
-  color: #90ee7e;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm cUMHOU"
   fontFamily="exo"
   size="large"
 >
@@ -222,15 +131,8 @@ exports[`Typography exo Sizes & Colors combinations should render green large ex
 `;
 
 exports[`Typography exo Sizes & Colors combinations should render green normal exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #90ee7e;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm kxpAJd"
   fontFamily="exo"
   size="normal"
 >
@@ -239,15 +141,8 @@ exports[`Typography exo Sizes & Colors combinations should render green normal e
 `;
 
 exports[`Typography exo Sizes & Colors combinations should render red large exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 40px;
-  line-height: 55px;
-  color: #ff0066;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm fOTfxj"
   fontFamily="exo"
   size="large"
 >
@@ -256,15 +151,8 @@ exports[`Typography exo Sizes & Colors combinations should render red large exo 
 `;
 
 exports[`Typography exo Sizes & Colors combinations should render red normal exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ff0066;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm hTKtVO"
   fontFamily="exo"
   size="normal"
 >
@@ -273,15 +161,8 @@ exports[`Typography exo Sizes & Colors combinations should render red normal exo
 `;
 
 exports[`Typography exo Sizes & Colors combinations should render white large exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 40px;
-  line-height: 55px;
-  color: white;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm hWtwtf"
   fontFamily="exo"
   size="large"
 >
@@ -290,15 +171,8 @@ exports[`Typography exo Sizes & Colors combinations should render white large ex
 `;
 
 exports[`Typography exo Sizes & Colors combinations should render white normal exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: white;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm jGnDVe"
   fontFamily="exo"
   size="normal"
 >
@@ -307,15 +181,8 @@ exports[`Typography exo Sizes & Colors combinations should render white normal e
 `;
 
 exports[`Typography exo Sizes should render large open sans font 1`] = `
-.c0 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 40px;
-  line-height: 55px;
-  color: unset;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm fCMKPq"
   fontFamily="openSans"
   size="large"
 >
@@ -324,15 +191,8 @@ exports[`Typography exo Sizes should render large open sans font 1`] = `
 `;
 
 exports[`Typography exo Sizes should render normal open sans font 1`] = `
-.c0 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm bYePpP"
   fontFamily="openSans"
   size="normal"
 >
@@ -341,15 +201,8 @@ exports[`Typography exo Sizes should render normal open sans font 1`] = `
 `;
 
 exports[`Typography exo should render font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm MwpTk"
   fontFamily="exo"
   size="normal"
 >
@@ -358,15 +211,8 @@ exports[`Typography exo should render font 1`] = `
 `;
 
 exports[`Typography openSans Colors should render black exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: black;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm kBatYO"
   fontFamily="exo"
   size="normal"
 >
@@ -375,15 +221,8 @@ exports[`Typography openSans Colors should render black exo font 1`] = `
 `;
 
 exports[`Typography openSans Colors should render blue exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #1ea7fd;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm eTPBNi"
   fontFamily="exo"
   size="normal"
 >
@@ -392,15 +231,8 @@ exports[`Typography openSans Colors should render blue exo font 1`] = `
 `;
 
 exports[`Typography openSans Colors should render gray exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #999999;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm dfa-dQm"
   fontFamily="exo"
   size="normal"
 >
@@ -409,15 +241,8 @@ exports[`Typography openSans Colors should render gray exo font 1`] = `
 `;
 
 exports[`Typography openSans Colors should render green exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #90ee7e;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm kxpAJd"
   fontFamily="exo"
   size="normal"
 >
@@ -426,15 +251,8 @@ exports[`Typography openSans Colors should render green exo font 1`] = `
 `;
 
 exports[`Typography openSans Colors should render red exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ff0066;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm hTKtVO"
   fontFamily="exo"
   size="normal"
 >
@@ -443,15 +261,8 @@ exports[`Typography openSans Colors should render red exo font 1`] = `
 `;
 
 exports[`Typography openSans Colors should render white exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: white;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm jGnDVe"
   fontFamily="exo"
   size="normal"
 >
@@ -460,15 +271,8 @@ exports[`Typography openSans Colors should render white exo font 1`] = `
 `;
 
 exports[`Typography openSans Sizes & Colors combinations should render black large exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 40px;
-  line-height: 55px;
-  color: black;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm cowTHD"
   fontFamily="exo"
   size="large"
 >
@@ -477,15 +281,8 @@ exports[`Typography openSans Sizes & Colors combinations should render black lar
 `;
 
 exports[`Typography openSans Sizes & Colors combinations should render black normal exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: black;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm kBatYO"
   fontFamily="exo"
   size="normal"
 >
@@ -494,15 +291,8 @@ exports[`Typography openSans Sizes & Colors combinations should render black nor
 `;
 
 exports[`Typography openSans Sizes & Colors combinations should render blue large exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 40px;
-  line-height: 55px;
-  color: #1ea7fd;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm ebHQZj"
   fontFamily="exo"
   size="large"
 >
@@ -511,15 +301,8 @@ exports[`Typography openSans Sizes & Colors combinations should render blue larg
 `;
 
 exports[`Typography openSans Sizes & Colors combinations should render blue normal exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #1ea7fd;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm eTPBNi"
   fontFamily="exo"
   size="normal"
 >
@@ -528,15 +311,8 @@ exports[`Typography openSans Sizes & Colors combinations should render blue norm
 `;
 
 exports[`Typography openSans Sizes & Colors combinations should render gray large exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 40px;
-  line-height: 55px;
-  color: #999999;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm bpqeif"
   fontFamily="exo"
   size="large"
 >
@@ -545,15 +321,8 @@ exports[`Typography openSans Sizes & Colors combinations should render gray larg
 `;
 
 exports[`Typography openSans Sizes & Colors combinations should render gray normal exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #999999;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm dfa-dQm"
   fontFamily="exo"
   size="normal"
 >
@@ -562,15 +331,8 @@ exports[`Typography openSans Sizes & Colors combinations should render gray norm
 `;
 
 exports[`Typography openSans Sizes & Colors combinations should render green large exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 40px;
-  line-height: 55px;
-  color: #90ee7e;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm cUMHOU"
   fontFamily="exo"
   size="large"
 >
@@ -579,15 +341,8 @@ exports[`Typography openSans Sizes & Colors combinations should render green lar
 `;
 
 exports[`Typography openSans Sizes & Colors combinations should render green normal exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #90ee7e;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm kxpAJd"
   fontFamily="exo"
   size="normal"
 >
@@ -596,15 +351,8 @@ exports[`Typography openSans Sizes & Colors combinations should render green nor
 `;
 
 exports[`Typography openSans Sizes & Colors combinations should render red large exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 40px;
-  line-height: 55px;
-  color: #ff0066;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm fOTfxj"
   fontFamily="exo"
   size="large"
 >
@@ -613,15 +361,8 @@ exports[`Typography openSans Sizes & Colors combinations should render red large
 `;
 
 exports[`Typography openSans Sizes & Colors combinations should render red normal exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ff0066;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm hTKtVO"
   fontFamily="exo"
   size="normal"
 >
@@ -630,15 +371,8 @@ exports[`Typography openSans Sizes & Colors combinations should render red norma
 `;
 
 exports[`Typography openSans Sizes & Colors combinations should render white large exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 40px;
-  line-height: 55px;
-  color: white;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm hWtwtf"
   fontFamily="exo"
   size="large"
 >
@@ -647,15 +381,8 @@ exports[`Typography openSans Sizes & Colors combinations should render white lar
 `;
 
 exports[`Typography openSans Sizes & Colors combinations should render white normal exo font 1`] = `
-.c0 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: white;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm jGnDVe"
   fontFamily="exo"
   size="normal"
 >
@@ -664,15 +391,8 @@ exports[`Typography openSans Sizes & Colors combinations should render white nor
 `;
 
 exports[`Typography openSans Sizes should render large open sans font 1`] = `
-.c0 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 40px;
-  line-height: 55px;
-  color: unset;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm fCMKPq"
   fontFamily="openSans"
   size="large"
 >
@@ -681,15 +401,8 @@ exports[`Typography openSans Sizes should render large open sans font 1`] = `
 `;
 
 exports[`Typography openSans Sizes should render normal open sans font 1`] = `
-.c0 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm bYePpP"
   fontFamily="openSans"
   size="normal"
 >
@@ -698,15 +411,8 @@ exports[`Typography openSans Sizes should render normal open sans font 1`] = `
 `;
 
 exports[`Typography openSans should render font 1`] = `
-.c0 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm bYePpP"
   fontFamily="openSans"
   size="normal"
 >
@@ -715,15 +421,8 @@ exports[`Typography openSans should render font 1`] = `
 `;
 
 exports[`Typography should render 1`] = `
-.c0 {
-  font-family: unset;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm htRihw"
   fontFamily={null}
   size="normal"
 >

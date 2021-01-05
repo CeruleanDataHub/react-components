@@ -1,6 +1,5 @@
 import { mount } from "enzyme";
 import React from "react";
-import styled from "styled-components";
 
 import { Button } from "./Button";
 
@@ -17,15 +16,15 @@ describe("Button", () => {
     expect(component).toMatchSnapshot();
   });
 
-  it('given button without children, has no children', () => {
-    component = mount(<Button onClick={() => {}} />)
+  it("given button without children, has no children", () => {
+    component = mount(<Button onClick={() => {}} />);
 
-    expect(component.find('button[data-button-test]').children()).not.toExist()
+    expect(component.find("button[data-button-test]").children()).not.toExist();
   });
 
   it("does not call onClick yet", () => {
     expect(handleClickMock).not.toHaveBeenCalled();
-  })
+  });
 
   it("when button is clicked, should call callback function", () => {
     component.simulate("click");
@@ -34,46 +33,64 @@ describe("Button", () => {
   });
 
   it("given 'color' prop, should have correct prop", () => {
-    component = mount(<Button onClick={() => {}} color="blue">Button</Button>);
+    component = mount(
+      <Button onClick={() => {}} color="blue">
+        Button
+      </Button>
+    );
 
-    expect(component.find('button[data-button-test]')).toHaveProp('color', 'blue')
+    expect(component.find("button[data-button-test]")).toHaveProp(
+      "color",
+      "blue"
+    );
   });
 
   it("given 'icon' prop, should have correct prop", () => {
-    component = mount(<Button onClick={() => {}} icon="chef-hat">Some content</Button> )
+    component = mount(
+      <Button onClick={() => {}} icon="chef-hat">
+        Some content
+      </Button>
+    );
 
-    expect(component.find('Icon[data-button-icon-test]')).toHaveProp('name', 'chef-hat')
-  });
-
-  it("given custom style, should have correct style rule", () => {
-    const CustomButton = styled.button`
-      background: black;
-    `;
-
-    component = mount(<Button onClick={() => {}} as={CustomButton}>Button</Button>);
-
-    expect(component.find('button[data-button-test]')).toHaveStyleRule('background', 'black')
+    expect(component.find("Icon[data-button-icon-test]")).toHaveProp(
+      "name",
+      "chef-hat"
+    );
   });
 
   it("given 'onClick' prop, should have correct prop", () => {
     component = mount(<Button onClick={handleClickMock}>Button</Button>);
 
-    expect(component.find('button[data-button-test]')).toHaveProp('onClick', handleClickMock)
+    expect(component.find("button[data-button-test]")).toHaveProp(
+      "onClick",
+      handleClickMock
+    );
   });
 
   describe("Type", () => {
     ["button", "submit", "reset"].forEach(type => {
       it(`given 'type' ${type} prop, has correct prop`, () => {
-        component = mount(<Button onClick={() => {}} type={type}>Button</Button>);
+        component = mount(
+          <Button onClick={() => {}} type={type}>
+            Button
+          </Button>
+        );
 
-        expect(component.find('button[data-button-test]')).toHaveProp('type', type)
+        expect(component.find("button[data-button-test]")).toHaveProp(
+          "type",
+          type
+        );
       });
     });
   });
 
   it("given button with ref, should contain forwarded ref", () => {
     const ref = React.createRef();
-    component = mount(<Button onClick={() => {}} ref={ref}>Button</Button>);
+    component = mount(
+      <Button onClick={() => {}} ref={ref}>
+        Button
+      </Button>
+    );
 
     expect(component.find("button").instance()).toEqual(ref.current);
   });

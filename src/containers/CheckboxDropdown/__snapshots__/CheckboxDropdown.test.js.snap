@@ -1,243 +1,88 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CheckboxDropdown should be able to select item from list 1`] = `
-.c6 {
-  text-align: center;
-}
-
-.c10 {
-  border: 0;
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.c16 {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  border: 1px solid #999;
-  background: transparent;
-  text-align: center;
-  border-radius: 4px;
-  line-height: 1em;
-}
-
-.c12 {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  border: 1px solid;
-  text-align: center;
-  border-radius: 4px;
-  line-height: 1em;
-}
-
-.c13 {
-  font-size: 0.75em;
-  font-weight: bold;
-}
-
-.c15 {
-  color: #999;
-  margin-left: 1.5em;
-}
-
-.c9 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  cursor: pointer;
-  margin: 0.25em 0;
-}
-
-.c9:hover .c11 {
-  border-color: #333;
-}
-
-.c9:hover .c14 {
-  color: #666;
-}
-
-.c3 {
-  font-family: inherit;
-  background: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c0 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c1 {
-  position: relative;
-}
-
-.c2 {
-  font-family: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 40px;
-  border: 1px solid;
-  border-radius: 4px;
-  padding: 1.25em;
-  cursor: pointer;
-}
-
-.c7 {
-  width: 100%;
-  padding: 0;
-  border: 1px solid;
-  border-top: none;
-  position: absolute;
-  top: 22px;
-  border-radius: 0 0 4px 4px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  list-style: none;
-  z-index: 1;
-  box-sizing: border-box;
-}
-
-.c5 {
-  color: #999;
-  font-size: 1.25em;
-  font-weight: bold;
-}
-
-.c4 {
-  color: #999;
-  font-size: 1.25em;
-  font-weight: bold;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.c8 {
-  padding-top: 1em;
-  padding-left: 0.5em;
-}
-
 <div
-  className="c0"
+  className="sc-fzozJi cKvNky"
   fontFamily="openSans"
   size="normal"
 >
   <div
-    className="c1"
+    className="sc-fzoLsD egJkZq"
   >
     <button
-      className="c2 c3"
+      className="sc-fzpans DPLmR sc-Axmtr kEnUsO"
       color=""
       data-button-test={true}
       onClick={[Function]}
       type="button"
     >
       <span
-        className="c4"
+        className="sc-fznyAO sc-fznKkj juubTo"
       >
         Array [
           "",
-          .c0 {
-  font-size: 1.25em;
-  font-weight: bold;
-}
-
-<span
-            className="c0"
+          <span
+            className="sc-fzokOt jaaaQC"
           >
             1 selected
           </span>,
         ]
       </span>
       <span
-        className="c5 c6 lni lni-chevron-up"
+        className="sc-fznyAO etOYkZ sc-AxjAm jWlVxK lni lni-chevron-up"
       />
     </button>
     <ul
-      className="c7"
+      className="sc-fzplWN jJnecp"
       data-item-list-test={true}
     >
       <li
-        className="c8"
+        className="sc-fznZeY biVFou"
       >
         <label
-          className="c9"
+          className="sc-AxheI bIWrzC"
         >
           <input
             checked={true}
-            className="c10"
+            className="sc-AxiKw iRBKSw"
             onChange={[Function]}
             type="checkbox"
             value="1"
           />
           <div
             checked={true}
-            className="c11 c12"
+            className="sc-AxhCb cLwTNS"
           >
             <span
-              className="c13 c6 lni lni-checkmark"
+              className="sc-AxhUy eEXwPQ sc-AxjAm jWlVxK lni lni-checkmark"
             />
           </div>
           <span
-            className="c14 c15"
+            className="sc-AxgMl aaWWq"
           >
             Item 1
           </span>
         </label>
       </li>
       <li
-        className="c8"
+        className="sc-fznZeY biVFou"
       >
         <label
-          className="c9"
+          className="sc-AxheI bIWrzC"
         >
           <input
             checked={false}
-            className="c10"
+            className="sc-AxiKw iRBKSw"
             onChange={[Function]}
             type="checkbox"
             value="2"
           />
           <div
             checked={false}
-            className="c11 c16"
+            className="sc-AxhCb eJojxy"
           />
           <span
-            className="c14 c15"
+            className="sc-AxgMl aaWWq"
           >
             Item 2
           </span>
@@ -249,78 +94,16 @@ exports[`CheckboxDropdown should be able to select item from list 1`] = `
 `;
 
 exports[`CheckboxDropdown should call default props onClick function when no onClick property is passed 1`] = `
-.c6 {
-  text-align: center;
-}
-
-.c3 {
-  font-family: inherit;
-  background: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c0 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c1 {
-  position: relative;
-}
-
-.c2 {
-  font-family: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 40px;
-  border: 1px solid;
-  border-radius: 4px;
-  padding: 1.25em;
-  cursor: pointer;
-}
-
-.c5 {
-  color: #999;
-  font-size: 1.25em;
-  font-weight: bold;
-}
-
-.c4 {
-  color: #999;
-  font-size: 1.25em;
-  font-weight: bold;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
 <div
-  className="c0"
+  className="sc-fzozJi cKvNky"
   fontFamily="openSans"
   size="normal"
 >
   <div
-    className="c1"
+    className="sc-fzoLsD egJkZq"
   >
     <button
-      className="c2 c3"
+      className="sc-fzpans DPLmR sc-Axmtr kEnUsO"
       color=""
       data-button-test={true}
       onClick={[Function]}
@@ -328,12 +111,12 @@ exports[`CheckboxDropdown should call default props onClick function when no onC
     >
       
       <span
-        className="c4"
+        className="sc-fznyAO sc-fznKkj juubTo"
       >
         
       </span>
       <span
-        className="c5 c6 lni lni-chevron-down"
+        className="sc-fznyAO etOYkZ sc-AxjAm jWlVxK lni lni-chevron-down"
       />
     </button>
   </div>
@@ -341,78 +124,16 @@ exports[`CheckboxDropdown should call default props onClick function when no onC
 `;
 
 exports[`CheckboxDropdown should have onClick listener 1`] = `
-.c6 {
-  text-align: center;
-}
-
-.c3 {
-  font-family: inherit;
-  background: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c0 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c1 {
-  position: relative;
-}
-
-.c2 {
-  font-family: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 40px;
-  border: 1px solid;
-  border-radius: 4px;
-  padding: 1.25em;
-  cursor: pointer;
-}
-
-.c5 {
-  color: #999;
-  font-size: 1.25em;
-  font-weight: bold;
-}
-
-.c4 {
-  color: #999;
-  font-size: 1.25em;
-  font-weight: bold;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
 <div
-  className="c0"
+  className="sc-fzozJi cKvNky"
   fontFamily="openSans"
   size="normal"
 >
   <div
-    className="c1"
+    className="sc-fzoLsD egJkZq"
   >
     <button
-      className="c2 c3"
+      className="sc-fzpans DPLmR sc-Axmtr kEnUsO"
       color=""
       data-button-test={true}
       onClick={[Function]}
@@ -420,12 +141,12 @@ exports[`CheckboxDropdown should have onClick listener 1`] = `
     >
       
       <span
-        className="c4"
+        className="sc-fznyAO sc-fznKkj juubTo"
       >
         
       </span>
       <span
-        className="c5 c6 lni lni-chevron-down"
+        className="sc-fznyAO etOYkZ sc-AxjAm jWlVxK lni lni-chevron-down"
       />
     </button>
   </div>
@@ -433,78 +154,16 @@ exports[`CheckboxDropdown should have onClick listener 1`] = `
 `;
 
 exports[`CheckboxDropdown should render 1`] = `
-.c6 {
-  text-align: center;
-}
-
-.c3 {
-  font-family: inherit;
-  background: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c0 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c1 {
-  position: relative;
-}
-
-.c2 {
-  font-family: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 40px;
-  border: 1px solid;
-  border-radius: 4px;
-  padding: 1.25em;
-  cursor: pointer;
-}
-
-.c5 {
-  color: #999;
-  font-size: 1.25em;
-  font-weight: bold;
-}
-
-.c4 {
-  color: #999;
-  font-size: 1.25em;
-  font-weight: bold;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
 <div
-  className="c0"
+  className="sc-fzozJi cKvNky"
   fontFamily="openSans"
   size="normal"
 >
   <div
-    className="c1"
+    className="sc-fzoLsD egJkZq"
   >
     <button
-      className="c2 c3"
+      className="sc-fzpans DPLmR sc-Axmtr kEnUsO"
       color=""
       data-button-test={true}
       onClick={[Function]}
@@ -512,12 +171,12 @@ exports[`CheckboxDropdown should render 1`] = `
     >
       
       <span
-        className="c4"
+        className="sc-fznyAO sc-fznKkj juubTo"
       >
         
       </span>
       <span
-        className="c5 c6 lni lni-chevron-down"
+        className="sc-fznyAO etOYkZ sc-AxjAm jWlVxK lni lni-chevron-down"
       />
     </button>
   </div>
@@ -525,156 +184,16 @@ exports[`CheckboxDropdown should render 1`] = `
 `;
 
 exports[`CheckboxDropdown should render in open state 1`] = `
-.c7 {
-  text-align: center;
-}
-
-.c11 {
-  border: 0;
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.c13 {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  border: 1px solid #999;
-  background: transparent;
-  text-align: center;
-  border-radius: 4px;
-  line-height: 1em;
-}
-
-.c15 {
-  color: #999;
-  margin-left: 1.5em;
-}
-
-.c10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  cursor: pointer;
-  margin: 0.25em 0;
-}
-
-.c10:hover .c12 {
-  border-color: #333;
-}
-
-.c10:hover .c14 {
-  color: #666;
-}
-
-.c3 {
-  font-family: inherit;
-  background: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c0 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c1 {
-  position: relative;
-}
-
-.c2 {
-  font-family: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 40px;
-  border: 1px solid;
-  border-radius: 4px;
-  padding: 1.25em;
-  cursor: pointer;
-}
-
-.c8 {
-  width: 100%;
-  padding: 0;
-  border: 1px solid;
-  border-top: none;
-  position: absolute;
-  top: 22px;
-  border-radius: 0 0 4px 4px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  list-style: none;
-  z-index: 1;
-  box-sizing: border-box;
-}
-
-.c6 {
-  color: #999;
-  font-size: 1.25em;
-  font-weight: bold;
-}
-
-.c4 {
-  color: #999;
-  font-size: 1.25em;
-  font-weight: bold;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.c9 {
-  padding-top: 1em;
-  padding-left: 0.5em;
-}
-
-.c5 {
-  font-size: 1.25em;
-  font-weight: bold;
-}
-
 <div
-  className="c0"
+  className="sc-fzozJi cKvNky"
   fontFamily="openSans"
   size="normal"
 >
   <div
-    className="c1"
+    className="sc-fzoLsD egJkZq"
   >
     <button
-      className="c2 c3"
+      className="sc-fzpans DPLmR sc-Axmtr kEnUsO"
       color=""
       data-button-test={true}
       onClick={[Function]}
@@ -682,66 +201,66 @@ exports[`CheckboxDropdown should render in open state 1`] = `
     >
       
       <span
-        className="c4"
+        className="sc-fznyAO sc-fznKkj juubTo"
       >
         
         <span
-          className="c5"
+          className="sc-fzokOt jaaaQC"
         >
           0 selected
         </span>
       </span>
       <span
-        className="c6 c7 lni lni-chevron-up"
+        className="sc-fznyAO etOYkZ sc-AxjAm jWlVxK lni lni-chevron-up"
       />
     </button>
     <ul
-      className="c8"
+      className="sc-fzplWN jJnecp"
       data-item-list-test={true}
     >
       <li
-        className="c9"
+        className="sc-fznZeY biVFou"
       >
         <label
-          className="c10"
+          className="sc-AxheI bIWrzC"
         >
           <input
             checked={false}
-            className="c11"
+            className="sc-AxiKw iRBKSw"
             onChange={[Function]}
             type="checkbox"
             value="1"
           />
           <div
             checked={false}
-            className="c12 c13"
+            className="sc-AxhCb eJojxy"
           />
           <span
-            className="c14 c15"
+            className="sc-AxgMl aaWWq"
           >
             Item 1
           </span>
         </label>
       </li>
       <li
-        className="c9"
+        className="sc-fznZeY biVFou"
       >
         <label
-          className="c10"
+          className="sc-AxheI bIWrzC"
         >
           <input
             checked={false}
-            className="c11"
+            className="sc-AxiKw iRBKSw"
             onChange={[Function]}
             type="checkbox"
             value="2"
           />
           <div
             checked={false}
-            className="c12 c13"
+            className="sc-AxhCb eJojxy"
           />
           <span
-            className="c14 c15"
+            className="sc-AxgMl aaWWq"
           >
             Item 2
           </span>
@@ -753,156 +272,16 @@ exports[`CheckboxDropdown should render in open state 1`] = `
 `;
 
 exports[`CheckboxDropdown should render label 1`] = `
-.c7 {
-  text-align: center;
-}
-
-.c11 {
-  border: 0;
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.c13 {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  border: 1px solid #999;
-  background: transparent;
-  text-align: center;
-  border-radius: 4px;
-  line-height: 1em;
-}
-
-.c15 {
-  color: #999;
-  margin-left: 1.5em;
-}
-
-.c10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  cursor: pointer;
-  margin: 0.25em 0;
-}
-
-.c10:hover .c12 {
-  border-color: #333;
-}
-
-.c10:hover .c14 {
-  color: #666;
-}
-
-.c3 {
-  font-family: inherit;
-  background: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c0 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c1 {
-  position: relative;
-}
-
-.c2 {
-  font-family: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 40px;
-  border: 1px solid;
-  border-radius: 4px;
-  padding: 1.25em;
-  cursor: pointer;
-}
-
-.c8 {
-  width: 100%;
-  padding: 0;
-  border: 1px solid;
-  border-top: none;
-  position: absolute;
-  top: 22px;
-  border-radius: 0 0 4px 4px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  list-style: none;
-  z-index: 1;
-  box-sizing: border-box;
-}
-
-.c6 {
-  color: #999;
-  font-size: 1.25em;
-  font-weight: bold;
-}
-
-.c4 {
-  color: #999;
-  font-size: 1.25em;
-  font-weight: bold;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.c9 {
-  padding-top: 1em;
-  padding-left: 0.5em;
-}
-
-.c5 {
-  font-size: 1.25em;
-  font-weight: bold;
-}
-
 <div
-  className="c0"
+  className="sc-fzozJi cKvNky"
   fontFamily="openSans"
   size="normal"
 >
   <div
-    className="c1"
+    className="sc-fzoLsD egJkZq"
   >
     <button
-      className="c2 c3"
+      className="sc-fzpans DPLmR sc-Axmtr kEnUsO"
       color=""
       data-button-test={true}
       onClick={[Function]}
@@ -910,66 +289,66 @@ exports[`CheckboxDropdown should render label 1`] = `
     >
       
       <span
-        className="c4"
+        className="sc-fznyAO sc-fznKkj juubTo"
       >
         hello
         <span
-          className="c5"
+          className="sc-fzokOt jaaaQC"
         >
           0 selected
         </span>
       </span>
       <span
-        className="c6 c7 lni lni-chevron-up"
+        className="sc-fznyAO etOYkZ sc-AxjAm jWlVxK lni lni-chevron-up"
       />
     </button>
     <ul
-      className="c8"
+      className="sc-fzplWN jJnecp"
       data-item-list-test={true}
     >
       <li
-        className="c9"
+        className="sc-fznZeY biVFou"
       >
         <label
-          className="c10"
+          className="sc-AxheI bIWrzC"
         >
           <input
             checked={false}
-            className="c11"
+            className="sc-AxiKw iRBKSw"
             onChange={[Function]}
             type="checkbox"
             value="1"
           />
           <div
             checked={false}
-            className="c12 c13"
+            className="sc-AxhCb eJojxy"
           />
           <span
-            className="c14 c15"
+            className="sc-AxgMl aaWWq"
           >
             Item 1
           </span>
         </label>
       </li>
       <li
-        className="c9"
+        className="sc-fznZeY biVFou"
       >
         <label
-          className="c10"
+          className="sc-AxheI bIWrzC"
         >
           <input
             checked={false}
-            className="c11"
+            className="sc-AxiKw iRBKSw"
             onChange={[Function]}
             type="checkbox"
             value="2"
           />
           <div
             checked={false}
-            className="c12 c13"
+            className="sc-AxhCb eJojxy"
           />
           <span
-            className="c14 c15"
+            className="sc-AxgMl aaWWq"
           >
             Item 2
           </span>
@@ -981,156 +360,16 @@ exports[`CheckboxDropdown should render label 1`] = `
 `;
 
 exports[`CheckboxDropdown should render react node label 1`] = `
-.c7 {
-  text-align: center;
-}
-
-.c11 {
-  border: 0;
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.c13 {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  border: 1px solid #999;
-  background: transparent;
-  text-align: center;
-  border-radius: 4px;
-  line-height: 1em;
-}
-
-.c15 {
-  color: #999;
-  margin-left: 1.5em;
-}
-
-.c10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  cursor: pointer;
-  margin: 0.25em 0;
-}
-
-.c10:hover .c12 {
-  border-color: #333;
-}
-
-.c10:hover .c14 {
-  color: #666;
-}
-
-.c3 {
-  font-family: inherit;
-  background: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c0 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c1 {
-  position: relative;
-}
-
-.c2 {
-  font-family: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 40px;
-  border: 1px solid;
-  border-radius: 4px;
-  padding: 1.25em;
-  cursor: pointer;
-}
-
-.c8 {
-  width: 100%;
-  padding: 0;
-  border: 1px solid;
-  border-top: none;
-  position: absolute;
-  top: 22px;
-  border-radius: 0 0 4px 4px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  list-style: none;
-  z-index: 1;
-  box-sizing: border-box;
-}
-
-.c6 {
-  color: #999;
-  font-size: 1.25em;
-  font-weight: bold;
-}
-
-.c4 {
-  color: #999;
-  font-size: 1.25em;
-  font-weight: bold;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.c9 {
-  padding-top: 1em;
-  padding-left: 0.5em;
-}
-
-.c5 {
-  font-size: 1.25em;
-  font-weight: bold;
-}
-
 <div
-  className="c0"
+  className="sc-fzozJi cKvNky"
   fontFamily="openSans"
   size="normal"
 >
   <div
-    className="c1"
+    className="sc-fzoLsD egJkZq"
   >
     <button
-      className="c2 c3"
+      className="sc-fzpans DPLmR sc-Axmtr kEnUsO"
       color=""
       data-button-test={true}
       onClick={[Function]}
@@ -1138,68 +377,68 @@ exports[`CheckboxDropdown should render react node label 1`] = `
     >
       
       <span
-        className="c4"
+        className="sc-fznyAO sc-fznKkj juubTo"
       >
         <div>
           hello
         </div>
         <span
-          className="c5"
+          className="sc-fzokOt jaaaQC"
         >
           0 selected
         </span>
       </span>
       <span
-        className="c6 c7 lni lni-chevron-up"
+        className="sc-fznyAO etOYkZ sc-AxjAm jWlVxK lni lni-chevron-up"
       />
     </button>
     <ul
-      className="c8"
+      className="sc-fzplWN jJnecp"
       data-item-list-test={true}
     >
       <li
-        className="c9"
+        className="sc-fznZeY biVFou"
       >
         <label
-          className="c10"
+          className="sc-AxheI bIWrzC"
         >
           <input
             checked={false}
-            className="c11"
+            className="sc-AxiKw iRBKSw"
             onChange={[Function]}
             type="checkbox"
             value="1"
           />
           <div
             checked={false}
-            className="c12 c13"
+            className="sc-AxhCb eJojxy"
           />
           <span
-            className="c14 c15"
+            className="sc-AxgMl aaWWq"
           >
             Item 1
           </span>
         </label>
       </li>
       <li
-        className="c9"
+        className="sc-fznZeY biVFou"
       >
         <label
-          className="c10"
+          className="sc-AxheI bIWrzC"
         >
           <input
             checked={false}
-            className="c11"
+            className="sc-AxiKw iRBKSw"
             onChange={[Function]}
             type="checkbox"
             value="2"
           />
           <div
             checked={false}
-            className="c12 c13"
+            className="sc-AxhCb eJojxy"
           />
           <span
-            className="c14 c15"
+            className="sc-AxgMl aaWWq"
           >
             Item 2
           </span>

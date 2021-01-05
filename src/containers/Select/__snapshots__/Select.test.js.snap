@@ -1,25 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select should be able to call the default onChange function when no onChange callback provided 1`] = `
-.c0 {
-  font-family: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 40px;
-  border: 1px solid;
-  border-radius: 4px;
-  padding: 0 3em 0 1.25em;
-  cursor: pointer;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  color: #000;
-  line-height: 1.5;
-}
-
 <ForwardRef
   items={
     Array [
@@ -37,7 +18,7 @@ exports[`Select should be able to call the default onChange function when no onC
     value=""
   >
     <select
-      className="c0"
+      className="sc-AxjAm fPSBDO"
       onChange={[Function]}
       value=""
     >
@@ -54,27 +35,8 @@ exports[`Select should be able to call the default onChange function when no onC
 `;
 
 exports[`Select should render 1`] = `
-.c0 {
-  font-family: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 40px;
-  border: 1px solid;
-  border-radius: 4px;
-  padding: 0 3em 0 1.25em;
-  cursor: pointer;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  color: #000;
-  line-height: 1.5;
-}
-
 <select
-  className="c0"
+  className="sc-AxjAm fPSBDO"
   onChange={[Function]}
   value=""
 >
@@ -88,27 +50,8 @@ exports[`Select should render 1`] = `
 `;
 
 exports[`Select should render option groups 1`] = `
-.c0 {
-  font-family: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 40px;
-  border: 1px solid;
-  border-radius: 4px;
-  padding: 0 3em 0 1.25em;
-  cursor: pointer;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  color: #000;
-  line-height: 1.5;
-}
-
 <select
-  className="c0"
+  className="sc-AxjAm fPSBDO"
   onChange={[Function]}
   value="Label 1"
 >
@@ -142,27 +85,8 @@ exports[`Select should render option groups 1`] = `
 `;
 
 exports[`Select should render selected option 1`] = `
-.c0 {
-  font-family: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 40px;
-  border: 1px solid;
-  border-radius: 4px;
-  padding: 0 3em 0 1.25em;
-  cursor: pointer;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  color: #000;
-  line-height: 1.5;
-}
-
 <select
-  className="c0"
+  className="sc-AxjAm fPSBDO"
   onChange={[Function]}
   value="test"
 >
@@ -176,27 +100,8 @@ exports[`Select should render selected option 1`] = `
 `;
 
 exports[`Select should render the option with spaces 1`] = `
-.c0 {
-  font-family: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 40px;
-  border: 1px solid;
-  border-radius: 4px;
-  padding: 0 3em 0 1.25em;
-  cursor: pointer;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  color: #000;
-  line-height: 1.5;
-}
-
 <select
-  className="c0"
+  className="sc-AxjAm fPSBDO"
   onChange={[Function]}
   value=""
 >
@@ -211,27 +116,8 @@ exports[`Select should render the option with spaces 1`] = `
 `;
 
 exports[`Select should render with name 1`] = `
-.c0 {
-  font-family: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 40px;
-  border: 1px solid;
-  border-radius: 4px;
-  padding: 0 3em 0 1.25em;
-  cursor: pointer;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  color: #000;
-  line-height: 1.5;
-}
-
 <select
-  className="c0"
+  className="sc-AxjAm fPSBDO"
   onChange={[Function]}
   value=""
 >

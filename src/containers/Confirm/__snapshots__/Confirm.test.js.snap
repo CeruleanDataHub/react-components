@@ -1,90 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Confirm should call default props onCancel function when no onCancel property is passed 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 30;
-  background-color: rgba(0,0,0,0.5);
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c4 {
-  font-family: inherit;
-  background: transparent;
-  color: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c6 {
-  font-family: inherit;
-  background: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: white;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 1rem;
-  box-shadow: 0 0 18px -3px rgba(27,27,27,0.8);
-  width: 40%;
-}
-
-.c3 {
-  text-align: right;
-}
-
-.c3 button {
-  margin: 0.2rem;
-}
-
-.c7 {
-  background: blue;
-  color: white;
-  font-weight: bold;
-}
-
-.c5 {
-  color: blue;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
 <p>
   <Confirm
     content=""
@@ -133,108 +49,24 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
       >
         <Portal
           containerInfo={
-            .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 30;
-  background-color: rgba(0,0,0,0.5);
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c5 {
-  font-family: inherit;
-  background: transparent;
-  color: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c7 {
-  font-family: inherit;
-  background: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: white;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 1rem;
-  box-shadow: 0 0 18px -3px rgba(27,27,27,0.8);
-  width: 40%;
-}
-
-.c3 {
-  text-align: right;
-}
-
-.c3 button {
-  margin: 0.2rem;
-}
-
-.c6 {
-  background: blue;
-  color: white;
-  font-weight: bold;
-}
-
-.c4 {
-  color: blue;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-<div>
+            <div>
               <div
-                class="c0"
+                class="baseStyles__BaseModalBackground-sTbLb hGVCXQ"
               >
                 <div
-                  class="c1"
+                  class="Modal__wrap-gmoXzh gWaikR"
                 >
                   <div
-                    class="c2"
+                    class="sc-AxhUy iumSJR"
                     font-family="openSans"
                   >
                     <div />
                     <div />
                     <div
-                      class="c3"
+                      class="sc-AxgMl jrJXms"
                     >
                       <button
-                        class="c4 c5"
+                        class="sc-Axmtr fGzfKN sc-AxiKw cMQRsw"
                         color="transparent"
                         data-button-test="true"
                         type="button"
@@ -243,7 +75,7 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                         Cancel
                       </button>
                       <button
-                        class="c6 c7"
+                        class="sc-AxheI bgVlsT sc-AxiKw Rtuhc"
                         color=""
                         data-button-test="true"
                         type="button"
@@ -262,12 +94,12 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
             onClick={[Function]}
           >
             <div
-              className="c0"
+              className="baseStyles__BaseModalBackground-sTbLb hGVCXQ"
               onClick={[Function]}
             >
               <Modal__wrap>
                 <div
-                  className="c1"
+                  className="Modal__wrap-gmoXzh gWaikR"
                 >
                   <Typography
                     color=""
@@ -280,7 +112,7 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                       textColor=""
                     >
                       <div
-                        className="c2"
+                        className="sc-AxhUy iumSJR"
                         fontFamily="openSans"
                         size="normal"
                       >
@@ -288,7 +120,7 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                         <div />
                         <styled.div>
                           <div
-                            className="c3"
+                            className="sc-AxgMl jrJXms"
                           >
                             <ForwardRef
                               as={
@@ -359,14 +191,14 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                                 type="button"
                               >
                                 <styled.button
-                                  className="c4"
+                                  className="sc-AxiKw cMQRsw"
                                   color="transparent"
                                   data-button-test={true}
                                   onClick={[Function]}
                                   type="button"
                                 >
                                   <button
-                                    className="c5 c4"
+                                    className="sc-Axmtr fGzfKN sc-AxiKw cMQRsw"
                                     color="transparent"
                                     data-button-test={true}
                                     onClick={[Function]}
@@ -448,14 +280,14 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                                 type="button"
                               >
                                 <styled.button
-                                  className="c6"
+                                  className="sc-AxiKw Rtuhc"
                                   color=""
                                   data-button-test={true}
                                   onClick={[Function]}
                                   type="button"
                                 >
                                   <button
-                                    className="c7 c6"
+                                    className="sc-AxheI bgVlsT sc-AxiKw Rtuhc"
                                     color=""
                                     data-button-test={true}
                                     onClick={[Function]}
@@ -484,90 +316,6 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
 `;
 
 exports[`Confirm should call default props onConfirm function when no onConfirm property is passed 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 30;
-  background-color: rgba(0,0,0,0.5);
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c4 {
-  font-family: inherit;
-  background: transparent;
-  color: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c6 {
-  font-family: inherit;
-  background: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: white;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 1rem;
-  box-shadow: 0 0 18px -3px rgba(27,27,27,0.8);
-  width: 40%;
-}
-
-.c3 {
-  text-align: right;
-}
-
-.c3 button {
-  margin: 0.2rem;
-}
-
-.c7 {
-  background: blue;
-  color: white;
-  font-weight: bold;
-}
-
-.c5 {
-  color: blue;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
 <p>
   <Confirm
     content=""
@@ -616,108 +364,24 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
       >
         <Portal
           containerInfo={
-            .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 30;
-  background-color: rgba(0,0,0,0.5);
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c5 {
-  font-family: inherit;
-  background: transparent;
-  color: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c7 {
-  font-family: inherit;
-  background: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: white;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 1rem;
-  box-shadow: 0 0 18px -3px rgba(27,27,27,0.8);
-  width: 40%;
-}
-
-.c3 {
-  text-align: right;
-}
-
-.c3 button {
-  margin: 0.2rem;
-}
-
-.c6 {
-  background: blue;
-  color: white;
-  font-weight: bold;
-}
-
-.c4 {
-  color: blue;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-<div>
+            <div>
               <div
-                class="c0"
+                class="baseStyles__BaseModalBackground-sTbLb hGVCXQ"
               >
                 <div
-                  class="c1"
+                  class="Modal__wrap-gmoXzh gWaikR"
                 >
                   <div
-                    class="c2"
+                    class="sc-AxhUy iumSJR"
                     font-family="openSans"
                   >
                     <div />
                     <div />
                     <div
-                      class="c3"
+                      class="sc-AxgMl jrJXms"
                     >
                       <button
-                        class="c4 c5"
+                        class="sc-Axmtr fGzfKN sc-AxiKw cMQRsw"
                         color="transparent"
                         data-button-test="true"
                         type="button"
@@ -726,7 +390,7 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                         Cancel
                       </button>
                       <button
-                        class="c6 c7"
+                        class="sc-AxheI bgVlsT sc-AxiKw Rtuhc"
                         color=""
                         data-button-test="true"
                         type="button"
@@ -745,12 +409,12 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
             onClick={[Function]}
           >
             <div
-              className="c0"
+              className="baseStyles__BaseModalBackground-sTbLb hGVCXQ"
               onClick={[Function]}
             >
               <Modal__wrap>
                 <div
-                  className="c1"
+                  className="Modal__wrap-gmoXzh gWaikR"
                 >
                   <Typography
                     color=""
@@ -763,7 +427,7 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                       textColor=""
                     >
                       <div
-                        className="c2"
+                        className="sc-AxhUy iumSJR"
                         fontFamily="openSans"
                         size="normal"
                       >
@@ -771,7 +435,7 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                         <div />
                         <styled.div>
                           <div
-                            className="c3"
+                            className="sc-AxgMl jrJXms"
                           >
                             <ForwardRef
                               as={
@@ -842,14 +506,14 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                                 type="button"
                               >
                                 <styled.button
-                                  className="c4"
+                                  className="sc-AxiKw cMQRsw"
                                   color="transparent"
                                   data-button-test={true}
                                   onClick={[Function]}
                                   type="button"
                                 >
                                   <button
-                                    className="c5 c4"
+                                    className="sc-Axmtr fGzfKN sc-AxiKw cMQRsw"
                                     color="transparent"
                                     data-button-test={true}
                                     onClick={[Function]}
@@ -931,14 +595,14 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
                                 type="button"
                               >
                                 <styled.button
-                                  className="c6"
+                                  className="sc-AxiKw Rtuhc"
                                   color=""
                                   data-button-test={true}
                                   onClick={[Function]}
                                   type="button"
                                 >
                                   <button
-                                    className="c7 c6"
+                                    className="sc-AxheI bgVlsT sc-AxiKw Rtuhc"
                                     color=""
                                     data-button-test={true}
                                     onClick={[Function]}
@@ -967,90 +631,6 @@ exports[`Confirm should call default props onConfirm function when no onConfirm 
 `;
 
 exports[`Confirm should render 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 30;
-  background-color: rgba(0,0,0,0.5);
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c4 {
-  font-family: inherit;
-  background: transparent;
-  color: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c6 {
-  font-family: inherit;
-  background: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: white;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 1rem;
-  box-shadow: 0 0 18px -3px rgba(27,27,27,0.8);
-  width: 40%;
-}
-
-.c3 {
-  text-align: right;
-}
-
-.c3 button {
-  margin: 0.2rem;
-}
-
-.c7 {
-  background: blue;
-  color: white;
-  font-weight: bold;
-}
-
-.c5 {
-  color: blue;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
 <p>
   <Confirm
     content="Confirm modal content"
@@ -1099,99 +679,15 @@ exports[`Confirm should render 1`] = `
       >
         <Portal
           containerInfo={
-            .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 30;
-  background-color: rgba(0,0,0,0.5);
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c5 {
-  font-family: inherit;
-  background: transparent;
-  color: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c7 {
-  font-family: inherit;
-  background: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: white;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 1rem;
-  box-shadow: 0 0 18px -3px rgba(27,27,27,0.8);
-  width: 40%;
-}
-
-.c3 {
-  text-align: right;
-}
-
-.c3 button {
-  margin: 0.2rem;
-}
-
-.c6 {
-  background: blue;
-  color: white;
-  font-weight: bold;
-}
-
-.c4 {
-  color: blue;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-<div>
+            <div>
               <div
-                class="c0"
+                class="baseStyles__BaseModalBackground-sTbLb hGVCXQ"
               >
                 <div
-                  class="c1"
+                  class="Modal__wrap-gmoXzh gWaikR"
                 >
                   <div
-                    class="c2"
+                    class="sc-AxhUy iumSJR"
                     font-family="openSans"
                   >
                     <div>
@@ -1201,10 +697,10 @@ exports[`Confirm should render 1`] = `
                       Confirm modal content
                     </div>
                     <div
-                      class="c3"
+                      class="sc-AxgMl jrJXms"
                     >
                       <button
-                        class="c4 c5"
+                        class="sc-Axmtr fGzfKN sc-AxiKw cMQRsw"
                         color="transparent"
                         data-button-test="true"
                         type="button"
@@ -1213,7 +709,7 @@ exports[`Confirm should render 1`] = `
                         Cancel
                       </button>
                       <button
-                        class="c6 c7"
+                        class="sc-AxheI bgVlsT sc-AxiKw Rtuhc"
                         color=""
                         data-button-test="true"
                         type="button"
@@ -1232,12 +728,12 @@ exports[`Confirm should render 1`] = `
             onClick={[Function]}
           >
             <div
-              className="c0"
+              className="baseStyles__BaseModalBackground-sTbLb hGVCXQ"
               onClick={[Function]}
             >
               <Modal__wrap>
                 <div
-                  className="c1"
+                  className="Modal__wrap-gmoXzh gWaikR"
                 >
                   <Typography
                     color=""
@@ -1250,7 +746,7 @@ exports[`Confirm should render 1`] = `
                       textColor=""
                     >
                       <div
-                        className="c2"
+                        className="sc-AxhUy iumSJR"
                         fontFamily="openSans"
                         size="normal"
                       >
@@ -1262,7 +758,7 @@ exports[`Confirm should render 1`] = `
                         </div>
                         <styled.div>
                           <div
-                            className="c3"
+                            className="sc-AxgMl jrJXms"
                           >
                             <ForwardRef
                               as={
@@ -1333,14 +829,14 @@ exports[`Confirm should render 1`] = `
                                 type="button"
                               >
                                 <styled.button
-                                  className="c4"
+                                  className="sc-AxiKw cMQRsw"
                                   color="transparent"
                                   data-button-test={true}
                                   onClick={[Function]}
                                   type="button"
                                 >
                                   <button
-                                    className="c5 c4"
+                                    className="sc-Axmtr fGzfKN sc-AxiKw cMQRsw"
                                     color="transparent"
                                     data-button-test={true}
                                     onClick={[Function]}
@@ -1422,14 +918,14 @@ exports[`Confirm should render 1`] = `
                                 type="button"
                               >
                                 <styled.button
-                                  className="c6"
+                                  className="sc-AxiKw Rtuhc"
                                   color=""
                                   data-button-test={true}
                                   onClick={[Function]}
                                   type="button"
                                 >
                                   <button
-                                    className="c7 c6"
+                                    className="sc-AxheI bgVlsT sc-AxiKw Rtuhc"
                                     color=""
                                     data-button-test={true}
                                     onClick={[Function]}
@@ -1511,90 +1007,6 @@ exports[`Confirm should render closed 1`] = `
 `;
 
 exports[`Confirm should render content as reacr node 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 30;
-  background-color: rgba(0,0,0,0.5);
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c4 {
-  font-family: inherit;
-  background: transparent;
-  color: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c6 {
-  font-family: inherit;
-  background: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: white;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 1rem;
-  box-shadow: 0 0 18px -3px rgba(27,27,27,0.8);
-  width: 40%;
-}
-
-.c3 {
-  text-align: right;
-}
-
-.c3 button {
-  margin: 0.2rem;
-}
-
-.c7 {
-  background: blue;
-  color: white;
-  font-weight: bold;
-}
-
-.c5 {
-  color: blue;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
 <p>
   <Confirm
     content={
@@ -1647,99 +1059,15 @@ exports[`Confirm should render content as reacr node 1`] = `
       >
         <Portal
           containerInfo={
-            .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 30;
-  background-color: rgba(0,0,0,0.5);
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c5 {
-  font-family: inherit;
-  background: transparent;
-  color: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c7 {
-  font-family: inherit;
-  background: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: white;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 1rem;
-  box-shadow: 0 0 18px -3px rgba(27,27,27,0.8);
-  width: 40%;
-}
-
-.c3 {
-  text-align: right;
-}
-
-.c3 button {
-  margin: 0.2rem;
-}
-
-.c6 {
-  background: blue;
-  color: white;
-  font-weight: bold;
-}
-
-.c4 {
-  color: blue;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-<div>
+            <div>
               <div
-                class="c0"
+                class="baseStyles__BaseModalBackground-sTbLb hGVCXQ"
               >
                 <div
-                  class="c1"
+                  class="Modal__wrap-gmoXzh gWaikR"
                 >
                   <div
-                    class="c2"
+                    class="sc-AxhUy iumSJR"
                     font-family="openSans"
                   >
                     <div>
@@ -1751,10 +1079,10 @@ exports[`Confirm should render content as reacr node 1`] = `
                       </div>
                     </div>
                     <div
-                      class="c3"
+                      class="sc-AxgMl jrJXms"
                     >
                       <button
-                        class="c4 c5"
+                        class="sc-Axmtr fGzfKN sc-AxiKw cMQRsw"
                         color="transparent"
                         data-button-test="true"
                         type="button"
@@ -1763,7 +1091,7 @@ exports[`Confirm should render content as reacr node 1`] = `
                         Cancel
                       </button>
                       <button
-                        class="c6 c7"
+                        class="sc-AxheI bgVlsT sc-AxiKw Rtuhc"
                         color=""
                         data-button-test="true"
                         type="button"
@@ -1782,12 +1110,12 @@ exports[`Confirm should render content as reacr node 1`] = `
             onClick={[Function]}
           >
             <div
-              className="c0"
+              className="baseStyles__BaseModalBackground-sTbLb hGVCXQ"
               onClick={[Function]}
             >
               <Modal__wrap>
                 <div
-                  className="c1"
+                  className="Modal__wrap-gmoXzh gWaikR"
                 >
                   <Typography
                     color=""
@@ -1800,7 +1128,7 @@ exports[`Confirm should render content as reacr node 1`] = `
                       textColor=""
                     >
                       <div
-                        className="c2"
+                        className="sc-AxhUy iumSJR"
                         fontFamily="openSans"
                         size="normal"
                       >
@@ -1814,7 +1142,7 @@ exports[`Confirm should render content as reacr node 1`] = `
                         </div>
                         <styled.div>
                           <div
-                            className="c3"
+                            className="sc-AxgMl jrJXms"
                           >
                             <ForwardRef
                               as={
@@ -1885,14 +1213,14 @@ exports[`Confirm should render content as reacr node 1`] = `
                                 type="button"
                               >
                                 <styled.button
-                                  className="c4"
+                                  className="sc-AxiKw cMQRsw"
                                   color="transparent"
                                   data-button-test={true}
                                   onClick={[Function]}
                                   type="button"
                                 >
                                   <button
-                                    className="c5 c4"
+                                    className="sc-Axmtr fGzfKN sc-AxiKw cMQRsw"
                                     color="transparent"
                                     data-button-test={true}
                                     onClick={[Function]}
@@ -1974,14 +1302,14 @@ exports[`Confirm should render content as reacr node 1`] = `
                                 type="button"
                               >
                                 <styled.button
-                                  className="c6"
+                                  className="sc-AxiKw Rtuhc"
                                   color=""
                                   data-button-test={true}
                                   onClick={[Function]}
                                   type="button"
                                 >
                                   <button
-                                    className="c7 c6"
+                                    className="sc-AxheI bgVlsT sc-AxiKw Rtuhc"
                                     color=""
                                     data-button-test={true}
                                     onClick={[Function]}

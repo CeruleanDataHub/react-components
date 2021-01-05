@@ -1,16 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button renders 1`] = `
-.c0 {
-  font-family: inherit;
-  background: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
 <ForwardRef
   as={null}
   className=""
@@ -28,7 +18,7 @@ exports[`Button renders 1`] = `
     type="button"
   >
     <button
-      className="c0"
+      className="sc-AxiKw Rtuhc"
       color=""
       data-button-test={true}
       onClick={[MockFunction]}

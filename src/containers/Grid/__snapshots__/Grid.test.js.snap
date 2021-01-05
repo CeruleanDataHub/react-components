@@ -1,44 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Grid should render grid 1`] = `
-.c0 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(0,1fr);
-  grid-gap: 8px;
-}
-
 <div
-  className="c0"
+  className="Grid__Grid-gDLjRO eNXUjX"
 >
   
 </div>
 `;
 
 exports[`Grid should render grid with cell 1`] = `
-.c1 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-}
-
-.c0 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(12,1fr);
-  grid-gap: 8px;
-}
-
 <div
-  className="c0"
+  className="Grid__Grid-gDLjRO carhOg"
 >
   <div
-    className="c1"
+    className="Cell__Cell-tAjrW dskkMt"
   >
     Content
   </div>
@@ -46,27 +21,11 @@ exports[`Grid should render grid with cell 1`] = `
 `;
 
 exports[`Grid should render grid with custom columns 1`] = `
-.c1 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-}
-
-.c0 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 8px;
-}
-
 <div
-  className="c0"
+  className="Grid__Grid-gDLjRO cbRobv"
 >
   <div
-    className="c1"
+    className="Cell__Cell-tAjrW dskkMt"
   >
     Content
   </div>
@@ -74,31 +33,11 @@ exports[`Grid should render grid with custom columns 1`] = `
 `;
 
 exports[`Grid should render grid with extended styles 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-}
-
-.c1 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(12,1fr);
-  grid-gap: 8px;
-}
-
-.c0 {
-  margin-bottom: 0.5rem;
-}
-
 <div
-  className="c0 c1"
+  className="sc-AxjAm fITMkt Grid__Grid-gDLjRO carhOg"
 >
   <div
-    className="c2"
+    className="Cell__Cell-tAjrW dskkMt"
   >
     Content
   </div>
@@ -106,31 +45,11 @@ exports[`Grid should render grid with extended styles 1`] = `
 `;
 
 exports[`Grid should render when extending the styles 1`] = `
-.c2 {
-  height: 100%;
-  min-width: 0;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-}
-
-.c0 {
-  display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px,auto);
-  grid-template-columns: repeat(12,1fr);
-  grid-gap: 8px;
-}
-
-.c1 {
-  grid-template-columns: 4rem auto;
-}
-
 <div
-  className="c0 c1"
+  className="Grid__Grid-gDLjRO carhOg sc-AxirZ iwvBOT"
 >
   <div
-    className="c2"
+    className="Cell__Cell-tAjrW dskkMt"
   >
     Content
   </div>

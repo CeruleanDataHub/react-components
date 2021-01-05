@@ -1,262 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DataTable should render 1`] = `
-.c2 {
-  position: relative;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  color: rgba(0,0,0,0.87);
-  background-color: #FFFFFF;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: left;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  width: 100%;
-  background-color: #FFFFFF;
-  min-height: 56px;
-  border-bottom-width: 1px;
-  border-bottom-color: rgba(0,0,0,.12);
-  border-bottom-style: solid;
-}
-
-.c9 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  line-height: normal;
-  padding-left: 16px;
-  padding-right: 16px;
-  word-break: break-word;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  max-width: 100%;
-  min-width: 100px;
-  font-weight: 400;
-}
-
-.c9 div:first-child {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-align-content: stretch;
-  -ms-flex-line-pack: stretch;
-  align-content: stretch;
-  width: 100%;
-  box-sizing: border-box;
-  font-size: 13px;
-  color: rgba(0,0,0,0.87);
-  background-color: #FFFFFF;
-  min-height: 48px;
-}
-
-.c8:not(:last-of-type) {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: rgba(0,0,0,.12);
-}
-
-.c8:nth-of-type(odd) {
-  color: rgba(0,0,0,0.87);
-  background-color: #FAFAFA;
-}
-
-.c8:hover {
-  color: rgba(0,0,0,0.87);
-  background-color: #EEEEEE;
-  -webkit-transition-duration: 0.15s;
-  transition-duration: 0.15s;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  border-bottom-color: #FFFFFF;
-  outline-style: solid;
-  outline-width: 1px;
-  outline-color: #FFFFFF;
-}
-
-.c5 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  line-height: normal;
-  font-size: 12px;
-  font-weight: 500;
-  color: rgba(0,0,0,0.87);
-  padding-left: 16px;
-  padding-right: 16px;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  max-width: 100%;
-  min-width: 100px;
-}
-
-.c6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100%;
-  line-height: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c6:focus {
-  outline: none;
-  color: rgba(0,0,0,.54);
-}
-
-.c6:hover {
-  color: rgba(0,0,0,.54);
-}
-
-.c6 span.__rdt_custom_sort_icon__ i,
-.c6 span.__rdt_custom_sort_icon__ svg {
-  opacity: 0;
-  color: inherit;
-  font-size: 18px !important;
-  height: 18px !important;
-  width: 18px !important;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transition-duration: 125ms;
-  transition-duration: 125ms;
-  -webkit-transition-property: -webkit-transform;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-
-.c6 span.__rdt_custom_sort_icon__.asc i,
-.c6 span.__rdt_custom_sort_icon__.asc svg {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c0 {
-  position: relative;
-  width: 100%;
-  border-radius: inherit;
-  overflow-x: auto;
-  overflow-y: hidden;
-  min-height: 0;
-}
-
-.c1 {
-  position: relative;
-  width: 100%;
-  display: table;
-}
-
 <div
-  className="c0"
+  className="sc-fznxsB forRdO"
   style={Object {}}
 >
   <div
-    className="c1"
+    className="sc-fznWqX gnahTY"
   >
     <div
-      className="c2 rdt_Table"
+      className="sc-AxjAm gIMaKV rdt_Table"
       disabled={false}
       role="table"
     >
       <div
-        className="c3 rdt_TableHead"
+        className="sc-AxirZ eBuPmJ rdt_TableHead"
         role="rowgroup"
       >
         <div
-          className="c4 rdt_TableHeadRow"
+          className="sc-AxiKw cTEQON rdt_TableHeadRow"
           disabled={false}
           role="row"
         >
           <div
-            className="sc-AxhCb sc-AxhUy c5 rdt_TableCol"
+            className="sc-AxhCb sc-AxhUy sc-fzplWN HWHoi rdt_TableCol"
           >
             <div
-              className="c6 rdt_TableCol_Sortable"
+              className="sc-fznyAO cxtWCz rdt_TableCol_Sortable"
               id="column-title"
               onClick={[Function]}
               onKeyPress={[Function]}
@@ -269,10 +39,10 @@ exports[`DataTable should render 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy c5 rdt_TableCol"
+            className="sc-AxhCb sc-AxhUy sc-fzplWN HWHoi rdt_TableCol"
           >
             <div
-              className="c6 rdt_TableCol_Sortable"
+              className="sc-fznyAO cxtWCz rdt_TableCol_Sortable"
               id="column-year"
               onClick={[Function]}
               onKeyPress={[Function]}
@@ -287,12 +57,12 @@ exports[`DataTable should render 1`] = `
         </div>
       </div>
       <div
-        className="c7 rdt_TableBody"
+        className="sc-fzpjYC ieTOoW rdt_TableBody"
         offset="250px"
         role="rowgroup"
       >
         <div
-          className="c8 rdt_TableRow"
+          className="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-1"
           onClick={[Function]}
           onDoubleClick={[Function]}
@@ -300,7 +70,7 @@ exports[`DataTable should render 1`] = `
           selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-1"
             role="cell"
@@ -312,7 +82,7 @@ exports[`DataTable should render 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-1"
             role="cell"
@@ -325,7 +95,7 @@ exports[`DataTable should render 1`] = `
           </div>
         </div>
         <div
-          className="c8 rdt_TableRow"
+          className="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-2"
           onClick={[Function]}
           onDoubleClick={[Function]}
@@ -333,7 +103,7 @@ exports[`DataTable should render 1`] = `
           selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-2"
             role="cell"
@@ -345,7 +115,7 @@ exports[`DataTable should render 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-2"
             role="cell"
@@ -358,7 +128,7 @@ exports[`DataTable should render 1`] = `
           </div>
         </div>
         <div
-          className="c8 rdt_TableRow"
+          className="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-3"
           onClick={[Function]}
           onDoubleClick={[Function]}
@@ -366,7 +136,7 @@ exports[`DataTable should render 1`] = `
           selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-3"
             role="cell"
@@ -378,7 +148,7 @@ exports[`DataTable should render 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-3"
             role="cell"
@@ -397,427 +167,32 @@ exports[`DataTable should render 1`] = `
 `;
 
 exports[`DataTable should render pagination 1`] = `
-.c2 {
-  position: relative;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  color: rgba(0,0,0,0.87);
-  background-color: #FFFFFF;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: left;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  width: 100%;
-  background-color: #FFFFFF;
-  min-height: 56px;
-  border-bottom-width: 1px;
-  border-bottom-color: rgba(0,0,0,.12);
-  border-bottom-style: solid;
-}
-
-.c9 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  line-height: normal;
-  padding-left: 16px;
-  padding-right: 16px;
-  word-break: break-word;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  max-width: 100%;
-  min-width: 100px;
-  font-weight: 400;
-}
-
-.c9 div:first-child {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-align-content: stretch;
-  -ms-flex-line-pack: stretch;
-  align-content: stretch;
-  width: 100%;
-  box-sizing: border-box;
-  font-size: 13px;
-  color: rgba(0,0,0,0.87);
-  background-color: #FFFFFF;
-  min-height: 48px;
-}
-
-.c8:not(:last-of-type) {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: rgba(0,0,0,.12);
-}
-
-.c8:nth-of-type(odd) {
-  color: rgba(0,0,0,0.87);
-  background-color: #FAFAFA;
-}
-
-.c8:hover {
-  color: rgba(0,0,0,0.87);
-  background-color: #EEEEEE;
-  -webkit-transition-duration: 0.15s;
-  transition-duration: 0.15s;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  border-bottom-color: #FFFFFF;
-  outline-style: solid;
-  outline-width: 1px;
-  outline-color: #FFFFFF;
-}
-
-.c5 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  line-height: normal;
-  font-size: 12px;
-  font-weight: 500;
-  color: rgba(0,0,0,0.87);
-  padding-left: 16px;
-  padding-right: 16px;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  max-width: 100%;
-  min-width: 100px;
-}
-
-.c6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100%;
-  line-height: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c6:focus {
-  outline: none;
-  color: rgba(0,0,0,.54);
-}
-
-.c6:hover {
-  color: rgba(0,0,0,.54);
-}
-
-.c6 span.__rdt_custom_sort_icon__ i,
-.c6 span.__rdt_custom_sort_icon__ svg {
-  opacity: 0;
-  color: inherit;
-  font-size: 18px !important;
-  height: 18px !important;
-  width: 18px !important;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transition-duration: 125ms;
-  transition-duration: 125ms;
-  -webkit-transition-property: -webkit-transform;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-
-.c6 span.__rdt_custom_sort_icon__.asc i,
-.c6 span.__rdt_custom_sort_icon__.asc svg {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c0 {
-  position: relative;
-  width: 100%;
-  border-radius: inherit;
-  overflow-x: auto;
-  overflow-y: hidden;
-  min-height: 0;
-}
-
-.c1 {
-  position: relative;
-  width: 100%;
-  display: table;
-}
-
-.c13 {
-  cursor: pointer;
-  height: 24px;
-  min-width: 24px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  padding-left: 8px;
-  padding-right: 12px;
-  box-sizing: content-box;
-  font-size: inherit;
-  color: inherit;
-  border: none;
-  background-color: transparent;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  direction: ltr;
-}
-
-.c13::-ms-expand {
-  display: none;
-}
-
-.c13:disabled::-ms-expand {
-  background: #f60;
-}
-
-.c12 {
-  position: relative;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  font-size: inherit;
-  color: inherit;
-  margin-top: 1px;
-}
-
-.c12 svg {
-  top: 0;
-  right: 0;
-  color: inherit;
-  position: absolute;
-  fill: currentColor;
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  pointer-events: none;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  width: 100%;
-  color: rgba(0,0,0,0.54);
-  font-size: 13px;
-  min-height: 56px;
-  background-color: #FFFFFF;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: rgba(0,0,0,.12);
-}
-
-.c16 {
-  position: relative;
-  display: block;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border: none;
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  padding: 8px;
-  margin: px;
-  cursor: pointer;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  color: rgba(0,0,0,.54);
-  fill: rgba(0,0,0,.54);
-  background-color: transparent;
-}
-
-.c16:disabled {
-  cursor: unset;
-  color: rgba(0,0,0,.18);
-  fill: rgba(0,0,0,.18);
-}
-
-.c16:hover:not(:disabled) {
-  background-color: rgba(0,0,0,.12);
-}
-
-.c16:focus {
-  outline: none;
-  background-color: rgba(0,0,0,.12);
-}
-
-.c15 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 4px;
-  white-space: nowrap;
-}
-
-.c14 {
-  -webkit-flex-shrink: 1;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  margin: 0 24px;
-}
-
-.c11 {
-  -webkit-flex-shrink: 1;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  margin: 0 4px;
-}
-
-@media screen and (max-width:599px) {
-  .c15 {
-    width: 100%;
-    -webkit-box-pack: space-around;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: space-around;
-    justify-content: space-around;
-  }
-}
-
 <div
-  className="c0"
+  className="sc-fznxsB forRdO"
   style={Object {}}
 >
   <div
-    className="c1"
+    className="sc-fznWqX gnahTY"
   >
     <div
-      className="c2 rdt_Table"
+      className="sc-AxjAm gIMaKV rdt_Table"
       disabled={false}
       role="table"
     >
       <div
-        className="c3 rdt_TableHead"
+        className="sc-AxirZ eBuPmJ rdt_TableHead"
         role="rowgroup"
       >
         <div
-          className="c4 rdt_TableHeadRow"
+          className="sc-AxiKw cTEQON rdt_TableHeadRow"
           disabled={false}
           role="row"
         >
           <div
-            className="sc-AxhCb sc-AxhUy c5 rdt_TableCol"
+            className="sc-AxhCb sc-AxhUy sc-fzplWN HWHoi rdt_TableCol"
           >
             <div
-              className="c6 rdt_TableCol_Sortable"
+              className="sc-fznyAO cxtWCz rdt_TableCol_Sortable"
               id="column-title"
               onClick={[Function]}
               onKeyPress={[Function]}
@@ -830,10 +205,10 @@ exports[`DataTable should render pagination 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy c5 rdt_TableCol"
+            className="sc-AxhCb sc-AxhUy sc-fzplWN HWHoi rdt_TableCol"
           >
             <div
-              className="c6 rdt_TableCol_Sortable"
+              className="sc-fznyAO cxtWCz rdt_TableCol_Sortable"
               id="column-year"
               onClick={[Function]}
               onKeyPress={[Function]}
@@ -848,12 +223,12 @@ exports[`DataTable should render pagination 1`] = `
         </div>
       </div>
       <div
-        className="c7 rdt_TableBody"
+        className="sc-fzpjYC ieTOoW rdt_TableBody"
         offset="250px"
         role="rowgroup"
       >
         <div
-          className="c8 rdt_TableRow"
+          className="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-1"
           onClick={[Function]}
           onDoubleClick={[Function]}
@@ -861,7 +236,7 @@ exports[`DataTable should render pagination 1`] = `
           selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-1"
             role="cell"
@@ -873,7 +248,7 @@ exports[`DataTable should render pagination 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-1"
             role="cell"
@@ -886,7 +261,7 @@ exports[`DataTable should render pagination 1`] = `
           </div>
         </div>
         <div
-          className="c8 rdt_TableRow"
+          className="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-2"
           onClick={[Function]}
           onDoubleClick={[Function]}
@@ -894,7 +269,7 @@ exports[`DataTable should render pagination 1`] = `
           selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-2"
             role="cell"
@@ -906,7 +281,7 @@ exports[`DataTable should render pagination 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-2"
             role="cell"
@@ -919,7 +294,7 @@ exports[`DataTable should render pagination 1`] = `
           </div>
         </div>
         <div
-          className="c8 rdt_TableRow"
+          className="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-3"
           onClick={[Function]}
           onDoubleClick={[Function]}
@@ -927,7 +302,7 @@ exports[`DataTable should render pagination 1`] = `
           selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-3"
             role="cell"
@@ -939,7 +314,7 @@ exports[`DataTable should render pagination 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-3"
             role="cell"
@@ -952,7 +327,7 @@ exports[`DataTable should render pagination 1`] = `
           </div>
         </div>
         <div
-          className="c8 rdt_TableRow"
+          className="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-4"
           onClick={[Function]}
           onDoubleClick={[Function]}
@@ -960,7 +335,7 @@ exports[`DataTable should render pagination 1`] = `
           selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-4"
             role="cell"
@@ -972,7 +347,7 @@ exports[`DataTable should render pagination 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-4"
             role="cell"
@@ -985,7 +360,7 @@ exports[`DataTable should render pagination 1`] = `
           </div>
         </div>
         <div
-          className="c8 rdt_TableRow"
+          className="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-5"
           onClick={[Function]}
           onDoubleClick={[Function]}
@@ -993,7 +368,7 @@ exports[`DataTable should render pagination 1`] = `
           selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-5"
             role="cell"
@@ -1005,7 +380,7 @@ exports[`DataTable should render pagination 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-5"
             role="cell"
@@ -1018,7 +393,7 @@ exports[`DataTable should render pagination 1`] = `
           </div>
         </div>
         <div
-          className="c8 rdt_TableRow"
+          className="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-6"
           onClick={[Function]}
           onDoubleClick={[Function]}
@@ -1026,7 +401,7 @@ exports[`DataTable should render pagination 1`] = `
           selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-6"
             role="cell"
@@ -1038,7 +413,7 @@ exports[`DataTable should render pagination 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-6"
             role="cell"
@@ -1051,7 +426,7 @@ exports[`DataTable should render pagination 1`] = `
           </div>
         </div>
         <div
-          className="c8 rdt_TableRow"
+          className="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-7"
           onClick={[Function]}
           onDoubleClick={[Function]}
@@ -1059,7 +434,7 @@ exports[`DataTable should render pagination 1`] = `
           selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-7"
             role="cell"
@@ -1071,7 +446,7 @@ exports[`DataTable should render pagination 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-7"
             role="cell"
@@ -1084,7 +459,7 @@ exports[`DataTable should render pagination 1`] = `
           </div>
         </div>
         <div
-          className="c8 rdt_TableRow"
+          className="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-8"
           onClick={[Function]}
           onDoubleClick={[Function]}
@@ -1092,7 +467,7 @@ exports[`DataTable should render pagination 1`] = `
           selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-8"
             role="cell"
@@ -1104,7 +479,7 @@ exports[`DataTable should render pagination 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-8"
             role="cell"
@@ -1117,7 +492,7 @@ exports[`DataTable should render pagination 1`] = `
           </div>
         </div>
         <div
-          className="c8 rdt_TableRow"
+          className="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-9"
           onClick={[Function]}
           onDoubleClick={[Function]}
@@ -1125,7 +500,7 @@ exports[`DataTable should render pagination 1`] = `
           selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-9"
             role="cell"
@@ -1137,7 +512,7 @@ exports[`DataTable should render pagination 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-9"
             role="cell"
@@ -1150,7 +525,7 @@ exports[`DataTable should render pagination 1`] = `
           </div>
         </div>
         <div
-          className="c8 rdt_TableRow"
+          className="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-10"
           onClick={[Function]}
           onDoubleClick={[Function]}
@@ -1158,7 +533,7 @@ exports[`DataTable should render pagination 1`] = `
           selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-10"
             role="cell"
@@ -1170,7 +545,7 @@ exports[`DataTable should render pagination 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy c9 rdt_TableCell"
+            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-10"
             role="cell"
@@ -1186,18 +561,18 @@ exports[`DataTable should render pagination 1`] = `
     </div>
   </div>
   <nav
-    className="c10 rdt_Pagination"
+    className="sc-fzoNJl dGqwdB rdt_Pagination"
   >
     <span
-      className="sc-fznxKY c11"
+      className="sc-fznxKY sc-fznWOq ncoBp"
     >
       Rows per page:
     </span>
     <div
-      className="c12"
+      className="sc-fzoyTs gVljTM"
     >
       <select
-        className="c13"
+        className="sc-fzqNqU gCcqTE"
         defaultValue={10}
         onChange={[Function]}
       >
@@ -1243,17 +618,17 @@ exports[`DataTable should render pagination 1`] = `
       </svg>
     </div>
     <span
-      className="sc-fznxKY c14"
+      className="sc-fznxKY sc-fznMAR jMFmnk"
     >
       1-10 of 11
     </span>
     <div
-      className="c15"
+      className="sc-fzpmMD ftIMtk"
     >
       <button
         aria-disabled={true}
         aria-label="First Page"
-        className="c16"
+        className="sc-fzoXWK embYcA"
         disabled={true}
         id="pagination-first-page"
         onClick={[Function]}
@@ -1279,7 +654,7 @@ exports[`DataTable should render pagination 1`] = `
       <button
         aria-disabled={true}
         aria-label="Previous Page"
-        className="c16"
+        className="sc-fzoXWK embYcA"
         disabled={true}
         id="pagination-previous-page"
         onClick={[Function]}
@@ -1305,7 +680,7 @@ exports[`DataTable should render pagination 1`] = `
       <button
         aria-disabled={false}
         aria-label="Next Page"
-        className="c16"
+        className="sc-fzoXWK embYcA"
         disabled={false}
         id="pagination-next-page"
         onClick={[Function]}
@@ -1331,7 +706,7 @@ exports[`DataTable should render pagination 1`] = `
       <button
         aria-disabled={false}
         aria-label="Last Page"
-        className="c16"
+        className="sc-fzoXWK embYcA"
         disabled={false}
         id="pagination-last-page"
         onClick={[Function]}

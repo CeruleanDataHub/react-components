@@ -1,55 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tab should call default props onClick function when no onClick property is passed 1`] = `
-.c0 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0.5em 1.5em;
-  background: #ddd;
-  border: 1px solid black;
-  border-bottom-color: transparent;
-  cursor: pointer;
-  margin-right: 1em;
-  border-radius: 3px 3px 0 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: space-evenly;
-  -webkit-justify-content: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-}
-
-.c2 {
-  font-size: 1em;
-  color: black;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm bYePpP"
   fontFamily="openSans"
   size="normal"
 >
   <div
-    className="c1"
+    className="sc-AxirZ cdrbwt"
     onClick={[Function]}
   >
     <span
-      className="c2"
+      className="sc-AxiKw jmlNFh"
     >
       Tab
     </span>
@@ -58,55 +20,17 @@ exports[`Tab should call default props onClick function when no onClick property
 `;
 
 exports[`Tab should render correctly 1`] = `
-.c0 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0.5em 1.5em;
-  background: #ddd;
-  border: 1px solid black;
-  border-bottom-color: transparent;
-  cursor: pointer;
-  margin-right: 1em;
-  border-radius: 3px 3px 0 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: space-evenly;
-  -webkit-justify-content: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-}
-
-.c2 {
-  font-size: 1em;
-  color: black;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm bYePpP"
   fontFamily="openSans"
   size="normal"
 >
   <div
-    className="c1"
+    className="sc-AxirZ cdrbwt"
     onClick={[Function]}
   >
     <span
-      className="c2"
+      className="sc-AxiKw jmlNFh"
     >
       Tab
     </span>
@@ -115,55 +39,17 @@ exports[`Tab should render correctly 1`] = `
 `;
 
 exports[`Tab should render correctly in active state 1`] = `
-.c0 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0.5em 1.5em;
-  background: white;
-  border: 1px solid black;
-  border-bottom-color: transparent;
-  cursor: pointer;
-  margin-right: 1em;
-  border-radius: 3px 3px 0 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: space-evenly;
-  -webkit-justify-content: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-}
-
-.c2 {
-  font-size: 1em;
-  color: black;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
 <div
-  className="c0"
+  className="sc-AxjAm bYePpP"
   fontFamily="openSans"
   size="normal"
 >
   <div
-    className="c1"
+    className="sc-AxirZ helBvh"
     onClick={[Function]}
   >
     <span
-      className="c2"
+      className="sc-AxiKw jmlNFh"
     >
       Tab
     </span>

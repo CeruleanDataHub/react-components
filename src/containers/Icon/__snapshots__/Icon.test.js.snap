@@ -1,342 +1,206 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Icon should render icon  1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-"
+  className="sc-AxjAm jWlVxK lni lni-"
 />
 `;
 
 exports[`Icon should render icon arrow-left-circle 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-arrow-left-circle"
+  className="sc-AxjAm jWlVxK lni lni-arrow-left-circle"
 />
 `;
 
 exports[`Icon should render icon briefcase 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-briefcase"
+  className="sc-AxjAm jWlVxK lni lni-briefcase"
 />
 `;
 
 exports[`Icon should render icon calendar 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-calendar"
+  className="sc-AxjAm jWlVxK lni lni-calendar"
 />
 `;
 
 exports[`Icon should render icon caravan 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-caravan"
+  className="sc-AxjAm jWlVxK lni lni-caravan"
 />
 `;
 
 exports[`Icon should render icon checkmark 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-checkmark"
+  className="sc-AxjAm jWlVxK lni lni-checkmark"
 />
 `;
 
 exports[`Icon should render icon chef-hat 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-chef-hat"
+  className="sc-AxjAm jWlVxK lni lni-chef-hat"
 />
 `;
 
 exports[`Icon should render icon chevron-down 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-chevron-down"
+  className="sc-AxjAm jWlVxK lni lni-chevron-down"
 />
 `;
 
 exports[`Icon should render icon chevron-up 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-chevron-up"
+  className="sc-AxjAm jWlVxK lni lni-chevron-up"
 />
 `;
 
 exports[`Icon should render icon close 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-close"
+  className="sc-AxjAm jWlVxK lni lni-close"
 />
 `;
 
 exports[`Icon should render icon cog 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-cog"
+  className="sc-AxjAm jWlVxK lni lni-cog"
 />
 `;
 
 exports[`Icon should render icon control-panel 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-control-panel"
+  className="sc-AxjAm jWlVxK lni lni-control-panel"
 />
 `;
 
 exports[`Icon should render icon dashboard 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-dashboard"
+  className="sc-AxjAm jWlVxK lni lni-dashboard"
 />
 `;
 
 exports[`Icon should render icon enter 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-enter"
+  className="sc-AxjAm jWlVxK lni lni-enter"
 />
 `;
 
 exports[`Icon should render icon exit 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-exit"
+  className="sc-AxjAm jWlVxK lni lni-exit"
 />
 `;
 
 exports[`Icon should render icon eye 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-eye"
+  className="sc-AxjAm jWlVxK lni lni-eye"
 />
 `;
 
 exports[`Icon should render icon full-screen 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-full-screen"
+  className="sc-AxjAm jWlVxK lni lni-full-screen"
 />
 `;
 
 exports[`Icon should render icon home 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-home"
+  className="sc-AxjAm jWlVxK lni lni-home"
 />
 `;
 
 exports[`Icon should render icon layers 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-layers"
+  className="sc-AxjAm jWlVxK lni lni-layers"
 />
 `;
 
 exports[`Icon should render icon lock 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-lock"
+  className="sc-AxjAm jWlVxK lni lni-lock"
 />
 `;
 
 exports[`Icon should render icon menu 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-menu"
+  className="sc-AxjAm jWlVxK lni lni-menu"
 />
 `;
 
 exports[`Icon should render icon minus 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-minus"
+  className="sc-AxjAm jWlVxK lni lni-minus"
 />
 `;
 
 exports[`Icon should render icon more 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-more"
+  className="sc-AxjAm jWlVxK lni lni-more"
 />
 `;
 
 exports[`Icon should render icon more-alt 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-more-alt"
+  className="sc-AxjAm jWlVxK lni lni-more-alt"
 />
 `;
 
 exports[`Icon should render icon network 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-network"
+  className="sc-AxjAm jWlVxK lni lni-network"
 />
 `;
 
 exports[`Icon should render icon plane 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-plane"
+  className="sc-AxjAm jWlVxK lni lni-plane"
 />
 `;
 
 exports[`Icon should render icon plus 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-plus"
+  className="sc-AxjAm jWlVxK lni lni-plus"
 />
 `;
 
 exports[`Icon should render icon rocket 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-rocket"
+  className="sc-AxjAm jWlVxK lni lni-rocket"
 />
 `;
 
 exports[`Icon should render icon search 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-search"
+  className="sc-AxjAm jWlVxK lni lni-search"
 />
 `;
 
 exports[`Icon should render icon trash 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-trash"
+  className="sc-AxjAm jWlVxK lni lni-trash"
 />
 `;
 
 exports[`Icon should render icon user 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-user"
+  className="sc-AxjAm jWlVxK lni lni-user"
 />
 `;
 
 exports[`Icon should render icon users 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-users"
+  className="sc-AxjAm jWlVxK lni lni-users"
 />
 `;
 
 exports[`Icon should render icon vector 1`] = `
-.c0 {
-  text-align: center;
-}
-
 <span
-  className="c0 lni lni-vector"
+  className="sc-AxjAm jWlVxK lni lni-vector"
 />
 `;
 
 exports[`Icon should render icon with custom icon image 1`] = `
-.c0 {
-  height: 2em;
-}
-
 <img
-  className="c0"
+  className="sc-AxirZ gjjgLW"
   src={
     Object {
       "process": [Function],
@@ -346,16 +210,7 @@ exports[`Icon should render icon with custom icon image 1`] = `
 `;
 
 exports[`Icon should render icon with custom styles 1`] = `
-.c1 {
-  text-align: center;
-}
-
-.c0 {
-  font-size: 1.5em;
-  margin-right: 1.75rem;
-}
-
 <span
-  className="c0 c1 lni lni-home"
+  className="sc-AxiKw inYdnV sc-AxjAm jWlVxK lni lni-home"
 />
 `;

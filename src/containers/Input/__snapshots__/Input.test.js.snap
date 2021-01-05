@@ -1,14 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input should be able to call default onChange function when no function is passed 1`] = `
-.c0 {
-  padding: 0.6rem;
-  width: 100%;
-  box-sizing: border-box;
-}
-
 <input
-  className="c0"
+  className="sc-AxjAm bHJMZp"
   onChange={[Function]}
   placeholder="test"
   type="text"
@@ -16,14 +10,8 @@ exports[`Input should be able to call default onChange function when no function
 `;
 
 exports[`Input should render 1`] = `
-.c0 {
-  padding: 0.6rem;
-  width: 100%;
-  box-sizing: border-box;
-}
-
 <input
-  className="c0"
+  className="sc-AxjAm bHJMZp"
   onChange={[Function]}
   placeholder=""
   type="text"
@@ -31,19 +19,8 @@ exports[`Input should render 1`] = `
 `;
 
 exports[`Input should render input with extended styles 1`] = `
-.c1 {
-  padding: 0.6rem;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c0 {
-  background: papayawhip;
-  color: limegreen;
-}
-
 <input
-  className="c0 c1"
+  className="sc-AxirZ cZRkLD sc-AxjAm bHJMZp"
   onChange={[Function]}
   placeholder="test"
   type="text"
@@ -51,14 +28,8 @@ exports[`Input should render input with extended styles 1`] = `
 `;
 
 exports[`Input should render placeholder 1`] = `
-.c0 {
-  padding: 0.6rem;
-  width: 100%;
-  box-sizing: border-box;
-}
-
 <input
-  className="c0"
+  className="sc-AxjAm bHJMZp"
   onChange={[Function]}
   placeholder="test"
   type="text"
@@ -66,14 +37,8 @@ exports[`Input should render placeholder 1`] = `
 `;
 
 exports[`Input types should render search input 1`] = `
-.c0 {
-  padding: 0.6rem;
-  width: 100%;
-  box-sizing: border-box;
-}
-
 <input
-  className="c0"
+  className="sc-AxjAm bHJMZp"
   onChange={[Function]}
   placeholder="test"
   type="search"
@@ -81,14 +46,8 @@ exports[`Input types should render search input 1`] = `
 `;
 
 exports[`Input types should render text input 1`] = `
-.c0 {
-  padding: 0.6rem;
-  width: 100%;
-  box-sizing: border-box;
-}
-
 <input
-  className="c0"
+  className="sc-AxjAm bHJMZp"
   onChange={[Function]}
   placeholder="test"
   type="text"

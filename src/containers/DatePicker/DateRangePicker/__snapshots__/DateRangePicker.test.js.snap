@@ -1,108 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DateRangePicker dark should render 1`] = `
-.c3 {
-  text-align: center;
-}
-
-.c1 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c0 .DateRangePicker {
-  color: #999;
-  cursor: pointer;
-}
-
-.c0 .DateRangePicker .DateRangePickerInput {
-  background: #0f181c;
-  border-radius: 4px;
-  border: none;
-}
-
-.c0 .DateInput {
-  color: #999;
-}
-
-.c0 .DateInput_fang {
-  display: none;
-}
-
-.c0 .DateInput_fangStroke {
-  fill: #0f181c;
-}
-
-.c0 .DateInput_input {
-  color: inherit;
-  background-color: #0f181c;
-  border-radius: 0 4px 4px 0;
-}
-
-.c0 .DateInput_input__focused {
-  border-bottom-color: transparent;
-}
-
-.c0 .DayPicker {
-  box-shadow: none;
-  background: #0f181c;
-  border-radius: 0;
-}
-
-.c0 .DayPicker_transitionContainer {
-  border-radius: 0;
-  background: #0f181c;
-}
-
-.c0 .CalendarMonthGrid {
-  background: #0f181c;
-}
-
-.c0 .CalendarMonth {
-  background: #0f181c;
-  padding: 0 13px 10px 13px;
-}
-
-.c0 .CalendarMonth_caption {
-  color: #999;
-  padding-bottom: 42px;
-}
-
-.c0 .DayPickerNavigation_button__default {
-  background: transparent;
-  border: none;
-}
-
-.c0 .CalendarDay__default {
-  background: #0f181c;
-  color: #999;
-  border: 1px solid #000000;
-}
-
-.c0 .CalendarDay__default:hover {
-  background: #ffffff;
-  color: #000000;
-}
-
-.c0 .CalendarDay__selected,
-.c0 .CalendarDay__selected_span,
-.c0 .CalendarDay__hovered_span:hover,
-.c0 .CalendarDay__hovered_span {
-  background: #90ee7e;
-  color: #000000;
-}
-
-.c2 {
-  font-size: 1.25em;
-}
-
 <div
-  className="c0"
+  className="sc-AxhCb hplRGN"
 >
   <div
-    className="c1"
+    className="sc-AxiKw ixAZyM"
     fontFamily="openSans"
     size="normal"
   >
@@ -121,7 +24,7 @@ exports[`DateRangePicker dark should render 1`] = `
             type="button"
           >
             <span
-              className="c2 c3 lni lni-calendar"
+              className="sc-AxhUy eNHrrB sc-AxjAm jWlVxK lni lni-calendar"
             />
           </button>
           <div
@@ -201,108 +104,11 @@ exports[`DateRangePicker dark should render 1`] = `
 `;
 
 exports[`DateRangePicker dark should render with custom date format 1`] = `
-.c3 {
-  text-align: center;
-}
-
-.c1 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c0 .DateRangePicker {
-  color: #999;
-  cursor: pointer;
-}
-
-.c0 .DateRangePicker .DateRangePickerInput {
-  background: #0f181c;
-  border-radius: 4px;
-  border: none;
-}
-
-.c0 .DateInput {
-  color: #999;
-}
-
-.c0 .DateInput_fang {
-  display: none;
-}
-
-.c0 .DateInput_fangStroke {
-  fill: #0f181c;
-}
-
-.c0 .DateInput_input {
-  color: inherit;
-  background-color: #0f181c;
-  border-radius: 0 4px 4px 0;
-}
-
-.c0 .DateInput_input__focused {
-  border-bottom-color: transparent;
-}
-
-.c0 .DayPicker {
-  box-shadow: none;
-  background: #0f181c;
-  border-radius: 0;
-}
-
-.c0 .DayPicker_transitionContainer {
-  border-radius: 0;
-  background: #0f181c;
-}
-
-.c0 .CalendarMonthGrid {
-  background: #0f181c;
-}
-
-.c0 .CalendarMonth {
-  background: #0f181c;
-  padding: 0 13px 10px 13px;
-}
-
-.c0 .CalendarMonth_caption {
-  color: #999;
-  padding-bottom: 42px;
-}
-
-.c0 .DayPickerNavigation_button__default {
-  background: transparent;
-  border: none;
-}
-
-.c0 .CalendarDay__default {
-  background: #0f181c;
-  color: #999;
-  border: 1px solid #000000;
-}
-
-.c0 .CalendarDay__default:hover {
-  background: #ffffff;
-  color: #000000;
-}
-
-.c0 .CalendarDay__selected,
-.c0 .CalendarDay__selected_span,
-.c0 .CalendarDay__hovered_span:hover,
-.c0 .CalendarDay__hovered_span {
-  background: #90ee7e;
-  color: #000000;
-}
-
-.c2 {
-  font-size: 1.25em;
-}
-
 <div
-  className="c0"
+  className="sc-AxhCb hplRGN"
 >
   <div
-    className="c1"
+    className="sc-AxiKw ixAZyM"
     fontFamily="openSans"
     size="normal"
   >
@@ -321,7 +127,7 @@ exports[`DateRangePicker dark should render with custom date format 1`] = `
             type="button"
           >
             <span
-              className="c2 c3 lni lni-calendar"
+              className="sc-AxhUy eNHrrB sc-AxjAm jWlVxK lni lni-calendar"
             />
           </button>
           <div
@@ -401,108 +207,11 @@ exports[`DateRangePicker dark should render with custom date format 1`] = `
 `;
 
 exports[`DateRangePicker light should render 1`] = `
-.c3 {
-  text-align: center;
-}
-
-.c1 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c0 .DateRangePicker {
-  color: #999;
-  cursor: pointer;
-}
-
-.c0 .DateRangePicker .DateRangePickerInput {
-  background: #fff;
-  border-radius: 4px;
-  border: none;
-}
-
-.c0 .DateInput {
-  color: #999;
-}
-
-.c0 .DateInput_fang {
-  display: none;
-}
-
-.c0 .DateInput_fangStroke {
-  fill: #fff;
-}
-
-.c0 .DateInput_input {
-  color: inherit;
-  background-color: #fff;
-  border-radius: 0 4px 4px 0;
-}
-
-.c0 .DateInput_input__focused {
-  border-bottom-color: transparent;
-}
-
-.c0 .DayPicker {
-  box-shadow: none;
-  background: #fff;
-  border-radius: 0;
-}
-
-.c0 .DayPicker_transitionContainer {
-  border-radius: 0;
-  background: #fff;
-}
-
-.c0 .CalendarMonthGrid {
-  background: #fff;
-}
-
-.c0 .CalendarMonth {
-  background: #fff;
-  padding: 0 13px 10px 13px;
-}
-
-.c0 .CalendarMonth_caption {
-  color: #999;
-  padding-bottom: 42px;
-}
-
-.c0 .DayPickerNavigation_button__default {
-  background: transparent;
-  border: none;
-}
-
-.c0 .CalendarDay__default {
-  background: #fff;
-  color: #999;
-  border: 1px solid #dedede;
-}
-
-.c0 .CalendarDay__default:hover {
-  background: #ffffff;
-  color: #000000;
-}
-
-.c0 .CalendarDay__selected,
-.c0 .CalendarDay__selected_span,
-.c0 .CalendarDay__hovered_span:hover,
-.c0 .CalendarDay__hovered_span {
-  background: #2a908e;
-  color: #ffffff;
-}
-
-.c2 {
-  font-size: 1.25em;
-}
-
 <div
-  className="c0"
+  className="sc-AxhCb jzImlU"
 >
   <div
-    className="c1"
+    className="sc-AxiKw ixAZyM"
     fontFamily="openSans"
     size="normal"
   >
@@ -521,7 +230,7 @@ exports[`DateRangePicker light should render 1`] = `
             type="button"
           >
             <span
-              className="c2 c3 lni lni-calendar"
+              className="sc-AxhUy eNHrrB sc-AxjAm jWlVxK lni lni-calendar"
             />
           </button>
           <div
@@ -601,108 +310,11 @@ exports[`DateRangePicker light should render 1`] = `
 `;
 
 exports[`DateRangePicker light should render with custom date format 1`] = `
-.c3 {
-  text-align: center;
-}
-
-.c1 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c0 .DateRangePicker {
-  color: #999;
-  cursor: pointer;
-}
-
-.c0 .DateRangePicker .DateRangePickerInput {
-  background: #fff;
-  border-radius: 4px;
-  border: none;
-}
-
-.c0 .DateInput {
-  color: #999;
-}
-
-.c0 .DateInput_fang {
-  display: none;
-}
-
-.c0 .DateInput_fangStroke {
-  fill: #fff;
-}
-
-.c0 .DateInput_input {
-  color: inherit;
-  background-color: #fff;
-  border-radius: 0 4px 4px 0;
-}
-
-.c0 .DateInput_input__focused {
-  border-bottom-color: transparent;
-}
-
-.c0 .DayPicker {
-  box-shadow: none;
-  background: #fff;
-  border-radius: 0;
-}
-
-.c0 .DayPicker_transitionContainer {
-  border-radius: 0;
-  background: #fff;
-}
-
-.c0 .CalendarMonthGrid {
-  background: #fff;
-}
-
-.c0 .CalendarMonth {
-  background: #fff;
-  padding: 0 13px 10px 13px;
-}
-
-.c0 .CalendarMonth_caption {
-  color: #999;
-  padding-bottom: 42px;
-}
-
-.c0 .DayPickerNavigation_button__default {
-  background: transparent;
-  border: none;
-}
-
-.c0 .CalendarDay__default {
-  background: #fff;
-  color: #999;
-  border: 1px solid #dedede;
-}
-
-.c0 .CalendarDay__default:hover {
-  background: #ffffff;
-  color: #000000;
-}
-
-.c0 .CalendarDay__selected,
-.c0 .CalendarDay__selected_span,
-.c0 .CalendarDay__hovered_span:hover,
-.c0 .CalendarDay__hovered_span {
-  background: #2a908e;
-  color: #ffffff;
-}
-
-.c2 {
-  font-size: 1.25em;
-}
-
 <div
-  className="c0"
+  className="sc-AxhCb jzImlU"
 >
   <div
-    className="c1"
+    className="sc-AxiKw ixAZyM"
     fontFamily="openSans"
     size="normal"
   >
@@ -721,7 +333,7 @@ exports[`DateRangePicker light should render with custom date format 1`] = `
             type="button"
           >
             <span
-              className="c2 c3 lni lni-calendar"
+              className="sc-AxhUy eNHrrB sc-AxjAm jWlVxK lni lni-calendar"
             />
           </button>
           <div
@@ -801,108 +413,11 @@ exports[`DateRangePicker light should render with custom date format 1`] = `
 `;
 
 exports[`DateRangePicker with given date should render DateRangePicker starting from date provided 1`] = `
-.c3 {
-  text-align: center;
-}
-
-.c1 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c0 .DateRangePicker {
-  color: #999;
-  cursor: pointer;
-}
-
-.c0 .DateRangePicker .DateRangePickerInput {
-  background: #fff;
-  border-radius: 4px;
-  border: none;
-}
-
-.c0 .DateInput {
-  color: #999;
-}
-
-.c0 .DateInput_fang {
-  display: none;
-}
-
-.c0 .DateInput_fangStroke {
-  fill: #fff;
-}
-
-.c0 .DateInput_input {
-  color: inherit;
-  background-color: #fff;
-  border-radius: 0 4px 4px 0;
-}
-
-.c0 .DateInput_input__focused {
-  border-bottom-color: transparent;
-}
-
-.c0 .DayPicker {
-  box-shadow: none;
-  background: #fff;
-  border-radius: 0;
-}
-
-.c0 .DayPicker_transitionContainer {
-  border-radius: 0;
-  background: #fff;
-}
-
-.c0 .CalendarMonthGrid {
-  background: #fff;
-}
-
-.c0 .CalendarMonth {
-  background: #fff;
-  padding: 0 13px 10px 13px;
-}
-
-.c0 .CalendarMonth_caption {
-  color: #999;
-  padding-bottom: 42px;
-}
-
-.c0 .DayPickerNavigation_button__default {
-  background: transparent;
-  border: none;
-}
-
-.c0 .CalendarDay__default {
-  background: #fff;
-  color: #999;
-  border: 1px solid #dedede;
-}
-
-.c0 .CalendarDay__default:hover {
-  background: #ffffff;
-  color: #000000;
-}
-
-.c0 .CalendarDay__selected,
-.c0 .CalendarDay__selected_span,
-.c0 .CalendarDay__hovered_span:hover,
-.c0 .CalendarDay__hovered_span {
-  background: #2a908e;
-  color: #ffffff;
-}
-
-.c2 {
-  font-size: 1.25em;
-}
-
 <div
-  className="c0"
+  className="sc-AxhCb jzImlU"
 >
   <div
-    className="c1"
+    className="sc-AxiKw ixAZyM"
     fontFamily="openSans"
     size="normal"
   >
@@ -921,7 +436,7 @@ exports[`DateRangePicker with given date should render DateRangePicker starting 
             type="button"
           >
             <span
-              className="c2 c3 lni lni-calendar"
+              className="sc-AxhUy eNHrrB sc-AxjAm jWlVxK lni lni-calendar"
             />
           </button>
           <div
@@ -1001,108 +516,11 @@ exports[`DateRangePicker with given date should render DateRangePicker starting 
 `;
 
 exports[`DateRangePicker with given date should render DateRangePicker starting from date provided 2`] = `
-.c3 {
-  text-align: center;
-}
-
-.c1 {
-  font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c0 .DateRangePicker {
-  color: #999;
-  cursor: pointer;
-}
-
-.c0 .DateRangePicker .DateRangePickerInput {
-  background: #0f181c;
-  border-radius: 4px;
-  border: none;
-}
-
-.c0 .DateInput {
-  color: #999;
-}
-
-.c0 .DateInput_fang {
-  display: none;
-}
-
-.c0 .DateInput_fangStroke {
-  fill: #0f181c;
-}
-
-.c0 .DateInput_input {
-  color: inherit;
-  background-color: #0f181c;
-  border-radius: 0 4px 4px 0;
-}
-
-.c0 .DateInput_input__focused {
-  border-bottom-color: transparent;
-}
-
-.c0 .DayPicker {
-  box-shadow: none;
-  background: #0f181c;
-  border-radius: 0;
-}
-
-.c0 .DayPicker_transitionContainer {
-  border-radius: 0;
-  background: #0f181c;
-}
-
-.c0 .CalendarMonthGrid {
-  background: #0f181c;
-}
-
-.c0 .CalendarMonth {
-  background: #0f181c;
-  padding: 0 13px 10px 13px;
-}
-
-.c0 .CalendarMonth_caption {
-  color: #999;
-  padding-bottom: 42px;
-}
-
-.c0 .DayPickerNavigation_button__default {
-  background: transparent;
-  border: none;
-}
-
-.c0 .CalendarDay__default {
-  background: #0f181c;
-  color: #999;
-  border: 1px solid #000000;
-}
-
-.c0 .CalendarDay__default:hover {
-  background: #ffffff;
-  color: #000000;
-}
-
-.c0 .CalendarDay__selected,
-.c0 .CalendarDay__selected_span,
-.c0 .CalendarDay__hovered_span:hover,
-.c0 .CalendarDay__hovered_span {
-  background: #90ee7e;
-  color: #000000;
-}
-
-.c2 {
-  font-size: 1.25em;
-}
-
 <div
-  className="c0"
+  className="sc-AxhCb hplRGN"
 >
   <div
-    className="c1"
+    className="sc-AxiKw ixAZyM"
     fontFamily="openSans"
     size="normal"
   >
@@ -1121,7 +539,7 @@ exports[`DateRangePicker with given date should render DateRangePicker starting 
             type="button"
           >
             <span
-              className="c2 c3 lni lni-calendar"
+              className="sc-AxhUy eNHrrB sc-AxjAm jWlVxK lni lni-calendar"
             />
           </button>
           <div

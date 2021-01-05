@@ -1,93 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Fullscreen should call default props onClick function when no onClick property is passed 1`] = `
-.c1 {
-  text-align: center;
-}
-
-.c0 {
-  cursor: pointer;
-}
-
 <span
-  className="c0"
+  className="sc-AxiKw gMUReu"
   onClick={[Function]}
   onKeyPress={[Function]}
   role="button"
   tabIndex={0}
 >
   <span
-    className="c1 lni lni-full-screen"
+    className="sc-AxjAm jWlVxK lni lni-full-screen"
   />
 </span>
 `;
 
 exports[`Fullscreen should have 'as' prop 1`] = `
-.c2 {
-  text-align: center;
-}
-
-.c1 {
-  cursor: pointer;
-}
-
-.c0 {
-  margin-bottom: 0.5rem;
-}
-
 <div
-  className="c0 c1"
+  className="sc-AxhCb fzWNi sc-AxiKw gMUReu"
   onClick={[Function]}
   onKeyPress={[Function]}
   role="button"
   tabIndex={0}
 >
   <span
-    className="c2 lni lni-full-screen"
+    className="sc-AxjAm jWlVxK lni lni-full-screen"
   />
 </div>
 `;
 
 exports[`Fullscreen should have onClick listener 1`] = `
-.c1 {
-  text-align: center;
-}
-
-.c0 {
-  cursor: pointer;
-}
-
 <span
-  className="c0"
+  className="sc-AxiKw gMUReu"
   onClick={[Function]}
   onKeyPress={[Function]}
   role="button"
   tabIndex={0}
 >
   <span
-    className="c1 lni lni-full-screen"
+    className="sc-AxjAm jWlVxK lni lni-full-screen"
   />
 </span>
 `;
 
 exports[`Fullscreen should render 1`] = `
-.c1 {
-  text-align: center;
-}
-
-.c0 {
-  cursor: pointer;
-}
-
 <span
-  className="c0"
+  className="sc-AxiKw gMUReu"
   onClick={[Function]}
   onKeyPress={[Function]}
   role="button"
   tabIndex={0}
 >
   <span
-    className="c1 lni lni-full-screen"
+    className="sc-AxjAm jWlVxK lni lni-full-screen"
   />
 </span>
 `;

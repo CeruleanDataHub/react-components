@@ -15,46 +15,8 @@ Array [
   >
     Button
   </button>,
-  .c0 {
-  box-shadow: 0 0 5px rgba(0,0,0,0.3);
-  border-radius: 5px;
-  background-color: white;
-  padding-top: 20px;
-  text-align: center;
-  z-index: 1;
-  min-width: 100px;
-}
-
-.c0 #arrow {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-}
-
-.c0 #arrow:after {
-  content: " ";
-  background-color: white;
-  box-shadow: -1px -1px 1px rgba(0,0,0,0.1);
-  position: absolute;
-  top: -25px;
-  left: 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  width: 10px;
-  height: 10px;
-}
-
-.c0[data-popper-placement^="top"] > #arrow {
-  bottom: -30px;
-}
-
-.c0[data-popper-placement^="top"] > #arrow:after {
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-}
-
-<div
-    className="c0"
+  <div
+    className="sc-AxjAm fOWUxG"
     style={
       Object {
         "left": "0",

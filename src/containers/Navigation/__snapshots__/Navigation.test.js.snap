@@ -1,98 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navigation should call default props onMenuToggle function when no onMenuToggle property is passed 1`] = `
-.c4 {
-  text-align: center;
-}
-
-.c7 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c9 {
-  font-size: 1.5em;
-}
-
-.c5 {
-  margin: 1em 0 0 0.25em;
-  padding: 0;
-  list-style-type: none;
-}
-
-.c6 {
-  display: block;
-  padding: 1em;
-  line-height: 1.5em;
-  height: 1.5em;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-.c6 a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c10 {
-  margin-left: 1rem;
-  opacity: 1;
-}
-
-.c2 {
-  font-family: inherit;
-  background: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c0 {
-  z-index: 1;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 3rem;
-  height: 3.5em;
-  cursor: pointer;
-  border: none;
-  margin-left: 0.5em;
-}
-
-.c3 {
-  font-size: 2rem;
-  margin: 0.5rem;
-}
-
 <nav
-  className="c0"
+  className="sc-fzoLsD jdTPUr"
 >
   <button
-    className="c1 c2"
+    className="sc-fzpans doEGPR sc-AxmLO louqpj"
     color=""
     data-button-test={true}
     onClick={[Function]}
@@ -100,17 +13,17 @@ exports[`Navigation should call default props onMenuToggle function when no onMe
   >
     
     <span
-      className="c3 c4 lni lni-close"
+      className="sc-fzplWN jHzZQp sc-AxjAm jWlVxK lni lni-close"
     />
   </button>
   <ul
-    className="c5"
+    className="sc-AxhUy ijoyzq"
   >
     <li
-      className="c6"
+      className="sc-AxgMl fdAvPR"
     >
       <div
-        className="c7"
+        className="sc-AxiKw iCNkRr"
         fontFamily="exo"
         size="normal"
       >
@@ -118,13 +31,13 @@ exports[`Navigation should call default props onMenuToggle function when no onMe
           href="#home"
         >
           <div
-            className="c8"
+            className="sc-AxheI dkiJtT"
           >
             <span
-              className="c9 c4 lni lni-home"
+              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
             />
             <span
-              className="c10 menu-text"
+              className="sc-Axmtr hZKuXu menu-text"
             >
               Home
             </span>
@@ -133,10 +46,10 @@ exports[`Navigation should call default props onMenuToggle function when no onMe
       </div>
     </li>
     <li
-      className="c6"
+      className="sc-AxgMl fdAvPR"
     >
       <div
-        className="c7"
+        className="sc-AxiKw iCNkRr"
         fontFamily="exo"
         size="normal"
       >
@@ -144,13 +57,13 @@ exports[`Navigation should call default props onMenuToggle function when no onMe
           href="#users"
         >
           <div
-            className="c8"
+            className="sc-AxheI dkiJtT"
           >
             <span
-              className="c9 c4 lni lni-users"
+              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-users"
             />
             <span
-              className="c10 menu-text"
+              className="sc-Axmtr hZKuXu menu-text"
             >
               Users
             </span>
@@ -159,10 +72,10 @@ exports[`Navigation should call default props onMenuToggle function when no onMe
       </div>
     </li>
     <li
-      className="c6"
+      className="sc-AxgMl fdAvPR"
     >
       <div
-        className="c7"
+        className="sc-AxiKw iCNkRr"
         fontFamily="exo"
         size="normal"
       >
@@ -170,13 +83,13 @@ exports[`Navigation should call default props onMenuToggle function when no onMe
           href="#devices"
         >
           <div
-            className="c8"
+            className="sc-AxheI dkiJtT"
           >
             <span
-              className="c9 c4 lni lni-rocket"
+              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-rocket"
             />
             <span
-              className="c10 menu-text"
+              className="sc-Axmtr hZKuXu menu-text"
             >
               Devices
             </span>
@@ -185,10 +98,10 @@ exports[`Navigation should call default props onMenuToggle function when no onMe
       </div>
     </li>
     <li
-      className="c6"
+      className="sc-AxgMl fdAvPR"
     >
       <div
-        className="c7"
+        className="sc-AxiKw iCNkRr"
         fontFamily="exo"
         size="normal"
       >
@@ -196,13 +109,13 @@ exports[`Navigation should call default props onMenuToggle function when no onMe
           href="#costs"
         >
           <div
-            className="c8"
+            className="sc-AxheI dkiJtT"
           >
             <span
-              className="c9 c4 lni lni-briefcase"
+              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-briefcase"
             />
             <span
-              className="c10 menu-text"
+              className="sc-Axmtr hZKuXu menu-text"
             >
               Costs
             </span>
@@ -215,98 +128,11 @@ exports[`Navigation should call default props onMenuToggle function when no onMe
 `;
 
 exports[`Navigation should have menu toggle event listener 1`] = `
-.c4 {
-  text-align: center;
-}
-
-.c7 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c9 {
-  font-size: 1.5em;
-}
-
-.c5 {
-  margin: 1em 0 0 0.25em;
-  padding: 0;
-  list-style-type: none;
-}
-
-.c6 {
-  display: block;
-  padding: 1em;
-  line-height: 1.5em;
-  height: 1.5em;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-.c6 a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c10 {
-  margin-left: 1rem;
-  opacity: 1;
-}
-
-.c2 {
-  font-family: inherit;
-  background: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c0 {
-  z-index: 1;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 3rem;
-  height: 3.5em;
-  cursor: pointer;
-  border: none;
-  margin-left: 0.5em;
-}
-
-.c3 {
-  font-size: 2rem;
-  margin: 0.5rem;
-}
-
 <nav
-  className="c0"
+  className="sc-fzoLsD jdTPUr"
 >
   <button
-    className="c1 c2"
+    className="sc-fzpans doEGPR sc-AxmLO louqpj"
     color=""
     data-button-test={true}
     onClick={[Function]}
@@ -314,17 +140,17 @@ exports[`Navigation should have menu toggle event listener 1`] = `
   >
     
     <span
-      className="c3 c4 lni lni-close"
+      className="sc-fzplWN jHzZQp sc-AxjAm jWlVxK lni lni-close"
     />
   </button>
   <ul
-    className="c5"
+    className="sc-AxhUy ijoyzq"
   >
     <li
-      className="c6"
+      className="sc-AxgMl fdAvPR"
     >
       <div
-        className="c7"
+        className="sc-AxiKw iCNkRr"
         fontFamily="exo"
         size="normal"
       >
@@ -332,13 +158,13 @@ exports[`Navigation should have menu toggle event listener 1`] = `
           href="#home"
         >
           <div
-            className="c8"
+            className="sc-AxheI dkiJtT"
           >
             <span
-              className="c9 c4 lni lni-home"
+              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
             />
             <span
-              className="c10 menu-text"
+              className="sc-Axmtr hZKuXu menu-text"
             >
               Home
             </span>
@@ -347,10 +173,10 @@ exports[`Navigation should have menu toggle event listener 1`] = `
       </div>
     </li>
     <li
-      className="c6"
+      className="sc-AxgMl fdAvPR"
     >
       <div
-        className="c7"
+        className="sc-AxiKw iCNkRr"
         fontFamily="exo"
         size="normal"
       >
@@ -358,13 +184,13 @@ exports[`Navigation should have menu toggle event listener 1`] = `
           href="#users"
         >
           <div
-            className="c8"
+            className="sc-AxheI dkiJtT"
           >
             <span
-              className="c9 c4 lni lni-users"
+              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-users"
             />
             <span
-              className="c10 menu-text"
+              className="sc-Axmtr hZKuXu menu-text"
             >
               Users
             </span>
@@ -373,10 +199,10 @@ exports[`Navigation should have menu toggle event listener 1`] = `
       </div>
     </li>
     <li
-      className="c6"
+      className="sc-AxgMl fdAvPR"
     >
       <div
-        className="c7"
+        className="sc-AxiKw iCNkRr"
         fontFamily="exo"
         size="normal"
       >
@@ -384,13 +210,13 @@ exports[`Navigation should have menu toggle event listener 1`] = `
           href="#devices"
         >
           <div
-            className="c8"
+            className="sc-AxheI dkiJtT"
           >
             <span
-              className="c9 c4 lni lni-rocket"
+              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-rocket"
             />
             <span
-              className="c10 menu-text"
+              className="sc-Axmtr hZKuXu menu-text"
             >
               Devices
             </span>
@@ -399,10 +225,10 @@ exports[`Navigation should have menu toggle event listener 1`] = `
       </div>
     </li>
     <li
-      className="c6"
+      className="sc-AxgMl fdAvPR"
     >
       <div
-        className="c7"
+        className="sc-AxiKw iCNkRr"
         fontFamily="exo"
         size="normal"
       >
@@ -410,13 +236,13 @@ exports[`Navigation should have menu toggle event listener 1`] = `
           href="#costs"
         >
           <div
-            className="c8"
+            className="sc-AxheI dkiJtT"
           >
             <span
-              className="c9 c4 lni lni-briefcase"
+              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-briefcase"
             />
             <span
-              className="c10 menu-text"
+              className="sc-Axmtr hZKuXu menu-text"
             >
               Costs
             </span>
@@ -429,54 +255,11 @@ exports[`Navigation should have menu toggle event listener 1`] = `
 `;
 
 exports[`Navigation should render 1`] = `
-.c4 {
-  text-align: center;
-}
-
-.c2 {
-  font-family: inherit;
-  background: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c0 {
-  z-index: 1;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 3rem;
-  height: 3.5em;
-  cursor: pointer;
-  border: none;
-  margin-left: 0.5em;
-}
-
-.c3 {
-  font-size: 2rem;
-  margin: 0.5rem;
-}
-
 <nav
-  className="c0"
+  className="sc-fzoLsD jdTPUr"
 >
   <button
-    className="c1 c2"
+    className="sc-fzpans doEGPR sc-AxmLO louqpj"
     color=""
     data-button-test={true}
     onClick={[Function]}
@@ -484,7 +267,7 @@ exports[`Navigation should render 1`] = `
   >
     
     <span
-      className="c3 c4 lni lni-close"
+      className="sc-fzplWN jHzZQp sc-AxjAm jWlVxK lni lni-close"
     />
   </button>
   
@@ -492,98 +275,11 @@ exports[`Navigation should render 1`] = `
 `;
 
 exports[`Navigation should render children menu 1`] = `
-.c4 {
-  text-align: center;
-}
-
-.c7 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c9 {
-  font-size: 1.5em;
-}
-
-.c5 {
-  margin: 1em 0 0 0.25em;
-  padding: 0;
-  list-style-type: none;
-}
-
-.c6 {
-  display: block;
-  padding: 1em;
-  line-height: 1.5em;
-  height: 1.5em;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-.c6 a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c10 {
-  margin-left: 1rem;
-  opacity: 1;
-}
-
-.c2 {
-  font-family: inherit;
-  background: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c0 {
-  z-index: 1;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 3rem;
-  height: 3.5em;
-  cursor: pointer;
-  border: none;
-  margin-left: 0.5em;
-}
-
-.c3 {
-  font-size: 2rem;
-  margin: 0.5rem;
-}
-
 <nav
-  className="c0"
+  className="sc-fzoLsD jdTPUr"
 >
   <button
-    className="c1 c2"
+    className="sc-fzpans doEGPR sc-AxmLO louqpj"
     color=""
     data-button-test={true}
     onClick={[Function]}
@@ -591,17 +287,17 @@ exports[`Navigation should render children menu 1`] = `
   >
     
     <span
-      className="c3 c4 lni lni-close"
+      className="sc-fzplWN jHzZQp sc-AxjAm jWlVxK lni lni-close"
     />
   </button>
   <ul
-    className="c5"
+    className="sc-AxhUy ijoyzq"
   >
     <li
-      className="c6"
+      className="sc-AxgMl fdAvPR"
     >
       <div
-        className="c7"
+        className="sc-AxiKw iCNkRr"
         fontFamily="exo"
         size="normal"
       >
@@ -609,13 +305,13 @@ exports[`Navigation should render children menu 1`] = `
           href="#home"
         >
           <div
-            className="c8"
+            className="sc-AxheI dkiJtT"
           >
             <span
-              className="c9 c4 lni lni-home"
+              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
             />
             <span
-              className="c10 menu-text"
+              className="sc-Axmtr hZKuXu menu-text"
             >
               Home
             </span>
@@ -624,10 +320,10 @@ exports[`Navigation should render children menu 1`] = `
       </div>
     </li>
     <li
-      className="c6"
+      className="sc-AxgMl fdAvPR"
     >
       <div
-        className="c7"
+        className="sc-AxiKw iCNkRr"
         fontFamily="exo"
         size="normal"
       >
@@ -635,13 +331,13 @@ exports[`Navigation should render children menu 1`] = `
           href="#users"
         >
           <div
-            className="c8"
+            className="sc-AxheI dkiJtT"
           >
             <span
-              className="c9 c4 lni lni-users"
+              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-users"
             />
             <span
-              className="c10 menu-text"
+              className="sc-Axmtr hZKuXu menu-text"
             >
               Users
             </span>
@@ -650,10 +346,10 @@ exports[`Navigation should render children menu 1`] = `
       </div>
     </li>
     <li
-      className="c6"
+      className="sc-AxgMl fdAvPR"
     >
       <div
-        className="c7"
+        className="sc-AxiKw iCNkRr"
         fontFamily="exo"
         size="normal"
       >
@@ -661,13 +357,13 @@ exports[`Navigation should render children menu 1`] = `
           href="#devices"
         >
           <div
-            className="c8"
+            className="sc-AxheI dkiJtT"
           >
             <span
-              className="c9 c4 lni lni-rocket"
+              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-rocket"
             />
             <span
-              className="c10 menu-text"
+              className="sc-Axmtr hZKuXu menu-text"
             >
               Devices
             </span>
@@ -676,10 +372,10 @@ exports[`Navigation should render children menu 1`] = `
       </div>
     </li>
     <li
-      className="c6"
+      className="sc-AxgMl fdAvPR"
     >
       <div
-        className="c7"
+        className="sc-AxiKw iCNkRr"
         fontFamily="exo"
         size="normal"
       >
@@ -687,13 +383,13 @@ exports[`Navigation should render children menu 1`] = `
           href="#costs"
         >
           <div
-            className="c8"
+            className="sc-AxheI dkiJtT"
           >
             <span
-              className="c9 c4 lni lni-briefcase"
+              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-briefcase"
             />
             <span
-              className="c10 menu-text"
+              className="sc-Axmtr hZKuXu menu-text"
             >
               Costs
             </span>
@@ -706,98 +402,11 @@ exports[`Navigation should render children menu 1`] = `
 `;
 
 exports[`Navigation should render children menu closed when given appropriate property 1`] = `
-.c4 {
-  text-align: center;
-}
-
-.c7 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c9 {
-  font-size: 1.5em;
-}
-
-.c5 {
-  margin: 1em 0 0 0.25em;
-  padding: 0;
-  list-style-type: none;
-}
-
-.c6 {
-  display: block;
-  padding: 1em;
-  line-height: 1.5em;
-  height: 1.5em;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-.c6 a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c10 {
-  margin-left: 1rem;
-  opacity: 1;
-}
-
-.c2 {
-  font-family: inherit;
-  background: transparent;
-  font-size: 1em;
-  padding: 0.25em 1.5em;
-  border: 1px solid;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.c0 {
-  z-index: 1;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 3rem;
-  height: 3.5em;
-  cursor: pointer;
-  border: none;
-  margin-left: 0.5em;
-}
-
-.c3 {
-  font-size: 2rem;
-  margin: 0.5rem;
-}
-
 <nav
-  className="c0"
+  className="sc-fzoLsD jdTPUr"
 >
   <button
-    className="c1 c2"
+    className="sc-fzpans doEGPR sc-AxmLO louqpj"
     color=""
     data-button-test={true}
     onClick={[Function]}
@@ -805,17 +414,17 @@ exports[`Navigation should render children menu closed when given appropriate pr
   >
     
     <span
-      className="c3 c4 lni lni-menu"
+      className="sc-fzplWN jHzZQp sc-AxjAm jWlVxK lni lni-menu"
     />
   </button>
   <ul
-    className="c5"
+    className="sc-AxhUy ijoyzq"
   >
     <li
-      className="c6"
+      className="sc-AxgMl fdAvPR"
     >
       <div
-        className="c7"
+        className="sc-AxiKw iCNkRr"
         fontFamily="exo"
         size="normal"
       >
@@ -823,13 +432,13 @@ exports[`Navigation should render children menu closed when given appropriate pr
           href="#home"
         >
           <div
-            className="c8"
+            className="sc-AxheI dkiJtT"
           >
             <span
-              className="c9 c4 lni lni-home"
+              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
             />
             <span
-              className="c10 menu-text"
+              className="sc-Axmtr hZKuXu menu-text"
             >
               Home
             </span>
@@ -838,10 +447,10 @@ exports[`Navigation should render children menu closed when given appropriate pr
       </div>
     </li>
     <li
-      className="c6"
+      className="sc-AxgMl fdAvPR"
     >
       <div
-        className="c7"
+        className="sc-AxiKw iCNkRr"
         fontFamily="exo"
         size="normal"
       >
@@ -849,13 +458,13 @@ exports[`Navigation should render children menu closed when given appropriate pr
           href="#users"
         >
           <div
-            className="c8"
+            className="sc-AxheI dkiJtT"
           >
             <span
-              className="c9 c4 lni lni-users"
+              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-users"
             />
             <span
-              className="c10 menu-text"
+              className="sc-Axmtr hZKuXu menu-text"
             >
               Users
             </span>
@@ -864,10 +473,10 @@ exports[`Navigation should render children menu closed when given appropriate pr
       </div>
     </li>
     <li
-      className="c6"
+      className="sc-AxgMl fdAvPR"
     >
       <div
-        className="c7"
+        className="sc-AxiKw iCNkRr"
         fontFamily="exo"
         size="normal"
       >
@@ -875,13 +484,13 @@ exports[`Navigation should render children menu closed when given appropriate pr
           href="#devices"
         >
           <div
-            className="c8"
+            className="sc-AxheI dkiJtT"
           >
             <span
-              className="c9 c4 lni lni-rocket"
+              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-rocket"
             />
             <span
-              className="c10 menu-text"
+              className="sc-Axmtr hZKuXu menu-text"
             >
               Devices
             </span>
@@ -890,10 +499,10 @@ exports[`Navigation should render children menu closed when given appropriate pr
       </div>
     </li>
     <li
-      className="c6"
+      className="sc-AxgMl fdAvPR"
     >
       <div
-        className="c7"
+        className="sc-AxiKw iCNkRr"
         fontFamily="exo"
         size="normal"
       >
@@ -901,13 +510,13 @@ exports[`Navigation should render children menu closed when given appropriate pr
           href="#costs"
         >
           <div
-            className="c8"
+            className="sc-AxheI dkiJtT"
           >
             <span
-              className="c9 c4 lni lni-briefcase"
+              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-briefcase"
             />
             <span
-              className="c10 menu-text"
+              className="sc-Axmtr hZKuXu menu-text"
             >
               Costs
             </span>

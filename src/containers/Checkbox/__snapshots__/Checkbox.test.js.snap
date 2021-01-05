@@ -1,70 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox should accept onChange function 1`] = `
-.c1 {
-  border: 0;
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.c3 {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  border: 1px solid #999;
-  background: transparent;
-  text-align: center;
-  border-radius: 4px;
-  line-height: 1em;
-}
-
-.c5 {
-  color: #999;
-  margin-left: 1.5em;
-}
-
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  cursor: pointer;
-  margin: 0.25em 0;
-}
-
-.c0:hover .c2 {
-  border-color: #333;
-}
-
-.c0:hover .c4 {
-  color: #666;
-}
-
 <label
-  className="c0"
+  className="sc-AxheI bIWrzC"
 >
   <input
     checked={false}
-    className="c1"
+    className="sc-AxiKw iRBKSw"
     onChange={[Function]}
     type="checkbox"
     value={1}
   />
   <div
     checked={false}
-    className="c2 c3"
+    className="sc-AxhCb eJojxy"
   />
   <span
-    className="c4 c5"
+    className="sc-AxgMl aaWWq"
   >
     Test
   </span>
@@ -72,70 +24,22 @@ exports[`Checkbox should accept onChange function 1`] = `
 `;
 
 exports[`Checkbox should call default props onChange function when no onChange property is passed 1`] = `
-.c1 {
-  border: 0;
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.c3 {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  border: 1px solid #999;
-  background: transparent;
-  text-align: center;
-  border-radius: 4px;
-  line-height: 1em;
-}
-
-.c5 {
-  color: #999;
-  margin-left: 1.5em;
-}
-
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  cursor: pointer;
-  margin: 0.25em 0;
-}
-
-.c0:hover .c2 {
-  border-color: #333;
-}
-
-.c0:hover .c4 {
-  color: #666;
-}
-
 <label
-  className="c0"
+  className="sc-AxheI bIWrzC"
 >
   <input
     checked={false}
-    className="c1"
+    className="sc-AxiKw iRBKSw"
     onChange={[Function]}
     type="checkbox"
     value={1}
   />
   <div
     checked={false}
-    className="c2 c3"
+    className="sc-AxhCb eJojxy"
   />
   <span
-    className="c4 c5"
+    className="sc-AxgMl aaWWq"
   >
     Test
   </span>
@@ -143,69 +47,21 @@ exports[`Checkbox should call default props onChange function when no onChange p
 `;
 
 exports[`Checkbox should render Checkbox 1`] = `
-.c1 {
-  border: 0;
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.c3 {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  border: 1px solid #999;
-  background: transparent;
-  text-align: center;
-  border-radius: 4px;
-  line-height: 1em;
-}
-
-.c5 {
-  color: #999;
-  margin-left: 1.5em;
-}
-
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  cursor: pointer;
-  margin: 0.25em 0;
-}
-
-.c0:hover .c2 {
-  border-color: #333;
-}
-
-.c0:hover .c4 {
-  color: #666;
-}
-
 <label
-  className="c0"
+  className="sc-AxheI bIWrzC"
 >
   <input
     checked={false}
-    className="c1"
+    className="sc-AxiKw iRBKSw"
     onChange={[Function]}
     type="checkbox"
   />
   <div
     checked={false}
-    className="c2 c3"
+    className="sc-AxhCb eJojxy"
   />
   <span
-    className="c4 c5"
+    className="sc-AxgMl aaWWq"
   >
     
   </span>
@@ -213,81 +69,25 @@ exports[`Checkbox should render Checkbox 1`] = `
 `;
 
 exports[`Checkbox should render Checkbox with checked prop 1`] = `
-.c5 {
-  text-align: center;
-}
-
-.c1 {
-  border: 0;
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.c3 {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  border: 1px solid;
-  text-align: center;
-  border-radius: 4px;
-  line-height: 1em;
-}
-
-.c4 {
-  font-size: 0.75em;
-  font-weight: bold;
-}
-
-.c7 {
-  color: #999;
-  margin-left: 1.5em;
-}
-
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  cursor: pointer;
-  margin: 0.25em 0;
-}
-
-.c0:hover .c2 {
-  border-color: #333;
-}
-
-.c0:hover .c6 {
-  color: #666;
-}
-
 <label
-  className="c0"
+  className="sc-AxheI bIWrzC"
 >
   <input
     checked={true}
-    className="c1"
+    className="sc-AxiKw iRBKSw"
     onChange={[Function]}
     type="checkbox"
   />
   <div
     checked={true}
-    className="c2 c3"
+    className="sc-AxhCb cLwTNS"
   >
     <span
-      className="c4 c5 lni lni-checkmark"
+      className="sc-AxhUy eEXwPQ sc-AxjAm jWlVxK lni lni-checkmark"
     />
   </div>
   <span
-    className="c6 c7"
+    className="sc-AxgMl aaWWq"
   >
     
   </span>
@@ -295,70 +95,22 @@ exports[`Checkbox should render Checkbox with checked prop 1`] = `
 `;
 
 exports[`Checkbox should render Checkbox with value and label 1`] = `
-.c1 {
-  border: 0;
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.c3 {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  border: 1px solid #999;
-  background: transparent;
-  text-align: center;
-  border-radius: 4px;
-  line-height: 1em;
-}
-
-.c5 {
-  color: #999;
-  margin-left: 1.5em;
-}
-
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  cursor: pointer;
-  margin: 0.25em 0;
-}
-
-.c0:hover .c2 {
-  border-color: #333;
-}
-
-.c0:hover .c4 {
-  color: #666;
-}
-
 <label
-  className="c0"
+  className="sc-AxheI bIWrzC"
 >
   <input
     checked={false}
-    className="c1"
+    className="sc-AxiKw iRBKSw"
     onChange={[Function]}
     type="checkbox"
     value={1}
   />
   <div
     checked={false}
-    className="c2 c3"
+    className="sc-AxhCb eJojxy"
   />
   <span
-    className="c4 c5"
+    className="sc-AxgMl aaWWq"
   >
     Test
   </span>
@@ -366,82 +118,26 @@ exports[`Checkbox should render Checkbox with value and label 1`] = `
 `;
 
 exports[`Checkbox should render Checkbox with value and label, and be checked 1`] = `
-.c5 {
-  text-align: center;
-}
-
-.c1 {
-  border: 0;
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.c3 {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  border: 1px solid;
-  text-align: center;
-  border-radius: 4px;
-  line-height: 1em;
-}
-
-.c4 {
-  font-size: 0.75em;
-  font-weight: bold;
-}
-
-.c7 {
-  color: #999;
-  margin-left: 1.5em;
-}
-
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  cursor: pointer;
-  margin: 0.25em 0;
-}
-
-.c0:hover .c2 {
-  border-color: #333;
-}
-
-.c0:hover .c6 {
-  color: #666;
-}
-
 <label
-  className="c0"
+  className="sc-AxheI bIWrzC"
 >
   <input
     checked={true}
-    className="c1"
+    className="sc-AxiKw iRBKSw"
     onChange={[Function]}
     type="checkbox"
     value={1}
   />
   <div
     checked={true}
-    className="c2 c3"
+    className="sc-AxhCb cLwTNS"
   >
     <span
-      className="c4 c5 lni lni-checkmark"
+      className="sc-AxhUy eEXwPQ sc-AxjAm jWlVxK lni lni-checkmark"
     />
   </div>
   <span
-    className="c6 c7"
+    className="sc-AxgMl aaWWq"
   >
     Test
   </span>

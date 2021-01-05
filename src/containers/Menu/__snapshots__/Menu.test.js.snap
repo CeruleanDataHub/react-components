@@ -1,74 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Menu should render 1`] = `
-.c0 {
-  margin: 1em 0 0 0.25em;
-  padding: 0;
-  list-style-type: none;
-}
-
 <ul
-  className="c0"
+  className="sc-AxhUy ijoyzq"
 />
 `;
 
 exports[`Menu should render closed menu 1`] = `
-.c5 {
-  text-align: center;
-}
-
-.c2 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c4 {
-  font-size: 1.5em;
-}
-
-.c0 {
-  margin: 1em 0 0 0.25em;
-  padding: 0;
-  list-style-type: none;
-}
-
-.c1 {
-  display: block;
-  padding: 1em;
-  line-height: 1.5em;
-  height: 1.5em;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-.c1 a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c6 {
-  margin-left: 1rem;
-  opacity: 0;
-}
-
 <ul
-  className="c0"
+  className="sc-AxhUy ijoyzq"
 >
   <li
-    className="c1"
+    className="sc-AxgMl fdAvPR"
   >
     <div
-      className="c2"
+      className="sc-AxiKw iCNkRr"
       fontFamily="exo"
       size="normal"
     >
@@ -76,13 +22,13 @@ exports[`Menu should render closed menu 1`] = `
         href="#home"
       >
         <div
-          className="c3"
+          className="sc-AxheI dkiJtT"
         >
           <span
-            className="c4 c5 lni lni-home"
+            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
           />
           <span
-            className="c6 menu-text"
+            className="sc-Axmtr hZJHVn menu-text"
           >
             Home
           </span>
@@ -91,10 +37,10 @@ exports[`Menu should render closed menu 1`] = `
     </div>
   </li>
   <li
-    className="c1"
+    className="sc-AxgMl fdAvPR"
   >
     <div
-      className="c2"
+      className="sc-AxiKw iCNkRr"
       fontFamily="exo"
       size="normal"
     >
@@ -102,13 +48,13 @@ exports[`Menu should render closed menu 1`] = `
         href="#users"
       >
         <div
-          className="c3"
+          className="sc-AxheI dkiJtT"
         >
           <span
-            className="c4 c5 lni lni-users"
+            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-users"
           />
           <span
-            className="c6 menu-text"
+            className="sc-Axmtr hZJHVn menu-text"
           >
             Users
           </span>
@@ -117,10 +63,10 @@ exports[`Menu should render closed menu 1`] = `
     </div>
   </li>
   <li
-    className="c1"
+    className="sc-AxgMl fdAvPR"
   >
     <div
-      className="c2"
+      className="sc-AxiKw iCNkRr"
       fontFamily="exo"
       size="normal"
     >
@@ -128,13 +74,13 @@ exports[`Menu should render closed menu 1`] = `
         href="#devices"
       >
         <div
-          className="c3"
+          className="sc-AxheI dkiJtT"
         >
           <span
-            className="c4 c5 lni lni-rocket"
+            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-rocket"
           />
           <span
-            className="c6 menu-text"
+            className="sc-Axmtr hZJHVn menu-text"
           >
             Devices
           </span>
@@ -143,10 +89,10 @@ exports[`Menu should render closed menu 1`] = `
     </div>
   </li>
   <li
-    className="c1"
+    className="sc-AxgMl fdAvPR"
   >
     <div
-      className="c2"
+      className="sc-AxiKw iCNkRr"
       fontFamily="exo"
       size="normal"
     >
@@ -154,13 +100,13 @@ exports[`Menu should render closed menu 1`] = `
         href="#costs"
       >
         <div
-          className="c3"
+          className="sc-AxheI dkiJtT"
         >
           <span
-            className="c4 c5 lni lni-briefcase"
+            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-briefcase"
           />
           <span
-            className="c6 menu-text"
+            className="sc-Axmtr hZJHVn menu-text"
           >
             Costs
           </span>
@@ -172,62 +118,14 @@ exports[`Menu should render closed menu 1`] = `
 `;
 
 exports[`Menu should render items 1`] = `
-.c5 {
-  text-align: center;
-}
-
-.c2 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c4 {
-  font-size: 1.5em;
-}
-
-.c0 {
-  margin: 1em 0 0 0.25em;
-  padding: 0;
-  list-style-type: none;
-}
-
-.c1 {
-  display: block;
-  padding: 1em;
-  line-height: 1.5em;
-  height: 1.5em;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-.c1 a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c6 {
-  margin-left: 1rem;
-  opacity: 1;
-}
-
 <ul
-  className="c0"
+  className="sc-AxhUy ijoyzq"
 >
   <li
-    className="c1"
+    className="sc-AxgMl fdAvPR"
   >
     <div
-      className="c2"
+      className="sc-AxiKw iCNkRr"
       fontFamily="exo"
       size="normal"
     >
@@ -235,13 +133,13 @@ exports[`Menu should render items 1`] = `
         href="#home"
       >
         <div
-          className="c3"
+          className="sc-AxheI dkiJtT"
         >
           <span
-            className="c4 c5 lni lni-home"
+            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
           />
           <span
-            className="c6 menu-text"
+            className="sc-Axmtr hZKuXu menu-text"
           >
             Home
           </span>
@@ -250,10 +148,10 @@ exports[`Menu should render items 1`] = `
     </div>
   </li>
   <li
-    className="c1"
+    className="sc-AxgMl fdAvPR"
   >
     <div
-      className="c2"
+      className="sc-AxiKw iCNkRr"
       fontFamily="exo"
       size="normal"
     >
@@ -261,13 +159,13 @@ exports[`Menu should render items 1`] = `
         href="#users"
       >
         <div
-          className="c3"
+          className="sc-AxheI dkiJtT"
         >
           <span
-            className="c4 c5 lni lni-users"
+            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-users"
           />
           <span
-            className="c6 menu-text"
+            className="sc-Axmtr hZKuXu menu-text"
           >
             Users
           </span>
@@ -276,10 +174,10 @@ exports[`Menu should render items 1`] = `
     </div>
   </li>
   <li
-    className="c1"
+    className="sc-AxgMl fdAvPR"
   >
     <div
-      className="c2"
+      className="sc-AxiKw iCNkRr"
       fontFamily="exo"
       size="normal"
     >
@@ -287,13 +185,13 @@ exports[`Menu should render items 1`] = `
         href="#devices"
       >
         <div
-          className="c3"
+          className="sc-AxheI dkiJtT"
         >
           <span
-            className="c4 c5 lni lni-rocket"
+            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-rocket"
           />
           <span
-            className="c6 menu-text"
+            className="sc-Axmtr hZKuXu menu-text"
           >
             Devices
           </span>
@@ -302,10 +200,10 @@ exports[`Menu should render items 1`] = `
     </div>
   </li>
   <li
-    className="c1"
+    className="sc-AxgMl fdAvPR"
   >
     <div
-      className="c2"
+      className="sc-AxiKw iCNkRr"
       fontFamily="exo"
       size="normal"
     >
@@ -313,13 +211,13 @@ exports[`Menu should render items 1`] = `
         href="#costs"
       >
         <div
-          className="c3"
+          className="sc-AxheI dkiJtT"
         >
           <span
-            className="c4 c5 lni lni-briefcase"
+            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-briefcase"
           />
           <span
-            className="c6 menu-text"
+            className="sc-Axmtr hZKuXu menu-text"
           >
             Costs
           </span>
@@ -331,62 +229,14 @@ exports[`Menu should render items 1`] = `
 `;
 
 exports[`Menu should render open menu 1`] = `
-.c5 {
-  text-align: center;
-}
-
-.c2 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c4 {
-  font-size: 1.5em;
-}
-
-.c0 {
-  margin: 1em 0 0 0.25em;
-  padding: 0;
-  list-style-type: none;
-}
-
-.c1 {
-  display: block;
-  padding: 1em;
-  line-height: 1.5em;
-  height: 1.5em;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-.c1 a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c6 {
-  margin-left: 1rem;
-  opacity: 1;
-}
-
 <ul
-  className="c0"
+  className="sc-AxhUy ijoyzq"
 >
   <li
-    className="c1"
+    className="sc-AxgMl fdAvPR"
   >
     <div
-      className="c2"
+      className="sc-AxiKw iCNkRr"
       fontFamily="exo"
       size="normal"
     >
@@ -394,13 +244,13 @@ exports[`Menu should render open menu 1`] = `
         href="#home"
       >
         <div
-          className="c3"
+          className="sc-AxheI dkiJtT"
         >
           <span
-            className="c4 c5 lni lni-home"
+            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
           />
           <span
-            className="c6 menu-text"
+            className="sc-Axmtr hZKuXu menu-text"
           >
             Home
           </span>
@@ -409,10 +259,10 @@ exports[`Menu should render open menu 1`] = `
     </div>
   </li>
   <li
-    className="c1"
+    className="sc-AxgMl fdAvPR"
   >
     <div
-      className="c2"
+      className="sc-AxiKw iCNkRr"
       fontFamily="exo"
       size="normal"
     >
@@ -420,13 +270,13 @@ exports[`Menu should render open menu 1`] = `
         href="#users"
       >
         <div
-          className="c3"
+          className="sc-AxheI dkiJtT"
         >
           <span
-            className="c4 c5 lni lni-users"
+            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-users"
           />
           <span
-            className="c6 menu-text"
+            className="sc-Axmtr hZKuXu menu-text"
           >
             Users
           </span>
@@ -435,10 +285,10 @@ exports[`Menu should render open menu 1`] = `
     </div>
   </li>
   <li
-    className="c1"
+    className="sc-AxgMl fdAvPR"
   >
     <div
-      className="c2"
+      className="sc-AxiKw iCNkRr"
       fontFamily="exo"
       size="normal"
     >
@@ -446,13 +296,13 @@ exports[`Menu should render open menu 1`] = `
         href="#devices"
       >
         <div
-          className="c3"
+          className="sc-AxheI dkiJtT"
         >
           <span
-            className="c4 c5 lni lni-rocket"
+            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-rocket"
           />
           <span
-            className="c6 menu-text"
+            className="sc-Axmtr hZKuXu menu-text"
           >
             Devices
           </span>
@@ -461,10 +311,10 @@ exports[`Menu should render open menu 1`] = `
     </div>
   </li>
   <li
-    className="c1"
+    className="sc-AxgMl fdAvPR"
   >
     <div
-      className="c2"
+      className="sc-AxiKw iCNkRr"
       fontFamily="exo"
       size="normal"
     >
@@ -472,13 +322,13 @@ exports[`Menu should render open menu 1`] = `
         href="#costs"
       >
         <div
-          className="c3"
+          className="sc-AxheI dkiJtT"
         >
           <span
-            className="c4 c5 lni lni-briefcase"
+            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-briefcase"
           />
           <span
-            className="c6 menu-text"
+            className="sc-Axmtr hZKuXu menu-text"
           >
             Costs
           </span>
@@ -490,73 +340,25 @@ exports[`Menu should render open menu 1`] = `
 `;
 
 exports[`Menu should render without link component 1`] = `
-.c5 {
-  text-align: center;
-}
-
-.c2 {
-  font-family: "Exo 2",sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: unset;
-}
-
-.c4 {
-  font-size: 1.5em;
-}
-
-.c0 {
-  margin: 1em 0 0 0.25em;
-  padding: 0;
-  list-style-type: none;
-}
-
-.c1 {
-  display: block;
-  padding: 1em;
-  line-height: 1.5em;
-  height: 1.5em;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-.c1 a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c6 {
-  margin-left: 1rem;
-  opacity: 1;
-}
-
 <ul
-  className="c0"
+  className="sc-AxhUy ijoyzq"
 >
   <li
-    className="c1"
+    className="sc-AxgMl fdAvPR"
   >
     <div
-      className="c2"
+      className="sc-AxiKw iCNkRr"
       fontFamily="exo"
       size="normal"
     >
       <div
-        className="c3"
+        className="sc-AxheI dkiJtT"
       >
         <span
-          className="c4 c5 lni lni-home"
+          className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
         />
         <span
-          className="c6 menu-text"
+          className="sc-Axmtr hZKuXu menu-text"
         >
           Home
         </span>
