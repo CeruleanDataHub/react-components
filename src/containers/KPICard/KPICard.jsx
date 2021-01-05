@@ -4,7 +4,6 @@ import styled from "styled-components";
 
 import { Cell, Grid } from "../Grid/Grid";
 import { Icon } from "../Icon/Icon";
-import { Typography } from "../Typography/Typography";
 
 const Container = styled.div`
   padding: 1.2em;
@@ -26,14 +25,6 @@ const TriangleIcon = styled.div`
   margin-left: 0.3rem;
 `;
 
-const getGrowthColor = growth => {
-  if (growth === 0) {
-    return "blue";
-  }
-
-  return growth > 0 ? "green" : "red";
-};
-
 const getIconName = growth => {
   if (growth === 0) {
     return "minus";
@@ -48,38 +39,30 @@ export const KPICard = ({
   growth,
   showPercentage,
   dataFormat,
-  currency,
-  redValue,
-  greenValue
+  currency
 }) => (
   <Container>
-    <Typography color="gray" fontFamily="openSans">
-      {title}
-    </Typography>
+    {title}
+
     <Grid>
       <Cell middle>
-        <Typography
-          fontFamily="exo"
-          size="large"
-          color={(redValue && "red") || (greenValue && "green") || null}
-        >
-          {new Intl.NumberFormat("en-EN", {
-            style: dataFormat,
-            ...(currency ? { currency } : {})
-          }).format(value)}
-        </Typography>
+        {new Intl.NumberFormat("en-EN", {
+          style: dataFormat,
+          ...(currency ? { currency } : {})
+        }).format(value)}
       </Cell>
+
       {showPercentage && (
         <Cell center as={Bottom}>
           <FlexRow>
-            <Typography fontFamily="exo" color={getGrowthColor(growth)}>
-              {growth > 0 ? "+" : ""}
-              {new Intl.NumberFormat("en-EN", {
-                style: "percent",
-                maximumFractionDigits: 2
-              }).format(growth)}
-              <Icon name={getIconName(growth)} as={TriangleIcon} />
-            </Typography>
+            {growth > 0 ? "+" : ""}
+
+            {new Intl.NumberFormat("en-EN", {
+              style: "percent",
+              maximumFractionDigits: 2
+            }).format(growth)}
+
+            <Icon name={getIconName(growth)} as={TriangleIcon} />
           </FlexRow>
         </Cell>
       )}
@@ -99,11 +82,7 @@ KPICard.propTypes = {
   /** Defines whether the data should be displayed as a decimal or as currency */
   dataFormat: PropTypes.oneOf(["decimal", "currency"]),
   /** Defines in which currency the value would be printed */
-  currency: PropTypes.oneOf([null, "EUR", "USD"]),
-  /** Defines whether the value should be red */
-  redValue: PropTypes.bool,
-  /** Defines whether the value should be green */
-  greenValue: PropTypes.bool
+  currency: PropTypes.oneOf([null, "EUR", "USD"])
 };
 
 KPICard.defaultProps = {
@@ -112,7 +91,5 @@ KPICard.defaultProps = {
   growth: 0,
   showPercentage: true,
   dataFormat: "decimal",
-  currency: null,
-  redValue: false,
-  greenValue: false
+  currency: null
 };
