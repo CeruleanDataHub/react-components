@@ -25,14 +25,6 @@ const TriangleIcon = styled.div`
   margin-left: 0.3rem;
 `;
 
-const getIconName = growth => {
-  if (growth === 0) {
-    return "minus";
-  }
-
-  return growth > 0 ? "chevron-up" : "chevron-down";
-};
-
 export const KPICard = ({
   title,
   value,
@@ -46,21 +38,15 @@ export const KPICard = ({
 
     <Grid>
       <Cell middle>
-        {new Intl.NumberFormat("en-EN", {
-          style: dataFormat,
-          ...(currency ? { currency } : {})
-        }).format(value)}
+        {getLocalizedCurrencyValue(value, dataFormat, currency)}
       </Cell>
 
       {showPercentage && (
         <Cell center as={Bottom}>
           <FlexRow>
-            {growth > 0 ? "+" : ""}
+            {indicateGrowth(growth)}
 
-            {new Intl.NumberFormat("en-EN", {
-              style: "percent",
-              maximumFractionDigits: 2
-            }).format(growth)}
+            {getLocalizedPercentualValue(growth, "percent", 2)}
 
             <Icon name={getIconName(growth)} as={TriangleIcon} />
           </FlexRow>
@@ -69,6 +55,34 @@ export const KPICard = ({
     </Grid>
   </Container>
 );
+
+const getIconName = growth => {
+  if (growth === 0) {
+    return "minus";
+  }
+
+  return growth > 0 ? "chevron-up" : "chevron-down";
+};
+
+
+const indicateGrowth = growth => (growth > 0 ? "+" : "");
+
+const getLocalizedCurrencyValue = (value, dataFormat, currency) =>
+  new Intl.NumberFormat("en-EN", getOptions(dataFormat, currency)).format(
+    value
+  );
+
+const getLocalizedPercentualValue = (value, percent, maximumFractionDigits) =>
+  new Intl.NumberFormat(
+    "en-EN",
+    getOptions(percent, undefined, maximumFractionDigits)
+  ).format(value);
+
+const getOptions = (dataFormat, currency, maximumFractionDigits) => ({
+  style: dataFormat,
+  currency: currency || undefined,
+  maximumFractionDigits: maximumFractionDigits || undefined
+});
 
 KPICard.propTypes = {
   /** Title for the box */
