@@ -37,13 +37,13 @@ export const KPICard = ({
     {title}
 
     <Grid>
-      <Cell middle>
+      <Cell middle data-cell-test>
         {getLocalizedCurrencyValue(value, dataFormat, currency)}
       </Cell>
 
       {showPercentage && (
         <Cell center as={Bottom}>
-          <FlexRow>
+          <FlexRow data-flex-row-test>
             {indicateGrowth(growth)}
 
             {getLocalizedPercentualValue(growth, "percent", 2)}
@@ -63,7 +63,6 @@ const getIconName = growth => {
 
   return growth > 0 ? "chevron-up" : "chevron-down";
 };
-
 
 const indicateGrowth = growth => (growth > 0 ? "+" : "");
 

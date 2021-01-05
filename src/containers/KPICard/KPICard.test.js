@@ -1,174 +1,69 @@
 import React from "react";
-import renderer from "react-test-renderer";
+
+import { mount } from "enzyme";
 
 import { KPICard } from "./KPICard";
 
 describe("KPICard", () => {
-  it("should render", () => {
-    const component = renderer.create(
-      <KPICard title="Title" value={1} growth={0.3} />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+  let component;
 
-  it("should render card without the percentage", () => {
-    const component = renderer.create(
-      <KPICard title="Title" value={1} growth={0.3} showPercentage={false} />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("should render green card without the percentage", () => {
-    const component = renderer.create(
+  beforeEach(() => {
+    component = mount(
       <KPICard
-        title="Title"
-        value={1}
-        growth={0.3}
+        title="Some title"
+        value={42}
+        growth={0}
         showPercentage={false}
+        currency="EUR"
+        dataFormat="currency"
         greenValue
       />
     );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
   });
 
-  it("should render red card without the percentage", () => {
-    const component = renderer.create(
+  it("renders", () => {
+    expect(component).toMatchSnapshot();
+  });
+
+  it("given different currency, renders", () => {
+    component = mount(<KPICard currency="USD" />);
+
+    expect(component).toMatchSnapshot();
+  });
+
+  it("given different props, renders", () => {
+    component = mount(
       <KPICard
-        title="Title"
-        value={1}
-        growth={0.3}
-        showPercentage={false}
+        title="Some other title"
+        growth={42}
+        dataFormat="decimal"
         redValue
+        showPercentage
       />
     );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+
+    expect(component).toMatchSnapshot();
   });
 
-  it("should render green", () => {
-    const component = renderer.create(
-      <KPICard title="Title" value={1} growth={0.3} greenValue />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+  it("given negative growth, renders", () => {
+    component = mount(<KPICard growth={-42} />);
+
+    expect(component).toMatchSnapshot();
   });
 
-  it("should render red", () => {
-    const component = renderer.create(
-      <KPICard title="Title" value={1} growth={0.3} redValue />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+  it("given large value, has formatted value", () => {
+    component = mount(<KPICard value={420000000000} />);
+
+    const formattedValue = component.find("div[data-cell-test]").text();
+
+    expect(formattedValue).toEqual("420,000,000,000");
   });
 
-  it("should render zero growth", () => {
-    const component = renderer.create(
-      <KPICard title="Title" value={1} growth={0} />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+  it("given large decimal, has formatted decimal", () => {
+    component = mount(<KPICard growth={0.33333333} />);
 
-  it("should render positive growth", () => {
-    const component = renderer.create(
-      <KPICard title="Title" value={1} growth={0.3} />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+    const formattedValue = component.find("span[data-flex-row-test]").text();
 
-  it("should render negative growth", () => {
-    const component = renderer.create(
-      <KPICard title="Title" value={1} growth={-0.3} />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("should render zero growth without percentage", () => {
-    const component = renderer.create(
-      <KPICard title="Title" value={1} growth={0} showPercentage={false} />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("should render positive growth without percentage", () => {
-    const component = renderer.create(
-      <KPICard title="Title" value={1} growth={0.3} showPercentage={false} />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("should render negative growth without percentage", () => {
-    const component = renderer.create(
-      <KPICard title="Title" value={1} growth={-0.3} showPercentage={false} />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("should format large values", () => {
-    const component = renderer.create(
-      <KPICard title="Title" value={10000000000} growth={0.3} />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("should render two decimal points in growth", () => {
-    const component = renderer.create(
-      <KPICard title="Title" value={1} growth={0.33333333} />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("should render currency with euro", () => {
-    const component = renderer.create(
-      <KPICard title="Euro" value={3789} currency="EUR" dataFormat="currency" />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("should render currency with USD", () => {
-    const component = renderer.create(
-      <KPICard title="USD" value={3789} currency="USD" dataFormat="currency" />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("should render currency with euro and without percentage", () => {
-    const component = renderer.create(
-      <KPICard
-        title="Euro"
-        value={3789}
-        currency="EUR"
-        dataFormat="currency"
-        showPercentage={false}
-      />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("should render currency with USD and without percentage", () => {
-    const component = renderer.create(
-      <KPICard
-        title="USD"
-        value={3789}
-        currency="USD"
-        dataFormat="currency"
-        showPercentage={false}
-      />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(formattedValue).toEqual("+33.33%");
   });
 });
