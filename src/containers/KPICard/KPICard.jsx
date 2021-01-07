@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 import { Cell, Grid } from "../Grid/Grid";
 import { Icon } from "../Icon/Icon";
+import { Typography } from "../Typography/Typography";
 
 const Container = styled.div`
   padding: 1.2em;
@@ -31,24 +32,33 @@ export const KPICard = ({
   growth,
   showPercentage,
   dataFormat,
-  currency
+  currency,
+  greenValue,
+  redValue
 }) => (
   <Container>
-    {title}
+    <Typography color="gray">{title}</Typography>
 
     <Grid>
       <Cell middle data-cell-test>
-        {getLocalizedCurrencyValue(value, dataFormat, currency)}
+        <Typography
+          size="large"
+          color={(redValue && "red") || (greenValue && "green") || null}
+        >
+          {getLocalizedCurrencyValue(value, dataFormat, currency)}
+        </Typography>
       </Cell>
 
       {showPercentage && (
         <Cell center as={Bottom}>
           <FlexRow data-flex-row-test>
-            {indicateGrowth(growth)}
+            <Typography color={getGrowthColor(growth)}>
+              {indicateGrowth(growth)}
 
-            {getLocalizedPercentualValue(growth, "percent", 2)}
+              {getLocalizedPercentualValue(growth, "percent", 2)}
 
-            <Icon name={getIconName(growth)} as={TriangleIcon} />
+              <Icon name={getIconName(growth)} as={TriangleIcon} />
+            </Typography>
           </FlexRow>
         </Cell>
       )}
@@ -65,6 +75,18 @@ const getIconName = growth => {
 };
 
 const indicateGrowth = growth => (growth > 0 ? "+" : "");
+
+const getGrowthColor = growth => {
+  if (growth > 0) {
+    return "green";
+  }
+
+  if (growth < 0) {
+    return "red";
+  }
+
+  return "blue";
+};
 
 const getLocalizedCurrencyValue = (value, dataFormat, currency) =>
   new Intl.NumberFormat("en-EN", getOptions(dataFormat, currency)).format(
@@ -95,7 +117,9 @@ KPICard.propTypes = {
   /** Defines whether the data should be displayed as a decimal or as currency */
   dataFormat: PropTypes.oneOf(["decimal", "currency"]),
   /** Defines in which currency the value would be printed */
-  currency: PropTypes.oneOf([null, "EUR", "USD"])
+  currency: PropTypes.oneOf([null, "EUR", "USD"]),
+  greenValue: PropTypes.bool,
+  redValue: PropTypes.bool
 };
 
 KPICard.defaultProps = {
@@ -104,5 +128,7 @@ KPICard.defaultProps = {
   growth: 0,
   showPercentage: true,
   dataFormat: "decimal",
-  currency: null
+  currency: null,
+  greenValue: false,
+  redValue: false
 };
