@@ -26,6 +26,10 @@ const TriangleIcon = styled.div`
   margin-left: 0.3rem;
 `;
 
+const StyledIcon = styled(Icon)`
+  padding: 0 4px;
+`;
+
 export const KPICard = ({
   title,
   value,
@@ -34,10 +38,14 @@ export const KPICard = ({
   dataFormat,
   currency,
   greenValue,
-  redValue
+  redValue,
+  icon
 }) => (
   <Container>
-    <Typography color="gray">{title}</Typography>
+    <Typography color="gray">
+      {icon && <Icon as={StyledIcon} name={icon} data-icon-test />}
+      {title}
+    </Typography>
 
     <Grid>
       <Cell middle data-cell-test>
@@ -119,7 +127,8 @@ KPICard.propTypes = {
   /** Defines in which currency the value would be printed */
   currency: PropTypes.oneOf([null, "EUR", "USD"]),
   greenValue: PropTypes.bool,
-  redValue: PropTypes.bool
+  redValue: PropTypes.bool,
+  icon: PropTypes.string
 };
 
 KPICard.defaultProps = {
@@ -130,5 +139,6 @@ KPICard.defaultProps = {
   dataFormat: "decimal",
   currency: null,
   greenValue: false,
-  redValue: false
+  redValue: false,
+  icon: null
 };

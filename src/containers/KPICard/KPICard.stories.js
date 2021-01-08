@@ -105,3 +105,13 @@ export const KPICardUSDWithoutPercentage = () => (
     showPercentage={false}
   />
 );
+
+export const KPICardUSDWithIcon = () => (
+  <KPICard
+    title="USD"
+    icon="chef-hat"
+    value={3789}
+    currency="USD"
+    dataFormat="currency"
+  />
+);

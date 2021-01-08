@@ -66,4 +66,12 @@ describe("KPICard", () => {
 
     expect(formattedValue).toEqual("+33.33%");
   });
+
+  it("given icon, has icon", () => {
+    component = mount(<KPICard icon="chef-hat" />);
+
+    const icon = component.find("Icon[data-icon-test]");
+
+    expect(icon).toExist();
+  });
 });
