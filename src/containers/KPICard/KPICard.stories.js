@@ -154,3 +154,13 @@ export const KPICardBackgroundColor = () => (
     </Cell>
   </Grid>
 );
+
+export const KPICardBorderRadius = () => (
+  <KPICard
+    title="Logins / week"
+    value={3789}
+    growth={0.145}
+    backgroundColor="tomato"
+    borderRadius="15px"
+  />
+);

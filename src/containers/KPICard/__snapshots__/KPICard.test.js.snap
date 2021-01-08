@@ -3,6 +3,7 @@
 exports[`KPICard given different currency, renders 1`] = `
 <KPICard
   backgroundColor={null}
+  borderRadius={null}
   currency="USD"
   dataFormat="decimal"
   greenValue={false}
@@ -15,9 +16,10 @@ exports[`KPICard given different currency, renders 1`] = `
 >
   <styled.div
     backgroundColor={null}
+    borderRadius={null}
   >
     <div
-      className="sc-AxhCb icHyzh"
+      className="sc-AxhCb ceOWxc"
     >
       <Typography
         color="gray"
@@ -235,6 +237,7 @@ exports[`KPICard given different currency, renders 1`] = `
 exports[`KPICard given different props, renders 1`] = `
 <KPICard
   backgroundColor={null}
+  borderRadius={null}
   currency={null}
   dataFormat="decimal"
   greenValue={false}
@@ -247,9 +250,10 @@ exports[`KPICard given different props, renders 1`] = `
 >
   <styled.div
     backgroundColor={null}
+    borderRadius={null}
   >
     <div
-      className="sc-AxhCb icHyzh"
+      className="sc-AxhCb ceOWxc"
     >
       <Typography
         color="gray"
@@ -470,6 +474,7 @@ exports[`KPICard given different props, renders 1`] = `
 exports[`KPICard given negative growth, renders 1`] = `
 <KPICard
   backgroundColor={null}
+  borderRadius={null}
   currency={null}
   dataFormat="decimal"
   greenValue={false}
@@ -482,9 +487,10 @@ exports[`KPICard given negative growth, renders 1`] = `
 >
   <styled.div
     backgroundColor={null}
+    borderRadius={null}
   >
     <div
-      className="sc-AxhCb icHyzh"
+      className="sc-AxhCb ceOWxc"
     >
       <Typography
         color="gray"
@@ -702,6 +708,7 @@ exports[`KPICard given negative growth, renders 1`] = `
 exports[`KPICard renders 1`] = `
 <KPICard
   backgroundColor="tomato"
+  borderRadius="15px"
   currency="EUR"
   dataFormat="currency"
   greenValue={true}
@@ -714,9 +721,10 @@ exports[`KPICard renders 1`] = `
 >
   <styled.div
     backgroundColor="tomato"
+    borderRadius="15px"
   >
     <div
-      className="sc-AxhCb gWgQbJ"
+      className="sc-AxhCb XeuOo"
     >
       <Typography
         color="gray"

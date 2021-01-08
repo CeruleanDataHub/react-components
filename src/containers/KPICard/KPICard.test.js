@@ -18,6 +18,7 @@ describe("KPICard", () => {
         dataFormat="currency"
         greenValue
         backgroundColor="tomato"
+        borderRadius="15px"
       />
     );
   });

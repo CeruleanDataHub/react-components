@@ -9,6 +9,7 @@ import { Typography } from "../Typography/Typography";
 const Container = styled.div`
   padding: 1.2em;
   background-color: ${({ theme, backgroundColor }) => backgroundColor || theme};
+  border-radius: ${({ borderRadius }) => borderRadius};
 `;
 
 const Bottom = styled.span`
@@ -40,9 +41,10 @@ export const KPICard = ({
   greenValue,
   redValue,
   icon,
-  backgroundColor
+  backgroundColor,
+  borderRadius
 }) => (
-  <Container backgroundColor={backgroundColor}>
+  <Container backgroundColor={backgroundColor} borderRadius={borderRadius}>
     <Typography color="gray">
       {icon && <Icon as={StyledIcon} name={icon} data-icon-test />}
       {title}
@@ -130,7 +132,8 @@ KPICard.propTypes = {
   greenValue: PropTypes.bool,
   redValue: PropTypes.bool,
   icon: PropTypes.string,
-  backgroundColor: PropTypes.string
+  backgroundColor: PropTypes.string,
+  borderRadius: PropTypes.string
 };
 
 KPICard.defaultProps = {
@@ -143,5 +146,6 @@ KPICard.defaultProps = {
   greenValue: false,
   redValue: false,
   icon: null,
-  backgroundColor: null
+  backgroundColor: null,
+  borderRadius: null
 };
