@@ -8,7 +8,7 @@ import { Typography } from "../Typography/Typography";
 
 const Container = styled.div`
   padding: 1.2em;
-  background-color: ${({ theme }) => theme.background};
+  background-color: ${({ theme, backgroundColor }) => backgroundColor || theme};
 `;
 
 const Bottom = styled.span`
@@ -39,9 +39,10 @@ export const KPICard = ({
   currency,
   greenValue,
   redValue,
-  icon
+  icon,
+  backgroundColor
 }) => (
-  <Container>
+  <Container backgroundColor={backgroundColor}>
     <Typography color="gray">
       {icon && <Icon as={StyledIcon} name={icon} data-icon-test />}
       {title}
@@ -128,7 +129,8 @@ KPICard.propTypes = {
   currency: PropTypes.oneOf([null, "EUR", "USD"]),
   greenValue: PropTypes.bool,
   redValue: PropTypes.bool,
-  icon: PropTypes.string
+  icon: PropTypes.string,
+  backgroundColor: PropTypes.string
 };
 
 KPICard.defaultProps = {
@@ -140,5 +142,6 @@ KPICard.defaultProps = {
   currency: null,
   greenValue: false,
   redValue: false,
-  icon: null
+  icon: null,
+  backgroundColor: null
 };

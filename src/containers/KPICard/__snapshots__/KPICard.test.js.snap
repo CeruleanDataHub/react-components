@@ -2,6 +2,7 @@
 
 exports[`KPICard given different currency, renders 1`] = `
 <KPICard
+  backgroundColor={null}
   currency="USD"
   dataFormat="decimal"
   greenValue={false}
@@ -12,7 +13,9 @@ exports[`KPICard given different currency, renders 1`] = `
   title=""
   value={0}
 >
-  <styled.div>
+  <styled.div
+    backgroundColor={null}
+  >
     <div
       className="sc-AxhCb icHyzh"
     >
@@ -231,6 +234,7 @@ exports[`KPICard given different currency, renders 1`] = `
 
 exports[`KPICard given different props, renders 1`] = `
 <KPICard
+  backgroundColor={null}
   currency={null}
   dataFormat="decimal"
   greenValue={false}
@@ -241,7 +245,9 @@ exports[`KPICard given different props, renders 1`] = `
   title="Some other title"
   value={0}
 >
-  <styled.div>
+  <styled.div
+    backgroundColor={null}
+  >
     <div
       className="sc-AxhCb icHyzh"
     >
@@ -463,6 +469,7 @@ exports[`KPICard given different props, renders 1`] = `
 
 exports[`KPICard given negative growth, renders 1`] = `
 <KPICard
+  backgroundColor={null}
   currency={null}
   dataFormat="decimal"
   greenValue={false}
@@ -473,7 +480,9 @@ exports[`KPICard given negative growth, renders 1`] = `
   title=""
   value={0}
 >
-  <styled.div>
+  <styled.div
+    backgroundColor={null}
+  >
     <div
       className="sc-AxhCb icHyzh"
     >
@@ -692,6 +701,7 @@ exports[`KPICard given negative growth, renders 1`] = `
 
 exports[`KPICard renders 1`] = `
 <KPICard
+  backgroundColor="tomato"
   currency="EUR"
   dataFormat="currency"
   greenValue={true}
@@ -702,9 +712,11 @@ exports[`KPICard renders 1`] = `
   title="Some title"
   value={42}
 >
-  <styled.div>
+  <styled.div
+    backgroundColor="tomato"
+  >
     <div
-      className="sc-AxhCb icHyzh"
+      className="sc-AxhCb gWgQbJ"
     >
       <Typography
         color="gray"

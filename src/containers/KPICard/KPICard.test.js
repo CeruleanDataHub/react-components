@@ -17,6 +17,7 @@ describe("KPICard", () => {
         currency="EUR"
         dataFormat="currency"
         greenValue
+        backgroundColor="tomato"
       />
     );
   });
