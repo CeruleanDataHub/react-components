@@ -1,5 +1,5 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import { mount } from 'enzyme'
 
 import { Dropdown } from "./Dropdown";
 
@@ -7,63 +7,52 @@ describe("Dropdown", () => {
   let component;
 
   beforeEach(() => {
-     component = renderer.create(<Dropdown>Some content</Dropdown>);
+     component = mount(<Dropdown>Some content</Dropdown>);
   });
 
-  it("renders", () => {
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+  it('renders', () => {
+    expect(component).toMatchSnapshot();
   });
 
-  it('has default onClick', () => {
-    const actual = component.root.findByType('button').props.onClick;
-    expect(actual).toBeTruthy()
-  });
+  it("given open dropdown, should show itemList", () => {
+    component = mount(<Dropdown isOpen>Some content</Dropdown>);
 
-  describe('given open dropdown with children', () => {
-    let isOpenStub;
-    let childrenStub
+    const itemList = component.find('[data-item-list-test]')
 
-    beforeEach(() => {
-      isOpenStub = true;
-      childrenStub = <li>Some content</li>
-
-      component = renderer.create(<Dropdown isOpen={isOpenStub}>{childrenStub}</Dropdown>);
-    });
-
-    it("should show itemList", () => {
-      expect(component.root.findByProps({"data-item-list-test": true})).toBeTruthy()
-    });
-
-    it("should have correct children", () => {
-      const {children} = component.root.findByProps({"data-item-list-test": true}).props;
-      expect(children).toEqual(childrenStub)
-    });
-  });
+    expect(itemList).toExist()
+  })
 
   describe('given onClick', () => {
     let onClickMock;
 
     beforeEach(() => {
       onClickMock = jest.fn()
-      component = renderer.create(
+
+      component = mount(
         <Dropdown onClick={onClickMock}>Some content</Dropdown>
       );
-    });
-
-    it("has onClick", () => {
-      const actual = component.root.findByType('button').props.onClick;
-      expect(actual).toEqual(onClickMock)
     });
 
     it("does not call onClick yet", () => {
       expect(onClickMock).not.toHaveBeenCalled();
     });
 
-    it("when called, calls callback function", () => {
-      component.root.findByType("button").props.onClick()
+    describe('Button within', () => {
+      let button;
 
-      expect(onClickMock).toHaveBeenCalled();
+      beforeEach(() => {
+        button = component.find('button[data-button-test]')
+      });
+
+      it("has onClick", () => {
+        expect(button).toHaveProp('onClick', onClickMock)
+      });
+
+      it("when clicked, calls callback function", () => {
+        button.simulate('click')
+
+        expect(onClickMock).toHaveBeenCalled();
+      });
     });
   });
 });
