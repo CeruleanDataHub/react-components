@@ -57,13 +57,21 @@ export const Dropdown = React.forwardRef(
     <Typography fontFamily="openSans">
       <Container ref={ref}>
         <Button onClick={onClick} as={DropdownContainer} data-button-test>
-          <DropdownTextWrapped>{label}</DropdownTextWrapped>
+          <DropdownTextWrapped>
+            {label}
+          </DropdownTextWrapped>
+
           <Icon
             name={isOpen ? "chevron-up" : "chevron-down"}
             as={DropdownText}
           />
         </Button>
-        {isOpen && <ItemList data-item-list-test>{children}</ItemList>}
+
+        {isOpen && (
+          <ItemList data-item-list-test>
+            {children}
+          </ItemList>
+        )}
       </Container>
     </Typography>
   )
