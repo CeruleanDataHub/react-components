@@ -2,6 +2,7 @@
 
 exports[`Select should be able to call the default onChange function when no onChange callback provided 1`] = `
 <ForwardRef
+  className=""
   items={
     Array [
       Object {
@@ -14,6 +15,7 @@ exports[`Select should be able to call the default onChange function when no onC
   selectedOption=""
 >
   <styled.select
+    className=""
     onChange={[Function]}
     value=""
   >
