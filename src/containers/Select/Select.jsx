@@ -19,34 +19,41 @@ const SelectContainer = styled.select`
   line-height: 1.5;
 `;
 
-export const Select = forwardRef(({ onChange, items, selectedOption }, ref) => {
-  const isOptionsGroup = items.some(item =>
-    Object.keys(item).includes("group")
-  );
+export const Select = forwardRef(
+  ({ className, onChange, items, selectedOption }, ref) => {
+    const isOptionsGroup = items.some(item =>
+      Object.keys(item).includes("group")
+    );
 
-  const mapOptions = options =>
-    options.map(({ id, value, name, indentLevel }) => {
-      const spaces = new Array(indentLevel || 0).fill("\u00A0").join("");
-      return (
-        <option id={id} value={value} key={id}>
-          {spaces.length > 0 && spaces}
-          {name || value}
-        </option>
-      );
-    });
+    const mapOptions = options =>
+      options.map(({ id, value, name, indentLevel }) => {
+        const spaces = new Array(indentLevel || 0).fill("\u00A0").join("");
+        return (
+          <option id={id} value={value} key={id}>
+            {spaces.length > 0 && spaces}
+            {name || value}
+          </option>
+        );
+      });
 
-  const mapOptionGroups = optionGroups =>
-    optionGroups.map(({ group, children }) => (
-      <optgroup label={group} key={group}>
-        {mapOptions(children)}
-      </optgroup>
-    ));
-  return (
-    <SelectContainer onChange={onChange} value={selectedOption} ref={ref}>
-      {isOptionsGroup ? mapOptionGroups(items) : mapOptions(items)}
-    </SelectContainer>
-  );
-});
+    const mapOptionGroups = optionGroups =>
+      optionGroups.map(({ group, children }) => (
+        <optgroup label={group} key={group}>
+          {mapOptions(children)}
+        </optgroup>
+      ));
+    return (
+      <SelectContainer
+        className={className}
+        onChange={onChange}
+        value={selectedOption}
+        ref={ref}
+      >
+        {isOptionsGroup ? mapOptionGroups(items) : mapOptions(items)}
+      </SelectContainer>
+    );
+  }
+);
 
 Select.propTypes = {
   /** Currently selected option */
@@ -76,11 +83,13 @@ Select.propTypes = {
     )
   ]),
   /** onChange handler function */
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
+  className: PropTypes.string
 };
 
 Select.defaultProps = {
   selectedOption: "",
   items: [],
-  onChange: () => {}
+  onChange: () => {},
+  className: ""
 };
