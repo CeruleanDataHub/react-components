@@ -1,89 +1,68 @@
 import { mount } from "enzyme";
-import toJson from "enzyme-to-json";
 import React from "react";
 import { ModalProvider } from "styled-react-modal";
 
 import { Confirm } from "./Confirm";
 
 describe("Confirm", () => {
-  it("should render", () => {
-    const component = mount(
-      <ModalProvider>
-        <Confirm title="Confirm title" content="Confirm modal content" isOpen />
-      </ModalProvider>
-    );
-    expect(toJson(component)).toMatchSnapshot();
-  });
+  let component;
+  let handleOnCancelMock;
+  let handleOnConfirmMock;
 
-  it("should render closed", () => {
-    const component = mount(
-      <ModalProvider>
-        <Confirm title="Confirm title" content="Confirm modal content" />
-      </ModalProvider>
-    );
-    expect(toJson(component)).toMatchSnapshot();
-  });
+  beforeEach(() => {
+    handleOnCancelMock = jest.fn();
+    handleOnConfirmMock = jest.fn();
 
-  it("should render content as reacr node", () => {
-    const component = mount(
+    component = mount(
       <ModalProvider>
         <Confirm
-          title="Confirm title"
-          content={<div>Confirm modal content within a component</div>}
+          title="Some title"
+          content="Some modal content"
           isOpen
+          onCancel={handleOnCancelMock}
+          onConfirm={handleOnConfirmMock}
         />
       </ModalProvider>
     );
-    expect(toJson(component)).toMatchSnapshot();
   });
 
-  it("should call default props onConfirm function when no onConfirm property is passed", () => {
-    const component = mount(
-      <ModalProvider>
-        <Confirm isOpen />
-      </ModalProvider>
-    );
-    component.find("Confirm").prop("onConfirm")();
-    expect(toJson(component)).toMatchSnapshot();
+  it("renders", () => {
+    expect(component).toMatchSnapshot();
   });
 
-  it("should call default props onCancel function when no onCancel property is passed", () => {
-    const component = mount(
-      <ModalProvider>
-        <Confirm isOpen />
-      </ModalProvider>
-    );
-    component.find("Confirm").prop("onCancel")();
-    expect(toJson(component)).toMatchSnapshot();
+  it("does not call onCancel yet", () => {
+    expect(handleOnCancelMock).not.toHaveBeenCalled();
   });
 
-  it("should fire onCancel function", () => {
-    const handleClick = jest.fn();
-    const component = mount(
-      <ModalProvider>
-        <Confirm isOpen onCancel={handleClick} />
-      </ModalProvider>
-    );
-    expect(handleClick).not.toHaveBeenCalled();
+  it("when cancel button is clicked, calls onCancel", () => {
     component
-      .find("button")
-      .at(0)
-      .simulate("click");
-    expect(handleClick).toHaveBeenCalled();
+      .find("ForwardRef[data-cancel-button-test]")
+      .props()
+      .onClick();
+
+    expect(handleOnCancelMock).toHaveBeenCalled();
   });
 
-  it("should fire onConfirm function", () => {
-    const handleClick = jest.fn();
-    const component = mount(
+  it("does not call onConfirm yet", () => {
+    expect(handleOnConfirmMock).not.toHaveBeenCalled();
+  });
+
+  it("when confirm button is called, calls onConfirm", () => {
+    component
+      .find("ForwardRef[data-confirm-button-test]")
+      .props()
+      .onClick();
+
+    expect(handleOnConfirmMock).toHaveBeenCalled();
+  });
+
+  it("given isOpen is false, should not be open", () => {
+    component = mount(
       <ModalProvider>
-        <Confirm isOpen onConfirm={handleClick} />
+        <Confirm isOpen={false} onConfirm={() => {}} onCancel={() => {}} />
       </ModalProvider>
     );
-    expect(handleClick).not.toHaveBeenCalled();
-    component
-      .find("button")
-      .at(1)
-      .simulate("click");
-    expect(handleClick).toHaveBeenCalled();
+
+    expect(component.find("div[data-styled-modal-test]")).not.toExist();
   });
 });

@@ -35,18 +35,23 @@ const CancelButton = styled.button`
 `;
 
 export const Confirm = ({ title, content, isOpen, onConfirm, onCancel }) => (
-  <StyledModal isOpen={isOpen}>
+  <StyledModal isOpen={isOpen} data-styled-modal-test>
     <Typography fontFamily="openSans">
       <div>{title}</div>
 
       <div>{content}</div>
 
       <TextAlignRight>
-        <Button color="transparent" onClick={onCancel} as={CancelButton}>
+        <Button
+          color="transparent"
+          onClick={onCancel}
+          as={CancelButton}
+          data-cancel-button-test
+        >
           Cancel
         </Button>
 
-        <Button onClick={onConfirm} as={ConfirmButton}>
+        <Button onClick={onConfirm} as={ConfirmButton} data-confirm-button-test>
           Confirm
         </Button>
       </TextAlignRight>

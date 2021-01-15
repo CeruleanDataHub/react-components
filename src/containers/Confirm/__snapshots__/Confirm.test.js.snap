@@ -1,15 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Confirm should call default props onCancel function when no onCancel property is passed 1`] = `
+exports[`Confirm renders 1`] = `
 <p>
   <Confirm
-    content=""
+    content="Some modal content"
     isOpen={true}
-    onCancel={[Function]}
-    onConfirm={[Function]}
-    title=""
+    onCancel={[MockFunction]}
+    onConfirm={[MockFunction]}
+    title="Some title"
   >
     <Component
+      data-styled-modal-test={true}
       isOpen={true}
     >
       <j
@@ -45,6 +46,7 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
           }
         }
         backgroundProps={Object {}}
+        data-styled-modal-test={true}
         isOpen={true}
       >
         <Portal
@@ -55,13 +57,18 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
               >
                 <div
                   class="Modal__wrap-gmoXzh gWaikR"
+                  data-styled-modal-test="true"
                 >
                   <div
                     class="sc-AxhUy iumSJR"
                     font-family="openSans"
                   >
-                    <div />
-                    <div />
+                    <div>
+                      Some title
+                    </div>
+                    <div>
+                      Some modal content
+                    </div>
                     <div
                       class="sc-AxgMl jrJXms"
                     >
@@ -97,9 +104,12 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
               className="baseStyles__BaseModalBackground-sTbLb hGVCXQ"
               onClick={[Function]}
             >
-              <Modal__wrap>
+              <Modal__wrap
+                data-styled-modal-test={true}
+              >
                 <div
                   className="Modal__wrap-gmoXzh gWaikR"
+                  data-styled-modal-test={true}
                 >
                   <Typography
                     color=""
@@ -116,8 +126,12 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                         fontFamily="openSans"
                         size="normal"
                       >
-                        <div />
-                        <div />
+                        <div>
+                          Some title
+                        </div>
+                        <div>
+                          Some modal content
+                        </div>
                         <styled.div>
                           <div
                             className="sc-AxgMl jrJXms"
@@ -152,8 +166,9 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                               }
                               className=""
                               color="transparent"
+                              data-cancel-button-test={true}
                               icon=""
-                              onClick={[Function]}
+                              onClick={[MockFunction]}
                               type="button"
                             >
                               <styled.button
@@ -187,21 +202,21 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                                 className=""
                                 color="transparent"
                                 data-button-test={true}
-                                onClick={[Function]}
+                                onClick={[MockFunction]}
                                 type="button"
                               >
                                 <styled.button
                                   className="sc-AxiKw cMQRsw"
                                   color="transparent"
                                   data-button-test={true}
-                                  onClick={[Function]}
+                                  onClick={[MockFunction]}
                                   type="button"
                                 >
                                   <button
                                     className="sc-Axmtr fGzfKN sc-AxiKw cMQRsw"
                                     color="transparent"
                                     data-button-test={true}
-                                    onClick={[Function]}
+                                    onClick={[MockFunction]}
                                     type="button"
                                   >
                                     Cancel
@@ -240,8 +255,9 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                               }
                               className=""
                               color=""
+                              data-confirm-button-test={true}
                               icon=""
-                              onClick={[Function]}
+                              onClick={[MockFunction]}
                               type="button"
                             >
                               <styled.button
@@ -276,1043 +292,21 @@ exports[`Confirm should call default props onCancel function when no onCancel pr
                                 className=""
                                 color=""
                                 data-button-test={true}
-                                onClick={[Function]}
+                                onClick={[MockFunction]}
                                 type="button"
                               >
                                 <styled.button
                                   className="sc-AxiKw Rtuhc"
                                   color=""
                                   data-button-test={true}
-                                  onClick={[Function]}
+                                  onClick={[MockFunction]}
                                   type="button"
                                 >
                                   <button
                                     className="sc-AxheI bgVlsT sc-AxiKw Rtuhc"
                                     color=""
                                     data-button-test={true}
-                                    onClick={[Function]}
-                                    type="button"
-                                  >
-                                    Confirm
-                                  </button>
-                                </styled.button>
-                              </styled.button>
-                            </ForwardRef>
-                          </div>
-                        </styled.div>
-                      </div>
-                    </styled.div>
-                  </Typography>
-                </div>
-              </Modal__wrap>
-            </div>
-          </baseStyles__BaseModalBackground>
-        </Portal>
-      </j>
-    </Component>
-  </Confirm>
-  <div />
-</p>
-`;
-
-exports[`Confirm should call default props onConfirm function when no onConfirm property is passed 1`] = `
-<p>
-  <Confirm
-    content=""
-    isOpen={true}
-    onCancel={[Function]}
-    onConfirm={[Function]}
-    title=""
-  >
-    <Component
-      isOpen={true}
-    >
-      <j
-        WrapperComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "baseHash": 2127463992,
-              "componentId": "Modal__wrap-gmoXzh",
-              "isStatic": false,
-              "rules": Array [
-                "
-  display: flex;
-  background-color: white;
-  flex-direction: column;
-  padding: 1rem;
-  box-shadow: 0 0 18px -3px rgba(27, 27, 27, 0.8);
-  width: 40%;
-",
-              ],
-              "staticRulesId": "",
-            },
-            "displayName": "Modal__wrap",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "shouldForwardProp": undefined,
-            "styledComponentId": "Modal__wrap-gmoXzh",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        backgroundProps={Object {}}
-        isOpen={true}
-      >
-        <Portal
-          containerInfo={
-            <div>
-              <div
-                class="baseStyles__BaseModalBackground-sTbLb hGVCXQ"
-              >
-                <div
-                  class="Modal__wrap-gmoXzh gWaikR"
-                >
-                  <div
-                    class="sc-AxhUy iumSJR"
-                    font-family="openSans"
-                  >
-                    <div />
-                    <div />
-                    <div
-                      class="sc-AxgMl jrJXms"
-                    >
-                      <button
-                        class="sc-Axmtr fGzfKN sc-AxiKw cMQRsw"
-                        color="transparent"
-                        data-button-test="true"
-                        type="button"
-                      >
-                        
-                        Cancel
-                      </button>
-                      <button
-                        class="sc-AxheI bgVlsT sc-AxiKw Rtuhc"
-                        color=""
-                        data-button-test="true"
-                        type="button"
-                      >
-                        
-                        Confirm
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          }
-        >
-          <baseStyles__BaseModalBackground
-            onClick={[Function]}
-          >
-            <div
-              className="baseStyles__BaseModalBackground-sTbLb hGVCXQ"
-              onClick={[Function]}
-            >
-              <Modal__wrap>
-                <div
-                  className="Modal__wrap-gmoXzh gWaikR"
-                >
-                  <Typography
-                    color=""
-                    fontFamily="openSans"
-                    size="normal"
-                  >
-                    <styled.div
-                      fontFamily="openSans"
-                      size="normal"
-                      textColor=""
-                    >
-                      <div
-                        className="sc-AxhUy iumSJR"
-                        fontFamily="openSans"
-                        size="normal"
-                      >
-                        <div />
-                        <div />
-                        <styled.div>
-                          <div
-                            className="sc-AxgMl jrJXms"
-                          >
-                            <ForwardRef
-                              as={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "baseHash": -1474970742,
-                                    "componentId": "sc-Axmtr",
-                                    "isStatic": false,
-                                    "rules": Array [
-                                      "
-  color: blue;
-  text-decoration: underline;
-",
-                                    ],
-                                    "staticRulesId": "",
-                                  },
-                                  "displayName": "styled.button",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "shouldForwardProp": undefined,
-                                  "styledComponentId": "sc-Axmtr",
-                                  "target": "button",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              className=""
-                              color="transparent"
-                              icon=""
-                              onClick={[Function]}
-                              type="button"
-                            >
-                              <styled.button
-                                as={
-                                  Object {
-                                    "$$typeof": Symbol(react.forward_ref),
-                                    "attrs": Array [],
-                                    "componentStyle": ComponentStyle {
-                                      "baseHash": -1474970742,
-                                      "componentId": "sc-Axmtr",
-                                      "isStatic": false,
-                                      "rules": Array [
-                                        "
-  color: blue;
-  text-decoration: underline;
-",
-                                      ],
-                                      "staticRulesId": "",
-                                    },
-                                    "displayName": "styled.button",
-                                    "foldedComponentIds": Array [],
-                                    "render": [Function],
-                                    "shouldForwardProp": undefined,
-                                    "styledComponentId": "sc-Axmtr",
-                                    "target": "button",
-                                    "toString": [Function],
-                                    "warnTooManyClasses": [Function],
-                                    "withComponent": [Function],
-                                  }
-                                }
-                                className=""
-                                color="transparent"
-                                data-button-test={true}
-                                onClick={[Function]}
-                                type="button"
-                              >
-                                <styled.button
-                                  className="sc-AxiKw cMQRsw"
-                                  color="transparent"
-                                  data-button-test={true}
-                                  onClick={[Function]}
-                                  type="button"
-                                >
-                                  <button
-                                    className="sc-Axmtr fGzfKN sc-AxiKw cMQRsw"
-                                    color="transparent"
-                                    data-button-test={true}
-                                    onClick={[Function]}
-                                    type="button"
-                                  >
-                                    Cancel
-                                  </button>
-                                </styled.button>
-                              </styled.button>
-                            </ForwardRef>
-                            <ForwardRef
-                              as={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "baseHash": 1882630949,
-                                    "componentId": "sc-AxheI",
-                                    "isStatic": false,
-                                    "rules": Array [
-                                      "
-  background: blue;
-  color: white;
-  font-weight: bold;
-",
-                                    ],
-                                    "staticRulesId": "",
-                                  },
-                                  "displayName": "styled.button",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "shouldForwardProp": undefined,
-                                  "styledComponentId": "sc-AxheI",
-                                  "target": "button",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              className=""
-                              color=""
-                              icon=""
-                              onClick={[Function]}
-                              type="button"
-                            >
-                              <styled.button
-                                as={
-                                  Object {
-                                    "$$typeof": Symbol(react.forward_ref),
-                                    "attrs": Array [],
-                                    "componentStyle": ComponentStyle {
-                                      "baseHash": 1882630949,
-                                      "componentId": "sc-AxheI",
-                                      "isStatic": false,
-                                      "rules": Array [
-                                        "
-  background: blue;
-  color: white;
-  font-weight: bold;
-",
-                                      ],
-                                      "staticRulesId": "",
-                                    },
-                                    "displayName": "styled.button",
-                                    "foldedComponentIds": Array [],
-                                    "render": [Function],
-                                    "shouldForwardProp": undefined,
-                                    "styledComponentId": "sc-AxheI",
-                                    "target": "button",
-                                    "toString": [Function],
-                                    "warnTooManyClasses": [Function],
-                                    "withComponent": [Function],
-                                  }
-                                }
-                                className=""
-                                color=""
-                                data-button-test={true}
-                                onClick={[Function]}
-                                type="button"
-                              >
-                                <styled.button
-                                  className="sc-AxiKw Rtuhc"
-                                  color=""
-                                  data-button-test={true}
-                                  onClick={[Function]}
-                                  type="button"
-                                >
-                                  <button
-                                    className="sc-AxheI bgVlsT sc-AxiKw Rtuhc"
-                                    color=""
-                                    data-button-test={true}
-                                    onClick={[Function]}
-                                    type="button"
-                                  >
-                                    Confirm
-                                  </button>
-                                </styled.button>
-                              </styled.button>
-                            </ForwardRef>
-                          </div>
-                        </styled.div>
-                      </div>
-                    </styled.div>
-                  </Typography>
-                </div>
-              </Modal__wrap>
-            </div>
-          </baseStyles__BaseModalBackground>
-        </Portal>
-      </j>
-    </Component>
-  </Confirm>
-  <div />
-</p>
-`;
-
-exports[`Confirm should render 1`] = `
-<p>
-  <Confirm
-    content="Confirm modal content"
-    isOpen={true}
-    onCancel={[Function]}
-    onConfirm={[Function]}
-    title="Confirm title"
-  >
-    <Component
-      isOpen={true}
-    >
-      <j
-        WrapperComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "baseHash": 2127463992,
-              "componentId": "Modal__wrap-gmoXzh",
-              "isStatic": false,
-              "rules": Array [
-                "
-  display: flex;
-  background-color: white;
-  flex-direction: column;
-  padding: 1rem;
-  box-shadow: 0 0 18px -3px rgba(27, 27, 27, 0.8);
-  width: 40%;
-",
-              ],
-              "staticRulesId": "",
-            },
-            "displayName": "Modal__wrap",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "shouldForwardProp": undefined,
-            "styledComponentId": "Modal__wrap-gmoXzh",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        backgroundProps={Object {}}
-        isOpen={true}
-      >
-        <Portal
-          containerInfo={
-            <div>
-              <div
-                class="baseStyles__BaseModalBackground-sTbLb hGVCXQ"
-              >
-                <div
-                  class="Modal__wrap-gmoXzh gWaikR"
-                >
-                  <div
-                    class="sc-AxhUy iumSJR"
-                    font-family="openSans"
-                  >
-                    <div>
-                      Confirm title
-                    </div>
-                    <div>
-                      Confirm modal content
-                    </div>
-                    <div
-                      class="sc-AxgMl jrJXms"
-                    >
-                      <button
-                        class="sc-Axmtr fGzfKN sc-AxiKw cMQRsw"
-                        color="transparent"
-                        data-button-test="true"
-                        type="button"
-                      >
-                        
-                        Cancel
-                      </button>
-                      <button
-                        class="sc-AxheI bgVlsT sc-AxiKw Rtuhc"
-                        color=""
-                        data-button-test="true"
-                        type="button"
-                      >
-                        
-                        Confirm
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          }
-        >
-          <baseStyles__BaseModalBackground
-            onClick={[Function]}
-          >
-            <div
-              className="baseStyles__BaseModalBackground-sTbLb hGVCXQ"
-              onClick={[Function]}
-            >
-              <Modal__wrap>
-                <div
-                  className="Modal__wrap-gmoXzh gWaikR"
-                >
-                  <Typography
-                    color=""
-                    fontFamily="openSans"
-                    size="normal"
-                  >
-                    <styled.div
-                      fontFamily="openSans"
-                      size="normal"
-                      textColor=""
-                    >
-                      <div
-                        className="sc-AxhUy iumSJR"
-                        fontFamily="openSans"
-                        size="normal"
-                      >
-                        <div>
-                          Confirm title
-                        </div>
-                        <div>
-                          Confirm modal content
-                        </div>
-                        <styled.div>
-                          <div
-                            className="sc-AxgMl jrJXms"
-                          >
-                            <ForwardRef
-                              as={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "baseHash": -1474970742,
-                                    "componentId": "sc-Axmtr",
-                                    "isStatic": false,
-                                    "rules": Array [
-                                      "
-  color: blue;
-  text-decoration: underline;
-",
-                                    ],
-                                    "staticRulesId": "",
-                                  },
-                                  "displayName": "styled.button",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "shouldForwardProp": undefined,
-                                  "styledComponentId": "sc-Axmtr",
-                                  "target": "button",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              className=""
-                              color="transparent"
-                              icon=""
-                              onClick={[Function]}
-                              type="button"
-                            >
-                              <styled.button
-                                as={
-                                  Object {
-                                    "$$typeof": Symbol(react.forward_ref),
-                                    "attrs": Array [],
-                                    "componentStyle": ComponentStyle {
-                                      "baseHash": -1474970742,
-                                      "componentId": "sc-Axmtr",
-                                      "isStatic": false,
-                                      "rules": Array [
-                                        "
-  color: blue;
-  text-decoration: underline;
-",
-                                      ],
-                                      "staticRulesId": "",
-                                    },
-                                    "displayName": "styled.button",
-                                    "foldedComponentIds": Array [],
-                                    "render": [Function],
-                                    "shouldForwardProp": undefined,
-                                    "styledComponentId": "sc-Axmtr",
-                                    "target": "button",
-                                    "toString": [Function],
-                                    "warnTooManyClasses": [Function],
-                                    "withComponent": [Function],
-                                  }
-                                }
-                                className=""
-                                color="transparent"
-                                data-button-test={true}
-                                onClick={[Function]}
-                                type="button"
-                              >
-                                <styled.button
-                                  className="sc-AxiKw cMQRsw"
-                                  color="transparent"
-                                  data-button-test={true}
-                                  onClick={[Function]}
-                                  type="button"
-                                >
-                                  <button
-                                    className="sc-Axmtr fGzfKN sc-AxiKw cMQRsw"
-                                    color="transparent"
-                                    data-button-test={true}
-                                    onClick={[Function]}
-                                    type="button"
-                                  >
-                                    Cancel
-                                  </button>
-                                </styled.button>
-                              </styled.button>
-                            </ForwardRef>
-                            <ForwardRef
-                              as={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "baseHash": 1882630949,
-                                    "componentId": "sc-AxheI",
-                                    "isStatic": false,
-                                    "rules": Array [
-                                      "
-  background: blue;
-  color: white;
-  font-weight: bold;
-",
-                                    ],
-                                    "staticRulesId": "",
-                                  },
-                                  "displayName": "styled.button",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "shouldForwardProp": undefined,
-                                  "styledComponentId": "sc-AxheI",
-                                  "target": "button",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              className=""
-                              color=""
-                              icon=""
-                              onClick={[Function]}
-                              type="button"
-                            >
-                              <styled.button
-                                as={
-                                  Object {
-                                    "$$typeof": Symbol(react.forward_ref),
-                                    "attrs": Array [],
-                                    "componentStyle": ComponentStyle {
-                                      "baseHash": 1882630949,
-                                      "componentId": "sc-AxheI",
-                                      "isStatic": false,
-                                      "rules": Array [
-                                        "
-  background: blue;
-  color: white;
-  font-weight: bold;
-",
-                                      ],
-                                      "staticRulesId": "",
-                                    },
-                                    "displayName": "styled.button",
-                                    "foldedComponentIds": Array [],
-                                    "render": [Function],
-                                    "shouldForwardProp": undefined,
-                                    "styledComponentId": "sc-AxheI",
-                                    "target": "button",
-                                    "toString": [Function],
-                                    "warnTooManyClasses": [Function],
-                                    "withComponent": [Function],
-                                  }
-                                }
-                                className=""
-                                color=""
-                                data-button-test={true}
-                                onClick={[Function]}
-                                type="button"
-                              >
-                                <styled.button
-                                  className="sc-AxiKw Rtuhc"
-                                  color=""
-                                  data-button-test={true}
-                                  onClick={[Function]}
-                                  type="button"
-                                >
-                                  <button
-                                    className="sc-AxheI bgVlsT sc-AxiKw Rtuhc"
-                                    color=""
-                                    data-button-test={true}
-                                    onClick={[Function]}
-                                    type="button"
-                                  >
-                                    Confirm
-                                  </button>
-                                </styled.button>
-                              </styled.button>
-                            </ForwardRef>
-                          </div>
-                        </styled.div>
-                      </div>
-                    </styled.div>
-                  </Typography>
-                </div>
-              </Modal__wrap>
-            </div>
-          </baseStyles__BaseModalBackground>
-        </Portal>
-      </j>
-    </Component>
-  </Confirm>
-  <div />
-</p>
-`;
-
-exports[`Confirm should render closed 1`] = `
-<p>
-  <Confirm
-    content="Confirm modal content"
-    isOpen={false}
-    onCancel={[Function]}
-    onConfirm={[Function]}
-    title="Confirm title"
-  >
-    <Component
-      isOpen={false}
-    >
-      <j
-        WrapperComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "baseHash": 2127463992,
-              "componentId": "Modal__wrap-gmoXzh",
-              "isStatic": false,
-              "rules": Array [
-                "
-  display: flex;
-  background-color: white;
-  flex-direction: column;
-  padding: 1rem;
-  box-shadow: 0 0 18px -3px rgba(27, 27, 27, 0.8);
-  width: 40%;
-",
-              ],
-              "staticRulesId": "",
-            },
-            "displayName": "Modal__wrap",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "shouldForwardProp": undefined,
-            "styledComponentId": "Modal__wrap-gmoXzh",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        backgroundProps={Object {}}
-        isOpen={false}
-      />
-    </Component>
-  </Confirm>
-  <div />
-</p>
-`;
-
-exports[`Confirm should render content as reacr node 1`] = `
-<p>
-  <Confirm
-    content={
-      <div>
-        Confirm modal content within a component
-      </div>
-    }
-    isOpen={true}
-    onCancel={[Function]}
-    onConfirm={[Function]}
-    title="Confirm title"
-  >
-    <Component
-      isOpen={true}
-    >
-      <j
-        WrapperComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "baseHash": 2127463992,
-              "componentId": "Modal__wrap-gmoXzh",
-              "isStatic": false,
-              "rules": Array [
-                "
-  display: flex;
-  background-color: white;
-  flex-direction: column;
-  padding: 1rem;
-  box-shadow: 0 0 18px -3px rgba(27, 27, 27, 0.8);
-  width: 40%;
-",
-              ],
-              "staticRulesId": "",
-            },
-            "displayName": "Modal__wrap",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "shouldForwardProp": undefined,
-            "styledComponentId": "Modal__wrap-gmoXzh",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        backgroundProps={Object {}}
-        isOpen={true}
-      >
-        <Portal
-          containerInfo={
-            <div>
-              <div
-                class="baseStyles__BaseModalBackground-sTbLb hGVCXQ"
-              >
-                <div
-                  class="Modal__wrap-gmoXzh gWaikR"
-                >
-                  <div
-                    class="sc-AxhUy iumSJR"
-                    font-family="openSans"
-                  >
-                    <div>
-                      Confirm title
-                    </div>
-                    <div>
-                      <div>
-                        Confirm modal content within a component
-                      </div>
-                    </div>
-                    <div
-                      class="sc-AxgMl jrJXms"
-                    >
-                      <button
-                        class="sc-Axmtr fGzfKN sc-AxiKw cMQRsw"
-                        color="transparent"
-                        data-button-test="true"
-                        type="button"
-                      >
-                        
-                        Cancel
-                      </button>
-                      <button
-                        class="sc-AxheI bgVlsT sc-AxiKw Rtuhc"
-                        color=""
-                        data-button-test="true"
-                        type="button"
-                      >
-                        
-                        Confirm
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          }
-        >
-          <baseStyles__BaseModalBackground
-            onClick={[Function]}
-          >
-            <div
-              className="baseStyles__BaseModalBackground-sTbLb hGVCXQ"
-              onClick={[Function]}
-            >
-              <Modal__wrap>
-                <div
-                  className="Modal__wrap-gmoXzh gWaikR"
-                >
-                  <Typography
-                    color=""
-                    fontFamily="openSans"
-                    size="normal"
-                  >
-                    <styled.div
-                      fontFamily="openSans"
-                      size="normal"
-                      textColor=""
-                    >
-                      <div
-                        className="sc-AxhUy iumSJR"
-                        fontFamily="openSans"
-                        size="normal"
-                      >
-                        <div>
-                          Confirm title
-                        </div>
-                        <div>
-                          <div>
-                            Confirm modal content within a component
-                          </div>
-                        </div>
-                        <styled.div>
-                          <div
-                            className="sc-AxgMl jrJXms"
-                          >
-                            <ForwardRef
-                              as={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "baseHash": -1474970742,
-                                    "componentId": "sc-Axmtr",
-                                    "isStatic": false,
-                                    "rules": Array [
-                                      "
-  color: blue;
-  text-decoration: underline;
-",
-                                    ],
-                                    "staticRulesId": "",
-                                  },
-                                  "displayName": "styled.button",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "shouldForwardProp": undefined,
-                                  "styledComponentId": "sc-Axmtr",
-                                  "target": "button",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              className=""
-                              color="transparent"
-                              icon=""
-                              onClick={[Function]}
-                              type="button"
-                            >
-                              <styled.button
-                                as={
-                                  Object {
-                                    "$$typeof": Symbol(react.forward_ref),
-                                    "attrs": Array [],
-                                    "componentStyle": ComponentStyle {
-                                      "baseHash": -1474970742,
-                                      "componentId": "sc-Axmtr",
-                                      "isStatic": false,
-                                      "rules": Array [
-                                        "
-  color: blue;
-  text-decoration: underline;
-",
-                                      ],
-                                      "staticRulesId": "",
-                                    },
-                                    "displayName": "styled.button",
-                                    "foldedComponentIds": Array [],
-                                    "render": [Function],
-                                    "shouldForwardProp": undefined,
-                                    "styledComponentId": "sc-Axmtr",
-                                    "target": "button",
-                                    "toString": [Function],
-                                    "warnTooManyClasses": [Function],
-                                    "withComponent": [Function],
-                                  }
-                                }
-                                className=""
-                                color="transparent"
-                                data-button-test={true}
-                                onClick={[Function]}
-                                type="button"
-                              >
-                                <styled.button
-                                  className="sc-AxiKw cMQRsw"
-                                  color="transparent"
-                                  data-button-test={true}
-                                  onClick={[Function]}
-                                  type="button"
-                                >
-                                  <button
-                                    className="sc-Axmtr fGzfKN sc-AxiKw cMQRsw"
-                                    color="transparent"
-                                    data-button-test={true}
-                                    onClick={[Function]}
-                                    type="button"
-                                  >
-                                    Cancel
-                                  </button>
-                                </styled.button>
-                              </styled.button>
-                            </ForwardRef>
-                            <ForwardRef
-                              as={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "baseHash": 1882630949,
-                                    "componentId": "sc-AxheI",
-                                    "isStatic": false,
-                                    "rules": Array [
-                                      "
-  background: blue;
-  color: white;
-  font-weight: bold;
-",
-                                    ],
-                                    "staticRulesId": "",
-                                  },
-                                  "displayName": "styled.button",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "shouldForwardProp": undefined,
-                                  "styledComponentId": "sc-AxheI",
-                                  "target": "button",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              className=""
-                              color=""
-                              icon=""
-                              onClick={[Function]}
-                              type="button"
-                            >
-                              <styled.button
-                                as={
-                                  Object {
-                                    "$$typeof": Symbol(react.forward_ref),
-                                    "attrs": Array [],
-                                    "componentStyle": ComponentStyle {
-                                      "baseHash": 1882630949,
-                                      "componentId": "sc-AxheI",
-                                      "isStatic": false,
-                                      "rules": Array [
-                                        "
-  background: blue;
-  color: white;
-  font-weight: bold;
-",
-                                      ],
-                                      "staticRulesId": "",
-                                    },
-                                    "displayName": "styled.button",
-                                    "foldedComponentIds": Array [],
-                                    "render": [Function],
-                                    "shouldForwardProp": undefined,
-                                    "styledComponentId": "sc-AxheI",
-                                    "target": "button",
-                                    "toString": [Function],
-                                    "warnTooManyClasses": [Function],
-                                    "withComponent": [Function],
-                                  }
-                                }
-                                className=""
-                                color=""
-                                data-button-test={true}
-                                onClick={[Function]}
-                                type="button"
-                              >
-                                <styled.button
-                                  className="sc-AxiKw Rtuhc"
-                                  color=""
-                                  data-button-test={true}
-                                  onClick={[Function]}
-                                  type="button"
-                                >
-                                  <button
-                                    className="sc-AxheI bgVlsT sc-AxiKw Rtuhc"
-                                    color=""
-                                    data-button-test={true}
-                                    onClick={[Function]}
+                                    onClick={[MockFunction]}
                                     type="button"
                                   >
                                     Confirm
