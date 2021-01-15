@@ -34,21 +34,20 @@ const LargeIcon = styled.span`
 export const Card = ({ title, icon, children }) => (
   <CardContainer>
     {icon && <Icon name={icon} as={LargeIcon} data-icon-test />}
+
     {title && (
       <CardHeader data-title-test>
         <Typography fontFamily="exo">{title}</Typography>
       </CardHeader>
     )}
+
     <CardBody data-card-body-test>{children}</CardBody>
   </CardContainer>
 );
 
 Card.propTypes = {
-  /** Card title */
   title: PropTypes.string,
-  /** Icon on the card */
   icon: PropTypes.string,
-  /** Card children */
   children: PropTypes.node
 };
 
