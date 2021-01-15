@@ -3,7 +3,6 @@ import React from "react";
 import styled from "styled-components";
 
 import { Icon } from "../Icon/Icon";
-import { Typography } from "../Typography/Typography";
 
 const CardContainer = styled.div`
   display: flex;
@@ -35,11 +34,7 @@ export const Card = ({ title, icon, children }) => (
   <CardContainer>
     {icon && <Icon name={icon} as={LargeIcon} data-icon-test />}
 
-    {title && (
-      <CardHeader data-title-test>
-        <Typography fontFamily="exo">{title}</Typography>
-      </CardHeader>
-    )}
+    {title && <CardHeader data-title-test>{title}</CardHeader>}
 
     <CardBody data-card-body-test>{children}</CardBody>
   </CardContainer>

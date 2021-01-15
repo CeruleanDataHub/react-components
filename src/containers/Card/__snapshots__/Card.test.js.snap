@@ -7,13 +7,13 @@ exports[`Card renders 1`] = `
 >
   <styled.div>
     <div
-      className="sc-AxhCb jzzHgf"
+      className="sc-AxiKw dQZYkP"
     >
       <styled.div
         data-card-body-test={true}
       >
         <div
-          className="sc-AxgMl ftqCsy"
+          className="sc-AxhUy fNfuCs"
           data-card-body-test={true}
         >
           Some children
