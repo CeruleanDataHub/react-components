@@ -43,7 +43,8 @@
     "watch": "webpack --watch",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "bump-patch-number": "./npm-scripts/bump-patch-number.sh"
+    "bump-patch-number": "./npm-scripts/bump-patch-number.sh",
+    "test-coverage": "npm run test -- --coverage --watchAll=false"
   },
   "husky": {
     "hooks": {
