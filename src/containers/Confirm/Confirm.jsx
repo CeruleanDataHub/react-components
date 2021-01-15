@@ -58,14 +58,12 @@ Confirm.propTypes = {
   title: PropTypes.string,
   content: PropTypes.node,
   isOpen: PropTypes.bool,
-  onConfirm: PropTypes.func,
-  onCancel: PropTypes.func
+  onConfirm: PropTypes.func.isRequired,
+  onCancel: PropTypes.func.isRequired
 };
 
 Confirm.defaultProps = {
   title: "",
   content: "",
-  isOpen: false,
-  onConfirm: () => null,
-  onCancel: () => null
+  isOpen: false
 };
