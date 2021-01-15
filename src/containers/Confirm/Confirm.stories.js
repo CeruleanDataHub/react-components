@@ -22,6 +22,7 @@ export const ConfirmStory = () => {
         <Button onClick={toggleConfirm} color="blue">
           Open Confirm
         </Button>
+
         <Confirm
           title="Confirm title"
           content="Confirm modal content"
@@ -47,6 +48,7 @@ export const ConfirmWithComponentContentStory = () => {
         <Button onClick={toggleConfirm} color="blue">
           Open Confirm
         </Button>
+
         <Confirm
           title="Confirm title"
           content={

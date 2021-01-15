@@ -38,11 +38,14 @@ export const Confirm = ({ title, content, isOpen, onConfirm, onCancel }) => (
   <StyledModal isOpen={isOpen}>
     <Typography fontFamily="openSans">
       <div>{title}</div>
+
       <div>{content}</div>
+
       <TextAlignRight>
         <Button color="transparent" onClick={onCancel} as={CancelButton}>
           Cancel
         </Button>
+
         <Button onClick={onConfirm} as={ConfirmButton}>
           Confirm
         </Button>
@@ -52,15 +55,10 @@ export const Confirm = ({ title, content, isOpen, onConfirm, onCancel }) => (
 );
 
 Confirm.propTypes = {
-  /** Confirm modal title */
   title: PropTypes.string,
-  /** Confirm modal content */
   content: PropTypes.node,
-  /** Is confirm open or not */
   isOpen: PropTypes.bool,
-  /** Function for confirmation event */
   onConfirm: PropTypes.func,
-  /** Function for cancellation event */
   onCancel: PropTypes.func
 };
 
