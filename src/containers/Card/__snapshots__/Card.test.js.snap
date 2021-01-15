@@ -1,77 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card should render card 1`] = `
-<div
-  className="sc-AxhCb jzzHgf"
+exports[`Card renders 1`] = `
+<Card
+  icon={null}
+  title={null}
 >
-  <div
-    className="sc-AxgMl ftqCsy"
-  >
-    
-  </div>
-</div>
-`;
-
-exports[`Card should render card with children 1`] = `
-<div
-  className="sc-AxhCb jzzHgf"
->
-  <div
-    className="sc-AxgMl ftqCsy"
-  >
-    Children textual content
-  </div>
-</div>
-`;
-
-exports[`Card should render card with icon 1`] = `
-<div
-  className="sc-AxhCb jzzHgf"
->
-  <span
-    className="sc-AxheI gIILAo sc-AxjAm jWlVxK lni lni-users"
-  />
-  <h3
-    className="sc-AxhUy eFvCNw"
-  >
+  <styled.div>
     <div
-      className="sc-AxiKw iCNkRr"
-      fontFamily="exo"
-      size="normal"
+      className="sc-AxhCb jzzHgf"
     >
-      Users
+      <styled.div
+        data-card-body-test={true}
+      >
+        <div
+          className="sc-AxgMl ftqCsy"
+          data-card-body-test={true}
+        >
+          Some children
+        </div>
+      </styled.div>
     </div>
-  </h3>
-  <div
-    className="sc-AxgMl ftqCsy"
-  >
-    
-  </div>
-</div>
-`;
-
-exports[`Card should render card with icon and children 1`] = `
-<div
-  className="sc-AxhCb jzzHgf"
->
-  <span
-    className="sc-AxheI gIILAo sc-AxjAm jWlVxK lni lni-users"
-  />
-  <h3
-    className="sc-AxhUy eFvCNw"
-  >
-    <div
-      className="sc-AxiKw iCNkRr"
-      fontFamily="exo"
-      size="normal"
-    >
-      Users
-    </div>
-  </h3>
-  <div
-    className="sc-AxgMl ftqCsy"
-  >
-    Children textual content
-  </div>
-</div>
+  </styled.div>
+</Card>
 `;

@@ -33,13 +33,13 @@ const LargeIcon = styled.span`
 
 export const Card = ({ title, icon, children }) => (
   <CardContainer>
-    {icon && <Icon name={icon} as={LargeIcon} />}
+    {icon && <Icon name={icon} as={LargeIcon} data-icon-test />}
     {title && (
-      <CardHeader>
+      <CardHeader data-title-test>
         <Typography fontFamily="exo">{title}</Typography>
       </CardHeader>
     )}
-    <CardBody>{children}</CardBody>
+    <CardBody data-card-body-test>{children}</CardBody>
   </CardContainer>
 );
 
