@@ -155,6 +155,41 @@ export const KPICardBackgroundColor = () => (
   </Grid>
 );
 
+export const KPICardThreeRoundedCorners = () => (
+  <Grid>
+    <Cell>
+      <KPICard
+        borderRadius="15px"
+        dataFormat="currency"
+        currency="EUR"
+        title="Logins / week"
+        value={3789}
+        backgroundColor="tomato"
+        growth={-0.145}
+      />
+    </Cell>
+    <Cell>
+      <KPICard
+        borderRadius="15px"
+        title="Logins / month"
+        value={17283}
+        backgroundColor="olive"
+        growth={0.87}
+      />
+    </Cell>
+    <Cell>
+      <KPICard
+        borderRadius="15px"
+        title="Active users / week"
+        value={1054}
+        growth={-0.062}
+        backgroundColor="plum"
+        greenValue
+      />
+    </Cell>
+  </Grid>
+);
+
 export const KPICardBorderRadius = () => (
   <KPICard
     title="Logins / week"
