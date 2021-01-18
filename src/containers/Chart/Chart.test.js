@@ -85,7 +85,7 @@ describe("Chart", () => {
 
     const component = shallow(
       <Chart
-        title="Total fruit consumtion, grouped by gender"
+        title="Total fruit consumption, grouped by gender"
         xAxis={xAxis}
         series={series}
         options={options}
