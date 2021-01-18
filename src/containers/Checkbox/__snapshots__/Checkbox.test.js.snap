@@ -1,145 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Checkbox should accept onChange function 1`] = `
-<label
-  className="sc-AxheI bIWrzC"
+exports[`Checkbox renders 1`] = `
+<Checkbox
+  checked={false}
+  label="Some label"
+  onChange={[MockFunction]}
+  value={1}
 >
-  <input
-    checked={false}
-    className="sc-AxiKw iRBKSw"
-    onChange={[Function]}
-    type="checkbox"
-    value={1}
-  />
-  <div
-    checked={false}
-    className="sc-AxhCb eJojxy"
-  />
-  <span
-    className="sc-AxgMl aaWWq"
-  >
-    Test
-  </span>
-</label>
-`;
-
-exports[`Checkbox should call default props onChange function when no onChange property is passed 1`] = `
-<label
-  className="sc-AxheI bIWrzC"
->
-  <input
-    checked={false}
-    className="sc-AxiKw iRBKSw"
-    onChange={[Function]}
-    type="checkbox"
-    value={1}
-  />
-  <div
-    checked={false}
-    className="sc-AxhCb eJojxy"
-  />
-  <span
-    className="sc-AxgMl aaWWq"
-  >
-    Test
-  </span>
-</label>
-`;
-
-exports[`Checkbox should render Checkbox 1`] = `
-<label
-  className="sc-AxheI bIWrzC"
->
-  <input
-    checked={false}
-    className="sc-AxiKw iRBKSw"
-    onChange={[Function]}
-    type="checkbox"
-  />
-  <div
-    checked={false}
-    className="sc-AxhCb eJojxy"
-  />
-  <span
-    className="sc-AxgMl aaWWq"
-  >
-    
-  </span>
-</label>
-`;
-
-exports[`Checkbox should render Checkbox with checked prop 1`] = `
-<label
-  className="sc-AxheI bIWrzC"
->
-  <input
-    checked={true}
-    className="sc-AxiKw iRBKSw"
-    onChange={[Function]}
-    type="checkbox"
-  />
-  <div
-    checked={true}
-    className="sc-AxhCb cLwTNS"
-  >
-    <span
-      className="sc-AxhUy eEXwPQ sc-AxjAm jWlVxK lni lni-checkmark"
-    />
-  </div>
-  <span
-    className="sc-AxgMl aaWWq"
-  >
-    
-  </span>
-</label>
-`;
-
-exports[`Checkbox should render Checkbox with value and label 1`] = `
-<label
-  className="sc-AxheI bIWrzC"
->
-  <input
-    checked={false}
-    className="sc-AxiKw iRBKSw"
-    onChange={[Function]}
-    type="checkbox"
-    value={1}
-  />
-  <div
-    checked={false}
-    className="sc-AxhCb eJojxy"
-  />
-  <span
-    className="sc-AxgMl aaWWq"
-  >
-    Test
-  </span>
-</label>
-`;
-
-exports[`Checkbox should render Checkbox with value and label, and be checked 1`] = `
-<label
-  className="sc-AxheI bIWrzC"
->
-  <input
-    checked={true}
-    className="sc-AxiKw iRBKSw"
-    onChange={[Function]}
-    type="checkbox"
-    value={1}
-  />
-  <div
-    checked={true}
-    className="sc-AxhCb cLwTNS"
-  >
-    <span
-      className="sc-AxhUy eEXwPQ sc-AxjAm jWlVxK lni lni-checkmark"
-    />
-  </div>
-  <span
-    className="sc-AxgMl aaWWq"
-  >
-    Test
-  </span>
-</label>
+  <styled.label>
+    <label
+      className="sc-AxheI bIWrzC"
+    >
+      <styled.input
+        checked={false}
+        data-checkbox-test={true}
+        onChange={[Function]}
+        value={1}
+      >
+        <input
+          checked={false}
+          className="sc-AxiKw iRBKSw"
+          data-checkbox-test={true}
+          onChange={[Function]}
+          type="checkbox"
+          value={1}
+        />
+      </styled.input>
+      <styled.div
+        checked={false}
+      >
+        <div
+          checked={false}
+          className="sc-AxhCb eJojxy"
+        />
+      </styled.div>
+      <styled.span>
+        <span
+          className="sc-AxgMl aaWWq"
+        >
+          Some label
+        </span>
+      </styled.span>
+    </label>
+  </styled.label>
+</Checkbox>
 `;

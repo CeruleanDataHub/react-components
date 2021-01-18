@@ -45,6 +45,7 @@ exports[`CheckboxDropdown should be able to select item from list 1`] = `
           <input
             checked={true}
             className="sc-AxiKw iRBKSw"
+            data-checkbox-test={true}
             onChange={[Function]}
             type="checkbox"
             value="1"
@@ -73,6 +74,7 @@ exports[`CheckboxDropdown should be able to select item from list 1`] = `
           <input
             checked={false}
             className="sc-AxiKw iRBKSw"
+            data-checkbox-test={true}
             onChange={[Function]}
             type="checkbox"
             value="2"
@@ -227,6 +229,7 @@ exports[`CheckboxDropdown should render in open state 1`] = `
           <input
             checked={false}
             className="sc-AxiKw iRBKSw"
+            data-checkbox-test={true}
             onChange={[Function]}
             type="checkbox"
             value="1"
@@ -251,6 +254,7 @@ exports[`CheckboxDropdown should render in open state 1`] = `
           <input
             checked={false}
             className="sc-AxiKw iRBKSw"
+            data-checkbox-test={true}
             onChange={[Function]}
             type="checkbox"
             value="2"
@@ -315,6 +319,7 @@ exports[`CheckboxDropdown should render label 1`] = `
           <input
             checked={false}
             className="sc-AxiKw iRBKSw"
+            data-checkbox-test={true}
             onChange={[Function]}
             type="checkbox"
             value="1"
@@ -339,6 +344,7 @@ exports[`CheckboxDropdown should render label 1`] = `
           <input
             checked={false}
             className="sc-AxiKw iRBKSw"
+            data-checkbox-test={true}
             onChange={[Function]}
             type="checkbox"
             value="2"
@@ -405,6 +411,7 @@ exports[`CheckboxDropdown should render react node label 1`] = `
           <input
             checked={false}
             className="sc-AxiKw iRBKSw"
+            data-checkbox-test={true}
             onChange={[Function]}
             type="checkbox"
             value="1"
@@ -429,6 +436,7 @@ exports[`CheckboxDropdown should render react node label 1`] = `
           <input
             checked={false}
             className="sc-AxiKw iRBKSw"
+            data-checkbox-test={true}
             onChange={[Function]}
             type="checkbox"
             value="2"

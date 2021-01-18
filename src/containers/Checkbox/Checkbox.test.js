@@ -1,62 +1,41 @@
 import { mount } from "enzyme";
 import React from "react";
-import renderer from "react-test-renderer";
 import { Checkbox } from "./Checkbox";
 
 describe("Checkbox", () => {
-  it("should render Checkbox", () => {
-    const component = renderer.create(<Checkbox />);
+  let component;
+  let onChangeMock;
 
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+  beforeEach(() => {
+    onChangeMock = jest.fn();
 
-  it("should render Checkbox with checked prop", () => {
-    const component = renderer.create(<Checkbox checked />);
-
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("should render Checkbox with value and label", () => {
-    const component = renderer.create(<Checkbox value={1} label="Test" />);
-
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("should render Checkbox with value and label, and be checked", () => {
-    const component = renderer.create(
-      <Checkbox value={1} label="Test" checked />
+    component = mount(
+      <Checkbox value={1} label="Some label" onChange={onChangeMock} />
     );
-
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
   });
 
-  it("should accept onChange function", () => {
-    const component = renderer.create(
-      <Checkbox value={1} label="Test" onChange={() => null} />
-    );
-
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+  it("renders", () => {
+    expect(component).toMatchSnapshot();
   });
 
-  it("should fire onChange event callback function", () => {
-    const handleChange = jest.fn();
-    const wrapper = mount(
-      <Checkbox value={1} label="Test" onChange={handleChange} />
-    );
-    expect(handleChange).not.toHaveBeenCalled();
-    wrapper.find("input").simulate("change");
-    expect(handleChange).toHaveBeenCalled();
+  it("should not call onChange yet", () => {
+    expect(onChangeMock).not.toHaveBeenCalled();
   });
 
-  it("should call default props onChange function when no onChange property is passed", () => {
-    const component = renderer.create(<Checkbox value={1} label="Test" />);
-    const tree = component.toJSON();
-    component.root.props.onChange();
-    expect(tree).toMatchSnapshot();
+  it("onChange, when called, callback is called", () => {
+    component
+      .find("input[data-checkbox-test]")
+      .props()
+      .onChange();
+
+    expect(onChangeMock).toHaveBeenCalled();
+  });
+
+  it("given checkbox is checked, is checked", () => {
+    component = mount(<Checkbox checked />);
+
+    const actual = component.find("input[data-checkbox-test]");
+
+    expect(actual).toHaveProp("checked", true);
   });
 });

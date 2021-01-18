@@ -62,6 +62,7 @@ export const Checkbox = ({ checked, value, label, onChange }) => (
       checked={checked}
       value={value}
       onChange={() => onChange(value)}
+      data-checkbox-test
     />
     <StyledCheckbox checked={checked}>
       {checked && <Icon name="checkmark" as={CheckmarkIcon} />}
