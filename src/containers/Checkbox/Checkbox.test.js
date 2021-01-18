@@ -36,6 +36,6 @@ describe("Checkbox", () => {
 
     const actual = component.find("input[data-checkbox-test]");
 
-    expect(actual).toHaveProp("checked", true);
+    expect(actual).toBeChecked();
   });
 });
