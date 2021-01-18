@@ -1,14 +1,13 @@
-import { shallow } from "enzyme";
-import toJson from "enzyme-to-json";
+import { mount } from "enzyme";
 import React from "react";
 
 import { Line } from "./Line";
 
 describe("Line", () => {
   it("should render line chart", () => {
-    const component = shallow(<Line />);
+    const component = mount(<Line />);
 
-    expect(toJson(component)).toMatchSnapshot();
+    expect(component.render()).toMatchSnapshot();
   });
 
   describe("renders", () => {
@@ -41,17 +40,17 @@ describe("Line", () => {
     });
 
     it("with simple data", () => {
-      const component = shallow(<Line xAxis={xAxisStub} series={seriesStub} />);
+      const component = mount(<Line xAxis={xAxisStub} series={seriesStub} />);
 
-      expect(toJson(component)).toMatchSnapshot();
+      expect(component.render()).toMatchSnapshot();
     });
 
     it("without legend", () => {
-      const component = shallow(
+      const component = mount(
         <Line xAxis={xAxisStub} series={seriesStub} options={optionsStub} />
       );
 
-      expect(component).toMatchSnapshot();
+      expect(component.render()).toMatchSnapshot();
     });
   });
 });

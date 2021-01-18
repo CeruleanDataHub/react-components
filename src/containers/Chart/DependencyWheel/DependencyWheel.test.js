@@ -1,5 +1,4 @@
-import { shallow } from "enzyme";
-import toJson from "enzyme-to-json";
+import { mount } from "enzyme";
 import React from "react";
 
 import { DependencyWheel } from "./DependencyWheel";
@@ -32,14 +31,14 @@ const series = [
 
 describe("Dependency Wheel", () => {
   it("should render chart", () => {
-    const component = shallow(<DependencyWheel />);
-    expect(toJson(component)).toMatchSnapshot();
+    const component = mount(<DependencyWheel />);
+    expect(component.render()).toMatchSnapshot();
   });
 
   it("should render chart with data and title", () => {
-    const component = shallow(
+    const component = mount(
       <DependencyWheel series={series} title="Dependency wheel" />
     );
-    expect(toJson(component)).toMatchSnapshot();
+    expect(component.render()).toMatchSnapshot();
   });
 });

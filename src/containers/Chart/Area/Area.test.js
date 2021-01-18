@@ -1,14 +1,13 @@
-import { shallow } from "enzyme";
-import toJson from "enzyme-to-json";
+import { mount } from "enzyme";
 import React from "react";
 
 import { Area } from "./Area";
 
 describe("Area", () => {
   it("should render chart", () => {
-    const component = shallow(<Area />);
+    const component = mount(<Area />);
 
-    expect(toJson(component)).toMatchSnapshot();
+    expect(component.render()).toMatchSnapshot();
   });
 
   it("should render chart with simple data", () => {
@@ -30,10 +29,10 @@ describe("Area", () => {
       { name: "temperature", data: [10, 15, 20, 25, 15, 20, 15] }
     ];
 
-    const component = shallow(
+    const component = mount(
       <Area title="Chart" xAxis={xAxis} series={series} />
     );
 
-    expect(toJson(component)).toMatchSnapshot();
+    expect(component.render()).toMatchSnapshot();
   });
 });

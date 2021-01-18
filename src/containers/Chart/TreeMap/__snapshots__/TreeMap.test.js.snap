@@ -1,214 +1,1222 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tree Map should render tree map 1`] = `
-<Chart
-  containerProps={null}
-  options={Object {}}
-  series={Array []}
-  title=""
-  type="treemap"
-  xAxis={null}
-/>
+<div
+  data-highcharts-chart="0"
+  style="overflow: hidden;"
+>
+  <div
+    class="highcharts-container "
+    dir="ltr"
+    id="highcharts-0"
+    style="position: relative; overflow: hidden; width: 600px; height: 400px; text-align: left; line-height: normal; z-index: 0; user-select: none; font-family: 'Unica One', sans-serif;"
+  >
+    <svg
+      class="highcharts-root"
+      height="400"
+      style="font-family:'Unica One', sans-serif;font-size:12px;"
+      version="1.1"
+      viewBox="0 0 600 400"
+      width="600"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <desc>
+        Created with Highcharts 8.1.2
+      </desc>
+      <defs>
+        <linearGradient
+          id="highcharts-1"
+          x1="0"
+          x2="1"
+          y1="0"
+          y2="1"
+        >
+          <stop
+            offset="0"
+            stop-color="#2a2a2b"
+            stop-opacity="1"
+          />
+          <stop
+            offset="1"
+            stop-color="#3e3e40"
+            stop-opacity="1"
+          />
+        </linearGradient>
+        <clipPath
+          id="highcharts-2-"
+        >
+          <rect
+            fill="none"
+            height="375"
+            width="580"
+            x="0"
+            y="0"
+          />
+        </clipPath>
+      </defs>
+      <rect
+        class="highcharts-background"
+        fill="url(#highcharts-1)"
+        height="400"
+        rx="0"
+        ry="0"
+        width="600"
+        x="0"
+        y="0"
+      />
+      <rect
+        class="highcharts-plot-background"
+        fill="none"
+        height="375"
+        width="580"
+        x="10"
+        y="10"
+      />
+      <rect
+        class="highcharts-plot-border"
+        data-z-index="1"
+        fill="none"
+        height="375"
+        width="580"
+        x="10"
+        y="10"
+      />
+      <g
+        class="highcharts-series-group"
+        data-z-index="3"
+      />
+      <text
+        class="highcharts-title"
+        data-z-index="4"
+        style="color:#E0E0E3;font-size:20px;text-transform:uppercase;fill:#E0E0E3;"
+        text-anchor="middle"
+        x="300"
+        y="25"
+      />
+      <text
+        class="highcharts-subtitle"
+        data-z-index="4"
+        style="color:#E0E0E3;text-transform:uppercase;fill:#E0E0E3;"
+        text-anchor="middle"
+        x="300"
+        y="10"
+      />
+      <text
+        class="highcharts-caption"
+        data-z-index="4"
+        style="color:#666666;fill:#666666;"
+        text-anchor="start"
+        x="10"
+        y="397"
+      />
+      <g
+        class="highcharts-legend"
+        data-z-index="7"
+      >
+        <rect
+          class="highcharts-legend-box"
+          fill="rgba(0, 0, 0, 0.5)"
+          height="8"
+          rx="0"
+          ry="0"
+          visibility="hidden"
+          width="8"
+          x="0"
+          y="0"
+        />
+        <g
+          data-z-index="1"
+        >
+          <g />
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
 `;
 
 exports[`Tree Map should render tree map with data 1`] = `
-<Chart
-  containerProps={null}
-  options={Object {}}
-  series={
-    Array [
-      Object {
-        "alternateStartingDirection": true,
-        "data": Array [
-          Object {
-            "color": "#EC2500",
-            "id": "A",
-            "name": "Apples",
-          },
-          Object {
-            "color": "#ECE100",
-            "id": "B",
-            "name": "Bananas",
-          },
-          Object {
-            "color": "#EC9800",
-            "id": "O",
-            "name": "Oranges",
-          },
-          Object {
-            "name": "Anne",
-            "parent": "A",
-            "value": 5,
-          },
-          Object {
-            "name": "Rick",
-            "parent": "A",
-            "value": 3,
-          },
-          Object {
-            "name": "Peter",
-            "parent": "A",
-            "value": 4,
-          },
-          Object {
-            "name": "Anne",
-            "parent": "B",
-            "value": 4,
-          },
-          Object {
-            "name": "Rick",
-            "parent": "B",
-            "value": 10,
-          },
-          Object {
-            "name": "Peter",
-            "parent": "B",
-            "value": 1,
-          },
-          Object {
-            "name": "Anne",
-            "parent": "O",
-            "value": 1,
-          },
-          Object {
-            "name": "Rick",
-            "parent": "O",
-            "value": 3,
-          },
-          Object {
-            "name": "Peter",
-            "parent": "O",
-            "value": 3,
-          },
-          Object {
-            "color": "#9EDE00",
-            "name": "Susanne",
-            "parent": "Kiwi",
-            "value": 2,
-          },
-        ],
-        "layoutAlgorithm": "squarified",
-        "levels": Array [
-          Object {
-            "dataLabels": Object {
-              "align": "left",
-              "enabled": true,
-              "style": Object {
-                "fontSize": "15px",
-                "fontWeight": "bold",
-              },
-              "verticalAlign": "top",
-            },
-            "layoutAlgorithm": "strip",
-            "level": 1,
-          },
-        ],
-      },
-    ]
-  }
-  title=""
-  type="treemap"
-  xAxis={null}
-/>
+<div
+  data-highcharts-chart="1"
+  style="overflow: hidden;"
+>
+  <div
+    class="highcharts-container "
+    dir="ltr"
+    id="highcharts-3"
+    style="position: relative; overflow: hidden; width: 600px; height: 400px; text-align: left; line-height: normal; z-index: 0; user-select: none; font-family: 'Unica One', sans-serif;"
+  >
+    <svg
+      class="highcharts-root"
+      height="400"
+      style="font-family:'Unica One', sans-serif;font-size:12px;"
+      version="1.1"
+      viewBox="0 0 600 400"
+      width="600"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <desc>
+        Created with Highcharts 8.1.2
+      </desc>
+      <defs>
+        <linearGradient
+          id="highcharts-4"
+          x1="0"
+          x2="1"
+          y1="0"
+          y2="1"
+        >
+          <stop
+            offset="0"
+            stop-color="#2a2a2b"
+            stop-opacity="1"
+          />
+          <stop
+            offset="1"
+            stop-color="#3e3e40"
+            stop-opacity="1"
+          />
+        </linearGradient>
+        <clipPath
+          id="highcharts-5-"
+        >
+          <rect
+            fill="none"
+            height="375"
+            width="580"
+            x="0"
+            y="0"
+          />
+        </clipPath>
+      </defs>
+      <rect
+        class="highcharts-background"
+        fill="url(#highcharts-4)"
+        height="400"
+        rx="0"
+        ry="0"
+        width="600"
+        x="0"
+        y="0"
+      />
+      <rect
+        class="highcharts-plot-background"
+        fill="none"
+        height="375"
+        width="580"
+        x="10"
+        y="10"
+      />
+      <g
+        class="highcharts-grid highcharts-xaxis-grid"
+        data-z-index="1"
+      />
+      <g
+        class="highcharts-grid highcharts-yaxis-grid"
+        data-z-index="1"
+      />
+      <rect
+        class="highcharts-plot-border"
+        data-z-index="1"
+        fill="none"
+        height="375"
+        width="580"
+        x="10"
+        y="10"
+      />
+      <g
+        class="highcharts-axis highcharts-xaxis"
+        data-z-index="2"
+      >
+        <path
+          class="highcharts-axis-line"
+          d="M 10 385 L 590 385"
+          data-z-index="7"
+          fill="none"
+        />
+      </g>
+      <g
+        class="highcharts-axis highcharts-yaxis"
+        data-z-index="2"
+      >
+        <path
+          class="highcharts-axis-line"
+          d="M 10 10 L 10 385"
+          data-z-index="7"
+          fill="none"
+        />
+      </g>
+      <g
+        class="highcharts-series-group"
+        data-z-index="3"
+      >
+        <g
+          class="highcharts-series highcharts-series-0 highcharts-treemap-series highcharts-color-0 highcharts-tracker"
+          clip-path="url(#highcharts-5-)"
+          data-z-index="0.1"
+          transform="translate(10,10) scale(1 1)"
+        >
+          <g
+            class="highcharts-level-group-2"
+            data-z-index="998"
+          >
+            <rect
+              class="highcharts-point"
+              fill="#EC2500"
+              height="178"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="170"
+              x="241.5"
+              y="-0.5"
+            />
+            <rect
+              class="highcharts-point"
+              fill="#EC2500"
+              height="59"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="306"
+              x="241.5"
+              y="177.5"
+            />
+            <rect
+              class="highcharts-point"
+              fill="#EC2500"
+              height="178"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="136"
+              x="411.5"
+              y="-0.5"
+            />
+            <rect
+              class="highcharts-point"
+              fill="#ECE100"
+              height="125"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="193"
+              x="-0.5"
+              y="249.5"
+            />
+            <rect
+              class="highcharts-point"
+              fill="#ECE100"
+              height="250"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="242"
+              x="-0.5"
+              y="-0.5"
+            />
+            <rect
+              class="highcharts-point"
+              fill="#ECE100"
+              height="125"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="49"
+              x="192.5"
+              y="249.5"
+            />
+            <rect
+              class="highcharts-point"
+              fill="#EC9800"
+              height="138"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="44"
+              x="503.5"
+              y="236.5"
+            />
+            <rect
+              class="highcharts-point"
+              fill="#EC9800"
+              height="138"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="131"
+              x="241.5"
+              y="236.5"
+            />
+            <rect
+              class="highcharts-point"
+              fill="#EC9800"
+              height="138"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="131"
+              x="372.5"
+              y="236.5"
+            />
+          </g>
+          <g
+            class="highcharts-level-group-1"
+            data-z-index="999"
+          >
+            <rect
+              class="highcharts-point highcharts-internal-node"
+              fill="none"
+              height="237"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="306"
+              x="241.5"
+              y="-0.5"
+            />
+            <rect
+              class="highcharts-point highcharts-internal-node"
+              fill="none"
+              height="375"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="242"
+              x="-0.5"
+              y="-0.5"
+            />
+            <rect
+              class="highcharts-point highcharts-internal-node"
+              fill="none"
+              height="138"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="306"
+              x="241.5"
+              y="236.5"
+            />
+            <rect
+              class="highcharts-point"
+              fill="#9EDE00"
+              height="375"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="32"
+              x="547.5"
+              y="-0.5"
+            />
+          </g>
+        </g>
+        <g
+          class="highcharts-markers highcharts-series-0 highcharts-treemap-series highcharts-color-0"
+          clip-path="none"
+          data-z-index="0.1"
+          transform="translate(10,10) scale(1 1)"
+        />
+      </g>
+      <text
+        class="highcharts-title"
+        data-z-index="4"
+        style="color:#E0E0E3;font-size:20px;text-transform:uppercase;fill:#E0E0E3;"
+        text-anchor="middle"
+        x="300"
+        y="25"
+      />
+      <text
+        class="highcharts-subtitle"
+        data-z-index="4"
+        style="color:#E0E0E3;text-transform:uppercase;fill:#E0E0E3;"
+        text-anchor="middle"
+        x="300"
+        y="10"
+      />
+      <text
+        class="highcharts-caption"
+        data-z-index="4"
+        style="color:#666666;fill:#666666;"
+        text-anchor="start"
+        x="10"
+        y="397"
+      />
+      <g
+        class="highcharts-data-labels highcharts-series-0 highcharts-treemap-series highcharts-color-0 highcharts-tracker"
+        data-z-index="6"
+        transform="translate(10,10) scale(1 1)"
+      >
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(242,0)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:15px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Apples
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(0,0)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:15px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Bananas
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(242,237)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:15px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Oranges
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(327,89)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Anne
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(395,207)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Rick
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(480,89)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Peter
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(96,312)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Anne
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(121,125)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Rick
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(217,312)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Peter
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(526,306)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Anne
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(307,306)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Rick
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(438,306)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Peter
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(548,0)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:15px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Susanne
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g
+        class="highcharts-legend"
+        data-z-index="7"
+      >
+        <rect
+          class="highcharts-legend-box"
+          fill="rgba(0, 0, 0, 0.5)"
+          height="8"
+          rx="0"
+          ry="0"
+          visibility="hidden"
+          width="8"
+          x="0"
+          y="0"
+        />
+        <g
+          data-z-index="1"
+        >
+          <g />
+        </g>
+      </g>
+      <g
+        class="highcharts-axis-labels highcharts-xaxis-labels"
+        data-z-index="7"
+      />
+      <g
+        class="highcharts-axis-labels highcharts-yaxis-labels"
+        data-z-index="7"
+      />
+    </svg>
+  </div>
+</div>
 `;
 
 exports[`Tree Map should render tree map with title and data 1`] = `
-<Chart
-  containerProps={null}
-  options={Object {}}
-  series={
-    Array [
-      Object {
-        "alternateStartingDirection": true,
-        "data": Array [
-          Object {
-            "color": "#EC2500",
-            "id": "A",
-            "name": "Apples",
-          },
-          Object {
-            "color": "#ECE100",
-            "id": "B",
-            "name": "Bananas",
-          },
-          Object {
-            "color": "#EC9800",
-            "id": "O",
-            "name": "Oranges",
-          },
-          Object {
-            "name": "Anne",
-            "parent": "A",
-            "value": 5,
-          },
-          Object {
-            "name": "Rick",
-            "parent": "A",
-            "value": 3,
-          },
-          Object {
-            "name": "Peter",
-            "parent": "A",
-            "value": 4,
-          },
-          Object {
-            "name": "Anne",
-            "parent": "B",
-            "value": 4,
-          },
-          Object {
-            "name": "Rick",
-            "parent": "B",
-            "value": 10,
-          },
-          Object {
-            "name": "Peter",
-            "parent": "B",
-            "value": 1,
-          },
-          Object {
-            "name": "Anne",
-            "parent": "O",
-            "value": 1,
-          },
-          Object {
-            "name": "Rick",
-            "parent": "O",
-            "value": 3,
-          },
-          Object {
-            "name": "Peter",
-            "parent": "O",
-            "value": 3,
-          },
-          Object {
-            "color": "#9EDE00",
-            "name": "Susanne",
-            "parent": "Kiwi",
-            "value": 2,
-          },
-        ],
-        "layoutAlgorithm": "squarified",
-        "levels": Array [
-          Object {
-            "dataLabels": Object {
-              "align": "left",
-              "enabled": true,
-              "style": Object {
-                "fontSize": "15px",
-                "fontWeight": "bold",
-              },
-              "verticalAlign": "top",
-            },
-            "layoutAlgorithm": "strip",
-            "level": 1,
-          },
-        ],
-      },
-    ]
-  }
-  title="Chart"
-  type="treemap"
-  xAxis={null}
-/>
+<div
+  data-highcharts-chart="2"
+  style="overflow: hidden;"
+>
+  <div
+    class="highcharts-container "
+    dir="ltr"
+    id="highcharts-17"
+    style="position: relative; overflow: hidden; width: 600px; height: 400px; text-align: left; line-height: normal; z-index: 0; user-select: none; font-family: 'Unica One', sans-serif;"
+  >
+    <svg
+      class="highcharts-root"
+      height="400"
+      style="font-family:'Unica One', sans-serif;font-size:12px;"
+      version="1.1"
+      viewBox="0 0 600 400"
+      width="600"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <desc>
+        Created with Highcharts 8.1.2
+      </desc>
+      <defs>
+        <linearGradient
+          id="highcharts-18"
+          x1="0"
+          x2="1"
+          y1="0"
+          y2="1"
+        >
+          <stop
+            offset="0"
+            stop-color="#2a2a2b"
+            stop-opacity="1"
+          />
+          <stop
+            offset="1"
+            stop-color="#3e3e40"
+            stop-opacity="1"
+          />
+        </linearGradient>
+        <clipPath
+          id="highcharts-19-"
+        >
+          <rect
+            fill="none"
+            height="375"
+            width="580"
+            x="0"
+            y="0"
+          />
+        </clipPath>
+      </defs>
+      <rect
+        class="highcharts-background"
+        fill="url(#highcharts-18)"
+        height="400"
+        rx="0"
+        ry="0"
+        width="600"
+        x="0"
+        y="0"
+      />
+      <rect
+        class="highcharts-plot-background"
+        fill="none"
+        height="375"
+        width="580"
+        x="10"
+        y="10"
+      />
+      <g
+        class="highcharts-grid highcharts-xaxis-grid"
+        data-z-index="1"
+      />
+      <g
+        class="highcharts-grid highcharts-yaxis-grid"
+        data-z-index="1"
+      />
+      <rect
+        class="highcharts-plot-border"
+        data-z-index="1"
+        fill="none"
+        height="375"
+        width="580"
+        x="10"
+        y="10"
+      />
+      <g
+        class="highcharts-axis highcharts-xaxis"
+        data-z-index="2"
+      >
+        <path
+          class="highcharts-axis-line"
+          d="M 10 385 L 590 385"
+          data-z-index="7"
+          fill="none"
+        />
+      </g>
+      <g
+        class="highcharts-axis highcharts-yaxis"
+        data-z-index="2"
+      >
+        <path
+          class="highcharts-axis-line"
+          d="M 10 10 L 10 385"
+          data-z-index="7"
+          fill="none"
+        />
+      </g>
+      <g
+        class="highcharts-series-group"
+        data-z-index="3"
+      >
+        <g
+          class="highcharts-series highcharts-series-0 highcharts-treemap-series highcharts-color-0 highcharts-tracker"
+          clip-path="url(#highcharts-19-)"
+          data-z-index="0.1"
+          transform="translate(10,10) scale(1 1)"
+        >
+          <g
+            class="highcharts-level-group-2"
+            data-z-index="998"
+          >
+            <rect
+              class="highcharts-point"
+              fill="#EC2500"
+              height="178"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="170"
+              x="241.5"
+              y="-0.5"
+            />
+            <rect
+              class="highcharts-point"
+              fill="#EC2500"
+              height="59"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="306"
+              x="241.5"
+              y="177.5"
+            />
+            <rect
+              class="highcharts-point"
+              fill="#EC2500"
+              height="178"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="136"
+              x="411.5"
+              y="-0.5"
+            />
+            <rect
+              class="highcharts-point"
+              fill="#ECE100"
+              height="125"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="193"
+              x="-0.5"
+              y="249.5"
+            />
+            <rect
+              class="highcharts-point"
+              fill="#ECE100"
+              height="250"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="242"
+              x="-0.5"
+              y="-0.5"
+            />
+            <rect
+              class="highcharts-point"
+              fill="#ECE100"
+              height="125"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="49"
+              x="192.5"
+              y="249.5"
+            />
+            <rect
+              class="highcharts-point"
+              fill="#EC9800"
+              height="138"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="44"
+              x="503.5"
+              y="236.5"
+            />
+            <rect
+              class="highcharts-point"
+              fill="#EC9800"
+              height="138"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="131"
+              x="241.5"
+              y="236.5"
+            />
+            <rect
+              class="highcharts-point"
+              fill="#EC9800"
+              height="138"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="131"
+              x="372.5"
+              y="236.5"
+            />
+          </g>
+          <g
+            class="highcharts-level-group-1"
+            data-z-index="999"
+          >
+            <rect
+              class="highcharts-point highcharts-internal-node"
+              fill="none"
+              height="237"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="306"
+              x="241.5"
+              y="-0.5"
+            />
+            <rect
+              class="highcharts-point highcharts-internal-node"
+              fill="none"
+              height="375"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="242"
+              x="-0.5"
+              y="-0.5"
+            />
+            <rect
+              class="highcharts-point highcharts-internal-node"
+              fill="none"
+              height="138"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="306"
+              x="241.5"
+              y="236.5"
+            />
+            <rect
+              class="highcharts-point"
+              fill="#9EDE00"
+              height="375"
+              stroke="#e6e6e6"
+              stroke-width="1"
+              width="32"
+              x="547.5"
+              y="-0.5"
+            />
+          </g>
+        </g>
+        <g
+          class="highcharts-markers highcharts-series-0 highcharts-treemap-series highcharts-color-0"
+          clip-path="none"
+          data-z-index="0.1"
+          transform="translate(10,10) scale(1 1)"
+        />
+      </g>
+      <text
+        class="highcharts-title"
+        data-z-index="4"
+        style="color:#E0E0E3;font-size:20px;text-transform:uppercase;fill:#E0E0E3;"
+        text-anchor="middle"
+        x="300"
+        y="25"
+      >
+        <tspan>
+          Chart
+        </tspan>
+      </text>
+      <text
+        class="highcharts-subtitle"
+        data-z-index="4"
+        style="color:#E0E0E3;text-transform:uppercase;fill:#E0E0E3;"
+        text-anchor="middle"
+        x="300"
+        y="10"
+      />
+      <text
+        class="highcharts-caption"
+        data-z-index="4"
+        style="color:#666666;fill:#666666;"
+        text-anchor="start"
+        x="10"
+        y="397"
+      />
+      <g
+        class="highcharts-data-labels highcharts-series-0 highcharts-treemap-series highcharts-color-0 highcharts-tracker"
+        data-z-index="6"
+        transform="translate(10,10) scale(1 1)"
+      >
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(242,0)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:15px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Apples
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(0,0)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:15px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Bananas
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(242,237)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:15px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Oranges
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(327,89)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Anne
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(395,207)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Rick
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(480,89)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Peter
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(96,312)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Anne
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(121,125)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Rick
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(217,312)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Peter
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(526,306)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Anne
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(307,306)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Rick
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(438,306)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Peter
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined"
+          data-z-index="1"
+          transform="translate(548,0)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:15px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Susanne
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g
+        class="highcharts-legend"
+        data-z-index="7"
+      >
+        <rect
+          class="highcharts-legend-box"
+          fill="rgba(0, 0, 0, 0.5)"
+          height="8"
+          rx="0"
+          ry="0"
+          visibility="hidden"
+          width="8"
+          x="0"
+          y="0"
+        />
+        <g
+          data-z-index="1"
+        >
+          <g />
+        </g>
+      </g>
+      <g
+        class="highcharts-axis-labels highcharts-xaxis-labels"
+        data-z-index="7"
+      />
+      <g
+        class="highcharts-axis-labels highcharts-yaxis-labels"
+        data-z-index="7"
+      />
+    </svg>
+  </div>
+</div>
 `;

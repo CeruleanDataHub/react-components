@@ -1,93 +1,469 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Dependency Wheel should render chart 1`] = `
-<Chart
-  containerProps={null}
-  options={
-    Object {
-      "accessibility": Object {
-        "point": Object {
-          "valueDescriptionFormat": "{index}. From {point.from} to {point.to}: {point.weight}.",
-        },
-      },
-    }
-  }
-  series={Array []}
-  title=""
-  type="dependencywheel"
-  xAxis={null}
-/>
+<div
+  data-highcharts-chart="0"
+  style="overflow: hidden;"
+>
+  <div
+    class="highcharts-container "
+    dir="ltr"
+    id="highcharts-0"
+    style="position: relative; overflow: hidden; width: 600px; height: 400px; text-align: left; line-height: normal; z-index: 0; user-select: none; font-family: 'Unica One', sans-serif;"
+  >
+    <svg
+      class="highcharts-root"
+      height="400"
+      style="font-family:'Unica One', sans-serif;font-size:12px;"
+      version="1.1"
+      viewBox="0 0 600 400"
+      width="600"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <desc>
+        Created with Highcharts 8.1.2
+      </desc>
+      <defs>
+        <linearGradient
+          id="highcharts-1"
+          x1="0"
+          x2="1"
+          y1="0"
+          y2="1"
+        >
+          <stop
+            offset="0"
+            stop-color="#2a2a2b"
+            stop-opacity="1"
+          />
+          <stop
+            offset="1"
+            stop-color="#3e3e40"
+            stop-opacity="1"
+          />
+        </linearGradient>
+        <clipPath
+          id="highcharts-2-"
+        >
+          <rect
+            fill="none"
+            height="375"
+            width="580"
+            x="0"
+            y="0"
+          />
+        </clipPath>
+      </defs>
+      <rect
+        class="highcharts-background"
+        fill="url(#highcharts-1)"
+        height="400"
+        rx="0"
+        ry="0"
+        width="600"
+        x="0"
+        y="0"
+      />
+      <rect
+        class="highcharts-plot-background"
+        fill="none"
+        height="375"
+        width="580"
+        x="10"
+        y="10"
+      />
+      <rect
+        class="highcharts-plot-border"
+        data-z-index="1"
+        fill="none"
+        height="375"
+        width="580"
+        x="10"
+        y="10"
+      />
+      <g
+        class="highcharts-series-group"
+        data-z-index="3"
+      />
+      <text
+        class="highcharts-title"
+        data-z-index="4"
+        style="color:#E0E0E3;font-size:20px;text-transform:uppercase;fill:#E0E0E3;"
+        text-anchor="middle"
+        x="300"
+        y="25"
+      />
+      <text
+        class="highcharts-subtitle"
+        data-z-index="4"
+        style="color:#E0E0E3;text-transform:uppercase;fill:#E0E0E3;"
+        text-anchor="middle"
+        x="300"
+        y="10"
+      />
+      <text
+        class="highcharts-caption"
+        data-z-index="4"
+        style="color:#666666;fill:#666666;"
+        text-anchor="start"
+        x="10"
+        y="397"
+      />
+      <g
+        class="highcharts-legend"
+        data-z-index="7"
+      >
+        <rect
+          class="highcharts-legend-box"
+          fill="rgba(0, 0, 0, 0.5)"
+          height="8"
+          rx="0"
+          ry="0"
+          visibility="hidden"
+          width="8"
+          x="0"
+          y="0"
+        />
+        <g
+          data-z-index="1"
+        >
+          <g />
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
 `;
 
 exports[`Dependency Wheel should render chart with data and title 1`] = `
-<Chart
-  containerProps={null}
-  options={
-    Object {
-      "accessibility": Object {
-        "point": Object {
-          "valueDescriptionFormat": "{index}. From {point.from} to {point.to}: {point.weight}.",
-        },
-      },
-    }
-  }
-  series={
-    Array [
-      Object {
-        "data": Array [
-          Array [
-            "Brazil",
-            "Canada",
-            5,
-          ],
-          Array [
-            "Brazil",
-            "Mexico",
-            1,
-          ],
-          Array [
-            "Canada",
-            "Brazil",
-            1,
-          ],
-          Array [
-            "Canada",
-            "Mexico",
-            5,
-          ],
-          Array [
-            "Mexico",
-            "Brazil",
-            1,
-          ],
-          Array [
-            "Mexico",
-            "Canada",
-            5,
-          ],
-        ],
-        "dataLabels": Object {
-          "color": "#333",
-          "distance": 10,
-          "textPath": Object {
-            "attributes": Object {
-              "dy": 5,
-            },
-            "enabled": true,
-          },
-        },
-        "keys": Array [
-          "from",
-          "to",
-          "weight",
-        ],
-        "name": "Dependency wheel series",
-        "size": "95%",
-      },
-    ]
-  }
-  title="Dependency wheel"
-  type="dependencywheel"
-  xAxis={null}
-/>
+<div
+  data-highcharts-chart="1"
+  style="overflow: hidden;"
+>
+  <div
+    class="highcharts-container "
+    dir="ltr"
+    id="highcharts-3"
+    style="position: relative; overflow: hidden; width: 600px; height: 400px; text-align: left; line-height: normal; z-index: 0; user-select: none; font-family: 'Unica One', sans-serif;"
+  >
+    <svg
+      class="highcharts-root"
+      height="400"
+      style="font-family:'Unica One', sans-serif;font-size:12px;"
+      version="1.1"
+      viewBox="0 0 600 400"
+      width="600"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <desc>
+        Created with Highcharts 8.1.2
+      </desc>
+      <defs>
+        <linearGradient
+          id="highcharts-4"
+          x1="0"
+          x2="1"
+          y1="0"
+          y2="1"
+        >
+          <stop
+            offset="0"
+            stop-color="#2a2a2b"
+            stop-opacity="1"
+          />
+          <stop
+            offset="1"
+            stop-color="#3e3e40"
+            stop-opacity="1"
+          />
+        </linearGradient>
+        <clipPath
+          id="highcharts-5-"
+        >
+          <rect
+            fill="none"
+            height="375"
+            width="580"
+            x="0"
+            y="0"
+          />
+        </clipPath>
+      </defs>
+      <rect
+        class="highcharts-background"
+        fill="url(#highcharts-4)"
+        height="400"
+        rx="0"
+        ry="0"
+        width="600"
+        x="0"
+        y="0"
+      />
+      <rect
+        class="highcharts-plot-background"
+        fill="none"
+        height="375"
+        width="580"
+        x="10"
+        y="10"
+      />
+      <rect
+        class="highcharts-plot-border"
+        data-z-index="1"
+        fill="none"
+        height="375"
+        width="580"
+        x="10"
+        y="10"
+      />
+      <g
+        class="highcharts-series-group"
+        data-z-index="3"
+      >
+        <g
+          class="highcharts-series highcharts-series-0 highcharts-dependencywheel-series highcharts-tracker"
+          clip-path="url(#highcharts-5-)"
+          data-z-index="0.1"
+          opacity="1"
+          transform="translate(10,10) scale(1 1)"
+        >
+          <path
+            class="highcharts-point highcharts-color-0"
+            d="M 367.7336474850633 48.65387771468764 A 158.125 158.125 0 0 1 445.63615780036605 154.36162330258824 C 440.85553610239253 155.37952328749068 442.3015639842188 163.1411945091713 447.1280103993113 162.3692623873887 A 158.125 158.125 0 0 1 412.51818081806795 289.0384705125659 C 339.00727232722716 228.11538820502636 321.0934589940253 131.96155108587504 367.7336474850633 48.65387771468764"
+            fill="rgba(43,144,143,0.5)"
+          />
+          <path
+            class="highcharts-point highcharts-color-1"
+            d="M 316.94088437696144 30.672214279525093 A 158.125 158.125 0 0 1 343.1039024941423 37.49752947070297 C 319.67182640284557 103.68606060008089 255.77278165539758 105.44092832474384 228.7432765027509 40.63823012307944 A 158.125 158.125 0 0 1 254.4922523493169 32.38724913220253 C 262.91108748020537 69.16425591678917 310.5532400216709 67.85585332393465 316.94088437696144 30.672214279525093"
+            fill="rgba(43,144,143,0.5)"
+          />
+          <path
+            class="highcharts-point highcharts-color-2"
+            d="M 412.51818081806795 289.0384705125659 A 158.125 158.125 0 0 1 393.55832719123845 308.31572122183604 C 331.42333087649536 235.8262884887344 311.2415609976569 127.4990117882812 343.1039024941423 37.49752947070297 A 158.125 158.125 0 0 1 367.7336474850633 48.65387771468764 C 321.0934589940253 131.96155108587504 339.00727232722716 228.11538820502636 412.51818081806795 289.0384705125659"
+            fill="rgba(144,238,126,0.5)"
+          />
+          <path
+            class="highcharts-point highcharts-color-3"
+            d="M 267.4811098421006 345.02353859362245 A 158.125 158.125 0 0 1 156.73880063456934 274.46101637335516 C 160.9402410479225 271.71932163912584 156.69498658859067 264.8245686538687 152.35534520697885 267.3418100490592 A 158.125 158.125 0 0 1 139.20521275834474 136.68958998646116 C 229.6820851033379 167.17583599458445 280.99244393684023 250.50941543744898 267.4811098421006 345.02353859362245"
+            fill="rgba(144,238,126,0.5)"
+          />
+          <path
+            class="highcharts-point highcharts-color-4"
+            d="M 254.4922523493169 32.38724913220253 A 158.125 158.125 0 0 1 281.26644616838166 28.6148507176639 C 281.55419470189025 33.84971496465187 290 33.61776672215436 290 28.375 A 158.125 158.125 0 0 1 316.94088437696144 30.672214279525093 C 310.5532400216709 67.85585332393465 262.91108748020537 69.16425591678917 254.4922523493169 32.38724913220253"
+            fill="rgba(244,91,91,0.5)"
+          />
+          <path
+            class="highcharts-point highcharts-color-5"
+            d="M 139.20521275834474 136.68958998646116 A 158.125 158.125 0 0 1 228.7432765027509 40.63823012307944 C 265.49731060110037 128.75529204923177 331.42333087649536 235.8262884887344 393.55832719123845 308.31572122183604 A 158.125 158.125 0 0 1 267.4811098421006 345.02353859362245 C 280.99244393684023 250.50941543744898 229.6820851033379 167.17583599458445 139.20521275834474 136.68958998646116"
+            fill="rgba(244,91,91,0.5)"
+          />
+          <path
+            class="highcharts-point highcharts-color-0 highcharts-node"
+            d="M 290 9.875 A 178.125 178.125 0 0 1 464.23262682611875 150.96613206441376 L 444.66966521757206 155.12432074490064 A 158.125 158.125 0 0 0 290 29.875 Z"
+            fill="#2b908f"
+          />
+          <path
+            class="highcharts-point highcharts-color-1 highcharts-node"
+            d="M 465.8895638798261 159.8685772993157 A 178.125 178.125 0 0 1 140.66135486138808 285.0900854524484 L 157.42920273660064 274.18874252445426 A 158.125 158.125 0 0 0 446.14056021612635 163.02719318149778 Z"
+            fill="#90ee7e"
+          />
+          <path
+            class="highcharts-point highcharts-color-2 highcharts-node"
+            d="M 135.92016254512558 277.37516050267817 A 178.125 178.125 0 0 1 280.40647887456936 10.13353329698171 L 281.4836461588282 30.104504996969723 A 158.125 158.125 0 0 0 153.2203548207606 267.34005476202657 Z"
+            fill="#f45b5b"
+          />
+        </g>
+        <g
+          class="highcharts-markers highcharts-series-0 highcharts-dependencywheel-series"
+          clip-path="none"
+          data-z-index="0.1"
+          opacity="1"
+          transform="translate(10,10) scale(1 1)"
+        />
+      </g>
+      <text
+        class="highcharts-title"
+        data-z-index="4"
+        style="color:#E0E0E3;font-size:20px;text-transform:uppercase;fill:#E0E0E3;"
+        text-anchor="middle"
+        x="300"
+        y="25"
+      >
+        <tspan>
+          Dependency wheel
+        </tspan>
+      </text>
+      <text
+        class="highcharts-subtitle"
+        data-z-index="4"
+        style="color:#E0E0E3;text-transform:uppercase;fill:#E0E0E3;"
+        text-anchor="middle"
+        x="300"
+        y="10"
+      />
+      <text
+        class="highcharts-caption"
+        data-z-index="4"
+        style="color:#666666;fill:#666666;"
+        text-anchor="start"
+        x="10"
+        y="397"
+      />
+      <g
+        class="highcharts-data-labels highcharts-series-0 highcharts-dependencywheel-series highcharts-tracker"
+        data-z-index="6"
+        opacity="1"
+        transform="translate(10,10) scale(1 1)"
+      >
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-0"
+          data-z-index="1"
+        >
+          <rect
+            class="highcharts-label-box highcharts-data-label-box"
+            fill="none"
+            height="10"
+            rx="0"
+            ry="0"
+            width="10"
+            x="0"
+            y="0"
+          />
+          <path
+            clockwise="1"
+            d="M 290 -0.625 A 188.125 188.125 0 0 1 474.0141076303921 148.38703772417034"
+            fill="none"
+            id="highcharts-12"
+          />
+          <text
+            data-z-index="1"
+            dx="-5"
+            dy="5"
+            style="color:#333;font-size:13px;font-weight:bold;fill:#333;"
+            x="5"
+            y="17"
+          >
+            <textPath
+              href="#highcharts-12"
+              startOffset="50%"
+              text-anchor="middle"
+            >
+              <tspan
+                x="5"
+                y="0"
+              >
+                Brazil
+              </tspan>
+            </textPath>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-1"
+          data-z-index="1"
+        >
+          <rect
+            class="highcharts-label-box highcharts-data-label-box"
+            fill="none"
+            height="10"
+            rx="0"
+            ry="0"
+            width="10"
+            x="0"
+            y="0"
+          />
+          <path
+            clockwise="0"
+            d="M 132.17496904523347 289.88298310328224 A 188.125 188.125 0 0 0 475.7342621039609 157.60352017883773"
+            fill="none"
+            id="highcharts-13"
+          />
+          <text
+            data-z-index="1"
+            dx="-5"
+            dy="5"
+            style="color:#333;font-size:13px;font-weight:bold;fill:#333;"
+            x="5"
+            y="17"
+          >
+            <textPath
+              href="#highcharts-13"
+              startOffset="50%"
+              text-anchor="middle"
+            >
+              <tspan
+                x="5"
+                y="0"
+              >
+                Canada
+              </tspan>
+            </textPath>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-2"
+          data-z-index="1"
+        >
+          <rect
+            class="highcharts-label-box highcharts-data-label-box"
+            fill="none"
+            height="10"
+            rx="0"
+            ry="0"
+            width="10"
+            x="0"
+            y="0"
+          />
+          <path
+            clockwise="1"
+            d="M 127.27006640730806 281.89271337300397 A 188.125 188.125 0 0 1 279.86789523243993 -0.3519525530122962"
+            fill="none"
+            id="highcharts-14"
+          />
+          <text
+            data-z-index="1"
+            dx="-5"
+            dy="5"
+            style="color:#333;font-size:13px;font-weight:bold;fill:#333;"
+            x="5"
+            y="17"
+          >
+            <textPath
+              href="#highcharts-14"
+              startOffset="50%"
+              text-anchor="middle"
+            >
+              <tspan
+                x="5"
+                y="0"
+              >
+                Mexico
+              </tspan>
+            </textPath>
+          </text>
+        </g>
+      </g>
+      <g
+        class="highcharts-legend"
+        data-z-index="7"
+      >
+        <rect
+          class="highcharts-legend-box"
+          fill="rgba(0, 0, 0, 0.5)"
+          height="8"
+          rx="0"
+          ry="0"
+          visibility="hidden"
+          width="8"
+          x="0"
+          y="0"
+        />
+        <g
+          data-z-index="1"
+        >
+          <g />
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
 `;

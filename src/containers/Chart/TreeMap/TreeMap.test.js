@@ -1,5 +1,4 @@
-import { shallow } from "enzyme";
-import toJson from "enzyme-to-json";
+import { mount } from "enzyme";
 import React from "react";
 
 import { TreeMap } from "./TreeMap";
@@ -79,20 +78,20 @@ const series = [
 
 describe("Tree Map", () => {
   it("should render tree map", () => {
-    const component = shallow(<TreeMap />);
+    const component = mount(<TreeMap />);
 
-    expect(toJson(component)).toMatchSnapshot();
+    expect(component.render()).toMatchSnapshot();
   });
 
   it("should render tree map with data", () => {
-    const component = shallow(<TreeMap series={series} />);
+    const component = mount(<TreeMap series={series} />);
 
-    expect(toJson(component)).toMatchSnapshot();
+    expect(component.render()).toMatchSnapshot();
   });
 
   it("should render tree map with title and data", () => {
-    const component = shallow(<TreeMap title="Chart" series={series} />);
+    const component = mount(<TreeMap title="Chart" series={series} />);
 
-    expect(toJson(component)).toMatchSnapshot();
+    expect(component.render()).toMatchSnapshot();
   });
 });

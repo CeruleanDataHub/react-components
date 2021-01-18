@@ -1,226 +1,732 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Semi Donut should render chart 1`] = `
-<Chart
-  containerProps={null}
-  options={
-    Object {
-      "accessibility": Object {
-        "point": Object {
-          "valueSuffix": "%",
-        },
-      },
-      "chart": Object {
-        "plotBackgroundColor": null,
-        "plotBorderWidth": 0,
-        "plotShadow": false,
-      },
-      "plotOptions": Object {
-        "pie": Object {
-          "center": Array [
-            "50%",
-            "75%",
-          ],
-          "dataLabels": Object {
-            "distance": -50,
-            "enabled": true,
-            "style": Object {
-              "color": "white",
-              "fontWeight": "bold",
-            },
-          },
-          "endAngle": 90,
-          "size": "110%",
-          "startAngle": -90,
-        },
-      },
-      "title": Object {
-        "align": "center",
-        "verticalAlign": "middle",
-        "y": 60,
-      },
-      "tooltip": Object {
-        "pointFormat": "{series.name}: <b>{point.percentage:.1f}%</b>",
-      },
-    }
-  }
-  series={Array []}
-  title=""
-  type="pie"
-  xAxis={null}
-/>
+<div
+  data-highcharts-chart="0"
+  style="overflow: hidden;"
+>
+  <div
+    class="highcharts-container "
+    dir="ltr"
+    id="highcharts-0"
+    style="position: relative; overflow: hidden; width: 600px; height: 400px; text-align: left; line-height: normal; z-index: 0; user-select: none; font-family: 'Unica One', sans-serif;"
+  >
+    <svg
+      class="highcharts-root"
+      height="400"
+      style="font-family:'Unica One', sans-serif;font-size:12px;"
+      version="1.1"
+      viewBox="0 0 600 400"
+      width="600"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <desc>
+        Created with Highcharts 8.1.2
+      </desc>
+      <defs>
+        <linearGradient
+          id="highcharts-1"
+          x1="0"
+          x2="1"
+          y1="0"
+          y2="1"
+        >
+          <stop
+            offset="0"
+            stop-color="#2a2a2b"
+            stop-opacity="1"
+          />
+          <stop
+            offset="1"
+            stop-color="#3e3e40"
+            stop-opacity="1"
+          />
+        </linearGradient>
+        <clipPath
+          id="highcharts-2-"
+        >
+          <rect
+            fill="none"
+            height="375"
+            width="580"
+            x="0"
+            y="0"
+          />
+        </clipPath>
+      </defs>
+      <rect
+        class="highcharts-background"
+        fill="url(#highcharts-1)"
+        height="400"
+        rx="0"
+        ry="0"
+        width="600"
+        x="0"
+        y="0"
+      />
+      <rect
+        class="highcharts-plot-background"
+        fill="none"
+        height="375"
+        width="580"
+        x="10"
+        y="10"
+      />
+      <rect
+        class="highcharts-plot-border"
+        data-z-index="1"
+        fill="none"
+        height="375"
+        width="580"
+        x="10"
+        y="10"
+      />
+      <g
+        class="highcharts-series-group"
+        data-z-index="3"
+      />
+      <text
+        class="highcharts-title"
+        data-z-index="4"
+        style="color:#E0E0E3;font-size:20px;text-transform:uppercase;fill:#E0E0E3;"
+        text-anchor="middle"
+        x="300"
+        y="258"
+      />
+      <text
+        class="highcharts-subtitle"
+        data-z-index="4"
+        style="color:#E0E0E3;text-transform:uppercase;fill:#E0E0E3;"
+        text-anchor="middle"
+        x="300"
+        y="24"
+      />
+      <text
+        class="highcharts-caption"
+        data-z-index="4"
+        style="color:#666666;fill:#666666;"
+        text-anchor="start"
+        x="10"
+        y="397"
+      />
+      <g
+        class="highcharts-legend"
+        data-z-index="7"
+      >
+        <rect
+          class="highcharts-legend-box"
+          fill="rgba(0, 0, 0, 0.5)"
+          height="8"
+          rx="0"
+          ry="0"
+          visibility="hidden"
+          width="8"
+          x="0"
+          y="0"
+        />
+        <g
+          data-z-index="1"
+        >
+          <g />
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
 `;
 
 exports[`Semi Donut should render chart with data 1`] = `
-<Chart
-  containerProps={null}
-  options={
-    Object {
-      "accessibility": Object {
-        "point": Object {
-          "valueSuffix": "%",
-        },
-      },
-      "chart": Object {
-        "plotBackgroundColor": null,
-        "plotBorderWidth": 0,
-        "plotShadow": false,
-      },
-      "plotOptions": Object {
-        "pie": Object {
-          "center": Array [
-            "50%",
-            "75%",
-          ],
-          "dataLabels": Object {
-            "distance": -50,
-            "enabled": true,
-            "style": Object {
-              "color": "white",
-              "fontWeight": "bold",
-            },
-          },
-          "endAngle": 90,
-          "size": "110%",
-          "startAngle": -90,
-        },
-      },
-      "title": Object {
-        "align": "center",
-        "verticalAlign": "middle",
-        "y": 60,
-      },
-      "tooltip": Object {
-        "pointFormat": "{series.name}: <b>{point.percentage:.1f}%</b>",
-      },
-    }
-  }
-  series={
-    Array [
-      Object {
-        "data": Array [
-          Array [
-            "Chrome",
-            58.9,
-          ],
-          Array [
-            "Firefox",
-            13.29,
-          ],
-          Array [
-            "Internet Explorer",
-            13,
-          ],
-          Array [
-            "Edge",
-            3.78,
-          ],
-          Array [
-            "Safari",
-            3.42,
-          ],
-          Object {
-            "dataLabels": Object {
-              "enabled": false,
-            },
-            "name": "Other",
-            "y": 7.61,
-          },
-        ],
-        "innerSize": "50%",
-        "name": "Browser share",
-      },
-    ]
-  }
-  title=""
-  type="pie"
-  xAxis={null}
-/>
+<div
+  data-highcharts-chart="1"
+  style="overflow: hidden;"
+>
+  <div
+    class="highcharts-container "
+    dir="ltr"
+    id="highcharts-3"
+    style="position: relative; overflow: hidden; width: 600px; height: 400px; text-align: left; line-height: normal; z-index: 0; user-select: none; font-family: 'Unica One', sans-serif;"
+  >
+    <svg
+      class="highcharts-root"
+      height="400"
+      style="font-family:'Unica One', sans-serif;font-size:12px;"
+      version="1.1"
+      viewBox="0 0 600 400"
+      width="600"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <desc>
+        Created with Highcharts 8.1.2
+      </desc>
+      <defs>
+        <linearGradient
+          id="highcharts-10"
+          x1="0"
+          x2="1"
+          y1="0"
+          y2="1"
+        >
+          <stop
+            offset="0"
+            stop-color="#2a2a2b"
+            stop-opacity="1"
+          />
+          <stop
+            offset="1"
+            stop-color="#3e3e40"
+            stop-opacity="1"
+          />
+        </linearGradient>
+        <clipPath
+          id="highcharts-11-"
+        >
+          <rect
+            fill="none"
+            height="375"
+            width="580"
+            x="0"
+            y="0"
+          />
+        </clipPath>
+      </defs>
+      <rect
+        class="highcharts-background"
+        fill="url(#highcharts-10)"
+        height="400"
+        rx="0"
+        ry="0"
+        width="600"
+        x="0"
+        y="0"
+      />
+      <rect
+        class="highcharts-plot-background"
+        fill="none"
+        height="375"
+        width="580"
+        x="10"
+        y="10"
+      />
+      <rect
+        class="highcharts-plot-border"
+        data-z-index="1"
+        fill="none"
+        height="375"
+        width="580"
+        x="10"
+        y="10"
+      />
+      <g
+        class="highcharts-series-group"
+        data-z-index="3"
+      >
+        <g
+          class="highcharts-series highcharts-series-0 highcharts-pie-series highcharts-tracker"
+          data-z-index="0.1"
+          opacity="1"
+          transform="translate(10,10) scale(1 1)"
+        >
+          <path
+            class="highcharts-point highcharts-color-0"
+            d="M 95.75001611605765 271.3291270379944 A 194.25 194.25 0 0 1 343.4573381447245 84.50050067408321 L 316.7286690723622 177.87525033704162 A 97.125 97.125 0 0 0 192.8750080580288 271.28956351899717 Z"
+            fill="#2b908f"
+            opacity="1"
+            stroke="#ffffff"
+            stroke-linejoin="round"
+            stroke-width="1"
+            transform="translate(0,0)"
+          />
+          <path
+            class="highcharts-point highcharts-color-1"
+            d="M 343.6440608842586 84.55405137806028 A 194.25 194.25 0 0 1 414.5136396982259 122.15467469065175 L 352.25681984911296 196.70233734532587 A 97.125 97.125 0 0 0 316.8220304421293 177.90202568903015 Z"
+            fill="#90ee7e"
+            opacity="1"
+            stroke="#ffffff"
+            stroke-linejoin="round"
+            stroke-width="1"
+            transform="translate(0,0)"
+          />
+          <path
+            class="highcharts-point highcharts-color-2"
+            d="M 414.66267274187135 122.27926285725414 A 194.25 194.25 0 0 1 463.53764619203 183.97028956206483 L 376.768823096015 227.61014478103243 A 97.125 97.125 0 0 0 352.3313363709357 196.76463142862707 Z"
+            fill="#f45b5b"
+            opacity="1"
+            stroke="#ffffff"
+            stroke-linejoin="round"
+            stroke-width="1"
+            transform="translate(0,0)"
+          />
+          <path
+            class="highcharts-point highcharts-color-3"
+            d="M 463.62483911910545 184.1438708191855 A 194.25 194.25 0 0 1 472.606000233812 205.0071801731761 L 381.303000116906 238.12859008658805 A 97.125 97.125 0 0 0 376.8124195595527 227.69693540959275 Z"
+            fill="#7798BF"
+            opacity="1"
+            stroke="#ffffff"
+            stroke-linejoin="round"
+            stroke-width="1"
+            transform="translate(0,0)"
+          />
+          <path
+            class="highcharts-point highcharts-color-4"
+            d="M 472.67215173960585 205.18981926438272 A 194.25 194.25 0 0 1 478.68240161500677 225.07626481652912 L 384.34120080750336 248.16313240826454 A 97.125 97.125 0 0 0 381.3360758698029 238.21990963219136 Z"
+            fill="#aaeeee"
+            opacity="1"
+            stroke="#ffffff"
+            stroke-linejoin="round"
+            stroke-width="1"
+            transform="translate(0,0)"
+          />
+          <path
+            class="highcharts-point highcharts-color-5"
+            d="M 478.72848100130165 225.2649702735627 A 194.25 194.25 0 0 1 484.2499028750081 271.055750032375 L 387.124951437504 271.1528750161875 A 97.125 97.125 0 0 0 384.3642405006508 248.25748513678136 Z"
+            fill="#ff0066"
+            opacity="1"
+            stroke="#ffffff"
+            stroke-linejoin="round"
+            stroke-width="1"
+            transform="translate(0,0)"
+          />
+        </g>
+        <g
+          class="highcharts-markers highcharts-series-0 highcharts-pie-series"
+          data-z-index="0.1"
+          opacity="1"
+          transform="translate(10,10) scale(1 1)"
+        />
+      </g>
+      <text
+        class="highcharts-title"
+        data-z-index="4"
+        style="color:#E0E0E3;font-size:20px;text-transform:uppercase;fill:#E0E0E3;"
+        text-anchor="middle"
+        x="300"
+        y="258"
+      />
+      <text
+        class="highcharts-subtitle"
+        data-z-index="4"
+        style="color:#E0E0E3;text-transform:uppercase;fill:#E0E0E3;"
+        text-anchor="middle"
+        x="300"
+        y="24"
+      />
+      <text
+        class="highcharts-caption"
+        data-z-index="4"
+        style="color:#666666;fill:#666666;"
+        text-anchor="start"
+        x="10"
+        y="397"
+      />
+      <g
+        class="highcharts-data-labels highcharts-series-0 highcharts-pie-series highcharts-tracker"
+        data-z-index="6"
+        opacity="1"
+        transform="translate(10,10) scale(1 1)"
+      >
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-0"
+          data-z-index="1"
+          transform="translate(0,146)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Chrome
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-1"
+          data-z-index="1"
+          transform="translate(0,134)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Firefox
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-2"
+          data-z-index="1"
+          transform="translate(0,172)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Internet Explorer
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-3"
+          data-z-index="1"
+          transform="translate(0,204)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Edge
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-4"
+          data-z-index="1"
+          transform="translate(0,220)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Safari
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g
+        class="highcharts-legend"
+        data-z-index="7"
+      >
+        <rect
+          class="highcharts-legend-box"
+          fill="rgba(0, 0, 0, 0.5)"
+          height="8"
+          rx="0"
+          ry="0"
+          visibility="hidden"
+          width="8"
+          x="0"
+          y="0"
+        />
+        <g
+          data-z-index="1"
+        >
+          <g />
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
 `;
 
 exports[`Semi Donut should render chart with title and data 1`] = `
-<Chart
-  containerProps={null}
-  options={
-    Object {
-      "accessibility": Object {
-        "point": Object {
-          "valueSuffix": "%",
-        },
-      },
-      "chart": Object {
-        "plotBackgroundColor": null,
-        "plotBorderWidth": 0,
-        "plotShadow": false,
-      },
-      "plotOptions": Object {
-        "pie": Object {
-          "center": Array [
-            "50%",
-            "75%",
-          ],
-          "dataLabels": Object {
-            "distance": -50,
-            "enabled": true,
-            "style": Object {
-              "color": "white",
-              "fontWeight": "bold",
-            },
-          },
-          "endAngle": 90,
-          "size": "110%",
-          "startAngle": -90,
-        },
-      },
-      "title": Object {
-        "align": "center",
-        "verticalAlign": "middle",
-        "y": 60,
-      },
-      "tooltip": Object {
-        "pointFormat": "{series.name}: <b>{point.percentage:.1f}%</b>",
-      },
-    }
-  }
-  series={
-    Array [
-      Object {
-        "data": Array [
-          Array [
-            "Chrome",
-            58.9,
-          ],
-          Array [
-            "Firefox",
-            13.29,
-          ],
-          Array [
-            "Internet Explorer",
-            13,
-          ],
-          Array [
-            "Edge",
-            3.78,
-          ],
-          Array [
-            "Safari",
-            3.42,
-          ],
-          Object {
-            "dataLabels": Object {
-              "enabled": false,
-            },
-            "name": "Other",
-            "y": 7.61,
-          },
-        ],
-        "innerSize": "50%",
-        "name": "Browser share",
-      },
-    ]
-  }
-  title="Chart"
-  type="pie"
-  xAxis={null}
-/>
+<div
+  data-highcharts-chart="2"
+  style="overflow: hidden;"
+>
+  <div
+    class="highcharts-container "
+    dir="ltr"
+    id="highcharts-13"
+    style="position: relative; overflow: hidden; width: 600px; height: 400px; text-align: left; line-height: normal; z-index: 0; user-select: none; font-family: 'Unica One', sans-serif;"
+  >
+    <svg
+      class="highcharts-root"
+      height="400"
+      style="font-family:'Unica One', sans-serif;font-size:12px;"
+      version="1.1"
+      viewBox="0 0 600 400"
+      width="600"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <desc>
+        Created with Highcharts 8.1.2
+      </desc>
+      <defs>
+        <linearGradient
+          id="highcharts-20"
+          x1="0"
+          x2="1"
+          y1="0"
+          y2="1"
+        >
+          <stop
+            offset="0"
+            stop-color="#2a2a2b"
+            stop-opacity="1"
+          />
+          <stop
+            offset="1"
+            stop-color="#3e3e40"
+            stop-opacity="1"
+          />
+        </linearGradient>
+        <clipPath
+          id="highcharts-21-"
+        >
+          <rect
+            fill="none"
+            height="375"
+            width="580"
+            x="0"
+            y="0"
+          />
+        </clipPath>
+      </defs>
+      <rect
+        class="highcharts-background"
+        fill="url(#highcharts-20)"
+        height="400"
+        rx="0"
+        ry="0"
+        width="600"
+        x="0"
+        y="0"
+      />
+      <rect
+        class="highcharts-plot-background"
+        fill="none"
+        height="375"
+        width="580"
+        x="10"
+        y="10"
+      />
+      <rect
+        class="highcharts-plot-border"
+        data-z-index="1"
+        fill="none"
+        height="375"
+        width="580"
+        x="10"
+        y="10"
+      />
+      <g
+        class="highcharts-series-group"
+        data-z-index="3"
+      >
+        <g
+          class="highcharts-series highcharts-series-0 highcharts-pie-series highcharts-tracker"
+          data-z-index="0.1"
+          opacity="1"
+          transform="translate(10,10) scale(1 1)"
+        >
+          <path
+            class="highcharts-point highcharts-color-0"
+            d="M 95.75001611605765 271.3291270379944 A 194.25 194.25 0 0 1 343.4573381447245 84.50050067408321 L 316.7286690723622 177.87525033704162 A 97.125 97.125 0 0 0 192.8750080580288 271.28956351899717 Z"
+            fill="#2b908f"
+            opacity="1"
+            stroke="#ffffff"
+            stroke-linejoin="round"
+            stroke-width="1"
+            transform="translate(0,0)"
+          />
+          <path
+            class="highcharts-point highcharts-color-1"
+            d="M 343.6440608842586 84.55405137806028 A 194.25 194.25 0 0 1 414.5136396982259 122.15467469065175 L 352.25681984911296 196.70233734532587 A 97.125 97.125 0 0 0 316.8220304421293 177.90202568903015 Z"
+            fill="#90ee7e"
+            opacity="1"
+            stroke="#ffffff"
+            stroke-linejoin="round"
+            stroke-width="1"
+            transform="translate(0,0)"
+          />
+          <path
+            class="highcharts-point highcharts-color-2"
+            d="M 414.66267274187135 122.27926285725414 A 194.25 194.25 0 0 1 463.53764619203 183.97028956206483 L 376.768823096015 227.61014478103243 A 97.125 97.125 0 0 0 352.3313363709357 196.76463142862707 Z"
+            fill="#f45b5b"
+            opacity="1"
+            stroke="#ffffff"
+            stroke-linejoin="round"
+            stroke-width="1"
+            transform="translate(0,0)"
+          />
+          <path
+            class="highcharts-point highcharts-color-3"
+            d="M 463.62483911910545 184.1438708191855 A 194.25 194.25 0 0 1 472.606000233812 205.0071801731761 L 381.303000116906 238.12859008658805 A 97.125 97.125 0 0 0 376.8124195595527 227.69693540959275 Z"
+            fill="#7798BF"
+            opacity="1"
+            stroke="#ffffff"
+            stroke-linejoin="round"
+            stroke-width="1"
+            transform="translate(0,0)"
+          />
+          <path
+            class="highcharts-point highcharts-color-4"
+            d="M 472.67215173960585 205.18981926438272 A 194.25 194.25 0 0 1 478.68240161500677 225.07626481652912 L 384.34120080750336 248.16313240826454 A 97.125 97.125 0 0 0 381.3360758698029 238.21990963219136 Z"
+            fill="#aaeeee"
+            opacity="1"
+            stroke="#ffffff"
+            stroke-linejoin="round"
+            stroke-width="1"
+            transform="translate(0,0)"
+          />
+          <path
+            class="highcharts-point highcharts-color-5"
+            d="M 478.72848100130165 225.2649702735627 A 194.25 194.25 0 0 1 484.2499028750081 271.055750032375 L 387.124951437504 271.1528750161875 A 97.125 97.125 0 0 0 384.3642405006508 248.25748513678136 Z"
+            fill="#ff0066"
+            opacity="1"
+            stroke="#ffffff"
+            stroke-linejoin="round"
+            stroke-width="1"
+            transform="translate(0,0)"
+          />
+        </g>
+        <g
+          class="highcharts-markers highcharts-series-0 highcharts-pie-series"
+          data-z-index="0.1"
+          opacity="1"
+          transform="translate(10,10) scale(1 1)"
+        />
+      </g>
+      <text
+        class="highcharts-title"
+        data-z-index="4"
+        style="color:#E0E0E3;font-size:20px;text-transform:uppercase;fill:#E0E0E3;"
+        text-anchor="middle"
+        x="300"
+        y="258"
+      >
+        <tspan>
+          Chart
+        </tspan>
+      </text>
+      <text
+        class="highcharts-subtitle"
+        data-z-index="4"
+        style="color:#E0E0E3;text-transform:uppercase;fill:#E0E0E3;"
+        text-anchor="middle"
+        x="300"
+        y="24"
+      />
+      <text
+        class="highcharts-caption"
+        data-z-index="4"
+        style="color:#666666;fill:#666666;"
+        text-anchor="start"
+        x="10"
+        y="397"
+      />
+      <g
+        class="highcharts-data-labels highcharts-series-0 highcharts-pie-series highcharts-tracker"
+        data-z-index="6"
+        opacity="1"
+        transform="translate(10,10) scale(1 1)"
+      >
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-0"
+          data-z-index="1"
+          transform="translate(0,146)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Chrome
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-1"
+          data-z-index="1"
+          transform="translate(0,134)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Firefox
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-2"
+          data-z-index="1"
+          transform="translate(0,172)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Internet Explorer
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-3"
+          data-z-index="1"
+          transform="translate(0,204)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Edge
+            </tspan>
+          </text>
+        </g>
+        <g
+          class="highcharts-label highcharts-data-label highcharts-data-label-color-4"
+          data-z-index="1"
+          transform="translate(0,220)"
+        >
+          <text
+            data-z-index="1"
+            style="color:#F0F0F3;font-size:13px;font-weight:bold;fill:#F0F0F3;"
+            x="5"
+            y="17"
+          >
+            <tspan>
+              Safari
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g
+        class="highcharts-legend"
+        data-z-index="7"
+      >
+        <rect
+          class="highcharts-legend-box"
+          fill="rgba(0, 0, 0, 0.5)"
+          height="8"
+          rx="0"
+          ry="0"
+          visibility="hidden"
+          width="8"
+          x="0"
+          y="0"
+        />
+        <g
+          data-z-index="1"
+        >
+          <g />
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
 `;

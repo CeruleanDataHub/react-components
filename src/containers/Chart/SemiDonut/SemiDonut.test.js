@@ -1,5 +1,4 @@
-import { shallow } from "enzyme";
-import toJson from "enzyme-to-json";
+import { mount } from "enzyme";
 import React from "react";
 
 import { SemiDonut } from "./SemiDonut";
@@ -27,20 +26,20 @@ const series = [
 
 describe("Semi Donut", () => {
   it("should render chart", () => {
-    const component = shallow(<SemiDonut />);
+    const component = mount(<SemiDonut />);
 
-    expect(toJson(component)).toMatchSnapshot();
+    expect(component.render()).toMatchSnapshot();
   });
 
   it("should render chart with data", () => {
-    const component = shallow(<SemiDonut series={series} />);
+    const component = mount(<SemiDonut series={series} />);
 
-    expect(toJson(component)).toMatchSnapshot();
+    expect(component.render()).toMatchSnapshot();
   });
 
   it("should render chart with title and data", () => {
-    const component = shallow(<SemiDonut title="Chart" series={series} />);
+    const component = mount(<SemiDonut title="Chart" series={series} />);
 
-    expect(toJson(component)).toMatchSnapshot();
+    expect(component.render()).toMatchSnapshot();
   });
 });

@@ -1,14 +1,13 @@
-import { shallow } from "enzyme";
-import toJson from "enzyme-to-json";
+import { mount } from "enzyme";
 import React from "react";
 
 import { Chart } from "./Chart";
 
 describe("Chart", () => {
   it("should render chart", () => {
-    const component = shallow(<Chart />);
+    const component = mount(<Chart />);
 
-    expect(toJson(component)).toMatchSnapshot();
+    expect(component.render()).toMatchSnapshot();
   });
 
   it("should render chart with simple data", () => {
@@ -30,9 +29,9 @@ describe("Chart", () => {
       { name: "temperature", data: [10, 15, 20, 25, 15, 20, 15] }
     ];
 
-    const component = shallow(<Chart xAxis={xAxis} series={series} />);
+    const component = mount(<Chart xAxis={xAxis} series={series} />);
 
-    expect(toJson(component)).toMatchSnapshot();
+    expect(component.render()).toMatchSnapshot();
   });
 
   it("should render chart with custom options", () => {
@@ -83,7 +82,7 @@ describe("Chart", () => {
       }
     };
 
-    const component = shallow(
+    const component = mount(
       <Chart
         title="Total fruit consumption, grouped by gender"
         xAxis={xAxis}
@@ -92,6 +91,6 @@ describe("Chart", () => {
       />
     );
 
-    expect(toJson(component)).toMatchSnapshot();
+    expect(component.render()).toMatchSnapshot();
   });
 });

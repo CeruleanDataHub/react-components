@@ -1,5 +1,4 @@
-import { shallow } from "enzyme";
-import toJson from "enzyme-to-json";
+import { mount } from "enzyme";
 import React from "react";
 
 import { Heatmap } from "./Heatmap";
@@ -32,14 +31,14 @@ const data = repeat(xAxisCategories.length)
 
 describe("Heatmap", () => {
   it("should render heatmap", () => {
-    const component = shallow(<Heatmap />);
+    const component = mount(<Heatmap />);
 
-    expect(toJson(component)).toMatchSnapshot();
+    expect(component.render()).toMatchSnapshot();
   });
 
   it("should render heatmap with data", () => {
-    const component = shallow(<Heatmap data={data} />);
+    const component = mount(<Heatmap data={data} />);
 
-    expect(toJson(component)).toMatchSnapshot();
+    expect(component.render()).toMatchSnapshot();
   });
 });
