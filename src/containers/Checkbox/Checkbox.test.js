@@ -15,7 +15,7 @@ describe("Checkbox", () => {
   });
 
   it("renders", () => {
-    expect(component).toMatchSnapshot();
+    expect(component.render()).toMatchSnapshot();
   });
 
   it("should not call onChange yet", () => {
