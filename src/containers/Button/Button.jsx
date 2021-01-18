@@ -16,12 +16,20 @@ const StyledButton = styled.button`
 
 const StyledIcon = styled(Icon)`
   margin: 0 2px;
-`
+`;
 
 export const Button = forwardRef(
   ({ children, className, onClick, color, type, as, icon }, ref) => (
-    <StyledButton data-button-test className={className} color={color} onClick={onClick} type={type} as={as} ref={ref}>
-      { icon && <Icon name={icon} as={StyledIcon} data-button-icon-test /> }
+    <StyledButton
+      data-button-test
+      className={className}
+      color={color}
+      onClick={onClick}
+      type={type}
+      as={as}
+      ref={ref}
+    >
+      {icon && <Icon name={icon} as={StyledIcon} data-button-icon-test />}
 
       {children}
     </StyledButton>
@@ -44,7 +52,7 @@ Button.propTypes = {
     PropTypes.string,
     PropTypes.shape({ render: PropTypes.func.isRequired })
   ]),
-  icon: PropTypes.string,
+  icon: PropTypes.string
 };
 
 Button.defaultProps = {
@@ -53,5 +61,5 @@ Button.defaultProps = {
   color: "",
   type: "button",
   as: null,
-  icon: "",
+  icon: ""
 };

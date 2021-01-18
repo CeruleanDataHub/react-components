@@ -64,21 +64,19 @@ export const Checkbox = ({ checked, value, label, onChange }) => (
       onChange={() => onChange(value)}
       data-checkbox-test
     />
+
     <StyledCheckbox checked={checked}>
       {checked && <Icon name="checkmark" as={CheckmarkIcon} />}
     </StyledCheckbox>
+
     <CheckboxLabel>{label}</CheckboxLabel>
   </CheckboxContainer>
 );
 
 Checkbox.propTypes = {
-  /** Defines if the checkbox is checked or not */
   checked: PropTypes.bool,
-  /** Label text */
   label: PropTypes.string,
-  /** Value of the checkbox item */
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  /** Handler function */
   onChange: PropTypes.func
 };
 
