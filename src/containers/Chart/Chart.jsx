@@ -2,6 +2,7 @@ import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import HighchartsWheel from "highcharts/modules/dependency-wheel";
 import HighchartSankey from "highcharts/modules/sankey";
+import HeatMap from "highcharts/modules/heatmap";
 import TreeMap from "highcharts/modules/treemap";
 import DarkUnica from "highcharts/themes/dark-unica";
 import PropTypes from "prop-types";
@@ -11,6 +12,7 @@ HighchartSankey(Highcharts);
 HighchartsWheel(Highcharts);
 TreeMap(Highcharts);
 DarkUnica(Highcharts);
+HeatMap(Highcharts);
 
 const chartDefaults = {
   credits: { enabled: false }
