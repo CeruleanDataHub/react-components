@@ -32,7 +32,7 @@ describe("Checkbox", () => {
   });
 
   it("given checkbox is checked, is checked", () => {
-    component = mount(<Checkbox checked />);
+    component = mount(<Checkbox onChange={onChangeMock} checked />);
 
     const actual = component.find("input[data-checkbox-test]");
 

@@ -77,12 +77,11 @@ Checkbox.propTypes = {
   checked: PropTypes.bool,
   label: PropTypes.string,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  onChange: PropTypes.func
+  onChange: PropTypes.func.isRequired
 };
 
 Checkbox.defaultProps = {
   checked: false,
   label: "",
-  value: undefined,
-  onChange: () => null
+  value: undefined
 };
