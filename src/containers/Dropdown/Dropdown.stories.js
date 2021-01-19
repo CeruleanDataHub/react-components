@@ -12,20 +12,25 @@ export default {
 
 export const DropdownStory = () => (
   <div style={{ width: 300 }}>
-    <Dropdown label="Label">Dropdown item</Dropdown>
+    <Dropdown onClick={() => {}} label="Label">
+      Dropdown item
+    </Dropdown>
   </div>
 );
 
 export const DropdownOpenStory = () => (
   <div style={{ minHeight: 250, width: 300 }}>
-    <Dropdown label="Label" isOpen>
+    <Dropdown onClick={() => {}} label="Label" isOpen>
       Dropdown item
     </Dropdown>
   </div>
 );
 export const DropdownLongLabelStory = () => (
   <div style={{ minHeight: 250, width: 300 }}>
-    <Dropdown label="Extra long label; Extra long label; Extra long label; Extra long label">
+    <Dropdown
+      onClick={() => {}}
+      label="Extra long label; Extra long label; Extra long label; Extra long label"
+    >
       Dropdown item
     </Dropdown>
   </div>
@@ -33,7 +38,7 @@ export const DropdownLongLabelStory = () => (
 
 export const DropdownOpenWithCustomChildrenStory = () => (
   <div style={{ minHeight: 250, width: 300 }}>
-    <Dropdown label="Label" isOpen>
+    <Dropdown onClick={() => {}} label="Label" isOpen>
       <ul>
         <li>first</li>
         <li>second</li>

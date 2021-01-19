@@ -4,7 +4,7 @@ exports[`Dropdown renders 1`] = `
 <ForwardRef
   isOpen={false}
   label=""
-  onClick={[Function]}
+  onClick={[MockFunction]}
 >
   <Typography
     color=""
@@ -70,7 +70,7 @@ exports[`Dropdown renders 1`] = `
               color=""
               data-button-test={true}
               icon=""
-              onClick={[Function]}
+              onClick={[MockFunction]}
               type="button"
             >
               <styled.button
@@ -117,21 +117,21 @@ exports[`Dropdown renders 1`] = `
                 className=""
                 color=""
                 data-button-test={true}
-                onClick={[Function]}
+                onClick={[MockFunction]}
                 type="button"
               >
                 <styled.button
                   className="sc-AxiKw Rtuhc"
                   color=""
                   data-button-test={true}
-                  onClick={[Function]}
+                  onClick={[MockFunction]}
                   type="button"
                 >
                   <button
                     className="sc-AxheI jgVLYo sc-AxiKw Rtuhc"
                     color=""
                     data-button-test={true}
-                    onClick={[Function]}
+                    onClick={[MockFunction]}
                     type="button"
                   >
                     <Styled(styled.span)>

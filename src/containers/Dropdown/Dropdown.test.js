@@ -1,58 +1,53 @@
 import React from "react";
-import { mount } from 'enzyme'
+import { mount } from "enzyme";
 
 import { Dropdown } from "./Dropdown";
 
 describe("Dropdown", () => {
   let component;
+  let onClickMock;
 
   beforeEach(() => {
-     component = mount(<Dropdown>Some content</Dropdown>);
+    onClickMock = jest.fn();
+
+    component = mount(<Dropdown onClick={onClickMock}>Some content</Dropdown>);
   });
 
-  it('renders', () => {
+  it("renders", () => {
     expect(component).toMatchSnapshot();
   });
 
+  it("does not call onClick yet", () => {
+    expect(onClickMock).not.toHaveBeenCalled();
+  });
+
   it("given open dropdown, should show itemList", () => {
-    component = mount(<Dropdown isOpen>Some content</Dropdown>);
+    component = mount(
+      <Dropdown onClick={onClickMock} isOpen>
+        Some content
+      </Dropdown>
+    );
 
-    const itemList = component.find('[data-item-list-test]')
+    const itemList = component.find("[data-item-list-test]");
 
-    expect(itemList).toExist()
-  })
+    expect(itemList).toExist();
+  });
 
-  describe('given onClick', () => {
-    let onClickMock;
+  describe("Button within", () => {
+    let button;
 
     beforeEach(() => {
-      onClickMock = jest.fn()
-
-      component = mount(
-        <Dropdown onClick={onClickMock}>Some content</Dropdown>
-      );
+      button = component.find("button[data-button-test]");
     });
 
-    it("does not call onClick yet", () => {
-      expect(onClickMock).not.toHaveBeenCalled();
+    it("has onClick", () => {
+      expect(button).toHaveProp("onClick", onClickMock);
     });
 
-    describe('Button within', () => {
-      let button;
+    it("when clicked, calls callback function", () => {
+      button.simulate("click");
 
-      beforeEach(() => {
-        button = component.find('button[data-button-test]')
-      });
-
-      it("has onClick", () => {
-        expect(button).toHaveProp('onClick', onClickMock)
-      });
-
-      it("when clicked, calls callback function", () => {
-        button.simulate('click')
-
-        expect(onClickMock).toHaveBeenCalled();
-      });
+      expect(onClickMock).toHaveBeenCalled();
     });
   });
 });
