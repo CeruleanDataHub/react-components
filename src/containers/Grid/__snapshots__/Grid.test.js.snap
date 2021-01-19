@@ -1,57 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Grid should render grid 1`] = `
+exports[`Grid renders 1`] = `
 <div
-  className="Grid__Grid-gDLjRO eNXUjX"
->
-  
-</div>
-`;
-
-exports[`Grid should render grid with cell 1`] = `
-<div
-  className="Grid__Grid-gDLjRO carhOg"
+  class="Grid__Grid-gDLjRO carhOg"
 >
   <div
-    className="Cell__Cell-tAjrW dskkMt"
+    class="Cell__Cell-tAjrW dskkMt"
   >
-    Content
-  </div>
-</div>
-`;
-
-exports[`Grid should render grid with custom columns 1`] = `
-<div
-  className="Grid__Grid-gDLjRO cbRobv"
->
-  <div
-    className="Cell__Cell-tAjrW dskkMt"
-  >
-    Content
-  </div>
-</div>
-`;
-
-exports[`Grid should render grid with extended styles 1`] = `
-<div
-  className="sc-AxjAm fITMkt Grid__Grid-gDLjRO carhOg"
->
-  <div
-    className="Cell__Cell-tAjrW dskkMt"
-  >
-    Content
-  </div>
-</div>
-`;
-
-exports[`Grid should render when extending the styles 1`] = `
-<div
-  className="Grid__Grid-gDLjRO carhOg sc-AxirZ iwvBOT"
->
-  <div
-    className="Cell__Cell-tAjrW dskkMt"
-  >
-    Content
+    Some content
   </div>
 </div>
 `;
