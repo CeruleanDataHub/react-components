@@ -7,13 +7,15 @@ import { Icon } from "../Icon/Icon";
 
 describe("Tab", () => {
   it("should render correctly", () => {
-    const component = renderer.create(<Tab text="Tab" />);
+    const component = renderer.create(<Tab onClick={() => {}} text="Tab" />);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   it("should render correctly in active state", () => {
-    const component = renderer.create(<Tab text="Tab" active />);
+    const component = renderer.create(
+      <Tab onClick={() => {}} text="Tab" active />
+    );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
@@ -29,15 +31,10 @@ describe("Tab", () => {
     expect(handleClick).toHaveBeenCalled();
   });
 
-  it("should call default props onClick function when no onClick property is passed", () => {
-    const component = renderer.create(<Tab text="Tab" />);
-    component.root.props.onClick();
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
   it("should render icon", () => {
-    const component = mount(<Tab icon={<Icon name="chef-hat" />} />);
+    const component = mount(
+      <Tab onClick={() => {}} icon={<Icon name="chef-hat" />} />
+    );
 
     expect(component.contains(<Icon name="chef-hat" />)).toBe(true);
   });

@@ -1,24 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tab should call default props onClick function when no onClick property is passed 1`] = `
-<div
-  className="sc-AxjAm bYePpP"
-  fontFamily="openSans"
-  size="normal"
->
-  <div
-    className="sc-AxirZ cdrbwt"
-    onClick={[Function]}
-  >
-    <span
-      className="sc-AxiKw jmlNFh"
-    >
-      Tab
-    </span>
-  </div>
-</div>
-`;
-
 exports[`Tab should render correctly 1`] = `
 <div
   className="sc-AxjAm bYePpP"

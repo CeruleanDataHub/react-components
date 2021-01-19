@@ -37,12 +37,11 @@ Tab.propTypes = {
   text: PropTypes.string,
   icon: PropTypes.node,
   active: PropTypes.bool,
-  onClick: PropTypes.func
+  onClick: PropTypes.func.isRequired
 };
 
 Tab.defaultProps = {
   text: "",
   icon: null,
-  active: false,
-  onClick: () => null
+  active: false
 };
