@@ -28,10 +28,9 @@ Fullscreen.propTypes = {
     PropTypes.shape({ render: PropTypes.func.isRequired })
   ]),
   /** Click event listener */
-  onClick: PropTypes.func
+  onClick: PropTypes.func.isRequired
 };
 
 Fullscreen.defaultProps = {
-  as: null,
-  onClick: () => null
+  as: null
 };
