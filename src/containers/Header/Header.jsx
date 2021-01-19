@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
-import logo from "../../assets/images/Denim_Logo_Color.png";
+import PropTypes from "prop-types";
 
 const TopHeader = styled.header`
   position: fixed;
@@ -15,8 +14,16 @@ const Logo = styled.img`
   margin-left: 4em;
 `;
 
-export const Header = () => (
+export const Header = ({ logo }) => (
   <TopHeader id="header" image={logo}>
     <Logo src={logo} />
   </TopHeader>
 );
+
+Header.propTypes = {
+  logo: PropTypes.node
+};
+
+Header.defaultProps = {
+  logo: null
+};

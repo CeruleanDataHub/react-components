@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders 1`] = `
+<header
+  class="sc-AxjAm iYZhvh"
+  id="header"
+>
+  <img
+    class="sc-AxirZ bmeYGH"
+  />
+</header>
+`;
