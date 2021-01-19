@@ -34,13 +34,9 @@ export const Tab = ({ text, icon, active, onClick }) => (
 );
 
 Tab.propTypes = {
-  /** Text of the tab */
   text: PropTypes.string,
-  /** Icon of the tab */
   icon: PropTypes.node,
-  /** Is the tab selected or not */
   active: PropTypes.bool,
-  /** Handler function */
   onClick: PropTypes.func
 };
 
