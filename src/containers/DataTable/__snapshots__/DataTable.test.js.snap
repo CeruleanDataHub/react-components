@@ -1,37 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DataTable should render 1`] = `
+exports[`DataTable given big amount of data, renders with pagination 1`] = `
 <div
-  className="sc-fznxsB forRdO"
-  style={Object {}}
+  class="sc-fznxsB forRdO"
 >
   <div
-    className="sc-fznWqX gnahTY"
+    class="sc-fznWqX gnahTY"
   >
     <div
-      className="sc-AxjAm gIMaKV rdt_Table"
-      disabled={false}
+      class="sc-AxjAm gIMaKV rdt_Table"
       role="table"
     >
       <div
-        className="sc-AxirZ eBuPmJ rdt_TableHead"
+        class="sc-AxirZ eBuPmJ rdt_TableHead"
         role="rowgroup"
       >
         <div
-          className="sc-AxiKw cTEQON rdt_TableHeadRow"
-          disabled={false}
+          class="sc-AxiKw cTEQON rdt_TableHeadRow"
           role="row"
         >
           <div
-            className="sc-AxhCb sc-AxhUy sc-fzplWN HWHoi rdt_TableCol"
+            class="sc-AxhCb sc-AxhUy sc-fzplWN HWHoi rdt_TableCol"
           >
             <div
-              className="sc-fznyAO cxtWCz rdt_TableCol_Sortable"
+              class="sc-fznyAO cxtWCz rdt_TableCol_Sortable"
               id="column-title"
-              onClick={[Function]}
-              onKeyPress={[Function]}
               role="button"
-              tabIndex={0}
+              tabindex="0"
             >
               <div>
                 Title
@@ -39,15 +34,13 @@ exports[`DataTable should render 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy sc-fzplWN HWHoi rdt_TableCol"
+            class="sc-AxhCb sc-AxhUy sc-fzplWN HWHoi rdt_TableCol"
           >
             <div
-              className="sc-fznyAO cxtWCz rdt_TableCol_Sortable"
+              class="sc-fznyAO cxtWCz rdt_TableCol_Sortable"
               id="column-year"
-              onClick={[Function]}
-              onKeyPress={[Function]}
               role="button"
-              tabIndex={0}
+              tabindex="0"
             >
               <div>
                 Year
@@ -57,20 +50,17 @@ exports[`DataTable should render 1`] = `
         </div>
       </div>
       <div
-        className="sc-fzpjYC ieTOoW rdt_TableBody"
+        class="sc-fzpjYC ieTOoW rdt_TableBody"
         offset="250px"
         role="rowgroup"
       >
         <div
-          className="sc-fzoLsD jekBnA rdt_TableRow"
+          class="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-1"
-          onClick={[Function]}
-          onDoubleClick={[Function]}
           role="row"
-          selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-1"
             role="cell"
@@ -82,7 +72,7 @@ exports[`DataTable should render 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-1"
             role="cell"
@@ -95,15 +85,12 @@ exports[`DataTable should render 1`] = `
           </div>
         </div>
         <div
-          className="sc-fzoLsD jekBnA rdt_TableRow"
+          class="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-2"
-          onClick={[Function]}
-          onDoubleClick={[Function]}
           role="row"
-          selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-2"
             role="cell"
@@ -115,7 +102,7 @@ exports[`DataTable should render 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-2"
             role="cell"
@@ -128,15 +115,12 @@ exports[`DataTable should render 1`] = `
           </div>
         </div>
         <div
-          className="sc-fzoLsD jekBnA rdt_TableRow"
+          class="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-3"
-          onClick={[Function]}
-          onDoubleClick={[Function]}
           role="row"
-          selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-3"
             role="cell"
@@ -148,173 +132,7 @@ exports[`DataTable should render 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
-            data-tag="___react-data-table-allow-propagation___"
-            id="cell-2-3"
-            role="cell"
-          >
-            <div
-              data-tag="___react-data-table-allow-propagation___"
-            >
-              1985
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`DataTable should render pagination 1`] = `
-<div
-  className="sc-fznxsB forRdO"
-  style={Object {}}
->
-  <div
-    className="sc-fznWqX gnahTY"
-  >
-    <div
-      className="sc-AxjAm gIMaKV rdt_Table"
-      disabled={false}
-      role="table"
-    >
-      <div
-        className="sc-AxirZ eBuPmJ rdt_TableHead"
-        role="rowgroup"
-      >
-        <div
-          className="sc-AxiKw cTEQON rdt_TableHeadRow"
-          disabled={false}
-          role="row"
-        >
-          <div
-            className="sc-AxhCb sc-AxhUy sc-fzplWN HWHoi rdt_TableCol"
-          >
-            <div
-              className="sc-fznyAO cxtWCz rdt_TableCol_Sortable"
-              id="column-title"
-              onClick={[Function]}
-              onKeyPress={[Function]}
-              role="button"
-              tabIndex={0}
-            >
-              <div>
-                Title
-              </div>
-            </div>
-          </div>
-          <div
-            className="sc-AxhCb sc-AxhUy sc-fzplWN HWHoi rdt_TableCol"
-          >
-            <div
-              className="sc-fznyAO cxtWCz rdt_TableCol_Sortable"
-              id="column-year"
-              onClick={[Function]}
-              onKeyPress={[Function]}
-              role="button"
-              tabIndex={0}
-            >
-              <div>
-                Year
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="sc-fzpjYC ieTOoW rdt_TableBody"
-        offset="250px"
-        role="rowgroup"
-      >
-        <div
-          className="sc-fzoLsD jekBnA rdt_TableRow"
-          id="row-1"
-          onClick={[Function]}
-          onDoubleClick={[Function]}
-          role="row"
-          selected={false}
-        >
-          <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
-            data-tag="___react-data-table-allow-propagation___"
-            id="cell-1-1"
-            role="cell"
-          >
-            <div
-              data-tag="___react-data-table-allow-propagation___"
-            >
-              Conan the Barbarian
-            </div>
-          </div>
-          <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
-            data-tag="___react-data-table-allow-propagation___"
-            id="cell-2-1"
-            role="cell"
-          >
-            <div
-              data-tag="___react-data-table-allow-propagation___"
-            >
-              1982
-            </div>
-          </div>
-        </div>
-        <div
-          className="sc-fzoLsD jekBnA rdt_TableRow"
-          id="row-2"
-          onClick={[Function]}
-          onDoubleClick={[Function]}
-          role="row"
-          selected={false}
-        >
-          <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
-            data-tag="___react-data-table-allow-propagation___"
-            id="cell-1-2"
-            role="cell"
-          >
-            <div
-              data-tag="___react-data-table-allow-propagation___"
-            >
-              Conan the Barbarian 2
-            </div>
-          </div>
-          <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
-            data-tag="___react-data-table-allow-propagation___"
-            id="cell-2-2"
-            role="cell"
-          >
-            <div
-              data-tag="___react-data-table-allow-propagation___"
-            >
-              1984
-            </div>
-          </div>
-        </div>
-        <div
-          className="sc-fzoLsD jekBnA rdt_TableRow"
-          id="row-3"
-          onClick={[Function]}
-          onDoubleClick={[Function]}
-          role="row"
-          selected={false}
-        >
-          <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
-            data-tag="___react-data-table-allow-propagation___"
-            id="cell-1-3"
-            role="cell"
-          >
-            <div
-              data-tag="___react-data-table-allow-propagation___"
-            >
-              Conan the Barbarian 3
-            </div>
-          </div>
-          <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-3"
             role="cell"
@@ -327,15 +145,12 @@ exports[`DataTable should render pagination 1`] = `
           </div>
         </div>
         <div
-          className="sc-fzoLsD jekBnA rdt_TableRow"
+          class="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-4"
-          onClick={[Function]}
-          onDoubleClick={[Function]}
           role="row"
-          selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-4"
             role="cell"
@@ -347,7 +162,7 @@ exports[`DataTable should render pagination 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-4"
             role="cell"
@@ -360,15 +175,12 @@ exports[`DataTable should render pagination 1`] = `
           </div>
         </div>
         <div
-          className="sc-fzoLsD jekBnA rdt_TableRow"
+          class="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-5"
-          onClick={[Function]}
-          onDoubleClick={[Function]}
           role="row"
-          selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-5"
             role="cell"
@@ -380,7 +192,7 @@ exports[`DataTable should render pagination 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-5"
             role="cell"
@@ -393,15 +205,12 @@ exports[`DataTable should render pagination 1`] = `
           </div>
         </div>
         <div
-          className="sc-fzoLsD jekBnA rdt_TableRow"
+          class="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-6"
-          onClick={[Function]}
-          onDoubleClick={[Function]}
           role="row"
-          selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-6"
             role="cell"
@@ -413,7 +222,7 @@ exports[`DataTable should render pagination 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-6"
             role="cell"
@@ -426,15 +235,12 @@ exports[`DataTable should render pagination 1`] = `
           </div>
         </div>
         <div
-          className="sc-fzoLsD jekBnA rdt_TableRow"
+          class="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-7"
-          onClick={[Function]}
-          onDoubleClick={[Function]}
           role="row"
-          selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-7"
             role="cell"
@@ -446,7 +252,7 @@ exports[`DataTable should render pagination 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-7"
             role="cell"
@@ -459,15 +265,12 @@ exports[`DataTable should render pagination 1`] = `
           </div>
         </div>
         <div
-          className="sc-fzoLsD jekBnA rdt_TableRow"
+          class="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-8"
-          onClick={[Function]}
-          onDoubleClick={[Function]}
           role="row"
-          selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-8"
             role="cell"
@@ -479,7 +282,7 @@ exports[`DataTable should render pagination 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-8"
             role="cell"
@@ -492,15 +295,12 @@ exports[`DataTable should render pagination 1`] = `
           </div>
         </div>
         <div
-          className="sc-fzoLsD jekBnA rdt_TableRow"
+          class="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-9"
-          onClick={[Function]}
-          onDoubleClick={[Function]}
           role="row"
-          selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-9"
             role="cell"
@@ -512,7 +312,7 @@ exports[`DataTable should render pagination 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-9"
             role="cell"
@@ -525,15 +325,12 @@ exports[`DataTable should render pagination 1`] = `
           </div>
         </div>
         <div
-          className="sc-fzoLsD jekBnA rdt_TableRow"
+          class="sc-fzoLsD jekBnA rdt_TableRow"
           id="row-10"
-          onClick={[Function]}
-          onDoubleClick={[Function]}
           role="row"
-          selected={false}
         >
           <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-1-10"
             role="cell"
@@ -545,7 +342,7 @@ exports[`DataTable should render pagination 1`] = `
             </div>
           </div>
           <div
-            className="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
             data-tag="___react-data-table-allow-propagation___"
             id="cell-2-10"
             role="cell"
@@ -561,43 +358,42 @@ exports[`DataTable should render pagination 1`] = `
     </div>
   </div>
   <nav
-    className="sc-fzoNJl dGqwdB rdt_Pagination"
+    class="sc-fzoNJl dGqwdB rdt_Pagination"
   >
     <span
-      className="sc-fznxKY sc-fznWOq ncoBp"
+      class="sc-fznxKY sc-fznWOq ncoBp"
     >
       Rows per page:
     </span>
     <div
-      className="sc-fzoyTs gVljTM"
+      class="sc-fzoyTs gVljTM"
     >
       <select
-        className="sc-fzqNqU gCcqTE"
-        defaultValue={10}
-        onChange={[Function]}
+        class="sc-fzqNqU gCcqTE"
       >
         <option
-          value={10}
+          selected=""
+          value="10"
         >
           10
         </option>
         <option
-          value={15}
+          value="15"
         >
           15
         </option>
         <option
-          value={20}
+          value="20"
         >
           20
         </option>
         <option
-          value={25}
+          value="25"
         >
           25
         </option>
         <option
-          value={30}
+          value="30"
         >
           30
         </option>
@@ -618,20 +414,19 @@ exports[`DataTable should render pagination 1`] = `
       </svg>
     </div>
     <span
-      className="sc-fznxKY sc-fznMAR jMFmnk"
+      class="sc-fznxKY sc-fznMAR jMFmnk"
     >
       1-10 of 11
     </span>
     <div
-      className="sc-fzpmMD ftIMtk"
+      class="sc-fzpmMD ftIMtk"
     >
       <button
-        aria-disabled={true}
+        aria-disabled="true"
         aria-label="First Page"
-        className="sc-fzoXWK embYcA"
-        disabled={true}
+        class="sc-fzoXWK embYcA"
+        disabled=""
         id="pagination-first-page"
-        onClick={[Function]}
         type="button"
       >
         <svg
@@ -652,12 +447,11 @@ exports[`DataTable should render pagination 1`] = `
         </svg>
       </button>
       <button
-        aria-disabled={true}
+        aria-disabled="true"
         aria-label="Previous Page"
-        className="sc-fzoXWK embYcA"
-        disabled={true}
+        class="sc-fzoXWK embYcA"
+        disabled=""
         id="pagination-previous-page"
-        onClick={[Function]}
         type="button"
       >
         <svg
@@ -678,12 +472,10 @@ exports[`DataTable should render pagination 1`] = `
         </svg>
       </button>
       <button
-        aria-disabled={false}
+        aria-disabled="false"
         aria-label="Next Page"
-        className="sc-fzoXWK embYcA"
-        disabled={false}
+        class="sc-fzoXWK embYcA"
         id="pagination-next-page"
-        onClick={[Function]}
         type="button"
       >
         <svg
@@ -704,12 +496,10 @@ exports[`DataTable should render pagination 1`] = `
         </svg>
       </button>
       <button
-        aria-disabled={false}
+        aria-disabled="false"
         aria-label="Last Page"
-        className="sc-fzoXWK embYcA"
-        disabled={false}
+        class="sc-fzoXWK embYcA"
         id="pagination-last-page"
-        onClick={[Function]}
         type="button"
       >
         <svg
@@ -731,5 +521,155 @@ exports[`DataTable should render pagination 1`] = `
       </button>
     </div>
   </nav>
+</div>
+`;
+
+exports[`DataTable renders 1`] = `
+<div
+  class="sc-fznxsB forRdO"
+>
+  <div
+    class="sc-fznWqX gnahTY"
+  >
+    <div
+      class="sc-AxjAm gIMaKV rdt_Table"
+      role="table"
+    >
+      <div
+        class="sc-AxirZ eBuPmJ rdt_TableHead"
+        role="rowgroup"
+      >
+        <div
+          class="sc-AxiKw cTEQON rdt_TableHeadRow"
+          role="row"
+        >
+          <div
+            class="sc-AxhCb sc-AxhUy sc-fzplWN HWHoi rdt_TableCol"
+          >
+            <div
+              class="sc-fznyAO cxtWCz rdt_TableCol_Sortable"
+              id="column-title"
+              role="button"
+              tabindex="0"
+            >
+              <div>
+                Title
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-AxhCb sc-AxhUy sc-fzplWN HWHoi rdt_TableCol"
+          >
+            <div
+              class="sc-fznyAO cxtWCz rdt_TableCol_Sortable"
+              id="column-year"
+              role="button"
+              tabindex="0"
+            >
+              <div>
+                Year
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-fzpjYC ieTOoW rdt_TableBody"
+        offset="250px"
+        role="rowgroup"
+      >
+        <div
+          class="sc-fzoLsD jekBnA rdt_TableRow"
+          id="row-1"
+          role="row"
+        >
+          <div
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            data-tag="___react-data-table-allow-propagation___"
+            id="cell-1-1"
+            role="cell"
+          >
+            <div
+              data-tag="___react-data-table-allow-propagation___"
+            >
+              Conan the Barbarian
+            </div>
+          </div>
+          <div
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            data-tag="___react-data-table-allow-propagation___"
+            id="cell-2-1"
+            role="cell"
+          >
+            <div
+              data-tag="___react-data-table-allow-propagation___"
+            >
+              1982
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-fzoLsD jekBnA rdt_TableRow"
+          id="row-2"
+          role="row"
+        >
+          <div
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            data-tag="___react-data-table-allow-propagation___"
+            id="cell-1-2"
+            role="cell"
+          >
+            <div
+              data-tag="___react-data-table-allow-propagation___"
+            >
+              Conan the Barbarian 2
+            </div>
+          </div>
+          <div
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            data-tag="___react-data-table-allow-propagation___"
+            id="cell-2-2"
+            role="cell"
+          >
+            <div
+              data-tag="___react-data-table-allow-propagation___"
+            >
+              1984
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-fzoLsD jekBnA rdt_TableRow"
+          id="row-3"
+          role="row"
+        >
+          <div
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            data-tag="___react-data-table-allow-propagation___"
+            id="cell-1-3"
+            role="cell"
+          >
+            <div
+              data-tag="___react-data-table-allow-propagation___"
+            >
+              Conan the Barbarian 3
+            </div>
+          </div>
+          <div
+            class="sc-AxhCb sc-AxhUy sc-AxgMl gbbhfF rdt_TableCell"
+            data-tag="___react-data-table-allow-propagation___"
+            id="cell-2-3"
+            role="cell"
+          >
+            <div
+              data-tag="___react-data-table-allow-propagation___"
+            >
+              1985
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;

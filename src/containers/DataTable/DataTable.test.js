@@ -1,30 +1,34 @@
 import React from "react";
-import renderer from "react-test-renderer";
+import { mount } from "enzyme";
 
 import { DataTable } from "./DataTable";
 
 describe("DataTable", () => {
-  it("should render", () => {
-    const data = [
+  let component;
+  let columnsStub;
+  let dataStub;
+
+  beforeEach(() => {
+    dataStub = [
       { id: 1, title: "Conan the Barbarian", year: "1982" },
       { id: 2, title: "Conan the Barbarian 2", year: "1984" },
       { id: 3, title: "Conan the Barbarian 3", year: "1985" }
     ];
 
-    const columns = [
+    columnsStub = [
       { id: 1, name: "Title", selector: "title" },
       { id: 2, name: "Year", selector: "year" }
     ];
 
-    const component = renderer.create(
-      <DataTable columns={columns} data={data} />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    component = mount(<DataTable columns={columnsStub} data={dataStub} />);
   });
 
-  it("should render pagination", () => {
-    const data = [
+  it("renders", () => {
+    expect(component.render()).toMatchSnapshot();
+  });
+
+  it("given big amount of data, renders with pagination", () => {
+    dataStub = [
       { id: 1, title: "Conan the Barbarian", year: "1982" },
       { id: 2, title: "Conan the Barbarian 2", year: "1984" },
       { id: 3, title: "Conan the Barbarian 3", year: "1985" },
@@ -38,15 +42,13 @@ describe("DataTable", () => {
       { id: 11, title: "Conan the Barbarian 2", year: "1984" }
     ];
 
-    const columns = [
+    columnsStub = [
       { id: 1, name: "Title", selector: "title" },
       { id: 2, name: "Year", selector: "year" }
     ];
 
-    const component = renderer.create(
-      <DataTable columns={columns} data={data} />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    component = mount(<DataTable columns={columnsStub} data={dataStub} />);
+
+    expect(component.render()).toMatchSnapshot();
   });
 });
