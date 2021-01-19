@@ -1,362 +1,78 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CheckboxDropdown should be able to select item from list 1`] = `
+exports[`CheckboxDropdown renders 1`] = `
 <div
-  className="sc-fzozJi cKvNky"
-  fontFamily="openSans"
-  size="normal"
+  class="sc-fzozJi cKvNky"
+  font-family="openSans"
 >
   <div
-    className="sc-fzoLsD egJkZq"
+    class="sc-fzoLsD egJkZq"
   >
     <button
-      className="sc-fzpans DPLmR sc-Axmtr kEnUsO"
+      class="sc-fzpans DPLmR sc-Axmtr kEnUsO"
       color=""
-      data-button-test={true}
-      onClick={[Function]}
+      data-button-test="true"
       type="button"
     >
       <span
-        className="sc-fznyAO sc-fznKkj juubTo"
-      >
-        Array [
-          "",
-          <span
-            className="sc-fzokOt jaaaQC"
-          >
-            1 selected
-          </span>,
-        ]
-      </span>
-      <span
-        className="sc-fznyAO etOYkZ sc-AxjAm jWlVxK lni lni-chevron-up"
-      />
-    </button>
-    <ul
-      className="sc-fzplWN jJnecp"
-      data-item-list-test={true}
-    >
-      <li
-        className="sc-fznZeY biVFou"
-      >
-        <label
-          className="sc-AxheI bIWrzC"
-        >
-          <input
-            checked={true}
-            className="sc-AxiKw iRBKSw"
-            data-checkbox-test={true}
-            onChange={[Function]}
-            type="checkbox"
-            value="1"
-          />
-          <div
-            checked={true}
-            className="sc-AxhCb cLwTNS"
-          >
-            <span
-              className="sc-AxhUy eEXwPQ sc-AxjAm jWlVxK lni lni-checkmark"
-            />
-          </div>
-          <span
-            className="sc-AxgMl aaWWq"
-          >
-            Item 1
-          </span>
-        </label>
-      </li>
-      <li
-        className="sc-fznZeY biVFou"
-      >
-        <label
-          className="sc-AxheI bIWrzC"
-        >
-          <input
-            checked={false}
-            className="sc-AxiKw iRBKSw"
-            data-checkbox-test={true}
-            onChange={[Function]}
-            type="checkbox"
-            value="2"
-          />
-          <div
-            checked={false}
-            className="sc-AxhCb eJojxy"
-          />
-          <span
-            className="sc-AxgMl aaWWq"
-          >
-            Item 2
-          </span>
-        </label>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`CheckboxDropdown should call default props onClick function when no onClick property is passed 1`] = `
-<div
-  className="sc-fzozJi cKvNky"
-  fontFamily="openSans"
-  size="normal"
->
-  <div
-    className="sc-fzoLsD egJkZq"
-  >
-    <button
-      className="sc-fzpans DPLmR sc-Axmtr kEnUsO"
-      color=""
-      data-button-test={true}
-      onClick={[Function]}
-      type="button"
-    >
-      
-      <span
-        className="sc-fznyAO sc-fznKkj juubTo"
-      >
-        
-      </span>
-      <span
-        className="sc-fznyAO etOYkZ sc-AxjAm jWlVxK lni lni-chevron-down"
-      />
-    </button>
-  </div>
-</div>
-`;
-
-exports[`CheckboxDropdown should have onClick listener 1`] = `
-<div
-  className="sc-fzozJi cKvNky"
-  fontFamily="openSans"
-  size="normal"
->
-  <div
-    className="sc-fzoLsD egJkZq"
-  >
-    <button
-      className="sc-fzpans DPLmR sc-Axmtr kEnUsO"
-      color=""
-      data-button-test={true}
-      onClick={[Function]}
-      type="button"
-    >
-      
-      <span
-        className="sc-fznyAO sc-fznKkj juubTo"
-      >
-        
-      </span>
-      <span
-        className="sc-fznyAO etOYkZ sc-AxjAm jWlVxK lni lni-chevron-down"
-      />
-    </button>
-  </div>
-</div>
-`;
-
-exports[`CheckboxDropdown should render 1`] = `
-<div
-  className="sc-fzozJi cKvNky"
-  fontFamily="openSans"
-  size="normal"
->
-  <div
-    className="sc-fzoLsD egJkZq"
-  >
-    <button
-      className="sc-fzpans DPLmR sc-Axmtr kEnUsO"
-      color=""
-      data-button-test={true}
-      onClick={[Function]}
-      type="button"
-    >
-      
-      <span
-        className="sc-fznyAO sc-fznKkj juubTo"
-      >
-        
-      </span>
-      <span
-        className="sc-fznyAO etOYkZ sc-AxjAm jWlVxK lni lni-chevron-down"
-      />
-    </button>
-  </div>
-</div>
-`;
-
-exports[`CheckboxDropdown should render in open state 1`] = `
-<div
-  className="sc-fzozJi cKvNky"
-  fontFamily="openSans"
-  size="normal"
->
-  <div
-    className="sc-fzoLsD egJkZq"
-  >
-    <button
-      className="sc-fzpans DPLmR sc-Axmtr kEnUsO"
-      color=""
-      data-button-test={true}
-      onClick={[Function]}
-      type="button"
-    >
-      
-      <span
-        className="sc-fznyAO sc-fznKkj juubTo"
-      >
-        
-        <span
-          className="sc-fzokOt jaaaQC"
-        >
-          0 selected
-        </span>
-      </span>
-      <span
-        className="sc-fznyAO etOYkZ sc-AxjAm jWlVxK lni lni-chevron-up"
-      />
-    </button>
-    <ul
-      className="sc-fzplWN jJnecp"
-      data-item-list-test={true}
-    >
-      <li
-        className="sc-fznZeY biVFou"
-      >
-        <label
-          className="sc-AxheI bIWrzC"
-        >
-          <input
-            checked={false}
-            className="sc-AxiKw iRBKSw"
-            data-checkbox-test={true}
-            onChange={[Function]}
-            type="checkbox"
-            value="1"
-          />
-          <div
-            checked={false}
-            className="sc-AxhCb eJojxy"
-          />
-          <span
-            className="sc-AxgMl aaWWq"
-          >
-            Item 1
-          </span>
-        </label>
-      </li>
-      <li
-        className="sc-fznZeY biVFou"
-      >
-        <label
-          className="sc-AxheI bIWrzC"
-        >
-          <input
-            checked={false}
-            className="sc-AxiKw iRBKSw"
-            data-checkbox-test={true}
-            onChange={[Function]}
-            type="checkbox"
-            value="2"
-          />
-          <div
-            checked={false}
-            className="sc-AxhCb eJojxy"
-          />
-          <span
-            className="sc-AxgMl aaWWq"
-          >
-            Item 2
-          </span>
-        </label>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`CheckboxDropdown should render label 1`] = `
-<div
-  className="sc-fzozJi cKvNky"
-  fontFamily="openSans"
-  size="normal"
->
-  <div
-    className="sc-fzoLsD egJkZq"
-  >
-    <button
-      className="sc-fzpans DPLmR sc-Axmtr kEnUsO"
-      color=""
-      data-button-test={true}
-      onClick={[Function]}
-      type="button"
-    >
-      
-      <span
-        className="sc-fznyAO sc-fznKkj juubTo"
+        class="sc-fznyAO sc-fznKkj juubTo"
       >
         hello
         <span
-          className="sc-fzokOt jaaaQC"
+          class="sc-fzokOt jaaaQC"
         >
           0 selected
         </span>
       </span>
       <span
-        className="sc-fznyAO etOYkZ sc-AxjAm jWlVxK lni lni-chevron-up"
+        class="sc-fznyAO etOYkZ sc-AxjAm jWlVxK lni lni-chevron-up"
       />
     </button>
     <ul
-      className="sc-fzplWN jJnecp"
-      data-item-list-test={true}
+      class="sc-fzplWN jJnecp"
+      data-item-list-test="true"
     >
       <li
-        className="sc-fznZeY biVFou"
+        class="sc-fznZeY biVFou"
       >
         <label
-          className="sc-AxheI bIWrzC"
+          class="sc-AxheI bIWrzC"
         >
           <input
-            checked={false}
-            className="sc-AxiKw iRBKSw"
-            data-checkbox-test={true}
-            onChange={[Function]}
+            class="sc-AxiKw iRBKSw"
+            data-checkbox-test="true"
             type="checkbox"
-            value="1"
+            value="some value"
           />
           <div
-            checked={false}
-            className="sc-AxhCb eJojxy"
+            class="sc-AxhCb eJojxy"
           />
           <span
-            className="sc-AxgMl aaWWq"
+            class="sc-AxgMl aaWWq"
           >
-            Item 1
+            Some item
           </span>
         </label>
       </li>
       <li
-        className="sc-fznZeY biVFou"
+        class="sc-fznZeY biVFou"
       >
         <label
-          className="sc-AxheI bIWrzC"
+          class="sc-AxheI bIWrzC"
         >
           <input
-            checked={false}
-            className="sc-AxiKw iRBKSw"
-            data-checkbox-test={true}
-            onChange={[Function]}
+            class="sc-AxiKw iRBKSw"
+            data-checkbox-test="true"
             type="checkbox"
-            value="2"
+            value="some other value"
           />
           <div
-            checked={false}
-            className="sc-AxhCb eJojxy"
+            class="sc-AxhCb eJojxy"
           />
           <span
-            className="sc-AxgMl aaWWq"
+            class="sc-AxgMl aaWWq"
           >
-            Item 2
+            Some other item
           </span>
         </label>
       </li>
@@ -365,90 +81,83 @@ exports[`CheckboxDropdown should render label 1`] = `
 </div>
 `;
 
-exports[`CheckboxDropdown should render react node label 1`] = `
+exports[`CheckboxDropdown should be able to select item from list 1`] = `
 <div
-  className="sc-fzozJi cKvNky"
-  fontFamily="openSans"
-  size="normal"
+  class="sc-fzozJi cKvNky"
+  font-family="openSans"
 >
   <div
-    className="sc-fzoLsD egJkZq"
+    class="sc-fzoLsD egJkZq"
   >
     <button
-      className="sc-fzpans DPLmR sc-Axmtr kEnUsO"
+      class="sc-fzpans DPLmR sc-Axmtr kEnUsO"
       color=""
-      data-button-test={true}
-      onClick={[Function]}
+      data-button-test="true"
       type="button"
     >
-      
       <span
-        className="sc-fznyAO sc-fznKkj juubTo"
+        class="sc-fznyAO sc-fznKkj juubTo"
       >
-        <div>
-          hello
-        </div>
+        hello
         <span
-          className="sc-fzokOt jaaaQC"
+          class="sc-fzokOt jaaaQC"
         >
-          0 selected
+          1 selected
         </span>
       </span>
       <span
-        className="sc-fznyAO etOYkZ sc-AxjAm jWlVxK lni lni-chevron-up"
+        class="sc-fznyAO etOYkZ sc-AxjAm jWlVxK lni lni-chevron-up"
       />
     </button>
     <ul
-      className="sc-fzplWN jJnecp"
-      data-item-list-test={true}
+      class="sc-fzplWN jJnecp"
+      data-item-list-test="true"
     >
       <li
-        className="sc-fznZeY biVFou"
+        class="sc-fznZeY biVFou"
       >
         <label
-          className="sc-AxheI bIWrzC"
+          class="sc-AxheI bIWrzC"
         >
           <input
-            checked={false}
-            className="sc-AxiKw iRBKSw"
-            data-checkbox-test={true}
-            onChange={[Function]}
+            class="sc-AxiKw iRBKSw"
+            data-checkbox-test="true"
             type="checkbox"
-            value="1"
+            value="some value"
           />
           <div
-            checked={false}
-            className="sc-AxhCb eJojxy"
-          />
-          <span
-            className="sc-AxgMl aaWWq"
+            class="sc-AxhCb cLwTNS"
           >
-            Item 1
+            <span
+              class="sc-AxhUy eEXwPQ sc-AxjAm jWlVxK lni lni-checkmark"
+            />
+          </div>
+          <span
+            class="sc-AxgMl aaWWq"
+          >
+            Some item
           </span>
         </label>
       </li>
       <li
-        className="sc-fznZeY biVFou"
+        class="sc-fznZeY biVFou"
       >
         <label
-          className="sc-AxheI bIWrzC"
+          class="sc-AxheI bIWrzC"
         >
           <input
-            checked={false}
-            className="sc-AxiKw iRBKSw"
-            data-checkbox-test={true}
-            onChange={[Function]}
+            class="sc-AxiKw iRBKSw"
+            data-checkbox-test="true"
             type="checkbox"
-            value="2"
+            value="some other value"
           />
           <div
-            checked={false}
-            className="sc-AxhCb eJojxy"
+            class="sc-AxhCb eJojxy"
           />
           <span
-            className="sc-AxgMl aaWWq"
+            class="sc-AxgMl aaWWq"
           >
-            Item 2
+            Some other item
           </span>
         </label>
       </li>
