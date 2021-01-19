@@ -26,7 +26,6 @@ export const TreeView = ({
 );
 
 TreeView.propTypes = {
-  /** Data for the tree */
   treeData: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
@@ -35,11 +34,8 @@ TreeView.propTypes = {
       children: PropTypes.array
     })
   ),
-  /** Handler function */
   onChange: PropTypes.func,
-  /** Determines if the items can be dragged or not */
   canDrag: PropTypes.bool,
-  /** Used for rendering additional node props, for example buttons */
   generateNodeProps: PropTypes.func
 };
 
