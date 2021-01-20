@@ -1,38 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tab should render correctly 1`] = `
+exports[`Tab renders 1`] = `
 <div
-  className="sc-AxjAm bYePpP"
-  fontFamily="openSans"
-  size="normal"
+  class="sc-AxjAm bYePpP"
+  font-family="openSans"
 >
   <div
-    className="sc-AxirZ cdrbwt"
-    onClick={[Function]}
+    class="sc-AxhCb DQqhh"
+    data-active-tab-test="false"
   >
     <span
-      className="sc-AxiKw jmlNFh"
+      class="sc-AxhUy iAhtg"
     >
-      Tab
-    </span>
-  </div>
-</div>
-`;
-
-exports[`Tab should render correctly in active state 1`] = `
-<div
-  className="sc-AxjAm bYePpP"
-  fontFamily="openSans"
-  size="normal"
->
-  <div
-    className="sc-AxirZ helBvh"
-    onClick={[Function]}
-  >
-    <span
-      className="sc-AxiKw jmlNFh"
-    >
-      Tab
+      Some text
     </span>
   </div>
 </div>

@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 import { Typography } from "../Typography/Typography";
+import { Icon } from "../Icon/Icon";
 
 const Container = styled.div`
   display: flex;
@@ -25,8 +26,8 @@ const Text = styled.span`
 
 export const Tab = ({ text, icon, active, onClick }) => (
   <Typography fontFamily="openSans">
-    <Container active={active} onClick={onClick}>
-      {icon && icon}
+    <Container active={active} onClick={onClick} data-active-tab-test={active}>
+      {icon && <Icon name={icon} data-icon-test />}
 
       <Text>{text}</Text>
     </Container>
@@ -35,13 +36,13 @@ export const Tab = ({ text, icon, active, onClick }) => (
 
 Tab.propTypes = {
   text: PropTypes.string,
-  icon: PropTypes.node,
+  icon: PropTypes.string,
   active: PropTypes.bool,
   onClick: PropTypes.func.isRequired
 };
 
 Tab.defaultProps = {
   text: "",
-  icon: null,
+  icon: "",
   active: false
 };
