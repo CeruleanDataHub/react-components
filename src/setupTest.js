@@ -3,6 +3,7 @@ import React from "react";
 import "jest-enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import Highcharts from "highcharts";
+// import "./test-helpers/toMatchHtmlSnapshot";
 
 configure({ adapter: new Adapter() });
 
