@@ -42,6 +42,7 @@ export const Select = forwardRef(
           {mapOptions(children)}
         </optgroup>
       ));
+
     return (
       <SelectContainer
         className={className}
@@ -56,9 +57,7 @@ export const Select = forwardRef(
 );
 
 Select.propTypes = {
-  /** Currently selected option */
   selectedOption: PropTypes.string,
-  /** Select options */
   items: PropTypes.oneOfType([
     PropTypes.arrayOf(
       PropTypes.shape({
@@ -82,7 +81,6 @@ Select.propTypes = {
       })
     )
   ]),
-  /** onChange handler function */
   onChange: PropTypes.func,
   className: PropTypes.string
 };
