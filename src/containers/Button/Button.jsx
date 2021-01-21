@@ -37,16 +37,11 @@ export const Button = forwardRef(
 );
 
 Button.propTypes = {
-  /** Children of the button */
   children: PropTypes.node,
   className: PropTypes.string,
-  /** Handler function */
   onClick: PropTypes.func.isRequired,
-  /** Color of the button */
   color: PropTypes.string,
-  /** Button type */
   type: PropTypes.string,
-  /** Extend styles, property is from styled components */
   as: PropTypes.oneOfType([
     PropTypes.func,
     PropTypes.string,
