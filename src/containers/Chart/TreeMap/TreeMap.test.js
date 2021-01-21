@@ -80,18 +80,18 @@ describe("Tree Map", () => {
   it("should render tree map", () => {
     const component = mount(<TreeMap />);
 
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 
   it("should render tree map with data", () => {
     const component = mount(<TreeMap series={series} />);
 
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 
   it("should render tree map with title and data", () => {
     const component = mount(<TreeMap title="Chart" series={series} />);
 
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 });

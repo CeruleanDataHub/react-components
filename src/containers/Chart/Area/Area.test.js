@@ -7,7 +7,7 @@ describe("Area", () => {
   it("should render chart", () => {
     const component = mount(<Area />);
 
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 
   it("should render chart with simple data", () => {
@@ -33,6 +33,6 @@ describe("Area", () => {
       <Area title="Chart" xAxis={xAxis} series={series} />
     );
 
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 });

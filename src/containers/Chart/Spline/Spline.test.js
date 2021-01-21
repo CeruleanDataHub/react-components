@@ -7,7 +7,7 @@ describe("Spline", () => {
   it("should render chart", () => {
     const component = mount(<Spline />);
 
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 
   it("should render chart with simple data", () => {
@@ -33,6 +33,6 @@ describe("Spline", () => {
       <Spline title="Chart" xAxis={xAxis} series={series} />
     );
 
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 });

@@ -33,12 +33,12 @@ describe("Heatmap", () => {
   it("should render heatmap", () => {
     const component = mount(<Heatmap />);
 
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 
   it("should render heatmap with data", () => {
     const component = mount(<Heatmap data={data} />);
 
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 });

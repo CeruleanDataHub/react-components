@@ -11,6 +11,6 @@ describe("Header", () => {
   });
 
   it("renders", () => {
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 });

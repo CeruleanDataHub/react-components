@@ -26,7 +26,7 @@ describe("CheckboxDropdown", () => {
   });
 
   it("renders", () => {
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 
   it("does not call onClick yet", () => {
@@ -45,6 +45,6 @@ describe("CheckboxDropdown", () => {
       .first()
       .simulate("change");
 
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 });

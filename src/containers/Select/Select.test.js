@@ -13,7 +13,7 @@ describe("Select", () => {
   });
 
   it("renders", () => {
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 
   it("has an option with value as text", () => {

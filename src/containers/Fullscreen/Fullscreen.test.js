@@ -14,7 +14,7 @@ describe("Fullscreen", () => {
   });
 
   it("should render", () => {
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 
   it("does not call onClick yet", () => {

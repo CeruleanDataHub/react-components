@@ -13,7 +13,7 @@ describe("Tab", () => {
   });
 
   it("renders", () => {
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 
   it("should not have icon", () => {

@@ -7,7 +7,7 @@ describe("Line", () => {
   it("should render line chart", () => {
     const component = mount(<Line />);
 
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 
   describe("renders", () => {
@@ -42,7 +42,7 @@ describe("Line", () => {
     it("with simple data", () => {
       const component = mount(<Line xAxis={xAxisStub} series={seriesStub} />);
 
-      expect(component.render()).toMatchSnapshot();
+      expect(component).toMatchHtmlSnapshot();
     });
 
     it("without legend", () => {
@@ -50,7 +50,7 @@ describe("Line", () => {
         <Line xAxis={xAxisStub} series={seriesStub} options={optionsStub} />
       );
 
-      expect(component.render()).toMatchSnapshot();
+      expect(component).toMatchHtmlSnapshot();
     });
   });
 });

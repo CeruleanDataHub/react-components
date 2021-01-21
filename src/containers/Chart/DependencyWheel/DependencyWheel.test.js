@@ -32,13 +32,13 @@ const series = [
 describe("Dependency Wheel", () => {
   it("should render chart", () => {
     const component = mount(<DependencyWheel />);
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 
   it("should render chart with data and title", () => {
     const component = mount(
       <DependencyWheel series={series} title="Dependency wheel" />
     );
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 });

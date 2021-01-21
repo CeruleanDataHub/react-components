@@ -28,18 +28,18 @@ describe("Semi Donut", () => {
   it("should render chart", () => {
     const component = mount(<SemiDonut />);
 
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 
   it("should render chart with data", () => {
     const component = mount(<SemiDonut series={series} />);
 
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 
   it("should render chart with title and data", () => {
     const component = mount(<SemiDonut title="Chart" series={series} />);
 
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 });

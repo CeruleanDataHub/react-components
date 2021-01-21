@@ -11,6 +11,6 @@ describe("Grid", () => {
       </Grid>
     );
 
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 });

@@ -7,7 +7,7 @@ describe("Chart", () => {
   it("should render chart", () => {
     const component = mount(<Chart />);
 
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 
   it("should render chart with simple data", () => {
@@ -31,7 +31,7 @@ describe("Chart", () => {
 
     const component = mount(<Chart xAxis={xAxis} series={series} />);
 
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 
   it("should render chart with custom options", () => {
@@ -91,6 +91,6 @@ describe("Chart", () => {
       />
     );
 
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 });

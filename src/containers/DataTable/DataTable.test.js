@@ -24,7 +24,7 @@ describe("DataTable", () => {
   });
 
   it("renders", () => {
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 
   it("given big amount of data, renders with pagination", () => {
@@ -49,6 +49,6 @@ describe("DataTable", () => {
 
     component = mount(<DataTable columns={columnsStub} data={dataStub} />);
 
-    expect(component.render()).toMatchSnapshot();
+    expect(component).toMatchHtmlSnapshot();
   });
 });
