@@ -1,46 +1,50 @@
 import { mount } from "enzyme";
-import toJson from "enzyme-to-json";
 import React from "react";
-import renderer from "react-test-renderer";
 
 import { Select } from "./Select";
 
 describe("Select", () => {
-  it("should render", () => {
-    const component = renderer.create(
-      <Select items={[{ id: "1", value: "test" }]} />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+  let component;
+  let itemsStub;
+
+  beforeEach(() => {
+    itemsStub = [{ id: "1", value: "some value" }];
+    component = mount(<Select items={itemsStub} />);
   });
 
-  it("should render with name", () => {
-    const component = renderer.create(
-      <Select items={[{ id: "1", value: "test", name: "test with name" }]} />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+  it("renders", () => {
+    expect(component.render()).toMatchSnapshot();
   });
 
-  it("should render selected option", () => {
-    const component = renderer.create(
-      <Select items={[{ id: "1", value: "test" }]} selectedOption="test" />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+  it("has an option with value as text", () => {
+    expect(component.find("option")).toHaveText("some value");
   });
 
-  it("should render option groups", () => {
-    const items = [
+  it("given item with name, has an option with name as text", () => {
+    component = mount(
+      <Select items={[{ id: "1", value: "some value", name: "some name" }]} />
+    );
+
+    expect(component.find("option")).toHaveText("some name");
+  });
+
+  it("given selected option, has option selected", () => {
+    component = mount(<Select selectedOption="some selected option" />);
+
+    expect(component.find("select")).toHaveValue("some selected option");
+  });
+
+  it("given items group, has options grouped", () => {
+    const itemsGroupStub = [
       {
-        group: "Group 1",
+        group: "some group",
         children: [
-          { id: "1", value: "Label 1" },
-          { id: "2", value: "Label 2" }
+          { id: "1", value: "some value" },
+          { id: "2", value: "some other value" }
         ]
       },
       {
-        group: "Group 2",
+        group: "some other group",
         children: [
           {
             id: "3",
@@ -50,34 +54,26 @@ describe("Select", () => {
         ]
       }
     ];
-    const component = renderer.create(
-      <Select items={items} selectedOption="Label 1" />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+
+    component = mount(<Select items={itemsGroupStub} />);
+
+    expect(component.find("optgroup")).toExist();
   });
 
-  it("should call onChange handler", () => {
-    const handleChange = jest.fn();
-    const component = mount(
-      <Select items={[{ id: "1", value: "test" }]} onChange={handleChange} />
-    );
-    component.simulate("change");
-    expect(handleChange).toHaveBeenCalled();
+  it("given onChange, when called, calls callback function", () => {
+    const onChangeMock = jest.fn();
+    component = mount(<Select onChange={onChangeMock} />);
+
+    component.props().onChange();
+
+    expect(onChangeMock).toHaveBeenCalled();
   });
 
-  it("should be able to call the default onChange function when no onChange callback provided", () => {
-    const component = mount(<Select items={[{ id: "1", value: "test" }]} />);
-    component.simulate("change");
-
-    expect(toJson(component)).toMatchSnapshot();
-  });
-
-  it("should render the option with spaces", () => {
-    const component = renderer.create(
-      <Select items={[{ id: "1", indentLevel: 2, value: "test" }]} />
+  it("given items with indentation, has an option with correct amount of non-breaking spaces prefixed to the value", () => {
+    component = mount(
+      <Select items={[{ id: "1", indentLevel: 2, value: "some value" }]} />
     );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+
+    expect(component.find("option")).toHaveText("  some value");
   });
 });

@@ -1,133 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Select should be able to call the default onChange function when no onChange callback provided 1`] = `
-<ForwardRef
-  className=""
-  items={
-    Array [
-      Object {
-        "id": "1",
-        "value": "test",
-      },
-    ]
-  }
-  onChange={[Function]}
-  selectedOption=""
->
-  <styled.select
-    className=""
-    onChange={[Function]}
-    value=""
-  >
-    <select
-      className="sc-AxjAm fPSBDO"
-      onChange={[Function]}
-      value=""
-    >
-      <option
-        id="1"
-        key="1"
-        value="test"
-      >
-        test
-      </option>
-    </select>
-  </styled.select>
-</ForwardRef>
-`;
-
-exports[`Select should render 1`] = `
+exports[`Select renders 1`] = `
 <select
-  className="sc-AxjAm fPSBDO"
-  onChange={[Function]}
-  value=""
+  class="sc-AxjAm fPSBDO"
 >
   <option
     id="1"
-    value="test"
+    value="some value"
   >
-    test
-  </option>
-</select>
-`;
-
-exports[`Select should render option groups 1`] = `
-<select
-  className="sc-AxjAm fPSBDO"
-  onChange={[Function]}
-  value="Label 1"
->
-  <optgroup
-    label="Group 1"
-  >
-    <option
-      id="1"
-      value="Label 1"
-    >
-      Label 1
-    </option>
-    <option
-      id="2"
-      value="Label 2"
-    >
-      Label 2
-    </option>
-  </optgroup>
-  <optgroup
-    label="Group 2"
-  >
-    <option
-      id="3"
-      value="Extra long line of text which will overflow the select container."
-    >
-      Extra long line of text which will overflow the select container.
-    </option>
-  </optgroup>
-</select>
-`;
-
-exports[`Select should render selected option 1`] = `
-<select
-  className="sc-AxjAm fPSBDO"
-  onChange={[Function]}
-  value="test"
->
-  <option
-    id="1"
-    value="test"
-  >
-    test
-  </option>
-</select>
-`;
-
-exports[`Select should render the option with spaces 1`] = `
-<select
-  className="sc-AxjAm fPSBDO"
-  onChange={[Function]}
-  value=""
->
-  <option
-    id="1"
-    value="test"
-  >
-      
-    test
-  </option>
-</select>
-`;
-
-exports[`Select should render with name 1`] = `
-<select
-  className="sc-AxjAm fPSBDO"
-  onChange={[Function]}
-  value=""
->
-  <option
-    id="1"
-    value="test"
-  >
-    test with name
+    some value
   </option>
 </select>
 `;
