@@ -1,5 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Navigation renders 1`] = `
+<nav
+  class="sc-fzoLsD jdTPUr"
+>
+  <button
+    class="sc-fzpans doEGPR sc-AxmLO louqpj"
+    color=""
+    data-button-test="true"
+    type="button"
+  >
+    <span
+      class="sc-fzplWN jHzZQp sc-AxjAm jWlVxK lni lni-close"
+    />
+  </button>
+  Some children
+</nav>
+`;
+
 exports[`Navigation should call default props onMenuToggle function when no onMenuToggle property is passed 1`] = `
 <nav
   class="sc-fzoLsD jdTPUr"
@@ -239,23 +257,6 @@ exports[`Navigation should have menu toggle event listener 1`] = `
       </div>
     </li>
   </ul>
-</nav>
-`;
-
-exports[`Navigation should render 1`] = `
-<nav
-  class="sc-fzoLsD jdTPUr"
->
-  <button
-    class="sc-fzpans doEGPR sc-AxmLO louqpj"
-    color=""
-    data-button-test="true"
-    type="button"
-  >
-    <span
-      class="sc-fzplWN jHzZQp sc-AxjAm jWlVxK lni lni-close"
-    />
-  </button>
 </nav>
 `;
 

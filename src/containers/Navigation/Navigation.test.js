@@ -45,8 +45,8 @@ const menuItems = [
 ];
 
 describe("Navigation", () => {
-  it("should render", () => {
-    const component = mount(<Navigation />);
+  it("renders", () => {
+    const component = mount(<Navigation>Some children</Navigation>);
 
     expect(component).toMatchHtmlSnapshot();
   });
