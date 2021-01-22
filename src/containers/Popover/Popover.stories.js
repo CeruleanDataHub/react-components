@@ -64,6 +64,7 @@ export const PopoverStory = () => {
         >
           Toggle popover
         </button>
+
         <Popover
           isOpen={popoverOpen}
           containerRef={containerRef}
@@ -72,22 +73,30 @@ export const PopoverStory = () => {
           <PopoverContentList>
             <ListWrapper>
               <PopoverContentListItem>Profile</PopoverContentListItem>
+
               <PopoverContentListItem>Settings</PopoverContentListItem>
+
               <ListDivider />
+
               <PopoverContentListItem>
                 <Icon name="rocket" as={ListItemIcon} />
                 Manage devices
               </PopoverContentListItem>
+
               <PopoverContentListItem>
                 <Icon name="user" as={ListItemIcon} />
                 Manage users
               </PopoverContentListItem>
+
               <PopoverContentListItem>
                 <Icon name="users" as={ListItemIcon} />
                 Manage roles
               </PopoverContentListItem>
+
               <ListDivider />
+
               <PopoverContentListItem>Help</PopoverContentListItem>
+
               <PopoverContentListItem>Log out</PopoverContentListItem>
             </ListWrapper>
           </PopoverContentList>
@@ -106,6 +115,7 @@ export const PopoverOpenStory = () => {
       <button type="button" ref={containerRef}>
         Popover is open under the button
       </button>
+
       <Popover isOpen containerRef={containerRef} popoverRef={popoverRef}>
         Popover
       </Popover>

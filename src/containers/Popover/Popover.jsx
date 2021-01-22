@@ -70,21 +70,17 @@ export const Popover = ({ isOpen, containerRef, popoverRef, children }) => {
 };
 
 Popover.propTypes = {
-  /** Defines whether to render the popover */
   isOpen: PropTypes.bool,
-  /** Reference for container element  */
   containerRef: PropTypes.oneOfType([
     PropTypes.func,
     // eslint-disable-next-line no-undef
     PropTypes.shape({ current: PropTypes.instanceOf(Element) })
   ]),
-  /** Reference for popover element */
   popoverRef: PropTypes.oneOfType([
     PropTypes.func,
     // eslint-disable-next-line no-undef
     PropTypes.shape({ current: PropTypes.instanceOf(Element) })
   ]),
-  /** React node */
   children: PropTypes.node
 };
 
