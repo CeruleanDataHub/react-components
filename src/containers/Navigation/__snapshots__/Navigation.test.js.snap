@@ -2,42 +2,39 @@
 
 exports[`Navigation should call default props onMenuToggle function when no onMenuToggle property is passed 1`] = `
 <nav
-  className="sc-fzoLsD jdTPUr"
+  class="sc-fzoLsD jdTPUr"
 >
   <button
-    className="sc-fzpans doEGPR sc-AxmLO louqpj"
+    class="sc-fzpans doEGPR sc-AxmLO louqpj"
     color=""
-    data-button-test={true}
-    onClick={[Function]}
+    data-button-test="true"
     type="button"
   >
-    
     <span
-      className="sc-fzplWN jHzZQp sc-AxjAm jWlVxK lni lni-close"
+      class="sc-fzplWN jHzZQp sc-AxjAm jWlVxK lni lni-close"
     />
   </button>
   <ul
-    className="sc-AxhUy ijoyzq"
+    class="sc-AxhUy ijoyzq"
   >
     <li
-      className="sc-AxgMl fdAvPR"
+      class="sc-AxgMl fdAvPR"
     >
       <div
-        className="sc-AxiKw iCNkRr"
-        fontFamily="exo"
-        size="normal"
+        class="sc-AxiKw iCNkRr"
+        font-family="exo"
       >
         <a
           href="#home"
         >
           <div
-            className="sc-AxheI dkiJtT"
+            class="sc-AxheI dkiJtT"
           >
             <span
-              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
+              class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
             />
             <span
-              className="sc-Axmtr hZKuXu menu-text"
+              class="sc-Axmtr hZKuXu menu-text"
             >
               Home
             </span>
@@ -46,24 +43,23 @@ exports[`Navigation should call default props onMenuToggle function when no onMe
       </div>
     </li>
     <li
-      className="sc-AxgMl fdAvPR"
+      class="sc-AxgMl fdAvPR"
     >
       <div
-        className="sc-AxiKw iCNkRr"
-        fontFamily="exo"
-        size="normal"
+        class="sc-AxiKw iCNkRr"
+        font-family="exo"
       >
         <a
           href="#users"
         >
           <div
-            className="sc-AxheI dkiJtT"
+            class="sc-AxheI dkiJtT"
           >
             <span
-              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-users"
+              class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-users"
             />
             <span
-              className="sc-Axmtr hZKuXu menu-text"
+              class="sc-Axmtr hZKuXu menu-text"
             >
               Users
             </span>
@@ -72,24 +68,23 @@ exports[`Navigation should call default props onMenuToggle function when no onMe
       </div>
     </li>
     <li
-      className="sc-AxgMl fdAvPR"
+      class="sc-AxgMl fdAvPR"
     >
       <div
-        className="sc-AxiKw iCNkRr"
-        fontFamily="exo"
-        size="normal"
+        class="sc-AxiKw iCNkRr"
+        font-family="exo"
       >
         <a
           href="#devices"
         >
           <div
-            className="sc-AxheI dkiJtT"
+            class="sc-AxheI dkiJtT"
           >
             <span
-              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-rocket"
+              class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-rocket"
             />
             <span
-              className="sc-Axmtr hZKuXu menu-text"
+              class="sc-Axmtr hZKuXu menu-text"
             >
               Devices
             </span>
@@ -98,24 +93,23 @@ exports[`Navigation should call default props onMenuToggle function when no onMe
       </div>
     </li>
     <li
-      className="sc-AxgMl fdAvPR"
+      class="sc-AxgMl fdAvPR"
     >
       <div
-        className="sc-AxiKw iCNkRr"
-        fontFamily="exo"
-        size="normal"
+        class="sc-AxiKw iCNkRr"
+        font-family="exo"
       >
         <a
           href="#costs"
         >
           <div
-            className="sc-AxheI dkiJtT"
+            class="sc-AxheI dkiJtT"
           >
             <span
-              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-briefcase"
+              class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-briefcase"
             />
             <span
-              className="sc-Axmtr hZKuXu menu-text"
+              class="sc-Axmtr hZKuXu menu-text"
             >
               Costs
             </span>
@@ -129,42 +123,39 @@ exports[`Navigation should call default props onMenuToggle function when no onMe
 
 exports[`Navigation should have menu toggle event listener 1`] = `
 <nav
-  className="sc-fzoLsD jdTPUr"
+  class="sc-fzoLsD jdTPUr"
 >
   <button
-    className="sc-fzpans doEGPR sc-AxmLO louqpj"
+    class="sc-fzpans doEGPR sc-AxmLO louqpj"
     color=""
-    data-button-test={true}
-    onClick={[Function]}
+    data-button-test="true"
     type="button"
   >
-    
     <span
-      className="sc-fzplWN jHzZQp sc-AxjAm jWlVxK lni lni-close"
+      class="sc-fzplWN jHzZQp sc-AxjAm jWlVxK lni lni-close"
     />
   </button>
   <ul
-    className="sc-AxhUy ijoyzq"
+    class="sc-AxhUy ijoyzq"
   >
     <li
-      className="sc-AxgMl fdAvPR"
+      class="sc-AxgMl fdAvPR"
     >
       <div
-        className="sc-AxiKw iCNkRr"
-        fontFamily="exo"
-        size="normal"
+        class="sc-AxiKw iCNkRr"
+        font-family="exo"
       >
         <a
           href="#home"
         >
           <div
-            className="sc-AxheI dkiJtT"
+            class="sc-AxheI dkiJtT"
           >
             <span
-              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
+              class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
             />
             <span
-              className="sc-Axmtr hZKuXu menu-text"
+              class="sc-Axmtr hZKuXu menu-text"
             >
               Home
             </span>
@@ -173,24 +164,23 @@ exports[`Navigation should have menu toggle event listener 1`] = `
       </div>
     </li>
     <li
-      className="sc-AxgMl fdAvPR"
+      class="sc-AxgMl fdAvPR"
     >
       <div
-        className="sc-AxiKw iCNkRr"
-        fontFamily="exo"
-        size="normal"
+        class="sc-AxiKw iCNkRr"
+        font-family="exo"
       >
         <a
           href="#users"
         >
           <div
-            className="sc-AxheI dkiJtT"
+            class="sc-AxheI dkiJtT"
           >
             <span
-              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-users"
+              class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-users"
             />
             <span
-              className="sc-Axmtr hZKuXu menu-text"
+              class="sc-Axmtr hZKuXu menu-text"
             >
               Users
             </span>
@@ -199,24 +189,23 @@ exports[`Navigation should have menu toggle event listener 1`] = `
       </div>
     </li>
     <li
-      className="sc-AxgMl fdAvPR"
+      class="sc-AxgMl fdAvPR"
     >
       <div
-        className="sc-AxiKw iCNkRr"
-        fontFamily="exo"
-        size="normal"
+        class="sc-AxiKw iCNkRr"
+        font-family="exo"
       >
         <a
           href="#devices"
         >
           <div
-            className="sc-AxheI dkiJtT"
+            class="sc-AxheI dkiJtT"
           >
             <span
-              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-rocket"
+              class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-rocket"
             />
             <span
-              className="sc-Axmtr hZKuXu menu-text"
+              class="sc-Axmtr hZKuXu menu-text"
             >
               Devices
             </span>
@@ -225,24 +214,23 @@ exports[`Navigation should have menu toggle event listener 1`] = `
       </div>
     </li>
     <li
-      className="sc-AxgMl fdAvPR"
+      class="sc-AxgMl fdAvPR"
     >
       <div
-        className="sc-AxiKw iCNkRr"
-        fontFamily="exo"
-        size="normal"
+        class="sc-AxiKw iCNkRr"
+        font-family="exo"
       >
         <a
           href="#costs"
         >
           <div
-            className="sc-AxheI dkiJtT"
+            class="sc-AxheI dkiJtT"
           >
             <span
-              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-briefcase"
+              class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-briefcase"
             />
             <span
-              className="sc-Axmtr hZKuXu menu-text"
+              class="sc-Axmtr hZKuXu menu-text"
             >
               Costs
             </span>
@@ -256,62 +244,56 @@ exports[`Navigation should have menu toggle event listener 1`] = `
 
 exports[`Navigation should render 1`] = `
 <nav
-  className="sc-fzoLsD jdTPUr"
+  class="sc-fzoLsD jdTPUr"
 >
   <button
-    className="sc-fzpans doEGPR sc-AxmLO louqpj"
+    class="sc-fzpans doEGPR sc-AxmLO louqpj"
     color=""
-    data-button-test={true}
-    onClick={[Function]}
+    data-button-test="true"
     type="button"
   >
-    
     <span
-      className="sc-fzplWN jHzZQp sc-AxjAm jWlVxK lni lni-close"
+      class="sc-fzplWN jHzZQp sc-AxjAm jWlVxK lni lni-close"
     />
   </button>
-  
 </nav>
 `;
 
 exports[`Navigation should render children menu 1`] = `
 <nav
-  className="sc-fzoLsD jdTPUr"
+  class="sc-fzoLsD jdTPUr"
 >
   <button
-    className="sc-fzpans doEGPR sc-AxmLO louqpj"
+    class="sc-fzpans doEGPR sc-AxmLO louqpj"
     color=""
-    data-button-test={true}
-    onClick={[Function]}
+    data-button-test="true"
     type="button"
   >
-    
     <span
-      className="sc-fzplWN jHzZQp sc-AxjAm jWlVxK lni lni-close"
+      class="sc-fzplWN jHzZQp sc-AxjAm jWlVxK lni lni-close"
     />
   </button>
   <ul
-    className="sc-AxhUy ijoyzq"
+    class="sc-AxhUy ijoyzq"
   >
     <li
-      className="sc-AxgMl fdAvPR"
+      class="sc-AxgMl fdAvPR"
     >
       <div
-        className="sc-AxiKw iCNkRr"
-        fontFamily="exo"
-        size="normal"
+        class="sc-AxiKw iCNkRr"
+        font-family="exo"
       >
         <a
           href="#home"
         >
           <div
-            className="sc-AxheI dkiJtT"
+            class="sc-AxheI dkiJtT"
           >
             <span
-              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
+              class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
             />
             <span
-              className="sc-Axmtr hZKuXu menu-text"
+              class="sc-Axmtr hZKuXu menu-text"
             >
               Home
             </span>
@@ -320,24 +302,23 @@ exports[`Navigation should render children menu 1`] = `
       </div>
     </li>
     <li
-      className="sc-AxgMl fdAvPR"
+      class="sc-AxgMl fdAvPR"
     >
       <div
-        className="sc-AxiKw iCNkRr"
-        fontFamily="exo"
-        size="normal"
+        class="sc-AxiKw iCNkRr"
+        font-family="exo"
       >
         <a
           href="#users"
         >
           <div
-            className="sc-AxheI dkiJtT"
+            class="sc-AxheI dkiJtT"
           >
             <span
-              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-users"
+              class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-users"
             />
             <span
-              className="sc-Axmtr hZKuXu menu-text"
+              class="sc-Axmtr hZKuXu menu-text"
             >
               Users
             </span>
@@ -346,24 +327,23 @@ exports[`Navigation should render children menu 1`] = `
       </div>
     </li>
     <li
-      className="sc-AxgMl fdAvPR"
+      class="sc-AxgMl fdAvPR"
     >
       <div
-        className="sc-AxiKw iCNkRr"
-        fontFamily="exo"
-        size="normal"
+        class="sc-AxiKw iCNkRr"
+        font-family="exo"
       >
         <a
           href="#devices"
         >
           <div
-            className="sc-AxheI dkiJtT"
+            class="sc-AxheI dkiJtT"
           >
             <span
-              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-rocket"
+              class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-rocket"
             />
             <span
-              className="sc-Axmtr hZKuXu menu-text"
+              class="sc-Axmtr hZKuXu menu-text"
             >
               Devices
             </span>
@@ -372,24 +352,23 @@ exports[`Navigation should render children menu 1`] = `
       </div>
     </li>
     <li
-      className="sc-AxgMl fdAvPR"
+      class="sc-AxgMl fdAvPR"
     >
       <div
-        className="sc-AxiKw iCNkRr"
-        fontFamily="exo"
-        size="normal"
+        class="sc-AxiKw iCNkRr"
+        font-family="exo"
       >
         <a
           href="#costs"
         >
           <div
-            className="sc-AxheI dkiJtT"
+            class="sc-AxheI dkiJtT"
           >
             <span
-              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-briefcase"
+              class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-briefcase"
             />
             <span
-              className="sc-Axmtr hZKuXu menu-text"
+              class="sc-Axmtr hZKuXu menu-text"
             >
               Costs
             </span>
@@ -403,42 +382,39 @@ exports[`Navigation should render children menu 1`] = `
 
 exports[`Navigation should render children menu closed when given appropriate property 1`] = `
 <nav
-  className="sc-fzoLsD jdTPUr"
+  class="sc-fzoLsD jdTPUr"
 >
   <button
-    className="sc-fzpans doEGPR sc-AxmLO louqpj"
+    class="sc-fzpans doEGPR sc-AxmLO louqpj"
     color=""
-    data-button-test={true}
-    onClick={[Function]}
+    data-button-test="true"
     type="button"
   >
-    
     <span
-      className="sc-fzplWN jHzZQp sc-AxjAm jWlVxK lni lni-menu"
+      class="sc-fzplWN jHzZQp sc-AxjAm jWlVxK lni lni-menu"
     />
   </button>
   <ul
-    className="sc-AxhUy ijoyzq"
+    class="sc-AxhUy ijoyzq"
   >
     <li
-      className="sc-AxgMl fdAvPR"
+      class="sc-AxgMl fdAvPR"
     >
       <div
-        className="sc-AxiKw iCNkRr"
-        fontFamily="exo"
-        size="normal"
+        class="sc-AxiKw iCNkRr"
+        font-family="exo"
       >
         <a
           href="#home"
         >
           <div
-            className="sc-AxheI dkiJtT"
+            class="sc-AxheI dkiJtT"
           >
             <span
-              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
+              class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
             />
             <span
-              className="sc-Axmtr hZKuXu menu-text"
+              class="sc-Axmtr hZKuXu menu-text"
             >
               Home
             </span>
@@ -447,24 +423,23 @@ exports[`Navigation should render children menu closed when given appropriate pr
       </div>
     </li>
     <li
-      className="sc-AxgMl fdAvPR"
+      class="sc-AxgMl fdAvPR"
     >
       <div
-        className="sc-AxiKw iCNkRr"
-        fontFamily="exo"
-        size="normal"
+        class="sc-AxiKw iCNkRr"
+        font-family="exo"
       >
         <a
           href="#users"
         >
           <div
-            className="sc-AxheI dkiJtT"
+            class="sc-AxheI dkiJtT"
           >
             <span
-              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-users"
+              class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-users"
             />
             <span
-              className="sc-Axmtr hZKuXu menu-text"
+              class="sc-Axmtr hZKuXu menu-text"
             >
               Users
             </span>
@@ -473,24 +448,23 @@ exports[`Navigation should render children menu closed when given appropriate pr
       </div>
     </li>
     <li
-      className="sc-AxgMl fdAvPR"
+      class="sc-AxgMl fdAvPR"
     >
       <div
-        className="sc-AxiKw iCNkRr"
-        fontFamily="exo"
-        size="normal"
+        class="sc-AxiKw iCNkRr"
+        font-family="exo"
       >
         <a
           href="#devices"
         >
           <div
-            className="sc-AxheI dkiJtT"
+            class="sc-AxheI dkiJtT"
           >
             <span
-              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-rocket"
+              class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-rocket"
             />
             <span
-              className="sc-Axmtr hZKuXu menu-text"
+              class="sc-Axmtr hZKuXu menu-text"
             >
               Devices
             </span>
@@ -499,24 +473,23 @@ exports[`Navigation should render children menu closed when given appropriate pr
       </div>
     </li>
     <li
-      className="sc-AxgMl fdAvPR"
+      class="sc-AxgMl fdAvPR"
     >
       <div
-        className="sc-AxiKw iCNkRr"
-        fontFamily="exo"
-        size="normal"
+        class="sc-AxiKw iCNkRr"
+        font-family="exo"
       >
         <a
           href="#costs"
         >
           <div
-            className="sc-AxheI dkiJtT"
+            class="sc-AxheI dkiJtT"
           >
             <span
-              className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-briefcase"
+              class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-briefcase"
             />
             <span
-              className="sc-Axmtr hZKuXu menu-text"
+              class="sc-Axmtr hZKuXu menu-text"
             >
               Costs
             </span>
