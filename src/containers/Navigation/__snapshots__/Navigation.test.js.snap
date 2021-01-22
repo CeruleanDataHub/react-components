@@ -2,16 +2,16 @@
 
 exports[`Navigation renders 1`] = `
 <nav
-  class="sc-fzoLsD jdTPUr"
+  class="sc-AxhUy bfGiEu"
 >
   <button
-    class="sc-fzpans doEGPR sc-AxmLO louqpj"
+    class="sc-AxgMl gSOnbS sc-AxiKw Rtuhc"
     color=""
     data-button-test="true"
     type="button"
   >
     <span
-      class="sc-fzplWN jHzZQp sc-AxjAm jWlVxK lni lni-close"
+      class="sc-AxheI crjktN sc-AxjAm jWlVxK lni lni-close"
     />
   </button>
   Some children
