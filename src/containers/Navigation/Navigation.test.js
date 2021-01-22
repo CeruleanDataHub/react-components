@@ -34,6 +34,14 @@ describe("Navigation", () => {
     expect(component.find("Icon[data-icon-test]")).toHaveProp("name", "menu");
   });
 
+  it("given no onMenuToggle is passed, when onMenuToggle is called, calls default props function", () => {
+    component = mount(<Navigation />);
+
+    const actual = component.props().onMenuToggle();
+
+    expect(actual).toBeNull();
+  });
+
   describe("Button within", () => {
     let button;
 
