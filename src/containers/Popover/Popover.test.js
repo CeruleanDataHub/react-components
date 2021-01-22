@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
-import renderer from "react-test-renderer";
-
+import { mount, shallow } from "enzyme";
 import { Popover } from "./Popover";
 
 // eslint-disable-next-line react/prop-types
@@ -13,6 +12,7 @@ const Wrapper = ({ isOpen }) => {
       <button type="button" ref={containerRef}>
         Button
       </button>
+
       <Popover
         isOpen={isOpen}
         containerRef={containerRef}
@@ -25,15 +25,15 @@ const Wrapper = ({ isOpen }) => {
 };
 
 describe("Popover", () => {
-  it("should render closed", () => {
-    const component = renderer.create(<Wrapper />);
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+  it("renders", () => {
+    const component = mount(<Wrapper />);
+
+    expect(component).toMatchHtmlSnapshot();
   });
 
-  it("should render open", () => {
-    const component = renderer.create(<Wrapper isOpen />);
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+  it("given popover is open, renders", () => {
+    const component = shallow(<Wrapper isOpen />);
+
+    expect(component).toMatchHtmlSnapshot();
   });
 });

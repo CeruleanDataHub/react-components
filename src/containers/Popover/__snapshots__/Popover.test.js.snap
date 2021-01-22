@@ -1,14 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Popover should render closed 1`] = `
-<button
-  type="button"
->
-  Button
-</button>
-`;
-
-exports[`Popover should render open 1`] = `
+exports[`Popover given popover is open, renders 1`] = `
 Array [
   <button
     type="button"
@@ -16,14 +8,8 @@ Array [
     Button
   </button>,
   <div
-    className="sc-AxjAm fOWUxG"
-    style={
-      Object {
-        "left": "0",
-        "position": "absolute",
-        "top": "0",
-      }
-    }
+    class="sc-AxjAm fOWUxG"
+    style="position:absolute;left:0;top:0"
   >
     <div
       id="arrow"
@@ -33,4 +19,12 @@ Array [
     </div>
   </div>,
 ]
+`;
+
+exports[`Popover renders 1`] = `
+<button
+  type="button"
+>
+  Button
+</button>
 `;
