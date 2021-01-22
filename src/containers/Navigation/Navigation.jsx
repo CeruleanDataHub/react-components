@@ -28,15 +28,14 @@ const MenuIcon = styled.span`
 export const Navigation = ({ menuInitialState, onMenuToggle, children }) => {
   const [menuOpen, setMenuOpen] = useState(menuInitialState);
 
+  const handleOnClick = () => {
+    setMenuOpen(!menuOpen);
+    onMenuToggle(!menuOpen);
+  };
+
   return (
     <NavBar menuOpen={menuOpen}>
-      <Button
-        onClick={() => {
-          setMenuOpen(!menuOpen);
-          onMenuToggle(!menuOpen);
-        }}
-        as={MenuOpen}
-      >
+      <Button onClick={handleOnClick} as={MenuOpen}>
         <Icon name={menuOpen ? "close" : "menu"} as={MenuIcon} />
       </Button>
       {children}
