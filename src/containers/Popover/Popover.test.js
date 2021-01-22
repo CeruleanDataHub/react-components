@@ -1,39 +1,39 @@
-import React, { useRef } from "react";
-import { mount, shallow } from "enzyme";
+import React from "react";
+import { mount } from "enzyme";
 import { Popover } from "./Popover";
 
-// eslint-disable-next-line react/prop-types
-const Wrapper = ({ isOpen }) => {
-  const containerRef = useRef(null);
-  const popoverRef = useRef(null);
-
-  return (
-    <>
-      <button type="button" ref={containerRef}>
-        Button
-      </button>
-
-      <Popover
-        isOpen={isOpen}
-        containerRef={containerRef}
-        popoverRef={popoverRef}
-      >
-        <div>Popover test content</div>
-      </Popover>
-    </>
-  );
-};
-
 describe("Popover", () => {
-  it("renders", () => {
-    const component = mount(<Wrapper />);
+  let containerRefStub;
+  let popoverRefStub;
+
+  beforeEach(() => {
+    containerRefStub = { current: null };
+    popoverRefStub = { current: null };
+  });
+
+  it("given popover is open, renders", () => {
+    const component = mount(
+      <Popover
+        popoverRef={popoverRefStub}
+        containerRef={containerRefStub}
+        isOpen
+      >
+        Some children
+      </Popover>
+    );
 
     expect(component).toMatchHtmlSnapshot();
   });
 
-  it("given popover is open, renders", () => {
-    const component = shallow(<Wrapper isOpen />);
+  it("given popover is not open, returns null html", () => {
+    const component = mount(
+      <Popover
+        containerRef={containerRefStub}
+        popoverRef={popoverRefStub}
+        isOpen={false}
+      />
+    );
 
-    expect(component).toMatchHtmlSnapshot();
+    expect(component.html()).toBeNull();
   });
 });
