@@ -61,19 +61,6 @@ describe("Navigation", () => {
     expect(component.find("Menu")).toExist();
   });
 
-  it("given onMenuToggle, when called, calls callback function", () => {
-    const onMenuToggleMock = jest.fn();
-    const component = mount(
-      <Navigation onMenuToggle={onMenuToggleMock}>
-        <Menu items={menuItems} />
-      </Navigation>
-    );
-
-    component.props().onMenuToggle();
-
-    expect(onMenuToggleMock).toHaveBeenCalled();
-  });
-
   it("given menu initial state is false, has menu icon", () => {
     const component = mount(
       <Navigation menuInitialState={false}>
