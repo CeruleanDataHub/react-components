@@ -36,7 +36,7 @@ export const Navigation = ({ menuInitialState, onMenuToggle, children }) => {
   return (
     <NavBar menuOpen={menuOpen}>
       <Button onClick={handleOnClick} as={MenuOpen}>
-        <Icon name={menuOpen ? "close" : "menu"} as={MenuIcon} />
+        <Icon name={menuOpen ? "close" : "menu"} as={MenuIcon} data-icon-test />
       </Button>
       {children}
     </NavBar>

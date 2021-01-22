@@ -51,49 +51,61 @@ describe("Navigation", () => {
     expect(component).toMatchHtmlSnapshot();
   });
 
-  it("should render children menu", () => {
+  it("given Menu as children, has Menu", () => {
     const component = mount(
       <Navigation>
         <Menu items={menuItems} />
       </Navigation>
     );
 
-    expect(component).toMatchHtmlSnapshot();
+    expect(component.find("Menu")).toExist();
   });
 
-  it("should have menu toggle event listener", () => {
+  it("given onMenuToggle, when called, calls callback function", () => {
+    const onMenuToggleMock = jest.fn();
     const component = mount(
-      <Navigation onMenuToggle={() => null}>
+      <Navigation onMenuToggle={onMenuToggleMock}>
         <Menu items={menuItems} />
       </Navigation>
     );
 
-    expect(component).toMatchHtmlSnapshot();
+    component.props().onMenuToggle();
+
+    expect(onMenuToggleMock).toHaveBeenCalled();
   });
 
-  it("should render children menu closed when given appropriate property", () => {
+  it("given menu initial state is false, has menu icon", () => {
     const component = mount(
       <Navigation menuInitialState={false}>
         <Menu items={menuItems} />
       </Navigation>
     );
 
-    expect(component).toMatchHtmlSnapshot();
+    expect(component.find("Icon[data-icon-test]")).toHaveProp("name", "menu");
   });
 
-  it("should call onMenuToggle callback function", () => {
-    const handleClick = jest.fn();
-    const wrapper = mount(
-      <Navigation onMenuToggle={handleClick}>
+  it("given onMenuToggle, does not call callback function yet", () => {
+    const onMenuToggleMock = jest.fn();
+    mount(
+      <Navigation onMenuToggle={onMenuToggleMock}>
         <Menu items={menuItems} />
       </Navigation>
     );
-    expect(handleClick).not.toHaveBeenCalled();
-    wrapper
-      .find("button")
-      .first()
-      .simulate("click");
-    expect(handleClick).toHaveBeenCalled();
+
+    expect(onMenuToggleMock).not.toHaveBeenCalled();
+  });
+
+  it("given onMenuToggle, when called, calls callback function", () => {
+    const onMenuToggleMock = jest.fn();
+    const component = mount(
+      <Navigation onMenuToggle={onMenuToggleMock}>
+        <Menu items={menuItems} />
+      </Navigation>
+    );
+
+    component.props().onMenuToggle();
+
+    expect(onMenuToggleMock).toHaveBeenCalled();
   });
 
   it("should call default props onMenuToggle function when no onMenuToggle property is passed", () => {
@@ -102,8 +114,9 @@ describe("Navigation", () => {
         <Menu items={menuItems} />
       </Navigation>
     );
-    component.props().onMenuToggle();
 
-    expect(component).toMatchHtmlSnapshot();
+    const actual = component.props().onMenuToggle();
+
+    expect(actual).toBeNull();
   });
 });

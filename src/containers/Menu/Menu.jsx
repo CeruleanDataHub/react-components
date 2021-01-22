@@ -89,6 +89,7 @@ export const Menu = ({ items, menuOpen }) => (
         to={to}
         menuOpen={menuOpen}
         key={name}
+        data-menu-item-test
       />
     ))}
   </MenuItems>
