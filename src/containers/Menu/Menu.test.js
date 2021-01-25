@@ -16,49 +16,49 @@ MenuLinkExample.defaultProps = {
   children: ""
 };
 
-const menuItemsStub = [
-  {
-    name: "Home",
-    icon: "home",
-    LinkComponent: MenuLinkExample,
-    to: "#home"
-  }
-];
-
 describe("Menu", () => {
-  it("renders", () => {
-    const component = mount(<Menu />);
+  let component;
+  let itemsStub;
 
+  beforeEach(() => {
+    itemsStub = [
+      {
+        name: "Home",
+        icon: "home",
+        LinkComponent: MenuLinkExample,
+        to: "#home"
+      }
+    ];
+
+    component = mount(<Menu items={itemsStub} />);
+  });
+
+  it("renders", () => {
     expect(component).toMatchHtmlSnapshot();
   });
 
-  it("given items with link component, has items", () => {
-    const component = mount(<Menu items={menuItemsStub} />);
-
+  it("has items", () => {
     expect(component.find("SingleItem[data-menu-item-test]")).toExist();
   });
 
-  it('given "menuOpen" prop, MenuTextItem is open', () => {
-    const component = mount(<Menu items={menuItemsStub} menuOpen />);
-
+  it("MenuTextItem is open", () => {
     expect(component.find("MenuTextItem")).toHaveProp("menuOpen", true);
   });
 
-  it('given no "menuOpen" prop, MenuTextItem is not open', () => {
-    const component = mount(<Menu items={menuItemsStub} menuOpen={false} />);
+  it('given "menuOpen" prop is false, MenuTextItem is not open', () => {
+    component = mount(<Menu items={itemsStub} menuOpen={false} />);
 
     expect(component.find("MenuTextItem")).toHaveProp("menuOpen", false);
   });
 
   it("given items with no link component, has items", () => {
-    const menuItemsWithoutLinkStub = [
+    itemsStub = [
       {
         name: "Home",
         icon: "home"
       }
     ];
-
-    const component = mount(<Menu items={menuItemsWithoutLinkStub} />);
+    component = mount(<Menu items={itemsStub} />);
 
     expect(component.find("SingleItem[data-menu-item-test]")).toExist();
   });

@@ -3,5 +3,31 @@
 exports[`Menu renders 1`] = `
 <ul
   class="sc-AxhUy ijoyzq"
-/>
+>
+  <li
+    class="sc-AxgMl fdAvPR"
+  >
+    <div
+      class="sc-AxiKw iCNkRr"
+      font-family="exo"
+    >
+      <a
+        href="#home"
+      >
+        <div
+          class="sc-AxheI dkiJtT"
+        >
+          <span
+            class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
+          />
+          <span
+            class="sc-Axmtr hZKuXu menu-text"
+          >
+            Home
+          </span>
+        </div>
+      </a>
+    </div>
+  </li>
+</ul>
 `;
