@@ -2,33 +2,32 @@
 
 exports[`Menu should render 1`] = `
 <ul
-  className="sc-AxhUy ijoyzq"
+  class="sc-AxhUy ijoyzq"
 />
 `;
 
 exports[`Menu should render closed menu 1`] = `
 <ul
-  className="sc-AxhUy ijoyzq"
+  class="sc-AxhUy ijoyzq"
 >
   <li
-    className="sc-AxgMl fdAvPR"
+    class="sc-AxgMl fdAvPR"
   >
     <div
-      className="sc-AxiKw iCNkRr"
-      fontFamily="exo"
-      size="normal"
+      class="sc-AxiKw iCNkRr"
+      font-family="exo"
     >
       <a
         href="#home"
       >
         <div
-          className="sc-AxheI dkiJtT"
+          class="sc-AxheI dkiJtT"
         >
           <span
-            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
+            class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
           />
           <span
-            className="sc-Axmtr hZJHVn menu-text"
+            class="sc-Axmtr hZJHVn menu-text"
           >
             Home
           </span>
@@ -37,24 +36,23 @@ exports[`Menu should render closed menu 1`] = `
     </div>
   </li>
   <li
-    className="sc-AxgMl fdAvPR"
+    class="sc-AxgMl fdAvPR"
   >
     <div
-      className="sc-AxiKw iCNkRr"
-      fontFamily="exo"
-      size="normal"
+      class="sc-AxiKw iCNkRr"
+      font-family="exo"
     >
       <a
         href="#users"
       >
         <div
-          className="sc-AxheI dkiJtT"
+          class="sc-AxheI dkiJtT"
         >
           <span
-            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-users"
+            class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-users"
           />
           <span
-            className="sc-Axmtr hZJHVn menu-text"
+            class="sc-Axmtr hZJHVn menu-text"
           >
             Users
           </span>
@@ -63,24 +61,23 @@ exports[`Menu should render closed menu 1`] = `
     </div>
   </li>
   <li
-    className="sc-AxgMl fdAvPR"
+    class="sc-AxgMl fdAvPR"
   >
     <div
-      className="sc-AxiKw iCNkRr"
-      fontFamily="exo"
-      size="normal"
+      class="sc-AxiKw iCNkRr"
+      font-family="exo"
     >
       <a
         href="#devices"
       >
         <div
-          className="sc-AxheI dkiJtT"
+          class="sc-AxheI dkiJtT"
         >
           <span
-            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-rocket"
+            class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-rocket"
           />
           <span
-            className="sc-Axmtr hZJHVn menu-text"
+            class="sc-Axmtr hZJHVn menu-text"
           >
             Devices
           </span>
@@ -89,24 +86,23 @@ exports[`Menu should render closed menu 1`] = `
     </div>
   </li>
   <li
-    className="sc-AxgMl fdAvPR"
+    class="sc-AxgMl fdAvPR"
   >
     <div
-      className="sc-AxiKw iCNkRr"
-      fontFamily="exo"
-      size="normal"
+      class="sc-AxiKw iCNkRr"
+      font-family="exo"
     >
       <a
         href="#costs"
       >
         <div
-          className="sc-AxheI dkiJtT"
+          class="sc-AxheI dkiJtT"
         >
           <span
-            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-briefcase"
+            class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-briefcase"
           />
           <span
-            className="sc-Axmtr hZJHVn menu-text"
+            class="sc-Axmtr hZJHVn menu-text"
           >
             Costs
           </span>
@@ -119,27 +115,26 @@ exports[`Menu should render closed menu 1`] = `
 
 exports[`Menu should render items 1`] = `
 <ul
-  className="sc-AxhUy ijoyzq"
+  class="sc-AxhUy ijoyzq"
 >
   <li
-    className="sc-AxgMl fdAvPR"
+    class="sc-AxgMl fdAvPR"
   >
     <div
-      className="sc-AxiKw iCNkRr"
-      fontFamily="exo"
-      size="normal"
+      class="sc-AxiKw iCNkRr"
+      font-family="exo"
     >
       <a
         href="#home"
       >
         <div
-          className="sc-AxheI dkiJtT"
+          class="sc-AxheI dkiJtT"
         >
           <span
-            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
+            class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
           />
           <span
-            className="sc-Axmtr hZKuXu menu-text"
+            class="sc-Axmtr hZKuXu menu-text"
           >
             Home
           </span>
@@ -148,24 +143,23 @@ exports[`Menu should render items 1`] = `
     </div>
   </li>
   <li
-    className="sc-AxgMl fdAvPR"
+    class="sc-AxgMl fdAvPR"
   >
     <div
-      className="sc-AxiKw iCNkRr"
-      fontFamily="exo"
-      size="normal"
+      class="sc-AxiKw iCNkRr"
+      font-family="exo"
     >
       <a
         href="#users"
       >
         <div
-          className="sc-AxheI dkiJtT"
+          class="sc-AxheI dkiJtT"
         >
           <span
-            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-users"
+            class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-users"
           />
           <span
-            className="sc-Axmtr hZKuXu menu-text"
+            class="sc-Axmtr hZKuXu menu-text"
           >
             Users
           </span>
@@ -174,24 +168,23 @@ exports[`Menu should render items 1`] = `
     </div>
   </li>
   <li
-    className="sc-AxgMl fdAvPR"
+    class="sc-AxgMl fdAvPR"
   >
     <div
-      className="sc-AxiKw iCNkRr"
-      fontFamily="exo"
-      size="normal"
+      class="sc-AxiKw iCNkRr"
+      font-family="exo"
     >
       <a
         href="#devices"
       >
         <div
-          className="sc-AxheI dkiJtT"
+          class="sc-AxheI dkiJtT"
         >
           <span
-            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-rocket"
+            class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-rocket"
           />
           <span
-            className="sc-Axmtr hZKuXu menu-text"
+            class="sc-Axmtr hZKuXu menu-text"
           >
             Devices
           </span>
@@ -200,24 +193,23 @@ exports[`Menu should render items 1`] = `
     </div>
   </li>
   <li
-    className="sc-AxgMl fdAvPR"
+    class="sc-AxgMl fdAvPR"
   >
     <div
-      className="sc-AxiKw iCNkRr"
-      fontFamily="exo"
-      size="normal"
+      class="sc-AxiKw iCNkRr"
+      font-family="exo"
     >
       <a
         href="#costs"
       >
         <div
-          className="sc-AxheI dkiJtT"
+          class="sc-AxheI dkiJtT"
         >
           <span
-            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-briefcase"
+            class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-briefcase"
           />
           <span
-            className="sc-Axmtr hZKuXu menu-text"
+            class="sc-Axmtr hZKuXu menu-text"
           >
             Costs
           </span>
@@ -230,27 +222,26 @@ exports[`Menu should render items 1`] = `
 
 exports[`Menu should render open menu 1`] = `
 <ul
-  className="sc-AxhUy ijoyzq"
+  class="sc-AxhUy ijoyzq"
 >
   <li
-    className="sc-AxgMl fdAvPR"
+    class="sc-AxgMl fdAvPR"
   >
     <div
-      className="sc-AxiKw iCNkRr"
-      fontFamily="exo"
-      size="normal"
+      class="sc-AxiKw iCNkRr"
+      font-family="exo"
     >
       <a
         href="#home"
       >
         <div
-          className="sc-AxheI dkiJtT"
+          class="sc-AxheI dkiJtT"
         >
           <span
-            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
+            class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
           />
           <span
-            className="sc-Axmtr hZKuXu menu-text"
+            class="sc-Axmtr hZKuXu menu-text"
           >
             Home
           </span>
@@ -259,24 +250,23 @@ exports[`Menu should render open menu 1`] = `
     </div>
   </li>
   <li
-    className="sc-AxgMl fdAvPR"
+    class="sc-AxgMl fdAvPR"
   >
     <div
-      className="sc-AxiKw iCNkRr"
-      fontFamily="exo"
-      size="normal"
+      class="sc-AxiKw iCNkRr"
+      font-family="exo"
     >
       <a
         href="#users"
       >
         <div
-          className="sc-AxheI dkiJtT"
+          class="sc-AxheI dkiJtT"
         >
           <span
-            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-users"
+            class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-users"
           />
           <span
-            className="sc-Axmtr hZKuXu menu-text"
+            class="sc-Axmtr hZKuXu menu-text"
           >
             Users
           </span>
@@ -285,24 +275,23 @@ exports[`Menu should render open menu 1`] = `
     </div>
   </li>
   <li
-    className="sc-AxgMl fdAvPR"
+    class="sc-AxgMl fdAvPR"
   >
     <div
-      className="sc-AxiKw iCNkRr"
-      fontFamily="exo"
-      size="normal"
+      class="sc-AxiKw iCNkRr"
+      font-family="exo"
     >
       <a
         href="#devices"
       >
         <div
-          className="sc-AxheI dkiJtT"
+          class="sc-AxheI dkiJtT"
         >
           <span
-            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-rocket"
+            class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-rocket"
           />
           <span
-            className="sc-Axmtr hZKuXu menu-text"
+            class="sc-Axmtr hZKuXu menu-text"
           >
             Devices
           </span>
@@ -311,24 +300,23 @@ exports[`Menu should render open menu 1`] = `
     </div>
   </li>
   <li
-    className="sc-AxgMl fdAvPR"
+    class="sc-AxgMl fdAvPR"
   >
     <div
-      className="sc-AxiKw iCNkRr"
-      fontFamily="exo"
-      size="normal"
+      class="sc-AxiKw iCNkRr"
+      font-family="exo"
     >
       <a
         href="#costs"
       >
         <div
-          className="sc-AxheI dkiJtT"
+          class="sc-AxheI dkiJtT"
         >
           <span
-            className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-briefcase"
+            class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-briefcase"
           />
           <span
-            className="sc-Axmtr hZKuXu menu-text"
+            class="sc-Axmtr hZKuXu menu-text"
           >
             Costs
           </span>
@@ -341,24 +329,23 @@ exports[`Menu should render open menu 1`] = `
 
 exports[`Menu should render without link component 1`] = `
 <ul
-  className="sc-AxhUy ijoyzq"
+  class="sc-AxhUy ijoyzq"
 >
   <li
-    className="sc-AxgMl fdAvPR"
+    class="sc-AxgMl fdAvPR"
   >
     <div
-      className="sc-AxiKw iCNkRr"
-      fontFamily="exo"
-      size="normal"
+      class="sc-AxiKw iCNkRr"
+      font-family="exo"
     >
       <div
-        className="sc-AxheI dkiJtT"
+        class="sc-AxheI dkiJtT"
       >
         <span
-          className="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
+          class="sc-AxhCb hAhMuW sc-AxjAm jWlVxK lni lni-home"
         />
         <span
-          className="sc-Axmtr hZKuXu menu-text"
+          class="sc-Axmtr hZKuXu menu-text"
         >
           Home
         </span>

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-import renderer from "react-test-renderer";
+import { mount } from "enzyme";
 
 import { Menu } from "./Menu";
 
@@ -45,29 +45,27 @@ const menuItems = [
 
 describe("Menu", () => {
   it("should render", () => {
-    const component = renderer.create(<Menu />);
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    const component = mount(<Menu />);
+
+    expect(component).toMatchHtmlSnapshot();
   });
 
   it("should render items", () => {
-    const component = renderer.create(<Menu items={menuItems} />);
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    const component = mount(<Menu items={menuItems} />);
+
+    expect(component).toMatchHtmlSnapshot();
   });
 
   it("should render open menu", () => {
-    const component = renderer.create(<Menu items={menuItems} menuOpen />);
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    const component = mount(<Menu items={menuItems} menuOpen />);
+
+    expect(component).toMatchHtmlSnapshot();
   });
 
   it("should render closed menu", () => {
-    const component = renderer.create(
-      <Menu items={menuItems} menuOpen={false} />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    const component = mount(<Menu items={menuItems} menuOpen={false} />);
+
+    expect(component).toMatchHtmlSnapshot();
   });
 
   it("should render without link component", () => {
@@ -77,8 +75,8 @@ describe("Menu", () => {
         icon: "home"
       }
     ];
-    const component = renderer.create(<Menu items={menuItemsWithoutLink} />);
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    const component = mount(<Menu items={menuItemsWithoutLink} />);
+
+    expect(component).toMatchHtmlSnapshot();
   });
 });
