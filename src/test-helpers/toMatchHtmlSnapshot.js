@@ -1,3 +1,4 @@
+/* istanbul ignore next */
 expect.extend({
   toMatchHtmlSnapshot(received) {
     try {
