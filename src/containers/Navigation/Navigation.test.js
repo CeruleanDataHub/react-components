@@ -1,6 +1,7 @@
 import { mount } from "enzyme";
 import React from "react";
 
+import { act } from "react-dom/test-utils";
 import { Navigation } from "./Navigation";
 
 describe("Navigation", () => {
@@ -16,16 +17,6 @@ describe("Navigation", () => {
 
   it("renders", () => {
     expect(component).toMatchHtmlSnapshot();
-  });
-
-  it("does not call callback function yet", () => {
-    expect(onMenuToggleMock).not.toHaveBeenCalled();
-  });
-
-  it("when called, calls callback function", () => {
-    component.props().onMenuToggle();
-
-    expect(onMenuToggleMock).toHaveBeenCalled();
   });
 
   it("given initial state is false, has correct icon", () => {
@@ -55,6 +46,18 @@ describe("Navigation", () => {
 
     it("has Icon", () => {
       expect(button.find("Icon")).toExist();
+    });
+
+    it("does not call onClick yet", () => {
+      expect(onMenuToggleMock).not.toHaveBeenCalled();
+    });
+
+    it("when onClick is called, calls callback function", () => {
+      act(() => {
+        button.props().onClick();
+      });
+
+      expect(onMenuToggleMock).toHaveBeenCalled();
     });
   });
 });
