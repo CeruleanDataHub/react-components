@@ -39,12 +39,15 @@ const MenuItemText = styled.span`
   opacity: ${({ menuOpen }) => (menuOpen ? 1 : 0)};
 `;
 
+MenuItemText.displayName = "MenuTextItem";
+
 const SingleItem = ({ name, icon, LinkComponent, to, menuOpen }) => (
   <MenuItem>
     <Typography fontFamily="exo">
       <LinkComponent to={to}>
         <Flex>
           <Icon name={icon} as={MenuIcon} />
+
           <MenuItemText className="menu-text" menuOpen={menuOpen}>
             {name}
           </MenuItemText>

@@ -16,67 +16,50 @@ MenuLinkExample.defaultProps = {
   children: ""
 };
 
-const menuItems = [
+const menuItemsStub = [
   {
     name: "Home",
     icon: "home",
     LinkComponent: MenuLinkExample,
     to: "#home"
-  },
-  {
-    name: "Users",
-    icon: "users",
-    LinkComponent: MenuLinkExample,
-    to: "#users"
-  },
-  {
-    name: "Devices",
-    icon: "rocket",
-    LinkComponent: MenuLinkExample,
-    to: "#devices"
-  },
-  {
-    name: "Costs",
-    icon: "briefcase",
-    LinkComponent: MenuLinkExample,
-    to: "#costs"
   }
 ];
 
 describe("Menu", () => {
-  it("should render", () => {
+  it("renders", () => {
     const component = mount(<Menu />);
 
     expect(component).toMatchHtmlSnapshot();
   });
 
-  it("should render items", () => {
-    const component = mount(<Menu items={menuItems} />);
+  it("given items with link component, has items", () => {
+    const component = mount(<Menu items={menuItemsStub} />);
 
-    expect(component).toMatchHtmlSnapshot();
+    expect(component.find("SingleItem[data-menu-item-test]")).toExist();
   });
 
-  it("should render open menu", () => {
-    const component = mount(<Menu items={menuItems} menuOpen />);
+  it('given "menuOpen" prop, MenuTextItem is open', () => {
+    const component = mount(<Menu items={menuItemsStub} menuOpen />);
 
-    expect(component).toMatchHtmlSnapshot();
+    expect(component.find("MenuTextItem")).toHaveProp("menuOpen", true);
   });
 
-  it("should render closed menu", () => {
-    const component = mount(<Menu items={menuItems} menuOpen={false} />);
+  it('given no "menuOpen" prop, MenuTextItem is not open', () => {
+    const component = mount(<Menu items={menuItemsStub} menuOpen={false} />);
 
-    expect(component).toMatchHtmlSnapshot();
+    expect(component.find("MenuTextItem")).toHaveProp("menuOpen", false);
   });
 
-  it("should render without link component", () => {
-    const menuItemsWithoutLink = [
+  it("given items with no link component, has items", () => {
+    const menuItemsWithoutLinkStub = [
       {
         name: "Home",
         icon: "home"
       }
     ];
-    const component = mount(<Menu items={menuItemsWithoutLink} />);
 
-    expect(component).toMatchHtmlSnapshot();
+    const component = mount(<Menu items={menuItemsWithoutLinkStub} />);
+
+    expect(component.find("SingleItem[data-menu-item-test]")).toExist();
   });
 });
