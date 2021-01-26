@@ -6,10 +6,12 @@ import { Select } from "./Select";
 describe("Select", () => {
   let component;
   let itemsStub;
+  let onChangeStub;
 
   beforeEach(() => {
     itemsStub = [{ id: "1", value: "some value" }];
-    component = mount(<Select items={itemsStub} />);
+    onChangeStub = () => {};
+    component = mount(<Select items={itemsStub} onChange={onChangeStub} />);
   });
 
   it("renders", () => {
@@ -22,14 +24,19 @@ describe("Select", () => {
 
   it("given item with name, has an option with name as text", () => {
     component = mount(
-      <Select items={[{ id: "1", value: "some value", name: "some name" }]} />
+      <Select
+        items={[{ id: "1", value: "some value", name: "some name" }]}
+        onChange={onChangeStub}
+      />
     );
 
     expect(component.find("option")).toHaveText("some name");
   });
 
   it("given selected option, has option selected", () => {
-    component = mount(<Select selectedOption="some selected option" />);
+    component = mount(
+      <Select selectedOption="some selected option" onChange={onChangeStub} />
+    );
 
     expect(component.find("select")).toHaveValue("some selected option");
   });
@@ -55,7 +62,9 @@ describe("Select", () => {
       }
     ];
 
-    component = mount(<Select items={itemsGroupStub} />);
+    component = mount(
+      <Select items={itemsGroupStub} onChange={onChangeStub} />
+    );
 
     expect(component.find("optgroup")).toExist();
   });
@@ -71,7 +80,10 @@ describe("Select", () => {
 
   it("given items with indentation, has an option with correct amount of non-breaking spaces prefixed to the value", () => {
     component = mount(
-      <Select items={[{ id: "1", indentLevel: 2, value: "some value" }]} />
+      <Select
+        items={[{ id: "1", indentLevel: 2, value: "some value" }]}
+        onChange={onChangeStub}
+      />
     );
 
     expect(component.find("option")).toHaveText("  some value");

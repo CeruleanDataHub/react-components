@@ -81,13 +81,12 @@ Select.propTypes = {
       })
     )
   ]),
-  onChange: PropTypes.func,
+  onChange: PropTypes.func.isRequired,
   className: PropTypes.string
 };
 
 Select.defaultProps = {
   selectedOption: "",
   items: [],
-  onChange: () => {},
   className: ""
 };
